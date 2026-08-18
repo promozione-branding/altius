@@ -10,7 +10,7 @@ export default function Hero() {
             className="h-full w-full bg-cover bg-center"
             style={{
               backgroundImage:
-                "url('https://lh3.googleusercontent.com/aida-public/AB6AXuALugBZvRKi9ld_CKHd8ZygOGEYn1Mr8tIvHpLaygcytlGLoAbPLYPeRRdBQjEA_ghAKWH-6QiLHxnWeXeChIIadJAiyAQd3ZKibTVAh8dtsq1tVz87VshaS0SOR53cpx5Uu9ynxhwXpgRe6S50HtCwuohGin1-4IJP3NQWTaCy1DE6YkEeT9iKrwWCb8BUt1PL8Gy4Pa7P3TA9GDplXWySdkpDk18FZ-LrOzDnuYgaxZQMyrarMhTv')",
+                "url('/banner.jpg')",
             }}
             aria-label="Luxury minimalist living room"
           />

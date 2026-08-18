@@ -67,52 +67,120 @@ export default function Footer() {
           "
         >
 
-          <div className="max-w-2xl">
+         <div className="max-w-2xl">
 
-            <p
-              className="
-                mb-4
-                text-[10px]
-                font-semibold
-                uppercase
-                tracking-[0.28em]
-                text-[#d2b45c]
-                sm:text-xs
-              "
-            >
-              Stay Inspired
-            </p>
+  {/* Tubelight fixture */}
+  <div className="relative mb-10 flex justify-start">
 
-            <h2
-              className="
-                text-3xl
-                font-semibold
-                leading-tight
-                tracking-[-0.03em]
-                sm:text-4xl
-                lg:text-5xl
-              "
-            >
-              Illuminate your world
-              <br className="hidden sm:block" />
-              <span className="text-[#c9a44c]">
-                with better light.
-              </span>
-            </h2>
+    {/* Light cone spilling downward onto the content below */}
+    <div
+      className="
+        pointer-events-none
+        absolute
+        left-0
+        top-3
+        -z-10
+        h-40
+        w-64
+        opacity-70
+      "
+      style={{
+        background:
+          "conic-gradient(from 180deg at 10% 0%, transparent 0deg, rgba(210,180,92,0.35) 20deg, rgba(210,180,92,0.12) 45deg, transparent 70deg)",
+        filter: "blur(6px)",
+      }}
+    />
 
-            <p className="
-              mt-4
-              max-w-lg
-              text-sm
-              leading-6
-              text-white/50
-            ">
-              Explore premium LED lighting solutions designed
-              for modern homes, commercial spaces and
-              architectural environments.
-            </p>
+    {/* The tube itself */}
+    <div className="relative flex items-center gap-3">
 
-          </div>
+      {/* glass tube */}
+      <div
+        className="
+          relative
+          h-[6px]
+          w-16
+          overflow-hidden
+          rounded-full
+          sm:w-20
+        "
+        style={{
+          background:
+            "linear-gradient(90deg, rgba(255,247,220,0.2) 0%, #fff7dc 45%, #ffe9a8 55%, rgba(255,247,220,0.2) 100%)",
+          boxShadow:
+            "0 0 6px 2px rgba(255,232,168,0.9), 0 0 18px 6px rgba(210,180,92,0.6), 0 0 40px 14px rgba(210,180,92,0.25)",
+        }}
+      >
+        {/* filament flicker */}
+        <div
+          className="absolute inset-0 animate-pulse"
+          style={{
+            background:
+              "linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent)",
+            mixBlendMode: "overlay",
+          }}
+        />
+      </div>
+
+      {/* end caps */}
+      <span className="h-2 w-2 rounded-full bg-[#d2b45c]/60 blur-[1px]" />
+    </div>
+
+    {/* Label, lit by its own fixture */}
+    <p
+      className="
+        absolute
+        left-0
+        top-4
+        mb-4
+        whitespace-nowrap
+        text-[10px]
+        font-semibold
+        uppercase
+        tracking-[0.28em]
+        text-[#f4dfa0]
+        sm:text-xs
+      "
+      style={{
+        textShadow:
+          "0 0 8px rgba(244,223,160,0.9), 0 0 20px rgba(210,180,92,0.5)",
+      }}
+    >
+      Stay Inspired
+    </p>
+  </div>
+
+  <h2
+    className="
+      relative
+      text-3xl
+      font-semibold
+      leading-tight
+      tracking-[-0.03em]
+      sm:text-4xl
+      lg:text-5xl
+    "
+  >
+    Illuminate your world
+    <br className="hidden sm:block" />
+    <span className="text-[#c9a44c]">
+      with better light.
+    </span>
+  </h2>
+
+  <p className="
+    mt-4
+    max-w-lg
+    text-sm
+    leading-6
+    text-white/50
+  ">
+    Explore premium LED lighting solutions designed
+    for modern homes, commercial spaces and
+    architectural environments.
+  </p>
+
+</div>
 
 
           {/* Newsletter */}
