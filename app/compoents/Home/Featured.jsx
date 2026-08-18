@@ -53,9 +53,9 @@ export default function Featured() {
         relative
         overflow-x-clip
         bg-[#faf9f6]
-        py-16
-        sm:py-20
-        lg:py-24
+        py-6
+        
+        md:py-16
       "
     >
       <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-10">
