@@ -273,9 +273,9 @@ export default function WhyChooseUs() {
                     shadow-sm
                     transition-colors
                     duration-300
-                    group-hover:border-gray-900
-                    group-hover:bg-gray-900
-                    group-hover:text-white
+                    group-hover:border-[#85a30f]
+                    group-hover:bg-white
+                    group-hover:text-[#85a30f]
                     will-change-transform
                   "
                 >

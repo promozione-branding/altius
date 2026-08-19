@@ -200,7 +200,7 @@ export default function ShopByCategory() {
                   bg-black/20
                   transition-colors
                   duration-500
-                  group-hover:bg-black/40
+                  group-hover:bg-[#85a30f]/40
                 "
               />
 

@@ -337,7 +337,7 @@ export default function About() {
                   h-24
                   w-24
                   border
-                  border-[#c9a44c]/40
+                  border-[#85a30f]/40
                   sm:-left-6
                   sm:-top-6
                   sm:h-32
@@ -399,7 +399,7 @@ export default function About() {
                     w-52
                     -translate-x-1/2
                     rounded-full
-                    bg-[#e3bb58]/30
+                    bg-[#85a30f]/30
                     blur-3xl
                   "
                 />
@@ -432,7 +432,7 @@ export default function About() {
                       backdrop-blur-md
                     "
                   >
-                    <FiZap size={17} className="text-[#e6c66d]" />
+                    <FiZap size={17} className="text-[#85a30f]" />
                   </div>
 
                   <div>
@@ -460,7 +460,7 @@ export default function About() {
                   z-20
                   w-[180px]
                   border
-                  border-[#d4b35e]/40
+                  border-[#85a30f]/40
                   bg-[#171717]
                   p-5
                   shadow-[0_20px_50px_rgba(0,0,0,0.18)]
@@ -475,7 +475,7 @@ export default function About() {
                     font-semibold
                     uppercase
                     tracking-[0.2em]
-                    text-[#d8b95f]
+                    text-[#85a30f]
                   "
                 >
                   Lighting Excellence
@@ -521,7 +521,7 @@ export default function About() {
                   font-semibold
                   uppercase
                   tracking-[0.25em]
-                  text-[#a17d2b]
+                  text-[#85a30f]
                 "
               >
                 About ELSTRONG
@@ -545,7 +545,7 @@ export default function About() {
               >
                 Industrial lighting
                 <br />
-                <span className="text-[#b28b32]">built to perform.</span>
+                <span className="text-[#85a30f]">built to perform.</span>
               </h2>
 
               {/* Description */}
@@ -587,8 +587,8 @@ export default function About() {
                       items-center
                       justify-center
                       rounded-full
-                      bg-[#b28b32]/10
-                      text-[#a17d2b]
+                      bg-[#85a30f]/10
+                      text-[#85a30f]
                     "
                   >
                     <FiCheck size={15} />
@@ -619,8 +619,8 @@ export default function About() {
                       items-center
                       justify-center
                       rounded-full
-                      bg-[#b28b32]/10
-                      text-[#a17d2b]
+                      bg-[#85a30f]/10
+                      text-[#85a30f]
                     "
                   >
                     <FiLayers size={15} />
@@ -759,7 +759,7 @@ export default function About() {
                     text-white
                     transition-all
                     duration-300
-                    hover:bg-[#b28b32]
+                    hover:bg-[#85a30f]
                   "
                 >
                   Discover Services
@@ -861,7 +861,7 @@ export default function About() {
                 {/* Label */}
 
                 <div className="mb-5 flex items-center gap-3">
-                  <span className="h-px w-10 bg-[#d8b65d]" />
+                  <span className="h-px w-10 bg-[#85a30f]" />
 
                   <span
                     className="
@@ -869,7 +869,7 @@ export default function About() {
                       font-semibold
                       uppercase
                       tracking-[0.3em]
-                      text-[#e5c975]
+                      text-[#85a30f]
                       sm:text-xs
                     "
                   >
@@ -894,7 +894,7 @@ export default function About() {
                 >
                   Light up the heart
                   <br />
-                  <span className="text-[#e5c56b]">of your home.</span>
+                  <span className="text-[#85a30f]">of your home.</span>
                 </h2>
 
                 {/* Description */}
@@ -938,8 +938,8 @@ export default function About() {
                     backdrop-blur-sm
                     transition-all
                     duration-300
-                    hover:border-[#d8b65d]
-                    hover:bg-[#b28b32]
+                    hover:border-[#85a30f]
+                    hover:bg-[#85a30f]
                   "
                 >
                   Explore Lighting
@@ -986,19 +986,19 @@ export default function About() {
                 text-[9px]
                 uppercase
                 tracking-[0.25em]
-                text-white/50
+                text-white
               "
             >
               Premium LED Collection
             </span>
 
-            <span className="h-px w-10 bg-[#d8b65d]" />
+            <span className="h-px w-10 bg-[#85a30f]" />
           </div>
         </div>
 
         {/* ================= EXTRA SCROLL SPACE ================= */}
 
-        <div className="mt-3 bg-[#faf9f6] py-3">
+        <div className="mt-3 bg-white py-3">
           <div className="mx-auto flex h-full max-w-4xl items-center justify-center px-6 text-center">
             <p className="font-serif text-4xl text-gray-900">
               Designed to bring warmth, character and elegance into every space.

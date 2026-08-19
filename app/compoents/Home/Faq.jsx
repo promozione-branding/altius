@@ -49,7 +49,7 @@ export default function Faq() {
           <div className="lg:sticky lg:top-24 lg:self-start">
 
             {/* Small Heading */}
-            <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.28em] text-[#c9a44c] sm:text-xs">
+            <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.28em] text-[#85a30f] sm:text-xs">
               Got Questions?
             </p>
 
@@ -78,6 +78,8 @@ export default function Faq() {
                   object-cover
                   transition-transform
                   duration-700
+                  border-2
+                  border-[#85a30f]
                   group-hover:scale-105
                 "
               />
@@ -142,7 +144,7 @@ export default function Faq() {
                         duration-300
                         ${
                           isOpen
-                            ? "border-[#c9a44c] bg-[#c9a44c] text-white"
+                            ? "border-[#85a30f] bg-[#85a30f] text-white"
                             : "border-gray-200 text-gray-400 group-hover:border-black group-hover:text-black"
                         }
                       `}

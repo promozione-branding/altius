@@ -292,9 +292,9 @@ export default function Navbar() {
                 ${
                   scrolled
                     ? `
-                      border-[#b28b32]
+                      border-[#85a30f]
                       text-neutral-800
-                      hover:bg-[#b28b32]
+                      hover:bg-[#85a30f]
                       hover:text-white
                     `
                     : `

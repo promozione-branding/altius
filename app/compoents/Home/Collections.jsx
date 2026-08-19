@@ -136,8 +136,8 @@ export default function Collections() {
           <h2 className="split-title__text">
             Featured Collections
             <span className="split-title__top">Featured Collections</span>
-            <span className="split-title__bottom">Featured Collections</span>
-            <span className="split-title__word">BY ELSTRONG</span>
+            <span className="split-title__bottom ">Featured Collections</span>
+            <span className="split-title__word ">BY ELSTRONG</span>
           </h2>
         </div>
       </div>

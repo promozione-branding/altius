@@ -63,7 +63,7 @@ export default function Featured() {
             TOP LABEL
         ================================================= */}
         <div className="mb-10 flex items-center gap-3">
-          <span className="h-[1px] w-8 bg-[#c49a3a]" />
+          <span className="h-[1px] w-8 bg-[#85a30f]" />
 
           <span
             className="
@@ -71,7 +71,7 @@ export default function Featured() {
               font-semibold
               uppercase
               tracking-[0.25em]
-              text-[#b28b32]
+              text-[#85a30f]
             "
           >
             Handpicked Lighting
@@ -151,7 +151,7 @@ export default function Featured() {
               >
                 Featured
                 <br />
-                <span className="text-[#b28b32]">Products</span>
+                <span className="text-[#85a30f]">Products</span>
               </h2>
 
               {/* Description */}
@@ -180,18 +180,18 @@ export default function Featured() {
                   items-center
                   gap-4
                   border
-                  border-[#b28b32]
+                  border-black
                   px-6
                   py-3.5
                   text-sm
                   font-semibold
                   uppercase
                   tracking-wider
-                  text-[#9b7626]
+                  text-black
                   transition-all
                   duration-300
-                  hover:bg-[#b28b32]
-                  hover:text-white
+                  hover:bg-[#ccee46]
+                  hover:text-black
                 "
               >
                 Explore Products
@@ -231,7 +231,7 @@ export default function Featured() {
                     font-semibold
                     uppercase
                     tracking-[0.2em]
-                    text-[#b28b32]
+                    text-[#85a30f]
                   "
                 >
                   Latest collection
@@ -298,7 +298,7 @@ export default function Featured() {
                     transition-all
                     duration-500
                     hover:-translate-y-1
-                    hover:border-[#d6b665]
+                    hover:border-[#85a30f]
                     hover:shadow-[0_20px_45px_rgba(0,0,0,0.08)]
                   "
                 >
@@ -348,7 +348,7 @@ export default function Featured() {
                         flex
                         items-center
                         gap-1
-                        text-[#c49a3a]
+                        text-[#85a30f]
                       "
                     >
                       <FiStar size={11} fill="currentColor" />
@@ -433,7 +433,7 @@ export default function Featured() {
                     h-3
                     w-3
                     rounded-full
-                    bg-[#e6bb55]
+                    bg-[#85a30f]
                     shadow-[0_0_20px_#e6bb55]
                   "
                 />
@@ -446,7 +446,7 @@ export default function Featured() {
                   font-medium
                   uppercase
                   tracking-[0.2em]
-                  text-[#e4c56e]
+                  text-[#85a30f]
                 "
               >
                 Light your way
