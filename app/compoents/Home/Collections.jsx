@@ -132,9 +132,14 @@ export default function Collections() {
           HEADING
       ========================== */}
       <div className="mb-12 px-6 text-center md:mb-14">
-        <h2 className="font-serif text-4xl tracking-tight text-black md:text-5xl lg:text-6xl">
-          Featured Collections
-        </h2>
+        <div className="split-title">
+          <h2 className="split-title__text">
+            Featured Collections
+            <span className="split-title__top">Featured Collections</span>
+            <span className="split-title__bottom">Featured Collections</span>
+            <span className="split-title__word">BY ELSTRONG</span>
+          </h2>
+        </div>
       </div>
 
       {/* =========================

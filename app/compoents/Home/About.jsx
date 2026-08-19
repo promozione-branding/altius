@@ -6,11 +6,10 @@ import { FiArrowRight, FiCheck, FiZap, FiLayers } from "react-icons/fi";
 export default function About() {
   return (
     <>
-        <section className="relative overflow-hidden bg-[#f7f6f2] py-6  md:py-16">
-
-      {/* ================= BACKGROUND ACCENT ================= */}
-      <div
-        className="
+      <section className="relative overflow-hidden bg-[#f7f6f2] py-6  md:py-16">
+        {/* ================= BACKGROUND ACCENT ================= */}
+        <div
+          className="
           pointer-events-none
           absolute
           -left-40
@@ -21,10 +20,10 @@ export default function About() {
           bg-[#c9a44c]/10
           blur-3xl
         "
-      />
+        />
 
-      <div
-        className="
+        <div
+          className="
           pointer-events-none
           absolute
           -right-40
@@ -35,15 +34,15 @@ export default function About() {
           bg-[#c9a44c]/5
           blur-3xl
         "
-      />
+        />
 
-      <div className="relative mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-10">
-        {/* ================= TOP LABEL ================= */}
-        {/* <div className="mb-12 flex items-center gap-4 lg:mb-16">
+        <div className="relative mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-10">
+          {/* ================= TOP LABEL ================= */}
+          {/* <div className="mb-12 flex items-center gap-4 lg:mb-16">
 
           <span className="h-px w-10 bg-[#b28b32]" /> */}
 
-        {/* <span
+          {/* <span
             className="
               text-[10px]
               font-semibold
@@ -55,14 +54,14 @@ export default function About() {
           >
             Professional Lighting Solutions
           </span> */}
-        {/* 
+          {/* 
           <span className="hidden h-px w-20 bg-neutral-300 sm:block" />
 
         </div> */}
 
-        {/* ================= MAIN CONTENT ================= */}
-        <div
-          className="
+          {/* ================= MAIN CONTENT ================= */}
+          <div
+            className="
             grid
             grid-cols-1
             items-center
@@ -71,14 +70,14 @@ export default function About() {
             lg:gap-20
             xl:gap-28
           "
-        >
-          {/* =================================================
+          >
+            {/* =================================================
               IMAGE SIDE
           ================================================= */}
-          <div className="relative">
-            {/* Decorative square */}
-            <div
-              className="
+            <div className="relative">
+              {/* Decorative square */}
+              <div
+                className="
                 absolute
                 -left-4
                 -top-4
@@ -91,11 +90,11 @@ export default function About() {
                 sm:h-32
                 sm:w-32
               "
-            />
+              />
 
-            {/* Image wrapper */}
-            <div
-              className="
+              {/* Image wrapper */}
+              <div
+                className="
                 group
                 relative
                 z-10
@@ -104,11 +103,11 @@ export default function About() {
                 bg-neutral-200
                 sm:aspect-[5/4]
               "
-            >
-              <img
-                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=90"
-                alt="Modern commercial space with professional LED lighting"
-                className="
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=90"
+                  alt="Modern commercial space with professional LED lighting"
+                  className="
                   h-full
                   w-full
                   object-cover
@@ -116,11 +115,11 @@ export default function About() {
                   duration-1000
                   group-hover:scale-105
                 "
-              />
+                />
 
-              {/* Image overlay */}
-              <div
-                className="
+                {/* Image overlay */}
+                <div
+                  className="
                   absolute
                   inset-0
                   bg-gradient-to-tr
@@ -128,11 +127,11 @@ export default function About() {
                   via-transparent
                   to-transparent
                 "
-              />
+                />
 
-              {/* Golden light glow */}
-              <div
-                className="
+                {/* Golden light glow */}
+                <div
+                  className="
                   absolute
                   bottom-[-80px]
                   left-1/2
@@ -143,11 +142,11 @@ export default function About() {
                   bg-[#e3bb58]/30
                   blur-3xl
                 "
-              />
+                />
 
-              {/* Image label */}
-              <div
-                className="
+                {/* Image label */}
+                <div
+                  className="
                   absolute
                   bottom-5
                   left-5
@@ -157,9 +156,9 @@ export default function About() {
                   sm:bottom-7
                   sm:left-7
                 "
-              >
-                <div
-                  className="
+                >
+                  <div
+                    className="
                     flex
                     h-10
                     w-10
@@ -171,27 +170,27 @@ export default function About() {
                     bg-white/10
                     backdrop-blur-md
                   "
-                >
-                  <FiZap size={17} className="text-[#e6c66d]" />
-                </div>
+                  >
+                    <FiZap size={17} className="text-[#e6c66d]" />
+                  </div>
 
-                <div>
-                  <p className="text-[9px] uppercase tracking-[0.2em] text-white/60">
-                    Engineered
-                  </p>
+                  <div>
+                    <p className="text-[9px] uppercase tracking-[0.2em] text-white/60">
+                      Engineered
+                    </p>
 
-                  <p className="text-sm font-medium text-white">
-                    For Performance
-                  </p>
+                    <p className="text-sm font-medium text-white">
+                      For Performance
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* =================================================
+              {/* =================================================
                 EXPERIENCE BADGE
             ================================================= */}
-            <div
-              className="
+              <div
+                className="
                 absolute
                 -bottom-8
                 right-3
@@ -206,51 +205,51 @@ export default function About() {
                 sm:w-[210px]
                 sm:p-6
               "
-            >
-              <p
-                className="
+              >
+                <p
+                  className="
                   text-[9px]
                   font-semibold
                   uppercase
                   tracking-[0.2em]
                   text-[#d8b95f]
                 "
-              >
-                Lighting Excellence
-              </p>
+                >
+                  Lighting Excellence
+                </p>
 
-              <div className="mt-2 flex items-end gap-2">
-                <span
-                  className="
+                <div className="mt-2 flex items-end gap-2">
+                  <span
+                    className="
                     text-4xl
                     font-semibold
                     leading-none
                     tracking-tight
                     text-white
                   "
-                >
-                  100%
-                </span>
+                  >
+                    100%
+                  </span>
 
-                <span className="mb-1 text-xs text-white/50">Focused</span>
+                  <span className="mb-1 text-xs text-white/50">Focused</span>
+                </div>
+
+                <div className="mt-4 h-px bg-white/10" />
+
+                <p className="mt-3 text-[11px] leading-5 text-white">
+                  Designed around efficiency, performance and modern
+                  architectural aesthetics.
+                </p>
               </div>
-
-              <div className="mt-4 h-px bg-white/10" />
-
-              <p className="mt-3 text-[11px] leading-5 text-white/50">
-                Designed around efficiency, performance and modern architectural
-                aesthetics.
-              </p>
             </div>
-          </div>
 
-          {/* =================================================
+            {/* =================================================
               CONTENT SIDE
           ================================================= */}
-          <div className="relative">
-            {/* Small eyebrow */}
-            <p
-              className="
+            <div className="relative">
+              {/* Small eyebrow */}
+              <p
+                className="
                 mb-5
                 text-[11px]
                 font-semibold
@@ -258,13 +257,13 @@ export default function About() {
                 tracking-[0.25em]
                 text-[#a17d2b]
               "
-            >
-              About ELSTRONG
-            </p>
+              >
+                About ELSTRONG
+              </p>
 
-            {/* Main heading */}
-            <h2
-              className="
+              {/* Main heading */}
+              <h2
+                className="
                 max-w-[650px]
                 text-4xl
                 font-semibold
@@ -275,15 +274,15 @@ export default function About() {
                 lg:text-6xl
                 xl:text-[70px]
               "
-            >
-              Industrial lighting
-              <br />
-              <span className="text-[#b28b32]">built to perform.</span>
-            </h2>
+              >
+                Industrial lighting
+                <br />
+                <span className="text-[#b28b32]">built to perform.</span>
+              </h2>
 
-            {/* Description */}
-            <p
-              className="
+              {/* Description */}
+              <p
+                className="
                 mt-7
                 max-w-[570px]
                 text-sm
@@ -292,21 +291,21 @@ export default function About() {
                 sm:text-base
                 sm:leading-8
               "
-            >
-              Transform commercial and industrial environments with advanced LED
-              lighting solutions engineered for efficiency, reliability and
-              exceptional illumination. From warehouses and offices to retail
-              spaces, we create lighting systems designed around the way your
-              space works.
-            </p>
+              >
+                Transform commercial and industrial environments with advanced
+                LED lighting solutions engineered for efficiency, reliability
+                and exceptional illumination. From warehouses and offices to
+                retail spaces, we create lighting systems designed around the
+                way your space works.
+              </p>
 
-            {/* =================================================
+              {/* =================================================
                 FEATURE LIST
             ================================================= */}
-            <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <div className="flex items-start gap-3">
-                <div
-                  className="
+              <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div className="flex items-start gap-3">
+                  <div
+                    className="
                     mt-0.5
                     flex
                     h-8
@@ -318,25 +317,25 @@ export default function About() {
                     bg-[#b28b32]/10
                     text-[#a17d2b]
                   "
-                >
-                  <FiCheck size={15} />
+                  >
+                    <FiCheck size={15} />
+                  </div>
+
+                  <div>
+                    <h4 className="text-sm font-semibold text-neutral-900">
+                      Energy Efficient
+                    </h4>
+
+                    <p className="mt-1 text-xs leading-5 text-neutral-500">
+                      High-performance LED systems with optimized energy
+                      consumption.
+                    </p>
+                  </div>
                 </div>
 
-                <div>
-                  <h4 className="text-sm font-semibold text-neutral-900">
-                    Energy Efficient
-                  </h4>
-
-                  <p className="mt-1 text-xs leading-5 text-neutral-500">
-                    High-performance LED systems with optimized energy
-                    consumption.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div
-                  className="
+                <div className="flex items-start gap-3">
+                  <div
+                    className="
                     mt-0.5
                     flex
                     h-8
@@ -348,28 +347,28 @@ export default function About() {
                     bg-[#b28b32]/10
                     text-[#a17d2b]
                   "
-                >
-                  <FiLayers size={15} />
-                </div>
+                  >
+                    <FiLayers size={15} />
+                  </div>
 
-                <div>
-                  <h4 className="text-sm font-semibold text-neutral-900">
-                    Tailored Solutions
-                  </h4>
+                  <div>
+                    <h4 className="text-sm font-semibold text-neutral-900">
+                      Tailored Solutions
+                    </h4>
 
-                  <p className="mt-1 text-xs leading-5 text-neutral-500">
-                    Lighting designed around your space and application
-                    requirements.
-                  </p>
+                    <p className="mt-1 text-xs leading-5 text-neutral-500">
+                      Lighting designed around your space and application
+                      requirements.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* =================================================
+              {/* =================================================
                 STATS
             ================================================= */}
-            <div
-              className="
+              <div
+                className="
                 mt-10
                 grid
                 max-w-[600px]
@@ -378,96 +377,97 @@ export default function About() {
                 border-neutral-200
                 py-6
               "
-            >
-              <div className="border-r border-neutral-200">
-                <p
-                  className="
+              >
+                <div className="border-r border-neutral-200">
+                  <p
+                    className="
                   text-2xl
                   font-semibold
                   tracking-tight
                   text-neutral-900
                   sm:text-3xl
                 "
-                >
-                  24/7
-                </p>
+                  >
+                    24/7
+                  </p>
 
-                <p
-                  className="
+                  <p
+                    className="
                   mt-1
                   text-[9px]
                   uppercase
                   tracking-[0.15em]
-                  text-neutral-400
+                  text-black
                   sm:text-[10px]
+                  
                 "
-                >
-                  Reliability
-                </p>
-              </div>
+                  >
+                    Reliability
+                  </p>
+                </div>
 
-              <div className="border-r border-neutral-200 pl-4 sm:pl-6">
-                <p
-                  className="
+                <div className="border-r border-neutral-200 pl-4 sm:pl-6">
+                  <p
+                    className="
                   text-2xl
                   font-semibold
                   tracking-tight
                   text-neutral-900
                   sm:text-3xl
                 "
-                >
-                  LED
-                </p>
+                  >
+                    LED
+                  </p>
 
-                <p
-                  className="
+                  <p
+                    className="
                   mt-1
                   text-[9px]
                   uppercase
                   tracking-[0.15em]
-                  text-neutral-400
+                  text-black
                   sm:text-[10px]
                 "
-                >
-                  Technology
-                </p>
-              </div>
+                  >
+                    Technology
+                  </p>
+                </div>
 
-              <div className="pl-4 sm:pl-6">
-                <p
-                  className="
+                <div className="pl-4 sm:pl-6">
+                  <p
+                    className="
                   text-2xl
                   font-semibold
                   tracking-tight
                   text-neutral-900
                   sm:text-3xl
                 "
-                >
-                  Pro
-                </p>
+                  >
+                    Pro
+                  </p>
 
-                <p
-                  className="
+                  <p
+                    className="
                   mt-1
                   text-[9px]
                   uppercase
                   tracking-[0.15em]
-                  text-neutral-400
+                  text-black
                   sm:text-[10px]
                 "
-                >
-                  Solutions
-                </p>
+                  >
+                    Solutions
+                  </p>
+                </div>
               </div>
-            </div>
 
-            {/* =================================================
+              {/* =================================================
                 CTA
             ================================================= */}
-            <div className="mt-8">
-              <a
-                href="/services"
-                className="
+              <div className="mt-8">
+                <a
+                  href="/services"
+                  className="
                   group
                   inline-flex
                   items-center
@@ -484,10 +484,10 @@ export default function About() {
                   duration-300
                   hover:bg-[#b28b32]
                 "
-              >
-                Discover Services
-                <span
-                  className="
+                >
+                  Discover Services
+                  <span
+                    className="
                     flex
                     h-7
                     w-7
@@ -500,17 +500,17 @@ export default function About() {
                     duration-300
                     group-hover:translate-x-1
                   "
-                >
-                  <FiArrowRight size={14} />
-                </span>
-              </a>
+                  >
+                    <FiArrowRight size={14} />
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    {/* <section className="w-full bg-[#faf9f6] py-10 sm:py-14 lg:py-20">
+      {/* <section className="w-full bg-[#faf9f6] py-10 sm:py-14 lg:py-20">
       <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-10">
 
         <div className="
@@ -523,7 +523,7 @@ export default function About() {
         ">
 
           {/* ================= IMAGE ================= */}
-          {/* <img
+      {/* <img
             src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1800&q=90"
             alt="Modern kitchen with elegant pendant lighting"
             className="
@@ -538,8 +538,8 @@ export default function About() {
             "
           /> */}
 
-          {/* ================= OVERLAY ================= */}
-          {/* <div className="
+      {/* ================= OVERLAY ================= */}
+      {/* <div className="
             absolute
             inset-0
             bg-gradient-to-r
@@ -548,8 +548,8 @@ export default function About() {
             to-black/5
           " /> */}
 
-          {/* ================= GOLD LIGHT GLOW ================= */}
-          {/* <div className="
+      {/* ================= GOLD LIGHT GLOW ================= */}
+      {/* <div className="
             pointer-events-none
             absolute
             -left-20
@@ -562,8 +562,8 @@ export default function About() {
             blur-3xl
           " /> */}
 
-          {/* ================= CONTENT ================= */}
-          {/* <div className="
+      {/* ================= CONTENT ================= */}
+      {/* <div className="
             relative
             z-10
             flex
@@ -576,8 +576,8 @@ export default function About() {
             lg:px-16
           "> */}
 
-            {/* Label */}
-            {/* <div className="mb-5 flex items-center gap-3">
+      {/* Label */}
+      {/* <div className="mb-5 flex items-center gap-3">
 
               <span className="h-px w-10 bg-[#d8b65d]" />
 
@@ -594,9 +594,8 @@ export default function About() {
 
             </div> */}
 
-
-            {/* Heading */}
-            {/* <h2 className="
+      {/* Heading */}
+      {/* <h2 className="
               max-w-[550px]
               text-4xl
               font-semibold
@@ -613,9 +612,8 @@ export default function About() {
               </span>
             </h2> */}
 
-
-            {/* Description */}
-            {/* <p className="
+      {/* Description */}
+      {/* <p className="
               mt-6
               max-w-[480px]
               text-sm
@@ -628,9 +626,8 @@ export default function About() {
               warmth, character and effortless elegance.
             </p> */}
 
-
-            {/* CTA */}
-            {/* <a
+      {/* CTA */}
+      {/* <a
               href="/collections"
               className="
                 group/btn
@@ -677,9 +674,8 @@ export default function About() {
 
           </div> */}
 
-
-          {/* ================= BOTTOM RIGHT LABEL ================= */}
-          {/* <div className="
+      {/* ================= BOTTOM RIGHT LABEL ================= */}
+      {/* <div className="
             absolute
             bottom-6
             right-6
@@ -711,11 +707,11 @@ export default function About() {
         </div>
 
       </div> */}
-    {/* </section> */} 
-     <section className="relative w-full bg-[#faf9f6]">
-      {/* ================= FIXED BACKGROUND ================= */}
-      <div
-        className="
+      {/* </section> */}
+      <section className="relative w-full bg-[#faf9f6]">
+        {/* ================= FIXED BACKGROUND ================= */}
+        <div
+          className="
           relative
           min-h-[650px]
           bg-fixed
@@ -723,14 +719,14 @@ export default function About() {
           bg-center
           bg-no-repeat
         "
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1800&q=90')",
-        }}
-      >
-        {/* ================= OVERLAY ================= */}
-        <div
-          className="
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1800&q=90')",
+          }}
+        >
+          {/* ================= OVERLAY ================= */}
+          <div
+            className="
             absolute
             inset-0
             bg-gradient-to-r
@@ -738,11 +734,11 @@ export default function About() {
             via-black/35
             to-black/10
           "
-        />
+          />
 
-        {/* ================= GOLD GLOW ================= */}
-        <div
-          className="
+          {/* ================= GOLD GLOW ================= */}
+          <div
+            className="
             pointer-events-none
             absolute
             -left-20
@@ -754,20 +750,20 @@ export default function About() {
             bg-[#dcb452]/20
             blur-3xl
           "
-        />
+          />
 
-        {/* ================= CONTENT ================= */}
-        <div
-          className="
+          {/* ================= CONTENT ================= */}
+          <div
+            className="
             relative
             z-10
             flex
             min-h-[650px]
             items-center
           "
-        >
-          <div
-            className="
+          >
+            <div
+              className="
               mx-auto
               w-full
               max-w-[1500px]
@@ -775,14 +771,14 @@ export default function About() {
               sm:px-12
               lg:px-16
             "
-          >
-            <div className="max-w-xl">
-              {/* Label */}
-              <div className="mb-5 flex items-center gap-3">
-                <span className="h-px w-10 bg-[#d8b65d]" />
+            >
+              <div className="max-w-xl">
+                {/* Label */}
+                <div className="mb-5 flex items-center gap-3">
+                  <span className="h-px w-10 bg-[#d8b65d]" />
 
-                <span
-                  className="
+                  <span
+                    className="
                     text-[10px]
                     font-semibold
                     uppercase
@@ -790,14 +786,14 @@ export default function About() {
                     text-[#e5c975]
                     sm:text-xs
                   "
-                >
-                  Illuminate Your Space
-                </span>
-              </div>
+                  >
+                    Illuminate Your Space
+                  </span>
+                </div>
 
-              {/* Heading */}
-              <h2
-                className="
+                {/* Heading */}
+                <h2
+                  className="
                   max-w-[550px]
                   text-4xl
                   font-semibold
@@ -807,34 +803,32 @@ export default function About() {
                   sm:text-5xl
                   lg:text-6xl
                 "
-              >
-                Light up the heart
-                <br />
-                <span className="text-[#e5c56b]">
-                  of your home.
-                </span>
-              </h2>
+                >
+                  Light up the heart
+                  <br />
+                  <span className="text-[#e5c56b]">of your home.</span>
+                </h2>
 
-              {/* Description */}
-              <p
-                className="
+                {/* Description */}
+                <p
+                  className="
                   mt-6
                   max-w-[480px]
                   text-sm
                   leading-7
-                  text-white/70
+                  text-white
                   sm:text-base
                 "
-              >
-                Discover statement lighting designed to transform
-                kitchens, dining spaces and modern interiors with
-                warmth, character and effortless elegance.
-              </p>
+                >
+                  Discover statement lighting designed to transform kitchens,
+                  dining spaces and modern interiors with warmth, character and
+                  effortless elegance.
+                </p>
 
-              {/* CTA */}
-              <a
-                href="/collections"
-                className="
+                {/* CTA */}
+                <a
+                  href="/collections"
+                  className="
                   group/btn
                   mt-8
                   flex
@@ -857,11 +851,10 @@ export default function About() {
                   hover:border-[#d8b65d]
                   hover:bg-[#b28b32]
                 "
-              >
-                Explore Lighting
-
-                <span
-                  className="
+                >
+                  Explore Lighting
+                  <span
+                    className="
                     flex
                     h-7
                     w-7
@@ -874,17 +867,17 @@ export default function About() {
                     duration-300
                     group-hover/btn:translate-x-1
                   "
-                >
-                  <FiArrowRight size={14} />
-                </span>
-              </a>
+                  >
+                    <FiArrowRight size={14} />
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* ================= BOTTOM RIGHT LABEL ================= */}
-        <div
-          className="
+          {/* ================= BOTTOM RIGHT LABEL ================= */}
+          <div
+            className="
             absolute
             bottom-6
             right-6
@@ -896,34 +889,31 @@ export default function About() {
             lg:bottom-8
             lg:right-10
           "
-        >
-          <span
-            className="
+          >
+            <span
+              className="
               text-[9px]
               uppercase
               tracking-[0.25em]
               text-white/50
             "
-          >
-            Premium LED Collection
-          </span>
+            >
+              Premium LED Collection
+            </span>
 
-          <span className="h-px w-10 bg-[#d8b65d]" />
+            <span className="h-px w-10 bg-[#d8b65d]" />
+          </div>
         </div>
-      </div>
 
-      {/* ================= EXTRA SCROLL SPACE ================= */}
-      <div className="py-3 mt-3 bg-[#faf9f6]">
-        <div className="mx-auto flex h-full max-w-4xl items-center justify-center px-6 text-center">
-          <p className="font-serif text-4xl text-gray-900 ">
-            Designed to bring warmth, character and elegance
-            into every space.
-          </p>
+        {/* ================= EXTRA SCROLL SPACE ================= */}
+        <div className="py-3 mt-3 bg-[#faf9f6]">
+          <div className="mx-auto flex h-full max-w-4xl items-center justify-center px-6 text-center">
+            <p className="font-serif text-4xl text-gray-900 ">
+              Designed to bring warmth, character and elegance into every space.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-
+      </section>
     </>
-
   );
 }

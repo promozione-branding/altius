@@ -59,7 +59,6 @@ export default function Featured() {
       "
     >
       <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-10">
-
         {/* =================================================
             TOP LABEL
         ================================================= */}
@@ -94,7 +93,6 @@ export default function Featured() {
             xl:gap-12
           "
         >
-
           {/* =================================================
               LEFT CONTENT - STICKY ON DESKTOP
           ================================================= */}
@@ -123,7 +121,6 @@ export default function Featured() {
             />
 
             <div className="relative z-10">
-
               {/* Small heading */}
               <p
                 className="
@@ -154,10 +151,7 @@ export default function Featured() {
               >
                 Featured
                 <br />
-
-                <span className="text-[#b28b32]">
-                  Products
-                </span>
+                <span className="text-[#b28b32]">Products</span>
               </h2>
 
               {/* Description */}
@@ -171,9 +165,8 @@ export default function Featured() {
                   sm:text-base
                 "
               >
-                Discover lighting pieces designed to bring
-                warmth, character, and modern elegance to
-                every corner of your space.
+                Discover lighting pieces designed to bring warmth, character,
+                and modern elegance to every corner of your space.
               </p>
 
               {/* CTA */}
@@ -202,7 +195,6 @@ export default function Featured() {
                 "
               >
                 Explore Products
-
                 <FiArrowRight
                   size={18}
                   className="
@@ -219,7 +211,6 @@ export default function Featured() {
               PRODUCTS
           ================================================= */}
           <div>
-
             {/* Products heading */}
             <div
               className="
@@ -233,7 +224,6 @@ export default function Featured() {
               "
             >
               <div>
-
                 <p
                   className="
                     mb-1
@@ -259,7 +249,6 @@ export default function Featured() {
                 >
                   New Arrivals
                 </h3>
-
               </div>
 
               {/* Desktop View All */}
@@ -280,7 +269,6 @@ export default function Featured() {
                 "
               >
                 View All
-
                 <FiArrowRight size={15} />
               </a>
             </div>
@@ -314,7 +302,6 @@ export default function Featured() {
                     hover:shadow-[0_20px_45px_rgba(0,0,0,0.08)]
                   "
                 >
-
                   {/* Product Image */}
                   <div
                     className="
@@ -341,7 +328,6 @@ export default function Featured() {
 
                   {/* Product Details */}
                   <div className="p-3 sm:p-4">
-
                     {/* Product Name */}
                     <h4
                       className="
@@ -371,7 +357,6 @@ export default function Featured() {
                       <FiStar size={11} fill="currentColor" />
                       <FiStar size={11} fill="currentColor" />
                     </div>
-
                   </div>
                 </div>
               ))}
@@ -427,7 +412,6 @@ export default function Featured() {
                 sm:p-8
               "
             >
-
               {/* Light indicator */}
               <div
                 className="
@@ -500,7 +484,6 @@ export default function Featured() {
                 "
               >
                 Discover Collection
-
                 <span
                   className="
                     flex
@@ -520,17 +503,14 @@ export default function Featured() {
                   <FiArrowRight size={15} />
                 </span>
               </a>
-
             </div>
           </div>
-
         </div>
 
         {/* =================================================
             MOBILE VIEW ALL
         ================================================= */}
         <div className="mt-8 flex justify-center sm:hidden">
-
           <a
             href="/shop"
             className="
@@ -545,12 +525,9 @@ export default function Featured() {
             "
           >
             View All Products
-
             <FiArrowRight size={15} />
           </a>
-
         </div>
-
       </div>
     </section>
   );

@@ -1,3 +1,96 @@
 @import "tailwindcss";
 
 
+.split-title {
+  display: flex;
+  justify-content: center;
+}
+
+.split-title__text {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+
+  font-family: serif;
+  font-size: 4.75rem;
+  line-height: 1;
+  letter-spacing: -0.04em;
+
+  color: #000;
+}
+
+/* Hide the original text */
+.split-title__text {
+  color: transparent;
+}
+
+/* Both halves */
+.split-title__top,
+.split-title__bottom {
+  position: absolute;
+  left: 0;
+
+  width: 100%;
+
+  color: #000;
+
+  white-space: nowrap;
+
+  transition:
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* TOP HALF */
+
+.split-title__top {
+  top: 0;
+
+  clip-path: inset(0 0 50% 0);
+}
+
+/* BOTTOM HALF */
+
+.split-title__bottom {
+  top: 0;
+
+  clip-path: inset(50% 0 0 0);
+}
+
+/* Middle word */
+
+.split-title__word {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%) scaleY(0);
+
+  color: #d8b65d;
+
+  white-space: nowrap;
+
+  opacity: 0;
+
+  transition:
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.4s ease;
+}
+
+/* =========================
+   HOVER
+========================= */
+
+.split-title__text:hover .split-title__top {
+  transform: translateY(-35px);
+}
+
+.split-title__text:hover .split-title__bottom {
+  transform: translateY(35px);
+}
+
+.split-title__text:hover .split-title__word {
+  transform: translate(-50%, -50%) scaleY(1);
+
+  opacity: 1;
+}
