@@ -1,6 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Form() {
   const [formData, setFormData] = useState({
@@ -9,6 +13,11 @@ export default function Form() {
     email: "",
     phone: "",
   });
+
+  const sectionRef = useRef(null);
+  const imageWrapperRef = useRef(null);
+  const imageRef = useRef(null);
+  const contentRef = useRef(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -23,23 +32,181 @@ export default function Form() {
     e.preventDefault();
 
     console.log("Form Data:", formData);
-
-    // Add your API / email submission here
   };
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      /* =================================
+         INITIAL STATES
+      ================================= */
+
+      // Image starts below its normal position
+      gsap.set(imageWrapperRef.current, {
+        y: 120,
+        opacity: 0,
+        clipPath: "inset(100% 0% 0% 0%)",
+      });
+
+      // Right content starts behind/from left
+      gsap.set(contentRef.current, {
+        x: -100,
+        opacity: 0,
+      });
+
+      // Individual content elements
+      gsap.set(".form-eyebrow", {
+        y: 30,
+        opacity: 0,
+      });
+
+      gsap.set(".form-heading", {
+        y: 50,
+        opacity: 0,
+      });
+
+      gsap.set(".form-field", {
+        y: 30,
+        opacity: 0,
+      });
+
+      gsap.set(".form-submit", {
+        y: 30,
+        opacity: 0,
+      });
+
+      /* =================================
+         MAIN TIMELINE
+      ================================= */
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 75%",
+          toggleActions: "play none none reverse",
+        },
+      });
+
+      /*
+        IMAGE
+        Comes from bottom + reveals upward
+      */
+      tl.to(imageWrapperRef.current, {
+        y: 0,
+        opacity: 1,
+        clipPath: "inset(0% 0% 0% 0%)",
+        duration: 1.4,
+        ease: "power4.out",
+      })
+
+        /*
+          IMAGE SLIGHT SCALE
+        */
+        .fromTo(
+          imageRef.current,
+          {
+            scale: 1.15,
+          },
+          {
+            scale: 1,
+            duration: 1.5,
+            ease: "power3.out",
+          },
+          "-=1.2",
+        )
+
+        /*
+          RIGHT CONTENT
+          Comes from behind / left side
+        */
+        .to(
+          contentRef.current,
+          {
+            x: 0,
+            opacity: 1,
+            duration: 1.1,
+            ease: "power4.out",
+          },
+          "-=0.7",
+        )
+
+        /*
+          SMALL HEADING
+        */
+        .to(
+          ".form-eyebrow",
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.6,
+            ease: "power3.out",
+          },
+          "-=0.6",
+        )
+
+        /*
+          MAIN HEADING
+        */
+        .to(
+          ".form-heading",
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.8,
+            ease: "power3.out",
+          },
+          "-=0.4",
+        )
+
+        /*
+          FORM FIELDS
+        */
+        .to(
+          ".form-field",
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.6,
+            stagger: 0.12,
+            ease: "power3.out",
+          },
+          "-=0.3",
+        )
+
+        /*
+          BUTTON
+        */
+        .to(
+          ".form-submit",
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.6,
+            ease: "back.out(1.5)",
+          },
+          "-=0.2",
+        );
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
 
   return (
     <section
-      className="bg-white py-6 md:py-16"
+      ref={sectionRef}
+      className="overflow-hidden bg-white py-10 md:py-20"
       data-purpose="requirements-section"
     >
       <div className="container mx-auto px-6 lg:px-20">
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
-
-          {/* =========================
+          {/* =================================
               LEFT - IMAGE
-          ========================== */}
-          <div className="group overflow-hidden rounded-lg">
+          ================================= */}
+          <div
+            ref={imageWrapperRef}
+            className="group overflow-hidden rounded-lg will-change-transform"
+          >
             <img
+              ref={imageRef}
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvUCZvBXzjIxGYlbGcwYkxfCpdN_N8MwIl39hgPNzAbL0Oz0LXxhnLmPWYQQAn2bi3RSGv-BDiScOGIreqBDTr91nwWAHsGDHuT8zC9irS_KCUPimIet2dw98hY817vzyMpi8B-_BXLS-1ugMm0HvjtlXf-2iC4opLHwpHl3br_K8NEnoC3AmrtdA7SFGV2mNIk55ZMljWQUo6zh0sD4nfexKC-XNMglS7mA0IxeKmlijDvUP5Qr91"
               alt="Luxury Table Lamp"
               className="
@@ -54,33 +221,48 @@ export default function Form() {
             />
           </div>
 
-          {/* =========================
+          {/* =================================
               RIGHT - FORM
-          ========================== */}
-          <div className="flex flex-col">
-
+          ================================= */}
+          <div ref={contentRef} className="flex flex-col will-change-transform">
             {/* Heading */}
             <div className="mb-8">
-              <span className="mb-3 block text-xs font-semibold uppercase tracking-[0.25em] text-gray-500">
+              <span
+                className="
+                  form-eyebrow
+                  mb-3
+                  block
+                  text-xs
+                  font-semibold
+                  uppercase
+                  tracking-[0.25em]
+                  text-gray-500
+                "
+              >
                 Get in touch
               </span>
 
-              <h2 className="font-serif text-4xl font-bold tracking-tight text-gray-900 md:text-5xl">
+              <h2
+                className="
+                  form-heading
+                  font-serif
+                  text-4xl
+                  font-bold
+                  tracking-tight
+                  text-gray-900
+                  md:text-5xl
+                "
+              >
                 Send your requirements
               </h2>
             </div>
 
             {/* Form */}
-            <form
-              onSubmit={handleSubmit}
-              className="space-y-6"
-            >
-
+            <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name + Product */}
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
                 {/* Name */}
-                <div className="flex flex-col">
+                <div className="form-field flex flex-col">
                   <label
                     htmlFor="name"
                     className="
@@ -119,7 +301,7 @@ export default function Form() {
                 </div>
 
                 {/* Product */}
-                <div className="flex flex-col">
+                <div className="form-field flex flex-col">
                   <label
                     htmlFor="product"
                     className="
@@ -160,9 +342,8 @@ export default function Form() {
 
               {/* Email + Phone */}
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
                 {/* Email */}
-                <div className="flex flex-col">
+                <div className="form-field flex flex-col">
                   <label
                     htmlFor="email"
                     className="
@@ -201,7 +382,7 @@ export default function Form() {
                 </div>
 
                 {/* Phone */}
-                <div className="flex flex-col">
+                <div className="form-field flex flex-col">
                   <label
                     htmlFor="phone"
                     className="
@@ -241,7 +422,7 @@ export default function Form() {
               </div>
 
               {/* Submit */}
-              <div className="pt-4">
+              <div className="form-submit pt-4">
                 <button
                   type="submit"
                   className="
@@ -262,7 +443,6 @@ export default function Form() {
                   Submit
                 </button>
               </div>
-
             </form>
           </div>
         </div>

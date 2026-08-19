@@ -7,6 +7,7 @@ import Hero from './compoents/Home/Hero'
 import Collections from './compoents/Home/Collections'
 import Faq from './compoents/Home/Faq'
 import Form from './compoents/Home/Form'
+import WhyChooseUs from './compoents/Home/WhyChooseUs'
 
 export default function page() {
   return (
@@ -15,6 +16,7 @@ export default function page() {
     <Hero/>
     <Featured/>
     <About/>
+    <WhyChooseUs/>
     <Collections/>
     <Form/>
     <Faq/>

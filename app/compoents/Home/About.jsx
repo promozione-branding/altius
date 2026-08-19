@@ -510,7 +510,7 @@ export default function About() {
       </div>
     </section>
 
-    <section className="w-full bg-[#faf9f6] py-10 sm:py-14 lg:py-20">
+    {/* <section className="w-full bg-[#faf9f6] py-10 sm:py-14 lg:py-20">
       <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-10">
 
         <div className="
@@ -523,7 +523,7 @@ export default function About() {
         ">
 
           {/* ================= IMAGE ================= */}
-          <img
+          {/* <img
             src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1800&q=90"
             alt="Modern kitchen with elegant pendant lighting"
             className="
@@ -536,20 +536,20 @@ export default function About() {
               duration-1000
               group-hover:scale-105
             "
-          />
+          /> */}
 
           {/* ================= OVERLAY ================= */}
-          <div className="
+          {/* <div className="
             absolute
             inset-0
             bg-gradient-to-r
             from-black/70
             via-black/30
             to-black/5
-          " />
+          " /> */}
 
           {/* ================= GOLD LIGHT GLOW ================= */}
-          <div className="
+          {/* <div className="
             pointer-events-none
             absolute
             -left-20
@@ -560,10 +560,10 @@ export default function About() {
             rounded-full
             bg-[#dcb452]/20
             blur-3xl
-          " />
+          " /> */}
 
           {/* ================= CONTENT ================= */}
-          <div className="
+          {/* <div className="
             relative
             z-10
             flex
@@ -574,10 +574,10 @@ export default function About() {
             px-7
             sm:px-12
             lg:px-16
-          ">
+          "> */}
 
             {/* Label */}
-            <div className="mb-5 flex items-center gap-3">
+            {/* <div className="mb-5 flex items-center gap-3">
 
               <span className="h-px w-10 bg-[#d8b65d]" />
 
@@ -592,11 +592,11 @@ export default function About() {
                 Illuminate Your Space
               </span>
 
-            </div>
+            </div> */}
 
 
             {/* Heading */}
-            <h2 className="
+            {/* <h2 className="
               max-w-[550px]
               text-4xl
               font-semibold
@@ -611,11 +611,11 @@ export default function About() {
               <span className="text-[#e5c56b]">
                 of your home.
               </span>
-            </h2>
+            </h2> */}
 
 
             {/* Description */}
-            <p className="
+            {/* <p className="
               mt-6
               max-w-[480px]
               text-sm
@@ -626,11 +626,11 @@ export default function About() {
               Discover statement lighting designed to transform
               kitchens, dining spaces and modern interiors with
               warmth, character and effortless elegance.
-            </p>
+            </p> */}
 
 
             {/* CTA */}
-            <a
+            {/* <a
               href="/collections"
               className="
                 group/btn
@@ -675,11 +675,11 @@ export default function About() {
               </span>
             </a>
 
-          </div>
+          </div> */}
 
 
           {/* ================= BOTTOM RIGHT LABEL ================= */}
-          <div className="
+          {/* <div className="
             absolute
             bottom-6
             right-6
@@ -710,6 +710,216 @@ export default function About() {
 
         </div>
 
+      </div> */}
+    {/* </section> */} 
+     <section className="relative w-full bg-[#faf9f6]">
+      {/* ================= FIXED BACKGROUND ================= */}
+      <div
+        className="
+          relative
+          min-h-[650px]
+          bg-fixed
+          bg-cover
+          bg-center
+          bg-no-repeat
+        "
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1800&q=90')",
+        }}
+      >
+        {/* ================= OVERLAY ================= */}
+        <div
+          className="
+            absolute
+            inset-0
+            bg-gradient-to-r
+            from-black/75
+            via-black/35
+            to-black/10
+          "
+        />
+
+        {/* ================= GOLD GLOW ================= */}
+        <div
+          className="
+            pointer-events-none
+            absolute
+            -left-20
+            top-1/2
+            h-72
+            w-72
+            -translate-y-1/2
+            rounded-full
+            bg-[#dcb452]/20
+            blur-3xl
+          "
+        />
+
+        {/* ================= CONTENT ================= */}
+        <div
+          className="
+            relative
+            z-10
+            flex
+            min-h-[650px]
+            items-center
+          "
+        >
+          <div
+            className="
+              mx-auto
+              w-full
+              max-w-[1500px]
+              px-7
+              sm:px-12
+              lg:px-16
+            "
+          >
+            <div className="max-w-xl">
+              {/* Label */}
+              <div className="mb-5 flex items-center gap-3">
+                <span className="h-px w-10 bg-[#d8b65d]" />
+
+                <span
+                  className="
+                    text-[10px]
+                    font-semibold
+                    uppercase
+                    tracking-[0.3em]
+                    text-[#e5c975]
+                    sm:text-xs
+                  "
+                >
+                  Illuminate Your Space
+                </span>
+              </div>
+
+              {/* Heading */}
+              <h2
+                className="
+                  max-w-[550px]
+                  text-4xl
+                  font-semibold
+                  leading-[1.02]
+                  tracking-[-0.04em]
+                  text-white
+                  sm:text-5xl
+                  lg:text-6xl
+                "
+              >
+                Light up the heart
+                <br />
+                <span className="text-[#e5c56b]">
+                  of your home.
+                </span>
+              </h2>
+
+              {/* Description */}
+              <p
+                className="
+                  mt-6
+                  max-w-[480px]
+                  text-sm
+                  leading-7
+                  text-white/70
+                  sm:text-base
+                "
+              >
+                Discover statement lighting designed to transform
+                kitchens, dining spaces and modern interiors with
+                warmth, character and effortless elegance.
+              </p>
+
+              {/* CTA */}
+              <a
+                href="/collections"
+                className="
+                  group/btn
+                  mt-8
+                  flex
+                  w-fit
+                  items-center
+                  gap-4
+                  border
+                  border-white/40
+                  bg-white/10
+                  px-6
+                  py-3.5
+                  text-xs
+                  font-semibold
+                  uppercase
+                  tracking-[0.16em]
+                  text-white
+                  backdrop-blur-sm
+                  transition-all
+                  duration-300
+                  hover:border-[#d8b65d]
+                  hover:bg-[#b28b32]
+                "
+              >
+                Explore Lighting
+
+                <span
+                  className="
+                    flex
+                    h-7
+                    w-7
+                    items-center
+                    justify-center
+                    rounded-full
+                    border
+                    border-white/40
+                    transition-transform
+                    duration-300
+                    group-hover/btn:translate-x-1
+                  "
+                >
+                  <FiArrowRight size={14} />
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* ================= BOTTOM RIGHT LABEL ================= */}
+        <div
+          className="
+            absolute
+            bottom-6
+            right-6
+            z-10
+            hidden
+            items-center
+            gap-3
+            sm:flex
+            lg:bottom-8
+            lg:right-10
+          "
+        >
+          <span
+            className="
+              text-[9px]
+              uppercase
+              tracking-[0.25em]
+              text-white/50
+            "
+          >
+            Premium LED Collection
+          </span>
+
+          <span className="h-px w-10 bg-[#d8b65d]" />
+        </div>
+      </div>
+
+      {/* ================= EXTRA SCROLL SPACE ================= */}
+      <div className="py-3 mt-3 bg-[#faf9f6]">
+        <div className="mx-auto flex h-full max-w-4xl items-center justify-center px-6 text-center">
+          <p className="font-serif text-4xl text-gray-900 ">
+            Designed to bring warmth, character and elegance
+            into every space.
+          </p>
+        </div>
       </div>
     </section>
 

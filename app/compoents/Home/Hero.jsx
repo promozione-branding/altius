@@ -323,7 +323,7 @@ export default function Hero() {
           }}
           aria-label="Luxury minimalist living room"
         />
-
+<div className="absolute inset-0 bg-black/50" />
         <div ref={overlayRef} className="absolute inset-0 bg-black" />
       </div>
 
