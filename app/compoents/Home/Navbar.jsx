@@ -23,7 +23,6 @@ const navItems = [
   {
     name: "Our Story",
     href: "/",
-    dropdown: true,
   },
   {
     name: "Blogs",
@@ -184,7 +183,7 @@ export default function Navbar() {
                 >
                   {item.name}
 
-                  {/* {item.dropdown && (
+                  {item.dropdown && (
                     <FiChevronDown
                       size={15}
                       className="
@@ -193,7 +192,7 @@ export default function Navbar() {
                         group-hover:rotate-180
                       "
                     />
-                  )} */}
+                  )}
                 </a>
 
                 {/* ================= HOVER LINE ================= */}
@@ -214,7 +213,7 @@ export default function Navbar() {
                 {/* =================================================
                     DROPDOWN
                 ================================================= */}
-                {/* {item.dropdown && (
+                {item.dropdown && (
                   <div
                     className="
                       invisible
@@ -267,7 +266,7 @@ export default function Navbar() {
                       ))}
                     </div>
                   </div>
-                )} */}
+                )}
               </div>
             ))}
           </div>

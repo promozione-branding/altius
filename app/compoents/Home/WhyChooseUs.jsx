@@ -121,11 +121,11 @@ export default function WhyChooseUs() {
           {
             opacity: 1,
             y: 0,
-            duration: 0.9,
+            duration: 0.3,
             stagger: 0.15,
             ease: "power3.out",
           },
-          "-=0.2"
+          
         )
         .to(
           ".why-icon",
@@ -137,7 +137,7 @@ export default function WhyChooseUs() {
             stagger: 0.15,
             ease: "back.out(1.7)",
           },
-          "-=0.6"
+          "-=0.3"
         )
         .to(
           ".why-title",
@@ -288,7 +288,7 @@ export default function WhyChooseUs() {
                 </h3>
 
                 {/* Description */}
-                <p className="why-description max-w-xs text-sm leading-7 text-gray-600">
+                <p className="why-description max-w-xs text-sm  text-gray-600">
                   {item.description}
                 </p>
               </div>
