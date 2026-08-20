@@ -27,7 +27,7 @@ export default function Footer() {
           h-[500px]
           w-[500px]
           rounded-full
-          bg-[#c9a44c]/10
+          bg-[#85a30f]/10
           blur-[120px]
         "
       />
@@ -41,7 +41,7 @@ export default function Footer() {
           h-[400px]
           w-[400px]
           rounded-full
-          bg-[#c9a44c]/5
+          bg-[#85a30f]/5
           blur-[100px]
         "
       />
@@ -51,204 +51,7 @@ export default function Footer() {
         {/* =================================================
             NEWSLETTER / TOP SECTION
         ================================================= */}
-        <div
-          className="
-            flex
-            flex-col
-            gap-8
-            border-b
-            border-white/10
-            py-14
-            sm:py-16
-            lg:flex-row
-            lg:items-end
-            lg:justify-between
-            lg:py-20
-          "
-        >
-
-         <div className="max-w-2xl">
-
-  {/* Tubelight fixture */}
-  <div className="relative mb-10 flex justify-start">
-
-    {/* Light cone spilling downward onto the content below */}
-    <div
-      className="
-        pointer-events-none
-        absolute
-        left-0
-        top-3
-        -z-10
-        h-40
-        w-64
-        opacity-70
-      "
-      style={{
-        background:
-          "conic-gradient(from 180deg at 10% 0%, transparent 0deg, rgba(210,180,92,0.35) 20deg, rgba(210,180,92,0.12) 45deg, transparent 70deg)",
-        filter: "blur(6px)",
-      }}
-    />
-
-    {/* The tube itself */}
-    <div className="relative flex items-center gap-3">
-
-      {/* glass tube */}
-      <div
-        className="
-          relative
-          h-[6px]
-          w-16
-          overflow-hidden
-          rounded-full
-          sm:w-20
-        "
-        style={{
-          background:
-            "linear-gradient(90deg, rgba(255,247,220,0.2) 0%, #fff7dc 45%, #ffe9a8 55%, rgba(255,247,220,0.2) 100%)",
-          boxShadow:
-            "0 0 6px 2px rgba(255,232,168,0.9), 0 0 18px 6px rgba(210,180,92,0.6), 0 0 40px 14px rgba(210,180,92,0.25)",
-        }}
-      >
-        {/* filament flicker */}
-        <div
-          className="absolute inset-0 animate-pulse"
-          style={{
-            background:
-              "linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent)",
-            mixBlendMode: "overlay",
-          }}
-        />
-      </div>
-
-      {/* end caps */}
-      <span className="h-2 w-2 rounded-full bg-[#d2b45c]/60 blur-[1px]" />
-    </div>
-
-    {/* Label, lit by its own fixture */}
-    <p
-      className="
-        absolute
-        left-0
-        top-4
-        mb-4
-        whitespace-nowrap
-        text-[10px]
-        font-semibold
-        uppercase
-        tracking-[0.28em]
-        text-[#f4dfa0]
-        sm:text-xs
-      "
-      style={{
-        textShadow:
-          "0 0 8px rgba(244,223,160,0.9), 0 0 20px rgba(210,180,92,0.5)",
-      }}
-    >
-      Stay Inspired
-    </p>
-  </div>
-
-  <h2
-    className="
-      relative
-      text-3xl
-      font-semibold
-      leading-tight
-      tracking-[-0.03em]
-      sm:text-4xl
-      lg:text-5xl
-    "
-  >
-    Illuminate your world
-    <br className="hidden sm:block" />
-    <span className="text-[#c9a44c]">
-      with better light.
-    </span>
-  </h2>
-
-  <p className="
-    mt-4
-    max-w-lg
-    text-sm
-    leading-6
-    text-white/50
-  ">
-    Explore premium LED lighting solutions designed
-    for modern homes, commercial spaces and
-    architectural environments.
-  </p>
-
-</div>
-
-
-          {/* Newsletter */}
-          <div className="w-full max-w-md">
-
-            <p className="
-              mb-3
-              text-xs
-              uppercase
-              tracking-[0.15em]
-              text-white/40
-            ">
-              Join our newsletter
-            </p>
-
-            <form className="
-              flex
-              border
-              border-white/15
-              bg-white/[0.03]
-              p-1
-              focus-within:border-[#c9a44c]/60
-            ">
-
-              <input
-                type="email"
-                placeholder="Enter your email address"
-                className="
-                  min-w-0
-                  flex-1
-                  bg-transparent
-                  px-4
-                  py-3
-                  text-sm
-                  text-white
-                  outline-none
-                  placeholder:text-white/30
-                "
-              />
-
-              <button
-                type="submit"
-                className="
-                  flex
-                  shrink-0
-                  items-center
-                  gap-2
-                  bg-[#c9a44c]
-                  px-4
-                  text-xs
-                  font-semibold
-                  uppercase
-                  tracking-wider
-                  text-black
-                  transition-all
-                  hover:bg-[#dfc16a]
-                  sm:px-5
-                "
-              >
-                Subscribe
-                <FiArrowRight size={15} />
-              </button>
-
-            </form>
-
-          </div>
-
-        </div>
+      
 
 
         {/* =================================================
@@ -283,7 +86,7 @@ export default function Footer() {
               "
             >
               ELSTRONG
-              <span className="text-[#c9a44c]">.</span>
+              <span className="text-[#85a30f]">.</span>
             </a>
 
             <p className="
@@ -310,12 +113,12 @@ export default function Footer() {
                   text-sm
                   text-white/50
                   transition-colors
-                  hover:text-[#d2b45c]
+                  hover:text-[#85a30f]
                 "
               >
                 <FiMail
                   size={16}
-                  className="text-[#c9a44c]"
+                  className="text-[#85a30f]"
                 />
 
                 elstrong@email.com
@@ -331,12 +134,12 @@ export default function Footer() {
                   text-sm
                   text-white/50
                   transition-colors
-                  hover:text-[#d2b45c]
+                  hover:text-[#85a30f]
                 "
               >
                 <FiPhone
                   size={16}
-                  className="text-[#c9a44c]"
+                  className="text-[#85a30f]"
                 />
 
                 +91 12345 67890
@@ -353,7 +156,7 @@ export default function Footer() {
               ">
                 <FiMapPin
                   size={16}
-                  className="mt-1 shrink-0 text-[#c9a44c]"
+                  className="mt-1 shrink-0 text-[#85a30f]"
                 />
 
                 <span>
@@ -381,8 +184,8 @@ export default function Footer() {
                   text-white/40
                   transition-all
                   duration-300
-                  hover:border-[#c9a44c]
-                  hover:bg-[#c9a44c]
+                  hover:border-[#85a30f]
+                  hover:bg-[#85a30f]
                   hover:text-black
                 "
               >
@@ -404,8 +207,8 @@ export default function Footer() {
                   text-white/40
                   transition-all
                   duration-300
-                  hover:border-[#c9a44c]
-                  hover:bg-[#c9a44c]
+                  hover:border-[#85a30f]
+                  hover:bg-[#85a30f]
                   hover:text-black
                 "
               >
@@ -427,8 +230,8 @@ export default function Footer() {
                   text-white/40
                   transition-all
                   duration-300
-                  hover:border-[#c9a44c]
-                  hover:bg-[#c9a44c]
+                  hover:border-[#85a30f]
+                  hover:bg-[#85a30f]
                   hover:text-black
                 "
               >
@@ -450,8 +253,8 @@ export default function Footer() {
                   text-white/40
                   transition-all
                   duration-300
-                  hover:border-[#c9a44c]
-                  hover:bg-[#c9a44c]
+                  hover:border-[#85a30f]
+                  hover:bg-[#85a30f]
                   hover:text-black
                 "
               >
@@ -474,7 +277,7 @@ export default function Footer() {
               font-semibold
               uppercase
               tracking-[0.2em]
-              text-[#d2b45c]
+              text-[#85a30f]
             ">
               Company
             </h3>
@@ -535,7 +338,7 @@ export default function Footer() {
               font-semibold
               uppercase
               tracking-[0.2em]
-              text-[#d2b45c]
+              text-[#85a30f]
             ">
               Solutions
             </h3>
@@ -596,7 +399,7 @@ export default function Footer() {
               font-semibold
               uppercase
               tracking-[0.2em]
-              text-[#d2b45c]
+              text-[#85a30f]
             ">
               Information
             </h3>
@@ -697,7 +500,7 @@ export default function Footer() {
       text-white/50
       transition-colors
       duration-300
-      hover:text-[#c9a44c]
+      hover:text-[#85a30f]
     "
   >
     Inquiry Bazaar Pvt. Ltd.
@@ -714,7 +517,7 @@ export default function Footer() {
       text-white/50
       transition-colors
       duration-300
-      hover:text-[#c9a44c]
+      hover:text-[#85a30f]
     "
   >
     B2B Marketplace

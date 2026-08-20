@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 import { GrCatalog } from "react-icons/gr";
+import { usePathname } from "next/navigation";
 
 const navItems = [
   {
@@ -12,21 +13,21 @@ const navItems = [
   },
   {
     name: "Shop",
-    href: "/shop",
+    href: "/product",
     hot: true,
     dropdown: true,
   },
   {
     name: "Featured",
-    href: "/featured",
+    href: "/product",
   },
   {
     name: "Our Story",
-    href: "/",
+    href: "/product",
   },
   {
     name: "Blogs",
-    href: "/blogs",
+    href: "/product",
   },
 ];
 
@@ -42,7 +43,7 @@ const shopCategories = [
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
+  const pathname = usePathname();
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 60);
@@ -70,10 +71,10 @@ export default function Navbar() {
         ease-in-out
 
         ${
-          scrolled
-            ? "bg-black shadow-[0_4px_25px_rgba(0,0,0,0.06)]"
-            : "bg-transparent"
-        }
+      pathname !== "/" || scrolled
+        ? "bg-black shadow-[0_4px_25px_rgba(0,0,0,0.06)]"
+        : "bg-transparent"
+    }
       `}
     >
       <nav className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-10">
