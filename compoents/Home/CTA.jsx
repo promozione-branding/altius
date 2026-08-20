@@ -150,10 +150,10 @@ export default function CTA() {
   }, []);
 
   return (
-    <div className="w-full bg-gray-50">
+    <div className="w-full bg-gray-300">
       <section
         ref={sectionRef}
-        className="relative mx-auto max-w-7xl bg-gray-50 px-4 py-6 sm:px-6 md:py-14"
+        className="relative mx-auto max-w-7xl bg-gray-300 px-4 py-6 sm:px-6 md:py-14"
       >
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 md:grid-cols-2">
 
