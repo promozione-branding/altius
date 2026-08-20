@@ -857,7 +857,7 @@ export default function About() {
                 lg:px-16
               "
             >
-              <div className="max-w-xl">
+              <div className="max-w-[620px]  border border-[#85a30f] bg-black/60 py-10 px-10">
                 {/* Label */}
 
                 <div className="mb-5 flex items-center gap-3">

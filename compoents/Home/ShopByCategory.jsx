@@ -9,23 +9,29 @@ gsap.registerPlugin(ScrollTrigger);
 const categories = [
   {
     title: "Downlight Led",
-    image:"/COBLEDDownlight.webp"  },
+    image: "/COBLEDDownlight.webp",
+  },
   {
     title: "Flood Light",
-    image:"/FloodLight.webp"  },
+    image: "/FloodLight.webp",
+  },
   {
     title: "Square Panel Light",
-    image:"/SquarePanelLight.webp"  },
+    image: "/SquarePanelLight.webp",
+  },
   {
     title: "LED Track Light",
-    image:"/LEDTrackLight.webp"  },
+    image: "/LEDTrackLight.webp",
+  },
   {
     title: "Outdoor Light",
-    image:"/OutdoorLight.webp"  },
+    image: "/OutdoorLight.webp",
+  },
   ,
   {
     title: "LED Collection",
-    image:"/led.webp " },
+    image: "/led.webp ",
+  },
 ];
 
 export default function ShopByCategory() {
@@ -86,7 +92,7 @@ export default function ShopByCategory() {
           stagger: 0.08,
           ease: "power3.out",
         },
-        "-=0.8"
+        "-=0.8",
       );
 
       // Titles come upward
@@ -99,7 +105,7 @@ export default function ShopByCategory() {
           stagger: 0.08,
           ease: "power3.out",
         },
-        "-=1"
+        "-=1",
       );
 
       ScrollTrigger.create({
@@ -130,7 +136,6 @@ export default function ShopByCategory() {
       data-purpose="shop-by-category"
     >
       <div className="container mx-auto px-8 lg:px-20">
-
         {/* ================= HEADER ================= */}
 
         <div className="mb-16 text-center">
