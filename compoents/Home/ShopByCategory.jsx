@@ -3,119 +3,214 @@
 import React, { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { FiArrowUpRight } from "react-icons/fi";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const categories = [
   {
-    title: "Downlight Led",
+    title: "Downlight LED",
     image: "/COBLEDDownlight.webp",
+    hoverImage: "/FloodLight.webp",
   },
   {
     title: "Flood Light",
     image: "/FloodLight.webp",
+    hoverImage: "/FloodLight-hover.webp",
   },
   {
     title: "Square Panel Light",
     image: "/SquarePanelLight.webp",
+    hoverImage: "/SquarePanelLight-hover.webp",
   },
   {
     title: "LED Track Light",
     image: "/LEDTrackLight.webp",
+    hoverImage: "/LEDTrackLight-hover.webp",
   },
   {
     title: "Outdoor Light",
     image: "/OutdoorLight.webp",
+    hoverImage: "/OutdoorLight-hover.webp",
   },
-  ,
   {
     title: "LED Collection",
-    image: "/led.webp ",
+    image: "/led.webp",
+    hoverImage: "/led-hover.webp",
   },
 ];
 
 export default function ShopByCategory() {
   const sectionRef = useRef(null);
+
+  const headerRef = useRef(null);
+  const labelRef = useRef(null);
+  const headingRef = useRef(null);
+  const descriptionRef = useRef(null);
+
   const cardsRef = useRef([]);
   const imagesRef = useRef([]);
-  const titlesRef = useRef([]);
+  const contentRef = useRef([]);
+  const numberRef = useRef([]);
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       const cards = cardsRef.current;
       const images = imagesRef.current;
-      const titles = titlesRef.current;
+      const content = contentRef.current;
+      const numbers = numberRef.current;
 
-      /*
-       * Keep everything hidden initially.
-       * Nothing animates when the page first loads.
-       */
+      /* =========================================
+         INITIAL HEADER STATE
+      ========================================= */
+
+      gsap.set(labelRef.current, {
+        opacity: 0,
+        y: 35,
+      });
+
+      gsap.set(headingRef.current, {
+        opacity: 0,
+        y: 70,
+        scale: 0.96,
+      });
+
+      gsap.set(descriptionRef.current, {
+        opacity: 0,
+        y: 35,
+      });
+
+      /* =========================================
+         INITIAL CARD STATE
+      ========================================= */
 
       gsap.set(cards, {
         opacity: 0,
-        scale: 0.96,
+        y: 80,
+        scale: 0.94,
       });
 
       gsap.set(images, {
         scale: 1.12,
       });
 
-      gsap.set(titles, {
+      gsap.set(content, {
         opacity: 0,
-        y: 25,
+        y: 35,
       });
 
-      /*
-       * Animation starts ONLY when the section
-       * reaches 80% of the viewport.
-       */
+      gsap.set(numbers, {
+        opacity: 0,
+        x: -20,
+      });
+
+      /* =========================================
+         MAIN TIMELINE
+      ========================================= */
 
       const tl = gsap.timeline({
         paused: true,
       });
 
-      // Cards appear
-      tl.to(cards, {
+      /* =========================================
+         HEADER ANIMATION
+      ========================================= */
+
+      tl.to(labelRef.current, {
         opacity: 1,
-        scale: 1,
-        duration: 1,
-        stagger: 0.08,
+        y: 0,
+        duration: 0.7,
         ease: "power3.out",
-      });
+      })
 
-      // Images smoothly reveal
-      tl.to(
-        images,
-        {
-          scale: 1,
-          duration: 1.5,
-          stagger: 0.08,
-          ease: "power3.out",
-        },
-        "-=0.8",
-      );
+        .to(
+          headingRef.current,
+          {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            duration: 1,
+            ease: "power4.out",
+          },
+          "-=0.35",
+        )
 
-      // Titles come upward
+        .to(
+          descriptionRef.current,
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.7,
+            ease: "power3.out",
+          },
+          "-=0.45",
+        );
+
+      /* =========================================
+         CARDS
+      ========================================= */
+
       tl.to(
-        titles,
+        cards,
         {
           opacity: 1,
           y: 0,
-          duration: 0.7,
-          stagger: 0.08,
-          ease: "power3.out",
+          scale: 1,
+          duration: 1,
+          stagger: 0.12,
+          ease: "power4.out",
         },
-        "-=1",
-      );
+        "-=0.25",
+      )
+
+        /* IMAGE REVEAL */
+
+        .to(
+          images,
+          {
+            scale: 1,
+            duration: 1.5,
+            stagger: 0.1,
+            ease: "power3.out",
+          },
+          "-=0.85",
+        )
+
+        /* CARD CONTENT */
+
+        .to(
+          content,
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.75,
+            stagger: 0.1,
+            ease: "power3.out",
+          },
+          "-=1",
+        )
+
+        /* NUMBERS */
+
+        .to(
+          numbers,
+          {
+            opacity: 1,
+            x: 0,
+            duration: 0.6,
+            stagger: 0.08,
+            ease: "power3.out",
+          },
+          "-=0.6",
+        );
+
+      /* =========================================
+         SCROLL TRIGGER
+      ========================================= */
 
       ScrollTrigger.create({
         trigger: sectionRef.current,
-
-        // Animation starts when the section
-        // reaches 80% from the top
         start: "top 80%",
-
-        // Only play once
         once: true,
 
         onEnter: () => {
@@ -132,40 +227,185 @@ export default function ShopByCategory() {
   return (
     <section
       ref={sectionRef}
-      className="bg-white py-6 font-serif md:py-14"
+      className="
+        relative
+        overflow-hidden
+        bg-white
+        py-14
+        font-serif
+        md:py-24
+      "
       data-purpose="shop-by-category"
     >
-      <div className="container mx-auto px-8 lg:px-20">
-        {/* ================= HEADER ================= */}
+      {/* =========================================
+          BACKGROUND GLOW
+      ========================================= */}
 
-        <div className="mb-16 text-center">
-          <h2 className="serif-text mb-4 text-4xl font-bold text-gray-900 md:text-5xl">
-            Shop by Category
-          </h2>
+      <div
+        className="
+          pointer-events-none
+          absolute
+          left-1/2
+          top-0
+          h-[500px]
+          w-[500px]
+          -translate-x-1/2
+          rounded-full
+          bg-lime-200/30
+          blur-[150px]
+        "
+      />
 
-          <p className="text-xs font-bold uppercase tracking-[0.25em] text-gray-500">
-            Curated Collections for Every Space
+      <div
+        className="
+          pointer-events-none
+          absolute
+          bottom-0
+          left-0
+          h-[350px]
+          w-[350px]
+          rounded-full
+          bg-green-100/20
+          blur-[120px]
+        "
+      />
+
+      {/* =========================================
+          CONTAINER
+      ========================================= */}
+
+      <div
+        className="
+          relative
+          mx-auto
+          max-w-[1500px]
+          px-6
+          sm:px-10
+          lg:px-16
+        "
+      >
+        {/* =========================================
+            HEADER
+        ========================================= */}
+
+        <div
+          ref={headerRef}
+          className="
+            mb-14
+            flex
+            flex-col
+            items-center
+            text-center
+            md:mb-10
+          "
+        >
+          {/* =====================================
+              SMALL LABEL
+          ===================================== */}
+
+          <div
+            ref={labelRef}
+            className="
+              mb-5
+              flex
+              items-center
+              gap-3
+            "
+          >
+            <span className="h-px w-8 bg-lime-500" />
+
+            <span
+              className="
+                text-[10px]
+                font-bold
+                uppercase
+                tracking-[0.35em]
+                text-gray-500
+              "
+            >
+              Explore Our Lighting
+            </span>
+
+            <span className="h-px w-8 bg-lime-500" />
+          </div>
+
+          {/* =====================================
+              HEADING
+          ===================================== */}
+
+          <div className="overflow-hidden">
+            <h2
+              ref={headingRef}
+              className="
+                serif-text
+                text-4xl
+                font-bold
+                leading-tight
+                tracking-tight
+                text-gray-900
+                sm:text-5xl
+                md:text-6xl
+              "
+            >
+              Shop by Category
+            </h2>
+          </div>
+
+          {/* =====================================
+              DESCRIPTION
+          ===================================== */}
+
+          <p
+            ref={descriptionRef}
+            className="
+              mt-5
+              max-w-2xl
+              text-sm
+              leading-7
+              text-gray-500
+              md:text-base
+            "
+          >
+            Discover lighting solutions designed to transform every space
+            with modern technology, refined design, and brilliant
+            illumination.
           </p>
         </div>
 
-        {/* ================= CATEGORY GRID ================= */}
+        {/* =========================================
+            CATEGORY GRID
+        ========================================= */}
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div
+          className="
+            grid
+            grid-cols-1
+            gap-5
+            sm:grid-cols-2
+            lg:grid-cols-3
+            lg:gap-7
+          "
+        >
           {categories.map((category, index) => (
             <div
-              key={index}
+              key={category.title}
               ref={(el) => {
                 cardsRef.current[index] = el;
               }}
               className="
                 group
                 relative
-                aspect-square
+                aspect-[4/4.4]
                 cursor-pointer
                 overflow-hidden
+                rounded-sm
+                bg-gray-100
+                will-change-transform
               "
             >
-              {/* IMAGE */}
+              {/* =====================================
+                  MAIN IMAGE
+              ===================================== */}
 
               <div
                 ref={(el) => {
@@ -177,45 +417,279 @@ export default function ShopByCategory() {
                   bg-cover
                   bg-center
                   transition-transform
-                  duration-700
-                  group-hover:scale-110
+                  duration-[1200ms]
+                  ease-out
+                  will-change-transform
+                  group-hover:scale-105
                 "
                 style={{
                   backgroundImage: `url("${category.image}")`,
                 }}
               />
 
-              {/* OVERLAY */}
+              {/* =====================================
+                  HOVER IMAGE
+              ===================================== */}
 
               <div
                 className="
                   absolute
                   inset-0
-                  bg-black/20
-                  transition-colors
-                  duration-500
-                  group-hover:bg-[#85a30f]/40
+                  scale-110
+                  bg-cover
+                  bg-center
+                  opacity-0
+                  transition-all
+                  duration-[900ms]
+                  ease-out
+                  group-hover:scale-100
+                  group-hover:opacity-100
+                "
+                style={{
+                  backgroundImage: `url("${category.hoverImage}")`,
+                }}
+              />
+
+              {/* =====================================
+                  DARK OVERLAY
+              ===================================== */}
+
+              <div
+                className="
+                  absolute
+                  inset-0
+                  bg-gradient-to-t
+                  from-black/80
+                  via-black/20
+                  to-black/5
+                  transition-all
+                  duration-700
+                  group-hover:from-black/85
+                  group-hover:via-black/30
                 "
               />
 
-              {/* TITLE */}
+              {/* =====================================
+                  GREEN GLOW
+              ===================================== */}
 
-              <div className="absolute inset-0 flex items-center justify-center">
+              <div
+                className="
+                  pointer-events-none
+                  absolute
+                  -bottom-24
+                  -right-24
+                  h-64
+                  w-64
+                  rounded-full
+                  bg-lime-400/30
+                  opacity-0
+                  blur-[80px]
+                  transition-all
+                  duration-700
+                  group-hover:opacity-100
+                "
+              />
+
+              {/* =====================================
+                  NUMBER
+              ===================================== */}
+
+              <div
+                ref={(el) => {
+                  numberRef.current[index] = el;
+                }}
+                className="
+                  absolute
+                  left-5
+                  top-5
+                  z-20
+                  text-[10px]
+                  font-bold
+                  tracking-[0.25em]
+                  text-white/80
+                "
+              >
+                0{index + 1}
+              </div>
+
+              {/* =====================================
+                  ARROW
+              ===================================== */}
+
+              <div
+                className="
+                  absolute
+                  right-5
+                  top-5
+                  z-20
+                  flex
+                  h-11
+                  w-11
+                  items-center
+                  justify-center
+                  rounded-full
+                  border
+                  border-white/30
+                  bg-white/10
+                  text-white
+                  backdrop-blur-md
+                  transition-all
+                  duration-500
+                  group-hover:rotate-45
+                  group-hover:border-lime-400
+                  group-hover:bg-lime-400
+                  group-hover:text-black
+                "
+              >
+                <FiArrowUpRight size={18} />
+              </div>
+
+              {/* =====================================
+                  CONTENT
+              ===================================== */}
+
+              <div
+                ref={(el) => {
+                  contentRef.current[index] = el;
+                }}
+                className="
+                  absolute
+                  bottom-0
+                  left-0
+                  right-0
+                  z-20
+                  p-6
+                  md:p-7
+                "
+              >
+                {/* Accent */}
+
+                <div
+                  className="
+                    mb-3
+                    h-[2px]
+                    w-8
+                    bg-lime-400
+                    transition-all
+                    duration-500
+                    group-hover:w-16
+                  "
+                />
+
+                {/* Title */}
+
                 <h3
-                  ref={(el) => {
-                    titlesRef.current[index] = el;
-                  }}
                   className="
                     serif-text
-                    text-3xl
+                    text-2xl
                     font-bold
                     tracking-tight
                     text-white
+                    transition-transform
+                    duration-500
+                    ease-out
+                    group-hover:-translate-y-1
+                    md:text-3xl
                   "
                 >
                   {category.title}
                 </h3>
+
+                {/* Explore */}
+
+                <div
+                  className="
+                    mt-3
+                    flex
+                    max-h-0
+                    items-center
+                    gap-2
+                    overflow-hidden
+                    text-[10px]
+                    font-bold
+                    uppercase
+                    tracking-[0.25em]
+                    text-white/80
+                    opacity-0
+                    transition-all
+                    duration-500
+                    group-hover:max-h-10
+                    group-hover:opacity-100
+                  "
+                >
+                  <span>Explore Collection</span>
+
+                  <FiArrowUpRight
+                    size={13}
+                    className="
+                      transition-transform
+                      duration-300
+                      group-hover:translate-x-1
+                    "
+                  />
+                </div>
               </div>
+
+              {/* =====================================
+                  SHINE
+              ===================================== */}
+
+              <div
+                className="
+                  pointer-events-none
+                  absolute
+                  -left-[100%]
+                  top-0
+                  z-10
+                  h-full
+                  w-[60%]
+                  skew-x-[-20deg]
+                  bg-gradient-to-r
+                  from-transparent
+                  via-white/20
+                  to-transparent
+                  transition-all
+                  duration-1000
+                  group-hover:left-[130%]
+                "
+              />
+
+              {/* =====================================
+                  OUTER BORDER
+              ===================================== */}
+
+              <div
+                className="
+                  pointer-events-none
+                  absolute
+                  inset-0
+                  z-30
+                  border
+                  border-white/0
+                  transition-all
+                  duration-500
+                  group-hover:border-lime-400/70
+                "
+              />
+
+              {/* =====================================
+                  INNER BORDER
+              ===================================== */}
+
+              <div
+                className="
+                  pointer-events-none
+                  absolute
+                  inset-2
+                  z-30
+                  border
+                  border-white/0
+                  transition-all
+                  duration-700
+                  group-hover:border-white/20
+                "
+              />
             </div>
           ))}
         </div>
