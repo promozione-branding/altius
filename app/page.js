@@ -10,6 +10,7 @@ import Form from '../compoents/Home/Form'
 import WhyChooseUs from '../compoents/Home/WhyChooseUs'
 import ShopByCategory from '../compoents/Home/ShopByCategory'
 import CTA from '@/compoents/Home/CTA'
+import Testimonials from '@/compoents/Home/Testimonials'
 
 export default function page() {
   return (
@@ -22,6 +23,7 @@ export default function page() {
     <Collections/>
     <Form/>
     <Faq/>
+    <Testimonials/>
     <CTA/>
     </>
   )

@@ -454,8 +454,8 @@ export default function Hero() {
             text-white
             transition-colors
             duration-300
-            hover:bg-white
-            hover:text-black
+            hover:bg-[#85a30f]
+            hover:text-white
           "
         >
           Shop Now
