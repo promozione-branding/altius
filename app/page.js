@@ -11,6 +11,7 @@ import WhyChooseUs from '../compoents/Home/WhyChooseUs'
 import ShopByCategory from '../compoents/Home/ShopByCategory'
 import CTA from '@/compoents/Home/CTA'
 import Testimonials from '@/compoents/Home/Testimonials'
+import CTA2 from '@/compoents/Home/CTA2'
 
 export default function page() {
   return (
@@ -25,6 +26,7 @@ export default function page() {
     <Faq/>
     <Testimonials/>
     <CTA/>
+    <CTA2/>
     </>
   )
 }

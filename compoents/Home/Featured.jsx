@@ -1,7 +1,11 @@
 "use client";
 
-import React from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import { FiArrowRight, FiStar } from "react-icons/fi";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const products = [
   {
@@ -19,39 +23,151 @@ const products = [
     name: "Outdoor Light",
     price: "$70.00",
     oldPrice: "$80.00",
-    image:"/OutdoorLight.webp"  },
+    image: "/OutdoorLight.webp",
+  },
   {
     name: "Square Panel Light",
     price: "$40.00",
     oldPrice: "$50.00",
-    image:"/SquarePanelLight.webp"  },
+    image: "/SquarePanelLight.webp",
+  },
   {
     name: "Flood Light",
     price: "$80.00",
     oldPrice: "$90.00",
-    image:"/FloodLight.webp"  },
+    image: "/FloodLight.webp",
+  },
   {
     name: "Downlight Led",
     price: "$60.00",
-    image:"/COBLEDDownlight.webp"  },
+    image: "/COBLEDDownlight.webp",
+  },
 ];
 
 export default function Featured() {
+  const sectionRef = useRef(null);
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      // ==========================================
+      // INITIAL STATES
+      // ==========================================
+
+      gsap.set("#featured-label", {
+        x: -100,
+        opacity: 0,
+      });
+
+      gsap.set("#featured-heading", {
+        x: -120,
+        opacity: 0,
+      });
+
+      gsap.set("#featured-description", {
+        x: -100,
+        opacity: 0,
+      });
+
+      gsap.set("#featured-cta", {
+        x: -80,
+        opacity: 0,
+      });
+
+      // ==========================================
+      // SCROLL TRIGGER TIMELINE
+      // ==========================================
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 75%",
+          toggleActions: "play none none reverse",
+        },
+
+        defaults: {
+          ease: "power3.out",
+        },
+      });
+
+      // ==========================================
+      // LABEL
+      // ==========================================
+
+      tl.to(
+        "#featured-label",
+        {
+          x: 0,
+          opacity: 1,
+          duration: 0.7,
+        },
+        0
+      );
+
+      // ==========================================
+      // HEADING
+      // ==========================================
+
+      tl.to(
+        "#featured-heading",
+        {
+          x: 0,
+          opacity: 1,
+          duration: 1,
+          ease: "power4.out",
+        },
+        0.15
+      );
+
+      // ==========================================
+      // DESCRIPTION
+      // ==========================================
+
+      tl.to(
+        "#featured-description",
+        {
+          x: 0,
+          opacity: 1,
+          duration: 0.8,
+        },
+        0.4
+      );
+
+      // ==========================================
+      // CTA
+      // ==========================================
+
+      tl.to(
+        "#featured-cta",
+        {
+          x: 0,
+          opacity: 1,
+          duration: 0.75,
+          ease: "power3.out",
+        },
+        0.6
+      );
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
     <section
+      ref={sectionRef}
       className="
         relative
         overflow-x-clip
         bg-[#faf9f6]
         py-6
-        
         md:py-16
       "
     >
       <div className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-10">
+
         {/* =================================================
             TOP LABEL
         ================================================= */}
+
         <div className="mb-10 flex items-center gap-3">
           <span className="h-[1px] w-8 bg-[#85a30f]" />
 
@@ -71,6 +187,7 @@ export default function Featured() {
         {/* =================================================
             MAIN GRID
         ================================================= */}
+
         <div
           className="
             relative
@@ -84,8 +201,9 @@ export default function Featured() {
           "
         >
           {/* =================================================
-              LEFT CONTENT - STICKY ON DESKTOP
+              LEFT CONTENT
           ================================================= */}
+
           <div
             className="
               relative
@@ -95,7 +213,8 @@ export default function Featured() {
               lg:self-start
             "
           >
-            {/* Decorative glow */}
+            {/* Decorative Glow */}
+
             <div
               className="
                 pointer-events-none
@@ -111,8 +230,11 @@ export default function Featured() {
             />
 
             <div className="relative z-10">
-              {/* Small heading */}
+
+              {/* Small Heading */}
+
               <p
+                id="featured-label"
                 className="
                   mb-4
                   text-sm
@@ -125,8 +247,10 @@ export default function Featured() {
                 Illuminate your space
               </p>
 
-              {/* Main heading */}
+              {/* Main Heading */}
+
               <h2
+                id="featured-heading"
                 className="
                   max-w-[500px]
                   text-5xl
@@ -141,11 +265,15 @@ export default function Featured() {
               >
                 Featured
                 <br />
-                <span className="text-[#85a30f]">Products</span>
+                <span className="text-[#85a30f]">
+                  Products
+                </span>
               </h2>
 
               {/* Description */}
+
               <p
+                id="featured-description"
                 className="
                   mt-7
                   max-w-[390px]
@@ -155,12 +283,15 @@ export default function Featured() {
                   sm:text-base
                 "
               >
-                Discover lighting pieces designed to bring warmth, character,
-                and modern elegance to every corner of your space.
+                Discover lighting pieces designed to bring warmth,
+                character, and modern elegance to every corner of
+                your space.
               </p>
 
               {/* CTA */}
+
               <a
+                id="featured-cta"
                 href="/"
                 className="
                   group
@@ -185,6 +316,7 @@ export default function Featured() {
                 "
               >
                 Explore Products
+
                 <FiArrowRight
                   size={18}
                   className="
@@ -200,8 +332,10 @@ export default function Featured() {
           {/* =================================================
               PRODUCTS
           ================================================= */}
+
           <div>
-            {/* Products heading */}
+            {/* Products Heading */}
+
             <div
               className="
                 mb-5
@@ -242,6 +376,7 @@ export default function Featured() {
               </div>
 
               {/* Desktop View All */}
+
               <a
                 href="/shop"
                 className="
@@ -259,6 +394,7 @@ export default function Featured() {
                 "
               >
                 View All
+
                 <FiArrowRight size={15} />
               </a>
             </div>
@@ -266,6 +402,7 @@ export default function Featured() {
             {/* =================================================
                 PRODUCT GRID
             ================================================= */}
+
             <div
               className="
                 grid
@@ -281,7 +418,6 @@ export default function Featured() {
                     group
                     relative
                     overflow-hidden
-                    
                     border
                     border-neutral-200
                     bg-white
@@ -293,6 +429,7 @@ export default function Featured() {
                   "
                 >
                   {/* Product Image */}
+
                   <div
                     className="
                       relative
@@ -317,8 +454,11 @@ export default function Featured() {
                   </div>
 
                   {/* Product Details */}
+
                   <div className="p-3 sm:p-4">
+
                     {/* Product Name */}
+
                     <h4
                       className="
                         truncate
@@ -332,6 +472,7 @@ export default function Featured() {
                     </h4>
 
                     {/* Rating */}
+
                     <div
                       className="
                         mt-2
@@ -356,13 +497,13 @@ export default function Featured() {
           {/* =================================================
               LIFESTYLE IMAGE
           ================================================= */}
+
           <div
             className="
               relative
               h-full
               overflow-hidden
               rounded-2xl
-              
             "
           >
             <img
@@ -381,6 +522,7 @@ export default function Featured() {
             />
 
             {/* Dark Gradient */}
+
             <div
               className="
                 absolute
@@ -393,6 +535,7 @@ export default function Featured() {
             />
 
             {/* Image Content */}
+
             <div
               className="
                 absolute
@@ -402,7 +545,8 @@ export default function Featured() {
                 sm:p-8
               "
             >
-              {/* Light indicator */}
+              {/* Light Indicator */}
+
               <div
                 className="
                   mb-4
@@ -429,7 +573,8 @@ export default function Featured() {
                 />
               </div>
 
-              {/* Small text */}
+              {/* Small Text */}
+
               <p
                 className="
                   text-xs
@@ -442,7 +587,8 @@ export default function Featured() {
                 Light your way
               </p>
 
-              {/* Image heading */}
+              {/* Image Heading */}
+
               <h3
                 className="
                   mt-2
@@ -460,6 +606,7 @@ export default function Featured() {
               </h3>
 
               {/* Collection Link */}
+
               <a
                 href="/collections"
                 className="
@@ -474,6 +621,7 @@ export default function Featured() {
                 "
               >
                 Discover Collection
+
                 <span
                   className="
                     flex
@@ -500,6 +648,7 @@ export default function Featured() {
         {/* =================================================
             MOBILE VIEW ALL
         ================================================= */}
+
         <div className="mt-8 flex justify-center sm:hidden">
           <a
             href="/shop"
@@ -515,6 +664,7 @@ export default function Featured() {
             "
           >
             View All Products
+
             <FiArrowRight size={15} />
           </a>
         </div>
