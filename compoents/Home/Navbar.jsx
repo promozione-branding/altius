@@ -71,7 +71,7 @@ export default function Navbar() {
 
         ${
           scrolled
-            ? "bg-white shadow-[0_4px_25px_rgba(0,0,0,0.06)]"
+            ? "bg-black shadow-[0_4px_25px_rgba(0,0,0,0.06)]"
             : "bg-transparent"
         }
       `}
@@ -135,7 +135,7 @@ export default function Navbar() {
                       left-1/2
                       -translate-x-1/2
                       rounded-sm
-                      bg-[#e84b23]
+                      bg-[#85a30f]
                       px-2
                       py-1
                       text-[10px]
@@ -155,7 +155,7 @@ export default function Navbar() {
                         border-t-[5px]
                         border-l-transparent
                         border-r-transparent
-                        border-t-[#e84b23]
+                        border-t-[#85a30f]
                       "
                     />
                   </span>
@@ -176,8 +176,8 @@ export default function Navbar() {
 
                     ${
                       scrolled
-                        ? "text-neutral-800 hover:text-[#b28b32]"
-                        : "text-white hover:text-[#e4c56e]"
+                        ? "text-white hover:text-[#85a30f]"
+                        : "text-white hover:text-[#85a30f]"
                     }
                   `}
                 >
@@ -203,7 +203,7 @@ export default function Navbar() {
                     left-0
                     h-[2px]
                     w-0
-                    bg-[#c9a44c]
+                    bg-[#85a30f]
                     transition-all
                     duration-300
                     group-hover:w-full
@@ -256,7 +256,7 @@ export default function Navbar() {
                             text-neutral-700
                             transition-colors
                             hover:bg-[#faf7ef]
-                            hover:text-[#b28b32]
+                            hover:text-[#85a30f]
                           "
                         >
                           {category}
@@ -293,7 +293,7 @@ export default function Navbar() {
                   scrolled
                     ? `
                       border-[#85a30f]
-                      text-neutral-800
+                      text-white
                       hover:bg-[#85a30f]
                       hover:text-white
                     `
@@ -395,7 +395,7 @@ export default function Navbar() {
                     <span
                       className="
                         rounded-sm
-                        bg-[#e84b23]
+                        bg-[#85a30f]
                         px-2
                         py-1
                         text-[9px]

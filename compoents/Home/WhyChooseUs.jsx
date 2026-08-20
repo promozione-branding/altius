@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -31,10 +32,11 @@ const reasons = [
   {
     icon: FaHeadset,
     title: "Free Consultation",
-    description:
-      "Expert advice tailored to your unique architectural space.",
+    description: "Expert advice tailored to your unique architectural space.",
   },
 ];
+
+const ledImages = ["/LEDTrackLight1.webp", "/LEDTrackLight2.webp"];
 
 export default function WhyChooseUs() {
   const sectionRef = useRef(null);
@@ -42,6 +44,8 @@ export default function WhyChooseUs() {
   const subtitleRef = useRef(null);
   const lineRef = useRef(null);
   const cardsRef = useRef(null);
+  const leftLightRef = useRef(null);
+  const rightLightRef = useRef(null);
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -51,6 +55,48 @@ export default function WhyChooseUs() {
         y: 25,
       });
 
+      gsap.set(leftLightRef.current, {
+        x: -400,
+        opacity: 0,
+        rotate: -15,
+      });
+
+      gsap.set(rightLightRef.current, {
+        x: 400,
+        opacity: 0,
+        rotate: 15,
+      });
+
+      const lightTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+      });
+
+      lightTl
+        // Left light comes from left
+        .to(leftLightRef.current, {
+          x: 0,
+          opacity: 1,
+          rotate: 0,
+          duration: 1.2,
+          ease: "power4.out",
+        })
+
+        // Right light comes from right
+        .to(
+          rightLightRef.current,
+          {
+            x: 0,
+            opacity: 1,
+            rotate: 0,
+            duration: 1.2,
+            ease: "power4.out",
+          },
+          "-=0.8",
+        );
       gsap.set(headingRef.current, {
         opacity: 0,
         y: 50,
@@ -105,7 +151,7 @@ export default function WhyChooseUs() {
             duration: 0.9,
             ease: "power4.out",
           },
-          "-=0.4"
+          "-=0.4",
         )
         .to(
           lineRef.current,
@@ -114,19 +160,15 @@ export default function WhyChooseUs() {
             duration: 0.7,
             ease: "power3.inOut",
           },
-          "-=0.5"
+          "-=0.5",
         )
-        .to(
-          ".why-card",
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.3,
-            stagger: 0.15,
-            ease: "power3.out",
-          },
-          
-        )
+        .to(".why-card", {
+          opacity: 1,
+          y: 0,
+          duration: 0.3,
+          stagger: 0.15,
+          ease: "power3.out",
+        })
         .to(
           ".why-icon",
           {
@@ -137,7 +179,7 @@ export default function WhyChooseUs() {
             stagger: 0.15,
             ease: "back.out(1.7)",
           },
-          "-=0.3"
+          "-=0.3",
         )
         .to(
           ".why-title",
@@ -148,7 +190,7 @@ export default function WhyChooseUs() {
             stagger: 0.15,
             ease: "power3.out",
           },
-          "-=0.5"
+          "-=0.5",
         )
         .to(
           ".why-description",
@@ -159,7 +201,7 @@ export default function WhyChooseUs() {
             stagger: 0.15,
             ease: "power3.out",
           },
-          "-=0.45"
+          "-=0.45",
         );
 
       // Card hover animations
@@ -220,9 +262,29 @@ export default function WhyChooseUs() {
   return (
     <section
       ref={sectionRef}
-      className="overflow-hidden bg-gray-50 py-10 md:py-20"
+      className="overflow-hidden relative bg-gray-50 py-10 md:py-16"
       data-purpose="why-choose-us"
     >
+      <div ref={leftLightRef} className="absolute -top-13 left-15 z-10">
+        <Image
+          height={100}
+          width={100}
+          alt="LED Track Light"
+          className="h-60 w-60"
+          src="/LEDTrackLight1.webp"
+        />
+      </div>
+
+      {/* Right Track Light */}
+      <div ref={rightLightRef} className="absolute -top-13 right-15 z-10">
+        <Image
+          height={100}
+          width={100}
+          alt="LED Track Light"
+          className="h-60 w-60"
+          src="/LEDTrackLight2.webp"
+        />
+      </div>
       <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12 xl:px-16">
         {/* Heading */}
         <div className="mb-10 text-center sm:mb-16">
@@ -240,10 +302,7 @@ export default function WhyChooseUs() {
             Why Choose Elstrong
           </h2>
 
-          <div
-            ref={lineRef}
-            className="mx-auto mt-5 h-px w-16 bg-gray-900"
-          />
+          <div ref={lineRef} className="mx-auto mt-5 h-px w-16 bg-gray-900" />
         </div>
 
         {/* Features */}

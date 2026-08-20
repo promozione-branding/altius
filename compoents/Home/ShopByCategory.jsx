@@ -8,35 +8,24 @@ gsap.registerPlugin(ScrollTrigger);
 
 const categories = [
   {
-    title: "Ceiling Lights",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuA8nhTiZPwHZzyy4N19AGU90gMFn3eEyuiR-KqwkPuW2G266DlDG1gvkrAqpDOxq83TzN2aLiB4IN8h7KFLYE5XkcGeheoiGSpKpQTblzfkyIQzpg3bEutTaG7D_WCfER8tmM_QFexGNH0jagNFbraEsLyK_s9eJxMZuhNWXwX4c79duMeSm_8oG_V2eASc8HSbuWIUDI-BIUGeIEOQMBdOZvaN0pt0_k9ojaKS3xrBro7B0op_MI61",
-  },
+    title: "Downlight Led",
+    image:"/COBLEDDownlight.webp"  },
   {
-    title: "Pendant Lights",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAWYWeRJkXYQR8k9NCLYumPu59zX2kI8iq0DnpuITThnH2-Z_B8KvVw9T4WvOglHDtdotIzq7XWZX09u5QrNFxOp8YMH7R2DRMYzs4RFWIIM-Id7fNo7S0vDShlGRG7yPqTViRiqwcYdr9xDXg_nYDh-RdEGUl2rL7_ud0injFwqiYWbaI1pXVZvSlfgMsWCjgfcXTdf9EzSrQS7P1xZ8mkvd4ekmNLLyfR0bLtJWf3RRxuHLdjpZcN",
-  },
+    title: "Flood Light",
+    image:"/FloodLight.webp"  },
   {
-    title: "Wall Lights",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuA8nhTiZPwHZzyy4N19AGU90gMFn3eEyuiR-KqwkPuW2G266DlDG1gvkrAqpDOxq83TzN2aLiB4IN8h7KFLYE5XkcGeheoiGSpKpQTblzfkyIQzpg3bEutTaG7D_WCfER8tmM_QFexGNH0jagNFbraEsLyK_s9eJxMZuhNWXwX4c79duMeSm_8oG_V2eASc8HSbuWIUDI-BIUGeIEOQMBdOZvaN0pt0_k9ojaKS3xrBro7B0op_MI61",
-  },
+    title: "Square Panel Light",
+    image:"/SquarePanelLight.webp"  },
   {
-    title: "Table Lamps",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAU2sNi7WvYnOuSMD9HeP3EbSHCFCn31iX28JQFtYF8qL1wKBNWMUZ2qdbe57xeWp45VZAJ_12raC2xDPhf_qjtRv0yfMDW9_QS9ePkaUAQc35P0DmFAfUv1MDcHYoVQIjSdpIYM_1xeS_Wl-JA466YKzh_iEgH4yZem4HkB2DSwwS1Ray7MzN5LxA1k_yW6iBQGTMPxmdFetkOsnFhUkOQ8LHIRtb7fzilGfqdWru1QKxaoYn8e-F1",
-  },
+    title: "LED Track Light",
+    image:"/LEDTrackLight.webp"  },
   {
-    title: "Floor Lamps",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAWYWeRJkXYQR8k9NCLYumPu59zX2kI8iq0DnpuITThnH2-Z_B8KvVw9T4WvOglHDtdotIzq7XWZX09u5QrNFxOp8YMH7R2DRMYzs4RFWIIM-Id7fNo7S0vDShlGRG7yPqTViRiqwcYdr9xDXg_nYDh-RdEGUl2rL7_ud0injFwqiYWbaI1pXVZvSlfgMsWCjgfcXTdf9EzSrQS7P1xZ8mkvd4ekmNLLyfR0bLtJWf3RRxuHLdjpZcN",
-  },
+    title: "Outdoor Light",
+    image:"/OutdoorLight.webp"  },
+  ,
   {
     title: "LED Collection",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAU2sNi7WvYnOuSMD9HeP3EbSHCFCn31iX28JQFtYF8qL1wKBNWMUZ2qdbe57xeWp45VZAJ_12raC2xDPhf_qjtRv0yfMDW9_QS9ePkaUAQc35P0DmFAfUv1MDcHYoVQIjSdpIYM_1xeS_Wl-JA466YKzh_iEgH4yZem4HkB2DSwwS1Ray7MzN5LxA1k_yW6iBQGTMPxmdFetkOsnFhUkOQ8LHIRtb7fzilGfqdWru1QKxaoYn8e-F1",
-  },
+    image:"/led.webp " },
 ];
 
 export default function ShopByCategory() {

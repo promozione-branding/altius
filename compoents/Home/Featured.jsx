@@ -5,45 +5,35 @@ import { FiArrowRight, FiStar } from "react-icons/fi";
 
 const products = [
   {
-    name: "Ambient Glow",
+    name: "Led Light",
     price: "$60.00",
-    image:
-      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=700&q=85",
+    image: "/led.webp",
   },
   {
-    name: "Golden Glow",
+    name: "LED Track Light",
     price: "$40.00",
     oldPrice: "$50.00",
-    image:
-      "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=700&q=85",
+    image: "/LEDTrackLight.webp",
   },
   {
-    name: "Aurora Lamp",
+    name: "Outdoor Light",
     price: "$70.00",
     oldPrice: "$80.00",
-    image:
-      "https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=700&q=85",
-  },
+    image:"/OutdoorLight.webp"  },
   {
-    name: "Frosted Fixture",
+    name: "Square Panel Light",
     price: "$40.00",
     oldPrice: "$50.00",
-    image:
-      "https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=700&q=85",
-  },
+    image:"/SquarePanelLight.webp"  },
   {
-    name: "Beacon Light",
+    name: "Flood Light",
     price: "$80.00",
     oldPrice: "$90.00",
-    image:
-      "https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?auto=format&fit=crop&w=700&q=85",
-  },
+    image:"/FloodLight.webp"  },
   {
-    name: "Ambient Glow",
+    name: "Downlight Led",
     price: "$60.00",
-    image:
-      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=700&q=85",
-  },
+    image:"/COBLEDDownlight.webp"  },
 ];
 
 export default function Featured() {
