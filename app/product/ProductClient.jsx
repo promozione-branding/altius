@@ -1,6 +1,7 @@
 "use client";
 
 import CTA from "@/compoents/Home/CTA";
+import CTA2 from "@/compoents/Home/CTA2";
 import React, { useState } from "react";
 import {
   FaHeart,
@@ -661,7 +662,7 @@ export default function ProductClient() {
           </div>
         </section>
       </main>
-      <CTA />
+      <CTA2 />
     </>
   );
 }
