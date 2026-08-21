@@ -16,8 +16,8 @@ import {
 
 const wattageImages = {
   "12W": "/led.webp",
-  "20W": "/led.webp",
-  "30W": "/led.webp",
+  "20W": "/light3.jpeg",
+  "30W": "/Round1.jpeg",
 };
 const relatedProducts = [
   {

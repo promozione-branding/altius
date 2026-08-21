@@ -10,8 +10,8 @@ gsap.registerPlugin(ScrollTrigger);
 const categories = [
   {
     title: "Downlight LED",
-    image: "/COBLEDDownlight.webp",
-    hoverImage: "/FloodLight.webp",
+    image: "/light3.jpeg",
+    hoverImage: "/Round1.jpeg",
   },
   {
     title: "Flood Light",

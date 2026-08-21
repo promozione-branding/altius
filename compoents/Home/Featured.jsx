@@ -11,7 +11,7 @@ const products = [
   {
     name: "Led Light",
     price: "$60.00",
-    image: "/led.webp",
+    image: "/light3.jpeg",
   },
   {
     name: "LED Track Light",
@@ -507,7 +507,7 @@ export default function Featured() {
             "
           >
             <img
-              src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=90"
+              src="/new.png"
               alt="Modern interior lighting"
               className="
                 absolute
