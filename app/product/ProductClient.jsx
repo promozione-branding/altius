@@ -198,7 +198,7 @@ export default function ProductClient() {
           <div className="flex flex-col pt-2 md:col-span-6 md:pl-6 md:pt-0 lg:pl-8">
             {/* ================= TITLE ================= */}
             <div className="mb-4 flex items-start justify-between gap-4">
-              <h1 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+              <h1 className="text-3xl inter font-semibold tracking-tight text-gray-900 sm:text-4xl">
                 LED LIGHT
               </h1>
             </div>
@@ -210,79 +210,6 @@ export default function ProductClient() {
               cast a soft, welcoming light, it is the perfect centerpiece for
               modern dining and living areas.
             </p>
-
-            {/* ================= WATTAGE ================= */}
-            {/* ================= WATTAGE ================= */}
-            <div className="mb-8">
-              <div className="grid grid-cols-3 gap-3">
-                {wattages.map((watt) => {
-                  const isSelected = selectedWattage === watt;
-
-                  return (
-                    <button
-                      key={watt}
-                      type="button"
-                      onClick={() => {
-                        setSelectedWattage(watt);
-                        setSelectedImage(0);
-                      }}
-                      aria-pressed={isSelected}
-                      className={`
-            relative
-            flex
-            h-[76px]
-            flex-col
-            items-center
-            justify-center
-            overflow-hidden
-            border
-            transition-all
-            duration-300
-            focus:outline-none
-            focus:ring-2
-            focus:ring-[#85a30f]
-            focus:ring-offset-2
-
-            ${
-              isSelected
-                ? "border-[#85a30f] bg-[#85a30f] text-white shadow-md"
-                : "border-gray-200 bg-white text-gray-900 hover:border-[#85a30f] hover:shadow-sm"
-            }
-          `}
-                    >
-                      {/* Selected indicator */}
-                      {isSelected && (
-                        <span
-                          className="
-                absolute
-                right-2.5
-                top-2.5
-                h-2
-                w-2
-                rounded-full
-                bg-white
-              "
-                        />
-                      )}
-
-                      <span className="text-lg font-semibold">{watt}</span>
-
-                      <span
-                        className={`
-              mt-1
-              text-[10px]
-              uppercase
-              tracking-[0.16em]
-              ${isSelected ? "font-semibold text-white/80" : "text-gray-400"}
-            `}
-                      >
-                        LED Power
-                      </span>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
 
             {/* ================= KEY FEATURES ================= */}
             <div className="border-t border-gray-200 mb-16 pt-6">
@@ -372,6 +299,79 @@ export default function ProductClient() {
                     </p>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            {/* ================= WATTAGE ================= */}
+            {/* ================= WATTAGE ================= */}
+            <div className="mb-8">
+              <div className="grid grid-cols-3 gap-3">
+                {wattages.map((watt) => {
+                  const isSelected = selectedWattage === watt;
+
+                  return (
+                    <button
+                      key={watt}
+                      type="button"
+                      onClick={() => {
+                        setSelectedWattage(watt);
+                        setSelectedImage(0);
+                      }}
+                      aria-pressed={isSelected}
+                      className={`
+            relative
+            flex
+            h-[76px]
+            flex-col
+            items-center
+            justify-center
+            overflow-hidden
+            border
+            transition-all
+            duration-300
+            focus:outline-none
+            focus:ring-2
+            focus:ring-[#85a30f]
+            focus:ring-offset-2
+
+            ${
+              isSelected
+                ? "border-[#85a30f] bg-[#85a30f] text-white shadow-md"
+                : "border-gray-200 bg-white text-gray-900 hover:border-[#85a30f] hover:shadow-sm"
+            }
+          `}
+                    >
+                      {/* Selected indicator */}
+                      {isSelected && (
+                        <span
+                          className="
+                absolute
+                right-2.5
+                top-2.5
+                h-2
+                w-2
+                rounded-full
+                bg-white
+              "
+                        />
+                      )}
+
+                      <span className="text-lg font-semibold">{watt}</span>
+
+                      <span
+                        className={`
+              mt-1
+              text-[10px]
+              uppercase
+              tracking-[0.16em]
+              ${isSelected ? "font-semibold text-white/80" : "text-gray-400"}
+            `}
+                      >
+                        LED Power
+                      </span>
+                    </button>
+                  );
+                })}
               </div>
             </div>
 

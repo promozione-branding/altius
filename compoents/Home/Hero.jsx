@@ -185,7 +185,7 @@ export default function Hero() {
         {
           opacity: 1,
           scale: 1,
-          duration: 1.4,
+          duration: 0.3,
           ease: "power2.out",
         },
         "-=0.15",
@@ -200,7 +200,7 @@ export default function Hero() {
         {
           scale: 1,
           filter: "brightness(1)",
-          duration: 1.5,
+          duration: 0.7,
           ease: "power2.out",
         },
         "-=1.1",
@@ -275,7 +275,7 @@ export default function Hero() {
           y: -120,
           height: 0,
           opacity: 0,
-          duration: 0.8,
+          duration: 0.5,
           ease: "power3.inOut",
         },
         "+=0.35",

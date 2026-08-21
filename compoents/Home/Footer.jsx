@@ -10,7 +10,6 @@ import {
   FiMail,
   FiPhone,
   FiMapPin,
-  FiArrowRight,
 } from "react-icons/fi";
 
 export default function Footer() {
@@ -18,6 +17,7 @@ export default function Footer() {
     <footer className="relative overflow-hidden bg-[#151515] text-white">
 
       {/* ================= DECORATIVE GLOW ================= */}
+
       <div
         className="
           pointer-events-none
@@ -46,17 +46,56 @@ export default function Footer() {
         "
       />
 
-      <div className="relative mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-10">
+      {/* =================================================
+          GIANT COMPANY WATERMARK
+          ================================================= */}
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -right-15
+          z-0
+          bottom-20
+          flex
+          w-full
+          justify-center
+          overflow-hidden
+          px-2
+          leading-none
+          select-none
+        "
+      >
+        <span
+          className="
+            block
+            whitespace-nowrap
+            text-center
+            font-serif
+            text-[4vw]
+            font-bold
+            tracking-[-0.06em]
+            text-white/[0.10]
+          "
+        >
+          <span className="text-[#85A30F]/[0.10]">ELSTRONG </span> BY ALTIUS LIGHTING
+        </span>
+      </div>
+
+      {/* =================================================
+          MAIN CONTENT
+          ================================================= */}
+
+      <div className="relative z-10 mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-10">
 
         {/* =================================================
             NEWSLETTER / TOP SECTION
         ================================================= */}
-      
-
 
         {/* =================================================
             MAIN FOOTER GRID
         ================================================= */}
+
         <div
           className="
             grid
@@ -73,6 +112,7 @@ export default function Footer() {
           {/* =================================================
               BRAND
           ================================================= */}
+
           <div>
 
             <a
@@ -89,23 +129,26 @@ export default function Footer() {
               <span className="text-[#85a30f]">.</span>
             </a>
 
-            <p className="
-              mt-5
-              max-w-sm
-              text-sm
-              leading-7
-              text-white/45
-            ">
+            <p
+              className="
+                mt-5
+                max-w-sm
+                text-sm
+                leading-7
+                text-white/45
+              "
+            >
               Premium LED lighting solutions created to bring
               performance, precision and timeless design to
               every space.
             </p>
 
-
             {/* Contact */}
+
             <div className="mt-7 space-y-4">
 
               <a
+                href="mailto:elstrong@email.com"
                 className="
                   flex
                   items-center
@@ -123,7 +166,6 @@ export default function Footer() {
 
                 elstrong@email.com
               </a>
-
 
               <a
                 href="tel:+911234567890"
@@ -145,15 +187,16 @@ export default function Footer() {
                 +91 12345 67890
               </a>
 
-
-              <div className="
-                flex
-                items-start
-                gap-3
-                text-sm
-                leading-6
-                text-white/50
-              ">
+              <div
+                className="
+                  flex
+                  items-start
+                  gap-3
+                  text-sm
+                  leading-6
+                  text-white/50
+                "
+              >
                 <FiMapPin
                   size={16}
                   className="mt-1 shrink-0 text-[#85a30f]"
@@ -166,8 +209,8 @@ export default function Footer() {
 
             </div>
 
-
             {/* Social Icons */}
+
             <div className="mt-7 flex items-center gap-3">
 
               <a
@@ -192,7 +235,6 @@ export default function Footer() {
                 <FiInstagram size={16} />
               </a>
 
-
               <a
                 href="#"
                 aria-label="Facebook"
@@ -215,7 +257,6 @@ export default function Footer() {
                 <FiFacebook size={16} />
               </a>
 
-
               <a
                 href="#"
                 aria-label="LinkedIn"
@@ -237,7 +278,6 @@ export default function Footer() {
               >
                 <FiLinkedin size={16} />
               </a>
-
 
               <a
                 href="#"
@@ -265,20 +305,22 @@ export default function Footer() {
 
           </div>
 
-
           {/* =================================================
               COMPANY
           ================================================= */}
+
           <div>
 
-            <h3 className="
-              mb-6
-              text-[10px]
-              font-semibold
-              uppercase
-              tracking-[0.2em]
-              text-[#85a30f]
-            ">
+            <h3
+              className="
+                mb-6
+                text-[10px]
+                font-semibold
+                uppercase
+                tracking-[0.2em]
+                text-[#85a30f]
+              "
+            >
               Company
             </h3>
 
@@ -291,7 +333,9 @@ export default function Footer() {
                 ["Contact", "/contact"],
                 ["Careers", "/careers"],
               ].map(([label, href]) => (
+
                 <li key={label}>
+
                   <a
                     href={href}
                     className="
@@ -319,27 +363,31 @@ export default function Footer() {
                       "
                     />
                   </a>
+
                 </li>
+
               ))}
 
             </ul>
 
           </div>
 
-
           {/* =================================================
               SERVICES
           ================================================= */}
+
           <div>
 
-            <h3 className="
-              mb-6
-              text-[10px]
-              font-semibold
-              uppercase
-              tracking-[0.2em]
-              text-[#85a30f]
-            ">
+            <h3
+              className="
+                mb-6
+                text-[10px]
+                font-semibold
+                uppercase
+                tracking-[0.2em]
+                text-[#85a30f]
+              "
+            >
               Solutions
             </h3>
 
@@ -352,7 +400,9 @@ export default function Footer() {
                 ["Architectural Lighting", "/architectural-lighting"],
                 ["Smart Lighting", "/smart-lighting"],
               ].map(([label, href]) => (
+
                 <li key={label}>
+
                   <a
                     href={href}
                     className="
@@ -380,27 +430,31 @@ export default function Footer() {
                       "
                     />
                   </a>
+
                 </li>
+
               ))}
 
             </ul>
 
           </div>
 
-
           {/* =================================================
               SUPPORT
           ================================================= */}
+
           <div>
 
-            <h3 className="
-              mb-6
-              text-[10px]
-              font-semibold
-              uppercase
-              tracking-[0.2em]
-              text-[#85a30f]
-            ">
+            <h3
+              className="
+                mb-6
+                text-[10px]
+                font-semibold
+                uppercase
+                tracking-[0.2em]
+                text-[#85a30f]
+              "
+            >
               Information
             </h3>
 
@@ -413,7 +467,9 @@ export default function Footer() {
                 ["Terms & Conditions", "/terms"],
                 ["Return Policy", "/return-policy"],
               ].map(([label, href]) => (
+
                 <li key={label}>
+
                   <a
                     href={href}
                     className="
@@ -441,7 +497,9 @@ export default function Footer() {
                       "
                     />
                   </a>
+
                 </li>
+
               ))}
 
             </ul>
@@ -450,12 +508,14 @@ export default function Footer() {
 
         </div>
 
-
         {/* =================================================
             BOTTOM BAR
         ================================================= */}
+
         <div
           className="
+            relative
+            z-20
             flex
             flex-col
             gap-5
@@ -468,65 +528,71 @@ export default function Footer() {
           "
         >
 
-          <p className="
-            text-[11px]
-            text-white/30
-          ">
+          <p
+            className="
+              text-[11px]
+              text-white/30
+            "
+          >
             © 2026 ELSTRONG . All rights reserved.
           </p>
 
+          <div
+            className="
+              flex
+              flex-wrap
+              items-center
+              gap-2
+              text-[10px]
+              tracking-wider
+              text-white/30
+            "
+          >
 
-         <div
-  className="
-    flex
-    flex-wrap
-    items-center
-    gap-2
-    text-[10px]
-    tracking-wider
-    text-white/30
-  "
->
-  <span>
-    Website Designed By
-  </span>
+            <span>
+              Website Designed By
+            </span>
 
-  <a
-    href="https://inquirybazaar.com/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="
-      font-semibold
-      text-white/50
-      transition-colors
-      duration-300
-      hover:text-[#85a30f]
-    "
-  >
-    Inquiry Bazaar Pvt. Ltd.
-  </a>
+            <a
+              href="https://inquirybazaar.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                font-semibold
+                text-white/50
+                transition-colors
+                duration-300
+                hover:text-[#85a30f]
+              "
+            >
+              Inquiry Bazaar Pvt. Ltd.
+            </a>
 
-  <span className="text-white/20">|</span>
+            <span className="text-white/20">
+              |
+            </span>
 
-  <a
-    href="https://inquirybazaar.com/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="
-      font-semibold
-      text-white/50
-      transition-colors
-      duration-300
-      hover:text-[#85a30f]
-    "
-  >
-    B2B Marketplace
-  </a>
-</div>
+            <a
+              href="https://inquirybazaar.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                font-semibold
+                text-white/50
+                transition-colors
+                duration-300
+                hover:text-[#85a30f]
+              "
+            >
+              B2B Marketplace
+            </a>
+
+          </div>
 
         </div>
 
       </div>
+
     </footer>
   );
 }

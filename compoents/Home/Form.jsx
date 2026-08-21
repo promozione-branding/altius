@@ -201,7 +201,7 @@ export default function Form() {
   return (
     <section
       ref={sectionRef}
-      className="overflow-hidden bg-white py-10 md:py-20"
+      className="overflow-hidden bg-white py-10 md:py-14"
       data-purpose="requirements-section"
     >
       <div className="container mx-auto px-6 lg:px-20">
@@ -218,7 +218,7 @@ export default function Form() {
               overflow-hidden
               rounded-lg
               will-change-transform
-              md:h-[450px]
+              md:h-[520px]
             "
           >
             <img
@@ -227,7 +227,7 @@ export default function Form() {
               alt="Luxury Table Lamp"
               className="
                 h-full
-                min-h-[400px]
+                min-h-[450px]
                 w-full
                 object-cover
                 transition-transform
@@ -450,7 +450,47 @@ export default function Form() {
                     "
                   />
                 </div>
+
+                  
               </div>
+
+              <div className="form-field flex flex-col">
+                  <label
+                    htmlFor="product"
+                    className="
+                      mb-2
+                      text-xs
+                      font-bold
+                      uppercase
+                      tracking-widest
+                      text-gray-500
+                    "
+                  >
+                    MESSAGE
+                  </label>
+
+                  <input
+                    id="product"
+                    name="product"
+                    type="text"
+                    value={formData.product}
+                    onChange={handleChange}
+                    placeholder="Type a message"
+                    required
+                    className="
+                      border-b
+                      border-gray-300
+                      bg-transparent
+                      py-2
+                      text-sm
+                      text-gray-900
+                      outline-none
+                      transition-colors
+                      placeholder:text-gray-400
+                      focus:border-black
+                    "
+                  />
+                </div>
 
               {/* =================================
                   SUBMIT

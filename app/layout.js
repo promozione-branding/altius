@@ -24,11 +24,14 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-          <Navbar/>
-      
-      <body className="min-h-full flex flex-col">{children}</body>
-          <Footer/>
+      <style>
+        @import
+        url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+      </style>
+      <Navbar />
 
+      <body className="min-h-full flex flex-col">{children}</body>
+      <Footer />
     </html>
   );
 }

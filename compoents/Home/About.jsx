@@ -274,7 +274,7 @@ export default function About() {
 
       <section
         ref={sectionRef}
-        className="relative overflow-hidden bg-[#f7f6f2] py-6 md:py-16"
+        className="relative overflow-hidden bg-[#f7f6f2] py-6 md:py-13"
       >
         {/* ================= BACKGROUND ACCENT ================= */}
 
@@ -864,8 +864,6 @@ export default function About() {
                 {/* Label */}
                 <div className="absolute right-[20px] z-10 -bottom-26 -translate-y-1/2">
                   {/* HUGE SOFT AMBIENT GLOW */}
-
-                 
 
                   {/* BRIGHT CENTER GLOW */}
 

@@ -233,7 +233,7 @@ export default function ShopByCategory() {
         bg-white
         py-14
         font-serif
-        md:py-24
+        md:py-14
       "
       data-purpose="shop-by-category"
     >

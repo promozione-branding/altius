@@ -1,16 +1,17 @@
-import React from 'react'
-import { FiArrowRight, FiClock, FiCompass, FiFeather } from 'react-icons/fi'
+import React from "react";
+import { FiArrowRight, FiClock, FiCompass, FiFeather } from "react-icons/fi";
+import LEDShowcase from "../../compoents/About/LEDShowcase";
+import LEDFeatures from "@/compoents/About/LEDFeatures";
 
 export default function AboutClient() {
   return (
     <>
-        <section className="mx-auto mt-15 w-full max-w-7xl px-5 py-16 md:px-10 lg:px-16 md:py-24">
-      <div className="grid grid-cols-1 items-end gap-10 lg:grid-cols-12">
-        
-        {/* ================= HEADING ================= */}
-        <div className="mb-6 text-center lg:col-span-12 lg:mb-12">
-          <h1
-            className="
+      <section className="mx-auto mt-20 w-full max-w-7xl px-5 py-6 md:px-10 lg:px-16 md:py-12">
+        <div className="grid grid-cols-1 items-end gap-10 lg:grid-cols-12">
+          {/* ================= HEADING ================= */}
+          <div className="mb-6 text-center lg:col-span-12 lg:mb-1">
+            <h1
+              className="
               mx-auto
               mb-6
               max-w-4xl
@@ -23,15 +24,12 @@ export default function AboutClient() {
               md:text-6xl
               lg:text-7xl
             "
-          >
-            About the{" "}
-            <span className="text-[#85a30f]">
-              Art of Elstrong
-            </span>
-          </h1>
+            >
+              About the <span className="text-[#85a30f]">Art of Elstrong</span>
+            </h1>
 
-          <p
-            className="
+            <p
+              className="
               mx-auto
               max-w-2xl
               text-base
@@ -40,73 +38,54 @@ export default function AboutClient() {
               sm:text-lg
               
             "
-          >
-            At Elstrong, we believe lighting is more than just function;
-            it's the invisible architecture of a space. We craft luminous
-            experiences that transform environments and elevate the everyday.
-          </p>
-        </div>
+            >
+              At Elstrong, we believe lighting is more than just function; it's
+              the invisible architecture of a space. We craft luminous
+              experiences that transform environments and elevate the everyday.
+            </p>
+          </div>
 
-        {/* ================= IMAGE ================= */}
-        <div
-          className="
-            relative
-            h-[55vh]
-            w-full
-            overflow-hidden
-            rounded-sm
-            lg:col-span-12
-            md:h-[90vh]
-          "
-        >
-          {/* Subtle overlay */}
-          <div
-            className="
-              pointer-events-none
-              absolute
-              inset-0
-              z-10
-              bg-black/5
-            "
-          />
-
-          <img
-           src="/ban2.webp"
-            alt="A minimalist high-end interior illuminated with modern LED lighting"
-            className="
-              h-full
-              w-full
-              object-cover
-              object-center
-              transition-transform
-              duration-1000
-              ease-out
-              hover:scale-105
-            "
-          />
+          {/* ================= IMAGE ================= */}
         </div>
-      </div>
-    </section>
-     <section className="w-full bg-gray-100 py-6 md:py-14 ">
+      </section>
+
+      <section className="w-full bg-gray-100 py-6 md:py-14">
         <div className="mx-auto max-w-7xl px-5 md:px-10 lg:px-16">
-          <div className="grid grid-cols-1 items-center gap-y-14 lg:grid-cols-12 lg:gap-x-16">
-            
+          <div className="grid grid-cols-1 items-center gap-y-16 lg:grid-cols-12 lg:gap-x-16">
             {/* ================= TEXT ================= */}
             <div className="order-2 lg:order-1 lg:col-span-5">
-              <div className="space-y-7 lg:pr-10">
-                
+              <div className="space-y-8 lg:pr-8">
                 <div>
-                  <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-[#85a30f]">
-                    Our Story
-                  </p>
+                  <div className="mb-5 flex items-center gap-3">
+                    <span className="h-px w-8 bg-[#85a30f]" />
+                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#85a30f]">
+                      Our Story
+                    </p>
+                  </div>
 
-                  <h2 className="text-4xl font-semibold leading-tight tracking-tight text-gray-900 md:text-5xl">
+                  <h2 className="text-4xl font-semibold leading-[1.1] tracking-tight text-gray-900 md:text-5xl">
                     A Heritage of{" "}
-                    <span className="text-[#85a30f]">Light</span>
+                    <span className="relative inline-block text-[#85a30f]">
+                      Light
+                      <svg
+                        className="absolute -bottom-1 left-0 w-full"
+                        height="6"
+                        viewBox="0 0 120 6"
+                        preserveAspectRatio="none"
+                      >
+                        <path
+                          d="M0 3 Q30 0 60 3 T120 3"
+                          stroke="#85a30f"
+                          strokeWidth="2"
+                          fill="none"
+                          opacity="0.4"
+                        />
+                      </svg>
+                    </span>
                   </h2>
                 </div>
 
-                <p className="text-base leading-8 text-black">
+                <p className="text-base leading-8 text-gray-700">
                   Founded on the principles of architectural clarity and
                   uncompromising quality, we emerged from a desire to redefine
                   modern LED lighting. Our journey began with a simple vision:
@@ -114,7 +93,7 @@ export default function AboutClient() {
                   switched off as they are illuminating when switched on.
                 </p>
 
-                <p className="text-base leading-8 text-black">
+                <p className="text-base leading-8 text-gray-700">
                   We combine premium materials, advanced LED technology, and
                   thoughtful engineering to create lighting products that
                   deliver exceptional performance, efficiency, and timeless
@@ -122,77 +101,81 @@ export default function AboutClient() {
                   inspire the way people experience them.
                 </p>
 
+                {/* Mini stats row */}
+                <div className="flex gap-10 border-y border-gray-300/70 py-6">
+                  <div>
+                    <p className="text-2xl font-semibold text-gray-900">15+</p>
+                    <p className="mt-1 text-xs uppercase tracking-wider text-gray-500">
+                      Years of Craft
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-2xl font-semibold text-gray-900">40k+</p>
+                    <p className="mt-1 text-xs uppercase tracking-wider text-gray-500">
+                      Spaces Lit
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-2xl font-semibold text-gray-900">100%</p>
+                    <p className="mt-1 text-xs uppercase tracking-wider text-gray-500">
+                      In-House Design
+                    </p>
+                  </div>
+                </div>
+
                 {/* Button */}
-                <div className="pt-3">
+                <div className="pt-1">
                   <a
                     href="#"
-                    className="
-                      group
-                      inline-flex
-                      items-center
-                      gap-3
-                      border
-                      border-[#85a30f]
-                      px-7
-                      py-3.5
-                      text-xs
-                      font-semibold
-                      uppercase
-                      tracking-[0.2em]
-                      text-black
-                      transition-all
-                      duration-300
-                      hover:bg-[#85a30f]
-                      hover:text-white
-                    "
+                    className="group inline-flex items-center gap-3 border border-[#85a30f] bg-[#85a30f] px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-transparent hover:text-[#5f7a0a]"
                   >
                     Read Our Story
-
-                    <FiArrowRight
-                      className="
-                        text-base
-                        transition-transform
-                        duration-300
-                        group-hover:translate-x-1
-                      "
-                    />
+                    <FiArrowRight className="text-base transition-transform duration-300 group-hover:translate-x-1" />
                   </a>
                 </div>
               </div>
             </div>
 
             {/* ================= IMAGE ================= */}
-            <div className="order-1 h-[450px] lg:order-2 lg:col-span-7 lg:h-[600px]">
-              <div className="relative h-full w-full overflow-hidden rounded-sm">
-                
-                {/* Image overlay */}
-                <div className="pointer-events-none absolute inset-0 z-10 bg-[#85a30f]/5" />
+            <div className="order-1 lg:order-2 lg:col-span-7">
+              <div className="relative h-[450px] w-full lg:h-[600px]">
+                {/* Ambient glow, echoes "light" theme */}
+                <div className="pointer-events-none absolute -inset-6 -z-10 rounded-full bg-[#85a30f]/10 blur-3xl" />
 
-                <img
-                  src="https://images.unsplash.com/photo-1612523563676-709f47fab6ea?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGxlZCUyMGxhbXB8ZW58MHx8MHx8fDA%3D"
-                  alt="Modern LED pendant light illuminating a contemporary interior"
-                  className="
-                    h-full
-                    w-full
-                    object-cover
-                    object-center
-                    transition-transform
-                    duration-1000
-                    ease-out
-                    hover:scale-105
-                  "
-                />
+                {/* Offset frame accent */}
+                <div className="absolute -bottom-4 -right-4 -z-10 h-full w-full border border-[#85a30f]/40 lg:-bottom-6 lg:-right-6" />
+
+                <div className="relative h-full w-full overflow-hidden rounded-sm">
+                  <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
+
+                  <img
+                    src="https://images.unsplash.com/photo-1612523563676-709f47fab6ea?w=1200&auto=format&fit=crop&q=80&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGxlZCUyMGxhbXB8ZW58MHx8MHx8fDA%3D"
+                    alt="Modern LED pendant light illuminating a contemporary interior"
+                    className="h-full w-full object-cover object-center transition-transform duration-1000 ease-out hover:scale-105"
+                  />
+                </div>
+
+                {/* Floating badge card */}
+                <div className="absolute -left-5 bottom-8 z-20 hidden max-w-[220px] bg-white p-5 shadow-xl md:block lg:-left-8">
+                  <p className="text-3xl font-semibold text-[#85a30f]">2009</p>
+                  <p className="mt-1 text-sm leading-snug text-gray-600">
+                    The year we lit our first space — and never stopped refining
+                    the craft.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* <LEDShowcase/> */}
+      <LEDFeatures />
+
       {/* =====================================================
           CORE PRINCIPLES
       ====================================================== */}
       <section className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-14">
-        
         {/* Heading */}
         <div className="mb-14 text-center md:mb-20">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.3em] text-[#85a30f]">
@@ -208,7 +191,6 @@ export default function AboutClient() {
 
         {/* Cards */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          
           {/* ================= VALUE 1 ================= */}
           <div
             className="
@@ -302,10 +284,10 @@ export default function AboutClient() {
             </h3>
 
             <p className="text-sm leading-7 text-black">
-              Behind every minimalist silhouette lies careful engineering.
-              From thermal management to advanced optics, our LED solutions
-              are engineered for reliable performance, durability, efficiency,
-              and consistent illumination.
+              Behind every minimalist silhouette lies careful engineering. From
+              thermal management to advanced optics, our LED solutions are
+              engineered for reliable performance, durability, efficiency, and
+              consistent illumination.
             </p>
           </div>
 
@@ -365,7 +347,6 @@ export default function AboutClient() {
           BOTTOM CTA
       ====================================================== */}
       <section className="relative w-full overflow-hidden bg-[#eef2e5] py-6 md:py-14">
-        
         {/* Decorative dots */}
         <div
           className="
@@ -399,25 +380,22 @@ export default function AboutClient() {
         />
 
         <div className="relative z-10 mx-auto max-w-3xl px-5 text-center md:px-8">
-          
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-[#85a30f]">
             Let's Create Together
           </p>
 
           <h2 className="mb-6 text-4xl font-semibold tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
-            Transform Your{" "}
-            <span className="text-[#85a30f]">Space</span>
+            Transform Your <span className="text-[#85a30f]">Space</span>
           </h2>
 
           <p className="mb-10 text-base leading-8 text-black md:text-lg">
-            Discover lighting solutions designed to transform your
-            environment. Whether you're selecting from our collections or
-            planning a complete lighting project, our team is ready to help.
+            Discover lighting solutions designed to transform your environment.
+            Whether you're selecting from our collections or planning a complete
+            lighting project, our team is ready to help.
           </p>
 
           {/* Buttons */}
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            
             <a
               href="#products"
               className="
@@ -442,7 +420,6 @@ export default function AboutClient() {
               "
             >
               Explore Collection
-
               <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
             </a>
 
@@ -475,5 +452,5 @@ export default function AboutClient() {
         </div>
       </section>
     </>
-  )
+  );
 }
