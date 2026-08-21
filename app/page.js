@@ -12,6 +12,7 @@ import ShopByCategory from '../compoents/Home/ShopByCategory'
 // import CTA from '@/compoents/Home/CTA'
 import Testimonials from '@/compoents/Home/Testimonials'
 import CTA2 from '@/compoents/Home/CTA2'
+import Scroll from '@/compoents/Home/Scroll'
 
 export default function page() {
   return (
@@ -20,6 +21,7 @@ export default function page() {
     <Featured/>
     <About/>
     <ShopByCategory/>
+    <Scroll/>
     <WhyChooseUs/>
     <Collections/>
     <Form/>
