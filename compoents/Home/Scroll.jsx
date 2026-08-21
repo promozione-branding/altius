@@ -14,11 +14,11 @@ export default function Scroll() {
       scrollHint="Discover More"
     >
       <div className="space-y-4 text-white">
-        <h2 className="text-4xl font-semibold">
+        <h2 className="text-6xl font-semibold">
           <span className="text-[#85a30f]">Smart. Elegant.</span> Energy Efficient.
         </h2>
 
-        <p className="text-2xl" >
+        <p className="text-2xl font-bold" >
           From architectural lighting to commercial LED solutions, we design
           lighting products that combine performance, efficiency, and modern
           aesthetics.

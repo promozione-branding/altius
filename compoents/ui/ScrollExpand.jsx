@@ -91,20 +91,14 @@ export default function ScrollExpand({
        FRAME EXPANSION
     ======================================== */
 
-    const w =
-      c.startWidth +
-      (100 - c.startWidth) * e;
+    const w = c.startWidth + (100 - c.startWidth) * e;
 
-    const h =
-      c.startHeight +
-      (100 - c.startHeight) * e;
+    const h = c.startHeight + (100 - c.startHeight) * e;
 
     const ix = Math.max(0, (100 - w) / 2);
     const iy = Math.max(0, (100 - h) / 2);
 
-    const radius =
-      c.startRadius +
-      (c.endRadius - c.startRadius) * e;
+    const radius = c.startRadius + (c.endRadius - c.startRadius) * e;
 
     frame.style.clipPath = `
       inset(
@@ -131,8 +125,7 @@ export default function ScrollExpand({
     ======================================== */
 
     if (scrimRef.current) {
-      scrimRef.current.style.opacity =
-        `${c.overlayScrim * e}`;
+      scrimRef.current.style.opacity = `${c.overlayScrim * e}`;
     }
 
     /* ========================================
@@ -142,8 +135,7 @@ export default function ScrollExpand({
     if (titleRef.current) {
       const out = smoothstep(0.35, 0.8, p);
 
-      titleRef.current.style.opacity =
-        `${1 - out}`;
+      titleRef.current.style.opacity = `${1 - out}`;
 
       titleRef.current.style.transform = `
         translate3d(0, ${-40 * out}px, 0)
@@ -158,8 +150,7 @@ export default function ScrollExpand({
     if (hintRef.current) {
       const gone = smoothstep(0, 0.15, p);
 
-      hintRef.current.style.opacity =
-        `${1 - gone}`;
+      hintRef.current.style.opacity = `${1 - gone}`;
 
       hintRef.current.style.transform = `
         translate3d(0, ${10 * gone}px, 0)
@@ -173,8 +164,7 @@ export default function ScrollExpand({
     if (overlayRef.current) {
       const inn = smoothstep(0.65, 1, p);
 
-      overlayRef.current.style.opacity =
-        `${inn}`;
+      overlayRef.current.style.opacity = `${inn}`;
 
       overlayRef.current.style.transform = `
         translate3d(
@@ -198,7 +188,7 @@ export default function ScrollExpand({
     if (!root || !track || !stage) return;
 
     const reduceMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
+      "(prefers-reduced-motion: reduce)",
     ).matches;
 
     let raf = 0;
@@ -217,14 +207,11 @@ export default function ScrollExpand({
     const measure = () => {
       const c = propsRef.current;
 
-      stageHeight = c.useWindowScroll
-        ? window.innerHeight
-        : root.clientHeight;
+      stageHeight = c.useWindowScroll ? window.innerHeight : root.clientHeight;
 
       if (stageHeight <= 0) return;
 
-      stage.style.height =
-        `${stageHeight}px`;
+      stage.style.height = `${stageHeight}px`;
 
       /*
         Expansion distance
@@ -232,23 +219,18 @@ export default function ScrollExpand({
         fullscreen hold distance
       */
 
-      track.style.height =
-        `${stageHeight *
-          (
-            1 +
-            Math.max(0, c.scrollDistance) +
-            Math.max(0, c.holdDistance)
-          )
-        }px`;
+      track.style.height = `${
+        stageHeight *
+        (1 + Math.max(0, c.scrollDistance) + Math.max(0, c.holdDistance))
+      }px`;
 
       /* Responsive title size */
 
-      const width =
-        root.clientWidth || stageHeight;
+      const width = root.clientWidth || stageHeight;
 
       stage.style.setProperty(
         "--se-title-size",
-        `${clamp(width * 0.075, 20, 84)}px`
+        `${clamp(width * 0.075, 20, 84)}px`,
       );
     };
 
@@ -261,26 +243,15 @@ export default function ScrollExpand({
 
       if (!c.enabled) return 1;
 
-      const span =
-        stageHeight *
-        Math.max(0.01, c.scrollDistance);
+      const span = stageHeight * Math.max(0.01, c.scrollDistance);
 
       if (c.useWindowScroll) {
-        const top =
-          track.getBoundingClientRect().top;
+        const top = track.getBoundingClientRect().top;
 
-        return clamp(
-          -top / span,
-          0,
-          1
-        );
+        return clamp(-top / span, 0, 1);
       }
 
-      return clamp(
-        root.scrollTop / span,
-        0,
-        1
-      );
+      return clamp(root.scrollTop / span, 0, 1);
     };
 
     /* ========================================
@@ -290,31 +261,18 @@ export default function ScrollExpand({
     const tick = () => {
       const c = propsRef.current;
 
-      const k =
-        c.smoothing <= 0
-          ? 1
-          : 1 -
-            Math.exp(
-              -1 /
-                (60 * c.smoothing)
-            );
+      const k = c.smoothing <= 0 ? 1 : 1 - Math.exp(-1 / (60 * c.smoothing));
 
-      current +=
-        (target - current) * k;
+      current += (target - current) * k;
 
-      if (
-        Math.abs(target - current) <
-        0.0004
-      ) {
+      if (Math.abs(target - current) < 0.0004) {
         current = target;
         running = false;
       }
 
       applyProgress(current);
 
-      raf = running
-        ? requestAnimationFrame(tick)
-        : 0;
+      raf = running ? requestAnimationFrame(tick) : 0;
     };
 
     const kick = () => {
@@ -323,8 +281,7 @@ export default function ScrollExpand({
       running = true;
 
       if (!raf) {
-        raf =
-          requestAnimationFrame(tick);
+        raf = requestAnimationFrame(tick);
       }
     };
 
@@ -335,10 +292,7 @@ export default function ScrollExpand({
     const onScroll = () => {
       target = readProgress();
 
-      if (
-        propsRef.current.smoothing <= 0 ||
-        reduceMotion
-      ) {
+      if (propsRef.current.smoothing <= 0 || reduceMotion) {
         current = target;
 
         applyProgress(current);
@@ -379,26 +333,15 @@ export default function ScrollExpand({
        EVENTS
     ======================================== */
 
-    const scroller =
-      useWindowScroll
-        ? window
-        : root;
+    const scroller = useWindowScroll ? window : root;
 
-    scroller.addEventListener(
-      "scroll",
-      onScroll,
-      {
-        passive: true,
-      }
-    );
+    scroller.addEventListener("scroll", onScroll, {
+      passive: true,
+    });
 
-    window.addEventListener(
-      "resize",
-      onResize
-    );
+    window.addEventListener("resize", onResize);
 
-    const resizeObserver =
-      new ResizeObserver(onResize);
+    const resizeObserver = new ResizeObserver(onResize);
 
     resizeObserver.observe(root);
 
@@ -407,22 +350,13 @@ export default function ScrollExpand({
         cancelAnimationFrame(raf);
       }
 
-      scroller.removeEventListener(
-        "scroll",
-        onScroll
-      );
+      scroller.removeEventListener("scroll", onScroll);
 
-      window.removeEventListener(
-        "resize",
-        onResize
-      );
+      window.removeEventListener("resize", onResize);
 
       resizeObserver.disconnect();
     };
-  }, [
-    applyProgress,
-    useWindowScroll,
-  ]);
+  }, [applyProgress, useWindowScroll]);
 
   /* ==========================================
      MEDIA
@@ -588,8 +522,7 @@ export default function ScrollExpand({
                 will-change-[opacity,transform]
               "
               style={{
-                fontSize:
-                  "var(--se-title-size)",
+                fontSize: "var(--se-title-size)",
               }}
             >
               <h1
