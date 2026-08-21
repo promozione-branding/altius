@@ -206,7 +206,6 @@ export default function Form() {
     >
       <div className="container mx-auto px-6 lg:px-20">
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
-
           {/* =================================
               LEFT - IMAGE
           ================================= */}
@@ -291,10 +290,8 @@ export default function Form() {
             ================================= */}
 
             <form onSubmit={handleSubmit} className="space-y-6">
-
               {/* NAME + PRODUCT */}
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
                 {/* NAME */}
                 <div className="form-field flex flex-col">
                   <label
@@ -376,7 +373,6 @@ export default function Form() {
 
               {/* EMAIL + PHONE */}
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-
                 {/* EMAIL */}
                 <div className="form-field flex flex-col">
                   <label
