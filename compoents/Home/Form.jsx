@@ -40,64 +40,65 @@ export default function Form() {
          INITIAL STATES
       ================================= */
 
-      // Image starts below its normal position
+      // IMAGE
       gsap.set(imageWrapperRef.current, {
-        y: 120,
+        y: 70,
         opacity: 0,
         clipPath: "inset(100% 0% 0% 0%)",
       });
 
-      // Right content starts slightly from the left
-      // Reduced from -100px to -50px for a faster feel
+      // RIGHT CONTENT
       gsap.set(contentRef.current, {
-        x: -50,
+        x: -35,
         opacity: 0,
       });
 
-      // Individual content elements
+      // EYEBROW
       gsap.set(".form-eyebrow", {
+        y: 15,
+        opacity: 0,
+      });
+
+      // HEADING
+      gsap.set(".form-heading", {
         y: 25,
         opacity: 0,
       });
 
-      gsap.set(".form-heading", {
-        y: 35,
-        opacity: 0,
-      });
-
+      // FORM FIELDS
       gsap.set(".form-field", {
-        y: 20,
+        y: 15,
         opacity: 0,
       });
 
+      // BUTTON
       gsap.set(".form-submit", {
-        y: 20,
+        y: 15,
         opacity: 0,
       });
 
       /* =================================
-         MAIN TIMELINE
+         FAST MAIN TIMELINE
       ================================= */
 
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 75%",
+          start: "top 80%",
           toggleActions: "play none none reverse",
         },
       });
 
       /* =================================
-         IMAGE
-         Comes from bottom + reveals upward
+         IMAGE REVEAL
       ================================= */
 
       tl.to(imageWrapperRef.current, {
         y: 0,
         opacity: 1,
         clipPath: "inset(0% 0% 0% 0%)",
-        duration: 1.1,
-        ease: "power4.out",
+        duration: 0.65,
+        ease: "power3.out",
       })
 
         /* =================================
@@ -107,19 +108,18 @@ export default function Form() {
         .fromTo(
           imageRef.current,
           {
-            scale: 1.12,
+            scale: 1.08,
           },
           {
             scale: 1,
-            duration: 1.2,
-            ease: "power3.out",
+            duration: 0.65,
+            ease: "power2.out",
           },
-          "-=0.95",
+          "-=0.55",
         )
 
         /* =================================
            RIGHT CONTENT
-           FAST SLIDE IN
         ================================= */
 
         .to(
@@ -127,10 +127,10 @@ export default function Form() {
           {
             x: 0,
             opacity: 1,
-            duration: 0.55,
-            ease: "power3.out",
+            duration: 0.4,
+            ease: "power2.out",
           },
-          "-=0.9",
+          "-=0.45",
         )
 
         /* =================================
@@ -142,14 +142,14 @@ export default function Form() {
           {
             y: 0,
             opacity: 1,
-            duration: 0.35,
+            duration: 0.22,
             ease: "power2.out",
           },
-          "-=0.35",
+          "-=0.25",
         )
 
         /* =================================
-           MAIN HEADING
+           HEADING
         ================================= */
 
         .to(
@@ -157,10 +157,10 @@ export default function Form() {
           {
             y: 0,
             opacity: 1,
-            duration: 0.45,
-            ease: "power3.out",
+            duration: 0.3,
+            ease: "power2.out",
           },
-          "-=0.18",
+          "-=0.1",
         )
 
         /* =================================
@@ -172,11 +172,11 @@ export default function Form() {
           {
             y: 0,
             opacity: 1,
-            duration: 0.35,
-            stagger: 0.06,
+            duration: 0.22,
+            stagger: 0.035,
             ease: "power2.out",
           },
-          "-=0.18",
+          "-=0.12",
         )
 
         /* =================================
@@ -188,10 +188,10 @@ export default function Form() {
           {
             y: 0,
             opacity: 1,
-            duration: 0.35,
+            duration: 0.25,
             ease: "power2.out",
           },
-          "-=0.15",
+          "-=0.08",
         );
     }, sectionRef);
 
@@ -213,7 +213,14 @@ export default function Form() {
 
           <div
             ref={imageWrapperRef}
-            className="group overflow-hidden rounded-lg will-change-transform"
+            className="
+              group
+              h-[400px]
+              overflow-hidden
+              rounded-lg
+              will-change-transform
+              md:h-[450px]
+            "
           >
             <img
               ref={imageRef}
@@ -221,12 +228,13 @@ export default function Form() {
               alt="Luxury Table Lamp"
               className="
                 h-full
-                min-h-[450px]
+                min-h-[400px]
                 w-full
                 object-cover
                 transition-transform
                 duration-700
                 group-hover:scale-105
+                md:min-h-[450px]
               "
             />
           </div>
@@ -237,7 +245,11 @@ export default function Form() {
 
           <div
             ref={contentRef}
-            className="flex flex-col will-change-transform"
+            className="
+              flex
+              flex-col
+              will-change-transform
+            "
           >
             {/* =================================
                 HEADING
@@ -280,10 +292,10 @@ export default function Form() {
 
             <form onSubmit={handleSubmit} className="space-y-6">
 
-              {/* Name + Product */}
+              {/* NAME + PRODUCT */}
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
 
-                {/* Name */}
+                {/* NAME */}
                 <div className="form-field flex flex-col">
                   <label
                     htmlFor="name"
@@ -322,7 +334,7 @@ export default function Form() {
                   />
                 </div>
 
-                {/* Product */}
+                {/* PRODUCT */}
                 <div className="form-field flex flex-col">
                   <label
                     htmlFor="product"
@@ -362,10 +374,10 @@ export default function Form() {
                 </div>
               </div>
 
-              {/* Email + Phone */}
+              {/* EMAIL + PHONE */}
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
 
-                {/* Email */}
+                {/* EMAIL */}
                 <div className="form-field flex flex-col">
                   <label
                     htmlFor="email"
@@ -404,7 +416,7 @@ export default function Form() {
                   />
                 </div>
 
-                {/* Phone */}
+                {/* PHONE */}
                 <div className="form-field flex flex-col">
                   <label
                     htmlFor="phone"

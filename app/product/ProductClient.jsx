@@ -214,8 +214,6 @@ export default function ProductClient() {
             {/* ================= WATTAGE ================= */}
             {/* ================= WATTAGE ================= */}
             <div className="mb-8">
-              
-
               <div className="grid grid-cols-3 gap-3">
                 {wattages.map((watt) => {
                   const isSelected = selectedWattage === watt;
@@ -286,78 +284,8 @@ export default function ProductClient() {
               </div>
             </div>
 
-            {/* ================= ACTIONS ================= */}
-            <div className="mb-8 flex flex-col gap-3">
-              <div className="grid grid-cols-2 gap-3">
-                {/* Get Quote */}
-                <button
-                  type="button"
-                  onClick={() => {
-                    console.log("Get Quote", selectedWattage);
-                  }}
-                  className="
-              flex h-12 items-center justify-center
-              border border-black
-              px-4
-              text-xs font-semibold uppercase
-              tracking-[0.18em]
-              text-black
-              transition-all duration-300
-              hover:border-[#85a30f]
-              hover:bg-[#85a30f]
-              hover:text-white
-            "
-                >
-                  Get Quote
-                </button>
-
-                {/* WhatsApp */}
-                <a
-                  href={`https://wa.me/919999999999?text=${encodeURIComponent(
-                    `Hello, I am interested in the LED LIGHT (${selectedWattage}).`,
-                  )}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="
-              flex h-12 items-center justify-center
-              gap-2
-              border border-black
-              px-4
-              text-xs font-semibold uppercase
-              tracking-[0.18em]
-              text-black
-              transition-all duration-300
-              hover:border-[#85a30f]
-              hover:bg-[#85a30f]
-              hover:text-white
-            "
-                >
-                  WhatsApp
-                </a>
-              </div>
-
-              {/* Download Brochure */}
-              <a
-                href="/brochure/product-brochure.pdf"
-                download
-                className="
-            flex h-12 w-full
-            items-center justify-center
-            bg-black
-            px-4
-            text-xs font-semibold uppercase
-            tracking-[0.18em]
-            text-white
-            transition-all duration-300
-            hover:bg-[#85a30f]
-          "
-              >
-                Download Brochure
-              </a>
-            </div>
-
             {/* ================= KEY FEATURES ================= */}
-            <div className="border-t border-gray-200 pt-6">
+            <div className="border-t border-gray-200 mb-16 pt-6">
               <h3 className="mb-5 text-sm font-semibold uppercase tracking-[0.15em] text-gray-900">
                 Key Features
               </h3>
@@ -445,6 +373,76 @@ export default function ProductClient() {
                   </div>
                 </div>
               </div>
+            </div>
+
+            {/* ================= ACTIONS ================= */}
+            <div className="mb-8 flex flex-col gap-3">
+              <div className="grid grid-cols-2 gap-3">
+                {/* Get Quote */}
+                <button
+                  type="button"
+                  onClick={() => {
+                    console.log("Get Quote", selectedWattage);
+                  }}
+                  className="
+              flex h-12 items-center justify-center
+              border border-black
+              px-4
+              text-xs font-semibold uppercase
+              tracking-[0.18em]
+              text-black
+              transition-all duration-300
+              hover:border-[#85a30f]
+              hover:bg-[#85a30f]
+              hover:text-white
+            "
+                >
+                  Get Quote
+                </button>
+
+                {/* WhatsApp */}
+                <a
+                  href={`https://wa.me/919999999999?text=${encodeURIComponent(
+                    `Hello, I am interested in the LED LIGHT (${selectedWattage}).`,
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
+              flex h-12 items-center justify-center
+              gap-2
+              border border-black
+              px-4
+              text-xs font-semibold uppercase
+              tracking-[0.18em]
+              text-black
+              transition-all duration-300
+              hover:border-[#85a30f]
+              hover:bg-[#85a30f]
+              hover:text-white
+            "
+                >
+                  WhatsApp
+                </a>
+              </div>
+
+              {/* Download Brochure */}
+              <a
+                href="/brochure/product-brochure.pdf"
+                download
+                className="
+            flex h-12 w-full
+            items-center justify-center
+            bg-black
+            px-4
+            text-xs font-semibold uppercase
+            tracking-[0.18em]
+            text-white
+            transition-all duration-300
+            hover:bg-[#85a30f]
+          "
+              >
+                Download Brochure
+              </a>
             </div>
           </div>
         </div>

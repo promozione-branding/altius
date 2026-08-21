@@ -507,7 +507,7 @@ export default function Featured() {
             "
           >
             <img
-              src="/new.png"
+              src="/featured.png"
               alt="Modern interior lighting"
               className="
                 absolute
