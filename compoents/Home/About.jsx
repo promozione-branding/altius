@@ -47,7 +47,8 @@ export default function About() {
       });
 
       gsap.set(".about-image", {
-        scale: 1.12,
+        y: 30,
+        scale: 1,
         opacity: 0,
       });
 
@@ -360,7 +361,7 @@ export default function About() {
               >
                 <div className="about-image-inner h-full w-full">
                   <img
-                    src="/ban1.webp"
+                    src="/ban3.webp"
                     alt="Modern commercial space with professional LED lighting"
                     className="
                       about-image

@@ -56,7 +56,7 @@ export default function AboutClient() {
             overflow-hidden
             rounded-sm
             lg:col-span-12
-            md:h-[70vh]
+            md:h-[90vh]
           "
         >
           {/* Subtle overlay */}
@@ -71,7 +71,7 @@ export default function AboutClient() {
           />
 
           <img
-            src="https://media.istockphoto.com/id/1345465243/photo/master-bedroom.webp?a=1&b=1&s=612x612&w=0&k=20&c=mtatmMMdu_ccIDRvNZKjA2OsFKKob8ciO-bBd3mymsk="
+           src="/ban2.webp"
             alt="A minimalist high-end interior illuminated with modern LED lighting"
             className="
               h-full
