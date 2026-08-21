@@ -317,8 +317,8 @@ export default function About() {
               items-center
               gap-14
               lg:grid-cols-[1.05fr_0.95fr]
-              lg:gap-20
-              xl:gap-28
+              md:gap-20
+              
             "
           >
             {/* =================================================
@@ -360,7 +360,7 @@ export default function About() {
               >
                 <div className="about-image-inner h-full w-full">
                   <img
-                    src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=90"
+                    src="/ban1.webp"
                     alt="Modern commercial space with professional LED lighting"
                     className="
                       about-image
@@ -455,7 +455,7 @@ export default function About() {
                 className="
                   about-badge
                   absolute
-                  -bottom-8
+                  -top-15
                   right-3
                   z-20
                   w-[180px]
