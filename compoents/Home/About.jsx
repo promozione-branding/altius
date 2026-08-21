@@ -1091,9 +1091,9 @@ export default function About() {
 
         {/* ================= EXTRA SCROLL SPACE ================= */}
 
-        <div className=" bg-[#91aa2c] py-3">
+        <div className=" bg-gray-200 py-3">
           <div className="mx-auto flex h-full max-w-4xl items-center justify-center px-6 text-center">
-            <p className="font-serif text-4xl text-white">
+            <p className="font-serif text-4xl text-black">
               Designed to bring warmth, character and elegance into every space.
             </p>
           </div>
