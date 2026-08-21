@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useLayoutEffect, useRef } from "react";
-import { FaLeaf, FaShieldAlt, FaHeadset } from "react-icons/fa";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
@@ -49,7 +48,6 @@ const reasons = [
         xmlns="http://www.w3.org/2000/svg"
         width={213}
         height={213}
-        data-name="Layer 1"
         viewBox="0 0 52 52"
         fill="currentColor"
       >
@@ -89,7 +87,6 @@ export default function WhyChooseUs() {
   const headingRef = useRef(null);
   const subtitleRef = useRef(null);
   const lineRef = useRef(null);
-  const cardsRef = useRef(null);
   const leftLightRef = useRef(null);
   const rightLightRef = useRef(null);
 
@@ -101,12 +98,12 @@ export default function WhyChooseUs() {
 
       gsap.set(subtitleRef.current, {
         opacity: 0,
-        y: 25,
+        y: 15,
       });
 
       gsap.set(headingRef.current, {
         opacity: 0,
-        y: 50,
+        y: 25,
       });
 
       gsap.set(lineRef.current, {
@@ -115,46 +112,47 @@ export default function WhyChooseUs() {
       });
 
       gsap.set(leftLightRef.current, {
-        x: -400,
+        x: -250,
         opacity: 0,
-        rotate: -15,
+        rotate: -10,
       });
 
       gsap.set(rightLightRef.current, {
-        x: 400,
+        x: 250,
         opacity: 0,
-        rotate: 15,
+        rotate: 10,
       });
 
       gsap.set(".why-card", {
         opacity: 0,
-        y: 70,
+        y: 35,
       });
 
       gsap.set(".why-icon", {
         opacity: 0,
-        scale: 0.5,
-        rotation: -20,
+        scale: 0.75,
+        rotation: -10,
       });
 
       gsap.set(".why-title", {
         opacity: 0,
-        y: 20,
+        y: 10,
       });
 
       gsap.set(".why-description", {
         opacity: 0,
-        y: 20,
+        y: 10,
       });
 
       /* =========================================
-         LIGHT ANIMATION
+         TRACK LIGHT ANIMATION
+         FASTER
       ========================================= */
 
       const lightTl = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 80%",
+          start: "top 85%",
           toggleActions: "play none none reverse",
         },
       });
@@ -164,8 +162,8 @@ export default function WhyChooseUs() {
           x: 0,
           opacity: 1,
           rotate: 0,
-          duration: 1.2,
-          ease: "power4.out",
+          duration: 0.65,
+          ease: "power3.out",
         })
         .to(
           rightLightRef.current,
@@ -173,20 +171,21 @@ export default function WhyChooseUs() {
             x: 0,
             opacity: 1,
             rotate: 0,
-            duration: 1.2,
-            ease: "power4.out",
+            duration: 0.65,
+            ease: "power3.out",
           },
-          "-=0.8",
+          "-=0.45",
         );
 
       /* =========================================
-         MAIN CONTENT ANIMATION
+         MAIN CONTENT
+         FASTER
       ========================================= */
 
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 75%",
+          start: "top 82%",
           toggleActions: "play none none reverse",
         },
       });
@@ -194,34 +193,34 @@ export default function WhyChooseUs() {
       tl.to(subtitleRef.current, {
         opacity: 1,
         y: 0,
-        duration: 0.7,
-        ease: "power3.out",
+        duration: 0.35,
+        ease: "power2.out",
       })
         .to(
           headingRef.current,
           {
             opacity: 1,
             y: 0,
-            duration: 0.9,
-            ease: "power4.out",
+            duration: 0.45,
+            ease: "power3.out",
           },
-          "-=0.4",
+          "-=0.2",
         )
         .to(
           lineRef.current,
           {
             scaleX: 1,
-            duration: 0.7,
-            ease: "power3.inOut",
+            duration: 0.35,
+            ease: "power2.out",
           },
-          "-=0.5",
+          "-=0.2",
         )
         .to(".why-card", {
           opacity: 1,
           y: 0,
-          duration: 0.3,
-          stagger: 0.1,
-          ease: "power3.out",
+          duration: 0.35,
+          stagger: 0.06,
+          ease: "power2.out",
         })
         .to(
           ".why-icon",
@@ -229,37 +228,38 @@ export default function WhyChooseUs() {
             opacity: 1,
             scale: 1,
             rotation: 0,
-            duration: 0.7,
-            stagger: 0.1,
-            ease: "back.out(1.7)",
+            duration: 0.35,
+            stagger: 0.06,
+            ease: "back.out(1.4)",
           },
-          "-=0.3",
+          "-=0.22",
         )
         .to(
           ".why-title",
           {
             opacity: 1,
             y: 0,
-            duration: 0.6,
-            stagger: 0.1,
-            ease: "power3.out",
+            duration: 0.3,
+            stagger: 0.06,
+            ease: "power2.out",
           },
-          "-=0.5",
+          "-=0.2",
         )
         .to(
           ".why-description",
           {
             opacity: 1,
             y: 0,
-            duration: 0.6,
-            stagger: 0.1,
-            ease: "power3.out",
+            duration: 0.3,
+            stagger: 0.06,
+            ease: "power2.out",
           },
-          "-=0.45",
+          "-=0.2",
         );
 
       /* =========================================
          CARD HOVER
+         FASTER
       ========================================= */
 
       const cards = gsap.utils.toArray(".why-card");
@@ -269,31 +269,35 @@ export default function WhyChooseUs() {
 
         const enter = () => {
           gsap.to(card, {
-            y: -10,
-            duration: 0.35,
+            y: -7,
+            duration: 0.2,
             ease: "power2.out",
+            overwrite: true,
           });
 
           gsap.to(icon, {
-            scale: 1.12,
-            rotation: 5,
-            duration: 0.35,
+            scale: 1.08,
+            rotation: 4,
+            duration: 0.2,
             ease: "power2.out",
+            overwrite: true,
           });
         };
 
         const leave = () => {
           gsap.to(card, {
             y: 0,
-            duration: 0.35,
+            duration: 0.2,
             ease: "power2.out",
+            overwrite: true,
           });
 
           gsap.to(icon, {
             scale: 1,
             rotation: 0,
-            duration: 0.35,
+            duration: 0.2,
             ease: "power2.out",
+            overwrite: true,
           });
         };
 
@@ -321,9 +325,7 @@ export default function WhyChooseUs() {
       className="relative overflow-hidden bg-gray-50 py-10 md:py-16"
       data-purpose="why-choose-us"
     >
-      {/* =========================================
-          LEFT TRACK LIGHT
-      ========================================= */}
+      {/* LEFT TRACK LIGHT */}
 
       <div ref={leftLightRef} className="absolute -top-13 left-15 z-10">
         <Image
@@ -335,9 +337,7 @@ export default function WhyChooseUs() {
         />
       </div>
 
-      {/* =========================================
-          RIGHT TRACK LIGHT
-      ========================================= */}
+      {/* RIGHT TRACK LIGHT */}
 
       <div ref={rightLightRef} className="absolute -top-13 right-15 z-10">
         <Image
@@ -350,9 +350,7 @@ export default function WhyChooseUs() {
       </div>
 
       <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12 xl:px-16">
-        {/* =========================================
-            HEADING
-        ========================================= */}
+        {/* HEADING */}
 
         <div className="mb-10 text-center sm:mb-16">
           <p
@@ -388,12 +386,9 @@ export default function WhyChooseUs() {
           <div ref={lineRef} className="mx-auto mt-5 h-px w-16 bg-gray-900" />
         </div>
 
-        {/* =========================================
-            FEATURES
-        ========================================= */}
+        {/* FEATURES */}
 
         <div
-          ref={cardsRef}
           className="
             grid
             grid-cols-1
@@ -419,9 +414,7 @@ export default function WhyChooseUs() {
                 will-change-transform
               "
             >
-              {/* =====================================
-                  ICON
-              ===================================== */}
+              {/* ICON — SVG AND COLOR UNCHANGED */}
 
               <div
                 className="
@@ -433,10 +426,7 @@ export default function WhyChooseUs() {
                   items-center
                   justify-center
                   rounded-full
-                  
-                    
                   text-gray-800
-                 
                   transition-colors
                   duration-300
                   group-hover:border-[#85a30f]
@@ -447,9 +437,7 @@ export default function WhyChooseUs() {
                 {item.icon}
               </div>
 
-              {/* =====================================
-                  TITLE
-              ===================================== */}
+              {/* TITLE */}
 
               <h3
                 className="
@@ -463,9 +451,7 @@ export default function WhyChooseUs() {
                 {item.title}
               </h3>
 
-              {/* =====================================
-                  DESCRIPTION
-              ===================================== */}
+              {/* DESCRIPTION */}
 
               <p
                 className="

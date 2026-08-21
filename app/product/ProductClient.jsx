@@ -14,8 +14,11 @@ import {
   FaTimes,
 } from "react-icons/fa";
 
-const productImages = ["/led.webp"];
-
+const wattageImages = {
+  "12W": "/led.webp",
+  "20W": "/led.webp",
+  "30W": "/led.webp",
+};
 const relatedProducts = [
   {
     name: "Outdoor Light",
@@ -49,6 +52,10 @@ export default function ProductClient() {
   const [wishlist, setWishlist] = useState(false);
   const [activeTab, setActiveTab] = useState("description");
   const [showPurchase, setShowPurchase] = useState(true);
+
+  const [selectedWattage, setSelectedWattage] = useState("12W");
+
+  const wattages = ["12W", "20W", "30W"];
 
   const increaseQuantity = () => {
     setQuantity((prev) => prev + 1);
@@ -94,114 +101,236 @@ export default function ProductClient() {
           {/* =================================================
             IMAGE GALLERY
         ================================================== */}
-          <div className="flex flex-col gap-4 md:col-span-7">
+          {/* =================================================
+    IMAGE GALLERY
+================================================== */}
+          <div className="flex flex-col gap-4 md:col-span-6">
             {/* Main Image */}
-            <div className="relative flex aspect-square h-150 w-full items-start justify-center overflow-hidden ">
+            <div className="relative flex aspect-square h-150 w-full items-start justify-center overflow-hidden">
               <img
-                src={productImages[selectedImage]}
-                alt="Ambient Glow"
-                className="h-auto w-auto object-cover"
+                key={selectedWattage}
+                src={wattageImages[selectedWattage]}
+                alt={`LED Light ${selectedWattage}`}
+                className="
+        h-auto
+        w-auto
+        max-h-full
+        max-w-full
+        object-contain
+        animate-wattage-change
+      "
               />
             </div>
 
             {/* Thumbnails */}
-            <div className="grid grid-cols-5 gap-2 sm:gap-4">
-              {productImages.map((image, index) => (
-                <button
-                  key={index}
-                  onClick={() => setSelectedImage(index)}
-                  className={`
-                  aspect-square
-                  overflow-hidden
-                  bg-gray-50
-                  border
-                  transition-all
-                  ${
-                    selectedImage === index
-                      ? "border-[#85a30f]"
-                      : "border-transparent hover:border-gray-300"
-                  }
-                `}
-                >
-                  <img
-                    src={image}
-                    alt={`Product thumbnail ${index + 1}`}
-                    className="h-full w-full object-cover"
-                  />
-                </button>
-              ))}
+            <div className="grid grid-cols-3 gap-3 sm:gap-4">
+              {wattages.map((watt) => {
+                const isSelected = selectedWattage === watt;
+
+                return (
+                  <button
+                    key={watt}
+                    type="button"
+                    onClick={() => {
+                      setSelectedWattage(watt);
+                      setSelectedImage(0);
+                    }}
+                    className={`
+          relative
+          aspect-square
+          overflow-hidden
+          border
+          bg-gray-50
+          transition-all
+          duration-300
+          ${
+            isSelected
+              ? "border-[#85a30f] ring-1 ring-[#85a30f]"
+              : "border-gray-200 hover:border-[#85a30f]"
+          }
+        `}
+                  >
+                    <img
+                      src={wattageImages[watt]}
+                      alt={`${watt} LED Light`}
+                      className="
+            h-full
+            w-full
+            object-contain
+            p-2
+            transition-transform
+            duration-300
+            hover:scale-105
+          "
+                    />
+
+                    {/* Wattage label */}
+                    {/* <span
+          className={`
+            absolute
+            bottom-0
+            left-0
+            right-0
+            py-1.5
+            text-center
+            text-[10px]
+            font-semibold
+            uppercase
+            tracking-wider
+            ${
+              isSelected
+                ? "bg-[#85a30f] text-white"
+                : "bg-white/90 text-gray-700"
+            }
+          `}
+        >
+          {watt}
+        </span> */}
+                  </button>
+                );
+              })}
             </div>
           </div>
 
           {/* =================================================
             PRODUCT DETAILS
         ================================================== */}
-          <div className="flex flex-col pt-2 md:col-span-5 md:pl-6 md:pt-0 lg:pl-8">
+          <div className="flex flex-col pt-2 md:col-span-6 md:pl-6 md:pt-0 lg:pl-8">
+            {/* ================= TITLE ================= */}
             <div className="mb-4 flex items-start justify-between gap-4">
-              <h1 className="text-3xl font-semibold text-gray-900 sm:text-4xl">
+              <h1 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
                 LED LIGHT
               </h1>
             </div>
 
-            {/* <p className="mb-6 text-2xl font-medium text-gray-900">
-            $60.00
-          </p> */}
-
-            <p className="mb-8 text-sm leading-6 text-black sm:text-base">
+            {/* ================= DESCRIPTION ================= */}
+            <p className="mb-7 max-w-xl text-sm leading-6 text-gray-600 sm:text-base">
               Illuminate your space with the minimalist elegance of the Ambient
               Glow pendant. Crafted with a refined matte finish and designed to
               cast a soft, welcoming light, it is the perfect centerpiece for
               modern dining and living areas.
             </p>
 
-            {/* Actions */}
-            <div className="mb-8 flex flex-col gap-4">
-              {/* WhatsApp + Get Quote */}
-              <div className="grid grid-cols-2 gap-3">
-                {/* WhatsApp */}
+            {/* ================= WATTAGE ================= */}
+            {/* ================= WATTAGE ================= */}
+            <div className="mb-8">
+              
 
+              <div className="grid grid-cols-3 gap-3">
+                {wattages.map((watt) => {
+                  const isSelected = selectedWattage === watt;
+
+                  return (
+                    <button
+                      key={watt}
+                      type="button"
+                      onClick={() => {
+                        setSelectedWattage(watt);
+                        setSelectedImage(0);
+                      }}
+                      aria-pressed={isSelected}
+                      className={`
+            relative
+            flex
+            h-[76px]
+            flex-col
+            items-center
+            justify-center
+            overflow-hidden
+            border
+            transition-all
+            duration-300
+            focus:outline-none
+            focus:ring-2
+            focus:ring-[#85a30f]
+            focus:ring-offset-2
+
+            ${
+              isSelected
+                ? "border-[#85a30f] bg-[#85a30f] text-white shadow-md"
+                : "border-gray-200 bg-white text-gray-900 hover:border-[#85a30f] hover:shadow-sm"
+            }
+          `}
+                    >
+                      {/* Selected indicator */}
+                      {isSelected && (
+                        <span
+                          className="
+                absolute
+                right-2.5
+                top-2.5
+                h-2
+                w-2
+                rounded-full
+                bg-white
+              "
+                        />
+                      )}
+
+                      <span className="text-lg font-semibold">{watt}</span>
+
+                      <span
+                        className={`
+              mt-1
+              text-[10px]
+              uppercase
+              tracking-[0.16em]
+              ${isSelected ? "font-semibold text-white/80" : "text-gray-400"}
+            `}
+                      >
+                        LED Power
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* ================= ACTIONS ================= */}
+            <div className="mb-8 flex flex-col gap-3">
+              <div className="grid grid-cols-2 gap-3">
                 {/* Get Quote */}
                 <button
+                  type="button"
                   onClick={() => {
-                    console.log("Get Quote");
+                    console.log("Get Quote", selectedWattage);
                   }}
                   className="
-        flex h-12
-        items-center
-        justify-center
-        border border-black
-        px-4
-        text-xs
-        font-semibold
-        uppercase
-        tracking-[0.18em]
-        text-black
-        transition
-        hover:bg-gray-100
-      "
+              flex h-12 items-center justify-center
+              border border-black
+              px-4
+              text-xs font-semibold uppercase
+              tracking-[0.18em]
+              text-black
+              transition-all duration-300
+              hover:border-[#85a30f]
+              hover:bg-[#85a30f]
+              hover:text-white
+            "
                 >
                   Get Quote
                 </button>
 
+                {/* WhatsApp */}
                 <a
-                  href="https://wa.me/919999999999?text=Hello%2C%20I%20am%20interested%20in%20your%20product."
+                  href={`https://wa.me/919999999999?text=${encodeURIComponent(
+                    `Hello, I am interested in the LED LIGHT (${selectedWattage}).`,
+                  )}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="
-        flex h-12
-        items-center
-        justify-center
-        gap-2
-        border border-black
-        px-4
-        text-xs
-        font-semibold
-        uppercase
-        tracking-[0.18em]
-        text-black
-        transition
-        hover:bg-gray-100
-      "
+              flex h-12 items-center justify-center
+              gap-2
+              border border-black
+              px-4
+              text-xs font-semibold uppercase
+              tracking-[0.18em]
+              text-black
+              transition-all duration-300
+              hover:border-[#85a30f]
+              hover:bg-[#85a30f]
+              hover:text-white
+            "
                 >
                   WhatsApp
                 </a>
@@ -212,29 +341,22 @@ export default function ProductClient() {
                 href="/brochure/product-brochure.pdf"
                 download
                 className="
-      flex h-12
-      w-full
-      items-center
-      justify-center
-      bg-black
-      px-4
-      text-xs
-      font-semibold
-      uppercase
-      tracking-[0.18em]
-      text-white
-      transition
-      hover:bg-[#85a30f]
-    "
+            flex h-12 w-full
+            items-center justify-center
+            bg-black
+            px-4
+            text-xs font-semibold uppercase
+            tracking-[0.18em]
+            text-white
+            transition-all duration-300
+            hover:bg-[#85a30f]
+          "
               >
                 Download Brochure
               </a>
             </div>
 
-            {/* Shipping */}
-            {/* =====================================================
-    KEY FEATURES
-====================================================== */}
+            {/* ================= KEY FEATURES ================= */}
             <div className="border-t border-gray-200 pt-6">
               <h3 className="mb-5 text-sm font-semibold uppercase tracking-[0.15em] text-gray-900">
                 Key Features
@@ -249,7 +371,9 @@ export default function ProductClient() {
 
                   <div>
                     <p className="text-xs text-gray-400">Wattage</p>
-                    <p className="text-sm font-medium text-gray-900">12W LED</p>
+                    <p className="text-sm font-medium text-gray-900">
+                      {selectedWattage} LED
+                    </p>
                   </div>
                 </div>
 

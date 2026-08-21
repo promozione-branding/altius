@@ -47,30 +47,31 @@ export default function Form() {
         clipPath: "inset(100% 0% 0% 0%)",
       });
 
-      // Right content starts behind/from left
+      // Right content starts slightly from the left
+      // Reduced from -100px to -50px for a faster feel
       gsap.set(contentRef.current, {
-        x: -100,
+        x: -50,
         opacity: 0,
       });
 
       // Individual content elements
       gsap.set(".form-eyebrow", {
-        y: 30,
+        y: 25,
         opacity: 0,
       });
 
       gsap.set(".form-heading", {
-        y: 50,
+        y: 35,
         opacity: 0,
       });
 
       gsap.set(".form-field", {
-        y: 30,
+        y: 20,
         opacity: 0,
       });
 
       gsap.set(".form-submit", {
-        y: 30,
+        y: 20,
         opacity: 0,
       });
 
@@ -86,104 +87,111 @@ export default function Form() {
         },
       });
 
-      /*
-        IMAGE
-        Comes from bottom + reveals upward
-      */
+      /* =================================
+         IMAGE
+         Comes from bottom + reveals upward
+      ================================= */
+
       tl.to(imageWrapperRef.current, {
         y: 0,
         opacity: 1,
         clipPath: "inset(0% 0% 0% 0%)",
-        duration: 1.4,
+        duration: 1.1,
         ease: "power4.out",
       })
 
-        /*
-          IMAGE SLIGHT SCALE
-        */
+        /* =================================
+           IMAGE SCALE
+        ================================= */
+
         .fromTo(
           imageRef.current,
           {
-            scale: 1.15,
+            scale: 1.12,
           },
           {
             scale: 1,
-            duration: 1.5,
+            duration: 1.2,
             ease: "power3.out",
           },
-          "-=1.2",
+          "-=0.95",
         )
 
-        /*
-          RIGHT CONTENT
-          Comes from behind / left side
-        */
+        /* =================================
+           RIGHT CONTENT
+           FAST SLIDE IN
+        ================================= */
+
         .to(
           contentRef.current,
           {
             x: 0,
             opacity: 1,
-            duration: 1.1,
-            ease: "power4.out",
+            duration: 0.55,
+            ease: "power3.out",
           },
-          "-=0.7",
+          "-=0.9",
         )
 
-        /*
-          SMALL HEADING
-        */
+        /* =================================
+           EYEBROW
+        ================================= */
+
         .to(
           ".form-eyebrow",
           {
             y: 0,
             opacity: 1,
-            duration: 0.6,
-            ease: "power3.out",
+            duration: 0.35,
+            ease: "power2.out",
           },
-          "-=0.6",
+          "-=0.35",
         )
 
-        /*
-          MAIN HEADING
-        */
+        /* =================================
+           MAIN HEADING
+        ================================= */
+
         .to(
           ".form-heading",
           {
             y: 0,
             opacity: 1,
-            duration: 0.8,
+            duration: 0.45,
             ease: "power3.out",
           },
-          "-=0.4",
+          "-=0.18",
         )
 
-        /*
-          FORM FIELDS
-        */
+        /* =================================
+           FORM FIELDS
+        ================================= */
+
         .to(
           ".form-field",
           {
             y: 0,
             opacity: 1,
-            duration: 0.6,
-            stagger: 0.12,
-            ease: "power3.out",
+            duration: 0.35,
+            stagger: 0.06,
+            ease: "power2.out",
           },
-          "-=0.3",
+          "-=0.18",
         )
 
-        /*
-          BUTTON
-        */
+        /* =================================
+           BUTTON
+        ================================= */
+
         .to(
           ".form-submit",
           {
             y: 0,
             opacity: 1,
-            duration: 0.6,
-            ease: "back.out(1.5)",
+            duration: 0.35,
+            ease: "power2.out",
           },
-          "-=0.2",
+          "-=0.15",
         );
     }, sectionRef);
 
@@ -198,16 +206,18 @@ export default function Form() {
     >
       <div className="container mx-auto px-6 lg:px-20">
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+
           {/* =================================
               LEFT - IMAGE
           ================================= */}
+
           <div
             ref={imageWrapperRef}
             className="group overflow-hidden rounded-lg will-change-transform"
           >
             <img
               ref={imageRef}
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvUCZvBXzjIxGYlbGcwYkxfCpdN_N8MwIl39hgPNzAbL0Oz0LXxhnLmPWYQQAn2bi3RSGv-BDiScOGIreqBDTr91nwWAHsGDHuT8zC9irS_KCUPimIet2dw98hY817vzyMpi8B-_BXLS-1ugMm0HvjtlXf-2iC4opLHwpHl3br_K8NEnoC3AmrtdA7SFGV2mNIk55ZMljWQUo6zh0sD4nfexKC-XNMglS7mA0IxeKmlijDvUP5Qr91"
+              src="https://images.unsplash.com/photo-1668255310325-20c3929913e2?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Luxury Table Lamp"
               className="
                 h-full
@@ -224,8 +234,15 @@ export default function Form() {
           {/* =================================
               RIGHT - FORM
           ================================= */}
-          <div ref={contentRef} className="flex flex-col will-change-transform">
-            {/* Heading */}
+
+          <div
+            ref={contentRef}
+            className="flex flex-col will-change-transform"
+          >
+            {/* =================================
+                HEADING
+            ================================= */}
+
             <div className="mb-8">
               <span
                 className="
@@ -257,10 +274,15 @@ export default function Form() {
               </h2>
             </div>
 
-            {/* Form */}
+            {/* =================================
+                FORM
+            ================================= */}
+
             <form onSubmit={handleSubmit} className="space-y-6">
+
               {/* Name + Product */}
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+
                 {/* Name */}
                 <div className="form-field flex flex-col">
                   <label
@@ -342,6 +364,7 @@ export default function Form() {
 
               {/* Email + Phone */}
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+
                 {/* Email */}
                 <div className="form-field flex flex-col">
                   <label
@@ -421,7 +444,10 @@ export default function Form() {
                 </div>
               </div>
 
-              {/* Submit */}
+              {/* =================================
+                  SUBMIT
+              ================================= */}
+
               <div className="form-submit pt-4">
                 <button
                   type="submit"
