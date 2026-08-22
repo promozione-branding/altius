@@ -872,66 +872,67 @@ export default function About() {
                   {/* SVG LAMP */}
 
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={129}
-                    height={179}
-                    viewBox="-5.5 0 63.991 63.991"
-                    className="relative z-10"
-                    style={{
-                      filter: `
-                  drop-shadow(0 0 8px rgba(133,163,15,0.9))
-                  drop-shadow(0 0 20px rgba(217,237,101,0.8))
-                  drop-shadow(0 0 40px rgba(217,237,101,0.6))
-                `,
-                    }}
-                  >
-                    <g
-                      stroke="#333"
-                      strokeWidth={2}
-                      data-name="Group 67"
-                      transform="translate(-604 -599.009)"
-                    >
-                      <path
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="m633 661-21.341-38.414 19.918-19.918"
-                      />
+  xmlns="http://www.w3.org/2000/svg"
+  width={129}
+  height={179}
+  viewBox="-5.5 0 63.991 63.991"
+  className="relative z-10"
+  style={{
+    transform: "scaleX(-1)",
+    filter: `
+      drop-shadow(0 0 8px rgba(133,163,15,0.9))
+      drop-shadow(0 0 20px rgba(217,237,101,0.8))
+      drop-shadow(0 0 40px rgba(217,237,101,0.6))
+    `,
+  }}
+>
+  <g
+    stroke="#333"
+    strokeWidth={2}
+    data-name="Group 67"
+    transform="translate(-604 -599.009)"
+  >
+    <path
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="m633 661-21.341-38.414 19.918-19.918"
+    />
 
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="m640.39 607.407-7.99 7.993-7.4-11.088 4.3-4.3Z"
-                      />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="m640.39 607.407-7.99 7.993-7.4-11.088 4.3-4.3Z"
+    />
 
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M656 612.615 637.615 631l-10.607-19.092 9.9-9.9Z"
-                      />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M656 612.615 637.615 631l-10.607-19.092 9.9-9.9Z"
+    />
 
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M643 662h-28l4-6h20Z"
-                      />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M643 662h-28l4-6h20Z"
+    />
 
-                      <path
-                        fill="#85a30f"
-                        strokeMiterlimit={10}
-                        d="M654 662h-50"
-                      />
+    <path
+      fill="#85a30f"
+      strokeMiterlimit={10}
+      d="M654 662h-50"
+    />
 
-                      <circle
-                        cx={2.708}
-                        cy={2.708}
-                        r={2.708}
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        transform="translate(610.167 620.417)"
-                      />
-                    </g>
-                  </svg>
+    <circle
+      cx={2.708}
+      cy={2.708}
+      r={2.708}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      transform="translate(610.167 620.417)"
+    />
+  </g>
+</svg>
 
                   {/* LIGHT RAYS */}
 
