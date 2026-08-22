@@ -51,20 +51,20 @@ export default function AboutClient() {
       // ===============================
       // CONTENT ENTRANCE
       // ===============================
-      gsap.fromTo(
-        ".about-content",
-        {
-          opacity: 0,
-          y: 25,
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          delay: 0.4,
-          ease: "power3.out",
-        }
-      );
+      // gsap.fromTo(
+      //   ".about-content",
+      //   {
+      //     opacity: 0,
+      //     y: 25,
+      //   },
+      //   {
+      //     opacity: 1,
+      //     y: 0,
+      //     duration: 1,
+      //     delay: 0.4,
+      //     ease: "power3.out",
+      //   }
+      // );
     }, sectionRef);
 
     return () => ctx.revert();

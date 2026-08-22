@@ -18,16 +18,16 @@ const navItems = [
     dropdown: true,
   },
   {
-    name: "Featured",
-    href: "/product",
+    name: "About",
+    href: "/about",
   },
   {
     name: "Our Story",
     href: "/product",
   },
   {
-    name: "Blogs",
-    href: "/product",
+    name: "Contact",
+    href: "/contact",
   },
 ];
 
