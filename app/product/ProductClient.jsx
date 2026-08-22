@@ -14,6 +14,15 @@ import {
   FaTimes,
 } from "react-icons/fa";
 
+import {
+  LuZap,
+  LuBatteryCharging,
+  LuShieldCheck,
+  LuTimer,
+  LuThermometer,
+  LuLayers,
+} from "react-icons/lu";
+
 const wattageImages = {
   "12W": "/led.webp",
   "20W": "/light3.jpeg",
@@ -204,7 +213,7 @@ export default function ProductClient() {
             </div>
 
             {/* ================= DESCRIPTION ================= */}
-            <p className="mb-7 max-w-xl text-sm leading-6 text-gray-600 sm:text-base">
+            <p className="mb-7 max-w-xl text-sm leading-6 text-gray-600 sm:text-lg">
               Illuminate your space with the minimalist elegance of the Ambient
               Glow pendant. Crafted with a refined matte finish and designed to
               cast a soft, welcoming light, it is the perfect centerpiece for
@@ -212,7 +221,7 @@ export default function ProductClient() {
             </p>
 
             {/* ================= KEY FEATURES ================= */}
-            <div className="border-t border-gray-200 mb-16 pt-6">
+            <div className="border-t border-gray-200 mb-12 pt-6">
               <h3 className="mb-5 text-sm font-semibold uppercase tracking-[0.15em] text-gray-900">
                 Key Features
               </h3>
@@ -220,12 +229,11 @@ export default function ProductClient() {
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 {/* Wattage */}
                 <div className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#85a30f] text-sm font-semibold text-white">
-                    W
+                  <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#85a30f] text-white">
+                    <LuZap size={25} />
                   </div>
-
                   <div>
-                    <p className="text-xs text-gray-400">Wattage</p>
+                    <p className="text-sm text-gray-600">Wattage</p>
                     <p className="text-sm font-medium text-gray-900">
                       {selectedWattage} LED
                     </p>
@@ -235,11 +243,10 @@ export default function ProductClient() {
                 {/* Energy Efficiency */}
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#85a30f] text-white">
-                    ⚡
+                    <LuBatteryCharging size={25} />
                   </div>
-
                   <div>
-                    <p className="text-xs text-gray-400">Energy Efficiency</p>
+                    <p className="text-sm text-gray-600">Energy Efficiency</p>
                     <p className="text-sm font-medium text-gray-900">
                       High Efficiency
                     </p>
@@ -249,11 +256,10 @@ export default function ProductClient() {
                 {/* Warranty */}
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#85a30f] text-white">
-                    ✓
+                    <LuShieldCheck size={25} />
                   </div>
-
                   <div>
-                    <p className="text-xs text-gray-400">Warranty</p>
+                    <p className="text-sm text-gray-600">Warranty</p>
                     <p className="text-sm font-medium text-gray-900">2 Years</p>
                   </div>
                 </div>
@@ -261,11 +267,10 @@ export default function ProductClient() {
                 {/* Lifespan */}
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#85a30f] text-white">
-                    ⏱
+                    <LuTimer size={25} />
                   </div>
-
                   <div>
-                    <p className="text-xs text-gray-400">Lifespan</p>
+                    <p className="text-sm text-gray-600">Lifespan</p>
                     <p className="text-sm font-medium text-gray-900">
                       50,000+ Hours
                     </p>
@@ -275,11 +280,10 @@ export default function ProductClient() {
                 {/* Color Temperature */}
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#85a30f] text-white">
-                    K
+                    <LuThermometer size={25} />
                   </div>
-
                   <div>
-                    <p className="text-xs text-gray-400">Color Temperature</p>
+                    <p className="text-sm text-gray-600">Color Temperature</p>
                     <p className="text-sm font-medium text-gray-900">
                       3000K / 4000K / 6500K
                     </p>
@@ -289,11 +293,10 @@ export default function ProductClient() {
                 {/* Material */}
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#85a30f] text-white">
-                    ◇
+                    <LuLayers size={25} />
                   </div>
-
                   <div>
-                    <p className="text-xs text-gray-400">Material</p>
+                    <p className="text-sm text-gray-600">Material</p>
                     <p className="text-sm font-medium text-gray-900">
                       Premium Aluminium
                     </p>

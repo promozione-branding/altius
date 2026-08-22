@@ -4,6 +4,7 @@ import React, { useLayoutEffect, useRef } from "react";
 import { FiArrowRight, FiCheck, FiZap, FiLayers } from "react-icons/fi";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import CurvedLoop from "../ui/CurvedLoop";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -1091,13 +1092,21 @@ export default function About() {
 
         {/* ================= EXTRA SCROLL SPACE ================= */}
 
-        <div className=" bg-gray-200 py-3">
+        {/* <div className=" bg-gray-200 py-3">
           <div className="mx-auto flex h-full max-w-4xl items-center justify-center px-6 text-center">
-            <p className="font-serif text-4xl text-black">
+            <p className="font-serif text-2xl text-black">
               Designed to bring warmth, character and elegance into every space.
             </p>
           </div>
-        </div>
+        </div> */}
+
+         <CurvedLoop
+        marqueeText="ELSTRONG ✦ BRIGHTER SPACES ✦ SMARTER LIGHTING ✦ LED INNOVATION ✦"
+        speed={100}
+        curveAmount={0}
+        direction="left"
+        interactive={true}
+      />
       </section>
     </>
   );
