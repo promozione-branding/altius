@@ -11,7 +11,7 @@ const categories = [
   {
     title: "Downlight LED",
     image: "/light3.jpeg",
-    hoverImage: "/Round1.jpeg",
+    hoverImage: "/lites.webp",
   },
   {
     title: "Flood Light",

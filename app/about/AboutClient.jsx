@@ -177,7 +177,7 @@ export default function AboutClient() {
       ====================================================== */}
       <section className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-14">
         {/* Heading */}
-        <div className="mb-14 text-center md:mb-20">
+        <div className="mb-14 text-center md:mb-10">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.3em] text-[#85a30f]">
             What We Believe
           </p>

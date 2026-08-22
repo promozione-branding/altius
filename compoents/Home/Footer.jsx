@@ -15,7 +15,6 @@ import {
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden bg-[#151515] text-white">
-
       {/* ================= DECORATIVE GLOW ================= */}
 
       <div
@@ -78,7 +77,8 @@ export default function Footer() {
             text-white/[0.10]
           "
         >
-          <span className="text-[#85A30F]/[0.10]">ELSTRONG </span> BY ALTIUS LIGHTING
+          <span className="text-[#85A30F]/[0.10]">ELSTRONG </span> &nbsp; BY
+          ALTIUS LIGHTING
         </span>
       </div>
 
@@ -87,7 +87,6 @@ export default function Footer() {
           ================================================= */}
 
       <div className="relative z-10 mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-10">
-
         {/* =================================================
             NEWSLETTER / TOP SECTION
         ================================================= */}
@@ -108,13 +107,11 @@ export default function Footer() {
             lg:py-16
           "
         >
-
           {/* =================================================
               BRAND
           ================================================= */}
 
           <div>
-
             <a
               href="/"
               className="
@@ -138,15 +135,13 @@ export default function Footer() {
                 text-white/45
               "
             >
-              Premium LED lighting solutions created to bring
-              performance, precision and timeless design to
-              every space.
+              Premium LED lighting solutions created to bring performance,
+              precision and timeless design to every space.
             </p>
 
             {/* Contact */}
 
             <div className="mt-7 space-y-4">
-
               <a
                 href="mailto:elstrong@email.com"
                 className="
@@ -159,11 +154,7 @@ export default function Footer() {
                   hover:text-[#85a30f]
                 "
               >
-                <FiMail
-                  size={16}
-                  className="text-[#85a30f]"
-                />
-
+                <FiMail size={16} className="text-[#85a30f]" />
                 elstrong@email.com
               </a>
 
@@ -179,11 +170,7 @@ export default function Footer() {
                   hover:text-[#85a30f]
                 "
               >
-                <FiPhone
-                  size={16}
-                  className="text-[#85a30f]"
-                />
-
+                <FiPhone size={16} className="text-[#85a30f]" />
                 +91 12345 67890
               </a>
 
@@ -197,22 +184,15 @@ export default function Footer() {
                   text-white/50
                 "
               >
-                <FiMapPin
-                  size={16}
-                  className="mt-1 shrink-0 text-[#85a30f]"
-                />
+                <FiMapPin size={16} className="mt-1 shrink-0 text-[#85a30f]" />
 
-                <span>
-                  New Delhi, India
-                </span>
+                <span>New Delhi, India</span>
               </div>
-
             </div>
 
             {/* Social Icons */}
 
             <div className="mt-7 flex items-center gap-3">
-
               <a
                 href="#"
                 aria-label="Instagram"
@@ -300,9 +280,7 @@ export default function Footer() {
               >
                 <FiYoutube size={16} />
               </a>
-
             </div>
-
           </div>
 
           {/* =================================================
@@ -310,7 +288,6 @@ export default function Footer() {
           ================================================= */}
 
           <div>
-
             <h3
               className="
                 mb-6
@@ -325,7 +302,6 @@ export default function Footer() {
             </h3>
 
             <ul className="space-y-4">
-
               {[
                 ["About Us", "/about"],
                 ["Our Story", "/our-story"],
@@ -333,9 +309,7 @@ export default function Footer() {
                 ["Contact", "/contact"],
                 ["Careers", "/careers"],
               ].map(([label, href]) => (
-
                 <li key={label}>
-
                   <a
                     href={href}
                     className="
@@ -363,13 +337,9 @@ export default function Footer() {
                       "
                     />
                   </a>
-
                 </li>
-
               ))}
-
             </ul>
-
           </div>
 
           {/* =================================================
@@ -377,7 +347,6 @@ export default function Footer() {
           ================================================= */}
 
           <div>
-
             <h3
               className="
                 mb-6
@@ -392,7 +361,6 @@ export default function Footer() {
             </h3>
 
             <ul className="space-y-4">
-
               {[
                 ["LED Lighting", "/led-lighting"],
                 ["Industrial Lighting", "/industrial-lighting"],
@@ -400,9 +368,7 @@ export default function Footer() {
                 ["Architectural Lighting", "/architectural-lighting"],
                 ["Smart Lighting", "/smart-lighting"],
               ].map(([label, href]) => (
-
                 <li key={label}>
-
                   <a
                     href={href}
                     className="
@@ -430,13 +396,9 @@ export default function Footer() {
                       "
                     />
                   </a>
-
                 </li>
-
               ))}
-
             </ul>
-
           </div>
 
           {/* =================================================
@@ -444,7 +406,6 @@ export default function Footer() {
           ================================================= */}
 
           <div>
-
             <h3
               className="
                 mb-6
@@ -459,7 +420,6 @@ export default function Footer() {
             </h3>
 
             <ul className="space-y-4">
-
               {[
                 ["FAQs", "/faq"],
                 ["Shipping & Delivery", "/shipping"],
@@ -467,9 +427,7 @@ export default function Footer() {
                 ["Terms & Conditions", "/terms"],
                 ["Return Policy", "/return-policy"],
               ].map(([label, href]) => (
-
                 <li key={label}>
-
                   <a
                     href={href}
                     className="
@@ -497,15 +455,10 @@ export default function Footer() {
                       "
                     />
                   </a>
-
                 </li>
-
               ))}
-
             </ul>
-
           </div>
-
         </div>
 
         {/* =================================================
@@ -527,7 +480,6 @@ export default function Footer() {
             sm:justify-between
           "
         >
-
           <p
             className="
               text-[11px]
@@ -548,10 +500,7 @@ export default function Footer() {
               text-white/30
             "
           >
-
-            <span>
-              Website Designed By
-            </span>
+            <span>Website Designed By</span>
 
             <a
               href="https://inquirybazaar.com/"
@@ -568,9 +517,7 @@ export default function Footer() {
               Inquiry Bazaar Pvt. Ltd.
             </a>
 
-            <span className="text-white/20">
-              |
-            </span>
+            <span className="text-white/20">|</span>
 
             <a
               href="https://inquirybazaar.com/"
@@ -586,13 +533,9 @@ export default function Footer() {
             >
               B2B Marketplace
             </a>
-
           </div>
-
         </div>
-
       </div>
-
     </footer>
   );
 }
