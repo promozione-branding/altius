@@ -6,6 +6,9 @@
   justify-content: center;
 }
 
+h1,h2,h3{
+  font-family: "Inter", sans-serif;
+}
 .split-title__text {
   position: relative;
   display: inline-block;
@@ -79,7 +82,7 @@
 .inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
 }
 

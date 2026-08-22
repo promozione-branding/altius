@@ -8,32 +8,32 @@ const collections = [
     title: "MODERN METROPOLITAN",
     subtitle: "DISCOVER COLLECTION",
     image:
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=80",
+      "/light3.jpeg",
   },
   {
     title: "SOFT ILLUMINATION",
     subtitle: "DISCOVER COLLECTION",
     image:
-      "https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=1400&q=80",
+      "/OutdoorLight.webp",
   },
   {
     title: "CONTEMPORARY LIVING",
     subtitle: "DISCOVER COLLECTION",
     image:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1400&q=80",
+      "/light3.jpeg",
   },
   {
     title: "MINIMALIST LIGHT",
     subtitle: "DISCOVER COLLECTION",
     image:
-      "https://images.unsplash.com/photo-1615874694520-474822394e73?auto=format&fit=crop&w=1400&q=80",
+      "/OutdoorLight.webp",
   },
-  {
-    title: "TIMELESS ELEGANCE",
-    subtitle: "DISCOVER COLLECTION",
-    image:
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=80",
-  },
+  // {
+  //   title: "TIMELESS ELEGANCE",
+  //   subtitle: "DISCOVER COLLECTION",
+  //   image:
+  //     "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=80",
+  // },
 ];
 
 const TOTAL = collections.length;

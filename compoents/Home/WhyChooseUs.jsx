@@ -327,25 +327,25 @@ export default function WhyChooseUs() {
     >
       {/* LEFT TRACK LIGHT */}
 
-      <div ref={leftLightRef} className="absolute -top-13 left-15 z-10">
+      <div ref={leftLightRef} className="absolute -top-9 left-15 z-10">
         <Image
           height={100}
           width={100}
           alt="LED Track Light"
-          className="h-60 w-60"
-          src="/LEDTrackLight1.webp"
+         className="h-50 w-40 object-contain"
+          src="/LEDTrackLight3.webp"
         />
       </div>
 
       {/* RIGHT TRACK LIGHT */}
 
-      <div ref={rightLightRef} className="absolute -top-13 right-15 z-10">
+      <div ref={rightLightRef} className="absolute -top-9 right-15 z-10">
         <Image
           height={100}
           width={100}
           alt="LED Track Light"
-          className="h-60 w-60"
-          src="/LEDTrackLight2.webp"
+          className="h-50 w-40 object-contain"
+          src="/LEDTrackLight4.webp"
         />
       </div>
 
