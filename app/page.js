@@ -13,6 +13,7 @@ import ShopByCategory from '../compoents/Home/ShopByCategory'
 import Testimonials from '@/compoents/Home/Testimonials'
 import CTA2 from '@/compoents/Home/CTA2'
 import Scroll from '@/compoents/Home/Scroll'
+import Collections2 from '@/compoents/Home/Collections2'
 
 export default function page() {
   return (
@@ -23,7 +24,8 @@ export default function page() {
     <ShopByCategory/>
     <Scroll/>
     <WhyChooseUs/>
-    <Collections/>
+    {/* <Collections/> */}
+    <Collections2/>
     <Form/>
     <Faq/>
     <Testimonials/>
