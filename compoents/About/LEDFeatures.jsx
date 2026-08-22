@@ -184,10 +184,10 @@ export default function LEDFeatures() {
           </span>
 
           <h2 className="font-serif text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-            Lighting designed for better spaces.
+            Lighting designed for <span className="text-[#85a30f]"> better spaces.</span>
           </h2>
 
-          <p className="mt-6 text-base leading-7 text-gray-600 md:text-lg">
+          <p className="mt-6 text-base leading-7 text-gray-700 md:text-lg">
             Experience efficient, reliable and beautifully designed LED lighting
             created to bring exceptional illumination to every space.
           </p>
@@ -304,12 +304,12 @@ function Feature({ feature, index, featureRefs }) {
 
         {/* CONTENT */}
 
-        <div className="border-t border-gray-300 pt-4">
+        <div className="border-t-2  border-[#85a30f] pt-4">
           <h3 className="feature-title font-serif text-2xl font-semibold text-gray-900 sm:text-3xl">
             {feature.title}
           </h3>
 
-          <p className="mt-3 max-w-sm text-sm leading-6 text-gray-600 sm:text-base">
+          <p className="mt-3 max-w-sm text-sm leading-6 text-gray-700 sm:text-base">
             {feature.text}
           </p>
         </div>

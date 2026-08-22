@@ -193,7 +193,7 @@ export default function AboutClient() {
 
             {/* Paragraph */}
             <div className="space-y-5 text-[15px] font-normal leading-6 text-black sm:text-[16px]">
-              <p>
+              <p className="leading-6">
                 We are passionate about creating high-quality LED lighting
                 solutions that combine modern design, energy efficiency, and
                 reliable performance. From homes and offices to commercial and
@@ -201,7 +201,7 @@ export default function AboutClient() {
                 deliver bright, comfortable, and consistent illumination.
               </p>
 
-              <p>
+              <p className="leading-6">
                 With a focus on innovation and quality, we continuously develop
                 lighting solutions that meet the evolving needs of modern
                 spaces. Our range includes LED downlights, panel lights, flood
