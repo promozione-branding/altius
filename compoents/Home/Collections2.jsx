@@ -2,14 +2,11 @@
 
 import { useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
   FiChevronLeft,
   FiChevronRight,
   FiArrowUpRight,
 } from "react-icons/fi";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const collections = [
   {
@@ -38,13 +35,9 @@ export default function Collections2() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  const sectionRef = useRef(null);
-  const stackRef = useRef(null);
   const cardsRef = useRef([]);
-
   const activeIndexRef = useRef(0);
   const animationRef = useRef(null);
-  const scrollTriggerRef = useRef(null);
 
   /*
   ============================================================
@@ -64,7 +57,6 @@ export default function Collections2() {
     if (distance === 0) {
       return {
         y: 0,
-        x: 0,
         scale: 1,
         opacity: 1,
         z: 50,
@@ -74,7 +66,6 @@ export default function Collections2() {
     if (distance === 1) {
       return {
         y: -24,
-        x: 0,
         scale: 0.985,
         opacity: 0.95,
         z: 40,
@@ -84,7 +75,6 @@ export default function Collections2() {
     if (distance === 2) {
       return {
         y: -48,
-        x: 0,
         scale: 0.97,
         opacity: 0.9,
         z: 30,
@@ -94,7 +84,6 @@ export default function Collections2() {
     if (distance === 3) {
       return {
         y: -72,
-        x: 0,
         scale: 0.955,
         opacity: 0.82,
         z: 20,
@@ -103,7 +92,6 @@ export default function Collections2() {
 
     return {
       y: -90,
-      x: 0,
       scale: 0.94,
       opacity: 0,
       z: 1,
@@ -112,19 +100,21 @@ export default function Collections2() {
 
   /*
   ============================================================
-  SET STACK
+  SET INITIAL STACK
   ============================================================
   */
 
   const setStack = (index) => {
-    const cards = cardsRef.current.filter(Boolean);
+    cardsRef.current.forEach((card, cardIndex) => {
+      if (!card) return;
 
-    cards.forEach((card, cardIndex) => {
-      const position = getStackPosition(cardIndex, index);
+      const position = getStackPosition(
+        cardIndex,
+        index
+      );
 
       gsap.set(card, {
         y: position.y,
-        x: position.x,
         scale: position.scale,
         opacity: position.opacity,
         zIndex: position.z,
@@ -134,220 +124,181 @@ export default function Collections2() {
 
   /*
   ============================================================
-  CHANGE CARD
-  ============================================================
-  */
-
-  const changeCard = (newIndex, direction = "next") => {
-    const currentIndex = activeIndexRef.current;
-
-    if (newIndex === currentIndex) return;
-
-    const currentCard = cardsRef.current[currentIndex];
-    const nextCard = cardsRef.current[newIndex];
-
-    if (!currentCard || !nextCard) return;
-
-    if (animationRef.current) {
-      animationRef.current.kill();
-    }
-
-    setIsAnimating(true);
-
-    /*
-    ----------------------------------------
-    NEXT
-    ----------------------------------------
-    */
-
-    if (direction === "next") {
-      /*
-        New card starts below.
-      */
-
-      gsap.set(nextCard, {
-        y: 500,
-        x: 0,
-        scale: 0.94,
-        opacity: 0,
-        zIndex: 60,
-      });
-
-      /*
-        Current card moves upward.
-      */
-
-      animationRef.current = gsap.timeline({
-        onComplete: () => {
-          activeIndexRef.current = newIndex;
-          setActiveIndex(newIndex);
-          setIsAnimating(false);
-
-          setStack(newIndex);
-        },
-      });
-
-      animationRef.current.to(currentCard, {
-        y: -140,
-        scale: 0.96,
-        opacity: 0,
-        duration: 0.6,
-        ease: "power3.inOut",
-      });
-
-      animationRef.current.to(
-        nextCard,
-        {
-          y: 0,
-          scale: 1,
-          opacity: 1,
-          duration: 0.75,
-          ease: "power3.out",
-        },
-        "-=0.38"
-      );
-    }
-
-    /*
-    ----------------------------------------
-    PREVIOUS
-    ----------------------------------------
-    */
-
-    else {
-      /*
-        Previous card starts above.
-      */
-
-      gsap.set(nextCard, {
-        y: -140,
-        x: 0,
-        scale: 0.94,
-        opacity: 0,
-        zIndex: 60,
-      });
-
-      animationRef.current = gsap.timeline({
-        onComplete: () => {
-          activeIndexRef.current = newIndex;
-          setActiveIndex(newIndex);
-          setIsAnimating(false);
-
-          setStack(newIndex);
-        },
-      });
-
-      animationRef.current.to(currentCard, {
-        y: 140,
-        scale: 0.96,
-        opacity: 0,
-        duration: 0.6,
-        ease: "power3.inOut",
-      });
-
-      animationRef.current.to(
-        nextCard,
-        {
-          y: 0,
-          scale: 1,
-          opacity: 1,
-          duration: 0.75,
-          ease: "power3.out",
-        },
-        "-=0.38"
-      );
-    }
-  };
-
-  /*
-  ============================================================
-  INITIAL STACK + SCROLLTRIGGER
+  INITIAL SETUP
   ============================================================
   */
 
   useLayoutEffect(() => {
-    const section = sectionRef.current;
-
-    if (!section) return;
-
-    const ctx = gsap.context(() => {
-      /*
-      Initial card positions
-      */
-
-      setStack(0);
-
-      /*
-      --------------------------------------------------------
-      SCROLLTRIGGER
-      --------------------------------------------------------
-      */
-
-      scrollTriggerRef.current = ScrollTrigger.create({
-        trigger: section,
-
-        /*
-          Pin the entire section while scrolling.
-        */
-
-        pin: true,
-
-        /*
-          Increase this value if you want more scroll
-          distance between each card.
-        */
-
-        end: "+=3000",
-
-        scrub: false,
-
-        /*
-        ------------------------------------------------------
-        ON SCROLL
-        ------------------------------------------------------
-        */
-
-        onUpdate: (self) => {
-          const progress = self.progress;
-
-          /*
-            Convert scroll progress into card index.
-
-            0.00 - 0.24  = card 1
-            0.25 - 0.49  = card 2
-            0.50 - 0.74  = card 3
-            0.75 - 1.00  = card 4
-          */
-
-          const newIndex = Math.min(
-            collections.length - 1,
-            Math.floor(progress * collections.length)
-          );
-
-          const currentIndex = activeIndexRef.current;
-
-          if (newIndex === currentIndex) return;
-
-          const direction =
-            newIndex > currentIndex ? "next" : "prev";
-
-          changeCard(newIndex, direction);
-        },
-      });
-    }, section);
+    setStack(0);
 
     return () => {
       if (animationRef.current) {
         animationRef.current.kill();
       }
-
-      if (scrollTriggerRef.current) {
-        scrollTriggerRef.current.kill();
-      }
-
-      ctx.revert();
     };
   }, []);
+
+  /*
+  ============================================================
+  CHANGE CARD
+  ============================================================
+  */
+
+  const changeCard = (
+    newIndex,
+    direction = "next"
+  ) => {
+    if (isAnimating) return;
+
+    const currentIndex =
+      activeIndexRef.current;
+
+    if (newIndex === currentIndex) return;
+
+    const currentCard =
+      cardsRef.current[currentIndex];
+
+    const nextCard =
+      cardsRef.current[newIndex];
+
+    if (!currentCard || !nextCard) return;
+
+    setIsAnimating(true);
+
+    /*
+    Cancel previous animation
+    */
+
+    if (animationRef.current) {
+      animationRef.current.kill();
+    }
+
+    /*
+    ========================================================
+    NEXT
+    ========================================================
+    */
+
+    if (direction === "next") {
+      /*
+        New card comes from bottom.
+      */
+
+      gsap.set(nextCard, {
+        y: 420,
+        scale: 0.94,
+        opacity: 0,
+        zIndex: 60,
+      });
+
+      animationRef.current =
+        gsap.timeline({
+          onComplete: () => {
+            activeIndexRef.current =
+              newIndex;
+
+            setActiveIndex(newIndex);
+            setIsAnimating(false);
+
+            setStack(newIndex);
+          },
+        });
+
+      /*
+        Current card moves up.
+      */
+
+      animationRef.current.to(
+        currentCard,
+        {
+          y: -140,
+          scale: 0.96,
+          opacity: 0,
+          duration: 0.55,
+          ease: "power3.inOut",
+        }
+      );
+
+      /*
+        New card comes from bottom.
+      */
+
+      animationRef.current.to(
+        nextCard,
+        {
+          y: 0,
+          scale: 1,
+          opacity: 1,
+          duration: 0.7,
+          ease: "power3.out",
+        },
+        "-=0.35"
+      );
+    }
+
+    /*
+    ========================================================
+    PREVIOUS
+    ========================================================
+    */
+
+    else {
+      /*
+        Previous card comes from top.
+      */
+
+      gsap.set(nextCard, {
+        y: -140,
+        scale: 0.94,
+        opacity: 0,
+        zIndex: 60,
+      });
+
+      animationRef.current =
+        gsap.timeline({
+          onComplete: () => {
+            activeIndexRef.current =
+              newIndex;
+
+            setActiveIndex(newIndex);
+            setIsAnimating(false);
+
+            setStack(newIndex);
+          },
+        });
+
+      /*
+        Current card moves down.
+      */
+
+      animationRef.current.to(
+        currentCard,
+        {
+          y: 140,
+          scale: 0.96,
+          opacity: 0,
+          duration: 0.55,
+          ease: "power3.inOut",
+        }
+      );
+
+      /*
+        Previous card comes from top.
+      */
+
+      animationRef.current.to(
+        nextCard,
+        {
+          y: 0,
+          scale: 1,
+          opacity: 1,
+          duration: 0.7,
+          ease: "power3.out",
+        },
+        "-=0.35"
+      );
+    }
+  };
 
   /*
   ============================================================
@@ -358,10 +309,12 @@ export default function Collections2() {
   const nextSlide = () => {
     if (isAnimating) return;
 
-    const current = activeIndexRef.current;
+    const current =
+      activeIndexRef.current;
 
     const next =
-      (current + 1) % collections.length;
+      (current + 1) %
+      collections.length;
 
     changeCard(next, "next");
   };
@@ -375,10 +328,12 @@ export default function Collections2() {
   const prevSlide = () => {
     if (isAnimating) return;
 
-    const current = activeIndexRef.current;
+    const current =
+      activeIndexRef.current;
 
     const previous =
-      (current - 1 + collections.length) %
+      (current - 1 +
+        collections.length) %
       collections.length;
 
     changeCard(previous, "prev");
@@ -393,36 +348,15 @@ export default function Collections2() {
   const goToSlide = (index) => {
     if (isAnimating) return;
 
-    const current = activeIndexRef.current;
+    const current =
+      activeIndexRef.current;
 
     if (index === current) return;
 
     const direction =
-      index > current ? "next" : "prev";
-
-    /*
-      Move ScrollTrigger progress to the
-      correct card position.
-
-      This keeps the scrollbar and card
-      position synchronized.
-    */
-
-    if (scrollTriggerRef.current) {
-      const progress =
-        index / collections.length + 0.01;
-
-      const scrollPosition =
-        scrollTriggerRef.current.start +
-        (scrollTriggerRef.current.end -
-          scrollTriggerRef.current.start) *
-          progress;
-
-      window.scrollTo({
-        top: scrollPosition,
-        behavior: "smooth",
-      });
-    }
+      index > current
+        ? "next"
+        : "prev";
 
     changeCard(index, direction);
   };
@@ -435,28 +369,27 @@ export default function Collections2() {
 
   return (
     <section
-      ref={sectionRef}
       className="
         relative
         flex
-        min-h-[1000px]
+        min-h-[650px]
         w-full
         flex-col
-        justify-start
+        justify-center
         overflow-hidden
         bg-[#f8f8f6]
         px-4
-        py-16
+        py-10
         md:px-8
-        md:py-14
+        md:py-12
       "
     >
       {/* =====================================================
           HEADING
       ====================================================== */}
 
-      <div className="mb-10 px-4 text-center md:mb-14">
-        <div className="split-title mb-15 ">
+      <div className="mb-7 px-4 text-center md:mb-9">
+        <div className="split-title mb-15">
           <h2 className="split-title__text">
             Featured Collections
 
@@ -480,19 +413,18 @@ export default function Collections2() {
       ====================================================== */}
 
       <div
-        ref={stackRef}
         className="
           relative
           mx-auto
-          h-[500px]
+          h-[390px]
           w-full
-          max-w-[1250px]
-          md:h-[360px]
-          
+          max-w-[1200px]
+          md:h-[320px]
+  
         "
       >
         {/* ===================================================
-            LEFT ARROW
+            LEFT BUTTON
         ==================================================== */}
 
         <button
@@ -535,7 +467,7 @@ export default function Collections2() {
         </button>
 
         {/* ===================================================
-            RIGHT ARROW
+            RIGHT BUTTON
         ==================================================== */}
 
         <button
@@ -592,175 +524,195 @@ export default function Collections2() {
             sm:w-[calc(100%-110px)]
           "
         >
-          {collections.map((item, index) => {
-            const isActive =
-              index === activeIndex;
+          {collections.map(
+            (item, index) => {
+              const isActive =
+                index === activeIndex;
 
-            return (
-              <div
-                key={`${item.title}-${index}`}
-                ref={(el) => {
-                  cardsRef.current[index] = el;
-                }}
-                className="
-                  absolute
-                  left-0
-                  top-0
-                  h-full
-                  w-full
-                  overflow-hidden
-                  rounded-[22px]
-                  border
-                  border-black/[0.07]
-                  bg-white
-                  shadow-[0_20px_70px_rgba(0,0,0,0.08)]
-                  will-change-transform
-                "
-                style={{
-                  zIndex: isActive
-                    ? 50
-                    : 40 - index,
-                }}
-              >
-                <div className="grid h-full grid-cols-1 md:grid-cols-[42%_58%]">
-                  {/* =================================================
-                      IMAGE
-                  ================================================== */}
-
-                  <div className="relative h-[52%] overflow-hidden md:h-full">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      draggable={false}
-                      className="
-                        h-full
-                        w-full
-                        object-cover
-                        transition-transform
-                        duration-1000
-                        ease-out
-                      "
-                    />
-
-                    <div className="absolute inset-0 bg-black/[0.03]" />
-                  </div>
-
-                  {/* =================================================
-                      CONTENT
-                  ================================================== */}
-
+              return (
+                <div
+                  key={`${item.title}-${index}`}
+                  ref={(el) => {
+                    cardsRef.current[index] =
+                      el;
+                  }}
+                  className="
+                    absolute
+                    left-0
+                    top-0
+                    h-full
+                    w-full
+                    overflow-hidden
+                    rounded-[22px]
+                    border
+                    border-black/[0.07]
+                    bg-white
+                    shadow-[0_20px_70px_rgba(0,0,0,0.08)]
+                    will-change-transform
+                  "
+                  style={{
+                    zIndex: isActive
+                      ? 50
+                      : 40 - index,
+                  }}
+                >
                   <div
                     className="
-                      relative
-                      flex
-                      h-[48%]
-                      flex-col
-                      justify-between
-                      bg-white
-                      p-7
-                      sm:p-9
-                      md:h-full
-                      md:p-12
-                      lg:p-16
+                      grid
+                      h-full
+                      grid-cols-1
+                      md:grid-cols-[42%_58%]
                     "
                   >
-                    {/* TOP */}
+                    {/* IMAGE */}
 
-                    <div>
-                      <p
+                    <div
+                      className="
+                        relative
+                        h-[52%]
+                        overflow-hidden
+                        md:h-full
+                      "
+                    >
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        draggable={false}
                         className="
-                          mb-5
-                          text-[9px]
-                          font-medium
-                          tracking-[0.28em]
-                          text-black/90
-                          md:text-[10px]
+                          h-full
+                          w-full
+                          object-cover
                         "
-                      >
-                        0{index + 1} / 0{collections.length}
-                      </p>
+                      />
 
-                      <h3
-                        className="
-                          max-w-md
-                          text-xl
-                          font-medium
-                          leading-[1.1]
-                          tracking-[-0.03em]
-                          text-black
-                          sm:text-2xl
-                          md:text-4xl
-                          lg:text-5xl
-                        "
-                      >
-                        {item.title}
-                      </h3>
+                      <div className="absolute inset-0 bg-black/[0.03]" />
                     </div>
 
-                    {/* BOTTOM */}
+                    {/* CONTENT */}
 
-                    <div className="flex items-end justify-between gap-5">
+                    <div
+                      className="
+                        relative
+                        flex
+                        h-[48%]
+                        flex-col
+                        justify-between
+                        bg-white
+                        p-5
+                        sm:p-6
+                        md:h-full
+                        md:p-8
+                        lg:p-10
+                      "
+                    >
+                      {/* TOP */}
+
                       <div>
                         <p
                           className="
+                            mb-4
                             text-[9px]
                             font-medium
-                            tracking-[0.24em]
-                            text-black/95
+                            tracking-[0.28em]
+                            text-black/80
                             md:text-[10px]
                           "
                         >
-                          {item.subtitle}
+                          0{index + 1} / 0
+                          {collections.length}
                         </p>
 
-                        <p
+                        <h3
                           className="
-                            mt-3
-                            max-w-sm
-                            text-xs
-                            leading-relaxed
-                            text-black/90
-                            md:text-sm
+                            max-w-md
+                            text-lg
+                            font-medium
+                            leading-[1.1]
+                            tracking-[-0.03em]
+                            text-black
+                            sm:text-xl
+                            md:text-3xl
+                            lg:text-4xl
                           "
                         >
-                          Explore refined lighting designed
-                          to bring character, warmth and
-                          atmosphere to modern spaces.
-                        </p>
+                          {item.title}
+                        </h3>
                       </div>
 
-                      <button
-                        type="button"
+                      {/* BOTTOM */}
+
+                      <div
                         className="
                           flex
-                          h-11
-                          w-11
-                          shrink-0
-                          items-center
-                          justify-center
-                          rounded-full
-                          border
-                          border-black/10
-                          text-black
-                          transition-all
-                          duration-300
-                          hover:bg-black
-                          hover:text-white
-                          md:h-14
-                          md:w-14
+                          items-end
+                          justify-between
+                          gap-4
                         "
                       >
-                        <FiArrowUpRight
-                          size={20}
-                          strokeWidth={1.4}
-                        />
-                      </button>
+                        <div>
+                          <p
+                            className="
+                              text-[9px]
+                              font-medium
+                              tracking-[0.24em]
+                              text-black/80
+                              md:text-[10px]
+                            "
+                          >
+                            {item.subtitle}
+                          </p>
+
+                          <p
+                            className="
+                              mt-2
+                              max-w-sm
+                              text-xs
+                              leading-relaxed
+                              text-black/70
+                              md:text-sm
+                            "
+                          >
+                            Explore refined lighting
+                            designed to bring
+                            character, warmth and
+                            atmosphere to modern
+                            spaces.
+                          </p>
+                        </div>
+
+                        <button
+                          type="button"
+                          className="
+                            flex
+                            h-10
+                            w-10
+                            shrink-0
+                            items-center
+                            justify-center
+                            rounded-full
+                            border
+                            border-black/10
+                            text-black
+                            transition-all
+                            duration-300
+                            hover:bg-black
+                            hover:text-white
+                            md:h-12
+                            md:w-12
+                          "
+                        >
+                          <FiArrowUpRight
+                            size={19}
+                            strokeWidth={1.4}
+                          />
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            }
+          )}
         </div>
       </div>
 
@@ -768,34 +720,38 @@ export default function Collections2() {
           DOTS
       ====================================================== */}
 
-      <div className="mt-7 flex items-center justify-center gap-2 md:mt-9">
-        {collections.map((_, index) => {
-          const active =
-            index === activeIndex;
+      <div className="mt-6 flex items-center justify-center gap-2">
+        {collections.map(
+          (_, index) => {
+            const active =
+              index === activeIndex;
 
-          return (
-            <button
-              key={index}
-              type="button"
-              onClick={() =>
-                goToSlide(index)
-              }
-              disabled={isAnimating}
-              aria-label={`Go to collection ${index + 1}`}
-              className={`
-                h-1.5
-                rounded-full
-                transition-all
-                duration-500
-                ${
-                  active
-                    ? "w-8 bg-black"
-                    : "w-1.5 bg-black/20 hover:bg-black/50"
+            return (
+              <button
+                key={index}
+                type="button"
+                onClick={() =>
+                  goToSlide(index)
                 }
-              `}
-            />
-          );
-        })}
+                disabled={isAnimating}
+                aria-label={`Go to collection ${
+                  index + 1
+                }`}
+                className={`
+                  h-1.5
+                  rounded-full
+                  transition-all
+                  duration-500
+                  ${
+                    active
+                      ? "w-8 bg-black"
+                      : "w-1.5 bg-black/20 hover:bg-black/50"
+                  }
+                `}
+              />
+            );
+          }
+        )}
       </div>
 
       {/* =====================================================
@@ -813,7 +769,7 @@ export default function Collections2() {
         aria-label="Back to top"
         className="
           absolute
-          bottom-8
+          bottom-6
           right-6
           flex
           h-11
