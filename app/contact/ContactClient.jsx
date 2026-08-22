@@ -255,7 +255,7 @@ export default function ContactClient() {
                 {/* Location Badge */}
                 <div className="absolute bottom-5 left-5 flex items-center gap-3 rounded-full bg-white px-4 py-3 shadow-lg">
                   <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#85a30f] text-white">
-                    <FiMapPin size={16} />
+                    <FiMapPin size={19} />
                   </span>
 
                   <div>

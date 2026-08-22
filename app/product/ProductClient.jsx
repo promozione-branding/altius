@@ -106,14 +106,14 @@ export default function ProductClient() {
         {/* =====================================================
           PRODUCT SECTION
       ====================================================== */}
-        <div className="mb-20 grid grid-cols-1 gap-8 md:grid-cols-12 md:gap-10 lg:gap-14">
+        <div className="mb-20 grid grid-cols-1 gap-8 md:grid-cols-12 md:gap-5 ">
           {/* =================================================
             IMAGE GALLERY
         ================================================== */}
           {/* =================================================
     IMAGE GALLERY
 ================================================== */}
-          <div className="flex flex-col gap-4 md:col-span-6">
+          <div className="flex flex-col gap-4 md:col-span-5">
             {/* Main Image */}
             <div className="relative flex aspect-square h-150 w-full items-start justify-center overflow-hidden">
               <img
@@ -204,7 +204,7 @@ export default function ProductClient() {
           {/* =================================================
             PRODUCT DETAILS
         ================================================== */}
-          <div className="flex flex-col pt-2 md:col-span-6 md:pl-6 md:pt-0 lg:pl-8">
+          <div className="flex shadow-2xl flex-col  md:col-span-7 p-10">
             {/* ================= TITLE ================= */}
             <div className="mb-4 flex items-start justify-between gap-4">
               <h1 className="text-3xl inter font-semibold tracking-tight text-gray-900 sm:text-4xl">
