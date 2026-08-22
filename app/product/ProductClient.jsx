@@ -24,7 +24,7 @@ import {
 } from "react-icons/lu";
 
 const wattageImages = {
-  "12W": "/led.webp",
+  "12W": "/Round1.jpeg",
   "20W": "/light3.jpeg",
   "30W": "/Round1.jpeg",
 };
