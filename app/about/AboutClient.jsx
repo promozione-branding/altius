@@ -2,6 +2,8 @@ import React from "react";
 import { FiArrowRight, FiClock, FiCompass, FiFeather } from "react-icons/fi";
 import LEDShowcase from "../../compoents/About/LEDShowcase";
 import LEDFeatures from "@/compoents/About/LEDFeatures";
+import Image from "next/image";
+import { GiDoubleStreetLights } from "react-icons/gi";
 
 export default function AboutClient() {
   return (
@@ -63,7 +65,7 @@ export default function AboutClient() {
                     </p>
                   </div>
 
-                  <h2 className="text-4xl font-semibold leading-[1.1] tracking-tight text-gray-900 md:text-5xl">
+                  <h2 className="text-4xl font-[600] leading-[1.1] tracking-tight text-gray-900 md:text-5xl">
                     A Heritage of{" "}
                     <span className="relative inline-block text-[#85a30f]">
                       Light
@@ -85,7 +87,7 @@ export default function AboutClient() {
                   </h2>
                 </div>
 
-                <p className="text-base leading-8 text-gray-700">
+                <p className="text-base leading-6 text-gray-900">
                   Founded on the principles of architectural clarity and
                   uncompromising quality, we emerged from a desire to redefine
                   modern LED lighting. Our journey began with a simple vision:
@@ -93,7 +95,7 @@ export default function AboutClient() {
                   switched off as they are illuminating when switched on.
                 </p>
 
-                <p className="text-base leading-8 text-gray-700">
+                <p className="text-base leading-6 text-gray-900">
                   We combine premium materials, advanced LED technology, and
                   thoughtful engineering to create lighting products that
                   deliver exceptional performance, efficiency, and timeless
@@ -105,19 +107,19 @@ export default function AboutClient() {
                 <div className="flex gap-10 border-y border-gray-300/70 py-6">
                   <div>
                     <p className="text-2xl font-semibold text-gray-900">15+</p>
-                    <p className="mt-1 text-xs uppercase tracking-wider text-gray-500">
+                    <p className="mt-1 text-xs uppercase tracking-wider text-gray-800">
                       Years of Craft
                     </p>
                   </div>
                   <div>
                     <p className="text-2xl font-semibold text-gray-900">40k+</p>
-                    <p className="mt-1 text-xs uppercase tracking-wider text-gray-500">
+                    <p className="mt-1 text-xs uppercase tracking-wider text-gray-800">
                       Spaces Lit
                     </p>
                   </div>
                   <div>
                     <p className="text-2xl font-semibold text-gray-900">100%</p>
-                    <p className="mt-1 text-xs uppercase tracking-wider text-gray-500">
+                    <p className="mt-1 text-xs uppercase tracking-wider text-gray-800">
                       In-House Design
                     </p>
                   </div>
@@ -158,10 +160,11 @@ export default function AboutClient() {
                 {/* Floating badge card */}
                 <div className="absolute -left-5 bottom-8 z-20 hidden max-w-[220px] bg-white p-5 shadow-xl md:block lg:-left-8">
                   <p className="text-3xl font-semibold text-[#85a30f]">2009</p>
-                  <p className="mt-1 text-sm leading-snug text-gray-600">
+                  <p className="mt-1 text-sm leading-snug text-gray-900">
                     The year we lit our first space — and never stopped refining
                     the craft.
                   </p>
+                  <GiDoubleStreetLights className="absolute top-4  text-[#85a30f] right-4 size-13" />
                 </div>
               </div>
             </div>
@@ -171,6 +174,70 @@ export default function AboutClient() {
 
       {/* <LEDShowcase/> */}
       <LEDFeatures />
+
+      <section className="w-full bg-white py-12 md:py-14 ">
+        <div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-12 px-6 sm:px-10 lg:grid-cols-2 lg:gap-20">
+          {/* ================= CONTENT ================= */}
+          <div className="w-full lg:max-w-[625px]">
+            {/* Heading */}
+            <h2 className="mb-4 text-[48px] font-bold leading-[1.05] tracking-[-1.5px] text-black sm:text-[58px] lg:text-[64px]">
+              Our <span className="text-[#85a30f]">Story</span>
+            </h2>
+
+            {/* Sub Heading */}
+            <h3 className="mb-8 max-w-[600px] text-[22px] font-semibold  tracking-[-0.3px] text-black sm:text-[25px] lg:text-[28px] lg:leading-[1.4]">
+              Lighting spaces. Inspiring lives.
+              <br className="hidden lg:block" />
+              Building a brighter future.
+            </h3>
+
+            {/* Paragraph */}
+            <div className="space-y-5 text-[15px] font-normal leading-6 text-black sm:text-[16px]">
+              <p>
+                We are passionate about creating high-quality LED lighting
+                solutions that combine modern design, energy efficiency, and
+                reliable performance. From homes and offices to commercial and
+                architectural spaces, our lighting products are designed to
+                deliver bright, comfortable, and consistent illumination.
+              </p>
+
+              <p>
+                With a focus on innovation and quality, we continuously develop
+                lighting solutions that meet the evolving needs of modern
+                spaces. Our range includes LED downlights, panel lights, flood
+                lights, track lights, outdoor lighting, and other professional
+                illumination solutions. We believe great lighting is more than
+                just brightness — it creates atmosphere, enhances design, and
+                transforms the way people experience a space.
+              </p>
+            </div>
+
+            {/* Small Accent */}
+            <div className="mt-8 flex items-center gap-3">
+              <span className="h-2 w-2 rounded-full bg-[#85a30f]" />
+
+              <span className="h-px w-16 bg-black/90" />
+
+              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-black/90">
+                Designed to Illuminate
+              </span>
+            </div>
+          </div>
+
+          {/* ================= IMAGE ================= */}
+          <div className="relative w-full overflow-hidden">
+            <div className="relative h-[420px]   border-t-8 border-[#85a30f] w-full md:h-[520px] ">
+              <img
+                src="/abouttt.png"
+                alt="LED Lighting Solutions"
+                className="h-full w-full object-cover"
+              />
+            </div>
+
+            {/* Green Accent */}
+          </div>
+        </div>
+      </section>
 
       {/* =====================================================
           CORE PRINCIPLES

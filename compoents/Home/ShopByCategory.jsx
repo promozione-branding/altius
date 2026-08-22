@@ -366,9 +366,8 @@ export default function ShopByCategory() {
               md:text-base
             "
           >
-            Discover lighting solutions designed to transform every space
-            with modern technology, refined design, and brilliant
-            illumination.
+            Discover lighting solutions designed to transform every space with
+            modern technology, refined design, and brilliant illumination.
           </p>
         </div>
 
