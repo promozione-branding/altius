@@ -245,7 +245,7 @@ export default function ContactClient() {
                 <iframe
                   title="Company Location"
                   src="https://www.google.com/maps?q=New%20Delhi%20India&output=embed"
-                  className="absolute inset-0 h-full w-full border-0 grayscale opacity-80 transition-all duration-700 group-hover:grayscale-0 group-hover:opacity-100"
+                  className="absolute inset-0 h-full w-full border-0  opacity-80 transition-all duration-700 group-hover:grayscale-0 group-hover:opacity-100"
                   loading="lazy"
                 />
 
