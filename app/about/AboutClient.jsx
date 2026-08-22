@@ -1,55 +1,402 @@
-import React from "react";
+"use client"
+import React, { useLayoutEffect, useRef } from "react";
 import { FiArrowRight, FiClock, FiCompass, FiFeather } from "react-icons/fi";
-import LEDShowcase from "../../compoents/About/LEDShowcase";
 import LEDFeatures from "@/compoents/About/LEDFeatures";
 import Image from "next/image";
 import { GiDoubleStreetLights } from "react-icons/gi";
+import gsap from "gsap";
 
 export default function AboutClient() {
+
+  const sectionRef = useRef(null);
+  const pathsRef = useRef([]);
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      const paths = pathsRef.current.filter(Boolean);
+
+      // ===============================
+      // DRAW SVG PATHS
+      // ===============================
+      paths.forEach((path) => {
+        const length = path.getTotalLength();
+
+        gsap.set(path, {
+          strokeDasharray: length,
+          strokeDashoffset: length,
+        });
+      });
+
+      gsap.to(paths, {
+        strokeDashoffset: 0,
+        duration: 2.2,
+        ease: "power2.inOut",
+        stagger: 0.15,
+      });
+
+      // ===============================
+      // SUBTLE FLOATING MOVEMENT
+      // ===============================
+      paths.forEach((path, index) => {
+        gsap.to(path, {
+          y: index % 2 === 0 ? -6 : 6,
+          duration: 3 + index * 0.25,
+          repeat: -1,
+          yoyo: true,
+          ease: "sine.inOut",
+          delay: 2.2,
+        });
+      });
+
+      // ===============================
+      // CONTENT ENTRANCE
+      // ===============================
+      gsap.fromTo(
+        ".about-content",
+        {
+          opacity: 0,
+          y: 25,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          delay: 0.4,
+          ease: "power3.out",
+        }
+      );
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
   return (
     <>
-      <section className="mx-auto mt-20 w-full max-w-7xl px-5 py-6 md:px-10 lg:px-16 md:py-12">
-        <div className="grid grid-cols-1 items-end gap-10 lg:grid-cols-12">
-          {/* ================= HEADING ================= */}
-          <div className="mb-6 text-center lg:col-span-12 lg:mb-1">
-            <h1
-              className="
+       <section
+      ref={sectionRef}
+      className="
+        relative
+        mt-20
+        min-h-[250px]
+        w-full
+        overflow-hidden
+        bg-white
+        px-5
+        py-6
+        sm:px-8
+        md:px-10
+        md:py-0
+       
+      "
+    >
+      {/* ===============================
+          AMBIENT GREEN GLOW
+      =============================== */}
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          left-1/2
+          top-1/2
+          h-[350px]
+          w-[350px]
+          -translate-x-1/2
+          -translate-y-1/2
+          rounded-full
+          bg-[#85a30f]/10
+          blur-[110px]
+          sm:h-[450px]
+          sm:w-[450px]
+        "
+      />
+
+      {/* ===============================
+          LIGHT TRAILS
+      =============================== */}
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-1/2
+          h-[420px]
+          w-full
+          -translate-y-1/2
+          opacity-70
+        "
+      >
+        <svg
+          viewBox="0 0 1440 700"
+          preserveAspectRatio="none"
+          className="absolute inset-0 h-full w-full"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            {/* Main glow */}
+            <filter
+              id="aboutLightGlow"
+              x="-50%"
+              y="-50%"
+              width="200%"
+              height="200%"
+            >
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="6"
+              />
+            </filter>
+
+            {/* Soft ambient glow */}
+            <filter
+              id="aboutSoftGlow"
+              x="-50%"
+              y="-50%"
+              width="200%"
+              height="200%"
+            >
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="18"
+              />
+            </filter>
+          </defs>
+
+          {/* ===============================
+              SOFT BACKGROUND TRAIL
+          =============================== */}
+
+          <path
+            d="
+              M0 390
+              C180 390 250 410 350 350
+              C450 290 500 250 610 330
+              C720 410 760 430 850 350
+              C950 260 1020 280 1110 350
+              C1210 430 1320 400 1440 390
+            "
+            stroke="#85a30f"
+            strokeWidth="14"
+            fill="none"
+            opacity="0.08"
+            filter="url(#aboutSoftGlow)"
+          />
+
+          {/* ===============================
+              TRAIL 1
+          =============================== */}
+
+          <path
+            ref={(el) => (pathsRef.current[0] = el)}
+            d="
+              M0 390
+              C180 390 250 410 350 350
+              C450 290 500 250 610 330
+              C720 410 760 430 850 350
+              C950 260 1020 280 1110 350
+              C1210 430 1320 400 1440 390
+            "
+            stroke="#85a30f"
+            strokeWidth="2"
+            fill="none"
+          />
+
+          <path
+            d="
+              M0 390
+              C180 390 250 410 350 350
+              C450 290 500 250 610 330
+              C720 410 760 430 850 350
+              C950 260 1020 280 1110 350
+              C1210 430 1320 400 1440 390
+            "
+            stroke="#85a30f"
+            strokeWidth="6"
+            fill="none"
+            opacity="0.22"
+            filter="url(#aboutLightGlow)"
+          />
+
+          {/* ===============================
+              TRAIL 2
+          =============================== */}
+
+          <path
+            ref={(el) => (pathsRef.current[1] = el)}
+            d="
+              M0 330
+              C180 330 280 350 390 300
+              C500 250 550 230 650 300
+              C740 365 800 390 900 300
+              C1000 215 1070 240 1170 310
+              C1260 375 1340 350 1440 330
+            "
+            stroke="#9ebd32"
+            strokeWidth="2"
+            fill="none"
+          />
+
+          <path
+            d="
+              M0 330
+              C180 330 280 350 390 300
+              C500 250 550 230 650 300
+              C740 365 800 390 900 300
+              C1000 215 1070 240 1170 310
+              C1260 375 1340 350 1440 330
+            "
+            stroke="#9ebd32"
+            strokeWidth="6"
+            fill="none"
+            opacity="0.18"
+            filter="url(#aboutLightGlow)"
+          />
+
+          {/* ===============================
+              TRAIL 3
+          =============================== */}
+
+          <path
+            ref={(el) => (pathsRef.current[2] = el)}
+            d="
+              M0 450
+              C160 450 270 470 390 420
+              C500 375 560 340 670 390
+              C780 440 820 470 930 390
+              C1030 315 1110 340 1200 400
+              C1290 460 1360 450 1440 450
+            "
+            stroke="#c4d887"
+            strokeWidth="2"
+            fill="none"
+          />
+
+          <path
+            d="
+              M0 450
+              C160 450 270 470 390 420
+              C500 375 560 340 670 390
+              C780 440 820 470 930 390
+              C1030 315 1110 340 1200 400
+              C1290 460 1360 450 1440 450
+            "
+            stroke="#c4d887"
+            strokeWidth="5"
+            fill="none"
+            opacity="0.16"
+            filter="url(#aboutLightGlow)"
+          />
+
+          {/* ===============================
+              TRAIL 4
+          =============================== */}
+
+          <path
+            ref={(el) => (pathsRef.current[3] = el)}
+            d="
+              M0 270
+              C170 270 270 290 390 250
+              C500 210 570 190 680 250
+              C790 310 830 330 930 250
+              C1030 170 1110 190 1210 250
+              C1310 310 1370 290 1440 270
+            "
+            stroke="#85a30f"
+            strokeWidth="1.5"
+            fill="none"
+            opacity="0.6"
+          />
+
+          {/* ===============================
+              TRAIL 5
+          =============================== */}
+
+          <path
+            ref={(el) => (pathsRef.current[4] = el)}
+            d="
+              M0 510
+              C170 510 270 520 390 480
+              C500 440 570 420 680 470
+              C790 520 850 540 950 470
+              C1050 400 1130 420 1230 480
+              C1320 530 1380 520 1440 510
+            "
+            stroke="#85a30f"
+            strokeWidth="1.5"
+            fill="none"
+            opacity="0.4"
+          />
+        </svg>
+      </div>
+
+      {/* ===============================
+          CONTENT
+      =============================== */}
+
+      <div className="relative z-20 mx-auto flex min-h-[380px] w-full max-w-7xl items-center justify-center">
+        <div className="about-content mx-auto max-w-4xl text-center">
+
+          {/* Small Label */}
+
+          <p
+            className="
+              mb-5
+              text-xs
+              font-semibold
+              uppercase
+              tracking-[0.3em]
+              text-[#85a30f]
+              sm:text-sm
+            "
+          >
+            About Elstrong
+          </p>
+
+          {/* Heading */}
+
+          <h1
+            className="
               mx-auto
-              mb-6
+              mb-7
               max-w-4xl
               text-4xl
               font-semibold
-              leading-[1.05]
-              tracking-tight
+              leading-[1.02]
+              tracking-[-0.04em]
               text-gray-900
               sm:text-5xl
               md:text-6xl
               lg:text-7xl
             "
-            >
-              About the <span className="text-[#85a30f]">Art of Elstrong</span>
-            </h1>
+          >
+            About the{" "}
+            <span className="text-[#85a30f]">
+              Art of Elstrong
+            </span>
+          </h1>
 
-            <p
-              className="
+          {/* Description */}
+
+          <p
+            className="
               mx-auto
               max-w-2xl
               text-base
-              
-              text-black
+              leading-7
+              text-gray-600
               sm:text-lg
-              
+              sm:leading-8
             "
-            >
-              At Elstrong, we believe lighting is more than just function; it's
-              the invisible architecture of a space. We craft luminous
-              experiences that transform environments and elevate the everyday.
-            </p>
-          </div>
+          >
+            At Elstrong, we believe lighting is more than just function;
+            it&apos;s the invisible architecture of a space. We craft
+            luminous experiences that transform environments and elevate
+            the everyday.
+          </p>
 
-          {/* ================= IMAGE ================= */}
         </div>
-      </section>
+      </div>
+    </section>
 
       <section className="w-full bg-gray-100 py-6 md:py-14">
         <div className="mx-auto max-w-7xl px-5 md:px-10 lg:px-16">
