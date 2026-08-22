@@ -13,7 +13,7 @@ import {
 export default function ContactClient() {
   return (
     <>
-      <section className="bg-white relative mt-20 px-6 py-6 md:px-12 md:py-14">
+      <section className="bg-gray-300/40 relative mt-20 px-6 py-6 md:px-12 md:py-14">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlSpace="preserve"
@@ -88,7 +88,7 @@ export default function ContactClient() {
             {/* =====================================================
               LEFT — STICKY CONTACT FORM
           ====================================================== */}
-            <div className="lg:col-span-7 lg:sticky lg:top-24 lg:self-start">
+            <div className="lg:col-span-7 shadow-2xl lg:sticky lg:top-24 lg:self-start">
               <div className="rounded-2xl border border-black/[0.07] bg-[#fafafa] p-6 md:p-7">
                 {/* Label */}
                 <div className="mb-5 flex items-center gap-3">
@@ -282,7 +282,7 @@ export default function ContactClient() {
               </div>
 
               {/* ================= CONTACT INFO ================= */}
-              <div className="rounded-2xl bg-black p-7 text-white sm:p-9 lg:p-10">
+              <div className="rounded-2xl bg-black p-7  text-white sm:p-9 lg:p-10">
                 {/* Heading */}
                 <div className="mb-8">
                   <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.25em] text-[#85a30f]">
