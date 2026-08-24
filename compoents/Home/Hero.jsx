@@ -48,11 +48,13 @@ export default function Hero() {
         opacity: 1,
       });
 
+      // Glow starts hidden
       gsap.set(glowRef.current, {
         opacity: 0,
         scale: 0.2,
       });
 
+      // Text starts hidden
       gsap.set(subtitleRef.current, {
         opacity: 0,
         y: 30,
@@ -72,12 +74,9 @@ export default function Hero() {
       // 1. BULB ENTERS FROM OUTSIDE SCREEN
       // =========================================
 
-      tl.to(
-        {},
-        {
-          duration: 0.5,
-        },
-      );
+      tl.to({}, {
+        duration: 0.5,
+      });
 
       tl.to(stringRef.current, {
         y: 0,
@@ -96,7 +95,7 @@ export default function Hero() {
       );
 
       // =========================================
-      // 2. BULB BOUNCE WHEN IT ARRIVES
+      // 2. BULB BOUNCE
       // =========================================
 
       tl.to(handleRef.current, {
@@ -127,12 +126,9 @@ export default function Hero() {
       // 3. SMALL PAUSE
       // =========================================
 
-      tl.to(
-        {},
-        {
-          duration: 0.5,
-        },
-      );
+      tl.to({}, {
+        duration: 0.5,
+      });
 
       // =========================================
       // 4. PULL STRING DOWN
@@ -251,7 +247,7 @@ export default function Hero() {
       );
 
       // =========================================
-      // 11. BUTTON
+      // 11. BUTTONS
       // =========================================
 
       tl.to(
@@ -302,9 +298,8 @@ export default function Hero() {
       className="
         relative
         flex
-        min-h-[600px]
-        h-[707px]
         w-full
+        h-[610px]
         items-center
         justify-center
         overflow-hidden
@@ -319,12 +314,19 @@ export default function Hero() {
           ref={backgroundRef}
           className="h-full w-full bg-cover bg-center"
           style={{
-            backgroundImage: "url('/banner.jpg')",
+            backgroundImage: "url('/newbanner.webp')",
           }}
           aria-label="Luxury minimalist living room"
         />
-<div className="absolute inset-0 bg-black/50" />
-        <div ref={overlayRef} className="absolute inset-0 bg-black" />
+
+        {/* Dark base overlay */}
+        <div className="absolute inset-0 bg-black/50" />
+
+        {/* Animated overlay */}
+        <div
+          ref={overlayRef}
+          className="absolute inset-0 bg-black"
+        />
       </div>
 
       {/* =========================================
@@ -407,59 +409,117 @@ export default function Hero() {
           HERO CONTENT
       ========================================== */}
 
-      <div className="relative z-10 flex flex-col items-center px-4 text-center">
-        <span
-          ref={subtitleRef}
-          className="
-            mb-4
-            text-sm
-            font-medium
-            uppercase
-            tracking-[0.25em]
-            text-white
-          "
-        >
-          Discover the Collection
-        </span>
+      <div
+        className="
+          relative
+          z-10
+          flex
+          w-full
+          max-w-[1500px]
+          items-center
+          px-6
+          sm:px-10
+          lg:px-16
+        "
+      >
+        <div className="max-w-3xl text-left">
 
-        <h1
-          ref={headingRef}
-          className="
-            mb-8
-            max-w-4xl
-            text-4xl
-            font-semibold
-            leading-tight
-            text-white
-            sm:text-5xl
-            md:text-6xl
-            lg:text-7xl
-          "
-        >
-          Elevate your interiors with
-          <br />
-          lighting made to inspire.
-        </h1>
+          {/* SUBTITLE */}
 
-        <button
-          ref={buttonRef}
-          className="
-            bg-black
-            px-8
-            py-4
-            text-sm
-            font-medium
-            uppercase
-            tracking-widest
-            text-white
-            transition-colors
-            duration-300
-            hover:bg-[#85a30f]
-            hover:text-white
-          "
-        >
-          Shop Now
-        </button>
+          <span
+            ref={subtitleRef}
+            className="
+              mb-5
+              block
+              text-sm
+              font-medium
+              uppercase
+              tracking-[0.25em]
+              text-white
+            "
+          >
+            Discover the Collection
+          </span>
+
+          {/* HEADING */}
+
+          <h1
+            ref={headingRef}
+            className="
+              mb-8
+              max-w-3xl
+              text-4xl
+              font-semibold
+              leading-[1.05]
+              text-white
+              sm:text-5xl
+              md:text-6xl
+              lg:text-7xl
+            "
+          >
+            Elevate your interiors
+            <br />
+            with lighting made
+            <br />
+            to inspire.
+          </h1>
+
+          {/* BUTTONS */}
+
+          <div
+            ref={buttonRef}
+            className="
+              flex
+              flex-wrap
+              items-center
+              gap-4
+            "
+          >
+            {/* SHOP NOW */}
+
+            <button
+              className="
+                bg-black
+                px-8
+                py-4
+                text-sm
+                font-medium
+                uppercase
+                tracking-widest
+                text-white
+                transition-all
+                duration-300
+                hover:bg-[#85a30f]
+              "
+            >
+              Shop Now
+            </button>
+
+            {/* EXPLORE */}
+
+            <button
+              className="
+                border
+                border-white/70
+                bg-white/10
+                px-8
+                py-4
+                text-sm
+                font-medium
+                uppercase
+                tracking-widest
+                text-white
+                backdrop-blur-sm
+                transition-all
+                duration-300
+                hover:bg-white
+                hover:text-black
+              "
+            >
+              Explore Collection
+            </button>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -38,6 +38,16 @@ const categories = [
     image: "/led.webp",
     hoverImage: "/led-hover.webp",
   },
+  {
+    title: "Downlight LED",
+    image: "/light3.jpeg",
+    hoverImage: "/lites.webp",
+  },
+  {
+    title: "Flood Light",
+    image: "/FloodLight.webp",
+    hoverImage: "/FloodLight-hover.webp",
+  },
 ];
 
 export default function ShopByCategory() {
@@ -381,8 +391,8 @@ export default function ShopByCategory() {
             grid-cols-1
             gap-5
             sm:grid-cols-2
-            lg:grid-cols-3
-            lg:gap-7
+            lg:grid-cols-4
+            lg:gap-5
           "
         >
           {categories.map((category, index) => (
@@ -395,6 +405,7 @@ export default function ShopByCategory() {
                 group
                 relative
                 aspect-[4/4.4]
+                h-80
                 cursor-pointer
                 overflow-hidden
                 rounded-sm
@@ -566,7 +577,7 @@ export default function ShopByCategory() {
 
                 <div
                   className="
-                    mb-3
+                    mb-2
                     h-[2px]
                     w-8
                     bg-lime-400
