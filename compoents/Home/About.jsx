@@ -362,7 +362,7 @@ export default function About() {
               >
                 <div className="about-image-inner h-full w-full">
                   <img
-                    src="/ban3.webp"
+                    src="/aboutnew.webp"
                     alt="Modern commercial space with professional LED lighting"
                     className="
                       about-image
