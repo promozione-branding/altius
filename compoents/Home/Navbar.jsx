@@ -32,12 +32,12 @@ const navItems = [
 ];
 
 const shopCategories = [
-  "Ceiling Lights",
-  "Pendant Lights",
-  "Wall Lights",
-  "Table Lamps",
-  "Floor Lamps",
-  "LED Collection",
+  "Square Lights",
+  "LED Lights",
+  "Outdoor Light",
+  "Downlight Led",
+  "Flood Light",
+  "LED Track Light",
 ];
 
 export default function Navbar() {
@@ -71,10 +71,10 @@ export default function Navbar() {
         ease-in-out
 
         ${
-      pathname !== "/" || scrolled
-        ? "bg-black shadow-[0_4px_25px_rgba(0,0,0,0.06)]"
-        : "bg-transparent"
-    }
+          pathname !== "/" || scrolled
+            ? "bg-black shadow-[0_4px_25px_rgba(0,0,0,0.06)]"
+            : "bg-transparent"
+        }
       `}
     >
       <nav className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-10">

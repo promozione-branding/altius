@@ -299,7 +299,7 @@ export default function Hero() {
         relative
         flex
         w-full
-        h-[610px]
+        h-[740px]
         items-center
         justify-center
         overflow-hidden
