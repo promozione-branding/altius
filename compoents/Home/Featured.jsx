@@ -17,30 +17,30 @@ const products = [
     name: "LED Track Light",
     price: "$40.00",
     oldPrice: "$50.00",
-    image: "/LEDTrackLight.webp",
+    image: "/category/tracking1.webp",
   },
   {
     name: "Outdoor Light",
     price: "$70.00",
     oldPrice: "$80.00",
-    image: "/OutdoorLight.webp",
+    image: "/category/Outdoor1.webp",
   },
   {
     name: "Square Panel Light",
     price: "$40.00",
     oldPrice: "$50.00",
-    image: "/SquarePanelLight.webp",
+    image: "/category/square1.webp",
   },
   {
     name: "Flood Light",
     price: "$80.00",
     oldPrice: "$90.00",
-    image: "/FloodLight.webp",
+    image: "/category/flood1.webp",
   },
   {
     name: "Downlight Led",
     price: "$60.00",
-    image: "/COBLEDDownlight.webp",
+    image: "/category/DownlightLed1.webp",
   },
 ];
 
@@ -311,8 +311,9 @@ export default function Featured() {
                   text-black
                   transition-all
                   duration-300
-                  hover:bg-[#ccee46]
-                  hover:text-black
+                  hover:bg-[#85a30f]
+                  hover:text-white
+                  hover:border-[#85a30f]
                 "
               >
                 Explore Products

@@ -9,44 +9,44 @@ gsap.registerPlugin(ScrollTrigger);
 
 const categories = [
   {
-    title: "Downlight LED",
+    title: "Round LED",
     image: "/light3.jpeg",
     hoverImage: "/lites.webp",
   },
   {
     title: "Flood Light",
-    image: "/FloodLight.webp",
-    hoverImage: "/FloodLight-hover.webp",
+    image: "/category/flood1.webp",
+    hoverImage: "/category/flood2.webp",
   },
   {
     title: "Square Panel Light",
-    image: "/SquarePanelLight.webp",
-    hoverImage: "/SquarePanelLight-hover.webp",
+    image: "/category/square1.webp",
+    hoverImage: "/category/square2.webp",
   },
   {
     title: "LED Track Light",
-    image: "/LEDTrackLight.webp",
-    hoverImage: "/LEDTrackLight-hover.webp",
+    image: "/category/tracking1.webp",
+    hoverImage: "/category/tracking2.webp",
   },
   {
     title: "Outdoor Light",
-    image: "/OutdoorLight.webp",
-    hoverImage: "/OutdoorLight-hover.webp",
+    image: "/category/Outdoor1.webp",
+    hoverImage: "/category/Outdoor2.webp",
   },
   {
-    title: "LED Collection",
-    image: "/led.webp",
-    hoverImage: "/led-hover.webp",
+    title: "Concealed LED",
+    image: "/category/ledconcel1.webp",
+    hoverImage: "/category/ledconcel2.webp",
   },
   {
     title: "Downlight LED",
-    image: "/light3.jpeg",
-    hoverImage: "/lites.webp",
+    image: "/category/DownlightLed1.webp",
+    hoverImage: "/category/DownlightLed2.webp",
   },
   {
     title: "Flood Light",
-    image: "/FloodLight.webp",
-    hoverImage: "/FloodLight-hover.webp",
+    image: "/category/flood1.webp",
+    hoverImage: "/category/flood2.webp",
   },
 ];
 
