@@ -21,13 +21,13 @@ export default function page() {
   return (
     <>
       <Hero />
-      {/* <CurvedLoop
+      <CurvedLoop
         marqueeText="ELSTRONG ✦ BRIGHTER SPACES ✦ SMARTER LIGHTING ✦ LED INNOVATION ✦"
         speed={100}
         curveAmount={0}
         direction="left"
         interactive={true}
-      /> */}
+      />
       <About />
       <Featured />
       <Parllel />
