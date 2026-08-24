@@ -272,7 +272,13 @@ export default function About() {
       {/* =========================================================
           FIRST SECTION
       ========================================================= */}
-
+   <CurvedLoop
+          marqueeText="ELSTRONG ✦ BRIGHTER SPACES ✦ SMARTER LIGHTING ✦ LED INNOVATION ✦"
+          speed={100}
+          curveAmount={0}
+          direction="left"
+          interactive={true}
+        />
       <section
         ref={sectionRef}
         className="relative overflow-hidden bg-[#f7f6f2] py-6 md:py-13"
