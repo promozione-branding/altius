@@ -1,10 +1,10 @@
 import React from 'react'
-import ProductClient from './ProductClient'
+import AllCategories from './AllCategories'
 
 export default function page() {
   return (
     <>
-    <ProductClient/>
+    <AllCategories/>
     </>
   )
 }
