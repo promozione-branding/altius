@@ -452,7 +452,7 @@ function CategoryFilter({
                 >
 
                   <input
-                    type="radioc"
+                    type="radio"
                     checked={isSelected}
                     onChange={() =>
                       toggleCategory(category)
