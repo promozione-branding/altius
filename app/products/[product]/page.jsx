@@ -46,6 +46,7 @@ export default async function Page({ params }) {
     category.products.some((product) => product.slug === slug)
   );
 
+
   return (
     <ProductClient
       product={productData}

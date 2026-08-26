@@ -8,8 +8,10 @@ export default function Page() {
       ...product,
       categoryName: category.name,
       categorySlug: category.slug,
-    }))
+    })),
   );
+
+  console.log(products);
 
   return <AllProductClient products={products} />;
 }
