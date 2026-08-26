@@ -152,7 +152,7 @@ export default function AllProductClient({ products = [] }) {
 
         <div className="hidden md:flex justify-between items-end mb-10 border-b border-gray-200 pb-4">
 
-          <span className="text-sm text-gray-500">
+          <span className="text-sm text-gray-800">
 
             {selectedCategory ? (
               <>
@@ -184,7 +184,7 @@ export default function AllProductClient({ products = [] }) {
 
           <div className="flex flex-wrap items-center gap-2 mb-8">
 
-            <span className="text-xs uppercase tracking-widest text-gray-400 mr-2">
+            <span className="text-xs uppercase tracking-widest text-gray-700 mr-2">
               Filtered:
             </span>
 
