@@ -21,7 +21,7 @@ export default function ContactClient() {
           viewBox="0 0 512 512"
           width={218}
           height={218}
-          className="icon flat-color absolute bottom-0 left-6"
+          className="icon size-20 md:size-50 flat-color absolute bottom-0 left-6"
         >
           <path
             d="M331.19 0h148.327v36.3c0 14.208-11.518 25.727-25.727 25.727h-96.872c-14.208 0-25.727-11.518-25.727-25.727V0h-.001z"
@@ -64,19 +64,19 @@ export default function ContactClient() {
             }}
           />
         </svg>
-        <div className="mx-auto flex max-w-[1440px] flex-col items-center text-center">
+        <div className="mx-auto py-15 flex max-w-[1440px] flex-col items-center text-center">
           <p className="mb-5 text-sm font-semibold uppercase tracking-[0.3em] text-[#85a30f]">
             Contact Our Expert
           </p>
 
-          <h1 className="max-w-4xl text-5xl font-medium leading-[1] tracking-[-0.04em] text-black sm:text-6xl md:text-7xl lg:text-[82px]">
+          <h1 className="max-w-4xl text-4xl font-medium leading-[1] tracking-[-0.04em] text-black sm:text-6xl md:text-7xl lg:text-[82px]">
             Let&apos;s Illuminate
             <span className="block text-[#85a30f]">Your Space.</span>
           </h1>
 
           <a
             href="#contact-form"
-            className="mt-9 rounded-full flex justify-center gap-2 items-center bg-[#85a30f] px-8 py-4 text-lg font-semibold text-white transition-all duration-300 hover:bg-black"
+            className="mt-9 rounded-full flex justify-center gap-2 items-center bg-[#85a30f] text-sm px-5 md:px-8 py-4 md:text-lg font-semibold text-white transition-all duration-300 hover:bg-black"
           >
             Get Lights <FaLightbulb />
           </a>
@@ -89,7 +89,7 @@ export default function ContactClient() {
               LEFT — STICKY CONTACT FORM
           ====================================================== */}
             <div className="lg:col-span-7 shadow-2xl lg:sticky lg:top-24 lg:self-start">
-              <div className="rounded-2xl border border-black/[0.07] bg-[#fafafa] p-6 md:p-7">
+              <div className="rounded-2xl border border-black/[0.07] bg-[#fafafa] p-4 md:p-7">
                 {/* Label */}
                 <div className="mb-5 flex items-center gap-3">
                   <span className="h-px w-8 bg-[#85a30f]" />
@@ -111,7 +111,7 @@ export default function ContactClient() {
                 </p>
 
                 {/* Form */}
-                <form action="#" method="POST" className="mt-10 space-y-7">
+                <form action="#" method="POST" className="mt-10 space-y-5 md:space-y-7">
                   {/* Name + Email */}
                   <div className="grid grid-cols-1 gap-7 md:grid-cols-2">
                     {/* Name */}

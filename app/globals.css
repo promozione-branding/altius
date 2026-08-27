@@ -4,27 +4,27 @@
 .split-title {
   display: flex;
   justify-content: center;
+  width: 100%;
+  padding: 0 16px;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
   font-family: "Inter", sans-serif;
 }
+
 .split-title__text {
   position: relative;
   display: inline-block;
   cursor: pointer;
-
   font-family: serif;
-  font-size: 4.75rem;
+  font-size: clamp(2.4rem, 8vw, 4.75rem);
   line-height: 1;
   letter-spacing: -0.04em;
-
-  color: #000;
-}
-
-/* Hide the original text */
-.split-title__text {
   color: transparent;
+  text-align: center;
+  white-space: nowrap;
 }
 
 /* Both halves */
@@ -32,46 +32,31 @@ h1,h2,h3{
 .split-title__bottom {
   position: absolute;
   left: 0;
-
+  top: 0;
   width: 100%;
-
   color: #000;
-
   white-space: nowrap;
-
   transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* TOP HALF */
-
+/* Top half */
 .split-title__top {
-  top: 0;
-
   clip-path: inset(0 0 50% 0);
 }
 
-/* BOTTOM HALF */
-
+/* Bottom half */
 .split-title__bottom {
-  top: 0;
-
   clip-path: inset(50% 0 0 0);
 }
 
 /* Middle word */
-
 .split-title__word {
   position: absolute;
-
   left: 50%;
   top: 50%;
-
   transform: translate(-50%, -50%) scaleY(0);
-
   color: #85a30f;
-
   white-space: nowrap;
-
   opacity: 0;
 
   transition:
@@ -79,16 +64,9 @@ h1,h2,h3{
     opacity 0.4s ease;
 }
 
-.inter {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
-
-/* =========================
-   HOVER
-========================= */
+/* =========================================
+   DESKTOP HOVER
+========================================= */
 
 .split-title__text:hover .split-title__top {
   transform: translateY(-35px);
@@ -100,11 +78,91 @@ h1,h2,h3{
 
 .split-title__text:hover .split-title__word {
   transform: translate(-50%, -50%) scaleY(1);
-
   opacity: 1;
 }
 
+/* =========================================
+   TABLET
+========================================= */
 
+@media (max-width: 768px) {
+  .split-title {
+    padding: 0 12px;
+  }
+
+  .split-title__text {
+    font-size: clamp(2.2rem, 9vw, 3.5rem);
+  }
+
+  .split-title__text:hover .split-title__top {
+    transform: translateY(-22px);
+  }
+
+  .split-title__text:hover .split-title__bottom {
+    transform: translateY(22px);
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .split-title {
+    padding: 0 10px;
+  }
+
+  .split-title__text {
+    font-size: clamp(2rem, 10vw, 2.8rem);
+    letter-spacing: -0.045em;
+  }
+
+  .split-title__text:hover .split-title__top {
+    transform: translateY(-15px);
+  }
+
+  .split-title__text:hover .split-title__bottom {
+    transform: translateY(15px);
+  }
+
+  .split-title__word {
+    font-size: 0.9em;
+  }
+}
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 360px) {
+  .split-title__text {
+    font-size: 1.9rem;
+  }
+
+  .split-title__text:hover .split-title__top {
+    transform: translateY(-15px);
+  }
+
+  .split-title__text:hover .split-title__bottom {
+    transform: translateY(15px);
+  }
+}
+
+/* =========================================
+   TOUCH DEVICES
+   Prevent awkward hover behavior on mobile
+========================================= */
+
+
+
+
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
 
 /* marque */
 .curved-loop-jacket {

@@ -390,7 +390,7 @@ export default function Collections2() {
 
       <div className="mb-7 px-4 text-center md:mb-9">
         <div className="split-title mb-15">
-          <h2 className="split-title__text">
+          <h2 className="split-title__text text-base">
             Featured Collections
 
             <span className="split-title__top">
@@ -530,186 +530,187 @@ export default function Collections2() {
                 index === activeIndex;
 
               return (
-                <div
-                  key={`${item.title}-${index}`}
-                  ref={(el) => {
-                    cardsRef.current[index] =
-                      el;
-                  }}
-                  className="
-                    absolute
-                    left-0
-                    top-0
-                    h-full
-                    w-full
-                    overflow-hidden
-                    rounded-[22px]
-                    border
-                    border-black/[0.07]
-                    bg-white
-                    shadow-[0_20px_70px_rgba(0,0,0,0.08)]
-                    will-change-transform
-                  "
-                  style={{
-                    zIndex: isActive
-                      ? 50
-                      : 40 - index,
-                  }}
-                >
-                  <div
-                    className="
-                      grid
-                      h-full
-                      grid-cols-1
-                      md:grid-cols-[42%_58%]
-                    "
-                  >
-                    {/* IMAGE */}
+               <div
+  key={`${item.title}-${index}`}
+  ref={(el) => {
+    cardsRef.current[index] = el;
+  }}
+  className="
+    absolute
+    left-0
+    top-0
+    h-full
+    w-full
+    overflow-hidden
+    rounded-[22px]
+    border
+    border-black/[0.07]
+    bg-white
+    shadow-[0_20px_70px_rgba(0,0,0,0.08)]
+    will-change-transform
+  "
+  style={{
+    zIndex: isActive ? 50 : 40 - index,
+  }}
+>
+  <div
+    className="
+      grid
+      h-full
+      grid-cols-1
+      md:grid-cols-[40%_60%]
+    "
+  >
+    {/* IMAGE */}
+    <div
+      className="
+        relative
+        h-full
+        min-h-0
+        overflow-hidden
+        md:h-full
+      "
+    >
+      <img
+        src={item.image}
+        alt={item.title}
+        draggable={false}
+        className="
+          h-full
+          w-full
+          object-cover
+          object-center
+        "
+      />
 
-                    <div
-                      className="
-                        relative
-                        h-[52%]
-                        overflow-hidden
-                        md:h-full
-                      "
-                    >
-                      <img
-                        src={item.image}
-                        alt={item.title}
-                        draggable={false}
-                        className="
-                          h-full
-                          w-full
-                          object-cover
-                        "
-                      />
+      <div className="absolute inset-0 bg-black/[0.03]" />
+    </div>
 
-                      <div className="absolute inset-0 bg-black/[0.03]" />
-                    </div>
+    {/* CONTENT */}
+    <div
+      className="
+        relative
+        flex
+        h-1/2
+        min-h-0
+        flex-col
+        justify-between
+        overflow-hidden
+        bg-white
+        p-4
+        sm:p-6
+        md:h-full
+        md:p-8
+        lg:p-10
+      "
+    >
+      {/* TOP */}
+      <div>
+        <p
+          className="
+            mb-2
+            text-[8px]
+            font-medium
+            tracking-[0.28em]
+            text-black/80
+            sm:mb-4
+            sm:text-[9px]
+            md:text-[10px]
+          "
+        >
+          0{index + 1} / 0{collections.length}
+        </p>
 
-                    {/* CONTENT */}
+        <h3
+          className="
+            max-w-md
+            text-lg
+            font-medium
+            leading-[1.1]
+            tracking-[-0.03em]
+            text-black
+            sm:text-xl
+            md:text-3xl
+            lg:text-4xl
+          "
+        >
+          {item.title}
+        </h3>
+      </div>
 
-                    <div
-                      className="
-                        relative
-                        flex
-                        h-[48%]
-                        flex-col
-                        justify-between
-                        bg-white
-                        p-5
-                        sm:p-6
-                        md:h-full
-                        md:p-8
-                        lg:p-10
-                      "
-                    >
-                      {/* TOP */}
+      {/* BOTTOM */}
+      <div
+        className="
+          flex
+          items-end
+          justify-between
+          gap-3
+        "
+      >
+        <div className="min-w-0">
+          <p
+            className="
+              text-[8px]
+              font-medium
+              tracking-[0.24em]
+              text-black/80
+              sm:text-[9px]
+              md:text-[10px]
+            "
+          >
+            {item.subtitle}
+          </p>
 
-                      <div>
-                        <p
-                          className="
-                            mb-4
-                            text-[9px]
-                            font-medium
-                            tracking-[0.28em]
-                            text-black/80
-                            md:text-[10px]
-                          "
-                        >
-                          0{index + 1} / 0
-                          {collections.length}
-                        </p>
+          <p
+            className="
+              mt-1
+              max-w-sm
+              text-[10px]
+              leading-relaxed
+              text-black/70
+              sm:mt-2
+              sm:text-xs
+              md:text-sm
+            "
+          >
+            Explore refined lighting designed to bring
+            character, warmth and atmosphere to modern
+            spaces.
+          </p>
+        </div>
 
-                        <h3
-                          className="
-                            max-w-md
-                            text-lg
-                            font-medium
-                            leading-[1.1]
-                            tracking-[-0.03em]
-                            text-black
-                            sm:text-xl
-                            md:text-3xl
-                            lg:text-4xl
-                          "
-                        >
-                          {item.title}
-                        </h3>
-                      </div>
-
-                      {/* BOTTOM */}
-
-                      <div
-                        className="
-                          flex
-                          items-end
-                          justify-between
-                          gap-4
-                        "
-                      >
-                        <div>
-                          <p
-                            className="
-                              text-[9px]
-                              font-medium
-                              tracking-[0.24em]
-                              text-black/80
-                              md:text-[10px]
-                            "
-                          >
-                            {item.subtitle}
-                          </p>
-
-                          <p
-                            className="
-                              mt-2
-                              max-w-sm
-                              text-xs
-                              leading-relaxed
-                              text-black/70
-                              md:text-sm
-                            "
-                          >
-                            Explore refined lighting
-                            designed to bring
-                            character, warmth and
-                            atmosphere to modern
-                            spaces.
-                          </p>
-                        </div>
-
-                        <button
-                          type="button"
-                          className="
-                            flex
-                            h-10
-                            w-10
-                            shrink-0
-                            items-center
-                            justify-center
-                            rounded-full
-                            border
-                            border-black/10
-                            text-black
-                            transition-all
-                            duration-300
-                            hover:bg-black
-                            hover:text-white
-                            md:h-12
-                            md:w-12
-                          "
-                        >
-                          <FiArrowUpRight
-                            size={19}
-                            strokeWidth={1.4}
-                          />
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        <button
+          type="button"
+          className="
+            flex
+            h-9
+            w-9
+            shrink-0
+            items-center
+            justify-center
+            rounded-full
+            border
+            border-black/10
+            text-black
+            transition-all
+            duration-300
+            hover:bg-black
+            hover:text-white
+            sm:h-10
+            sm:w-10
+            md:h-12
+            md:w-12
+          "
+        >
+          <FiArrowUpRight
+            size={18}
+            strokeWidth={1.4}
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
               );
             }
           )}

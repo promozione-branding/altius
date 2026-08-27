@@ -29,7 +29,7 @@ export const categories = [
 
         // Main product images
 
-        image:"/light3.jpeg",
+        image: "/light3.jpeg",
         images: [
           "/light3.jpeg",
           "/products/luna-ceiling-light-2.webp",

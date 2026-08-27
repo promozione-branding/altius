@@ -74,7 +74,7 @@ export default function Parllel() {
             >
               <div className="max-w-[620px] relative z-20 border border-[#85a30f] bg-black/60 py-10 px-10">
                 {/* Label */}
-                <div className="absolute right-[20px] z-10 -bottom-26 -translate-y-1/2">
+                <div className="hidden md:block absolute right-[20px] z-10 -bottom-26 -translate-y-1/2">
                   {/* HUGE SOFT AMBIENT GLOW */}
 
                   {/* BRIGHT CENTER GLOW */}

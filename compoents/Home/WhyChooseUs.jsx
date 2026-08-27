@@ -327,7 +327,7 @@ export default function WhyChooseUs() {
     >
       {/* LEFT TRACK LIGHT */}
 
-      <div ref={leftLightRef} className="absolute -top-9 left-15 z-10">
+      <div ref={leftLightRef} className="hidden md:block absolute -top-9 left-15 z-10">
         <Image
           height={100}
           width={100}
@@ -339,7 +339,7 @@ export default function WhyChooseUs() {
 
       {/* RIGHT TRACK LIGHT */}
 
-      <div ref={rightLightRef} className="absolute -top-9 right-15 z-10">
+      <div ref={rightLightRef} className="hidden md:block absolute -top-9 right-15 z-10">
         <Image
           height={100}
           width={100}
@@ -392,7 +392,7 @@ export default function WhyChooseUs() {
           className="
             grid
             grid-cols-1
-            gap-8
+            gap-0
             font-serif
             sm:grid-cols-2
             lg:grid-cols-4

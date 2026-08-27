@@ -25,7 +25,7 @@ const navItems = [
   },
   {
     name: "Blogs",
-    href: "/product",
+    href: "/blogs",
   },
   {
     name: "Contact",
@@ -81,7 +81,7 @@ export default function Navbar() {
         }
       `}
     >
-      <nav className="mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-10">
+      <nav className="mx-auto max-w-[1500px] py-5 px-5 sm:px-8 lg:px-10">
 
         {/* ================================
             MAIN NAV
@@ -349,11 +349,12 @@ export default function Navbar() {
         {mobileOpen && (
           <div
             className="
-              max-h-[calc(100vh-82px)]
+              max-h-[calc(100vh-72px)]
               overflow-y-auto
               border-t
               border-neutral-200
               bg-white
+              px-5
               py-5
               lg:hidden
             "

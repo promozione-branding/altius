@@ -272,13 +272,13 @@ export default function About() {
       {/* =========================================================
           FIRST SECTION
       ========================================================= */}
-   <CurvedLoop
-          marqueeText="ELSTRONG ✦ BRIGHTER SPACES ✦ SMARTER LIGHTING ✦ LED INNOVATION ✦"
-          speed={100}
-          curveAmount={0}
-          direction="left"
-          interactive={true}
-        />
+      <CurvedLoop
+        marqueeText="ELSTRONG ✦ BRIGHTER SPACES ✦ SMARTER LIGHTING ✦ LED INNOVATION ✦"
+        speed={100}
+        curveAmount={0}
+        direction="left"
+        interactive={true}
+      />
       <section
         ref={sectionRef}
         className="relative overflow-hidden bg-[#f7f6f2] py-6 md:py-13"
@@ -416,10 +416,12 @@ export default function About() {
 
                 <div
                   className="
+                  hidden
+
                     absolute
                     bottom-5
                     left-5
-                    flex
+                    md:flex
                     items-center
                     gap-3
                     sm:bottom-7
@@ -461,7 +463,9 @@ export default function About() {
 
               <div
                 className="
+                  hidden
                   about-badge
+                  md:block
                   absolute
                   -top-15
                   right-3
@@ -563,9 +567,9 @@ export default function About() {
                   about-description
                   mt-7
                   max-w-[570px]
-                  text-sm
+                  text-base
                   leading-7
-                  text-neutral-500
+                  text-neutral-800
                   sm:text-base
                   sm:leading-8
                 "
@@ -607,7 +611,7 @@ export default function About() {
                       Energy Efficient
                     </h4>
 
-                    <p className="mt-1 text-xs leading-5 text-neutral-500">
+                    <p className="mt-1 text-sm md:text-xs leading-5 text-neutral-500">
                       High-performance LED systems with optimized energy
                       consumption.
                     </p>
@@ -639,7 +643,7 @@ export default function About() {
                       Tailored Solutions
                     </h4>
 
-                    <p className="mt-1 text-xs leading-5 text-neutral-500">
+                    <p className="mt-1 text-sm md:text-xs leading-5 text-neutral-500">
                       Lighting designed around your space and application
                       requirements.
                     </p>
@@ -798,8 +802,6 @@ export default function About() {
       {/* =========================================================
           SECOND SECTION — KEPT SAME
       ========================================================= */}
-
-    
     </>
   );
 }

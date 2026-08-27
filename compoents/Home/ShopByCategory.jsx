@@ -388,6 +388,7 @@ export default function ShopByCategory() {
         <div
           className="
             grid
+            justify-items-center
             grid-cols-1
             gap-5
             sm:grid-cols-2

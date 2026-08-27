@@ -14,7 +14,7 @@ export default function Scroll() {
       scrollHint="Discover More"
     >
       <div className="space-y-4 text-white">
-        <h2 className="text-6xl font-semibold">
+        <h2 className="text-4xl md:text-6xl font-semibold">
           <span className="text-[#85a30f]">Smart. Elegant.</span> Energy Efficient.
         </h2>
 

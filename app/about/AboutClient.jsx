@@ -80,8 +80,7 @@ export default function AboutClient() {
         w-full
         overflow-hidden
         bg-white
-        px-5
-        py-6
+        px-2
         sm:px-8
         md:px-10
         md:py-0
@@ -400,7 +399,7 @@ export default function AboutClient() {
 
       <section className="w-full bg-gray-100 py-6 md:py-14">
         <div className="mx-auto max-w-7xl px-5 md:px-10 lg:px-16">
-          <div className="grid grid-cols-1 items-center gap-y-16 lg:grid-cols-12 lg:gap-x-16">
+          <div className="grid grid-cols-1 items-center gap-y-8 lg:grid-cols-12 lg:gap-x-16">
             {/* ================= TEXT ================= */}
             <div className="order-2 lg:order-1 lg:col-span-5">
               <div className="space-y-8 lg:pr-8">
@@ -522,7 +521,7 @@ export default function AboutClient() {
       {/* <LEDShowcase/> */}
       <LEDFeatures />
 
-      <section className="w-full bg-white py-12 md:py-14 ">
+      <section className="w-full bg-white py-6 md:py-14 ">
         <div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-12 px-6 sm:px-10 lg:grid-cols-2 lg:gap-20">
           {/* ================= CONTENT ================= */}
           <div className="w-full lg:max-w-[625px]">
@@ -573,7 +572,7 @@ export default function AboutClient() {
 
           {/* ================= IMAGE ================= */}
           <div className="relative w-full overflow-hidden">
-            <div className="relative h-[420px]   border-t-8 border-[#85a30f] w-full md:h-[520px] ">
+            <div className="relative h-[320px]   border-t-8 border-[#85a30f] w-full md:h-[520px] ">
               <img
                 src="/abouttt.png"
                 alt="LED Lighting Solutions"
@@ -589,9 +588,9 @@ export default function AboutClient() {
       {/* =====================================================
           CORE PRINCIPLES
       ====================================================== */}
-      <section className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-14">
+      <section className="mx-auto w-full max-w-7xl px-5 py-6 md:px-10 md:py-14">
         {/* Heading */}
-        <div className="mb-14 text-center md:mb-10">
+        <div className="mb-5 text-center md:mb-10">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.3em] text-[#85a30f]">
             What We Believe
           </p>
@@ -615,7 +614,8 @@ export default function AboutClient() {
               border
               border-gray-200
               bg-white
-              p-8
+              p-5
+              md:p-8
               transition-all
               duration-300
               hover:-translate-y-1
@@ -647,7 +647,7 @@ export default function AboutClient() {
               Timeless Design
             </h3>
 
-            <p className="text-sm leading-7 text-black">
+            <p className="text-sm md:leading-7 text-black">
               We reject fleeting trends in favor of enduring aesthetics. Our
               lighting forms are designed with clean geometry and balanced
               proportions, ensuring they remain relevant and beautiful across
@@ -697,7 +697,7 @@ export default function AboutClient() {
               Precision Engineering
             </h3>
 
-            <p className="text-sm leading-7 text-black">
+            <p className="text-sm md:leading-7 text-black">
               Behind every minimalist silhouette lies careful engineering. From
               thermal management to advanced optics, our LED solutions are
               engineered for reliable performance, durability, efficiency, and
@@ -747,7 +747,7 @@ export default function AboutClient() {
               Sustainable Innovation
             </h3>
 
-            <p className="text-sm leading-7 text-black">
+            <p className="text-sm md:leading-7 text-black">
               Efficient lighting should also be responsible lighting. We use
               modern LED technology to reduce energy consumption while
               delivering powerful, long-lasting illumination for residential,
@@ -802,7 +802,7 @@ export default function AboutClient() {
             Transform Your <span className="text-[#85a30f]">Space</span>
           </h2>
 
-          <p className="mb-10 text-base leading-8 text-black md:text-lg">
+          <p className="mb-10 text-base md:leading-8 text-black md:text-lg">
             Discover lighting solutions designed to transform your environment.
             Whether you're selecting from our collections or planning a complete
             lighting project, our team is ready to help.
@@ -815,13 +815,14 @@ export default function AboutClient() {
               className="
                 group
                 flex
-                w-full
+                w-[80%]
                 items-center
                 justify-center
                 gap-2
                 bg-[#85a30f]
                 px-8
                 py-4
+               
                 text-xs
                 font-semibold
                 uppercase
@@ -841,12 +842,12 @@ export default function AboutClient() {
               href="#contact"
               className="
                 flex
-                w-full
+                w-[70%]
                 items-center
                 justify-center
                 border
                 border-[#85a30f]
-                px-8
+                px-6
                 py-4
                 text-xs
                 font-semibold
