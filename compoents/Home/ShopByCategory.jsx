@@ -4,51 +4,12 @@ import React, { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FiArrowUpRight } from "react-icons/fi";
+import { categories } from "@/Data/Data";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const categories = [
-  {
-    title: "Round LED",
-    image: "/light3.jpeg",
-    hoverImage: "/lites.webp",
-  },
-  {
-    title: "Flood Light",
-    image: "/category/flood1.webp",
-    hoverImage: "/category/flood2.webp",
-  },
-  {
-    title: "Square Panel Light",
-    image: "/category/square1.webp",
-    hoverImage: "/category/square2.webp",
-  },
-  {
-    title: "LED Track Light",
-    image: "/category/tracking1.webp",
-    hoverImage: "/category/tracking2.webp",
-  },
-  {
-    title: "Outdoor Light",
-    image: "/category/Outdoor1.webp",
-    hoverImage: "/category/Outdoor2.webp",
-  },
-  {
-    title: "Concealed LED",
-    image: "/category/ledconcel1.webp",
-    hoverImage: "/category/ledconcel2.webp",
-  },
-  {
-    title: "Downlight LED",
-    image: "/category/DownlightLed1.webp",
-    hoverImage: "/category/DownlightLed2.webp",
-  },
-  {
-    title: "Flood Light",
-    image: "/category/flood1.webp",
-    hoverImage: "/category/flood2.webp",
-  },
-];
+
 
 export default function ShopByCategory() {
   const sectionRef = useRef(null);
@@ -397,7 +358,8 @@ export default function ShopByCategory() {
           "
         >
           {categories.map((category, index) => (
-            <div
+            <Link
+            href={`/categories/${category.slug}`}
               key={category.title}
               ref={(el) => {
                 cardsRef.current[index] = el;
@@ -604,7 +566,7 @@ export default function ShopByCategory() {
                     md:text-3xl
                   "
                 >
-                  {category.title}
+                  {category.name}
                 </h3>
 
                 {/* Explore */}
@@ -701,7 +663,7 @@ export default function ShopByCategory() {
                   group-hover:border-white/20
                 "
               />
-            </div>
+            </Link>
           ))}
         </div>
       </div>

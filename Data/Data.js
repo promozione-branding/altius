@@ -1413,7 +1413,7 @@ export const categories = [
     slug: "pc-panel",
     image: "/pcpanel.webp",
     description:
-      "ELSTRONG COB Lens Model delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
+      "ELSTRONG PC Panels provide soft, uniform illumination with a clean and lightweight design, making them suitable for a wide range of indoor lighting applications.",
     products: [
       {
         id: 401,
@@ -1750,7 +1750,7 @@ export const categories = [
     slug: "outdoor-lights",
     image: "/K-light.webp",
     description:
-      "ELSTRONG COB Lens Model delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
+      "ELSTRONG Outdoor Lights are designed to provide reliable and efficient illumination for exterior environments, including pathways, façades, entrances, gardens, and commercial outdoor areas.",
     products: [
       {
         id: 501,
@@ -2000,12 +2000,11 @@ export const categories = [
           "The ELSTRONG Spike Light OL003 is a versatile outdoor LED lighting solution designed for landscape and accent lighting applications. Available in 5W and 10W options, it provides flexibility for different illumination levels and outdoor lighting requirements. The product is available in CW (Cool White), NW (Natural White), and WW (Warm White), allowing users to create different lighting effects across gardens, landscapes, and exterior spaces. Its practical spike-style design allows the fixture to be positioned directly into soil, garden areas, lawns, or landscape surfaces, making it suitable for highlighting plants, trees, pathways, walls, architectural elements, resorts, and outdoor decorative features.",
 
         // Main product images
-        image: "/products/spike-light.jpeg",
+        image:  "/product/SpikeLight1.webp",
 
         images: [
-          "/products/spike-light.jpeg",
-          "/products/spike-light-2.webp",
-          "/products/spike-light-3.webp",
+          "/product/SpikeLight1.webp",
+           "/product/SpikeLight2.webp",
         ],
 
         // Wattage options
@@ -2073,7 +2072,7 @@ export const categories = [
         ],
 
         // Image used in description section
-        descriptionImage: "/products/spike-light-detail.webp",
+        descriptionImage: "/product/SpikeLight2.webp",
 
         // Additional product information
         sku: "ELS-OL003",
@@ -2114,12 +2113,11 @@ export const categories = [
           "The ELSTRONG Foot Light EL004 is a compact and efficient LED lighting solution designed to provide soft and practical illumination for pathways, steps, corridors, entrances, and other areas requiring low-level lighting. Featuring a 3W LED configuration, the Foot Light provides functional illumination while maintaining a compact and contemporary design. Available in Black, White, and Dark Grey finishes, it can coordinate with different wall finishes, architectural styles, and interior or exterior designs. Its clean and unobtrusive form makes it suitable for residential, commercial, hospitality, and architectural applications where subtle guidance lighting and modern aesthetics are important.",
 
         // Main product images
-        image: "/products/foot-light.jpeg",
+        image: "/product/Footlight2.webp",
 
         images: [
-          "/products/foot-light.jpeg",
-          "/products/foot-light-2.webp",
-          "/products/foot-light-3.webp",
+         "/product/Footlight2.webp",
+         "/product/Footlight1.webp",
         ],
 
         // Wattage options
@@ -2182,7 +2180,7 @@ export const categories = [
         ],
 
         // Image used in description section
-        descriptionImage: "/products/foot-light-detail.webp",
+        descriptionImage: "/product/Footlight1.webp",
 
         // Additional product information
         sku: "ELS-EL004",
@@ -2325,7 +2323,7 @@ export const categories = [
     slug: "striker",
     image: "/striker.webp",
     description:
-      "ELSTRONG COB Lens Model delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
+      "ELSTRONG Striker lighting solutions are designed to provide focused and effective illumination with a modern, functional appearance.",
     products: [
       {
         id: 601,
@@ -2445,7 +2443,7 @@ export const categories = [
     slug: "tengo-panel",
     image: "/striker.webp",
     description:
-      "ELSTRONG COB Lens Model delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
+      "ELSTRONG Tengo Panels deliver bright and uniform illumination through a slim, contemporary design that blends naturally with modern ceilings and interiors.",
     products: [
       {
         id: 701,
@@ -2580,7 +2578,7 @@ export const categories = [
     slug: "wall-light",
     image: "/wallLight.webp",
     description:
-      "ELSTRONG COB Lens Model delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
+      "ELSTRONG Wall Lights combine stylish design with efficient LED illumination, making them suitable for enhancing both indoor and outdoor walls.",
     products: [
       {
         id: 801,

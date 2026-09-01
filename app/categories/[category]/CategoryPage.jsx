@@ -1,7 +1,13 @@
+"use client"
+import PopupForm from "@/compoents/PopupForm";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function CategoryPage({ categoryData }) {
+     const [open, setOpen] = useState(false);
+
   const products = categoryData.products || [];
+
 
   return (
     <main className="mt-25 bg-[#f8f8f5] text-[#171714]">
@@ -88,7 +94,7 @@ export default function CategoryPage({ categoryData }) {
           PRODUCT GRID
       ====================================================== */}
 
-      <section className="mx-auto max-w-[1600px] px-5 pb-32 sm:px-8 md:px-12 lg:px-16">
+      <section className="mx-auto max-w-[1600px] px-5 pb-10 sm:px-8 md:px-12 lg:px-16">
         {products.length > 0 ? (
           <div className="grid grid-cols-1 gap-x-6 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
             {products.map((product) => (
@@ -167,15 +173,22 @@ export default function CategoryPage({ categoryData }) {
         </p>
 
         <div className="mt-9">
-          <Link
-            href="/contact"
+          <button
+            onClick={() => setOpen(true)}
             className="inline-flex items-center gap-5 bg-[#171714] px-8 py-4 text-[10px] font-semibold uppercase tracking-[0.22em] text-white transition-all duration-300 hover:bg-[#33332f]"
           >
             Contact Our Team
             <span>→</span>
-          </Link>
+          </button>
         </div>
       </section>
+
+        {open && (
+        <PopupForm
+          isOpen={open}
+          onClose={() => setOpen(false)}
+        />
+      )}
     </main>
   );
 }

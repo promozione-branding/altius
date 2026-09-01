@@ -7,27 +7,32 @@ import {
   FiChevronRight,
   FiArrowUpRight,
 } from "react-icons/fi";
+import Link from "next/link";
 
 const collections = [
   {
-    title: "LED CEILING LIGHTS",
-    subtitle: "DISCOVER COLLECTION",
-    image: "/light3.jpeg",
+    title: "SUPRIMO",
+    subtitle: "CONCEALED LED LIGHT",
+    image: "/product/suprimo1.webp",
+    href:"/products/suprimo"
   },
   {
-    title: "SOFT ILLUMINATION",
-    subtitle: "DISCOVER COLLECTION",
-    image: "/OutdoorLight.webp",
+    title: "MOVEABLE LENS",
+    subtitle: "COB LENS MODEL",
+    image:  "/product/coblensmodel1.webp",
+    href:"/products/moveable-lens-cob-5w"
   },
   {
-    title: "CONTEMPORARY LIVING",
-    subtitle: "DISCOVER COLLECTION",
-    image: "/light3.jpeg",
+    title: "LED PANEL",
+    subtitle: "PC PANEL",
+    image: "/product/pcpanel1.webp",
+    href:"/products/led-panel-6w"
   },
   {
-    title: "MINIMALIST LIGHT",
-    subtitle: "DISCOVER COLLECTION",
-    image: "/OutdoorLight.webp",
+    title: "CYLINDER LIGHTS",
+    subtitle: "OUTDOOR LIGHTS COLLECTION",
+    image: "/product/CylinderLight1.webp",
+    href:"/products/cylinder-light"
   },
 ];
 
@@ -553,7 +558,8 @@ export default function Collections2() {
     zIndex: isActive ? 50 : 40 - index,
   }}
 >
-  <div
+  <Link
+  href={item.href}
     className="
       grid
       h-full
@@ -709,7 +715,7 @@ export default function Collections2() {
         </button>
       </div>
     </div>
-  </div>
+  </Link>
 </div>
               );
             }

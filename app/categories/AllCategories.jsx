@@ -5,40 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 
-const categories = [
-  {
-    title: "Ceiling Lights",
-    slug: "ceiling-lights",
-    image: "/categories/ceiling-lights.webp",
-  },
-  {
-    title: "Pendant Lights",
-    slug: "pendant-lights",
-    image: "/categories/pendant-lights.webp",
-  },
-  {
-    title: "Wall Lights",
-    slug: "wall-lights",
-    image: "/categories/wall-lights.webp",
-  },
-  {
-    title: "Table Lamps",
-    slug: "table-lamps",
-    image: "/categories/table-lamps.webp",
-  },
-  {
-    title: "Floor Lamps",
-    slug: "floor-lamps",
-    image: "/categories/floor-lamps.webp",
-  },
-  {
-    title: "LED Collection",
-    slug: "led-collection",
-    image: "/categories/led-collection.webp",
-  },
-];
 
-export default function AllCategories() {
+
+export default function AllCategories({categories}) {
   return (
     <section className="w-full bg-white px-4 mt-25 py-14 sm:px-6 md:px-10 lg:px-16 lg:py-20">
       <div className="mx-auto max-w-7xl">
@@ -63,7 +32,7 @@ export default function AllCategories() {
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
           {categories.map((category) => (
             <Link
-              href={`/category/${category.slug}`}
+              href={`/categories/${category.slug}`}
               key={category.slug}
               className="group relative block overflow-hidden bg-gray-100"
             >
@@ -92,7 +61,7 @@ export default function AllCategories() {
                     {/* Text */}
                     <div>
                       <h2 className="text-xl font-medium tracking-tight text-white sm:text-2xl">
-                        {category.title}
+                        {category.name}
                       </h2>
 
                       <div className="mt-2 overflow-hidden">
