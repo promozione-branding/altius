@@ -1775,10 +1775,7 @@ export const categories = [
         // Main product images
         image: "/product/Klight1.webp",
 
-        images: [
-        "/product/Klight1.webp",
-        "/product/Klight2.webp",
-        ],
+        images: ["/product/Klight1.webp", "/product/Klight2.webp"],
 
         // Wattage options
         wattages: [
@@ -2000,12 +1997,9 @@ export const categories = [
           "The ELSTRONG Spike Light OL003 is a versatile outdoor LED lighting solution designed for landscape and accent lighting applications. Available in 5W and 10W options, it provides flexibility for different illumination levels and outdoor lighting requirements. The product is available in CW (Cool White), NW (Natural White), and WW (Warm White), allowing users to create different lighting effects across gardens, landscapes, and exterior spaces. Its practical spike-style design allows the fixture to be positioned directly into soil, garden areas, lawns, or landscape surfaces, making it suitable for highlighting plants, trees, pathways, walls, architectural elements, resorts, and outdoor decorative features.",
 
         // Main product images
-        image:  "/product/SpikeLight1.webp",
+        image: "/product/SpikeLight1.webp",
 
-        images: [
-          "/product/SpikeLight1.webp",
-           "/product/SpikeLight2.webp",
-        ],
+        images: ["/product/SpikeLight1.webp", "/product/SpikeLight2.webp"],
 
         // Wattage options
         wattages: [
@@ -2115,10 +2109,7 @@ export const categories = [
         // Main product images
         image: "/product/Footlight2.webp",
 
-        images: [
-         "/product/Footlight2.webp",
-         "/product/Footlight1.webp",
-        ],
+        images: ["/product/Footlight2.webp", "/product/Footlight1.webp"],
 
         // Wattage options
         wattages: [
@@ -2441,7 +2432,7 @@ export const categories = [
     id: 7,
     name: "Tengo Panel",
     slug: "tengo-panel",
-    image: "/striker.webp",
+    image: "/tengo.webp",
     description:
       "ELSTRONG Tengo Panels deliver bright and uniform illumination through a slim, contemporary design that blends naturally with modern ceilings and interiors.",
     products: [
@@ -2466,12 +2457,11 @@ export const categories = [
           "The ELSTRONG Altius Lighting Tengo Panel is a modern and efficient LED panel designed to provide clean, uniform, and consistent illumination across residential, commercial, office, retail, and other indoor spaces. Available in 6W, 12W, 18W, and 24W options, the Tengo Panel provides flexible lighting solutions for different room sizes and illumination requirements. Its durable Polycarbonate (PC) body combines a lightweight construction with practical durability for everyday lighting applications. Available in Cool White (CW), Neutral White (NW), and Warm White (WW), the panel provides flexibility to create different lighting environments. The Tengo Panel is backed by a 2-year warranty for added confidence in product quality and dependable performance.",
 
         // Main product images
-        image: "/products/tengo-panel.jpeg",
+        image: "/product/tengo1.webp",
 
         images: [
-          "/products/tengo-panel.jpeg",
-          "/products/tengo-panel-2.webp",
-          "/products/tengo-panel-3.webp",
+         "/product/tengo1.webp",
+         "/product/tengo2.webp",
         ],
 
         // Wattage options
@@ -2550,7 +2540,7 @@ export const categories = [
         ],
 
         // Image used in description section
-        descriptionImage: "/products/tengo-panel-detail.webp",
+        descriptionImage: "/product/tengo2.webp",
 
         // Additional product information
         sku: "ELS-TENGO-PANEL",
