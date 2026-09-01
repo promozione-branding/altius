@@ -40,7 +40,7 @@ const categories = [
 
 export default function AllCategories() {
   return (
-    <section className="w-full bg-white px-4 mt-10 py-14 sm:px-6 md:px-10 lg:px-16 lg:py-20">
+    <section className="w-full bg-white px-4 mt-25 py-14 sm:px-6 md:px-10 lg:px-16 lg:py-20">
       <div className="mx-auto max-w-7xl">
 
         {/* Section Header */}

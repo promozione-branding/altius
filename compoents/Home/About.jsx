@@ -755,7 +755,7 @@ export default function About() {
 
               <div className="about-cta mt-8">
                 <a
-                  href="/services"
+                  href="/categories"
                   className="
                     group
                     inline-flex
@@ -774,7 +774,7 @@ export default function About() {
                     hover:bg-[#85a30f]
                   "
                 >
-                  Discover Services
+                  Discover Category
                   <span
                     className="
                       flex

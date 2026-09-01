@@ -13,6 +13,7 @@ import {
   LuThermometer,
   LuLayers,
 } from "react-icons/lu";
+import PopupForm from "@/compoents/PopupForm";
 
 const relatedProducts = [
   {
@@ -35,7 +36,7 @@ const relatedProducts = [
 
 export default function ProductClient({ product }) {
   const [selectedImage, setSelectedImage] = useState(0);
-
+   const [open, setOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("description");
 
   const [selectedWattage, setSelectedWattage] = useState(
@@ -316,13 +317,7 @@ export default function ProductClient({ product }) {
 
         <button
           type="button"
-          onClick={() => {
-            console.log("Get Quote", {
-              product: product.name,
-              wattage: selectedWattage,
-              price: selectedWattageData?.price,
-            });
-          }}
+           onClick={() => setOpen(true)}
           className="
             flex
             h-12
@@ -612,7 +607,7 @@ export default function ProductClient({ product }) {
                   <div className="relative lg:sticky lg:top-24 lg:self-start">
                     <div className="aspect-[4/3] overflow-hidden bg-gray-50">
                       <img
-                        src={selectedWattageData?.image || product.image}
+                        src={product.descriptionImage}
                         alt={product.name}
                         className="h-full w-full object-cover"
                       />
@@ -707,6 +702,14 @@ export default function ProductClient({ product }) {
       </main>
 
       <CTA2 />
+
+
+       {open && (
+        <PopupForm
+          isOpen={open}
+          onClose={() => setOpen(false)}
+        />
+      )}
     </>
   );
 }

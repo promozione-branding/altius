@@ -46,10 +46,10 @@ const products = [
 
   },
   {
-    name: "Downlight Led",
+    name: "K Light",
     price: "$60.00",
-    image: "/category/DownlightLed1.webp",
-    href:"/"
+    image: "/product/K-light1.webp",
+    href:"/products/k-light"
   },
 ];
 

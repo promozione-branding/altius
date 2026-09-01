@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import { FiArrowRight } from 'react-icons/fi'
 
@@ -221,8 +222,8 @@ export default function Parllel() {
 
                 {/* CTA */}
 
-                <a
-                  href="/collections"
+                <Link
+                  href="/products"
                   className="
                     group/btn
                     mt-8
@@ -265,7 +266,7 @@ export default function Parllel() {
                   >
                     <FiArrowRight size={14} />
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

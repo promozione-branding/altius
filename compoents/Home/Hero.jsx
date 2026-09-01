@@ -2,6 +2,7 @@
 
 import React, { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
+import Link from "next/link";
 
 export default function Hero() {
   const heroRef = useRef(null);
@@ -477,7 +478,8 @@ export default function Hero() {
           >
             {/* SHOP NOW */}
 
-            <button
+            <Link
+            href="/products"
               className="
                 bg-black
                 px-8
@@ -493,11 +495,12 @@ export default function Hero() {
               "
             >
               Shop Now
-            </button>
+            </Link>
 
             {/* EXPLORE */}
 
-            <button
+            <Link
+            href="/categories"
               className="
                 border
                 border-white/70
@@ -517,7 +520,7 @@ export default function Hero() {
               "
             >
               Explore Collection
-            </button>
+            </Link>
           </div>
         </div>
       </div>

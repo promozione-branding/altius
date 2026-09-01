@@ -1,9 +1,10 @@
 "use client";
 
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import { FiPhone, FiMessageCircle, FiFileText } from "react-icons/fi";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import PopupForm from "../PopupForm";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,6 +15,9 @@ export default function CTA2() {
   const descriptionRef = useRef(null);
   const buttonsRef = useRef(null);
   const contactRef = useRef(null);
+
+     const [open, setOpen] = useState(false);
+  
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -292,8 +296,8 @@ export default function CTA2() {
 
             {/* GET QUOTE */}
 
-            <a
-              href="/contact"
+            <button
+               onClick={() => setOpen(true)}
               className="
                 cta-button
                 flex
@@ -322,7 +326,7 @@ export default function CTA2() {
                 size={17}
               />
               Get a Quote
-            </a>
+            </button>
           </div>
 
           {/* CONTACT */}
@@ -371,6 +375,14 @@ export default function CTA2() {
           </div>
         </div>
       </div>
+
+
+       {open && (
+              <PopupForm
+                isOpen={open}
+                onClose={() => setOpen(false)}
+              />
+            )}
     </section>
   );
 }

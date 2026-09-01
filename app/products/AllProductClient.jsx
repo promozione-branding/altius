@@ -59,7 +59,7 @@ export default function AllProductClient({ products = [] }) {
       className="
         flex-grow
         w-full
-        mt-10
+        mt-20
         max-w-[1600px]
         mx-auto
         px-5
