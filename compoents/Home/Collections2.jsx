@@ -13,7 +13,7 @@ const collections = [
   {
     title: "SUPRIMO",
     subtitle: "CONCEALED LED LIGHT",
-    image: "/product/suprimo1.webp",
+    image: "/product/Suprimo1.webp",
     href:"/products/suprimo"
   },
   {

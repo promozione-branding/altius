@@ -193,15 +193,15 @@ export const categories = [
           "The Elstrong CL003 SUPRIMO is a modern concealed LED lighting solution designed for clean and unobtrusive ceiling installations. Powered by a 9W LED light source with a lumen output of less than 600 lm, it provides practical illumination while maintaining efficient energy consumption. With its compact 110mm output size, 70mm cutout size, and 45mm height, the SUPRIMO is suitable for residential, commercial, office, retail, and contemporary interior applications. Designed by Elstrong, a professional lighting manufacturer and LED light manufacturer, the SUPRIMO combines modern aesthetics, practical installation, wide voltage compatibility, and dependable LED performance.",
 
         // Main product images
-        image: "/product/suprimo1.webp",
+        image: "/product/Suprimo1.webp",
 
-        images: ["/product/suprimo1.webp", "/product/suprimo2.webp"],
+        images: ["/product/Suprimo1.webp", "/product/Suprimo2.webp"],
 
         // Wattage options
         wattages: [
           {
             value: "9W",
-            image: "/product/suprimo1.webp",
+            image: "/product/Suprimo1.webp",
             price: 0,
           },
         ],
@@ -259,7 +259,7 @@ export const categories = [
         ],
 
         // Image used in description section
-        descriptionImage: "/product/suprimo2.webp",
+        descriptionImage: "/product/Suprimo2.webp",
 
         // Additional product information
         sku: "ELS-CL003",
