@@ -1773,11 +1773,11 @@ export const categories = [
           "The ELSTRONG Half K Light OL001 is a modern and compact LED lighting solution designed to provide focused illumination for outdoor, architectural, and decorative applications. Available in 3W and 5W options, the Half K Light provides flexible lighting choices for different brightness requirements and installation environments. It is available in CW (Cool White), NW (Natural White), and WW (Warm White), allowing users to select the desired lighting appearance. Its distinctive half-K design combines decorative appeal with practical illumination, making it suitable for walls, pathways, architectural details, gardens, entrances, landscapes, and other outdoor features.",
 
         // Main product images
-        image: "/product/K-light1.webp",
+        image: "/product/Klight1.webp",
 
         images: [
-         "/product/K-light1.webp",
-         "/product/K-light2.webp",
+        "/product/Klight1.webp",
+        "/product/Klight2.webp",
         ],
 
         // Wattage options
@@ -1845,7 +1845,7 @@ export const categories = [
         ],
 
         // Image used in description section
-        descriptionImage: "/product/K-light2.webp",
+        descriptionImage: "/product/Klight2.webp",
 
         // Additional product information
         sku: "ELS-OL001",
