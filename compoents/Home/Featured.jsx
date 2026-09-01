@@ -4,43 +4,52 @@ import React, { useLayoutEffect, useRef } from "react";
 import { FiArrowRight, FiStar } from "react-icons/fi";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const products = [
   {
-    name: "Led Light",
+    name: "Suprimo",
     price: "$60.00",
-    image: "/light3.jpeg",
+    image: "/product/Suprimo1.webp",
+    href:"/products/suprimo"
   },
   {
-    name: "LED Track Light",
+    name: "LED Slim Panel",
     price: "$40.00",
     oldPrice: "$50.00",
-    image: "/category/tracking1.webp",
+    image: "/product/slimsquarepanel1.webp",
+    href:"/products/led-slim-panel-6w"
   },
   {
-    name: "Outdoor Light",
+    name: "Moveable Lens COB",
     price: "$70.00",
     oldPrice: "$80.00",
-    image: "/category/Outdoor1.webp",
+    image: "/product/coblensmodel1.webp",
+    href:"/products/moveable-lens-cob-5w"
   },
   {
-    name: "Square Panel Light",
+    name: "Flare",
     price: "$40.00",
     oldPrice: "$50.00",
-    image: "/category/square1.webp",
+    image: "/product/Flare1.webp",
+    href:"/products/flare"
+
   },
   {
-    name: "Flood Light",
+    name: "Glare",
     price: "$80.00",
     oldPrice: "$90.00",
-    image: "/category/flood1.webp",
+    image: "/product/GLare1.webp",
+    href:"/products/glare"
+
   },
   {
     name: "Downlight Led",
     price: "$60.00",
     image: "/category/DownlightLed1.webp",
+    href:"/"
   },
 ];
 
@@ -292,7 +301,7 @@ export default function Featured() {
 
               <a
                 id="featured-cta"
-                href="/"
+                href="/products"
                 className="
                   group
                   mt-8
@@ -379,7 +388,7 @@ export default function Featured() {
               {/* Desktop View All */}
 
               <a
-                href="/shop"
+                href="/products"
                 className="
                   hidden
                   items-center
@@ -390,7 +399,7 @@ export default function Featured() {
                   tracking-wider
                   text-neutral-500
                   transition-colors
-                  hover:text-[#b28b32]
+                  hover:text-[#85a30f]
                   sm:flex
                 "
               >
@@ -413,8 +422,9 @@ export default function Featured() {
               "
             >
               {products.map((product, index) => (
-                <div
+                <Link
                   key={`${product.name}-${index}`}
+                  href={product.href}
                   className="
                     group
                     relative
@@ -490,7 +500,7 @@ export default function Featured() {
                       <FiStar size={11} fill="currentColor" />
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
@@ -609,7 +619,7 @@ export default function Featured() {
               {/* Collection Link */}
 
               <a
-                href="/collections"
+                href="/products"
                 className="
                   group
                   mt-6
@@ -652,7 +662,7 @@ export default function Featured() {
 
         <div className="mt-8 flex justify-center sm:hidden">
           <a
-            href="/shop"
+            href="/products"
             className="
               flex
               items-center
@@ -661,7 +671,7 @@ export default function Featured() {
               font-semibold
               uppercase
               tracking-wider
-              text-[#a17d2b]
+              text-[#85a30f]
             "
           >
             View All Products

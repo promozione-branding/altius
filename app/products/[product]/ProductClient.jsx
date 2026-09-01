@@ -50,23 +50,14 @@ export default function ProductClient({ product }) {
     );
   }
 
-  /*
-   * Find currently selected wattage object
-   *
-   * Example:
-   * {
-   *   value: "12W",
-   *   image: "/Round1.jpeg",
-   *   price: 4999
-   * }
-   */
+
   const selectedWattageData = product.wattages?.find(
     (item) => item.value === selectedWattage,
   );
 
   return (
     <>
-      <main className="mx-auto mt-20 w-full max-w-[1280px] px-4 py-8 sm:px-6 md:py-12 lg:px-8">
+      <main className="mx-auto mt-25 w-full max-w-[1280px] px-4 py-8 sm:px-6 md:py-12 lg:px-8">
         {/* =====================================================
             BREADCRUMB
         ====================================================== */}
@@ -102,307 +93,326 @@ export default function ProductClient({ product }) {
             PRODUCT SECTION
         ====================================================== */}
 
-        <div className="mb-20 grid grid-cols-1 gap-8 md:grid-cols-12 md:gap-5">
-          {/* =================================================
-              IMAGE GALLERY
-          ================================================== */}
+     <div className="mb-20 grid grid-cols-1 gap-8 md:grid-cols-12 md:gap-5">
+  {/* =================================================
+      IMAGE GALLERY
+  ================================================== */}
 
-          <div className="flex flex-col gap-4 md:col-span-5">
-            {/* ================= MAIN IMAGE ================= */}
+  <div className="flex flex-col gap-4 md:col-span-5">
+    {/* ================= MAIN IMAGE ================= */}
 
-            <div className="relative flex aspect-square  w-full items-start justify-center overflow-hidden">
-              {selectedWattageData?.image && (
-                <img
-                  key={selectedWattage}
-                  src={selectedWattageData.image}
-                  alt={`${product.name} ${selectedWattage}`}
-                  className="
-                    h-auto
-                    w-auto
-                    max-h-full
-                    max-w-full
-                    object-contain
-                    animate-wattage-change
-                  "
-                />
-              )}
-            </div>
+    <div className="relative flex aspect-square w-full items-center justify-center overflow-hidden bg-gray-50">
+      {product.images?.length > 0 ? (
+        <img
+          key={selectedImage}
+          src={product.images[selectedImage]}
+          alt={`${product.name} image ${selectedImage + 1}`}
+          className="
+            h-auto
+            w-auto
+            max-h-full
+            max-w-full
+            object-contain
+            animate-wattage-change
+          "
+        />
+      ) : (
+        <div className="flex h-full w-full items-center justify-center text-sm text-gray-400">
+          No image available
+        </div>
+      )}
+    </div>
 
-            {/* ================= THUMBNAILS ================= */}
+    {/* ================= THUMBNAILS ================= */}
 
-            <div className="grid grid-cols-3 gap-3 sm:gap-4">
-              {product.wattages?.map((watt) => {
-                const isSelected = selectedWattage === watt.value;
+    {product.images?.length > 0 && (
+      <div className="grid grid-cols-3 gap-3 sm:gap-4">
+        {product.images.map((image, index) => {
+          const isSelected = selectedImage === index;
 
-                return (
-                  <button
-                    key={watt.value}
-                    type="button"
-                    onClick={() => {
-                      setSelectedWattage(watt.value);
-                      setSelectedImage(0);
-                    }}
-                    aria-pressed={isSelected}
-                    className={`
-                      relative
-                      aspect-square
-                      overflow-hidden
-                      border
-                      bg-gray-50
-                      transition-all
-                      duration-300
-                      ${
-                        isSelected
-                          ? "border-[#85a30f] ring-1 ring-[#85a30f]"
-                          : "border-gray-200 hover:border-[#85a30f]"
-                      }
-                    `}
-                  >
-                    <img
-                      src={watt.image}
-                      alt={`${product.name} ${watt.value}`}
-                      className="
-                        h-full
-                        w-full
-                        object-contain
-                        p-2
-                        transition-transform
-                        duration-300
-                        hover:scale-105
-                      "
-                    />
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* =================================================
-              PRODUCT DETAILS
-          ================================================== */}
-
-          <div className="flex flex-col p-10 shadow-2xl md:col-span-7">
-            {/* ================= TITLE ================= */}
-
-            <div className="mb-4 flex items-start justify-between gap-4">
-              <h1 className="inter text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-                {product.name}
-              </h1>
-            </div>
-
-            {/* ================= PRICE ================= */}
-
-            {/* ================= DESCRIPTION ================= */}
-
-            <p className="mb-7 max-w-xl text-sm leading-6 text-gray-600 sm:text-lg">
-              {product.shortDescription}
-            </p>
-
-            {/* ================= KEY FEATURES ================= */}
-
-            <div className="mb-12 border-t border-gray-200 pt-6">
-              <h3 className="mb-5 text-sm font-semibold uppercase tracking-[0.15em] text-gray-900">
-                Key Features
-              </h3>
-
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                {product.features?.map((feature, index) => {
-                  const icons = [
-                    LuZap,
-                    LuTimer,
-                    LuShieldCheck,
-                    LuLayers,
-                    LuBatteryCharging,
-                  ];
-
-                  const Icon = icons[index % icons.length];
-
-                  return (
-                    <div key={index} className="flex items-start gap-3">
-                      <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#85a30f] text-white">
-                        <Icon size={21} />
-                      </div>
-
-                      <div className="flex min-h-10 items-center">
-                        <p className="text-sm font-medium text-gray-900">
-                          {feature.title}
-                        </p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* ================= WATTAGE ================= */}
-
-            <div className="mb-8">
-              <div className="grid grid-cols-3 gap-3">
-                {product.wattages?.map((watt) => {
-                  const isSelected = selectedWattage === watt.value;
-
-                  return (
-                    <button
-                      key={watt.value}
-                      type="button"
-                      onClick={() => {
-                        setSelectedWattage(watt.value);
-                        setSelectedImage(0);
-                      }}
-                      aria-pressed={isSelected}
-                      className={`
-                        relative
-                        flex
-                        h-[76px]
-                        flex-col
-                        items-center
-                        justify-center
-                        overflow-hidden
-                        border
-                        transition-all
-                        duration-300
-                        focus:outline-none
-                        focus:ring-2
-                        focus:ring-[#85a30f]
-                        focus:ring-offset-2
-                        ${
-                          isSelected
-                            ? "border-[#85a30f] bg-[#85a30f] text-white shadow-md"
-                            : "border-gray-200 bg-white text-gray-900 hover:border-[#85a30f] hover:shadow-sm"
-                        }
-                      `}
-                    >
-                      {/* Selected indicator */}
-
-                      {isSelected && (
-                        <span
-                          className="
-                            absolute
-                            right-2.5
-                            top-2.5
-                            h-2
-                            w-2
-                            rounded-full
-                            bg-white
-                          "
-                        />
-                      )}
-
-                      {/* Wattage */}
-
-                      <span className="text-lg font-semibold">
-                        {watt.value}
-                      </span>
-
-                      {/* Price */}
-
-                     
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* ================= ACTIONS ================= */}
-
-            <div className="mb-8 flex flex-col gap-3">
-              <div className="grid grid-cols-2 gap-3">
-                {/* Get Quote */}
-
-                <button
-                  type="button"
-                  onClick={() => {
-                    console.log(
-                      "Get Quote",
-                      product.name,
-                      selectedWattage,
-                      selectedWattageData?.price,
-                    );
-                  }}
-                  className="
-                    flex
-                    h-12
-                    items-center
-                    justify-center
-                    border
-                    border-black
-                    px-4
-                    text-xs
-                    font-semibold
-                    uppercase
-                    tracking-[0.18em]
-                    text-black
-                    transition-all
-                    duration-300
-                    hover:border-[#85a30f]
-                    hover:bg-[#85a30f]
-                    hover:text-white
-                  "
-                >
-                  Get Quote
-                </button>
-
-                {/* WhatsApp */}
-
-                <a
-                  href={`https://wa.me/919999999999?text=${encodeURIComponent(
-                    `Hello, I am interested in ${product.name} (${selectedWattage}) priced at ₹${selectedWattageData?.price || ""}.`,
-                  )}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="
-                    flex
-                    h-12
-                    items-center
-                    justify-center
-                    gap-2
-                    border
-                    border-black
-                    px-4
-                    text-xs
-                    font-semibold
-                    uppercase
-                    tracking-[0.18em]
-                    text-black
-                    transition-all
-                    duration-300
-                    hover:border-[#85a30f]
-                    hover:bg-[#85a30f]
-                    hover:text-white
-                  "
-                >
-                  WhatsApp
-                </a>
-              </div>
-
-              {/* Download Brochure */}
-
-              <a
-                href="/brochure/product-brochure.pdf"
-                download
+          return (
+            <button
+              key={`${image}-${index}`}
+              type="button"
+              onClick={() => setSelectedImage(index)}
+              aria-label={`View image ${index + 1}`}
+              aria-pressed={isSelected}
+              className={`
+                relative
+                aspect-square
+                overflow-hidden
+                border
+                bg-gray-50
+                transition-all
+                duration-300
+                focus:outline-none
+                focus:ring-2
+                focus:ring-[#85a30f]
+                focus:ring-offset-2
+                ${
+                  isSelected
+                    ? "border-[#85a30f] ring-1 ring-[#85a30f]"
+                    : "border-gray-200 hover:border-[#85a30f]"
+                }
+              `}
+            >
+              <img
+                src={image}
+                alt={`${product.name} thumbnail ${index + 1}`}
                 className="
-                  flex
-                  h-12
+                  h-full
                   w-full
+                  object-contain
+                  p-2
+                  transition-transform
+                  duration-300
+                  hover:scale-105
+                "
+              />
+            </button>
+          );
+        })}
+      </div>
+    )}
+  </div>
+
+  {/* =================================================
+      PRODUCT DETAILS
+  ================================================== */}
+
+  <div className="flex flex-col p-6 shadow-2xl sm:p-8 md:col-span-7 md:p-10">
+    {/* ================= TITLE ================= */}
+
+    <div className="mb-4 flex items-start justify-between gap-4">
+      <h1 className="inter text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+        {product.name}
+      </h1>
+    </div>
+
+    {/* ================= DESCRIPTION ================= */}
+
+    {product.shortDescription && (
+      <p className="mb-7 max-w-xl text-sm leading-6 text-gray-600 sm:text-lg">
+        {product.shortDescription}
+      </p>
+    )}
+
+    {/* ================= KEY FEATURES ================= */}
+
+    {product.features?.length > 0 && (
+      <div className="mb-10 border-t border-gray-200 pt-6">
+        <h3 className="mb-5 text-sm font-semibold uppercase tracking-[0.15em] text-gray-900">
+          Key Features
+        </h3>
+
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          {product.features.map((feature, index) => {
+            const icons = [
+              LuZap,
+              LuTimer,
+              LuShieldCheck,
+              LuLayers,
+              LuBatteryCharging,
+            ];
+
+            const Icon = icons[index % icons.length];
+
+            return (
+              <div
+                key={`${feature.title}-${index}`}
+                className="flex items-start gap-3"
+              >
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#85a30f] text-white">
+                  <Icon size={21} />
+                </div>
+
+                <div className="flex min-h-10 items-center">
+                  <p className="text-sm font-medium text-gray-900">
+                    {feature.title}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    )}
+
+    {/* ================= WATTAGE ================= */}
+
+    {product.wattages?.length > 0 && (
+      <div className="mb-8">
+        <h3 className="mb-4 text-sm font-semibold uppercase tracking-[0.15em] text-gray-900">
+          Select Wattage
+        </h3>
+
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+          {product.wattages.map((watt) => {
+            const isSelected = selectedWattage === watt.value;
+
+            return (
+              <button
+                key={watt.value}
+                type="button"
+                onClick={() => {
+                  setSelectedWattage(watt.value);
+                }}
+                aria-pressed={isSelected}
+                className={`
+                  relative
+                  flex
+                  h-[76px]
+                  flex-col
                   items-center
                   justify-center
-                  bg-black
-                  px-4
-                  text-xs
-                  font-semibold
-                  uppercase
-                  tracking-[0.18em]
-                  text-white
+                  overflow-hidden
+                  border
                   transition-all
                   duration-300
-                  hover:bg-[#85a30f]
-                "
+                  focus:outline-none
+                  focus:ring-2
+                  focus:ring-[#85a30f]
+                  focus:ring-offset-2
+                  ${
+                    isSelected
+                      ? "border-[#85a30f] bg-[#85a30f] text-white shadow-md"
+                      : "border-gray-200 bg-white text-gray-900 hover:border-[#85a30f] hover:shadow-sm"
+                  }
+                `}
               >
-                Download Brochure
-              </a>
-            </div>
-          </div>
+                {/* Selected Indicator */}
+
+                {isSelected && (
+                  <span
+                    className="
+                      absolute
+                      right-2.5
+                      top-2.5
+                      h-2
+                      w-2
+                      rounded-full
+                      bg-white
+                    "
+                  />
+                )}
+
+                {/* Wattage */}
+
+                <span className="text-lg font-semibold">
+                  {watt.value}
+                </span>
+              </button>
+            );
+          })}
         </div>
+      </div>
+    )}
+
+    {/* ================= ACTIONS ================= */}
+
+    <div className="mb-8 mt-auto flex flex-col gap-3">
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+        {/* ================= GET QUOTE ================= */}
+
+        <button
+          type="button"
+          onClick={() => {
+            console.log("Get Quote", {
+              product: product.name,
+              wattage: selectedWattage,
+              price: selectedWattageData?.price,
+            });
+          }}
+          className="
+            flex
+            h-12
+            items-center
+            justify-center
+            border
+            border-black
+            px-4
+            text-xs
+            font-semibold
+            uppercase
+            tracking-[0.18em]
+            text-black
+            transition-all
+            duration-300
+            hover:border-[#85a30f]
+            hover:bg-[#85a30f]
+            hover:text-white
+          "
+        >
+          Get Quote
+        </button>
+
+        {/* ================= WHATSAPP ================= */}
+
+        <a
+          href={`https://wa.me/919999999999?text=${encodeURIComponent(
+            `Hello, I am interested in ${product.name}${
+              selectedWattage ? ` (${selectedWattage})` : ""
+            }${
+              selectedWattageData?.price
+                ? ` priced at ₹${selectedWattageData.price}`
+                : ""
+            }.`,
+          )}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            flex
+            h-12
+            items-center
+            justify-center
+            gap-2
+            border
+            border-black
+            px-4
+            text-xs
+            font-semibold
+            uppercase
+            tracking-[0.18em]
+            text-black
+            transition-all
+            duration-300
+            hover:border-[#85a30f]
+            hover:bg-[#85a30f]
+            hover:text-white
+          "
+        >
+          WhatsApp
+        </a>
+      </div>
+
+      {/* ================= BROCHURE ================= */}
+
+      <a
+        href="/brochure/product-brochure.pdf"
+        download
+        className="
+          flex
+          h-12
+          w-full
+          items-center
+          justify-center
+          bg-black
+          px-4
+          text-xs
+          font-semibold
+          uppercase
+          tracking-[0.18em]
+          text-white
+          transition-all
+          duration-300
+          hover:bg-[#85a30f]
+        "
+      >
+        Download Brochure
+      </a>
+    </div>
+  </div>
+</div>
 
         {/* =====================================================
             PRODUCT TABS
