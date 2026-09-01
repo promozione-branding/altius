@@ -1438,10 +1438,7 @@ export const categories = [
         // Main product images
         image: "/product/pcpanel1.webp",
 
-        images: [
-           "/product/pcpanel1.webp",
-            "/product/pcpanel2.webp",
-        ],
+        images: ["/product/pcpanel1.webp", "/product/pcpanel2.webp"],
 
         // Wattage options
         wattages: [
@@ -1507,7 +1504,7 @@ export const categories = [
         ],
 
         // Image used in description section
-        descriptionImage:  "/product/pcpanel2.webp",
+        descriptionImage: "/product/pcpanel2.webp",
 
         // Additional product information
         sku: "ELS-PT001",
@@ -1550,10 +1547,7 @@ export const categories = [
         // Main product images
         image: "/product/pcpanel1.webp",
 
-        images: [
-          "/product/pcpanel1.webp",
-          "/product/pcpanel2.webp",
-        ],
+        images: ["/product/pcpanel1.webp", "/product/pcpanel2.webp"],
 
         // Wattage options
         wattages: [
@@ -1662,10 +1656,7 @@ export const categories = [
         // Main product images
         image: "/product/pcpanel1.webp",
 
-        images: [
-         "/product/pcpanel1.webp",
-         "/product/pcpanel2.webp",
-        ],
+        images: ["/product/pcpanel1.webp", "/product/pcpanel2.webp"],
 
         // Wattage options
         wattages: [
@@ -1753,8 +1744,6 @@ export const categories = [
     ],
   },
 
-
-
   {
     id: 5,
     name: "Outdoor Lights",
@@ -1763,634 +1752,940 @@ export const categories = [
     description:
       "ELSTRONG COB Lens Model delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
     products: [
+      {
+        id: 501,
+        name: "Half K Light",
+        slug: "half-k-light",
 
-{
-  id: 501,
-  name: "Half K Light",
-  slug: "half-k-light",
+        category: "Outdoor Lights",
+        categorySlug: "outdoor-lights",
 
-  category: "Outdoor Lights",
-  categorySlug: "outdoor-lights",
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
 
-  price: 0,
-  oldPrice: 0,
-  currency: "₹",
+        badge: "Featured",
 
-  badge: "Featured",
+        shortDescription:
+          "The ELSTRONG Half K Light OL001 is a compact and stylish outdoor LED lighting solution available in multiple wattages and colour options for architectural, decorative, and landscape applications.",
 
-  shortDescription:
-    "The ELSTRONG Half K Light OL001 is a compact and stylish outdoor LED lighting solution available in multiple wattages and colour options for architectural, decorative, and landscape applications.",
+        description:
+          "The ELSTRONG Half K Light OL001 is a modern and compact LED lighting solution designed to provide focused illumination for outdoor, architectural, and decorative applications. Available in 3W and 5W options, the Half K Light provides flexible lighting choices for different brightness requirements and installation environments. It is available in CW (Cool White), NW (Natural White), and WW (Warm White), allowing users to select the desired lighting appearance. Its distinctive half-K design combines decorative appeal with practical illumination, making it suitable for walls, pathways, architectural details, gardens, entrances, landscapes, and other outdoor features.",
 
-  description:
-    "The ELSTRONG Half K Light OL001 is a modern and compact LED lighting solution designed to provide focused illumination for outdoor, architectural, and decorative applications. Available in 3W and 5W options, the Half K Light provides flexible lighting choices for different brightness requirements and installation environments. It is available in CW (Cool White), NW (Natural White), and WW (Warm White), allowing users to select the desired lighting appearance. Its distinctive half-K design combines decorative appeal with practical illumination, making it suitable for walls, pathways, architectural details, gardens, entrances, landscapes, and other outdoor features.",
+        // Main product images
+        image: "/product/K-light1.webp",
 
-  // Main product images
-  image: "/products/half-k-light.jpeg",
+        images: [
+         "/product/K-light1.webp",
+         "/product/K-light2.webp",
+        ],
 
-  images: [
-    "/products/half-k-light.jpeg",
-    "/products/half-k-light-2.webp",
-    "/products/half-k-light-3.webp",
-  ],
+        // Wattage options
+        wattages: [
+          {
+            value: "3W",
+            image: "/products/half-k-light.jpeg",
+            price: 0,
+          },
+          {
+            value: "5W",
+            image: "/products/half-k-light.jpeg",
+            price: 0,
+          },
+        ],
 
-  // Wattage options
-  wattages: [
-    {
-      value: "3W",
-      image: "/products/half-k-light.jpeg",
-      price: 0,
-    },
-    {
-      value: "5W",
-      image: "/products/half-k-light.jpeg",
-      price: 0,
-    },
-  ],
+        // Product specifications
+        specifications: {
+          wattage: "3W / 5W",
+          "Colour Temperature": "CW / NW / WW",
+          "Light Source": "LED",
+          Design: "Half K",
+          Application: "Outdoor / Architectural / Decorative",
+          Installation: "Surface Mounted",
+        },
 
-  // Product specifications
-  specifications: {
-    wattage: "3W / 5W",
-    "Colour Temperature": "CW / NW / WW",
-    "Light Source": "LED",
-    Design: "Half K",
-    Application: "Outdoor / Architectural / Decorative",
-    Installation: "Surface Mounted",
+        // Features
+        features: [
+          {
+            title: "Compact LED Design",
+            text: "The Half K Light provides effective illumination in a compact format, making it suitable for outdoor areas where both appearance and functionality are important.",
+          },
+          {
+            title: "Multiple Wattages",
+            text: "Available in 3W and 5W options, providing flexibility for different outdoor lighting requirements ranging from subtle decorative illumination to stronger accent lighting.",
+          },
+          {
+            title: "Flexible Colour Temperatures",
+            text: "CW, NW, and WW options allow users to create cool, natural, or warm lighting effects according to the application and desired atmosphere.",
+          },
+          {
+            title: "Versatile Outdoor Applications",
+            text: "Suitable for architectural façades, gardens, pathways, entrances, boundary walls, landscapes, and decorative outdoor installations.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops modern LED lighting solutions designed to combine practical performance with contemporary aesthetics.",
+          },
+          {
+            title: "Outdoor Lighting Solutions",
+            text: "The Half K Light is designed for applications where focused illumination and decorative appearance are equally important.",
+          },
+          {
+            title: "Flexible Lighting Choices",
+            text: "Multiple wattages and colour options provide greater flexibility for different outdoor lighting concepts and installation requirements.",
+          },
+          {
+            title: "Modern Design",
+            text: "Its distinctive half-K form adds visual appeal while providing functional illumination for architectural and landscape spaces.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/K-light2.webp",
+
+        // Additional product information
+        sku: "ELS-OL001",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/half-k-light-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "led-panel-18w",
+          "led-panel-12w",
+          "moveable-lens-cob-9w",
+          "led-slim-panel-18w",
+        ],
+      },
+
+      {
+        id: 502,
+        name: "Cylinder Light",
+        slug: "cylinder-light",
+
+        category: "Outdoor Lights",
+        categorySlug: "outdoor-lights",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "The ELSTRONG Cylinder Light OL002 is a contemporary LED lighting solution with dual-light configurations, designed for focused and attractive illumination across outdoor, architectural, and decorative applications.",
+
+        description:
+          "The ELSTRONG Cylinder Light OL002 is a modern LED lighting solution designed to provide focused and visually appealing illumination for outdoor, architectural, and decorative applications. Available in 3W + 3W and 5W + 5W configurations, the product uses two LED light sources to create balanced and distinctive illumination effects. It is available in CW (Cool White), NW (Natural White), and WW (Warm White), providing flexibility for different lighting preferences and exterior designs. Its contemporary cylindrical design makes it suitable for building façades, exterior walls, entrances, pathways, gardens, terraces, landscapes, and other architectural lighting installations.",
+
+        // Main product images
+        image: "/product/CylinderLight1.webp",
+
+        images: [
+          "/product/CylinderLight1.webp",
+          "/product/CylinderLight2.webp",
+        ],
+
+        // Wattage options
+        wattages: [
+          {
+            value: "3W + 3W",
+            image: "/products/cylinder-light.jpeg",
+            price: 0,
+          },
+          {
+            value: "5W + 5W",
+            image: "/products/cylinder-light.jpeg",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          wattage: "3W + 3W / 5W + 5W",
+          "Light Sources": "2 LED Sources",
+          "Colour Temperature": "CW / NW / WW",
+          "Light Source": "LED",
+          Design: "Cylinder",
+          Application: "Outdoor / Architectural / Decorative",
+          Installation: "Wall Mounted",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Dual LED Configuration",
+            text: "The 3W + 3W and 5W + 5W configurations provide illumination from two LED sources, creating a distinctive and balanced lighting effect.",
+          },
+          {
+            title: "Modern Cylinder Design",
+            text: "The cylindrical form adds a contemporary decorative element while providing practical lighting for architectural and outdoor spaces.",
+          },
+          {
+            title: "Three Colour Options",
+            text: "CW, NW, and WW options allow users to select the colour appearance based on the desired ambience, architectural style, and application.",
+          },
+          {
+            title: "Wide Application Range",
+            text: "Suitable for building façades, exterior walls, entrances, gardens, pathways, terraces, landscapes, and decorative architectural installations.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Reliable LED Light Manufacturer",
+            text: "ELSTRONG provides modern LED lighting solutions designed for both functional and decorative outdoor and architectural applications.",
+          },
+          {
+            title: "Distinctive Lighting Effect",
+            text: "The dual-light configuration creates a visually appealing and balanced illumination pattern suitable for architectural environments.",
+          },
+          {
+            title: "Flexible Colour Selection",
+            text: "CW, NW, and WW options allow the lighting effect to be matched with different exterior designs, architectural styles, and ambience requirements.",
+          },
+          {
+            title: "Contemporary Appearance",
+            text: "The cylinder design complements modern architecture while providing practical and attractive outdoor illumination.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/CylinderLight2.webp",
+
+        // Additional product information
+        sku: "ELS-OL002",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/cylinder-light-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "half-k-light",
+          "led-panel-18w",
+          "led-panel-12w",
+          "led-slim-panel-18w",
+        ],
+      },
+
+      {
+        id: 503,
+        name: "Spike Light",
+        slug: "spike-light",
+
+        category: "Outdoor Lights",
+        categorySlug: "outdoor-lights",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "The ELSTRONG Spike Light OL003 is a versatile outdoor landscape lighting solution designed to provide focused illumination for gardens, pathways, plants, trees, and architectural features.",
+
+        description:
+          "The ELSTRONG Spike Light OL003 is a versatile outdoor LED lighting solution designed for landscape and accent lighting applications. Available in 5W and 10W options, it provides flexibility for different illumination levels and outdoor lighting requirements. The product is available in CW (Cool White), NW (Natural White), and WW (Warm White), allowing users to create different lighting effects across gardens, landscapes, and exterior spaces. Its practical spike-style design allows the fixture to be positioned directly into soil, garden areas, lawns, or landscape surfaces, making it suitable for highlighting plants, trees, pathways, walls, architectural elements, resorts, and outdoor decorative features.",
+
+        // Main product images
+        image: "/products/spike-light.jpeg",
+
+        images: [
+          "/products/spike-light.jpeg",
+          "/products/spike-light-2.webp",
+          "/products/spike-light-3.webp",
+        ],
+
+        // Wattage options
+        wattages: [
+          {
+            value: "5W",
+            image: "/products/spike-light.jpeg",
+            price: 0,
+          },
+          {
+            value: "10W",
+            image: "/products/spike-light.jpeg",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          wattage: "5W / 10W",
+          "Colour Temperature": "CW / NW / WW",
+          "Light Source": "LED",
+          Design: "Spike",
+          Application: "Outdoor / Landscape / Accent",
+          Installation: "Ground / Soil Mounted",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Focused Landscape Illumination",
+            text: "Designed to direct light toward selected outdoor features such as plants, trees, pathways, walls, gardens, and architectural elements.",
+          },
+          {
+            title: "5W & 10W Options",
+            text: "Different wattage choices provide flexibility for subtle accent lighting as well as stronger outdoor illumination.",
+          },
+          {
+            title: "Three Colour Options",
+            text: "CW, NW, and WW provide options for cool, natural, and warm lighting effects to suit different landscape designs and outdoor environments.",
+          },
+          {
+            title: "Outdoor Versatility",
+            text: "Suitable for gardens, lawns, pathways, resorts, outdoor décor, architectural landscapes, and other exterior applications.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops LED lighting solutions for residential, commercial, architectural, landscape, and outdoor environments.",
+          },
+          {
+            title: "Designed for Landscapes",
+            text: "The Spike Light provides a practical solution for highlighting plants, trees, pathways, gardens, and exterior architectural elements.",
+          },
+          {
+            title: "Flexible Illumination",
+            text: "The 5W and 10W options allow users to choose an appropriate lighting level for different landscape and accent lighting applications.",
+          },
+          {
+            title: "Modern Outdoor Lighting",
+            text: "With multiple colour choices and a practical spike-style design, OL003 combines functional illumination with attractive outdoor aesthetics.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/products/spike-light-detail.webp",
+
+        // Additional product information
+        sku: "ELS-OL003",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/spike-light-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "half-k-light",
+          "cylinder-light",
+          "led-panel-18w",
+          "led-slim-panel-18w",
+        ],
+      },
+
+      {
+        id: 504,
+        name: "Foot Light",
+        slug: "foot-light",
+
+        category: "Outdoor Lights",
+        categorySlug: "outdoor-lights",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "The ELSTRONG Foot Light EL004 is a compact 3W LED lighting solution designed to provide soft and practical low-level illumination for pathways, steps, corridors, entrances, and architectural spaces.",
+
+        description:
+          "The ELSTRONG Foot Light EL004 is a compact and efficient LED lighting solution designed to provide soft and practical illumination for pathways, steps, corridors, entrances, and other areas requiring low-level lighting. Featuring a 3W LED configuration, the Foot Light provides functional illumination while maintaining a compact and contemporary design. Available in Black, White, and Dark Grey finishes, it can coordinate with different wall finishes, architectural styles, and interior or exterior designs. Its clean and unobtrusive form makes it suitable for residential, commercial, hospitality, and architectural applications where subtle guidance lighting and modern aesthetics are important.",
+
+        // Main product images
+        image: "/products/foot-light.jpeg",
+
+        images: [
+          "/products/foot-light.jpeg",
+          "/products/foot-light-2.webp",
+          "/products/foot-light-3.webp",
+        ],
+
+        // Wattage options
+        wattages: [
+          {
+            value: "3W",
+            image: "/products/foot-light.jpeg",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          wattage: "3W",
+          "Light Source": "LED",
+          "Finish Options": "Black / White / Dark Grey",
+          Application: "Pathways / Steps / Corridors / Entrances",
+          Design: "Compact Architectural",
+          Installation: "Wall Mounted",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Low-Level Illumination",
+            text: "Designed to provide comfortable guidance lighting for steps, walkways, corridors, entrances, and similar areas requiring subtle illumination.",
+          },
+          {
+            title: "Compact Design",
+            text: "Its compact format allows it to integrate neatly into walls and architectural surfaces without creating a visually bulky appearance.",
+          },
+          {
+            title: "3W LED Technology",
+            text: "The 3W LED configuration provides practical illumination while supporting energy-efficient everyday operation.",
+          },
+          {
+            title: "Three Colour Finishes",
+            text: "Black, White, and Dark Grey options provide flexibility to match different architectural, wall, and interior colour schemes.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops modern LED lighting solutions focused on practical performance, contemporary design, and reliable everyday use.",
+          },
+          {
+            title: "Architectural Versatility",
+            text: "The Foot Light is suitable for residential, commercial, hospitality, and architectural environments requiring subtle and functional illumination.",
+          },
+          {
+            title: "Flexible Finishes",
+            text: "Three finish options make it easier to coordinate the product with different wall surfaces, architectural styles, and design themes.",
+          },
+          {
+            title: "Efficient Lighting",
+            text: "The 3W LED configuration provides practical low-level illumination while maintaining low power consumption for everyday applications.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/products/foot-light-detail.webp",
+
+        // Additional product information
+        sku: "ELS-EL004",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/foot-light-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "half-k-light",
+          "cylinder-light",
+          "spike-light",
+          "led-panel-6w",
+        ],
+      },
+
+      {
+        id: 505,
+        name: "K Light",
+        slug: "k-light",
+
+        category: "Outdoor Lights",
+        categorySlug: "outdoor-lights",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "The ELSTRONG Angled K Light EL005 is a modern LED lighting solution designed to provide focused and decorative illumination for architectural, outdoor, landscape, and accent lighting applications.",
+
+        description:
+          "The ELSTRONG Angled K Light EL005 is a modern and versatile LED lighting solution designed to provide focused and decorative illumination for architectural, outdoor, landscape, and accent lighting applications. Available in 3W, 5W, and 10W options, the K Light provides flexibility for different illumination levels and installation requirements. It is available in Cool White and Warm White, allowing users to select the desired lighting appearance for different architectural and decorative environments. Its angled lighting configuration helps direct illumination toward selected surfaces and features, making it suitable for façades, walls, entrances, pathways, gardens, landscapes, and other outdoor architectural installations.",
+
+        // Main product images
+        image: "/product/K-light1.webp",
+
+        images: ["/product/K-light1.webp", "/product/K-light2.webp"],
+
+        // Wattage options
+        wattages: [
+          {
+            value: "3W",
+            image: "/products/k-light.jpeg",
+            price: 0,
+          },
+          {
+            value: "5W",
+            image: "/products/k-light.jpeg",
+            price: 0,
+          },
+          {
+            value: "10W",
+            image: "/products/k-light.jpeg",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          wattage: "3W / 5W / 10W",
+          "Colour Temperature": "CW / WW",
+          "Light Source": "LED",
+          Design: "Angled K",
+          Application: "Outdoor / Architectural / Landscape / Accent",
+          Installation: "Wall Mounted",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Focused Illumination",
+            text: "The angled design helps direct light toward walls, architectural elements, landscapes, pathways, and other selected areas for targeted illumination.",
+          },
+          {
+            title: "Three Wattage Options",
+            text: "Available in 3W, 5W, and 10W variants, providing flexibility for applications requiring different levels of lighting output.",
+          },
+          {
+            title: "Two Colour Options",
+            text: "Cool White and Warm White allow users to create either a crisp contemporary appearance or a warmer decorative ambience.",
+          },
+          {
+            title: "Architectural Applications",
+            text: "Suitable for façades, walls, entrances, pathways, gardens, outdoor areas, and decorative architectural installations.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Reliable LED Light Manufacturer",
+            text: "ELSTRONG develops LED lighting products designed to combine modern aesthetics with practical and dependable lighting performance.",
+          },
+          {
+            title: "Flexible Lighting Output",
+            text: "The 3W, 5W, and 10W variants allow the Angled K Light to be selected according to the required illumination level and application.",
+          },
+          {
+            title: "Directional Design",
+            text: "Its angled form provides targeted illumination, making it suitable for highlighting architectural details, landscapes, walls, and outdoor features.",
+          },
+          {
+            title: "Modern Lighting Options",
+            text: "Cool White and Warm White choices provide flexibility for both contemporary and warm decorative lighting concepts.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/K-light2.webp",
+
+        // Additional product information
+        sku: "ELS-EL005",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/k-light-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "half-k-light",
+          "cylinder-light",
+          "spike-light",
+          "foot-light",
+        ],
+      },
+    ],
   },
 
-  // Features
-  features: [
-    {
-      title: "Compact LED Design",
-      text:
-        "The Half K Light provides effective illumination in a compact format, making it suitable for outdoor areas where both appearance and functionality are important.",
-    },
-    {
-      title: "Multiple Wattages",
-      text:
-        "Available in 3W and 5W options, providing flexibility for different outdoor lighting requirements ranging from subtle decorative illumination to stronger accent lighting.",
-    },
-    {
-      title: "Flexible Colour Temperatures",
-      text:
-        "CW, NW, and WW options allow users to create cool, natural, or warm lighting effects according to the application and desired atmosphere.",
-    },
-    {
-      title: "Versatile Outdoor Applications",
-      text:
-        "Suitable for architectural façades, gardens, pathways, entrances, boundary walls, landscapes, and decorative outdoor installations.",
-    },
-  ],
+  {
+    id: 6,
+    name: "Striker",
+    slug: "striker",
+    image: "/striker.webp",
+    description:
+      "ELSTRONG COB Lens Model delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
+    products: [
+      {
+        id: 601,
+        name: "Striker",
+        slug: "striker",
 
-  // Why choose this product/company
-  whyChoose: [
-    {
-      title: "Professional Lighting Manufacturer",
-      text:
-        "ELSTRONG develops modern LED lighting solutions designed to combine practical performance with contemporary aesthetics.",
-    },
-    {
-      title: "Outdoor Lighting Solutions",
-      text:
-        "The Half K Light is designed for applications where focused illumination and decorative appearance are equally important.",
-    },
-    {
-      title: "Flexible Lighting Choices",
-      text:
-        "Multiple wattages and colour options provide greater flexibility for different outdoor lighting concepts and installation requirements.",
-    },
-    {
-      title: "Modern Design",
-      text:
-        "Its distinctive half-K form adds visual appeal while providing functional illumination for architectural and landscape spaces.",
-    },
-  ],
+        category: "Striker",
+        categorySlug: "striker",
 
-  // Image used in description section
-  descriptionImage: "/products/half-k-light-detail.webp",
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
 
-  // Additional product information
-  sku: "ELS-OL001",
+        badge: "Featured",
 
-  stock: true,
+        shortDescription:
+          "The ELSTRONG Lens Striker is a compact DOB LED lighting solution designed to provide efficient, reliable, and versatile illumination for residential, commercial, decorative, and specialty lighting applications.",
 
-  stockText: "In Stock",
+        description:
+          "The ELSTRONG Lens Striker is a compact DOB (Driver on Board) LED lighting solution designed to provide reliable and efficient illumination across residential, commercial, decorative, and specialty lighting applications. Featuring a compact round design with dimensions of 61 × 17 mm, the Lens Striker is suitable for applications where space efficiency and dependable LED performance are important. The product operates across a wide voltage range of 85V–350V and the 3W configuration provides a power factor greater than 0.95 for efficient electrical performance. With 440V high-voltage protection and a 4 kV surge capacity, the Lens Striker is designed to provide additional protection under suitable electrical conditions. It is available in CW, WW, NW, Red, Blue, Green, Pink, and Tri-colour options for functional, decorative, architectural, and specialty lighting applications.",
 
-  brochure: "/brochure/half-k-light-brochure.pdf",
+        // Main product images
+        image: "/product/striker1.webp",
 
-  // Related products
-  relatedProducts: [
-    "led-panel-18w",
-    "led-panel-12w",
-    "moveable-lens-cob-9w",
-    "led-slim-panel-18w",
-  ],
-},
+        images: ["/product/striker1.webp", "/product/striker2.webp"],
 
+        // Wattage options
+        wattages: [
+          {
+            value: "3W",
+            image: "/products/striker.jpeg",
+            price: 0,
+          },
+        ],
 
+        // Product specifications
+        specifications: {
+          wattage: "3W",
+          "Product Type": "Lens Striker",
+          "LED Technology": "DOB (Driver on Board)",
+          Dimensions: "61 × 17 mm",
+          "Operating Voltage": "85V–350V",
+          "Power Factor": ">0.95",
+          "High Voltage Protection": "440V",
+          "Surge Protection": "4 kV",
+          "Colour Options":
+            "CW / WW / NW / Red / Blue / Green / Pink / Tri-colour",
+          "Light Source": "LED",
+        },
 
-{
-  id: 502,
-  name: "Cylinder Light",
-  slug: "cylinder-light",
+        // Features
+        features: [
+          {
+            title: "DOB Technology",
+            text: "The Driver on Board design integrates driver functionality with the LED board, providing a compact and practical solution for suitable lighting applications.",
+          },
+          {
+            title: "High-Voltage Protection",
+            text: "Designed with 440V high-voltage protection, helping provide additional protection against suitable high-voltage conditions.",
+          },
+          {
+            title: "Surge Protection",
+            text: "With a 4 kV surge capacity, the Lens Striker is designed to offer improved resilience against suitable electrical surges.",
+          },
+          {
+            title: "Multiple Colour Options",
+            text: "Available in CW, WW, NW, Red, Blue, Green, Pink, and Tri-colour options, providing flexibility for functional, decorative, architectural, and specialty lighting applications.",
+          },
+        ],
 
-  category: "Outdoor Lights",
-  categorySlug: "outdoor-lights",
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional LED Light Manufacturer",
+            text: "ELSTRONG develops LED lighting solutions focused on efficient electrical performance, practical design, and dependable operation across diverse lighting applications.",
+          },
+          {
+            title: "High Power Factor Performance",
+            text: "With a power factor greater than 0.95, the Lens Striker is designed to support efficient utilization of electrical power.",
+          },
+          {
+            title: "Enhanced Protection",
+            text: "The combination of 440V high-voltage protection and 4 kV surge capacity provides additional protection for suitable lighting applications.",
+          },
+          {
+            title: "Wide Colour Selection",
+            text: "The extensive range of colour options makes the product suitable for general, decorative, architectural, and specialty lighting requirements.",
+          },
+        ],
 
-  price: 0,
-  oldPrice: 0,
-  currency: "₹",
+        // Image used in description section
+        descriptionImage: "/product/striker2.webp",
 
-  badge: "Featured",
+        // Additional product information
+        sku: "ELS-STRIKER-003",
 
-  shortDescription:
-    "The ELSTRONG Cylinder Light OL002 is a contemporary LED lighting solution with dual-light configurations, designed for focused and attractive illumination across outdoor, architectural, and decorative applications.",
+        stock: true,
 
-  description:
-    "The ELSTRONG Cylinder Light OL002 is a modern LED lighting solution designed to provide focused and visually appealing illumination for outdoor, architectural, and decorative applications. Available in 3W + 3W and 5W + 5W configurations, the product uses two LED light sources to create balanced and distinctive illumination effects. It is available in CW (Cool White), NW (Natural White), and WW (Warm White), providing flexibility for different lighting preferences and exterior designs. Its contemporary cylindrical design makes it suitable for building façades, exterior walls, entrances, pathways, gardens, terraces, landscapes, and other architectural lighting installations.",
+        stockText: "In Stock",
 
-  // Main product images
-  image: "/products/cylinder-light.jpeg",
+        brochure: "/brochure/striker-brochure.pdf",
 
-  images: [
-    "/products/cylinder-light.jpeg",
-    "/products/cylinder-light-2.webp",
-    "/products/cylinder-light-3.webp",
-  ],
-
-  // Wattage options
-  wattages: [
-    {
-      value: "3W + 3W",
-      image: "/products/cylinder-light.jpeg",
-      price: 0,
-    },
-    {
-      value: "5W + 5W",
-      image: "/products/cylinder-light.jpeg",
-      price: 0,
-    },
-  ],
-
-  // Product specifications
-  specifications: {
-    wattage: "3W + 3W / 5W + 5W",
-    "Light Sources": "2 LED Sources",
-    "Colour Temperature": "CW / NW / WW",
-    "Light Source": "LED",
-    Design: "Cylinder",
-    Application: "Outdoor / Architectural / Decorative",
-    Installation: "Wall Mounted",
+        // Related products
+        relatedProducts: [
+          "k-light",
+          "half-k-light",
+          "cylinder-light",
+          "spike-light",
+        ],
+      },
+    ],
   },
 
-  // Features
-  features: [
-    {
-      title: "Dual LED Configuration",
-      text:
-        "The 3W + 3W and 5W + 5W configurations provide illumination from two LED sources, creating a distinctive and balanced lighting effect.",
-    },
-    {
-      title: "Modern Cylinder Design",
-      text:
-        "The cylindrical form adds a contemporary decorative element while providing practical lighting for architectural and outdoor spaces.",
-    },
-    {
-      title: "Three Colour Options",
-      text:
-        "CW, NW, and WW options allow users to select the colour appearance based on the desired ambience, architectural style, and application.",
-    },
-    {
-      title: "Wide Application Range",
-      text:
-        "Suitable for building façades, exterior walls, entrances, gardens, pathways, terraces, landscapes, and decorative architectural installations.",
-    },
-  ],
+  {
+    id: 7,
+    name: "Tengo Panel",
+    slug: "tengo-panel",
+    image: "/striker.webp",
+    description:
+      "ELSTRONG COB Lens Model delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
+    products: [
+      {
+        id: 701,
+        name: "Tengo Panel",
+        slug: "tengo-panel",
 
-  // Why choose this product/company
-  whyChoose: [
-    {
-      title: "Reliable LED Light Manufacturer",
-      text:
-        "ELSTRONG provides modern LED lighting solutions designed for both functional and decorative outdoor and architectural applications.",
-    },
-    {
-      title: "Distinctive Lighting Effect",
-      text:
-        "The dual-light configuration creates a visually appealing and balanced illumination pattern suitable for architectural environments.",
-    },
-    {
-      title: "Flexible Colour Selection",
-      text:
-        "CW, NW, and WW options allow the lighting effect to be matched with different exterior designs, architectural styles, and ambience requirements.",
-    },
-    {
-      title: "Contemporary Appearance",
-      text:
-        "The cylinder design complements modern architecture while providing practical and attractive outdoor illumination.",
-    },
-  ],
+        category: "Tengo Panel",
+        categorySlug: "tengo-panel",
 
-  // Image used in description section
-  descriptionImage: "/products/cylinder-light-detail.webp",
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
 
-  // Additional product information
-  sku: "ELS-OL002",
+        badge: "Featured",
 
-  stock: true,
+        shortDescription:
+          "The ELSTRONG Altius Lighting Tengo Panel is a modern LED panel with a durable polycarbonate body, multiple wattage options, and flexible colour temperatures for residential and commercial interiors.",
 
-  stockText: "In Stock",
+        description:
+          "The ELSTRONG Altius Lighting Tengo Panel is a modern and efficient LED panel designed to provide clean, uniform, and consistent illumination across residential, commercial, office, retail, and other indoor spaces. Available in 6W, 12W, 18W, and 24W options, the Tengo Panel provides flexible lighting solutions for different room sizes and illumination requirements. Its durable Polycarbonate (PC) body combines a lightweight construction with practical durability for everyday lighting applications. Available in Cool White (CW), Neutral White (NW), and Warm White (WW), the panel provides flexibility to create different lighting environments. The Tengo Panel is backed by a 2-year warranty for added confidence in product quality and dependable performance.",
 
-  brochure: "/brochure/cylinder-light-brochure.pdf",
+        // Main product images
+        image: "/products/tengo-panel.jpeg",
 
-  // Related products
-  relatedProducts: [
-    "half-k-light",
-    "led-panel-18w",
-    "led-panel-12w",
-    "led-slim-panel-18w",
-  ],
-},
+        images: [
+          "/products/tengo-panel.jpeg",
+          "/products/tengo-panel-2.webp",
+          "/products/tengo-panel-3.webp",
+        ],
 
+        // Wattage options
+        wattages: [
+          {
+            value: "6W",
+            image: "/products/tengo-panel.jpeg",
+            price: 0,
+          },
+          {
+            value: "12W",
+            image: "/products/tengo-panel.jpeg",
+            price: 0,
+          },
+          {
+            value: "18W",
+            image: "/products/tengo-panel.jpeg",
+            price: 0,
+          },
+          {
+            value: "24W",
+            image: "/products/tengo-panel.jpeg",
+            price: 0,
+          },
+        ],
 
+        // Product specifications
+        specifications: {
+          wattage: "6W / 12W / 18W / 24W",
+          Material: "Polycarbonate (PC)",
+          "Colour Temperature": "CW / NW / WW",
+          "Light Source": "LED",
+          Warranty: "2 Years",
+          Application: "Residential / Commercial / Office / Retail",
+          Installation: "Ceiling Mounted",
+        },
 
-{
-  id: 503,
-  name: "Spike Light",
-  slug: "spike-light",
+        // Features
+        features: [
+          {
+            title: "Efficient LED Technology",
+            text: "The Tengo Panel is designed to provide clean and consistent illumination while supporting energy-efficient lighting for everyday residential and commercial applications.",
+          },
+          {
+            title: "Multiple Wattages",
+            text: "Available in 6W, 12W, 18W, and 24W options, providing flexibility for different lighting requirements ranging from smaller spaces to areas requiring higher illumination.",
+          },
+          {
+            title: "Three Colour Temperatures",
+            text: "CW, NW, and WW options allow users to create cool, natural, or warm lighting environments according to the application and desired ambience.",
+          },
+          {
+            title: "Durable Polycarbonate Body",
+            text: "The Polycarbonate construction provides a lightweight and practical housing designed for dependable everyday indoor lighting use.",
+          },
+        ],
 
-  category: "Outdoor Lights",
-  categorySlug: "outdoor-lights",
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops modern LED lighting solutions focused on quality, efficiency, practical design, and reliable performance.",
+          },
+          {
+            title: "Flexible Lighting Solution",
+            text: "Multiple wattage and colour-temperature options make the Tengo Panel suitable for a wide range of residential, commercial, office, and retail lighting requirements.",
+          },
+          {
+            title: "Durable Construction",
+            text: "The Polycarbonate body provides a lightweight and practical solution designed for regular indoor lighting applications.",
+          },
+          {
+            title: "2-Year Warranty",
+            text: "Backed by a 2-year warranty, the Tengo Panel offers added confidence in product quality and dependable everyday performance.",
+          },
+        ],
 
-  price: 0,
-  oldPrice: 0,
-  currency: "₹",
+        // Image used in description section
+        descriptionImage: "/products/tengo-panel-detail.webp",
 
-  badge: "Featured",
+        // Additional product information
+        sku: "ELS-TENGO-PANEL",
 
-  shortDescription:
-    "The ELSTRONG Spike Light OL003 is a versatile outdoor landscape lighting solution designed to provide focused illumination for gardens, pathways, plants, trees, and architectural features.",
+        stock: true,
 
-  description:
-    "The ELSTRONG Spike Light OL003 is a versatile outdoor LED lighting solution designed for landscape and accent lighting applications. Available in 5W and 10W options, it provides flexibility for different illumination levels and outdoor lighting requirements. The product is available in CW (Cool White), NW (Natural White), and WW (Warm White), allowing users to create different lighting effects across gardens, landscapes, and exterior spaces. Its practical spike-style design allows the fixture to be positioned directly into soil, garden areas, lawns, or landscape surfaces, making it suitable for highlighting plants, trees, pathways, walls, architectural elements, resorts, and outdoor decorative features.",
+        stockText: "In Stock",
 
-  // Main product images
-  image: "/products/spike-light.jpeg",
+        brochure: "/brochure/tengo-panel-brochure.pdf",
 
-  images: [
-    "/products/spike-light.jpeg",
-    "/products/spike-light-2.webp",
-    "/products/spike-light-3.webp",
-  ],
-
-  // Wattage options
-  wattages: [
-    {
-      value: "5W",
-      image: "/products/spike-light.jpeg",
-      price: 0,
-    },
-    {
-      value: "10W",
-      image: "/products/spike-light.jpeg",
-      price: 0,
-    },
-  ],
-
-  // Product specifications
-  specifications: {
-    wattage: "5W / 10W",
-    "Colour Temperature": "CW / NW / WW",
-    "Light Source": "LED",
-    Design: "Spike",
-    Application: "Outdoor / Landscape / Accent",
-    Installation: "Ground / Soil Mounted",
+        // Related products
+        relatedProducts: [
+          "led-panel-6w",
+          "led-panel-12w",
+          "led-panel-18w",
+          "led-slim-panel-12w",
+        ],
+      },
+    ],
   },
 
-  // Features
-  features: [
-    {
-      title: "Focused Landscape Illumination",
-      text:
-        "Designed to direct light toward selected outdoor features such as plants, trees, pathways, walls, gardens, and architectural elements.",
-    },
-    {
-      title: "5W & 10W Options",
-      text:
-        "Different wattage choices provide flexibility for subtle accent lighting as well as stronger outdoor illumination.",
-    },
-    {
-      title: "Three Colour Options",
-      text:
-        "CW, NW, and WW provide options for cool, natural, and warm lighting effects to suit different landscape designs and outdoor environments.",
-    },
-    {
-      title: "Outdoor Versatility",
-      text:
-        "Suitable for gardens, lawns, pathways, resorts, outdoor décor, architectural landscapes, and other exterior applications.",
-    },
-  ],
+  {
+    id: 8,
+    name: "Wall Light",
+    slug: "wall-light",
+    image: "/wallLight.webp",
+    description:
+      "ELSTRONG COB Lens Model delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
+    products: [
+      {
+        id: 801,
+        name: "Wall Light",
+        slug: "wall-light",
 
-  // Why choose this product/company
-  whyChoose: [
-    {
-      title: "Professional Lighting Manufacturer",
-      text:
-        "ELSTRONG develops LED lighting solutions for residential, commercial, architectural, landscape, and outdoor environments.",
-    },
-    {
-      title: "Designed for Landscapes",
-      text:
-        "The Spike Light provides a practical solution for highlighting plants, trees, pathways, gardens, and exterior architectural elements.",
-    },
-    {
-      title: "Flexible Illumination",
-      text:
-        "The 5W and 10W options allow users to choose an appropriate lighting level for different landscape and accent lighting applications.",
-    },
-    {
-      title: "Modern Outdoor Lighting",
-      text:
-        "With multiple colour choices and a practical spike-style design, OL003 combines functional illumination with attractive outdoor aesthetics.",
-    },
-  ],
+        category: "Wall Light",
+        categorySlug: "wall-light",
 
-  // Image used in description section
-  descriptionImage: "/products/spike-light-detail.webp",
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
 
-  // Additional product information
-  sku: "ELS-OL003",
+        badge: "Featured",
 
-  stock: true,
+        shortDescription:
+          "The ELSTRONG Wall Light is a modern LED lighting solution designed to provide functional and decorative illumination for residential, commercial, architectural, and outdoor wall applications.",
 
-  stockText: "In Stock",
+        description:
+          "The ELSTRONG Wall Light is a modern and versatile LED lighting solution designed to provide functional and decorative illumination for residential, commercial, architectural, and outdoor wall applications. Designed to operate across a wide 85V–265V AC voltage range, the Wall Light provides flexibility for compatible electrical installations and dependable lighting performance. It is available in Cool White (CW), Warm White (WW), and Natural White (NW), allowing users to select the desired lighting ambience for different environments. The Wall Light is also available in Black and White body finishes, providing versatile options to complement modern walls, façades, entrances, balconies, pathways, and other architectural spaces.",
 
-  brochure: "/brochure/spike-light-brochure.pdf",
+        // Main product images
+        image: "/product/wallLight1.webp",
 
-  // Related products
-  relatedProducts: [
-    "half-k-light",
-    "cylinder-light",
-    "led-panel-18w",
-    "led-slim-panel-18w",
-  ],
-},
+        images: ["/product/wallLight1.webp", "/product/wallLight2.webp"],
 
+        // Wattage options
+        wattages: [
+          {
+            value: "Standard",
+            image: "/products/wall-light.jpeg",
+            price: 0,
+          },
+        ],
 
+        // Product specifications
+        specifications: {
+          "Operating Voltage": "85V–265V AC",
+          "Colour Temperature": "CW / WW / NW",
+          "Body Colour": "Black / White",
+          "Light Source": "LED",
+          Application: "Residential / Commercial / Architectural / Outdoor",
+          Installation: "Wall Mounted",
+        },
 
+        // Features
+        features: [
+          {
+            title: "Wide Voltage Operation",
+            text: "The 85V–265V AC operating range provides flexibility across a broad range of suitable electrical conditions and compatible installations.",
+          },
+          {
+            title: "Multiple Colour Temperatures",
+            text: "CW, WW, and NW options allow the Wall Light to deliver cool, warm, or natural illumination according to the application and desired ambience.",
+          },
+          {
+            title: "Contemporary Body Finishes",
+            text: "Black and White body options make it easy to coordinate the fixture with modern walls, façades, entrances, balconies, and architectural spaces.",
+          },
+          {
+            title: "Versatile Application",
+            text: "Suitable for exterior walls, entrances, pathways, balconies, residential areas, commercial buildings, and decorative architectural installations.",
+          },
+        ],
 
-{
-  id: 504,
-  name: "Foot Light",
-  slug: "foot-light",
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops modern LED lighting solutions focused on reliable performance, practical design, contemporary aesthetics, and versatile applications.",
+          },
+          {
+            title: "Flexible Lighting Options",
+            text: "Multiple light colours and body finishes provide greater freedom to match different architectural, interior, exterior, and decorative requirements.",
+          },
+          {
+            title: "Wide Voltage Compatibility",
+            text: "The 85V–265V AC operating range makes the Wall Light suitable for compatible installations across varying electrical conditions.",
+          },
+          {
+            title: "Modern Architectural Appeal",
+            text: "Designed to combine functional illumination with a clean and contemporary appearance, making it suitable for modern residential and commercial spaces.",
+          },
+        ],
 
-  category: "Outdoor Lights",
-  categorySlug: "outdoor-lights",
+        // Image used in description section
+        descriptionImage: "/product/wallLight2.webp",
 
-  price: 0,
-  oldPrice: 0,
-  currency: "₹",
+        // Additional product information
+        sku: "ELS-WALL-LIGHT",
 
-  badge: "Featured",
+        stock: true,
 
-  shortDescription:
-    "The ELSTRONG Foot Light EL004 is a compact 3W LED lighting solution designed to provide soft and practical low-level illumination for pathways, steps, corridors, entrances, and architectural spaces.",
+        stockText: "In Stock",
 
-  description:
-    "The ELSTRONG Foot Light EL004 is a compact and efficient LED lighting solution designed to provide soft and practical illumination for pathways, steps, corridors, entrances, and other areas requiring low-level lighting. Featuring a 3W LED configuration, the Foot Light provides functional illumination while maintaining a compact and contemporary design. Available in Black, White, and Dark Grey finishes, it can coordinate with different wall finishes, architectural styles, and interior or exterior designs. Its clean and unobtrusive form makes it suitable for residential, commercial, hospitality, and architectural applications where subtle guidance lighting and modern aesthetics are important.",
+        brochure: "/brochure/wall-light-brochure.pdf",
 
-  // Main product images
-  image: "/products/foot-light.jpeg",
-
-  images: [
-    "/products/foot-light.jpeg",
-    "/products/foot-light-2.webp",
-    "/products/foot-light-3.webp",
-  ],
-
-  // Wattage options
-  wattages: [
-    {
-      value: "3W",
-      image: "/products/foot-light.jpeg",
-      price: 0,
-    },
-  ],
-
-  // Product specifications
-  specifications: {
-    wattage: "3W",
-    "Light Source": "LED",
-    "Finish Options": "Black / White / Dark Grey",
-    Application: "Pathways / Steps / Corridors / Entrances",
-    Design: "Compact Architectural",
-    Installation: "Wall Mounted",
+        // Related products
+        relatedProducts: [
+          "half-k-light",
+          "cylinder-light",
+          "spike-light",
+          "k-light",
+        ],
+      },
+    ],
   },
-
-  // Features
-  features: [
-    {
-      title: "Low-Level Illumination",
-      text:
-        "Designed to provide comfortable guidance lighting for steps, walkways, corridors, entrances, and similar areas requiring subtle illumination.",
-    },
-    {
-      title: "Compact Design",
-      text:
-        "Its compact format allows it to integrate neatly into walls and architectural surfaces without creating a visually bulky appearance.",
-    },
-    {
-      title: "3W LED Technology",
-      text:
-        "The 3W LED configuration provides practical illumination while supporting energy-efficient everyday operation.",
-    },
-    {
-      title: "Three Colour Finishes",
-      text:
-        "Black, White, and Dark Grey options provide flexibility to match different architectural, wall, and interior colour schemes.",
-    },
-  ],
-
-  // Why choose this product/company
-  whyChoose: [
-    {
-      title: "Professional Lighting Manufacturer",
-      text:
-        "ELSTRONG develops modern LED lighting solutions focused on practical performance, contemporary design, and reliable everyday use.",
-    },
-    {
-      title: "Architectural Versatility",
-      text:
-        "The Foot Light is suitable for residential, commercial, hospitality, and architectural environments requiring subtle and functional illumination.",
-    },
-    {
-      title: "Flexible Finishes",
-      text:
-        "Three finish options make it easier to coordinate the product with different wall surfaces, architectural styles, and design themes.",
-    },
-    {
-      title: "Efficient Lighting",
-      text:
-        "The 3W LED configuration provides practical low-level illumination while maintaining low power consumption for everyday applications.",
-    },
-  ],
-
-  // Image used in description section
-  descriptionImage: "/products/foot-light-detail.webp",
-
-  // Additional product information
-  sku: "ELS-EL004",
-
-  stock: true,
-
-  stockText: "In Stock",
-
-  brochure: "/brochure/foot-light-brochure.pdf",
-
-  // Related products
-  relatedProducts: [
-    "half-k-light",
-    "cylinder-light",
-    "spike-light",
-    "led-panel-6w",
-  ],
-},
-
-
-
-{
-  id: 505,
-  name: "K Light",
-  slug: "k-light",
-
-  category: "Outdoor Lights",
-  categorySlug: "outdoor-lights",
-
-  price: 0,
-  oldPrice: 0,
-  currency: "₹",
-
-  badge: "Featured",
-
-  shortDescription:
-    "The ELSTRONG Angled K Light EL005 is a modern LED lighting solution designed to provide focused and decorative illumination for architectural, outdoor, landscape, and accent lighting applications.",
-
-  description:
-    "The ELSTRONG Angled K Light EL005 is a modern and versatile LED lighting solution designed to provide focused and decorative illumination for architectural, outdoor, landscape, and accent lighting applications. Available in 3W, 5W, and 10W options, the K Light provides flexibility for different illumination levels and installation requirements. It is available in Cool White and Warm White, allowing users to select the desired lighting appearance for different architectural and decorative environments. Its angled lighting configuration helps direct illumination toward selected surfaces and features, making it suitable for façades, walls, entrances, pathways, gardens, landscapes, and other outdoor architectural installations.",
-
-  // Main product images
-  image: "/product/K-light1.webp",
-
-  images: [
-   "/product/K-light1.webp",
-   "/product/K-light2.webp",
-  ],
-
-  // Wattage options
-  wattages: [
-    {
-      value: "3W",
-      image: "/products/k-light.jpeg",
-      price: 0,
-    },
-    {
-      value: "5W",
-      image: "/products/k-light.jpeg",
-      price: 0,
-    },
-    {
-      value: "10W",
-      image: "/products/k-light.jpeg",
-      price: 0,
-    },
-  ],
-
-  // Product specifications
-  specifications: {
-    wattage: "3W / 5W / 10W",
-    "Colour Temperature": "CW / WW",
-    "Light Source": "LED",
-    Design: "Angled K",
-    Application: "Outdoor / Architectural / Landscape / Accent",
-    Installation: "Wall Mounted",
-  },
-
-  // Features
-  features: [
-    {
-      title: "Focused Illumination",
-      text:
-        "The angled design helps direct light toward walls, architectural elements, landscapes, pathways, and other selected areas for targeted illumination.",
-    },
-    {
-      title: "Three Wattage Options",
-      text:
-        "Available in 3W, 5W, and 10W variants, providing flexibility for applications requiring different levels of lighting output.",
-    },
-    {
-      title: "Two Colour Options",
-      text:
-        "Cool White and Warm White allow users to create either a crisp contemporary appearance or a warmer decorative ambience.",
-    },
-    {
-      title: "Architectural Applications",
-      text:
-        "Suitable for façades, walls, entrances, pathways, gardens, outdoor areas, and decorative architectural installations.",
-    },
-  ],
-
-  // Why choose this product/company
-  whyChoose: [
-    {
-      title: "Reliable LED Light Manufacturer",
-      text:
-        "ELSTRONG develops LED lighting products designed to combine modern aesthetics with practical and dependable lighting performance.",
-    },
-    {
-      title: "Flexible Lighting Output",
-      text:
-        "The 3W, 5W, and 10W variants allow the Angled K Light to be selected according to the required illumination level and application.",
-    },
-    {
-      title: "Directional Design",
-      text:
-        "Its angled form provides targeted illumination, making it suitable for highlighting architectural details, landscapes, walls, and outdoor features.",
-    },
-    {
-      title: "Modern Lighting Options",
-      text:
-        "Cool White and Warm White choices provide flexibility for both contemporary and warm decorative lighting concepts.",
-    },
-  ],
-
-  // Image used in description section
-  descriptionImage: "/product/K-light2.webp",
-
-  // Additional product information
-  sku: "ELS-EL005",
-
-  stock: true,
-
-  stockText: "In Stock",
-
-  brochure: "/brochure/k-light-brochure.pdf",
-
-  // Related products
-  relatedProducts: [
-    "half-k-light",
-    "cylinder-light",
-    "spike-light",
-    "foot-light",
-  ],
-},
-
-
-
-
-
-
-
-
-
-    ]
-  }
 ];
