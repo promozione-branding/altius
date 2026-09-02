@@ -1191,7 +1191,7 @@ export const categories = [
         image: "/product/roundslim1.webp",
 
         images: [
-          "/product/roundslim2.webp",
+          "/product/roundslim1.webp",
           "/product/roundslim2.webp",
         ],
 
