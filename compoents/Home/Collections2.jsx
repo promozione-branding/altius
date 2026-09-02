@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const collections = [
   {
-    title: "SUPRIMO",
+    title: "SUPRIMO CONCEALED LED LIGHT",
     subtitle: "CONCEALED LED LIGHT",
     image: "/product/Suprimo1.webp",
     href:"/products/suprimo"
