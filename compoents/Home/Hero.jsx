@@ -1,11 +1,14 @@
 "use client";
 
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import Link from "next/link";
+import PopupForm from "../PopupForm";
 
 export default function Hero() {
   const heroRef = useRef(null);
+     const [open, setOpen] = useState(false);
+
 
   const stringRef = useRef(null);
   const handleRef = useRef(null);
@@ -478,8 +481,8 @@ export default function Hero() {
           >
             {/* SHOP NOW */}
 
-            <Link
-            href="/products"
+            <button
+             onClick={() => setOpen(true)}
               className="
                 bg-black
                 px-8
@@ -494,8 +497,8 @@ export default function Hero() {
                 hover:bg-[#85a30f]
               "
             >
-              Shop Now
-            </Link>
+              Enquire Now
+            </button>
 
             {/* EXPLORE */}
 
@@ -524,6 +527,14 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+
+      {open && (
+        <PopupForm
+          isOpen={open}
+          onClose={() => setOpen(false)}
+        />
+      )}
     </section>
   );
 }
