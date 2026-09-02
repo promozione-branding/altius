@@ -101,7 +101,7 @@ export default function ShopByCategory() {
             duration: 1,
             ease: "power4.out",
           },
-          "-=0.35",
+          "-=0.35"
         )
 
         .to(
@@ -112,7 +112,7 @@ export default function ShopByCategory() {
             duration: 0.7,
             ease: "power3.out",
           },
-          "-=0.45",
+          "-=0.45"
         );
 
       /* =========================================
@@ -129,7 +129,7 @@ export default function ShopByCategory() {
           stagger: 0.12,
           ease: "power4.out",
         },
-        "-=0.25",
+        "-=0.25"
       )
 
         /* IMAGE REVEAL */
@@ -142,7 +142,7 @@ export default function ShopByCategory() {
             stagger: 0.1,
             ease: "power3.out",
           },
-          "-=0.85",
+          "-=0.85"
         )
 
         /* CARD CONTENT */
@@ -156,7 +156,7 @@ export default function ShopByCategory() {
             stagger: 0.1,
             ease: "power3.out",
           },
-          "-=1",
+          "-=1"
         )
 
         /* NUMBERS */
@@ -170,7 +170,7 @@ export default function ShopByCategory() {
             stagger: 0.08,
             ease: "power3.out",
           },
-          "-=0.6",
+          "-=0.6"
         );
 
       /* =========================================
@@ -247,10 +247,12 @@ export default function ShopByCategory() {
         className="
           relative
           mx-auto
+          w-full
           max-w-[1500px]
-          px-6
-          sm:px-10
-          lg:px-16
+          px-5
+          sm:px-8
+          lg:px-12
+          xl:px-16
         "
       >
         {/* =========================================
@@ -260,12 +262,12 @@ export default function ShopByCategory() {
         <div
           ref={headerRef}
           className="
-            mb-14
+            mb-10
             flex
             flex-col
             items-center
             text-center
-            md:mb-10
+            md:mb-12
           "
         >
           {/* =====================================
@@ -327,12 +329,13 @@ export default function ShopByCategory() {
           <p
             ref={descriptionRef}
             className="
-              mt-5
+              mt-4
               max-w-2xl
               text-sm
-              leading-7
+              leading-6
               text-gray-500
               md:text-base
+              md:leading-7
             "
           >
             Discover lighting solutions designed to transform every space with
@@ -347,15 +350,18 @@ export default function ShopByCategory() {
         <div
           className="
             grid
-            justify-items-center
+            w-full
             grid-cols-1
+            justify-items-center
             gap-5
-            sm:grid-cols-3
-            md:grid-cols-4
-            md:gap-5
+            sm:grid-cols-2
+            md:grid-cols-3
+            lg:grid-cols-4
           "
         >
-          {categories.map((category, index) => (
+          {/* ONLY FIRST 8 CATEGORIES */}
+
+          {categories?.slice(0, 8).map((category, index) => (
             <Link
               href={`/categories/${category.slug}`}
               key={category.title}
@@ -363,17 +369,17 @@ export default function ShopByCategory() {
                 cardsRef.current[index] = el;
               }}
               className="
-  group
-  relative
-  w-full
-  max-w-[360px]
-  aspect-[4/4.4]
-  cursor-pointer
-  overflow-hidden
-  rounded-sm
-  bg-gray-100
-  will-change-transform
-"
+                group
+                relative
+                w-full
+                max-w-[360px]
+                aspect-[4/4.4]
+                cursor-pointer
+                overflow-hidden
+                rounded-sm
+                bg-gray-100
+                will-change-transform
+              "
             >
               {/* =====================================
                   MAIN IMAGE
@@ -386,6 +392,8 @@ export default function ShopByCategory() {
                 className="
                   absolute
                   inset-0
+                  z-0
+                  scale-100
                   bg-cover
                   bg-center
                   transition-transform
@@ -407,12 +415,13 @@ export default function ShopByCategory() {
                 className="
                   absolute
                   inset-0
-                  scale-110
+                  z-[1]
+                  scale-105
                   bg-cover
                   bg-center
                   opacity-0
                   transition-all
-                  duration-[900ms]
+                  duration-700
                   ease-out
                   group-hover:scale-100
                   group-hover:opacity-100
@@ -430,6 +439,7 @@ export default function ShopByCategory() {
                 className="
                   absolute
                   inset-0
+                  z-[2]
                   bg-gradient-to-t
                   from-black/80
                   via-black/20
@@ -451,6 +461,7 @@ export default function ShopByCategory() {
                   absolute
                   -bottom-24
                   -right-24
+                  z-[3]
                   h-64
                   w-64
                   rounded-full
@@ -482,7 +493,7 @@ export default function ShopByCategory() {
                   text-white/80
                 "
               >
-                0{index + 1}
+                {String(index + 1).padStart(2, "0")}
               </div>
 
               {/* =====================================
@@ -531,8 +542,8 @@ export default function ShopByCategory() {
                   left-0
                   right-0
                   z-20
-                  p-6
-                  md:p-7
+                  p-5
+                  md:p-6
                 "
               >
                 {/* Accent */}
