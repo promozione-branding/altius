@@ -22,8 +22,8 @@ const relatedProducts = [
     image: "/product/CylinderLight1.webp",
   },
   {
-    name: "Round Slim Panel 12W",
-    href: "/products/round-slim-panel-12w",
+    name: "Round Slim Panel",
+    href: "/products/round-slim-panel",
     image: "/product/roundslim1.webp",
   },
   {
