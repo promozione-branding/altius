@@ -196,7 +196,11 @@ export const categories = [
         // Main product images
         image: "/product/Suprimo1.webp",
 
-        images: ["/product/Suprimo1.webp", "/product/Suprimo2.webp"],
+        images: [
+          "/product/Suprimo1.webp",
+          "/product/Suprimo2.webp",
+          "/product/Suprimoback.webp",
+        ],
 
         // Wattage options
         wattages: [
@@ -303,7 +307,11 @@ export const categories = [
         // Main product images
         image: "/product/Flare1.webp",
 
-        images: ["/product/Flare1.webp", "/product/Flare2.webp"],
+        images: [
+          "/product/Flare1.webp",
+          "/product/Flare2.webp",
+          "/product/Flareback.webp",
+        ],
 
         // Wattage options
         wattages: [
@@ -410,7 +418,11 @@ export const categories = [
         // Main product images
         image: "/product/GLare1.webp",
 
-        images: ["/product/GLare1.webp", "/product/GLare2.webp"],
+        images: [
+          "/product/GLare1.webp",
+          "/product/GLare2.webp",
+          "/product/GLareback.webp",
+        ],
 
         // Wattage options
         wattages: [
@@ -529,7 +541,11 @@ export const categories = [
         // Main product images
         image: "/product/coblensmodel1.webp",
 
-        images: ["/product/coblensmodel1.webp", "/product/coblensmodel2.webp"],
+        images: [
+          "/product/coblensmodel1.webp",
+          "/product/coblensmodel2.webp",
+          "/product/coblensmodelback.webp",
+        ],
 
         // Wattage options
         wattages: [
@@ -837,8 +853,8 @@ export const categories = [
     products: [
       {
         id: 301,
-        name: "Sqaure Slim Panel 3W",
-        slug: "sqaure-slim-panel-3w",
+        name: "Sqaure Slim Panel",
+        slug: "sqaure-slim-panel",
 
         category: "Slim Panel Lights",
         categorySlug: "slim-panel-lights",
@@ -861,12 +877,28 @@ export const categories = [
         images: [
           "/product/slimsquarepanel1.webp",
           "/product/slimsquarepanel2.webp",
+          "/product/slimsquarepanelback.webp",
         ],
 
         // Wattage options
         wattages: [
           {
             value: "3W",
+            image: "/product/slimsquarepanel1.webp",
+            price: 0,
+          },
+          {
+            value: "6W",
+            image: "/product/slimsquarepanel1.webp",
+            price: 0,
+          },
+          {
+            value: "12W",
+            image: "/product/slimsquarepanel1.webp",
+            price: 0,
+          },
+          {
+            value: "18W",
             image: "/product/slimsquarepanel1.webp",
             price: 0,
           },
@@ -947,123 +979,123 @@ export const categories = [
         ],
       },
 
-      {
-        id: 302,
-        name: "Sqaure Slim Panel 6W",
-        slug: "sqaure-slim-panel-6w",
+      // {
+      //   id: 302,
+      //   name: "Sqaure Slim Panel 6W",
+      //   slug: "sqaure-slim-panel-6w",
 
-        category: "LED Slim Panel",
-        categorySlug: "led-slim-panel",
+      //   category: "LED Slim Panel",
+      //   categorySlug: "led-slim-panel",
 
-        price: 0,
-        oldPrice: 0,
-        currency: "₹",
+      //   price: 0,
+      //   oldPrice: 0,
+      //   currency: "₹",
 
-        badge: "Featured",
+      //   badge: "Featured",
 
-        shortDescription:
-          "The ELSTRONG LED Slim Panel Aluminium 6W combines a sleek aluminium construction with efficient LED technology to provide clean, practical, and space-saving ceiling illumination for modern interiors.",
+      //   shortDescription:
+      //     "The ELSTRONG LED Slim Panel Aluminium 6W combines a sleek aluminium construction with efficient LED technology to provide clean, practical, and space-saving ceiling illumination for modern interiors.",
 
-        description:
-          "The ELSTRONG LED Slim Panel Aluminium 6W is a modern and efficient ceiling lighting solution designed for contemporary indoor spaces. Featuring a premium aluminium construction and a 6W LED configuration with a lumen output of less than 600 lm, the panel provides balanced illumination for residential, office, retail, commercial, and other indoor applications. Its 120mm length/diameter, 100mm cutout, and 25mm height provide a compact and space-saving profile that integrates neatly into suitable ceilings. Operating between 110V–280V with a power factor of <0.95, the panel is designed for flexible and efficient electrical performance.",
+      //   description:
+      //     "The ELSTRONG LED Slim Panel Aluminium 6W is a modern and efficient ceiling lighting solution designed for contemporary indoor spaces. Featuring a premium aluminium construction and a 6W LED configuration with a lumen output of less than 600 lm, the panel provides balanced illumination for residential, office, retail, commercial, and other indoor applications. Its 120mm length/diameter, 100mm cutout, and 25mm height provide a compact and space-saving profile that integrates neatly into suitable ceilings. Operating between 110V–280V with a power factor of <0.95, the panel is designed for flexible and efficient electrical performance.",
 
-        // Main product images
-        image: "/product/slimsquare.webp",
+      //   // Main product images
+      //   image: "/product/slimsquare.webp",
 
-        images: [
-          "/product/slimsquare.webp",
-          "/product/slimsquarepanel1.webp",
-          "/product/slimsquarepanel2.webp",
-        ],
+      //   images: [
+      //     "/product/slimsquare.webp",
+      //     "/product/slimsquarepanel1.webp",
+      //     "/product/slimsquarepanel2.webp",
+      //   ],
 
-        // Wattage options
-        wattages: [
-          {
-            value: "6W",
-            image: "/product/slimsquarepanel1.webp",
-            price: 0,
-          },
-        ],
+      //   // Wattage options
+      //   wattages: [
+      //     {
+      //       value: "6W",
+      //       image: "/product/slimsquarepanel1.webp",
+      //       price: 0,
+      //     },
+      //   ],
 
-        // Product specifications
-        specifications: {
-          wattage: "6W",
-          "Lumen Output": "<600 lm",
-          "Output Size": "120mm",
-          "Cutout Size": "100mm",
-          Height: "25mm",
-          "Operating Voltage": "110V–280V",
-          "Power Factor": "<0.95",
-          "Light Source": "LED",
-          Material: "Aluminium",
-          Installation: "Ceiling Mounted",
-        },
+      //   // Product specifications
+      //   specifications: {
+      //     wattage: "6W",
+      //     "Lumen Output": "<600 lm",
+      //     "Output Size": "120mm",
+      //     "Cutout Size": "100mm",
+      //     Height: "25mm",
+      //     "Operating Voltage": "110V–280V",
+      //     "Power Factor": "<0.95",
+      //     "Light Source": "LED",
+      //     Material: "Aluminium",
+      //     Installation: "Ceiling Mounted",
+      //   },
 
-        // Features
-        features: [
-          {
-            title: "Premium Aluminium Body",
-            text: "The aluminium construction provides a modern appearance while supporting effective heat dissipation and dependable LED performance.",
-          },
-          {
-            title: "Slim Profile",
-            text: "With a height of only 25mm, the panel maintains a low-profile appearance and works well with contemporary ceiling designs.",
-          },
-          {
-            title: "Efficient 6W LED Technology",
-            text: "The 6W LED configuration delivers practical illumination with a lumen output of less than 600 lm, making it suitable for everyday indoor lighting.",
-          },
-          {
-            title: "Neat Ceiling Installation",
-            text: "The 100mm cutout size allows the panel to be integrated into appropriate ceiling installations while maintaining a clean and streamlined finish.",
-          },
-        ],
+      //   // Features
+      //   features: [
+      //     {
+      //       title: "Premium Aluminium Body",
+      //       text: "The aluminium construction provides a modern appearance while supporting effective heat dissipation and dependable LED performance.",
+      //     },
+      //     {
+      //       title: "Slim Profile",
+      //       text: "With a height of only 25mm, the panel maintains a low-profile appearance and works well with contemporary ceiling designs.",
+      //     },
+      //     {
+      //       title: "Efficient 6W LED Technology",
+      //       text: "The 6W LED configuration delivers practical illumination with a lumen output of less than 600 lm, making it suitable for everyday indoor lighting.",
+      //     },
+      //     {
+      //       title: "Neat Ceiling Installation",
+      //       text: "The 100mm cutout size allows the panel to be integrated into appropriate ceiling installations while maintaining a clean and streamlined finish.",
+      //     },
+      //   ],
 
-        // Why choose this product/company
-        whyChoose: [
-          {
-            title: "Trusted Lighting Manufacturer",
-            text: "ELSTRONG focuses on developing LED lighting products that combine modern aesthetics, efficient technology, and practical performance.",
-          },
-          {
-            title: "Durable Aluminium Construction",
-            text: "The aluminium body provides a contemporary finish and supports effective heat management for reliable lighting operation.",
-          },
-          {
-            title: "Practical Lighting Performance",
-            text: "The 6W model offers a balanced combination of compact design and useful illumination for a variety of indoor environments.",
-          },
-          {
-            title: "Wide Application Range",
-            text: "The panel is ideal for homes, offices, retail spaces, commercial interiors, corridors, and other areas requiring slim ceiling lighting.",
-          },
-        ],
+      //   // Why choose this product/company
+      //   whyChoose: [
+      //     {
+      //       title: "Trusted Lighting Manufacturer",
+      //       text: "ELSTRONG focuses on developing LED lighting products that combine modern aesthetics, efficient technology, and practical performance.",
+      //     },
+      //     {
+      //       title: "Durable Aluminium Construction",
+      //       text: "The aluminium body provides a contemporary finish and supports effective heat management for reliable lighting operation.",
+      //     },
+      //     {
+      //       title: "Practical Lighting Performance",
+      //       text: "The 6W model offers a balanced combination of compact design and useful illumination for a variety of indoor environments.",
+      //     },
+      //     {
+      //       title: "Wide Application Range",
+      //       text: "The panel is ideal for homes, offices, retail spaces, commercial interiors, corridors, and other areas requiring slim ceiling lighting.",
+      //     },
+      //   ],
 
-        // Image used in description section
-        descriptionImage: "/product/slimsquarepanel2.webp",
+      //   // Image used in description section
+      //   descriptionImage: "/product/slimsquarepanel2.webp",
 
-        // Additional product information
-        sku: "ELS-SP-006",
+      //   // Additional product information
+      //   sku: "ELS-SP-006",
 
-        stock: true,
+      //   stock: true,
 
-        stockText: "In Stock",
+      //   stockText: "In Stock",
 
-        brochure: "/brochure/led-slim-panel-6w-brochure.pdf",
+      //   brochure: "/brochure/led-slim-panel-6w-brochure.pdf",
 
-        // Related products
-        relatedProducts: [
-          "led-slim-panel-3w",
-          "moveable-lens-cob-5w",
-          "moveable-lens-cob-7w",
-          "moveable-lens-cob-9w",
-        ],
-      },
+      //   // Related products
+      //   relatedProducts: [
+      //     "led-slim-panel-3w",
+      //     "moveable-lens-cob-5w",
+      //     "moveable-lens-cob-7w",
+      //     "moveable-lens-cob-9w",
+      //   ],
+      // },
 
       {
         id: 303,
-        name: "Round Slim Panel 12W",
-        slug: "round-slim-panel-12w",
+        name: "Round Slim Panel",
+        slug: "round-slim-panel",
 
         category: "LED Slim Panel",
         categorySlug: "led-slim-panel",
@@ -1092,7 +1124,22 @@ export const categories = [
         // Wattage options
         wattages: [
           {
+            value: "3W",
+            image: "/product/slimsquarepanel1.webp",
+            price: 0,
+          },
+          {
+            value: "6W",
+            image: "/product/slimsquarepanel1.webp",
+            price: 0,
+          },
+          {
             value: "12W",
+            image: "/product/slimsquarepanel1.webp",
+            price: 0,
+          },
+          {
+            value: "18W",
             image: "/product/slimsquarepanel1.webp",
             price: 0,
           },
@@ -1173,118 +1220,118 @@ export const categories = [
         ],
       },
 
-      {
-        id: 304,
-        name: "Round Slim Panel 18W",
-        slug: "round-slim-panel-18w",
+      // {
+      //   id: 304,
+      //   name: "Round Slim Panel 18W",
+      //   slug: "round-slim-panel-18w",
 
-        category: "LED Slim Panel",
-        categorySlug: "led-slim-panel",
+      //   category: "LED Slim Panel",
+      //   categorySlug: "led-slim-panel",
 
-        price: 0,
-        oldPrice: 0,
-        currency: "₹",
+      //   price: 0,
+      //   oldPrice: 0,
+      //   currency: "₹",
 
-        badge: "Featured",
+      //   badge: "Featured",
 
-        shortDescription:
-          "The ELSTRONG LED Slim Panel Aluminium 18W delivers high-output illumination in a slim and contemporary form, making it suitable for larger indoor spaces requiring stronger general lighting.",
+      //   shortDescription:
+      //     "The ELSTRONG LED Slim Panel Aluminium 18W delivers high-output illumination in a slim and contemporary form, making it suitable for larger indoor spaces requiring stronger general lighting.",
 
-        description:
-          "The ELSTRONG LED Slim Panel Aluminium 18W is a powerful and efficient LED lighting solution designed to provide high-output illumination while maintaining a slim and contemporary ceiling profile. Featuring an 18W LED configuration with a lumen output of less than 1800 lm, the panel provides practical brightness for offices, commercial areas, retail environments, showrooms, and larger interior spaces. Its 225mm overall size, 200mm cutout, and low-profile 25mm height combine a larger lighting surface with a clean and unobtrusive ceiling appearance. Operating between 110V–280V with a power factor of <0.95, the panel is designed for flexible and efficient electrical performance.",
+      //   description:
+      //     "The ELSTRONG LED Slim Panel Aluminium 18W is a powerful and efficient LED lighting solution designed to provide high-output illumination while maintaining a slim and contemporary ceiling profile. Featuring an 18W LED configuration with a lumen output of less than 1800 lm, the panel provides practical brightness for offices, commercial areas, retail environments, showrooms, and larger interior spaces. Its 225mm overall size, 200mm cutout, and low-profile 25mm height combine a larger lighting surface with a clean and unobtrusive ceiling appearance. Operating between 110V–280V with a power factor of <0.95, the panel is designed for flexible and efficient electrical performance.",
 
-        // Main product images
-        image: "/product/roundslim1.webp",
+      //   // Main product images
+      //   image: "/product/roundslim1.webp",
 
-        images: [
-          "/product/roundslim1.webp",
-          "/product/roundslim2.webp",
-          "/product/slimpanel3.webp",
-        ],
+      //   images: [
+      //     "/product/roundslim1.webp",
+      //     "/product/roundslim2.webp",
+      //     "/product/slimpanel3.webp",
+      //   ],
 
-        // Wattage options
-        wattages: [
-          {
-            value: "18W",
-            image: "/product/slimsquarepanel1.webp",
-            price: 0,
-          },
-        ],
+      //   // Wattage options
+      //   wattages: [
+      //     {
+      //       value: "18W",
+      //       image: "/product/slimsquarepanel1.webp",
+      //       price: 0,
+      //     },
+      //   ],
 
-        // Product specifications
-        specifications: {
-          wattage: "18W",
-          "Lumen Output": "<1800 lm",
-          "Output Size": "225mm",
-          "Cutout Size": "200mm",
-          Height: "25mm",
-          "Operating Voltage": "110V–280V",
-          "Power Factor": "<0.95",
-          "Light Source": "LED",
-          Material: "Aluminium",
-          Installation: "Ceiling Mounted",
-        },
+      //   // Product specifications
+      //   specifications: {
+      //     wattage: "18W",
+      //     "Lumen Output": "<1800 lm",
+      //     "Output Size": "225mm",
+      //     "Cutout Size": "200mm",
+      //     Height: "25mm",
+      //     "Operating Voltage": "110V–280V",
+      //     "Power Factor": "<0.95",
+      //     "Light Source": "LED",
+      //     Material: "Aluminium",
+      //     Installation: "Ceiling Mounted",
+      //   },
 
-        // Features
-        features: [
-          {
-            title: "High-Output LED Technology",
-            text: "The 18W LED configuration provides a lumen output of less than 1800 lm, making it suitable for areas that require brighter and broader general illumination.",
-          },
-          {
-            title: "Slim Aluminium Construction",
-            text: "The aluminium body offers a sleek appearance while supporting heat dissipation and reliable operation of the LED components.",
-          },
-          {
-            title: "Low-Profile Design",
-            text: "Despite its larger size, the panel maintains a 25mm height, helping create a clean and unobtrusive ceiling installation.",
-          },
-          {
-            title: "Large Cutout Size",
-            text: "With a 200mm cutout size, the 18W model is designed for larger ceiling installations where higher illumination levels are required.",
-          },
-        ],
+      //   // Features
+      //   features: [
+      //     {
+      //       title: "High-Output LED Technology",
+      //       text: "The 18W LED configuration provides a lumen output of less than 1800 lm, making it suitable for areas that require brighter and broader general illumination.",
+      //     },
+      //     {
+      //       title: "Slim Aluminium Construction",
+      //       text: "The aluminium body offers a sleek appearance while supporting heat dissipation and reliable operation of the LED components.",
+      //     },
+      //     {
+      //       title: "Low-Profile Design",
+      //       text: "Despite its larger size, the panel maintains a 25mm height, helping create a clean and unobtrusive ceiling installation.",
+      //     },
+      //     {
+      //       title: "Large Cutout Size",
+      //       text: "With a 200mm cutout size, the 18W model is designed for larger ceiling installations where higher illumination levels are required.",
+      //     },
+      //   ],
 
-        // Why choose this product/company
-        whyChoose: [
-          {
-            title: "Professional Lighting Manufacturer",
-            text: "ELSTRONG provides modern LED lighting solutions designed around efficient technology, practical performance, and contemporary product design.",
-          },
-          {
-            title: "High-Output Lighting Solution",
-            text: "The 18W model provides the specified lumen output of less than 1800 lm, making it suitable for larger spaces requiring effective general illumination.",
-          },
-          {
-            title: "Slim & Durable Construction",
-            text: "The aluminium body combines a contemporary low-profile design with practical thermal management for dependable everyday use.",
-          },
-          {
-            title: "Suitable for Larger Spaces",
-            text: "The panel is ideal for offices, commercial interiors, retail stores, showrooms, educational spaces, hospitality areas, and other applications requiring brighter ceiling lighting.",
-          },
-        ],
+      //   // Why choose this product/company
+      //   whyChoose: [
+      //     {
+      //       title: "Professional Lighting Manufacturer",
+      //       text: "ELSTRONG provides modern LED lighting solutions designed around efficient technology, practical performance, and contemporary product design.",
+      //     },
+      //     {
+      //       title: "High-Output Lighting Solution",
+      //       text: "The 18W model provides the specified lumen output of less than 1800 lm, making it suitable for larger spaces requiring effective general illumination.",
+      //     },
+      //     {
+      //       title: "Slim & Durable Construction",
+      //       text: "The aluminium body combines a contemporary low-profile design with practical thermal management for dependable everyday use.",
+      //     },
+      //     {
+      //       title: "Suitable for Larger Spaces",
+      //       text: "The panel is ideal for offices, commercial interiors, retail stores, showrooms, educational spaces, hospitality areas, and other applications requiring brighter ceiling lighting.",
+      //     },
+      //   ],
 
-        // Image used in description section
-        descriptionImage: "/product/roundslim2.webp",
+      //   // Image used in description section
+      //   descriptionImage: "/product/roundslim2.webp",
 
-        // Additional product information
-        sku: "ELS-SP-018",
+      //   // Additional product information
+      //   sku: "ELS-SP-018",
 
-        stock: true,
+      //   stock: true,
 
-        stockText: "In Stock",
+      //   stockText: "In Stock",
 
-        brochure: "/brochure/led-slim-panel-18w-brochure.pdf",
+      //   brochure: "/brochure/led-slim-panel-18w-brochure.pdf",
 
-        // Related products
-        relatedProducts: [
-          "led-slim-panel-3w",
-          "led-slim-panel-6w",
-          "led-slim-panel-12w",
-          "moveable-lens-cob-9w",
-        ],
-      },
+      //   // Related products
+      //   relatedProducts: [
+      //     "led-slim-panel-3w",
+      //     "led-slim-panel-6w",
+      //     "led-slim-panel-12w",
+      //     "moveable-lens-cob-9w",
+      //   ],
+      // },
     ],
   },
 
@@ -1300,8 +1347,8 @@ export const categories = [
     products: [
       {
         id: 401,
-        name: "PC Panel 6W",
-        slug: "pc-panel-6w",
+        name: "PC Panel",
+        slug: "pc-panel",
 
         category: "PC Panel",
         categorySlug: "pc-panel",
@@ -1330,7 +1377,27 @@ export const categories = [
         // Wattage options
         wattages: [
           {
-            value: "6W",
+            value: "8W",
+            image: "/products/led-panel-6w.jpeg",
+            price: 0,
+          },
+          {
+            value: "12W",
+            image: "/products/led-panel-6w.jpeg",
+            price: 0,
+          },
+          {
+            value: "15W",
+            image: "/products/led-panel-6w.jpeg",
+            price: 0,
+          },
+          {
+            value: "22W",
+            image: "/products/led-panel-6w.jpeg",
+            price: 0,
+          },
+          {
+            value: "24W",
             image: "/products/led-panel-6w.jpeg",
             price: 0,
           },
@@ -1411,231 +1478,231 @@ export const categories = [
         ],
       },
 
-      {
-        id: 402,
-        name: "PC Panel 12W",
-        slug: "pc-panel-12w",
+      // {
+      //   id: 402,
+      //   name: "PC Panel 12W",
+      //   slug: "pc-panel-12w",
 
-        category: "PC Panel",
-        categorySlug: "pc-panel",
+      //   category: "PC Panel",
+      //   categorySlug: "pc-panel",
 
-        price: 0,
-        oldPrice: 0,
-        currency: "₹",
+      //   price: 0,
+      //   oldPrice: 0,
+      //   currency: "₹",
 
-        badge: "Featured",
+      //   badge: "Featured",
 
-        shortDescription:
-          "The ELSTRONG PT003 is an efficient 12W LED panel designed to provide brighter and consistent illumination for medium-sized indoor spaces while maintaining a slim and modern ceiling profile.",
+      //   shortDescription:
+      //     "The ELSTRONG PT003 is an efficient 12W LED panel designed to provide brighter and consistent illumination for medium-sized indoor spaces while maintaining a slim and modern ceiling profile.",
 
-        description:
-          "The ELSTRONG PT003 LED Panel 12W is a modern and efficient lighting solution designed to provide brighter and more consistent illumination for medium-sized indoor applications. Featuring a 12W LED configuration with a lumen output of ≥1200 lm, the panel provides stronger general illumination while maintaining a compact and space-efficient design. Its 130mm diameter and slim 25mm height provide a clean and contemporary appearance for suitable ceiling installations. Designed to operate at 110–230V AC and 50Hz with a power factor of ≥0.95, the PT003 provides efficient and stable electrical performance. It also offers surge protection of up to 2.5KVA for additional protection against suitable electrical variations.",
+      //   description:
+      //     "The ELSTRONG PT003 LED Panel 12W is a modern and efficient lighting solution designed to provide brighter and more consistent illumination for medium-sized indoor applications. Featuring a 12W LED configuration with a lumen output of ≥1200 lm, the panel provides stronger general illumination while maintaining a compact and space-efficient design. Its 130mm diameter and slim 25mm height provide a clean and contemporary appearance for suitable ceiling installations. Designed to operate at 110–230V AC and 50Hz with a power factor of ≥0.95, the PT003 provides efficient and stable electrical performance. It also offers surge protection of up to 2.5KVA for additional protection against suitable electrical variations.",
 
-        // Main product images
-        image: "/product/pcpanel1.webp",
+      //   // Main product images
+      //   image: "/product/pcpanel1.webp",
 
-        images: [
-          "/product/pcpanel1.webp",
-          "/product/pcpanel2.webp",
-          "/product/pcpanelround.webp",
-        ],
+      //   images: [
+      //     "/product/pcpanel1.webp",
+      //     "/product/pcpanel2.webp",
+      //     "/product/pcpanelround.webp",
+      //   ],
 
-        // Wattage options
-        wattages: [
-          {
-            value: "12W",
-            image: "/products/led-panel-12w.jpeg",
-            price: 0,
-          },
-        ],
+      //   // Wattage options
+      //   wattages: [
+      //     {
+      //       value: "12W",
+      //       image: "/products/led-panel-12w.jpeg",
+      //       price: 0,
+      //     },
+      //   ],
 
-        // Product specifications
-        specifications: {
-          wattage: "12W",
-          "Lumen Output": "≥1200 lm",
-          Diameter: "130mm",
-          Height: "25mm",
-          "Input Voltage": "110–230V AC",
-          Frequency: "50Hz",
-          "Power Factor": "≥0.95",
-          "Surge Protection": "Up to 2.5KVA",
-          "Light Source": "LED",
-          Installation: "Ceiling Mounted",
-        },
+      //   // Product specifications
+      //   specifications: {
+      //     wattage: "12W",
+      //     "Lumen Output": "≥1200 lm",
+      //     Diameter: "130mm",
+      //     Height: "25mm",
+      //     "Input Voltage": "110–230V AC",
+      //     Frequency: "50Hz",
+      //     "Power Factor": "≥0.95",
+      //     "Surge Protection": "Up to 2.5KVA",
+      //     "Light Source": "LED",
+      //     Installation: "Ceiling Mounted",
+      //   },
 
-        // Features
-        features: [
-          {
-            title: "12W LED Performance",
-            text: "The 12W LED configuration provides higher illumination compared with lower-wattage models, making it suitable for medium-sized rooms and general lighting applications.",
-          },
-          {
-            title: "Slim 25mm Profile",
-            text: "The low-profile 25mm construction creates a clean ceiling appearance while providing effective and consistent illumination.",
-          },
-          {
-            title: "High Power Factor",
-            text: "The ≥0.95 power factor specification supports efficient electrical performance and optimized power utilization.",
-          },
-          {
-            title: "Surge Protection",
-            text: "Up to 2.5KVA surge protection provides additional protection against suitable electrical variations and disturbances.",
-          },
-        ],
+      //   // Features
+      //   features: [
+      //     {
+      //       title: "12W LED Performance",
+      //       text: "The 12W LED configuration provides higher illumination compared with lower-wattage models, making it suitable for medium-sized rooms and general lighting applications.",
+      //     },
+      //     {
+      //       title: "Slim 25mm Profile",
+      //       text: "The low-profile 25mm construction creates a clean ceiling appearance while providing effective and consistent illumination.",
+      //     },
+      //     {
+      //       title: "High Power Factor",
+      //       text: "The ≥0.95 power factor specification supports efficient electrical performance and optimized power utilization.",
+      //     },
+      //     {
+      //       title: "Surge Protection",
+      //       text: "Up to 2.5KVA surge protection provides additional protection against suitable electrical variations and disturbances.",
+      //     },
+      //   ],
 
-        // Why choose this product/company
-        whyChoose: [
-          {
-            title: "Experienced Lighting Manufacturer",
-            text: "ELSTRONG develops LED lighting solutions designed for modern residential, commercial, office, retail, and architectural applications.",
-          },
-          {
-            title: "Brighter Illumination",
-            text: "The PT003 offers a 12W configuration with a lumen output of ≥1200 lm, making it suitable for spaces requiring stronger general lighting.",
-          },
-          {
-            title: "Slim Construction",
-            text: "Its 25mm profile allows the panel to maintain a neat and contemporary ceiling appearance while providing effective illumination.",
-          },
-          {
-            title: "Reliable Performance",
-            text: "The PT003 combines efficient LED technology, high power factor, and surge protection to support dependable everyday lighting performance.",
-          },
-        ],
+      //   // Why choose this product/company
+      //   whyChoose: [
+      //     {
+      //       title: "Experienced Lighting Manufacturer",
+      //       text: "ELSTRONG develops LED lighting solutions designed for modern residential, commercial, office, retail, and architectural applications.",
+      //     },
+      //     {
+      //       title: "Brighter Illumination",
+      //       text: "The PT003 offers a 12W configuration with a lumen output of ≥1200 lm, making it suitable for spaces requiring stronger general lighting.",
+      //     },
+      //     {
+      //       title: "Slim Construction",
+      //       text: "Its 25mm profile allows the panel to maintain a neat and contemporary ceiling appearance while providing effective illumination.",
+      //     },
+      //     {
+      //       title: "Reliable Performance",
+      //       text: "The PT003 combines efficient LED technology, high power factor, and surge protection to support dependable everyday lighting performance.",
+      //     },
+      //   ],
 
-        // Image used in description section
-        descriptionImage: "/product/pcpanel2.webp",
+      //   // Image used in description section
+      //   descriptionImage: "/product/pcpanel2.webp",
 
-        // Additional product information
-        sku: "ELS-PT003",
+      //   // Additional product information
+      //   sku: "ELS-PT003",
 
-        stock: true,
+      //   stock: true,
 
-        stockText: "In Stock",
+      //   stockText: "In Stock",
 
-        brochure: "/brochure/led-panel-12w-brochure.pdf",
+      //   brochure: "/brochure/led-panel-12w-brochure.pdf",
 
-        // Related products
-        relatedProducts: [
-          "led-panel-6w",
-          "led-slim-panel-6w",
-          "led-slim-panel-12w",
-          "led-slim-panel-18w",
-        ],
-      },
+      //   // Related products
+      //   relatedProducts: [
+      //     "led-panel-6w",
+      //     "led-slim-panel-6w",
+      //     "led-slim-panel-12w",
+      //     "led-slim-panel-18w",
+      //   ],
+      // },
 
-      {
-        id: 403,
-        name: "PC Panel 18W",
-        slug: "pc-panel-18w",
+      // {
+      //   id: 403,
+      //   name: "PC Panel 18W",
+      //   slug: "pc-panel-18w",
 
-        category: "PC Panel",
-        categorySlug: "pc-panel",
+      //   category: "PC Panel",
+      //   categorySlug: "pc-panel",
 
-        price: 0,
-        oldPrice: 0,
-        currency: "₹",
+      //   price: 0,
+      //   oldPrice: 0,
+      //   currency: "₹",
 
-        badge: "Featured",
+      //   badge: "Featured",
 
-        shortDescription:
-          "The ELSTRONG PT005 is a high-output 18W LED panel designed to provide bright and effective illumination for larger residential, commercial, office, retail, and indoor spaces while maintaining a slim ceiling profile.",
+      //   shortDescription:
+      //     "The ELSTRONG PT005 is a high-output 18W LED panel designed to provide bright and effective illumination for larger residential, commercial, office, retail, and indoor spaces while maintaining a slim ceiling profile.",
 
-        description:
-          "The ELSTRONG PT005 LED Panel 18W is a high-output lighting solution designed to provide stronger and more effective illumination for larger residential, commercial, office, retail, and indoor spaces. Featuring an 18W LED configuration with a lumen output of ≥1800 lm, the panel delivers powerful general illumination while maintaining a slim and contemporary design. Its 180mm diameter and 25mm height provide a larger lighting surface without creating a bulky ceiling profile. Operating at 110–230V AC and 50Hz with a power factor of ≥0.95, the PT005 is designed for stable and efficient electrical performance. It also provides surge protection of up to 2.5KVA for additional support under suitable electrical conditions.",
+      //   description:
+      //     "The ELSTRONG PT005 LED Panel 18W is a high-output lighting solution designed to provide stronger and more effective illumination for larger residential, commercial, office, retail, and indoor spaces. Featuring an 18W LED configuration with a lumen output of ≥1800 lm, the panel delivers powerful general illumination while maintaining a slim and contemporary design. Its 180mm diameter and 25mm height provide a larger lighting surface without creating a bulky ceiling profile. Operating at 110–230V AC and 50Hz with a power factor of ≥0.95, the PT005 is designed for stable and efficient electrical performance. It also provides surge protection of up to 2.5KVA for additional support under suitable electrical conditions.",
 
-        // Main product images
-        image: "/product/pcpanel1.webp",
+      //   // Main product images
+      //   image: "/product/pcpanel1.webp",
 
-        images: [
-          "/product/pcpanel1.webp",
-          "/product/pcpanel2.webp",
-          "/product/pcpanelround.webp",
-        ],
+      //   images: [
+      //     "/product/pcpanel1.webp",
+      //     "/product/pcpanel2.webp",
+      //     "/product/pcpanelround.webp",
+      //   ],
 
-        // Wattage options
-        wattages: [
-          {
-            value: "18W",
-            image: "/product/pcpanel1.webp",
-            price: 0,
-          },
-        ],
+      //   // Wattage options
+      //   wattages: [
+      //     {
+      //       value: "18W",
+      //       image: "/product/pcpanel1.webp",
+      //       price: 0,
+      //     },
+      //   ],
 
-        // Product specifications
-        specifications: {
-          wattage: "18W",
-          "Lumen Output": "≥1800 lm",
-          Diameter: "180mm",
-          Height: "25mm",
-          "Input Voltage": "110–230V AC",
-          Frequency: "50Hz",
-          "Power Factor": "≥0.95",
-          "Surge Protection": "Up to 2.5KVA",
-          "Light Source": "LED",
-          Installation: "Ceiling Mounted",
-        },
+      //   // Product specifications
+      //   specifications: {
+      //     wattage: "18W",
+      //     "Lumen Output": "≥1800 lm",
+      //     Diameter: "180mm",
+      //     Height: "25mm",
+      //     "Input Voltage": "110–230V AC",
+      //     Frequency: "50Hz",
+      //     "Power Factor": "≥0.95",
+      //     "Surge Protection": "Up to 2.5KVA",
+      //     "Light Source": "LED",
+      //     Installation: "Ceiling Mounted",
+      //   },
 
-        // Features
-        features: [
-          {
-            title: "High-Output 18W LED",
-            text: "The 18W LED configuration provides increased illumination for larger rooms and spaces where higher light output is required.",
-          },
-          {
-            title: "Slim 25mm Design",
-            text: "Despite its larger diameter, the panel maintains a low-profile 25mm construction for a clean and modern ceiling appearance.",
-          },
-          {
-            title: "High Power Factor",
-            text: "The ≥0.95 power factor rating supports efficient electrical performance and better utilization of input power.",
-          },
-          {
-            title: "Surge Protection",
-            text: "Up to 2.5KVA surge protection provides additional support for reliable operation under suitable electrical conditions.",
-          },
-        ],
+      //   // Features
+      //   features: [
+      //     {
+      //       title: "High-Output 18W LED",
+      //       text: "The 18W LED configuration provides increased illumination for larger rooms and spaces where higher light output is required.",
+      //     },
+      //     {
+      //       title: "Slim 25mm Design",
+      //       text: "Despite its larger diameter, the panel maintains a low-profile 25mm construction for a clean and modern ceiling appearance.",
+      //     },
+      //     {
+      //       title: "High Power Factor",
+      //       text: "The ≥0.95 power factor rating supports efficient electrical performance and better utilization of input power.",
+      //     },
+      //     {
+      //       title: "Surge Protection",
+      //       text: "Up to 2.5KVA surge protection provides additional support for reliable operation under suitable electrical conditions.",
+      //     },
+      //   ],
 
-        // Why choose this product/company
-        whyChoose: [
-          {
-            title: "Professional Lighting Manufacturer",
-            text: "ELSTRONG develops LED lighting products designed for efficient illumination, modern applications, and dependable performance across different environments.",
-          },
-          {
-            title: "High Illumination Output",
-            text: "The PT005 delivers a lumen output of ≥1800 lm, making it suitable for larger areas requiring stronger and more effective general lighting.",
-          },
-          {
-            title: "Slim & Modern",
-            text: "The 25mm height provides a streamlined and contemporary appearance even with the larger panel size.",
-          },
-          {
-            title: "Versatile Commercial Use",
-            text: "The panel is suitable for offices, retail stores, showrooms, commercial spaces, residential areas, and other larger interior environments.",
-          },
-        ],
+      //   // Why choose this product/company
+      //   whyChoose: [
+      //     {
+      //       title: "Professional Lighting Manufacturer",
+      //       text: "ELSTRONG develops LED lighting products designed for efficient illumination, modern applications, and dependable performance across different environments.",
+      //     },
+      //     {
+      //       title: "High Illumination Output",
+      //       text: "The PT005 delivers a lumen output of ≥1800 lm, making it suitable for larger areas requiring stronger and more effective general lighting.",
+      //     },
+      //     {
+      //       title: "Slim & Modern",
+      //       text: "The 25mm height provides a streamlined and contemporary appearance even with the larger panel size.",
+      //     },
+      //     {
+      //       title: "Versatile Commercial Use",
+      //       text: "The panel is suitable for offices, retail stores, showrooms, commercial spaces, residential areas, and other larger interior environments.",
+      //     },
+      //   ],
 
-        // Image used in description section
-        descriptionImage: "/product/pcpanel2.webp",
+      //   // Image used in description section
+      //   descriptionImage: "/product/pcpanel2.webp",
 
-        // Additional product information
-        sku: "ELS-PT005",
+      //   // Additional product information
+      //   sku: "ELS-PT005",
 
-        stock: true,
+      //   stock: true,
 
-        stockText: "In Stock",
+      //   stockText: "In Stock",
 
-        brochure: "/brochure/led-panel-18w-brochure.pdf",
+      //   brochure: "/brochure/led-panel-18w-brochure.pdf",
 
-        // Related products
-        relatedProducts: [
-          "led-panel-6w",
-          "led-panel-12w",
-          "led-slim-panel-12w",
-          "led-slim-panel-18w",
-        ],
-      },
+      //   // Related products
+      //   relatedProducts: [
+      //     "led-panel-6w",
+      //     "led-panel-12w",
+      //     "led-slim-panel-12w",
+      //     "led-slim-panel-18w",
+      //   ],
+      // },
     ],
   },
 
@@ -2238,7 +2305,11 @@ export const categories = [
         // Main product images
         image: "/product/striker1.webp",
 
-        images: ["/product/striker1.webp", "/product/striker2.webp"],
+        images: [
+          "/product/striker1.webp",
+          "/product/striker2.webp",
+          "/product/strikerback.webp",
+        ],
 
         // Wattage options
         wattages: [
@@ -2499,7 +2570,11 @@ export const categories = [
         // Main product images
         image: "/product/tengo1.webp",
 
-        images: ["/product/tengo1.webp", "/product/tengo2.webp","/product/Tangopanelback.webp"],
+        images: [
+          "/product/tengo1.webp",
+          "/product/tengo2.webp",
+          "/product/Tangopanelback.webp",
+        ],
 
         // Wattage options
         wattages: [
