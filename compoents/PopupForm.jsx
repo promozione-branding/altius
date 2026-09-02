@@ -1,21 +1,25 @@
+
 "use client";
 
 import { useEffect, useState } from "react";
 import { X, CheckCircle2 } from "lucide-react";
+import axios from "axios";
 
 export default function PopupForm({ isOpen, onClose }) {
-  const [formData, setFormData] = useState({
+  const initialFormData = {
     name: "",
     phone: "",
     email: "",
     product: "",
     message: "",
-  });
+  };
 
+  const [formData, setFormData] = useState(initialFormData);
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
 
-  // Prevent background scrolling while popup is open
+  // Prevent background scrolling
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -28,6 +32,14 @@ export default function PopupForm({ isOpen, onClose }) {
     };
   }, [isOpen]);
 
+  // Reset form when popup opens
+  useEffect(() => {
+    if (isOpen) {
+      setSuccess(false);
+      setError("");
+    }
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   const handleChange = (e) => {
@@ -37,57 +49,72 @@ export default function PopupForm({ isOpen, onClose }) {
       ...prev,
       [name]: value,
     }));
+
+    // Remove error when user starts typing
+    if (error) {
+      setError("");
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if (loading) return;
+
     setLoading(true);
+    setError("");
+    setSuccess(false);
 
     try {
-      /*
-        Replace this section with your actual API.
+      const payload = {
+        platform: "Altius Elstrong Popup Form",
+        platformEmail: "altus@email.com",
+        name: formData.name,
+        phone: formData.phone,
+        email: formData.email,
+        product: formData.product,
+        message: formData.message || "N/A",
+        place: "N/A",
+      };
 
-        Example:
+      const { data } = await axios.post(
+        "https://brandbnalo.com/api/form/add",
+        payload
+      );
 
-        const response = await fetch("/api/inquiry", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        });
+      if (data?.success) {
+        setSuccess(true);
 
-        if (!response.ok) {
-          throw new Error("Something went wrong");
-        }
-      */
+        // Close popup after 2 seconds
+        setTimeout(() => {
+          setSuccess(false);
+          setFormData(initialFormData);
+          onClose();
+        }, 2000);
+      } else {
+        setError(
+          data?.message || "Submission failed. Please try again."
+        );
+      }
+    } catch (err) {
+      console.error("Form submission error:", err);
 
-      // Temporary delay to simulate API submission
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-
-      setSuccess(true);
-
-      // Automatically close after 2 seconds
-      setTimeout(() => {
-        setSuccess(false);
-
-        setFormData({
-          name: "",
-          phone: "",
-          email: "",
-          product: "",
-          message: "",
-        });
-
-        onClose();
-      }, 2000);
-    } catch (error) {
-      console.error("Form submission error:", error);
-      alert("Something went wrong. Please try again.");
+      setError(
+        err?.response?.data?.message ||
+          "Something went wrong. Please try again."
+      );
     } finally {
       setLoading(false);
     }
+  };
+
+  const handleClose = () => {
+    if (loading) return;
+
+    setSuccess(false);
+    setError("");
+    setFormData(initialFormData);
+    onClose();
   };
 
   return (
@@ -95,18 +122,18 @@ export default function PopupForm({ isOpen, onClose }) {
       className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/70 px-4 py-4 backdrop-blur-sm"
       onClick={(e) => {
         if (e.target === e.currentTarget && !loading) {
-          onClose();
+          handleClose();
         }
       }}
     >
-      {/* ================= POPUP ================= */}
-      <div className="relative w-full max-w-[620px] max-h-[95vh] overflow-hidden bg-white p-2 shadow-2xl">
-        {/* Inner Border */}
+      {/* POPUP */}
+      <div className="relative max-h-[95vh] w-full max-w-[620px] overflow-hidden bg-white p-2 shadow-2xl">
         <div className="relative w-full bg-white px-4 py-3 sm:px-5 sm:py-4">
-          {/* Close Button */}
+
+          {/* CLOSE BUTTON */}
           <button
             type="button"
-            onClick={onClose}
+            onClick={handleClose}
             disabled={loading}
             className="absolute right-3 top-3 z-20 flex h-8 w-8 items-center justify-center rounded-full border border-slate-200 text-slate-800 transition hover:bg-slate-100 hover:text-black disabled:cursor-not-allowed disabled:opacity-50"
             aria-label="Close"
@@ -114,7 +141,7 @@ export default function PopupForm({ isOpen, onClose }) {
             <X size={17} />
           </button>
 
-          {/* ================= SUCCESS ================= */}
+          {/* SUCCESS */}
           {success ? (
             <div className="flex min-h-[350px] flex-col items-center justify-center text-center">
               <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-green-50">
@@ -143,7 +170,7 @@ export default function PopupForm({ isOpen, onClose }) {
             </div>
           ) : (
             <>
-              {/* ================= HEADING ================= */}
+              {/* HEADING */}
               <div className="mb-5 pr-8 text-center">
                 <p className="text-xs font-semibold uppercase tracking-wider text-black">
                   Get In Touch
@@ -161,41 +188,43 @@ export default function PopupForm({ isOpen, onClose }) {
                 </p>
               </div>
 
-              {/* ================= FORM ================= */}
+              {/* FORM */}
               <form onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-                  {/* Name */}
+
+                  {/* NAME */}
                   <div>
                     <label
-                      htmlFor="name"
+                      htmlFor="popup-name"
                       className="mb-1 block text-[11px] font-semibold uppercase tracking-wide text-slate-700"
                     >
                       Name *
                     </label>
 
                     <input
-                      id="name"
+                      id="popup-name"
                       name="name"
                       type="text"
                       placeholder="Enter your name"
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="h-10 w-full border border-slate-200 bg-white px-3 text-sm text-black outline-none transition placeholder:text-slate-400 focus:border-black"
+                      disabled={loading}
+                      className="h-10 w-full border border-slate-200 bg-white px-3 text-sm text-black outline-none transition placeholder:text-slate-400 focus:border-black disabled:bg-slate-50"
                     />
                   </div>
 
-                  {/* Phone */}
+                  {/* PHONE */}
                   <div>
                     <label
-                      htmlFor="phone"
+                      htmlFor="popup-phone"
                       className="mb-1 block text-[11px] font-semibold uppercase tracking-wide text-slate-700"
                     >
                       Phone *
                     </label>
 
                     <input
-                      id="phone"
+                      id="popup-phone"
                       name="phone"
                       type="tel"
                       placeholder="Enter phone number"
@@ -204,79 +233,93 @@ export default function PopupForm({ isOpen, onClose }) {
                       required
                       pattern="[0-9]{10}"
                       maxLength={10}
-                      className="h-10 w-full border border-slate-200 bg-white px-3 text-sm text-black outline-none transition placeholder:text-slate-400 focus:border-black"
+                      disabled={loading}
+                      className="h-10 w-full border border-slate-200 bg-white px-3 text-sm text-black outline-none transition placeholder:text-slate-400 focus:border-black disabled:bg-slate-50"
                     />
                   </div>
 
-                  {/* Email */}
+                  {/* EMAIL */}
                   <div>
                     <label
-                      htmlFor="email"
+                      htmlFor="popup-email"
                       className="mb-1 block text-[11px] font-semibold uppercase tracking-wide text-slate-700"
                     >
                       Email *
                     </label>
 
                     <input
-                      id="email"
+                      id="popup-email"
                       name="email"
                       type="email"
                       placeholder="Enter your email"
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="h-10 w-full border border-slate-200 bg-white px-3 text-sm text-black outline-none transition placeholder:text-slate-400 focus:border-black"
+                      disabled={loading}
+                      className="h-10 w-full border border-slate-200 bg-white px-3 text-sm text-black outline-none transition placeholder:text-slate-400 focus:border-black disabled:bg-slate-50"
                     />
                   </div>
 
-                  {/* Product */}
+                  {/* PRODUCT */}
                   <div>
                     <label
-                      htmlFor="product"
+                      htmlFor="popup-product"
                       className="mb-1 block text-[11px] font-semibold uppercase tracking-wide text-slate-700"
                     >
                       Product *
                     </label>
 
                     <select
-                      id="product"
+                      id="popup-product"
                       name="product"
                       value={formData.product}
                       onChange={handleChange}
                       required
-                      className="h-10 w-full border border-slate-200 bg-white px-3 text-sm text-black outline-none transition focus:border-black"
+                      disabled={loading}
+                      className="h-10 w-full border border-slate-200 bg-white px-3 text-sm text-black outline-none transition focus:border-black disabled:bg-slate-50"
                     >
                       <option value="">Select Product</option>
-                      <option value="Concealed Light">Concealed Light</option>
-                      <option value="COB Lens Model">COB Lens Model</option>
-                      <option value="LED Slim Panel">LED Slim Panel</option>
-                      <option value="Striker">Striker</option>
-                      <option value="PC Panel">PC Panel</option>
+                      <option value="Concealed Light">
+                        Concealed Light
+                      </option>
+                      <option value="COB Lens Model">
+                        COB Lens Model
+                      </option>
+                      <option value="LED Slim Panel">
+                        LED Slim Panel
+                      </option>
+                      <option value="Striker">
+                        Striker
+                      </option>
+                      <option value="PC Panel">
+                        PC Panel
+                      </option>
                     </select>
                   </div>
 
-                  {/* Message */}
+                  {/* MESSAGE */}
                   <div className="sm:col-span-2">
                     <label
-                      htmlFor="message"
+                      htmlFor="popup-message"
                       className="mb-1 block text-[11px] font-semibold uppercase tracking-wide text-slate-700"
                     >
                       Message
                     </label>
 
                     <textarea
-                      id="message"
+                      id="popup-message"
                       name="message"
                       rows={2}
                       placeholder="Tell us about your requirement..."
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full resize-none border border-slate-200 bg-white px-3 py-2.5 text-sm text-black outline-none transition placeholder:text-slate-400 focus:border-black"
+                      disabled={loading}
+                      className="w-full resize-none border border-slate-200 bg-white px-3 py-2.5 text-sm text-black outline-none transition placeholder:text-slate-400 focus:border-black disabled:bg-slate-50"
                     />
                   </div>
                 </div>
 
-                {/* Submit */}
+                {/* SUBMIT */}
                 <button
                   type="submit"
                   disabled={loading}
@@ -284,9 +327,16 @@ export default function PopupForm({ isOpen, onClose }) {
                 >
                   {loading ? "Submitting..." : "Submit Enquiry"}
                 </button>
+
+                {/* ERROR MESSAGE */}
+                {error && (
+                  <p className="mt-3 text-center text-xs font-medium text-red-600">
+                    {error}
+                  </p>
+                )}
               </form>
 
-              {/* Bottom Text */}
+              {/* BOTTOM TEXT */}
               <p className="mt-3 text-center text-[10px] text-slate-800">
                 Our team will contact you regarding your enquiry.
               </p>
