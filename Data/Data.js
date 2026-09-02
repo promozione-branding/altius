@@ -649,7 +649,7 @@ export const categories = [
         // Main product images
         image: "/product/coblensmodel1.webp",
 
-        images: ["/product/coblensmodel1.webp", "/product/coblensmodel2.webp"],
+        images: ["/product/coblensmodel1.webp", "/product/coblensmodel2.webp","/product/coblensmodelback.webp",],
 
         // Wattage options
         wattages: [
@@ -753,7 +753,7 @@ export const categories = [
         // Main product images
         image: "/product/coblensmodel1.webp",
 
-        images: ["/product/coblensmodel1.webp", "/product/coblensmodel2.webp"],
+        images: ["/product/coblensmodel1.webp", "/product/coblensmodel2.webp","/product/coblensmodelback.webp",],
 
         // Wattage options
         wattages: [
