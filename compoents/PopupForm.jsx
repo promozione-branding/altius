@@ -100,15 +100,15 @@ export default function PopupForm({ isOpen, onClose }) {
       }}
     >
       {/* ================= POPUP ================= */}
-      <div className="relative w-full max-w-[650px] max-h-[90vh] overflow-y-auto bg-white p-2 shadow-2xl">
+      <div className="relative w-full max-w-[620px] max-h-[95vh] overflow-hidden bg-white p-2 shadow-2xl">
         {/* Inner Border */}
-        <div className="relative w-full max-w-[650px] bg-white py-2 px-3 shadow-2xl">
+        <div className="relative w-full bg-white px-4 py-3 sm:px-5 sm:py-4">
           {/* Close Button */}
           <button
             type="button"
             onClick={onClose}
             disabled={loading}
-            className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full border border-slate-200 text-slate-800 transition hover:bg-slate-100 hover:text-black disabled:cursor-not-allowed disabled:opacity-50"
+            className="absolute right-3 top-3 z-20 flex h-8 w-8 items-center justify-center rounded-full border border-slate-200 text-slate-800 transition hover:bg-slate-100 hover:text-black disabled:cursor-not-allowed disabled:opacity-50"
             aria-label="Close"
           >
             <X size={17} />
@@ -116,10 +116,10 @@ export default function PopupForm({ isOpen, onClose }) {
 
           {/* ================= SUCCESS ================= */}
           {success ? (
-            <div className="flex min-h-[400px] flex-col items-center justify-center text-center">
-              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-green-50">
+            <div className="flex min-h-[350px] flex-col items-center justify-center text-center">
+              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-green-50">
                 <CheckCircle2
-                  size={38}
+                  size={34}
                   className="text-green-600"
                   strokeWidth={1.8}
                 />
@@ -129,33 +129,33 @@ export default function PopupForm({ isOpen, onClose }) {
                 Thank You!
               </h2>
 
-              <div className="mx-auto mt-3 h-[1px] w-12 bg-black" />
+              <div className="mx-auto mt-2 h-[1px] w-12 bg-black" />
 
-              <p className="mt-5 max-w-md text-sm leading-6 text-slate-800">
+              <p className="mt-4 max-w-md text-sm leading-5 text-slate-800">
                 Your enquiry has been submitted successfully.
                 <br />
                 Our team will contact you shortly.
               </p>
 
-              <p className="mt-5 text-xs font-medium text-slate-600">
+              <p className="mt-4 text-xs font-medium text-slate-600">
                 This window will close automatically...
               </p>
             </div>
           ) : (
             <>
               {/* ================= HEADING ================= */}
-              <div className="mb-7 pr-6 text-center">
-                <p className="text-sm font-semibold uppercase tracking-wider text-black">
+              <div className="mb-5 pr-8 text-center">
+                <p className="text-xs font-semibold uppercase tracking-wider text-black">
                   Get In Touch
                 </p>
 
-                <div className="mx-auto mt-3 h-[1px] w-12 bg-black" />
+                <div className="mx-auto mt-2 h-[1px] w-10 bg-black" />
 
-                <h2 className="mt-5 text-2xl font-bold uppercase leading-tight text-black sm:text-3xl">
+                <h2 className="mt-3 text-xl font-bold uppercase leading-tight text-black sm:text-2xl">
                   Send Your Enquiry
                 </h2>
 
-                <p className="mx-auto mt-3 max-w-md text-xs leading-5 text-slate-800 sm:text-sm">
+                <p className="mx-auto mt-2 max-w-md text-xs leading-4 text-slate-800">
                   Fill in the details below and our team will get back to you
                   shortly.
                 </p>
@@ -163,12 +163,12 @@ export default function PopupForm({ isOpen, onClose }) {
 
               {/* ================= FORM ================= */}
               <form onSubmit={handleSubmit}>
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                   {/* Name */}
                   <div>
                     <label
                       htmlFor="name"
-                      className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-slate-700"
+                      className="mb-1 block text-[11px] font-semibold uppercase tracking-wide text-slate-700"
                     >
                       Name *
                     </label>
@@ -181,7 +181,7 @@ export default function PopupForm({ isOpen, onClose }) {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="h-11 w-full border border-slate-200 bg-white px-3 text-sm text-black outline-none transition placeholder:text-slate-400 focus:border-black"
+                      className="h-10 w-full border border-slate-200 bg-white px-3 text-sm text-black outline-none transition placeholder:text-slate-400 focus:border-black"
                     />
                   </div>
 
@@ -189,7 +189,7 @@ export default function PopupForm({ isOpen, onClose }) {
                   <div>
                     <label
                       htmlFor="phone"
-                      className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-slate-700"
+                      className="mb-1 block text-[11px] font-semibold uppercase tracking-wide text-slate-700"
                     >
                       Phone *
                     </label>
@@ -204,7 +204,7 @@ export default function PopupForm({ isOpen, onClose }) {
                       required
                       pattern="[0-9]{10}"
                       maxLength={10}
-                      className="h-11 w-full border border-slate-200 bg-white px-3 text-sm text-black outline-none transition placeholder:text-slate-400 focus:border-black"
+                      className="h-10 w-full border border-slate-200 bg-white px-3 text-sm text-black outline-none transition placeholder:text-slate-400 focus:border-black"
                     />
                   </div>
 
@@ -212,7 +212,7 @@ export default function PopupForm({ isOpen, onClose }) {
                   <div>
                     <label
                       htmlFor="email"
-                      className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-slate-700"
+                      className="mb-1 block text-[11px] font-semibold uppercase tracking-wide text-slate-700"
                     >
                       Email *
                     </label>
@@ -225,7 +225,7 @@ export default function PopupForm({ isOpen, onClose }) {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="h-11 w-full border border-slate-200 bg-white px-3 text-sm text-black outline-none transition placeholder:text-slate-400 focus:border-black"
+                      className="h-10 w-full border border-slate-200 bg-white px-3 text-sm text-black outline-none transition placeholder:text-slate-400 focus:border-black"
                     />
                   </div>
 
@@ -233,7 +233,7 @@ export default function PopupForm({ isOpen, onClose }) {
                   <div>
                     <label
                       htmlFor="product"
-                      className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-slate-700"
+                      className="mb-1 block text-[11px] font-semibold uppercase tracking-wide text-slate-700"
                     >
                       Product *
                     </label>
@@ -244,18 +244,13 @@ export default function PopupForm({ isOpen, onClose }) {
                       value={formData.product}
                       onChange={handleChange}
                       required
-                      className="h-11 w-full border border-slate-200 bg-white px-3 text-sm text-black outline-none transition focus:border-black"
+                      className="h-10 w-full border border-slate-200 bg-white px-3 text-sm text-black outline-none transition focus:border-black"
                     >
                       <option value="">Select Product</option>
-
                       <option value="Concealed Light">Concealed Light</option>
-
                       <option value="COB Lens Model">COB Lens Model</option>
-
                       <option value="LED Slim Panel">LED Slim Panel</option>
-
                       <option value="Striker">Striker</option>
-
                       <option value="PC Panel">PC Panel</option>
                     </select>
                   </div>
@@ -264,7 +259,7 @@ export default function PopupForm({ isOpen, onClose }) {
                   <div className="sm:col-span-2">
                     <label
                       htmlFor="message"
-                      className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-slate-700"
+                      className="mb-1 block text-[11px] font-semibold uppercase tracking-wide text-slate-700"
                     >
                       Message
                     </label>
@@ -272,11 +267,11 @@ export default function PopupForm({ isOpen, onClose }) {
                     <textarea
                       id="message"
                       name="message"
-                      rows={4}
+                      rows={2}
                       placeholder="Tell us about your requirement..."
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full resize-none border border-slate-200 bg-white px-3 py-3 text-sm text-black outline-none transition placeholder:text-slate-400 focus:border-black"
+                      className="w-full resize-none border border-slate-200 bg-white px-3 py-2.5 text-sm text-black outline-none transition placeholder:text-slate-400 focus:border-black"
                     />
                   </div>
                 </div>
@@ -285,14 +280,14 @@ export default function PopupForm({ isOpen, onClose }) {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="mt-5 flex h-12 w-full items-center justify-center bg-[#85a30f] px-6 text-xs font-bold uppercase tracking-widest text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-60"
+                  className="mt-4 flex h-11 w-full items-center justify-center bg-[#85a30f] px-6 text-xs font-bold uppercase tracking-widest text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-60"
                 >
                   {loading ? "Submitting..." : "Submit Enquiry"}
                 </button>
               </form>
 
               {/* Bottom Text */}
-              <p className="mt-4 text-center text-[11px] text-slate-800">
+              <p className="mt-3 text-center text-[10px] text-slate-800">
                 Our team will contact you regarding your enquiry.
               </p>
             </>

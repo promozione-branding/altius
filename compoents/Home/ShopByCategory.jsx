@@ -9,8 +9,6 @@ import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
-
 export default function ShopByCategory() {
   const sectionRef = useRef(null);
 
@@ -352,29 +350,30 @@ export default function ShopByCategory() {
             justify-items-center
             grid-cols-1
             gap-5
-            sm:grid-cols-2
-            lg:grid-cols-4
-            lg:gap-5
+            sm:grid-cols-3
+            md:grid-cols-4
+            md:gap-5
           "
         >
           {categories.map((category, index) => (
             <Link
-            href={`/categories/${category.slug}`}
+              href={`/categories/${category.slug}`}
               key={category.title}
               ref={(el) => {
                 cardsRef.current[index] = el;
               }}
               className="
-                group
-                relative
-                aspect-[4/4.4]
-                h-80
-                cursor-pointer
-                overflow-hidden
-                rounded-sm
-                bg-gray-100
-                will-change-transform
-              "
+  group
+  relative
+  w-full
+  max-w-[360px]
+  aspect-[4/4.4]
+  cursor-pointer
+  overflow-hidden
+  rounded-sm
+  bg-gray-100
+  will-change-transform
+"
             >
               {/* =====================================
                   MAIN IMAGE
