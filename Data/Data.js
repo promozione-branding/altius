@@ -174,8 +174,8 @@ export const categories = [
 
       {
         id: 102,
-        name: "Suprimo",
-        slug: "suprimo",
+        name: "Suprimo Concealed Light",
+        slug: "suprimo-concealed-light",
 
         category: "Concealed Lights",
         categorySlug: "concealed-lights",
@@ -281,8 +281,8 @@ export const categories = [
 
       {
         id: 103,
-        name: "Flare",
-        slug: "flare",
+        name: "Flare Concealed Light",
+        slug: "flare-concealed-light",
 
         category: "Concealed Lights",
         categorySlug: "concealed-lights",
@@ -388,8 +388,8 @@ export const categories = [
 
       {
         id: 104,
-        name: "Glare",
-        slug: "glare",
+        name: "Glare Concealed Light",
+        slug: "glare-concealed-light",
 
         category: "Concealed Lights",
         categorySlug: "concealed-lights",
@@ -832,8 +832,8 @@ export const categories = [
     products: [
       {
         id: 301,
-        name: "LED Slim Panel 3W",
-        slug: "led-slim-panel-3w",
+        name: "Sqaure Slim Panel 3W",
+        slug: "sqaure-slim-panel-3w",
 
         category: "Slim Panel Lights",
         categorySlug: "slim-panel-lights",
@@ -944,8 +944,8 @@ export const categories = [
 
       {
         id: 302,
-        name: "LED Slim Panel 6W",
-        slug: "led-slim-panel-6w",
+        name: "Sqaure Slim Panel 6W",
+        slug: "sqaure-slim-panel-6w",
 
         category: "LED Slim Panel",
         categorySlug: "led-slim-panel",
@@ -963,9 +963,10 @@ export const categories = [
           "The ELSTRONG LED Slim Panel Aluminium 6W is a modern and efficient ceiling lighting solution designed for contemporary indoor spaces. Featuring a premium aluminium construction and a 6W LED configuration with a lumen output of less than 600 lm, the panel provides balanced illumination for residential, office, retail, commercial, and other indoor applications. Its 120mm length/diameter, 100mm cutout, and 25mm height provide a compact and space-saving profile that integrates neatly into suitable ceilings. Operating between 110V–280V with a power factor of <0.95, the panel is designed for flexible and efficient electrical performance.",
 
         // Main product images
-        image: "/product/slimsquarepanel1.webp",
+        image: "/product/slimsquare.webp",
 
         images: [
+          "/product/slimsquare.webp",
           "/product/slimsquarepanel1.webp",
           "/product/slimsquarepanel2.webp",
         ],
@@ -1056,8 +1057,8 @@ export const categories = [
 
       {
         id: 303,
-        name: "LED Slim Panel 12W",
-        slug: "led-slim-panel-12w",
+        name: "Round Slim Panel 12W",
+        slug: "round-slim-panel-12w",
 
         category: "LED Slim Panel",
         categorySlug: "led-slim-panel",
@@ -1075,11 +1076,11 @@ export const categories = [
           "The ELSTRONG LED Slim Panel Aluminium 12W is a high-performance LED lighting solution designed to provide bright and efficient illumination while maintaining a slim and modern ceiling profile. With a 12W LED configuration and a lumen output of less than 1200 lm, the panel is suitable for spaces requiring stronger general illumination. Its 170mm overall size, 150mm cutout, and slim 25mm height provide a clean and contemporary appearance without requiring a bulky ceiling fixture. Operating at 110V–280V with a specified power factor of <0.95, the panel offers flexible electrical operation for suitable indoor installations.",
 
         // Main product images
-        image: "/product/slimsquarepanel1.webp",
+        image: "/product/roundslim1.webp",
 
         images: [
-          "/product/slimsquarepanel1.webp",
-          "/product/slimsquarepanel2.webp",
+          "/product/roundslim1.webp",
+          "/product/roundslim2.webp",
         ],
 
         // Wattage options
@@ -1146,7 +1147,7 @@ export const categories = [
         ],
 
         // Image used in description section
-        descriptionImage: "/product/slimsquarepanel2.webp",
+        descriptionImage: "/product/roundslim2.webp",
 
         // Additional product information
         sku: "ELS-SP-012",
@@ -1168,8 +1169,8 @@ export const categories = [
 
       {
         id: 304,
-        name: "LED Slim Panel 18W",
-        slug: "led-slim-panel-18w",
+        name: "Round Slim Panel 18W",
+        slug: "round-slim-panel-18w",
 
         category: "LED Slim Panel",
         categorySlug: "led-slim-panel",
@@ -1187,11 +1188,11 @@ export const categories = [
           "The ELSTRONG LED Slim Panel Aluminium 18W is a powerful and efficient LED lighting solution designed to provide high-output illumination while maintaining a slim and contemporary ceiling profile. Featuring an 18W LED configuration with a lumen output of less than 1800 lm, the panel provides practical brightness for offices, commercial areas, retail environments, showrooms, and larger interior spaces. Its 225mm overall size, 200mm cutout, and low-profile 25mm height combine a larger lighting surface with a clean and unobtrusive ceiling appearance. Operating between 110V–280V with a power factor of <0.95, the panel is designed for flexible and efficient electrical performance.",
 
         // Main product images
-        image: "/product/slimsquarepanel1.webp",
+        image: "/product/roundslim1.webp",
 
         images: [
-          "/product/slimsquarepanel1.webp",
-          "/product/slimsquarepanel2.webp",
+          "/product/roundslim2.webp",
+          "/product/roundslim2.webp",
         ],
 
         // Wattage options
@@ -1258,7 +1259,7 @@ export const categories = [
         ],
 
         // Image used in description section
-        descriptionImage: "/product/slimsquarepanel2.webp",
+        descriptionImage: "/product/roundslim2.webp",
 
         // Additional product information
         sku: "ELS-SP-018",
@@ -1278,132 +1279,7 @@ export const categories = [
         ],
       },
 
-      {
-        id: 112,
-        name: "Bulb",
-        slug: "bulb",
-
-        category: "LED Slim Panel",
-        categorySlug: "led-slim-panel",
-
-        price: 0,
-        oldPrice: 0,
-        currency: "₹",
-
-        badge: "Featured",
-
-        shortDescription:
-          "The ELSTRONG BULB is an efficient and reliable LED lighting solution available in multiple wattages and colour temperatures for residential, commercial, office, retail, and indoor applications.",
-
-        description:
-          "The ELSTRONG BULB is a reliable and efficient LED lighting solution designed to provide consistent illumination across residential, commercial, office, retail, and other indoor environments. Available in 20W, 30W, 40W, and 50W options, the BULB provides flexible choices for different lighting requirements and space sizes. Designed with an efficiency of ≥85% and a power factor of ≥0.90, with a target power factor of >0.95, it provides efficient electrical performance. Its Aluminium Metal Core PCB (MC-PCB) construction supports effective heat management and dependable LED performance. The bulb operates from 176–264 VAC with a rated input voltage of 220–240 VAC and is available in 6500K, with alternative 4000K and 3000K colour temperature options.",
-
-        // Main product images
-        image: "/product/bulb1.webp",
-
-        images: ["/product/bulb1.webp", "/product/bulb2.webp"],
-
-        // Wattage options
-        wattages: [
-          {
-            value: "20W",
-            image: "/product/bulb1.webp",
-            price: 0,
-          },
-          {
-            value: "30W",
-            image: "/product/bulb1.webp",
-            price: 0,
-          },
-          {
-            value: "40W",
-            image: "/product/bulb1.webp",
-            price: 0,
-          },
-          {
-            value: "50W",
-            image: "/product/bulb1.webp",
-            price: 0,
-          },
-        ],
-
-        // Product specifications
-        specifications: {
-          wattage: "20W / 30W / 40W / 50W",
-          Efficiency: "≥85%",
-          "Power Factor": "≥0.90",
-          "Target Power Factor": ">0.95",
-          "Input Voltage": "176–264 VAC",
-          "Rated Voltage": "220–240 VAC",
-          "Colour Temperature": "6500K",
-          "Alternative CCT": "4000K / 3000K",
-          THD: "<20%",
-          "THD Target": "<10%",
-          "Surge Protection": "2–4 kV Target",
-          "PCB Type": "Aluminium Metal Core PCB (MC-PCB)",
-          "Light Source": "LED",
-        },
-
-        // Features
-        features: [
-          {
-            title: "Energy-Efficient LED Technology",
-            text: "The LED technology provides effective illumination while maintaining an efficiency of ≥85%, supporting energy-conscious lighting applications.",
-          },
-          {
-            title: "Wide Voltage Range",
-            text: "The bulb operates from 176–264 VAC with a rated input voltage of 220–240 VAC, providing flexibility for compatible electrical systems.",
-          },
-          {
-            title: "Multiple Colour Temperatures",
-            text: "Available in 6500K, with alternative 4000K and 3000K options, providing flexibility for different lighting preferences and interior environments.",
-          },
-          {
-            title: "Reliable Electrical Performance",
-            text: "The product features THD below 20%, a target THD below 10%, and a 2–4 kV surge protection target for dependable electrical operation.",
-          },
-        ],
-
-        // Why choose this product/company
-        whyChoose: [
-          {
-            title: "Professional Lighting Manufacturer",
-            text: "ELSTRONG develops efficient LED lighting solutions designed for dependable performance across residential, commercial, office, retail, and other indoor applications.",
-          },
-          {
-            title: "Energy Savings",
-            text: "Efficient LED technology helps provide practical illumination while supporting controlled energy consumption for everyday lighting applications.",
-          },
-          {
-            title: "Flexible Options",
-            text: "Multiple wattages and colour temperatures make the BULB suitable for different lighting requirements, space sizes, and interior environments.",
-          },
-          {
-            title: "Reliable Construction",
-            text: "The Aluminium Metal Core PCB (MC-PCB) construction supports effective thermal management and consistent LED performance during regular operation.",
-          },
-        ],
-
-        // Image used in description section
-        descriptionImage: "/product/bulb2.webp",
-
-        // Additional product information
-        sku: "ELS-BULB",
-
-        stock: true,
-
-        stockText: "In Stock",
-
-        brochure: "/brochure/bulb-brochure.pdf",
-
-        // Related products
-        relatedProducts: [
-          "led-slim-panel-12w",
-          "led-slim-panel-18w",
-          "moveable-lens-cob-7w",
-          "moveable-lens-cob-9w",
-        ],
-      },
+     
     ],
   },
 
@@ -1417,8 +1293,8 @@ export const categories = [
     products: [
       {
         id: 401,
-        name: "LED Panel 6W",
-        slug: "led-panel-6w",
+        name: "PC Panel 6W",
+        slug: "pc-panel-6w",
 
         category: "PC Panel",
         categorySlug: "pc-panel",
@@ -1526,8 +1402,8 @@ export const categories = [
 
       {
         id: 402,
-        name: "LED Panel 12W",
-        slug: "led-panel-12w",
+        name: "PC Panel 12W",
+        slug: "pc-panel-12w",
 
         category: "PC Panel",
         categorySlug: "pc-panel",
@@ -1635,8 +1511,8 @@ export const categories = [
 
       {
         id: 403,
-        name: "LED Panel 18W",
-        slug: "led-panel-18w",
+        name: "PC Panel 18W",
+        slug: "pc-panel-18w",
 
         category: "PC Panel",
         categorySlug: "pc-panel",
@@ -2429,6 +2305,145 @@ export const categories = [
   },
 
   {
+    id: 4,
+    name: "Bulb",
+    slug: "bulb",
+    image: "/product/bulb1.webp",
+    description:
+      "ELSTRONG PC Panels provide soft, uniform illumination with a clean and lightweight design, making them suitable for a wide range of indoor lighting applications.",
+    products: [
+
+       {
+        id: 112,
+        name: "Bulb",
+        slug: "bulb",
+
+        category:"Bulb",
+        categorySlug:"bulb",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "The ELSTRONG BULB is an efficient and reliable LED lighting solution available in multiple wattages and colour temperatures for residential, commercial, office, retail, and indoor applications.",
+
+        description:
+          "The ELSTRONG BULB is a reliable and efficient LED lighting solution designed to provide consistent illumination across residential, commercial, office, retail, and other indoor environments. Available in 20W, 30W, 40W, and 50W options, the BULB provides flexible choices for different lighting requirements and space sizes. Designed with an efficiency of ≥85% and a power factor of ≥0.90, with a target power factor of >0.95, it provides efficient electrical performance. Its Aluminium Metal Core PCB (MC-PCB) construction supports effective heat management and dependable LED performance. The bulb operates from 176–264 VAC with a rated input voltage of 220–240 VAC and is available in 6500K, with alternative 4000K and 3000K colour temperature options.",
+
+        // Main product images
+        image: "/product/bulb1.webp",
+
+        images: ["/product/bulb1.webp", "/product/bulb2.webp"],
+
+        // Wattage options
+        wattages: [
+          {
+            value: "20W",
+            image: "/product/bulb1.webp",
+            price: 0,
+          },
+          {
+            value: "30W",
+            image: "/product/bulb1.webp",
+            price: 0,
+          },
+          {
+            value: "40W",
+            image: "/product/bulb1.webp",
+            price: 0,
+          },
+          {
+            value: "50W",
+            image: "/product/bulb1.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          wattage: "20W / 30W / 40W / 50W",
+          Efficiency: "≥85%",
+          "Power Factor": "≥0.90",
+          "Target Power Factor": ">0.95",
+          "Input Voltage": "176–264 VAC",
+          "Rated Voltage": "220–240 VAC",
+          "Colour Temperature": "6500K",
+          "Alternative CCT": "4000K / 3000K",
+          THD: "<20%",
+          "THD Target": "<10%",
+          "Surge Protection": "2–4 kV Target",
+          "PCB Type": "Aluminium Metal Core PCB (MC-PCB)",
+          "Light Source": "LED",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Energy-Efficient LED Technology",
+            text: "The LED technology provides effective illumination while maintaining an efficiency of ≥85%, supporting energy-conscious lighting applications.",
+          },
+          {
+            title: "Wide Voltage Range",
+            text: "The bulb operates from 176–264 VAC with a rated input voltage of 220–240 VAC, providing flexibility for compatible electrical systems.",
+          },
+          {
+            title: "Multiple Colour Temperatures",
+            text: "Available in 6500K, with alternative 4000K and 3000K options, providing flexibility for different lighting preferences and interior environments.",
+          },
+          {
+            title: "Reliable Electrical Performance",
+            text: "The product features THD below 20%, a target THD below 10%, and a 2–4 kV surge protection target for dependable electrical operation.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops efficient LED lighting solutions designed for dependable performance across residential, commercial, office, retail, and other indoor applications.",
+          },
+          {
+            title: "Energy Savings",
+            text: "Efficient LED technology helps provide practical illumination while supporting controlled energy consumption for everyday lighting applications.",
+          },
+          {
+            title: "Flexible Options",
+            text: "Multiple wattages and colour temperatures make the BULB suitable for different lighting requirements, space sizes, and interior environments.",
+          },
+          {
+            title: "Reliable Construction",
+            text: "The Aluminium Metal Core PCB (MC-PCB) construction supports effective thermal management and consistent LED performance during regular operation.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/bulb2.webp",
+
+        // Additional product information
+        sku: "ELS-BULB",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/bulb-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "led-slim-panel-12w",
+          "led-slim-panel-18w",
+          "moveable-lens-cob-7w",
+          "moveable-lens-cob-9w",
+        ],
+      },
+      
+    ]
+  },
+
+  {
     id: 7,
     name: "Tengo Panel",
     slug: "tengo-panel",
@@ -2459,10 +2474,7 @@ export const categories = [
         // Main product images
         image: "/product/tengo1.webp",
 
-        images: [
-         "/product/tengo1.webp",
-         "/product/tengo2.webp",
-        ],
+        images: ["/product/tengo1.webp", "/product/tengo2.webp"],
 
         // Wattage options
         wattages: [
