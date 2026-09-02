@@ -1083,7 +1083,11 @@ export const categories = [
         // Main product images
         image: "/product/roundslim1.webp",
 
-        images: ["/product/roundslim1.webp", "/product/roundslim2.webp","/product/slimpanel3.webp"],
+        images: [
+          "/product/roundslim1.webp",
+          "/product/roundslim2.webp",
+          "/product/slimpanel3.webp",
+        ],
 
         // Wattage options
         wattages: [
@@ -1192,7 +1196,11 @@ export const categories = [
         // Main product images
         image: "/product/roundslim1.webp",
 
-        images: ["/product/roundslim1.webp", "/product/roundslim2.webp","/product/slimpanel3.webp"],
+        images: [
+          "/product/roundslim1.webp",
+          "/product/roundslim2.webp",
+          "/product/slimpanel3.webp",
+        ],
 
         // Wattage options
         wattages: [
@@ -1313,7 +1321,11 @@ export const categories = [
         // Main product images
         image: "/product/pcpanel1.webp",
 
-        images: ["/product/pcpanel1.webp", "/product/pcpanel2.webp","/product/pcpanelround.webp"],
+        images: [
+          "/product/pcpanel1.webp",
+          "/product/pcpanel2.webp",
+          "/product/pcpanelround.webp",
+        ],
 
         // Wattage options
         wattages: [
@@ -1422,7 +1434,11 @@ export const categories = [
         // Main product images
         image: "/product/pcpanel1.webp",
 
-        images: ["/product/pcpanel1.webp", "/product/pcpanel2.webp","/product/pcpanelround.webp"],
+        images: [
+          "/product/pcpanel1.webp",
+          "/product/pcpanel2.webp",
+          "/product/pcpanelround.webp",
+        ],
 
         // Wattage options
         wattages: [
@@ -1531,7 +1547,11 @@ export const categories = [
         // Main product images
         image: "/product/pcpanel1.webp",
 
-        images: ["/product/pcpanel1.webp", "/product/pcpanel2.webp","/product/pcpanelround.webp"],
+        images: [
+          "/product/pcpanel1.webp",
+          "/product/pcpanel2.webp",
+          "/product/pcpanelround.webp",
+        ],
 
         // Wattage options
         wattages: [
@@ -2479,7 +2499,7 @@ export const categories = [
         // Main product images
         image: "/product/tengo1.webp",
 
-        images: ["/product/tengo1.webp", "/product/tengo2.webp"],
+        images: ["/product/tengo1.webp", "/product/tengo2.webp","/product/Tangopanelback.webp"],
 
         // Wattage options
         wattages: [
