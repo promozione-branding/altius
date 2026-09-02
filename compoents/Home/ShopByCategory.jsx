@@ -364,7 +364,7 @@ export default function ShopByCategory() {
           {categories?.slice(0, 8).map((category, index) => (
             <Link
               href={`/categories/${category.slug}`}
-              key={category.title}
+              key={index}
               ref={(el) => {
                 cardsRef.current[index] = el;
               }}

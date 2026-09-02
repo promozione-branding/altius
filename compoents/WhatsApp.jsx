@@ -37,6 +37,8 @@ export default function WhatsApp() {
           justify-center
           rounded-full
           bg-black
+          border
+          border-white
           text-white
           shadow-lg
           transition-all
