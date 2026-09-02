@@ -223,7 +223,7 @@ export default function Parllel() {
                 {/* CTA */}
 
                 <Link
-                  href="/products"
+                  href="/categories"
                   className="
                     group/btn
                     mt-8

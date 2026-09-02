@@ -48,7 +48,7 @@ const products = [
   {
     name: "K Light",
     price: "$60.00",
-    image: "/product/K-light1.webp",
+    image: "/product/Klight1.webp",
     href:"/products/k-light"
   },
 ];

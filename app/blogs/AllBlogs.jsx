@@ -87,7 +87,7 @@ export default function AllBlogs() {
 
         <div className="absolute inset-0 z-0">
           <img
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuApYl8nK3QKeYM8cpCvFyWneTF3o8ZJRHGvtEUcNz7GfILd7F83OCyP3ThQ4NWUssZbgttF7EVXXdojPP5TK9qzqHPx4kmsLRvyffUSrP2vpiX5lxKEdcikuhTDFtzBu8l6mFk_7S1oY6rey6lXbeCVARQtOQbinc5RrMuDK0Uf92iWAMsJwv7e_AdltRPNYj_kzDGtQuqAnHSNqo5B0YOZLIiKQWXJxMdF1sz-lJjKTjyLEz6-N_KV"
+            src="https://images.unsplash.com/photo-1549924327-093737b3bb46?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Modern interior background"
             className="h-full w-full object-cover"
           />

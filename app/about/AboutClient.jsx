@@ -1,15 +1,19 @@
 "use client"
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import { FiArrowRight, FiClock, FiCompass, FiFeather } from "react-icons/fi";
 import LEDFeatures from "@/compoents/About/LEDFeatures";
 import Image from "next/image";
 import { GiDoubleStreetLights } from "react-icons/gi";
 import gsap from "gsap";
+import PopupForm from "@/compoents/PopupForm";
+import Link from "next/link";
 
 export default function AboutClient() {
 
   const sectionRef = useRef(null);
   const pathsRef = useRef([]);
+     const [open, setOpen] = useState(false);
+  
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -810,8 +814,8 @@ export default function AboutClient() {
 
           {/* Buttons */}
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a
-              href="#products"
+            <Link
+              href="/products"
               className="
                 group
                 flex
@@ -836,10 +840,10 @@ export default function AboutClient() {
             >
               Explore Collection
               <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
-            </a>
+            </Link>
 
-            <a
-              href="#contact"
+            <button
+            onClick={() => setOpen(true)}
               className="
                 flex
                 w-[70%]
@@ -861,11 +865,19 @@ export default function AboutClient() {
                 sm:w-auto
               "
             >
-              Contact Design Team
-            </a>
+              Contact Our Team
+            </button>
           </div>
         </div>
       </section>
+
+
+       {open && (
+        <PopupForm
+          isOpen={open}
+          onClose={() => setOpen(false)}
+        />
+      )}
     </>
   );
 }

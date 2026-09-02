@@ -7,6 +7,7 @@ import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 import { GrCatalog } from "react-icons/gr";
 import { usePathname } from "next/navigation";
 import { categories } from "@/Data/Data";
+import Link from "next/link";
 
 const navItems = [
   {
@@ -81,7 +82,7 @@ export default function Navbar() {
         }
       `}
     >
-      <nav className="mx-auto max-w-[1500px] py-5 px-5 sm:px-8 lg:px-10">
+      <nav className="mx-auto max-w-[1500px] py-2 px-5 sm:px-8 lg:px-10">
 
         {/* ================================
             MAIN NAV
@@ -91,7 +92,7 @@ export default function Navbar() {
 
           {/* LOGO */}
 
-          <a href="/" className="relative z-10 flex shrink-0 items-center">
+          <Link href="/" className="relative z-10 flex shrink-0 items-center">
             <Image
               src="/logo.jpeg"
               alt="elstrong"
@@ -100,7 +101,7 @@ export default function Navbar() {
               priority
               className="h-auto w-[75px] object-contain md:w-[93px]"
             />
-          </a>
+          </Link>
 
           {/* ================================
               DESKTOP NAV
@@ -153,7 +154,7 @@ export default function Navbar() {
 
                 {/* NAV LINK */}
 
-                <a
+                <Link
                   href={item.href}
                   className="
                     flex
@@ -180,7 +181,7 @@ export default function Navbar() {
                       "
                     />
                   )}
-                </a>
+                </Link>
 
                 {/* HOVER LINE */}
 
@@ -231,7 +232,7 @@ export default function Navbar() {
                     >
 
                       {shopCategories.map((category) => (
-                        <a
+                        <Link
                           href={category.href}
                           key={category.href}
                           className="
@@ -262,7 +263,7 @@ export default function Navbar() {
                           >
                             →
                           </span>
-                        </a>
+                        </Link>
                       ))}
 
                     </div>
@@ -366,7 +367,7 @@ export default function Navbar() {
                 {/* Normal Mobile Link */}
 
                 {!item.dropdown ? (
-                  <a
+                  <Link
                     href={item.href}
                     onClick={() => setMobileOpen(false)}
                     className="
@@ -384,7 +385,7 @@ export default function Navbar() {
                     "
                   >
                     <span>{item.name}</span>
-                  </a>
+                  </Link>
                 ) : (
 
                   /* Category Mobile Dropdown */
@@ -448,7 +449,7 @@ export default function Navbar() {
                       <div className="pb-3">
 
                         {shopCategories.map((category) => (
-                          <a
+                          <Link
                             key={category.href}
                             href={category.href}
                             onClick={() => setMobileOpen(false)}
@@ -471,7 +472,7 @@ export default function Navbar() {
                             <span className="text-neutral-300">
                               →
                             </span>
-                          </a>
+                          </Link>
                         ))}
 
                       </div>

@@ -1748,7 +1748,7 @@ export const categories = [
     id: 5,
     name: "Outdoor Lights",
     slug: "outdoor-lights",
-    image: "/K-light.webp",
+    image: "/product/Klight1.webp",
     description:
       "ELSTRONG Outdoor Lights are designed to provide reliable and efficient illumination for exterior environments, including pathways, façades, entrances, gardens, and commercial outdoor areas.",
     products: [
@@ -1773,9 +1773,9 @@ export const categories = [
           "The ELSTRONG Half K Light OL001 is a modern and compact LED lighting solution designed to provide focused illumination for outdoor, architectural, and decorative applications. Available in 3W and 5W options, the Half K Light provides flexible lighting choices for different brightness requirements and installation environments. It is available in CW (Cool White), NW (Natural White), and WW (Warm White), allowing users to select the desired lighting appearance. Its distinctive half-K design combines decorative appeal with practical illumination, making it suitable for walls, pathways, architectural details, gardens, entrances, landscapes, and other outdoor features.",
 
         // Main product images
-        image: "/product/Klight1.webp",
+        image: "/product/HalfkLight1.webp",
 
-        images: ["/product/Klight1.webp", "/product/Klight2.webp"],
+        images: ["/product/HalfkLight1.webp", "/product/HalfkLight2.webp"],
 
         // Wattage options
         wattages: [
@@ -1842,7 +1842,7 @@ export const categories = [
         ],
 
         // Image used in description section
-        descriptionImage: "/product/Klight2.webp",
+        descriptionImage: "/product/HalfkLight2.webp",
 
         // Additional product information
         sku: "ELS-OL001",
@@ -2212,9 +2212,9 @@ export const categories = [
           "The ELSTRONG Angled K Light EL005 is a modern and versatile LED lighting solution designed to provide focused and decorative illumination for architectural, outdoor, landscape, and accent lighting applications. Available in 3W, 5W, and 10W options, the K Light provides flexibility for different illumination levels and installation requirements. It is available in Cool White and Warm White, allowing users to select the desired lighting appearance for different architectural and decorative environments. Its angled lighting configuration helps direct illumination toward selected surfaces and features, making it suitable for façades, walls, entrances, pathways, gardens, landscapes, and other outdoor architectural installations.",
 
         // Main product images
-        image: "/product/K-light1.webp",
+        image: "/product/Klight1.webp",
 
-        images: ["/product/K-light1.webp", "/product/K-light2.webp"],
+        images: ["/product/Klight1.webp", "/product/Klight2.webp"],
 
         // Wattage options
         wattages: [
@@ -2286,7 +2286,7 @@ export const categories = [
         ],
 
         // Image used in description section
-        descriptionImage: "/product/K-light2.webp",
+        descriptionImage: "/product/Klight2.webp",
 
         // Additional product information
         sku: "ELS-EL005",

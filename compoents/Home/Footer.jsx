@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import {
   FiArrowUpRight,
@@ -304,13 +305,12 @@ export default function Footer() {
             <ul className="space-y-4">
               {[
                 ["About Us", "/about"],
-                ["Our Story", "/our-story"],
-                ["Projects", "/projects"],
+                ["Products", "/products"],
                 ["Contact", "/contact"],
-                ["Careers", "/careers"],
+                ["Blogs", "/blogs"],
               ].map(([label, href]) => (
                 <li key={label}>
-                  <a
+                  <Link
                     href={href}
                     className="
                       group
@@ -336,7 +336,7 @@ export default function Footer() {
                         group-hover:opacity-100
                       "
                     />
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -362,14 +362,14 @@ export default function Footer() {
 
             <ul className="space-y-4">
               {[
-                ["LED Lighting", "/led-lighting"],
-                ["Industrial Lighting", "/industrial-lighting"],
-                ["Commercial Lighting", "/commercial-lighting"],
-                ["Architectural Lighting", "/architectural-lighting"],
-                ["Smart Lighting", "/smart-lighting"],
+                ["Concealed Lights", "/categories/concealed-lights"],
+                ["COB Lens Model", "/categories/cob-lens-model"],
+                ["LED Slim Panel", "/categories/led-slim-panel"],
+                ["PC Panel", "/categories/pc-panel"],
+                ["Outdoor Lights", "/categories/outdoor-lights"],
               ].map(([label, href]) => (
                 <li key={label}>
-                  <a
+                  <Link
                     href={href}
                     className="
                       group
@@ -395,7 +395,7 @@ export default function Footer() {
                         group-hover:opacity-100
                       "
                     />
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -421,14 +421,14 @@ export default function Footer() {
 
             <ul className="space-y-4">
               {[
-                ["FAQs", "/faq"],
-                ["Shipping & Delivery", "/shipping"],
-                ["Privacy Policy", "/privacy-policy"],
-                ["Terms & Conditions", "/terms"],
-                ["Return Policy", "/return-policy"],
+                ["FAQs", "/"],
+                ["Shipping & Delivery", "/"],
+                ["Privacy Policy", "/"],
+                ["Terms & Conditions", "/"],
+                ["Return Policy", "/"],
               ].map(([label, href]) => (
                 <li key={label}>
-                  <a
+                  <Link
                     href={href}
                     className="
                       group
@@ -454,7 +454,7 @@ export default function Footer() {
                         group-hover:opacity-100
                       "
                     />
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

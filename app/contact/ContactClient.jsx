@@ -1,5 +1,6 @@
 "use client";
-import React from "react";
+import PopupForm from "@/compoents/PopupForm";
+import React, { useState } from "react";
 import { FaLightbulb } from "react-icons/fa";
 import {
   FiMapPin,
@@ -11,6 +12,8 @@ import {
 } from "react-icons/fi";
 
 export default function ContactClient() {
+     const [open, setOpen] = useState(false);
+
   return (
     <>
       <section className="bg-gray-300/40 relative mt-20 px-6 py-6 md:px-12 md:py-14">
@@ -74,12 +77,12 @@ export default function ContactClient() {
             <span className="block text-[#85a30f]">Your Space.</span>
           </h1>
 
-          <a
-            href="#contact-form"
+          <button
+            onClick={() => setOpen(true)}
             className="mt-9 rounded-full flex justify-center gap-2 items-center bg-[#85a30f] text-sm px-5 md:px-8 py-4 md:text-lg font-semibold text-white transition-all duration-300 hover:bg-black"
           >
             Get Lights <FaLightbulb />
-          </a>
+          </button>
         </div>
       </section>
       <section className="bg-white px-5 py-6 sm:px-8 md:px-12 md:py-14">
@@ -394,6 +397,12 @@ export default function ContactClient() {
           </div>
         </div>
       </section>
+       {open && (
+        <PopupForm
+          isOpen={open}
+          onClose={() => setOpen(false)}
+        />
+      )}
     </>
   );
 }
