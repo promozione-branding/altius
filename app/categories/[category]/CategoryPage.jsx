@@ -96,7 +96,7 @@ export default function CategoryPage({ categoryData }) {
 
       <section className="mx-auto max-w-[1600px] px-5 pb-10 sm:px-8 md:px-12 lg:px-16">
         {products.length > 0 ? (
-          <div className="grid grid-cols-1 gap-x-6 gap-y-16 sm:grid-cols-2 md:grid-cols-4">
+          <div className="grid grid-cols-1 gap-x-6 gap-y-16 sm:grid-cols-2 md:grid-cols-5">
             {products.map((product) => (
               <Link
                 key={product.id}
