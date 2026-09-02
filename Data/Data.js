@@ -2178,7 +2178,7 @@ export const categories = [
         // Main product images
         image: "/product/Klight1.webp",
 
-        images: ["/product/Klight1.webp", "/product/Klight2.webp","/product/KLight3.webp"],
+        images: ["/product/Klight1.webp", "/product/Klight2.webp","/product/Klight33.webp"],
 
         // Wattage options
         wattages: [

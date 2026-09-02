@@ -285,10 +285,10 @@ export default function ProductClient({ product }) {
             {product.wattages?.length > 0 && (
               <div className="mb-8">
                 <h3 className="mb-4 text-sm font-semibold uppercase tracking-[0.15em] text-gray-900">
-                  Select Wattage
+                  Available Wattage
                 </h3>
 
-                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
                   {product.wattages.map((watt) => {
                     const isSelected = selectedWattage === watt.value;
 
