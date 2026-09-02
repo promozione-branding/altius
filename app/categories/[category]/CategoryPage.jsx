@@ -96,12 +96,12 @@ export default function CategoryPage({ categoryData }) {
 
       <section className="mx-auto max-w-[1600px] px-5 pb-10 sm:px-8 md:px-12 lg:px-16">
         {products.length > 0 ? (
-          <div className="grid grid-cols-1 gap-x-6 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-x-6 gap-y-16 sm:grid-cols-2 md:grid-cols-4">
             {products.map((product) => (
               <Link
                 key={product.id}
                 href={`/products/${product.slug}`}
-                className="group block"
+                className="group block h-full max-w-[360px]"
               >
                 {/* Product Image */}
 

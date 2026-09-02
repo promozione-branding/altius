@@ -14,8 +14,9 @@ import Testimonials from "@/compoents/Home/Testimonials";
 import CTA2 from "@/compoents/Home/CTA2";
 import Scroll from "@/compoents/Home/Scroll";
 import Collections2 from "@/compoents/Home/Collections2";
-import CurvedLoop from "@/compoents/ui/CurvedLoop";
+// import CurvedLoop from "@/compoents/ui/CurvedLoop";
 import Parllel from "@/compoents/Home/Parllel";
+// import HangingLight from "@/compoents/ui/HangingLight";
 
 export default function page() {
   return (
@@ -31,6 +32,12 @@ export default function page() {
       <WhyChooseUs />
       {/* <Collections/> */}
       <Collections2 />
+      {/* <HangingLight
+  ropeLength={130}
+  fixtureColor="#111"
+  lightColor="#fff8dc"
+  lightIntensity={0.8}
+/> */}
       <Form />
       <Faq />
       <Testimonials />
