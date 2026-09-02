@@ -181,7 +181,7 @@ export default function ProductClient({ product }) {
                         <img
                           src={image}
                           alt={`${product.name} thumbnail ${index + 1}`}
-                          className=" h-full w-full object-contain p-2 transition-transform duration-300 hover:scale-105 "
+                          className=" h-full w-full object-contain  transition-transform duration-300 hover:scale-105 "
                         />{" "}
                       </button>
                     );

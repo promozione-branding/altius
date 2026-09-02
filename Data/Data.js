@@ -1083,7 +1083,7 @@ export const categories = [
         // Main product images
         image: "/product/roundslim1.webp",
 
-        images: ["/product/roundslim1.webp", "/product/roundslim2.webp"],
+        images: ["/product/roundslim1.webp", "/product/roundslim2.webp","/product/slimpanel3.webp"],
 
         // Wattage options
         wattages: [
@@ -1192,7 +1192,7 @@ export const categories = [
         // Main product images
         image: "/product/roundslim1.webp",
 
-        images: ["/product/roundslim1.webp", "/product/roundslim2.webp"],
+        images: ["/product/roundslim1.webp", "/product/roundslim2.webp","/product/slimpanel3.webp"],
 
         // Wattage options
         wattages: [
