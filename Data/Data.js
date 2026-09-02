@@ -1313,7 +1313,7 @@ export const categories = [
         // Main product images
         image: "/product/pcpanel1.webp",
 
-        images: ["/product/pcpanel1.webp", "/product/pcpanel2.webp"],
+        images: ["/product/pcpanel1.webp", "/product/pcpanel2.webp","/product/pcpanelround.webp"],
 
         // Wattage options
         wattages: [
@@ -1422,7 +1422,7 @@ export const categories = [
         // Main product images
         image: "/product/pcpanel1.webp",
 
-        images: ["/product/pcpanel1.webp", "/product/pcpanel2.webp"],
+        images: ["/product/pcpanel1.webp", "/product/pcpanel2.webp","/product/pcpanelround.webp"],
 
         // Wattage options
         wattages: [
@@ -1531,7 +1531,7 @@ export const categories = [
         // Main product images
         image: "/product/pcpanel1.webp",
 
-        images: ["/product/pcpanel1.webp", "/product/pcpanel2.webp"],
+        images: ["/product/pcpanel1.webp", "/product/pcpanel2.webp","/product/pcpanelround.webp"],
 
         // Wattage options
         wattages: [
