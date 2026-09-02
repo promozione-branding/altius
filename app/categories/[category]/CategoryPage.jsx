@@ -1,13 +1,12 @@
-"use client"
+"use client";
 import PopupForm from "@/compoents/PopupForm";
 import Link from "next/link";
 import { useState } from "react";
 
 export default function CategoryPage({ categoryData }) {
-     const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const products = categoryData.products || [];
-
 
   return (
     <main className="mt-25 bg-[#f8f8f5] text-[#171714]">
@@ -183,12 +182,7 @@ export default function CategoryPage({ categoryData }) {
         </div>
       </section>
 
-        {open && (
-        <PopupForm
-          isOpen={open}
-          onClose={() => setOpen(false)}
-        />
-      )}
+      {open && <PopupForm isOpen={open} onClose={() => setOpen(false)} />}
     </main>
   );
 }

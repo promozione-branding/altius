@@ -501,7 +501,7 @@ export const categories = [
     name: "COB Lens Model",
     slug: "cob-lens-model",
     image: "/coblensmodel.webp",
-        hoverImage: "/product/coblensmodel2.webp",
+    hoverImage: "/product/coblensmodel2.webp",
 
     description:
       "ELSTRONG COB Lens Model delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
@@ -830,7 +830,7 @@ export const categories = [
     name: "LED Slim Panel",
     slug: "led-slim-panel",
     image: "/slimsquarepanel.webp",
-        hoverImage: "/product/slimsquarepanel2.webp",
+    hoverImage: "/product/slimsquarepanel2.webp",
 
     description:
       "ELSTRONG LED Slim Panels provide bright, uniform illumination in an ultra-thin and modern design, making them ideal for spaces where a clean ceiling finish is required.",
@@ -1083,10 +1083,7 @@ export const categories = [
         // Main product images
         image: "/product/roundslim1.webp",
 
-        images: [
-          "/product/roundslim1.webp",
-          "/product/roundslim2.webp",
-        ],
+        images: ["/product/roundslim1.webp", "/product/roundslim2.webp"],
 
         // Wattage options
         wattages: [
@@ -1195,10 +1192,7 @@ export const categories = [
         // Main product images
         image: "/product/roundslim1.webp",
 
-        images: [
-          "/product/roundslim1.webp",
-          "/product/roundslim2.webp",
-        ],
+        images: ["/product/roundslim1.webp", "/product/roundslim2.webp"],
 
         // Wattage options
         wattages: [
@@ -1283,8 +1277,6 @@ export const categories = [
           "moveable-lens-cob-9w",
         ],
       },
-
-     
     ],
   },
 
@@ -1293,7 +1285,7 @@ export const categories = [
     name: "PC Panel",
     slug: "pc-panel",
     image: "/pcpanel.webp",
-        hoverImage: "/product/pcpanel2.webp",
+    hoverImage: "/product/pcpanel2.webp",
 
     description:
       "ELSTRONG PC Panels provide soft, uniform illumination with a clean and lightweight design, making them suitable for a wide range of indoor lighting applications.",
@@ -1632,7 +1624,7 @@ export const categories = [
     name: "Outdoor Lights",
     slug: "outdoor-lights",
     image: "/product/Klight1.webp",
-            hoverImage: "/product/Klight2.webp",
+    hoverImage: "/product/Klight2.webp",
 
     description:
       "ELSTRONG Outdoor Lights are designed to provide reliable and efficient illumination for exterior environments, including pathways, façades, entrances, gardens, and commercial outdoor areas.",
@@ -2198,7 +2190,7 @@ export const categories = [
     name: "Striker",
     slug: "striker",
     image: "/striker.webp",
-        hoverImage: "/product/striker2.webp",
+    hoverImage: "/product/striker2.webp",
 
     description:
       "ELSTRONG Striker lighting solutions are designed to provide focused and effective illumination with a modern, functional appearance.",
@@ -2320,19 +2312,18 @@ export const categories = [
     name: "Bulb",
     slug: "bulb",
     image: "/product/bulb1.webp",
-            hoverImage: "/product/bulb2.webp",
+    hoverImage: "/product/bulb2.webp",
 
     description:
       "ELSTRONG PC Panels provide soft, uniform illumination with a clean and lightweight design, making them suitable for a wide range of indoor lighting applications.",
     products: [
-
-       {
+      {
         id: 112,
         name: "Bulb",
         slug: "bulb",
 
-        category:"Bulb",
-        categorySlug:"bulb",
+        category: "Bulb",
+        categorySlug: "bulb",
 
         price: 0,
         oldPrice: 0,
@@ -2452,8 +2443,7 @@ export const categories = [
           "moveable-lens-cob-9w",
         ],
       },
-      
-    ]
+    ],
   },
 
   {
@@ -2461,7 +2451,7 @@ export const categories = [
     name: "Tengo Panel",
     slug: "tengo-panel",
     image: "/tengo.webp",
-            hoverImage: "/product/tengo2.webp",
+    hoverImage: "/product/tengo2.webp",
 
     description:
       "ELSTRONG Tengo Panels deliver bright and uniform illumination through a slim, contemporary design that blends naturally with modern ceilings and interiors.",

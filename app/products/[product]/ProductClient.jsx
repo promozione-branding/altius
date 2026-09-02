@@ -17,26 +17,30 @@ import PopupForm from "@/compoents/PopupForm";
 
 const relatedProducts = [
   {
-    name: "Outdoor Light",
-    image: "/OutdoorLight.webp",
+    name: "Cylinder Light",
+    href: "/products/cylinder-light",
+    image: "/product/CylinderLight1.webp",
   },
   {
-    name: "Flood Light",
-    image: "/FloodLight.webp",
+    name: "Round Slim Panel 12W",
+    href: "/products/round-slim-panel-12w",
+    image: "/product/roundslim1.webp",
   },
   {
-    name: "Flood Light",
-    image: "/FloodLight.webp",
+    name: "Tengo Panel",
+    href: "/products/tengo-panel",
+    image: "/product/tengo1.webp",
   },
   {
-    name: "Downlight Led",
-    image: "/COBLEDDownlight.webp",
+    name: "Wall Light",
+    href: "/products/wall-light",
+    image: "/product/wallLight1.webp",
   },
 ];
 
 export default function ProductClient({ product }) {
   const [selectedImage, setSelectedImage] = useState(0);
-   const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("description");
 
   const [selectedWattage, setSelectedWattage] = useState(
@@ -50,7 +54,6 @@ export default function ProductClient({ product }) {
       </main>
     );
   }
-
 
   const selectedWattageData = product.wattages?.find(
     (item) => item.value === selectedWattage,
@@ -94,21 +97,21 @@ export default function ProductClient({ product }) {
             PRODUCT SECTION
         ====================================================== */}
 
-     <div className="mb-20 grid grid-cols-1 gap-8 md:grid-cols-12 md:gap-5">
-  {/* =================================================
+        <div className="mb-20 grid grid-cols-1 gap-8 md:grid-cols-12 md:gap-5">
+          {/* =================================================
       IMAGE GALLERY
   ================================================== */}
 
-  <div className="flex flex-col gap-4 md:col-span-5">
-    {/* ================= MAIN IMAGE ================= */}
+          <div className="flex flex-col gap-4 md:col-span-5">
+            {/* ================= MAIN IMAGE ================= */}
 
-    <div className="relative flex aspect-square w-full items-center justify-center overflow-hidden bg-gray-50">
-      {product.images?.length > 0 ? (
-        <img
-          key={selectedImage}
-          src={product.images[selectedImage]}
-          alt={`${product.name} image ${selectedImage + 1}`}
-          className="
+            <div className="relative flex aspect-square w-full items-center justify-center overflow-hidden bg-gray-50">
+              {product.images?.length > 0 ? (
+                <img
+                  key={selectedImage}
+                  src={product.images[selectedImage]}
+                  alt={`${product.name} image ${selectedImage + 1}`}
+                  className="
             h-auto
             w-auto
             max-h-full
@@ -116,150 +119,188 @@ export default function ProductClient({ product }) {
             object-contain
             animate-wattage-change
           "
-        />
-      ) : (
-        <div className="flex h-full w-full items-center justify-center text-sm text-gray-400">
-          No image available
-        </div>
-      )}
-    </div>
+                />
+              ) : (
+                <div className="flex h-full w-full items-center justify-center text-sm text-gray-400">
+                  No image available
+                </div>
+              )}
+            </div>
 
-    {/* ================= THUMBNAILS ================= */}
+            {/* ================= THUMBNAILS ================= */}
 
-    {product.images?.length > 0 && (
-      <div className="grid grid-cols-3 gap-3 sm:gap-4">
-        {product.images.map((image, index) => {
-          const isSelected = selectedImage === index;
+            {product.images?.length > 0 && (
+              <div className="relative w-full">
+                {" "}
+                {/* Left Arrow */}{" "}
+                <button
+                  type="button"
+                  onClick={() => {
+                    document
+                      .getElementById("product-thumbnails")
+                      ?.scrollBy({ left: -200, behavior: "smooth" });
+                  }}
+                  className=" absolute left-1 top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-md border border-gray-200 transition hover:bg-gray-50 hover:shadow-lg "
+                  aria-label="Previous images"
+                >
+                  {" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    {" "}
+                    <path d="m15 18-6-6 6-6" />{" "}
+                  </svg>{" "}
+                </button>{" "}
+                {/* Thumbnails */}{" "}
+                <div
+                  id="product-thumbnails"
+                  className=" flex gap-3 overflow-x-auto overflow-y-hidden scroll-smooth px-11 py-1 sm:gap-4 scrollbar-hide "
+                  style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+                >
+                  {" "}
+                  {product.images.map((image, index) => {
+                    const isSelected = selectedImage === index;
+                    return (
+                      <button
+                        key={`${image}-${index}`}
+                        type="button"
+                        onClick={() => setSelectedImage(index)}
+                        aria-label={`View image ${index + 1}`}
+                        aria-pressed={isSelected}
+                        className={` relative h-24 w-24 flex-shrink-0 overflow-hidden border bg-gray-50 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#85a30f] focus:ring-offset-2 sm:h-28 sm:w-28 ${isSelected ? "border-[#85a30f] ring-1 ring-[#85a30f]" : "border-gray-200 hover:border-[#85a30f]"} `}
+                      >
+                        {" "}
+                        <img
+                          src={image}
+                          alt={`${product.name} thumbnail ${index + 1}`}
+                          className=" h-full w-full object-contain p-2 transition-transform duration-300 hover:scale-105 "
+                        />{" "}
+                      </button>
+                    );
+                  })}{" "}
+                </div>{" "}
+                {/* Right Arrow */}{" "}
+                <button
+                  type="button"
+                  onClick={() => {
+                    document
+                      .getElementById("product-thumbnails")
+                      ?.scrollBy({ left: 200, behavior: "smooth" });
+                  }}
+                  className=" absolute right-1 top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-md border border-gray-200 transition hover:bg-gray-50 hover:shadow-lg "
+                  aria-label="Next images"
+                >
+                  {" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    {" "}
+                    <path d="m9 18 6-6-6-6" />{" "}
+                  </svg>{" "}
+                </button>{" "}
+              </div>
+            )}
+          </div>
 
-          return (
-            <button
-              key={`${image}-${index}`}
-              type="button"
-              onClick={() => setSelectedImage(index)}
-              aria-label={`View image ${index + 1}`}
-              aria-pressed={isSelected}
-              className={`
-                relative
-                aspect-square
-                overflow-hidden
-                border
-                bg-gray-50
-                transition-all
-                duration-300
-                focus:outline-none
-                focus:ring-2
-                focus:ring-[#85a30f]
-                focus:ring-offset-2
-                ${
-                  isSelected
-                    ? "border-[#85a30f] ring-1 ring-[#85a30f]"
-                    : "border-gray-200 hover:border-[#85a30f]"
-                }
-              `}
-            >
-              <img
-                src={image}
-                alt={`${product.name} thumbnail ${index + 1}`}
-                className="
-                  h-full
-                  w-full
-                  object-contain
-                  p-2
-                  transition-transform
-                  duration-300
-                  hover:scale-105
-                "
-              />
-            </button>
-          );
-        })}
-      </div>
-    )}
-  </div>
-
-  {/* =================================================
+          {/* =================================================
       PRODUCT DETAILS
   ================================================== */}
 
-  <div className="flex flex-col p-6 shadow-2xl sm:p-8 md:col-span-7 md:p-10">
-    {/* ================= TITLE ================= */}
+          <div className="flex flex-col p-6 shadow-2xl sm:p-8 md:col-span-7 md:p-10">
+            {/* ================= TITLE ================= */}
 
-    <div className="mb-4 flex items-start justify-between gap-4">
-      <h1 className="inter text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-        {product.name}
-      </h1>
-    </div>
+            <div className="mb-4 flex items-start justify-between gap-4">
+              <h1 className="inter text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+                {product.name}
+              </h1>
+            </div>
 
-    {/* ================= DESCRIPTION ================= */}
+            {/* ================= DESCRIPTION ================= */}
 
-    {product.shortDescription && (
-      <p className="mb-7 max-w-xl text-sm leading-6 text-gray-600 sm:text-lg">
-        {product.shortDescription}
-      </p>
-    )}
+            {product.shortDescription && (
+              <p className="mb-7 max-w-xl text-sm leading-6 text-gray-600 sm:text-lg">
+                {product.shortDescription}
+              </p>
+            )}
 
-    {/* ================= KEY FEATURES ================= */}
+            {/* ================= KEY FEATURES ================= */}
 
-    {product.features?.length > 0 && (
-      <div className="mb-10 border-t border-gray-200 pt-6">
-        <h3 className="mb-5 text-sm font-semibold uppercase tracking-[0.15em] text-gray-900">
-          Key Features
-        </h3>
+            {product.features?.length > 0 && (
+              <div className="mb-10 border-t border-gray-200 pt-6">
+                <h3 className="mb-5 text-sm font-semibold uppercase tracking-[0.15em] text-gray-900">
+                  Key Features
+                </h3>
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          {product.features.map((feature, index) => {
-            const icons = [
-              LuZap,
-              LuTimer,
-              LuShieldCheck,
-              LuLayers,
-              LuBatteryCharging,
-            ];
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  {product.features.map((feature, index) => {
+                    const icons = [
+                      LuZap,
+                      LuTimer,
+                      LuShieldCheck,
+                      LuLayers,
+                      LuBatteryCharging,
+                    ];
 
-            const Icon = icons[index % icons.length];
+                    const Icon = icons[index % icons.length];
 
-            return (
-              <div
-                key={`${feature.title}-${index}`}
-                className="flex items-start gap-3"
-              >
-                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#85a30f] text-white">
-                  <Icon size={21} />
-                </div>
+                    return (
+                      <div
+                        key={`${feature.title}-${index}`}
+                        className="flex items-start gap-3"
+                      >
+                        <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#85a30f] text-white">
+                          <Icon size={21} />
+                        </div>
 
-                <div className="flex min-h-10 items-center">
-                  <p className="text-sm font-medium text-gray-900">
-                    {feature.title}
-                  </p>
+                        <div className="flex min-h-10 items-center">
+                          <p className="text-sm font-medium text-gray-900">
+                            {feature.title}
+                          </p>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
-            );
-          })}
-        </div>
-      </div>
-    )}
+            )}
 
-    {/* ================= WATTAGE ================= */}
+            {/* ================= WATTAGE ================= */}
 
-    {product.wattages?.length > 0 && (
-      <div className="mb-8">
-        <h3 className="mb-4 text-sm font-semibold uppercase tracking-[0.15em] text-gray-900">
-          Select Wattage
-        </h3>
+            {product.wattages?.length > 0 && (
+              <div className="mb-8">
+                <h3 className="mb-4 text-sm font-semibold uppercase tracking-[0.15em] text-gray-900">
+                  Select Wattage
+                </h3>
 
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-          {product.wattages.map((watt) => {
-            const isSelected = selectedWattage === watt.value;
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+                  {product.wattages.map((watt) => {
+                    const isSelected = selectedWattage === watt.value;
 
-            return (
-              <button
-                key={watt.value}
-                type="button"
-                onClick={() => {
-                  setSelectedWattage(watt.value);
-                }}
-                aria-pressed={isSelected}
-                className={`
+                    return (
+                      <button
+                        key={watt.value}
+                        type="button"
+                        onClick={() => {
+                          setSelectedWattage(watt.value);
+                        }}
+                        aria-pressed={isSelected}
+                        className={`
                   relative
                   flex
                   h-[76px]
@@ -280,12 +321,12 @@ export default function ProductClient({ product }) {
                       : "border-gray-200 bg-white text-gray-900 hover:border-[#85a30f] hover:shadow-sm"
                   }
                 `}
-              >
-                {/* Selected Indicator */}
+                      >
+                        {/* Selected Indicator */}
 
-                {isSelected && (
-                  <span
-                    className="
+                        {isSelected && (
+                          <span
+                            className="
                       absolute
                       right-2.5
                       top-2.5
@@ -294,31 +335,31 @@ export default function ProductClient({ product }) {
                       rounded-full
                       bg-white
                     "
-                  />
-                )}
+                          />
+                        )}
 
-                {/* Wattage */}
+                        {/* Wattage */}
 
-                <span className="text-lg font-semibold">
-                  {watt.value}
-                </span>
-              </button>
-            );
-          })}
-        </div>
-      </div>
-    )}
+                        <span className="text-lg font-semibold">
+                          {watt.value}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
 
-    {/* ================= ACTIONS ================= */}
+            {/* ================= ACTIONS ================= */}
 
-    <div className="mb-8 mt-auto flex flex-col gap-3">
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-        {/* ================= GET QUOTE ================= */}
+            <div className="mb-8 mt-auto flex flex-col gap-3">
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                {/* ================= GET QUOTE ================= */}
 
-        <button
-          type="button"
-           onClick={() => setOpen(true)}
-          className="
+                <button
+                  type="button"
+                  onClick={() => setOpen(true)}
+                  className="
             flex
             h-12
             items-center
@@ -337,25 +378,25 @@ export default function ProductClient({ product }) {
             hover:bg-[#85a30f]
             hover:text-white
           "
-        >
-          Get Quote
-        </button>
+                >
+                  Get Quote
+                </button>
 
-        {/* ================= WHATSAPP ================= */}
+                {/* ================= WHATSAPP ================= */}
 
-        <a
-          href={`https://wa.me/919999999999?text=${encodeURIComponent(
-            `Hello, I am interested in ${product.name}${
-              selectedWattage ? ` (${selectedWattage})` : ""
-            }${
-              selectedWattageData?.price
-                ? ` priced at ₹${selectedWattageData.price}`
-                : ""
-            }.`,
-          )}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="
+                <a
+                  href={`https://wa.me/919999999999?text=${encodeURIComponent(
+                    `Hello, I am interested in ${product.name}${
+                      selectedWattage ? ` (${selectedWattage})` : ""
+                    }${
+                      selectedWattageData?.price
+                        ? ` priced at ₹${selectedWattageData.price}`
+                        : ""
+                    }.`,
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
             flex
             h-12
             items-center
@@ -375,17 +416,17 @@ export default function ProductClient({ product }) {
             hover:bg-[#85a30f]
             hover:text-white
           "
-        >
-          WhatsApp
-        </a>
-      </div>
+                >
+                  WhatsApp
+                </a>
+              </div>
 
-      {/* ================= BROCHURE ================= */}
+              {/* ================= BROCHURE ================= */}
 
-      <a
-        href="/brochure/product-brochure.pdf"
-        download
-        className="
+              <a
+                href="/brochure/product-brochure.pdf"
+                download
+                className="
           flex
           h-12
           w-full
@@ -402,12 +443,12 @@ export default function ProductClient({ product }) {
           duration-300
           hover:bg-[#85a30f]
         "
-      >
-        Download Brochure
-      </a>
-    </div>
-  </div>
-</div>
+              >
+                Download Brochure
+              </a>
+            </div>
+          </div>
+        </div>
 
         {/* =====================================================
             PRODUCT TABS
@@ -670,7 +711,11 @@ export default function ProductClient({ product }) {
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {relatedProducts.map((item, index) => (
-              <div key={index} className="group cursor-pointer">
+              <Link
+                href={item.href}
+                key={index}
+                className="group cursor-pointer"
+              >
                 <div className="relative mb-4 aspect-square overflow-hidden bg-gray-50">
                   <img
                     src={item.image}
@@ -695,7 +740,7 @@ export default function ProductClient({ product }) {
                     {item.name}
                   </h3>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>
@@ -703,13 +748,7 @@ export default function ProductClient({ product }) {
 
       <CTA2 />
 
-
-       {open && (
-        <PopupForm
-          isOpen={open}
-          onClose={() => setOpen(false)}
-        />
-      )}
+      {open && <PopupForm isOpen={open} onClose={() => setOpen(false)} />}
     </>
   );
 }
