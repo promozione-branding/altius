@@ -215,7 +215,7 @@ export const categories = [
         specifications: {
           wattage: "9W",
           "Lumen Output": "<600 lm",
-          "Output Size": "110mm",
+          "Outer Dia": "110mm",
           "Cutout Size": "70mm",
           Height: "45mm",
           "Operating Voltage": "85–280V AC",
@@ -326,7 +326,7 @@ export const categories = [
         specifications: {
           wattage: "7W",
           "Lumen Output": "<600 lm",
-          "Output Size": "110mm",
+          "Outer Dia": "110mm",
           "Cutout Size": "70mm",
           Height: "45mm",
           "Operating Voltage": "85–280V AC",
@@ -437,7 +437,7 @@ export const categories = [
         specifications: {
           wattage: "5W",
           "Lumen Output": "<600 lm",
-          "Output Size": "110mm",
+          "Outer Dia": "110mm",
           "Cutout Size": "70mm",
           Height: "45mm",
           "Operating Voltage": "85–280V AC",
@@ -560,7 +560,7 @@ export const categories = [
         specifications: {
           wattage: "5W",
           "Lumen Output": "<600 lm",
-          "Output Size": "70mm",
+          "Outer Dia": "70mm",
           "Cutout Size": "40mm",
           Height: "40mm",
           "Operating Voltage": "85V–350V",
@@ -664,7 +664,7 @@ export const categories = [
         specifications: {
           wattage: "7W",
           "Lumen Output": "<600 lm",
-          "Output Size": "106mm",
+          "Outer Dia": "106mm",
           "Cutout Size": "75mm",
           Height: "47mm",
           "Operating Voltage": "85V–350V",
@@ -768,7 +768,7 @@ export const categories = [
         specifications: {
           wattage: "9W",
           "Lumen Output": "<600 lm",
-          "Output Size": "128mm",
+          "Outer Dia": "128mm",
           "Cutout Size": "98mm",
           Height: "55mm",
           "Operating Voltage": "85V–350V",
@@ -908,7 +908,7 @@ export const categories = [
         specifications: {
           wattage: "3W",
           "Lumen Output": "<300 lm",
-          "Output Size": "85mm",
+          "Outer Dia": "85mm",
           "Cutout Size": "70mm",
           Height: "22mm",
           "Operating Voltage": "110V–280V",
@@ -1149,7 +1149,7 @@ export const categories = [
         specifications: {
           wattage: "12W",
           "Lumen Output": "<1200 lm",
-          "Output Size": "170mm",
+          "Outer Dia": "170mm",
           "Cutout Size": "150mm",
           Height: "25mm",
           "Operating Voltage": "110V–280V",
