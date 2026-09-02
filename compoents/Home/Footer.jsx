@@ -11,6 +11,8 @@ import {
   FiMail,
   FiPhone,
   FiMapPin,
+  FiPhoneCall,
+  FiSmartphone,
 } from "react-icons/fi";
 
 export default function Footer() {
@@ -133,7 +135,8 @@ export default function Footer() {
                 max-w-sm
                 text-sm
                 leading-7
-                text-white/45
+                text-white
+                hover:text-white/45
               "
             >
               Premium LED lighting solutions created to bring performance,
@@ -143,51 +146,62 @@ export default function Footer() {
             {/* Contact */}
 
             <div className="mt-7 space-y-4">
+              {/* Email */}
               <a
-                href="mailto:elstrong@email.com"
-                className="
-                  flex
-                  items-center
-                  gap-3
-                  text-sm
-                  text-white/50
-                  transition-colors
-                  hover:text-[#85a30f]
-                "
+                href="mailto:altiuslightings@gmail.com"
+                className="flex items-center gap-3 text-sm text-white transition-colors hover:text-[#85a30f]"
               >
-                <FiMail size={16} className="text-[#85a30f]" />
-                elstrong@email.com
+                <FiMail size={16} className="shrink-0 text-[#85a30f]" />
+                altiuslightings@gmail.com
               </a>
 
+              {/* Customer Care */}
               <a
-                href="tel:+911234567890"
-                className="
-                  flex
-                  items-center
-                  gap-3
-                  text-sm
-                  text-white/50
-                  transition-colors
-                  hover:text-[#85a30f]
-                "
+                href="tel:+919650167709"
+                className="flex items-center gap-3 text-sm text-white transition-colors hover:text-[#85a30f]"
               >
-                <FiPhone size={16} className="text-[#85a30f]" />
-                +91 12345 67890
+                <FiPhone size={16} className="shrink-0 text-[#85a30f]" />
+                <span>
+                  <span className="text-white">Customer Care:</span> +91
+                  96501 67709
+                </span>
               </a>
 
-              <div
-                className="
-                  flex
-                  items-start
-                  gap-3
-                  text-sm
-                  leading-6
-                  text-white/50
-                "
+              {/* Landline */}
+              <a
+                href="tel:+911145700658"
+                className="flex items-center gap-3 text-sm text-white transition-colors hover:text-[#85a30f]"
               >
+                <FiPhoneCall size={16} className="shrink-0 text-[#85a30f]" />
+                <span>
+                  <span className="text-white">Landline:</span> +91 11 4570
+                  0658
+                </span>
+              </a>
+
+              {/* Alternate Number */}
+              <a
+                href="tel:+919958659788"
+                className="flex items-center gap-3 text-sm text-white transition-colors hover:text-[#85a30f]"
+              >
+                <FiSmartphone size={16} className="shrink-0 text-[#85a30f]" />
+                <span>
+                  <span className="text-white">Alternate:</span> +91 99586
+                  59788
+                </span>
+              </a>
+
+              {/* Address */}
+              <div className="flex items-start w-full gap-3 text-sm leading-6 text-white">
                 <FiMapPin size={16} className="mt-1 shrink-0 text-[#85a30f]" />
 
-                <span>New Delhi, India</span>
+                <span>
+                  F-185, Sector-3, DSIISC,
+               
+                  Bawana Industrial Area,
+                  <br />
+                  New Delhi, India
+                </span>
               </div>
             </div>
 
@@ -195,7 +209,7 @@ export default function Footer() {
 
             <div className="mt-7 flex items-center gap-3">
               <a
-                href="#"
+                href="https://www.instagram.com/elstrong_lights"
                 aria-label="Instagram"
                 className="
                   flex
@@ -217,7 +231,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="#"
+                href="https://www.facebook.com/ElStrongLights"
                 aria-label="Facebook"
                 className="
                   flex
@@ -238,7 +252,7 @@ export default function Footer() {
                 <FiFacebook size={16} />
               </a>
 
-              <a
+              {/* <a
                 href="#"
                 aria-label="LinkedIn"
                 className="
@@ -280,7 +294,7 @@ export default function Footer() {
                 "
               >
                 <FiYoutube size={16} />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -319,9 +333,9 @@ export default function Footer() {
                       items-center
                       gap-2
                       text-sm
-                      text-white/45
+                      text-white
                       transition-colors
-                      hover:text-white
+                      hover:text-white/45
                     "
                   >
                     {label}
@@ -378,9 +392,9 @@ export default function Footer() {
                       items-center
                       gap-2
                       text-sm
-                      text-white/45
+                      text-white
                       transition-colors
-                      hover:text-white
+                      hover:text-white/45
                     "
                   >
                     {label}
@@ -437,9 +451,9 @@ export default function Footer() {
                       items-center
                       gap-2
                       text-sm
-                      text-white/45
+                      text-white
                       transition-colors
-                      hover:text-white
+                      hover:text-white/45
                     "
                   >
                     {label}
