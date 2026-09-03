@@ -2,6 +2,9 @@ export const categories = [
   {
     id: 1,
     name: "Concealed Lights",
+    metaTitle: "Concealed Lights | Modern LED Lighting | Elstrong",
+    metaDesc:
+      "Explore Elstrong concealed lights with sleek designs and efficient LED technology, perfect for modern homes, offices, commercial spaces, and contemporary interiors.",
     slug: "concealed-lights",
     image: "/category/ledconcel1.webp",
     hoverImage: "/product/Suprimo2.webp",
@@ -178,6 +181,11 @@ export const categories = [
         name: "Suprimo Concealed Light",
         slug: "suprimo-concealed-light",
 
+        metaTitle:
+          "Suprimo Concealed Light Manufacturer | Sleek LED Lighting | Elstrong",
+        metaDesc:
+          "Discover Elstrong Suprimo Concealed Light, designed for seamless and modern LED illumination with a discreet appearance for contemporary residential and commercial interiors.",
+
         category: "Concealed Lights",
         categorySlug: "concealed-lights",
 
@@ -289,6 +297,11 @@ export const categories = [
         name: "Flare Concealed Light",
         slug: "flare-concealed-light",
 
+        metaTitle:
+          "Flare Concealed LED Light Manufacturer | Modern LED Lighting | Elstrong",
+        metaDesc:
+          "Explore Elstrong Flare Concealed Light, combining a modern concealed design with efficient LED illumination for stylish residential, commercial, and architectural interiors.",
+
         category: "Concealed Lights",
         categorySlug: "concealed-lights",
 
@@ -399,6 +412,11 @@ export const categories = [
         id: 104,
         name: "Glare Concealed Light",
         slug: "glare-concealed-light",
+
+        metaTitle:
+          "Glare Concealed Light Manufacturer | Premium LED Lighting | Elstrong",
+        metaDesc:
+          "Discover Elstrong Glare Concealed Light, designed to deliver clean, efficient LED illumination with a discreet look for modern residential, commercial, and architectural spaces.",
 
         category: "Concealed Lights",
         categorySlug: "concealed-lights",
@@ -512,6 +530,9 @@ export const categories = [
     id: 2,
     name: "COB Lens Model",
     slug: "cob-lens-model",
+    metaTitle: "COB Lens Lights | Focused LED Lighting | Elstrong",
+    metaDesc:
+      "Discover Elstrong COB lens lights for focused, adjustable illumination. Ideal for homes, retail spaces, offices, showrooms, and modern architectural interiors.",
     image: "/coblensmodel.webp",
     hoverImage: "/product/coblensmodel2.webp",
 
@@ -522,6 +543,10 @@ export const categories = [
         id: 201,
         name: "Moveable Lens COB 5W",
         slug: "moveable-lens-cob-5w",
+
+        metaTitle: "Moveable Lens COB 5W | Adjustable LED Light | Elstrong",
+        metaDesc:
+          "Discover Elstrong Moveable Lens COB 5W, designed for focused and adjustable illumination, making it ideal for accent, retail, architectural, and interior lighting.",
 
         category: "COB Lens Model",
         categorySlug: "cob-lens-model",
@@ -631,6 +656,10 @@ export const categories = [
         name: "Moveable Lens COB 7W",
         slug: "moveable-lens-cob-7w",
 
+        metaTitle: "Moveable LED Lens COB 7W | Adjustable LED Light | Elstrong",
+        metaDesc:
+          "Explore Elstrong Moveable Lens COB 7W for focused and adjustable LED illumination, ideal for retail displays, architectural details, accent lighting, and interiors.",
+
         category: "COB Lens Model",
         categorySlug: "cob-lens-model",
 
@@ -649,7 +678,11 @@ export const categories = [
         // Main product images
         image: "/product/coblensmodel1.webp",
 
-        images: ["/product/coblensmodel1.webp", "/product/coblensmodel2.webp","/product/coblensmodelback.webp",],
+        images: [
+          "/product/coblensmodel1.webp",
+          "/product/coblensmodel2.webp",
+          "/product/coblensmodelback.webp",
+        ],
 
         // Wattage options
         wattages: [
@@ -735,6 +768,10 @@ export const categories = [
         name: "Moveable Lens COB 9W",
         slug: "moveable-lens-cob-9w",
 
+        metaTitle: "Moveable Lens COB 9W | Adjustable LED Light | Elstrong",
+        metaDesc:
+          "Discover Elstrong Moveable Lens COB 9W for powerful, focused, and adjustable illumination, suitable for modern interiors, retail spaces, architectural accents, and more.",
+
         category: "COB Lens Model",
         categorySlug: "cob-lens-model",
 
@@ -753,7 +790,11 @@ export const categories = [
         // Main product images
         image: "/product/coblensmodel1.webp",
 
-        images: ["/product/coblensmodel1.webp", "/product/coblensmodel2.webp","/product/coblensmodelback.webp",],
+        images: [
+          "/product/coblensmodel1.webp",
+          "/product/coblensmodel2.webp",
+          "/product/coblensmodelback.webp",
+        ],
 
         // Wattage options
         wattages: [
@@ -845,7 +886,11 @@ export const categories = [
     id: 3,
     name: "LED Slim Panel",
     slug: "led-slim-panel",
+    metaTitle: "LED Slim Panel Lights | Sleek & Efficient | Elstrong",
+    metaDesc:
+      "Discover Elstrong LED slim panel lights with sleek designs and efficient illumination, ideal for homes, offices, retail spaces, and modern commercial interiors.",
     image: "/slimsquarepanel.webp",
+    image2: "/LEDslimpanelcombine.webp",
     hoverImage: "/product/slimsquarepanel2.webp",
 
     description:
@@ -855,6 +900,10 @@ export const categories = [
         id: 301,
         name: "Sqaure Slim Panel",
         slug: "sqaure-slim-panel",
+
+        metaTitle: "Square Slim Panel | Sleek LED Lighting | Elstrong",
+        metaDesc:
+          "Discover Elstrong Square Slim Panel with a sleek contemporary design, offering efficient and uniform LED illumination for homes, offices, retail spaces, and interiors.",
 
         category: "Slim Panel Lights",
         categorySlug: "slim-panel-lights",
@@ -908,8 +957,8 @@ export const categories = [
         specifications: {
           wattage: "3W",
           "Lumen Output": "<300 lm",
-          "Outer Dia": "85mm",
-          "Cutout Size": "70mm",
+          "Outer Dia": "85- 225 mm",
+          "Cutout Size": "70-200 mm",
           Height: "22mm",
           "Operating Voltage": "110V–280V",
           "Power Factor": "<0.95",
@@ -1097,6 +1146,10 @@ export const categories = [
         name: "Round Slim Panel",
         slug: "round-slim-panel",
 
+        metaTitle: "Round Slim LED Panel Lights for Home & Commercial Spaces",
+        metaDesc:
+          "Explore Elstrong Round Slim Panel, combining a slim circular design with efficient LED illumination for modern homes, offices, commercial spaces, and interiors.",
+
         category: "LED Slim Panel",
         categorySlug: "led-slim-panel",
 
@@ -1149,8 +1202,8 @@ export const categories = [
         specifications: {
           wattage: "12W",
           "Lumen Output": "<1200 lm",
-          "Outer Dia": "170mm",
-          "Cutout Size": "150mm",
+          "Outer Dia": "85-225 mm",
+          "Cutout Size": "70-200 mm",
           Height: "25mm",
           "Operating Voltage": "110V–280V",
           "Power Factor": "<0.95",
@@ -1339,7 +1392,11 @@ export const categories = [
     id: 4,
     name: "PC Panel",
     slug: "pc-panel",
+    metaTitle: "PC Panel Lights | Durable LED Lighting | Elstrong",
+    metaDesc:
+      "Explore Elstrong PC panel lights designed with durable polycarbonate construction and efficient LED technology for reliable, uniform indoor illumination.",
     image: "/pcpanel.webp",
+    image2: "/Pcpanelcombine.webp",
     hoverImage: "/product/pcpanel2.webp",
 
     description:
@@ -1349,6 +1406,11 @@ export const categories = [
         id: 401,
         name: "PC Panel",
         slug: "pc-panel",
+
+        metaTitle:
+          "PC Panel Manufacturer| Durable Polycarbonate LED Panel | Elstrong",
+        metaDesc:
+          "Explore Elstrong PC Panel with durable polycarbonate construction and efficient LED technology, designed to provide reliable and uniform illumination indoors.",
 
         category: "PC Panel",
         categorySlug: "pc-panel",
@@ -1710,6 +1772,10 @@ export const categories = [
     id: 5,
     name: "Outdoor Lights",
     slug: "outdoor-lights",
+    metaTitle:
+      "Outdoor LED Light Manufacturer| Architectural Lighting | Elstrong",
+    metaDesc:
+      "Explore Elstrong outdoor LED lights for walls, landscapes, pathways, façades, and accent applications, combining modern design with reliable lighting performance.",
     image: "/product/Klight1.webp",
     hoverImage: "/product/Klight2.webp",
 
@@ -1720,6 +1786,11 @@ export const categories = [
         id: 501,
         name: "Half K Light",
         slug: "half-k-light",
+
+        metaTitle:
+          "Half K LED Light Manufacturer | 3W & 5W Outdoor LED Light | Elstrong",
+        metaDesc:
+          "Discover Elstrong Half K Light in 3W and 5W options with Cool White, Natural White, and Warm White choices for modern outdoor and architectural lighting.",
 
         category: "Outdoor Lights",
         categorySlug: "outdoor-lights",
@@ -1830,6 +1901,10 @@ export const categories = [
         id: 502,
         name: "Cylinder Light",
         slug: "cylinder-light",
+
+        metaTitle: "Cylinder Light Manufacturer| 3W+3W & 5W+5W | Elstrong",
+        metaDesc:
+          "Explore Elstrong Cylinder Light with 3W+3W and 5W+5W options, available in CW, NW, and WW for distinctive architectural and outdoor illumination.",
 
         category: "Outdoor Lights",
         categorySlug: "outdoor-lights",
@@ -1945,6 +2020,10 @@ export const categories = [
         name: "Spike Light",
         slug: "spike-light",
 
+        metaTitle: "Spike LED Light | 5W & 10W Outdoor LED Light | Elstrong",
+        metaDesc:
+          "Discover Elstrong Spike Light in 5W and 10W options with CW, NW, and WW colours, ideal for gardens, pathways, landscapes, and outdoor accent lighting.",
+
         category: "Outdoor Lights",
         categorySlug: "outdoor-lights",
 
@@ -2055,6 +2134,10 @@ export const categories = [
         name: "Foot Light",
         slug: "foot-light",
 
+        metaTitle: "Buy LED Foot Lights by Elstrong",
+        metaDesc:
+          "Explore Elstrong Foot Light, a compact 3W LED solution available in Black, White, and Dark Grey for pathways, steps, entrances, and architectural spaces.",
+
         category: "Outdoor Lights",
         categorySlug: "outdoor-lights",
 
@@ -2160,6 +2243,11 @@ export const categories = [
         name: "K Light",
         slug: "k-light",
 
+        metaTitle:
+          "K LED Light Manufacturer | Modern Outdoor LED Lighting | Elstrong",
+        metaDesc:
+          "Discover Elstrong K Light, designed for focused decorative and architectural illumination across outdoor spaces, façades, landscapes, entrances, and modern exteriors.",
+
         category: "Outdoor Lights",
         categorySlug: "outdoor-lights",
 
@@ -2178,7 +2266,11 @@ export const categories = [
         // Main product images
         image: "/product/Klight1.webp",
 
-        images: ["/product/Klight1.webp", "/product/Klight2.webp","/product/Klight33.webp"],
+        images: [
+          "/product/Klight1.webp",
+          "/product/Klight2.webp",
+          "/product/Klight33.webp",
+        ],
 
         // Wattage options
         wattages: [
@@ -2276,6 +2368,10 @@ export const categories = [
     id: 6,
     name: "Striker",
     slug: "striker",
+    metaTitle:
+      "Striker LED Light Manufacturer | Efficient Lighting Solutions | Elstrong",
+    metaDesc:
+      "Explore Elstrong Striker LED lighting solutions designed for efficient performance, reliable operation, and versatile applications across modern lighting requirements.",
     image: "/striker.webp",
     hoverImage: "/product/striker2.webp",
 
@@ -2286,6 +2382,10 @@ export const categories = [
         id: 601,
         name: "Striker",
         slug: "striker",
+
+        metaTitle: "Lens Striker | 3W DOB LED Light | Elstrong",
+        metaDesc:
+          "Explore Elstrong Lens Striker with DOB technology, 85V–350V operating range, 4kV surge capacity, >0.95 power factor, and multiple colour options.",
 
         category: "Striker",
         categorySlug: "striker",
@@ -2402,6 +2502,9 @@ export const categories = [
     id: 4,
     name: "Bulb",
     slug: "bulb",
+    metaTitle: "Buy LED Light Bulbs Online at Best Prices In India",
+    metaDesc:
+      "Discover Elstrong LED bulbs in multiple wattages and colour options, designed to deliver efficient, reliable, and consistent illumination for everyday lighting needs.",
     image: "/product/bulb1.webp",
     hoverImage: "/product/bulb2.webp",
 
@@ -2412,6 +2515,10 @@ export const categories = [
         id: 112,
         name: "Bulb",
         slug: "bulb",
+
+        metaTitle: "LED Bulb | 20W–50W High-Efficiency Bulb | Elstrong",
+        metaDesc:
+          "Discover Elstrong LED Bulb available in 20W, 30W, 40W and 50W options with multiple colour temperatures and high power factor for efficient lighting.",
 
         category: "Bulb",
         categorySlug: "bulb",
@@ -2431,7 +2538,11 @@ export const categories = [
         // Main product images
         image: "/product/bulb1.webp",
 
-        images: ["/product/bulb1.webp", "/product/bulb2.webp","/product/bulb3.webp"],
+        images: [
+          "/product/bulb1.webp",
+          "/product/bulb2.webp",
+          "/product/bulb3.webp",
+        ],
 
         // Wattage options
         wattages: [
@@ -2542,6 +2653,10 @@ export const categories = [
     name: "Tengo Panel",
     slug: "tengo-panel",
     image: "/tengo.webp",
+    metaTitle: "LED Tengo Panel Lights | Efficient LED Panels | Elstrong",
+    metaDesc:
+      "Explore Elstrong Tengo Panel lights with durable polycarbonate bodies, multiple wattage options, and flexible colour temperatures for modern indoor spaces.",
+    image2: "/tangopanelcombine.webp",
     hoverImage: "/product/tengo2.webp",
 
     description:
@@ -2551,6 +2666,10 @@ export const categories = [
         id: 701,
         name: "Tengo Panel",
         slug: "tengo-panel",
+
+        metaTitle: "Tengo Panel | 6W–24W LED Panel | Elstrong",
+        metaDesc:
+          "Explore Elstrong Tengo Panel with 6W, 12W, 18W, and 24W options, durable PC construction, CW, NW and WW colours, plus a 2-year warranty.",
 
         category: "Tengo Panel",
         categorySlug: "tengo-panel",
@@ -2676,19 +2795,22 @@ export const categories = [
 
   {
     id: 8,
-    name: "Wall Light",
-    slug: "wall-light",
+    name: "Track Light",
+    slug: "track-light",
+    metaTitle: "LED Wall Lights | Modern Architectural Lighting | Elstrong",
+    metaDesc:
+      "Discover Elstrong LED wall lights designed for modern architectural, residential, commercial, and outdoor applications with versatile colour and finish options.",
     image: "/wallLight.webp",
     description:
-      "ELSTRONG Wall Lights combine stylish design with efficient LED illumination, making them suitable for enhancing both indoor and outdoor walls.",
+      "ELSTRONG Track Lights combine stylish design with efficient LED illumination, making them suitable for enhancing both indoor and outdoor walls.",
     products: [
       {
         id: 801,
         name: "Wall Light",
         slug: "wall-light",
 
-        category: "Wall Light",
-        categorySlug: "wall-light",
+        category: "Track Light",
+        categorySlug: "track-light",
 
         price: 0,
         oldPrice: 0,
@@ -2697,10 +2819,10 @@ export const categories = [
         badge: "Featured",
 
         shortDescription:
-          "The ELSTRONG Wall Light is a modern LED lighting solution designed to provide functional and decorative illumination for residential, commercial, architectural, and outdoor wall applications.",
+          "The ELSTRONG Track Light is a modern LED lighting solution designed to provide functional and decorative illumination for residential, commercial, architectural, and outdoor wall applications.",
 
         description:
-          "The ELSTRONG Wall Light is a modern and versatile LED lighting solution designed to provide functional and decorative illumination for residential, commercial, architectural, and outdoor wall applications. Designed to operate across a wide 85V–265V AC voltage range, the Wall Light provides flexibility for compatible electrical installations and dependable lighting performance. It is available in Cool White (CW), Warm White (WW), and Natural White (NW), allowing users to select the desired lighting ambience for different environments. The Wall Light is also available in Black and White body finishes, providing versatile options to complement modern walls, façades, entrances, balconies, pathways, and other architectural spaces.",
+          "The ELSTRONG Track Light is a modern and versatile LED lighting solution designed to provide functional and decorative illumination for residential, commercial, architectural, and outdoor wall applications. Designed to operate across a wide 85V–265V AC voltage range, the Track Light provides flexibility for compatible electrical installations and dependable lighting performance. It is available in Cool White (CW), Warm White (WW), and Natural White (NW), allowing users to select the desired lighting ambience for different environments. The Track Light is also available in Black and White body finishes, providing versatile options to complement modern walls, façades, entrances, balconies, pathways, and other architectural spaces.",
 
         // Main product images
         image: "/product/wallLight1.webp",
@@ -2734,7 +2856,7 @@ export const categories = [
           },
           {
             title: "Multiple Colour Temperatures",
-            text: "CW, WW, and NW options allow the Wall Light to deliver cool, warm, or natural illumination according to the application and desired ambience.",
+            text: "CW, WW, and NW options allow the Track Light to deliver cool, warm, or natural illumination according to the application and desired ambience.",
           },
           {
             title: "Contemporary Body Finishes",
@@ -2758,7 +2880,7 @@ export const categories = [
           },
           {
             title: "Wide Voltage Compatibility",
-            text: "The 85V–265V AC operating range makes the Wall Light suitable for compatible installations across varying electrical conditions.",
+            text: "The 85V–265V AC operating range makes the Track Light suitable for compatible installations across varying electrical conditions.",
           },
           {
             title: "Modern Architectural Appeal",

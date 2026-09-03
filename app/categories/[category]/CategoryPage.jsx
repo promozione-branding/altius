@@ -47,9 +47,9 @@ export default function CategoryPage({ categoryData }) {
 
         {/* Hero Image */}
 
-        <div className="group relative h-[55vh] min-h-[450px] overflow-hidden bg-[#e9e9e4] lg:col-span-7 lg:h-[78vh]">
+        <div className="group relative h-auto  overflow-hidden bg-[#e9e9e4] lg:col-span-7 lg:h-[78vh]">
           <img
-            src={categoryData.image}
+            src={categoryData.image2 || categoryData.image}
             alt={categoryData.name}
             className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
           />

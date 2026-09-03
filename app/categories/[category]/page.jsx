@@ -22,8 +22,8 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${categoryData.name} | Premium LED Lighting`,
-    description: categoryData.description,
+    title: `${categoryData.metaTitle} | Premium LED Lighting`,
+    description: categoryData.metaDesc,
   };
 }
 
