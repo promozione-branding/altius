@@ -2928,6 +2928,135 @@ export const categories = [
           "led-slim-panel-12w",
         ],
       },
+      {
+        id: 702,
+        name: "Round Tengo Panel",
+        slug: "round-tengo-panel",
+
+        metaTitle: "Round PC Panel | Stylish LED Panel Light | Elstrong",
+        metaDesc:
+          "Explore Elstrong Round PC Panel, a sleek circular LED panel designed for uniform illumination and modern interiors, ideal for residential, office, and commercial spaces.",
+
+        category: "Tengo Panel",
+        categorySlug: "tengo-panel",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "Round PC Panel by Elstrong combines efficient LED illumination with a sleek circular design for modern indoor spaces.",
+
+        description:
+    "The ELSTRONG Tengo Panel Round is designed to provide uniform and efficient illumination with a clean circular profile that complements contemporary interior spaces. Made with a Polycarbonate (PC) body, the panel offers a lightweight and practical construction for reliable everyday lighting. Available in 6W, 12W, 18W, and 24W options, it provides suitable lighting choices for different room sizes and illumination requirements. The panel is available in Cool White (CW), Neutral White (NW), and Warm White (WW), allowing users to select the preferred lighting appearance for different interior spaces and applications.",
+
+
+
+        // Main product images
+        image: "/product/tengoround1.webp",
+
+        images: [
+          "/product/tengoround1.webp",
+          "/product/tengoround2.webp",
+        ],
+
+        // Wattage options
+        wattages: [
+          {
+            value: "6W",
+            image: "/products/tengo-panel.jpeg",
+            price: 0,
+          },
+          {
+            value: "12W",
+            image: "/products/tengo-panel.jpeg",
+            price: 0,
+          },
+          {
+            value: "18W",
+            image: "/products/tengo-panel.jpeg",
+            price: 0,
+          },
+          {
+            value: "24W",
+            image: "/products/tengo-panel.jpeg",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          wattage: "6W / 12W / 18W / 24W",
+          Material: "Polycarbonate (PC)",
+          "Colour Temperature": "CW / NW / WW",
+          "Light Source": "LED",
+          Warranty: "2 Years",
+          Application: "Residential / Commercial / Office / Retail",
+          Installation: "Ceiling Mounted",
+        },
+
+        // Features
+      features: [
+    {
+      title: "Round Design",
+      text: "The circular shape provides a clean and modern appearance that integrates easily into residential and commercial ceilings.",
+    },
+    {
+      title: "Energy-Efficient LED",
+      text: "Designed to deliver consistent illumination with efficient LED technology for everyday indoor lighting applications.",
+    },
+    {
+      title: "Polycarbonate Body",
+      text: "The PC construction provides a lightweight and durable housing suitable for regular use.",
+    },
+    {
+      title: "Multiple Lighting Choices",
+      text: "Different wattages and colour temperatures provide flexibility for various spaces, applications, and lighting requirements.",
+    },
+  ],
+
+        // Why choose this product/company
+       whyChoose: [
+    {
+      title: "Professional LED Light Manufacturer",
+      text: "ELSTRONG develops modern LED lighting solutions focused on efficient performance, quality construction, and contemporary design.",
+    },
+    {
+      title: "Flexible Lighting Solution",
+      text: "Multiple wattages and colour temperatures make the Tengo Panel Round suitable for different indoor lighting requirements.",
+    },
+    {
+      title: "Durable Construction",
+      text: "The Polycarbonate body provides a practical and lightweight solution for everyday applications.",
+    },
+    {
+      title: "Reliable Performance",
+      text: "Designed to deliver consistent illumination for homes, offices, retail spaces, commercial interiors, and hospitality environments.",
+    },
+  ],
+
+        // Image used in description section
+        descriptionImage: "/product/tengoround2.webp",
+
+        // Additional product information
+        sku: "ELS-TENGO-PANEL",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/tengo-panel-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "led-panel-6w",
+          "led-panel-12w",
+          "led-panel-18w",
+          "led-slim-panel-12w",
+        ],
+      },
     ],
   },
 
