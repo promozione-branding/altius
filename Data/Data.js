@@ -1404,13 +1404,13 @@ export const categories = [
     products: [
       {
         id: 401,
-        name: "PC Panel",
-        slug: "pc-panel",
+        name: "Round PC Panel",
+        slug: "round-pc-panel",
 
         metaTitle:
-          "PC Panel Manufacturer| Durable Polycarbonate LED Panel | Elstrong",
+          "Round PC Panel | Stylish LED Panel Light | Elstrong",
         metaDesc:
-          "Explore Elstrong PC Panel with durable polycarbonate construction and efficient LED technology, designed to provide reliable and uniform illumination indoors.",
+          "Explore Elstrong Round PC Panel, a sleek circular LED panel designed for uniform illumination and modern interiors, ideal for residential, office, and commercial spaces.",
 
         category: "PC Panel",
         categorySlug: "pc-panel",
@@ -1425,7 +1425,7 @@ export const categories = [
           "The ELSTRONG PT001 is a compact 6W LED panel designed to provide efficient and uniform illumination while maintaining a space-saving profile for modern indoor and ceiling applications.",
 
         description:
-          "The ELSTRONG PT001 LED Panel 6W is a compact and efficient lighting solution designed to provide uniform illumination for residential, commercial, office, retail, and other indoor spaces. Featuring a 6W LED configuration with a lumen output of ≥600 lm, the panel provides practical and comfortable general lighting while maintaining low power consumption. Its 100mm diameter and 26mm height provide a compact profile that integrates neatly into suitable ceiling applications. Designed for 110–230V AC, 50Hz operation with a power factor of ≥0.95, the PT001 provides stable and efficient electrical performance. The panel also features surge protection of up to 2.5KVA for improved protection against suitable electrical disturbances.",
+          "The ELSTRONG PC Panel Round is a modern LED lighting solution designed to provide clean and uniform illumination while complementing contemporary ceilings and interiors. Manufactured with a Polycarbonate (PC) body, the panel offers a lightweight and practical construction for reliable everyday lighting applications. Its efficient LED technology is designed to deliver consistent illumination while supporting energy-efficient operation across residential and commercial environments. With its clean circular profile, the PC Panel Round is suitable for homes, offices, retail spaces, corridors, showrooms, hospitality areas, and other indoor spaces requiring neat and effective ceiling lighting.",
 
         // Main product images
         image: "/product/pcpanel1.webp",
@@ -1482,40 +1482,40 @@ export const categories = [
         // Features
         features: [
           {
-            title: "Energy-Efficient 6W LED",
-            text: "The 6W LED configuration provides practical and uniform illumination while maintaining low power consumption for everyday indoor lighting applications.",
+            title: "Round Design",
+            text: "The circular shape provides a simple and elegant appearance that blends easily with different ceiling and interior designs.",
           },
           {
-            title: "Compact Construction",
-            text: "The 100mm diameter and slim 26mm height allow the panel to maintain a clean appearance without occupying excessive ceiling space.",
+            title: "Polycarbonate Body",
+            text: "PC construction offers a practical combination of lightweight design and durability for regular indoor applications.",
           },
           {
-            title: "High Power Factor",
-            text: "A power factor of ≥0.95 supports efficient electrical operation and better utilization of input power.",
+            title: "Uniform Lighting",
+            text: "Designed to provide smooth and consistent illumination across the required area for comfortable general lighting.",
           },
           {
-            title: "Surge Protection",
-            text: "The PT001 is designed with surge protection of up to 2.5KVA, supporting improved protection against suitable electrical disturbances.",
+            title: "Easy Interior Integration",
+            text: "The clean profile makes the panel suitable for a wide range of modern residential and commercial interiors.",
           },
         ],
 
         // Why choose this product/company
         whyChoose: [
           {
-            title: "Professional Lighting Manufacturer",
-            text: "ELSTRONG develops efficient LED lighting solutions designed for modern residential, commercial, office, retail, and indoor environments.",
+            title: "Professional LED Light Manufacturer",
+            text: "ELSTRONG develops modern LED lighting solutions focused on reliable performance, efficient technology, and contemporary design.",
           },
           {
-            title: "Compact Lighting Solution",
-            text: "The PT001 is suitable for applications requiring practical and uniform illumination within a smaller installation footprint.",
+            title: "Durable Construction",
+            text: "The Polycarbonate body provides a lightweight and practical solution for everyday indoor lighting.",
           },
           {
-            title: "Efficient Electrical Performance",
-            text: "Its high power factor and efficient LED technology support stable and economical everyday lighting operation.",
+            title: "Modern Appearance",
+            text: "The round profile creates a clean ceiling finish that complements contemporary interiors.",
           },
           {
-            title: "Versatile Applications",
-            text: "The LED panel is ideal for homes, offices, corridors, retail spaces, commercial interiors, and other compact indoor areas.",
+            title: "Versatile Lighting Solution",
+            text: "Suitable for residential, commercial, office, retail, hospitality, and other indoor applications.",
           },
         ],
 
@@ -1540,6 +1540,143 @@ export const categories = [
         ],
       },
 
+      {
+        id: 402,
+        name: "Sqaure PC Panel",
+        slug: "square-pc-panel",
+
+        metaTitle:
+          "Buy PC Square Panel LED Light Manufacturer in India",
+        metaDesc:
+          "Discover Elstrong PC Square Panel , combining a modern square design with durable polycarbonate construction for efficient and dependable indoor LED lighting.",
+
+        category: "PC Panel",
+        categorySlug: "pc-panel",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "The ELSTRONG PT001 is a compact 6W LED panel designed to provide efficient and uniform illumination while maintaining a space-saving profile for modern indoor and ceiling applications.",
+
+        description:
+          "The ELSTRONG PC Panel Round is a modern LED lighting solution designed to provide clean and uniform illumination while complementing contemporary ceilings and interiors. Manufactured with a Polycarbonate (PC) body, the panel offers a lightweight and practical construction for reliable everyday lighting applications. Its efficient LED technology is designed to deliver consistent illumination while supporting energy-efficient operation across residential and commercial environments. With its clean circular profile, the PC Panel Round is suitable for homes, offices, retail spaces, corridors, showrooms, hospitality areas, and other indoor spaces requiring neat and effective ceiling lighting.",
+
+        // Main product images
+        image: "/product/squarepc1.webp",
+
+        images: [
+          "/product/squarepc1.webp",
+          "/product/squarepc2.webp",
+          "/product/squarepc3.webp",
+        ],
+
+        // Wattage options
+        wattages: [
+          {
+            value: "8W",
+            image: "/products/led-panel-6w.jpeg",
+            price: 0,
+          },
+          {
+            value: "12W",
+            image: "/products/led-panel-6w.jpeg",
+            price: 0,
+          },
+          {
+            value: "15W",
+            image: "/products/led-panel-6w.jpeg",
+            price: 0,
+          },
+          {
+            value: "22W",
+            image: "/products/led-panel-6w.jpeg",
+            price: 0,
+          },
+          {
+            value: "24W",
+            image: "/products/led-panel-6w.jpeg",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          wattage: "6W",
+          "Lumen Output": "≥600 lm",
+          Diameter: "100mm",
+          Height: "26mm",
+          "Input Voltage": "110–230V AC",
+          Frequency: "50Hz",
+          "Power Factor": "≥0.95",
+          "Surge Protection": "Up to 2.5KVA",
+          "Light Source": "LED",
+          Installation: "Ceiling Mounted",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Round Design",
+            text: "The circular shape provides a simple and elegant appearance that blends easily with different ceiling and interior designs.",
+          },
+          {
+            title: "Polycarbonate Body",
+            text: "PC construction offers a practical combination of lightweight design and durability for regular indoor applications.",
+          },
+          {
+            title: "Uniform Lighting",
+            text: "Designed to provide smooth and consistent illumination across the required area for comfortable general lighting.",
+          },
+          {
+            title: "Easy Interior Integration",
+            text: "The clean profile makes the panel suitable for a wide range of modern residential and commercial interiors.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional LED Light Manufacturer",
+            text: "ELSTRONG develops modern LED lighting solutions focused on reliable performance, efficient technology, and contemporary design.",
+          },
+          {
+            title: "Durable Construction",
+            text: "The Polycarbonate body provides a lightweight and practical solution for everyday indoor lighting.",
+          },
+          {
+            title: "Modern Appearance",
+            text: "The round profile creates a clean ceiling finish that complements contemporary interiors.",
+          },
+          {
+            title: "Versatile Lighting Solution",
+            text: "Suitable for residential, commercial, office, retail, hospitality, and other indoor applications.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/squarepc3.webp",
+
+        // Additional product information
+        sku: "ELS-PT001",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/led-panel-6w-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "led-slim-panel-3w",
+          "led-slim-panel-6w",
+          "led-slim-panel-12w",
+          "led-slim-panel-18w",
+        ],
+      },
       // {
       //   id: 402,
       //   name: "PC Panel 12W",
@@ -2664,12 +2801,12 @@ export const categories = [
     products: [
       {
         id: 701,
-        name: "Tengo Panel",
-        slug: "tengo-panel",
+        name: "Square Tengo Panel",
+        slug: "sqaure-tengo-panel",
 
-        metaTitle: "Tengo Panel | 6W–24W LED Panel | Elstrong",
+        metaTitle: "Square Tengo Panel | Modern LED Panel Light Manufacturer| Elstrong",
         metaDesc:
-          "Explore Elstrong Tengo Panel with 6W, 12W, 18W, and 24W options, durable PC construction, CW, NW and WW colours, plus a 2-year warranty.",
+          "Discover Elstrong Square Tengo Panel , a modern LED panel lighting solution designed for clean, efficient illumination in homes, offices, retail spaces, and commercial interiors.",
 
         category: "Tengo Panel",
         categorySlug: "tengo-panel",
@@ -2681,10 +2818,11 @@ export const categories = [
         badge: "Featured",
 
         shortDescription:
-          "The ELSTRONG Altius Lighting Tengo Panel is a modern LED panel with a durable polycarbonate body, multiple wattage options, and flexible colour temperatures for residential and commercial interiors.",
+          "Tengo Panel Square by Elstrong is a modern LED lighting solution designed to provide clean and uniform illumination for contemporary interiors.",
 
-        description:
-          "The ELSTRONG Altius Lighting Tengo Panel is a modern and efficient LED panel designed to provide clean, uniform, and consistent illumination across residential, commercial, office, retail, and other indoor spaces. Available in 6W, 12W, 18W, and 24W options, the Tengo Panel provides flexible lighting solutions for different room sizes and illumination requirements. Its durable Polycarbonate (PC) body combines a lightweight construction with practical durability for everyday lighting applications. Available in Cool White (CW), Neutral White (NW), and Warm White (WW), the panel provides flexibility to create different lighting environments. The Tengo Panel is backed by a 2-year warranty for added confidence in product quality and dependable performance.",
+         description:
+    "The ELSTRONG Tengo Panel Square is designed to provide uniform LED illumination with a clean square profile that suits modern residential and commercial interiors. Manufactured using Polycarbonate (PC), the panel combines practical durability with a lightweight construction for everyday lighting applications. Available in 6W, 12W, 18W, and 24W options, it provides flexibility for different lighting levels and space requirements. The panel is also available in Cool White (CW), Neutral White (NW), and Warm White (WW), allowing the lighting appearance to be selected according to the desired ambience and interior application.",
+
 
         // Main product images
         image: "/product/tengo1.webp",
@@ -2731,44 +2869,44 @@ export const categories = [
         },
 
         // Features
-        features: [
-          {
-            title: "Efficient LED Technology",
-            text: "The Tengo Panel is designed to provide clean and consistent illumination while supporting energy-efficient lighting for everyday residential and commercial applications.",
-          },
-          {
-            title: "Multiple Wattages",
-            text: "Available in 6W, 12W, 18W, and 24W options, providing flexibility for different lighting requirements ranging from smaller spaces to areas requiring higher illumination.",
-          },
-          {
-            title: "Three Colour Temperatures",
-            text: "CW, NW, and WW options allow users to create cool, natural, or warm lighting environments according to the application and desired ambience.",
-          },
-          {
-            title: "Durable Polycarbonate Body",
-            text: "The Polycarbonate construction provides a lightweight and practical housing designed for dependable everyday indoor lighting use.",
-          },
-        ],
+       features: [
+    {
+      title: "Square Slim Design",
+      text: "The square profile offers a modern and structured appearance that works well with contemporary ceiling layouts and interiors.",
+    },
+    {
+      title: "Efficient LED Technology",
+      text: "Designed to provide reliable and consistent illumination while supporting energy-efficient indoor lighting.",
+    },
+    {
+      title: "Lightweight PC Construction",
+      text: "The Polycarbonate body provides a practical housing that is lightweight and suitable for regular lighting applications.",
+    },
+    {
+      title: "Versatile Lighting Options",
+      text: "Multiple wattages and colour temperatures allow the product to be used across different rooms and interior applications.",
+    },
+  ],
 
         // Why choose this product/company
         whyChoose: [
-          {
-            title: "Professional Lighting Manufacturer",
-            text: "ELSTRONG develops modern LED lighting solutions focused on quality, efficiency, practical design, and reliable performance.",
-          },
-          {
-            title: "Flexible Lighting Solution",
-            text: "Multiple wattage and colour-temperature options make the Tengo Panel suitable for a wide range of residential, commercial, office, and retail lighting requirements.",
-          },
-          {
-            title: "Durable Construction",
-            text: "The Polycarbonate body provides a lightweight and practical solution designed for regular indoor lighting applications.",
-          },
-          {
-            title: "2-Year Warranty",
-            text: "Backed by a 2-year warranty, the Tengo Panel offers added confidence in product quality and dependable everyday performance.",
-          },
-        ],
+    {
+      title: "Trusted Lighting Manufacturer",
+      text: "ELSTRONG develops LED lighting products that combine modern aesthetics, efficient technology, and dependable performance.",
+    },
+    {
+      title: "Modern Square Design",
+      text: "The square format provides a clean and contemporary look suitable for different ceiling and interior designs.",
+    },
+    {
+      title: "Flexible Wattage Selection",
+      text: "The 6W to 24W range provides options for different illumination requirements and room sizes.",
+    },
+    {
+      title: "2-Year Warranty",
+      text: "Backed by a 2-year warranty, the Tengo Panel Square provides added confidence for residential and commercial lighting applications.",
+    },
+  ],
 
         // Image used in description section
         descriptionImage: "/product/tengo2.webp",
