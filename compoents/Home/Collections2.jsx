@@ -14,7 +14,7 @@ const collections = [
     title: "SUPRIMO CONCEALED LED LIGHT",
     subtitle: "CONCEALED LED LIGHT",
     image: "/product/Suprimo1.webp",
-    href:"/products/suprimo"
+    href:"/products/suprimo-concealed-light"
   },
   {
     title: "MOVEABLE LENS",
@@ -23,10 +23,10 @@ const collections = [
     href:"/products/moveable-lens-cob-5w"
   },
   {
-    title: "LED PANEL",
+    title: "ROUND PC PANEL",
     subtitle: "PC PANEL",
     image: "/product/pcpanel1.webp",
-    href:"/products/led-panel-6w"
+    href:"/products/pc-panel"
   },
   {
     title: "CYLINDER LIGHTS",

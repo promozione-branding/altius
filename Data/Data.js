@@ -915,10 +915,10 @@ export const categories = [
         badge: "Featured",
 
         shortDescription:
-          "The ELSTRONG LED Slim Panel Aluminium 3W is a compact and modern lighting solution with a slim aluminium construction, designed for clean and space-efficient ceiling installations.",
+          "ELSTRONG Square Slim Panel combines a contemporary square profile with efficient LED illumination for a clean and stylish ceiling appearance.",
 
         description:
-          "The ELSTRONG LED Slim Panel Aluminium 3W is a compact and efficient LED lighting solution designed for modern indoor spaces. Featuring a slim aluminium construction, the panel provides a neat and minimal appearance while supporting effective heat management during operation. With a 3W LED configuration and a lumen output of less than 300 lm, it is suitable for smaller areas, corridors, cabinets, accent applications, and other spaces requiring compact and efficient illumination. With an 85mm length/diameter, 70mm cutout size, and 22mm height, the panel is designed for convenient and space-efficient ceiling integration. Its 110V–280V operating voltage and power factor of <0.95 provide flexible electrical operation for suitable indoor applications.",
+          "The ELSTRONG Square Slim Panel combines a clean square design with a slim profile, providing an elegant lighting solution for contemporary interiors. Designed for ceiling applications where a neat and minimal lighting fixture is preferred, it helps maintain a streamlined interior appearance. The LED panel provides consistent and comfortable illumination for everyday residential and commercial lighting requirements. It is suitable for homes, offices, retail stores, showrooms, corridors, hospitality spaces, and other modern indoor environments.",
 
         // Main product images
         image: "/product/slimsquarepanel1.webp",
@@ -970,40 +970,40 @@ export const categories = [
         // Features
         features: [
           {
-            title: "Slim Aluminium Construction",
-            text: "The aluminium body provides a sleek and lightweight design while supporting effective heat management during operation.",
+            title: "Square Slim Design",
+            text: "The square profile provides a contemporary appearance that complements modern ceiling layouts and interior designs.",
           },
           {
-            title: "Compact Size",
-            text: "Its 85mm diameter and 22mm height make the 3W model suitable for applications where a small and unobtrusive lighting fixture is preferred.",
+            title: "Space-Efficient Construction",
+            text: "Its slim form maintains a low-profile appearance while delivering effective illumination for indoor spaces.",
           },
           {
-            title: "Energy-Efficient LED Technology",
-            text: "The 3W LED configuration provides practical illumination while keeping power consumption low for everyday indoor lighting.",
+            title: "Clean Light Distribution",
+            text: "Designed to provide uniform illumination across the lighting area, making it suitable for general indoor lighting applications.",
           },
           {
-            title: "Easy Ceiling Integration",
-            text: "The 70mm cutout size allows the panel to be neatly integrated into suitable ceiling installations for a clean and minimal appearance.",
+            title: "Multiple Applications",
+            text: "Suitable for residential, commercial, office, retail, hospitality, and architectural interior spaces.",
           },
         ],
 
         // Why choose this product/company
         whyChoose: [
           {
-            title: "Professional Lighting Manufacturer",
-            text: "ELSTRONG develops modern LED lighting solutions focused on efficient performance, practical installation, and contemporary design.",
+            title: "Trusted LED Light Manufacturer",
+            text: "ELSTRONG develops LED lighting solutions that combine modern aesthetics with practical performance.",
           },
           {
-            title: "Quality Aluminium Design",
-            text: "The slim aluminium construction provides a clean appearance while supporting reliable heat dissipation for everyday lighting applications.",
+            title: "Contemporary Design",
+            text: "The square format adds a clean architectural element to modern ceilings and interiors.",
           },
           {
-            title: "Energy-Efficient Solution",
-            text: "The 3W LED panel is designed for applications where effective illumination and controlled energy consumption are important.",
+            title: "Efficient Lighting Solution",
+            text: "LED technology provides dependable illumination for everyday indoor applications.",
           },
           {
-            title: "Versatile Indoor Applications",
-            text: "The panel is suitable for residential interiors, offices, corridors, retail areas, cabinets, and other compact indoor spaces.",
+            title: "Versatile Usage",
+            text: "Suitable for homes, offices, retail spaces, showrooms, commercial interiors, and hospitality environments.",
           },
         ],
 
@@ -1160,10 +1160,10 @@ export const categories = [
         badge: "Featured",
 
         shortDescription:
-          "The ELSTRONG LED Slim Panel Aluminium 12W is a bright and efficient ceiling lighting solution featuring a slim aluminium profile designed for modern residential, commercial, and architectural interiors.",
+          "ELSTRONG Round Slim Panel features a slim circular design that blends seamlessly with modern ceiling interiors.",
 
         description:
-          "The ELSTRONG LED Slim Panel Aluminium 12W is a high-performance LED lighting solution designed to provide bright and efficient illumination while maintaining a slim and modern ceiling profile. With a 12W LED configuration and a lumen output of less than 1200 lm, the panel is suitable for spaces requiring stronger general illumination. Its 170mm overall size, 150mm cutout, and slim 25mm height provide a clean and contemporary appearance without requiring a bulky ceiling fixture. Operating at 110V–280V with a specified power factor of <0.95, the panel offers flexible electrical operation for suitable indoor installations.",
+          "ELSTRONG Round Slim Panel features a clean circular design with a slim profile, offering a modern lighting solution for contemporary indoor spaces. The panel range can be selected according to the required ceiling opening and installation dimensions, supporting different interior applications. Designed to provide smooth and consistent LED illumination for general lighting across residential and commercial environments.Its slim round construction creates a neat and unobtrusive appearance, allowing it to blend naturally with modern ceiling designs.",
 
         // Main product images
         image: "/product/roundslim1.webp",
@@ -1215,40 +1215,40 @@ export const categories = [
         // Features
         features: [
           {
-            title: "Efficient Aluminium Design",
-            text: "The aluminium body combines a modern appearance with effective heat dissipation, supporting dependable performance during regular operation.",
+            title: "Round Slim Profile",
+            text: "The circular design provides a simple and elegant appearance while maintaining a compact ceiling footprint.",
           },
           {
-            title: "High Illumination Output",
-            text: "With a specified lumen output of less than 1200 lm, the 12W model is suitable for areas requiring brighter and more effective general-purpose lighting.",
+            title: "Uniform LED Lighting",
+            text: "Designed to provide consistent illumination for comfortable and practical everyday lighting.",
           },
           {
-            title: "Slim 25mm Profile",
-            text: "Its low-height construction helps maintain a neat ceiling appearance and complements modern architectural and interior designs.",
+            title: "Space-Saving Design",
+            text: "The slim construction is suitable for interiors where a low-profile lighting fixture is preferred.",
           },
           {
-            title: "Large Ceiling Coverage",
-            text: "The 150mm cutout size and 170mm overall size make this model suitable for larger ceiling lighting applications where greater illumination is required.",
+            title: "Wide Application Range",
+            text: "Ideal for bedrooms, living areas, offices, retail stores, corridors, showrooms, hotels, and other indoor spaces.",
           },
         ],
 
         // Why choose this product/company
         whyChoose: [
           {
-            title: "Experienced LED Light Manufacturer",
-            text: "ELSTRONG develops LED lighting solutions designed to meet the requirements of modern residential, commercial, and architectural spaces.",
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG provides modern LED lighting products designed for reliable performance and contemporary applications.",
           },
           {
-            title: "Efficient & Bright Lighting",
-            text: "The 12W panel provides higher illumination while retaining an energy-efficient LED design suitable for general indoor applications.",
+            title: "Elegant Round Design",
+            text: "The circular profile complements a wide range of ceiling styles and interior designs.",
           },
           {
-            title: "Modern Aluminium Construction",
-            text: "The slim aluminium body delivers a clean visual appearance while supporting effective thermal management for dependable lighting performance.",
+            title: "Efficient LED Technology",
+            text: "Designed to provide practical and consistent illumination for everyday lighting requirements.",
           },
           {
-            title: "Versatile Indoor Use",
-            text: "The panel is suitable for homes, offices, showrooms, retail stores, commercial spaces, educational environments, and other areas requiring bright ceiling illumination.",
+            title: "Versatile Interior Solution",
+            text: "Suitable for residential, office, retail, hospitality, commercial, and other modern indoor environments.",
           },
         ],
 
@@ -2906,6 +2906,137 @@ export const categories = [
           "cylinder-light",
           "spike-light",
           "k-light",
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 9,
+    name: "Hut Bul Bul Bell",
+    slug: "hut-bul-bul-bell",
+    metaTitle: " Hut Bul Bul Bell | Unique Decorative Lighting | Elstrong",
+    metaDesc:
+      "Explore Elstrong’s Hut Bul Bul Bell lighting range, designed to add character and visual appeal to modern interiors with distinctive decorative lighting solutions.",
+    image: "/slimsquarepanel.webp",
+    image2: "/product/bell1.webp",
+    hoverImage: "/product/bell1.webp",
+
+    description:
+      "Discover Hut Bul Bul Bell lights by Elstrong, offering distinctive decorative designs that add charm and character to contemporary lighting spaces.",
+    products: [
+      {
+        id: 901,
+        name: "Hut Bul Bul Bell",
+        slug: "hut-bul-bul-bell",
+        metaTitle: "Hut Bul Bul Bell | Decorative LED Light | Elstrong",
+        metaDesc:
+          "Explore Elstrong Hut Bul Bul Bell, a stylish decorative LED lighting solution designed to enhance modern interiors with an attractive and distinctive lighting appearance.",
+
+        category: "Hut Bul Bul Bell",
+        categorySlug: "hut-bul-bul-bell",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "The ELSTRONG Hut Bul Bul Bell is a reliable wired doorbell designed to provide a clear and familiar Bul Bul sound for homes, offices, shops, and other suitable premises.",
+
+        description:
+          "The ELSTRONG Hut Bul Bul Bell is a practical wired doorbell designed to provide a clear and recognizable Bul Bul sound for homes, offices, shops, and other premises. Designed for convenient wall mounting, the doorbell features a compact and practical construction that can be easily integrated into different indoor spaces. It provides 1 Bul Bul tone, offering a simple and familiar sound alert whenever the doorbell is operated. Designed to operate on 220–240V AC, the doorbell is compatible with standard mains electrical systems when installed appropriately.",
+
+        // Main product images
+        image: "/product/bell1.webp",
+
+        images: [
+          "/product/bell1.webp",
+          "/product/bell2.webp",
+          "/product/bell3.webp",
+          "/product/bell4.webp",
+          "/product/bell5.webp",
+        ],
+
+        // Product variants
+        wattages: [
+          {
+            value: "Standard",
+            image: "/products/hut-bul-bul-bell.jpeg",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          "Operating Voltage": "220–240V AC",
+          "Sound Type": "Bul Bul",
+          Tone: "1 Bul Bul Tone",
+          "Body Material": "ABS Plastic",
+          Installation: "Wall Mounted",
+          Connection: "Wired",
+          Application: "Residential / Commercial / Indoor",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Bul Bul Sound",
+            text: "Provides a distinctive Bul Bul sound that offers a clear and recognizable doorbell alert.",
+          },
+          {
+            title: "Wired Connection",
+            text: "The wired design provides a straightforward connection for permanent doorbell installations.",
+          },
+          {
+            title: "Wall Mounting",
+            text: "Designed for wall mounting, making installation convenient for homes, offices, shops, and other suitable locations.",
+          },
+          {
+            title: "Durable ABS Body",
+            text: "Constructed from ABS Plastic, providing a lightweight and practical housing for everyday use.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Quality Doorbell Solution",
+            text: "ELSTRONG provides practical electrical and lighting products designed for everyday residential and commercial requirements.",
+          },
+          {
+            title: "Clear Sound Alert",
+            text: "The single Bul Bul tone provides an easily recognizable alert for visitors.",
+          },
+          {
+            title: "Easy Wall Installation",
+            text: "Its wall-mount design makes it suitable for straightforward and convenient installation.",
+          },
+          {
+            title: "Durable Construction",
+            text: "The ABS Plastic body offers a practical and lightweight construction for regular use.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/bell1.webp",
+
+        // Additional product information
+        sku: "ELS-HUT-BUL-BUL-BELL",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/hut-bul-bul-bell-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "wall-light",
+          "half-k-light",
+          "cylinder-light",
+          "spike-light",
         ],
       },
     ],

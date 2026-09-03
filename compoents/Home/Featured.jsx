@@ -20,7 +20,7 @@ const products = [
     price: "$40.00",
     oldPrice: "$50.00",
     image: "/product/slimsquarepanel1.webp",
-    href:"/products/led-slim-panel-6w"
+    href:"/products/sqaure-slim-panel"
   },
   {
     name: "Moveable Lens COB",
@@ -34,7 +34,7 @@ const products = [
     price: "$40.00",
     oldPrice: "$50.00",
     image: "/product/Flare1.webp",
-    href:"/products/flare"
+    href:"/products/flare-concealed-light"
 
   },
   {
@@ -42,7 +42,7 @@ const products = [
     price: "$80.00",
     oldPrice: "$90.00",
     image: "/product/GLare1.webp",
-    href:"/products/glare"
+    href:"/products/glare-concealed-light"
 
   },
   {
