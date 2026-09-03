@@ -7,7 +7,7 @@ export const categories = [
       "Explore Elstrong concealed lights with sleek designs and efficient LED technology, perfect for modern homes, offices, commercial spaces, and contemporary interiors.",
     slug: "concealed-lights",
     image: "/category/ledconcel1.webp",
-    hoverImage: "/product/Suprimo2.webp",
+    hoverImage: "/product/concealedglow.webp",
     description:
       "Elstrong Concealed Lights combine sleek, minimalist design with efficient LED technology to provide seamless illumination for modern interiors.",
     products: [
