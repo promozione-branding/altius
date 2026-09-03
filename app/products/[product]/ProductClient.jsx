@@ -28,7 +28,7 @@ const relatedProducts = [
   },
   {
     name: "Tengo Panel",
-    href: "/products/tengo-panel",
+    href: "/products/sqaure-tengo-panel",
     image: "/product/tengo1.webp",
   },
   {
