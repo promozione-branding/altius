@@ -2507,9 +2507,6 @@ export const categories = [
         ],
       },
 
-
-
-
       //       {
       //   id: 506,
       //   name: "Adjustable Light",
@@ -2769,15 +2766,130 @@ export const categories = [
       },
 
       {
-  id: 508,
-  name: "Sensor Foot Light",
-  slug: "sensor-foot-light",
-  metaTitle: "Sensor Foot Light | 6W LED Sensor Foot Light | Elstrong",
-  metaDesc:
-    "ELSTRONG Sensor Foot Light is a 6W LED lighting solution with sensor-based convenience, 85V–250V operation, PF >0.95 (HPF), IP54 protection, 4 kV surge capacity, and multiple colour options for stairways, corridors, pathways, and entrances.",
+        id: 508,
+        name: "Sensor Foot Light",
+        slug: "sensor-foot-light",
+        metaTitle: "Sensor Foot Light | 6W LED Sensor Foot Light | Elstrong",
+        metaDesc:
+          "ELSTRONG Sensor Foot Light is a 6W LED lighting solution with sensor-based convenience, 85V–250V operation, PF >0.95 (HPF), IP54 protection, 4 kV surge capacity, and multiple colour options for stairways, corridors, pathways, and entrances.",
 
-  category: "Outdoor Light",
-  categorySlug: "outdoor-light",
+        category: "Outdoor Light",
+        categorySlug: "outdoor-light",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG Sensor Foot Light is designed to provide convenient and practical illumination for staircases, corridors, pathways, entrances, and other low-level lighting applications. With an efficient 6W design, sensor-based convenience, IP54 protection.",
+
+        description:
+          "ELSTRONG Sensor Foot Light is designed to provide convenient and practical illumination for staircases, corridors, pathways, entrances, and other low-level lighting applications. The 6W configuration provides effective illumination while maintaining efficient power consumption for everyday use. With an operating voltage range of 85V–250V and a power factor >0.95 (HPF), the product is designed for stable and efficient operation. Available in CW, WW, NW, Red, Blue, Green, and Pink, the Sensor Foot Light provides flexibility for functional and decorative lighting requirements. The sensor foot light is designed to provide practical lighting assistance for areas where convenient illumination is required. A PF >0.95 (HPF) supports efficient electrical performance and optimized power utilization. The IP54 rating provides protection against dust ingress and water splashes, making it suitable for appropriate indoor and semi-outdoor applications. Designed with 4 kV surge protection, the product provides additional protection against suitable electrical surges.",
+
+        // Main product images
+        image: "/product/footsensor1.webp",
+
+        images: [
+          "/product/footsensor1.webp",
+          "/product/footsensor2.webp",
+          "/product/footsensor3.webp",
+        ],
+
+        // Product variants
+        wattages: [
+          {
+            value: "6W",
+            image: "/product/sensor-foot-light-6w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          Wattage: "6W",
+          "Operating Voltage": "85V–250V",
+          "Power Factor": ">0.95 (HPF)",
+          "IP Rating": "IP54",
+          "Surge Protection": "4 kV",
+          "Colour Options": "CW, WW, NW, Red, Blue, Green, and Pink",
+          "Product Type": "LED Sensor Foot Light",
+          Application:
+            "Staircases / Corridors / Pathways / Entrances / Residential Spaces / Commercial Interiors / Indoor / Semi-Outdoor Areas",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Sensor-Based Convenience",
+            text: "The sensor foot light is designed to provide practical lighting assistance for areas where convenient illumination is required.",
+          },
+          {
+            title: "High Power Factor",
+            text: "A PF >0.95 (HPF) supports efficient electrical performance and optimized power utilization.",
+          },
+          {
+            title: "IP54 Protection",
+            text: "The IP54 rating provides protection against dust ingress and water splashes, making it suitable for appropriate indoor and semi-outdoor applications.",
+          },
+          {
+            title: "4 kV Surge Capacity",
+            text: "Designed with 4 kV surge protection to provide additional protection against suitable electrical surges.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops modern LED lighting solutions focused on practical functionality, energy efficiency, and dependable performance.",
+          },
+          {
+            title: "Convenient Lighting Solution",
+            text: "The sensor-based design makes the product suitable for spaces where automatic or convenient low-level illumination is required.",
+          },
+          {
+            title: "Efficient Performance",
+            text: "The 6W LED configuration combined with a >0.95 high power factor supports efficient everyday operation.",
+          },
+          {
+            title: "Versatile Applications",
+            text: "Suitable for stairways, corridors, pathways, entrances, residential spaces, commercial interiors, and other suitable indoor or semi-outdoor areas.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/footsensor3.webp",
+
+        // Additional product information
+        sku: "ELS-SENSOR-FOOT-LIGHT",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/sensor-foot-light-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "foot-light",
+          "pearl-led-deep-light",
+          "junction-deep-light",
+          "lotus-deep-light",
+        ],
+      },
+      {
+  id: 509,
+  name: "Purse Outdoor LED Lights",
+  slug: "purse-outdoor-led-lights",
+  metaTitle:
+    "Purse Outdoor LED Lights | Purse Light 2 × 2 | 48W LED Light | Elstrong",
+  metaDesc:
+    "ELSTRONG Purse Light 2 × 2 is a 48W square LED lighting solution with a slim 595 × 595 × 30 mm profile, PF >0.95 (HPF), 85V–350V operation, 440V high-voltage protection, and CW, WW, and NW options.",
+
+  category: "Outdoor Lights",
+  categorySlug: "outdoor-lights",
 
   price: 0,
   oldPrice: 0,
@@ -2786,60 +2898,63 @@ export const categories = [
   badge: "Featured",
 
   shortDescription:
-    "ELSTRONG Sensor Foot Light is designed to provide convenient and practical illumination for staircases, corridors, pathways, entrances, and other low-level lighting applications. With an efficient 6W design, sensor-based convenience, IP54 protection.",
+    "ELSTRONG Purse Light 2 × 2 is a square LED lighting solution designed to provide bright, uniform illumination for offices, commercial spaces, retail environments, educational areas, and other indoor applications. With a 48W configuration, slim 595 × 595 × 30 mm.",
 
   description:
-    "ELSTRONG Sensor Foot Light is designed to provide convenient and practical illumination for staircases, corridors, pathways, entrances, and other low-level lighting applications. The 6W configuration provides effective illumination while maintaining efficient power consumption for everyday use. With an operating voltage range of 85V–250V and a power factor >0.95 (HPF), the product is designed for stable and efficient operation. Available in CW, WW, NW, Red, Blue, Green, and Pink, the Sensor Foot Light provides flexibility for functional and decorative lighting requirements. The sensor foot light is designed to provide practical lighting assistance for areas where convenient illumination is required. A PF >0.95 (HPF) supports efficient electrical performance and optimized power utilization. The IP54 rating provides protection against dust ingress and water splashes, making it suitable for appropriate indoor and semi-outdoor applications. Designed with 4 kV surge protection, the product provides additional protection against suitable electrical surges.",
+    "ELSTRONG Purse Light 2 × 2 is a square LED lighting solution designed to provide bright, uniform illumination for offices, commercial spaces, retail environments, educational areas, and other indoor applications. With a 48W configuration, the product is designed to deliver dependable illumination for spaces requiring broad and consistent lighting coverage. Measuring 595 × 595 × 30 mm, its slim profile provides a clean and modern appearance while allowing it to integrate neatly into suitable ceiling installations. With a PF >0.95 (HPF) and an operating voltage range of 85V–350V, the Purse Light 2 × 2 is designed for efficient and stable operation. The large square format is designed to provide broad and consistent illumination across indoor spaces. A power factor >0.95 supports efficient electrical performance and optimized power utilization. Designed to operate from 85V–350V, with 440V high-voltage protection, the product supports dependable operation under varying voltage conditions. Available in CW (Cool White), WW (Warm White), and NW (Neutral White) to suit different interior lighting requirements.",
 
   // Main product images
-  image: "/product/footsensor1.webp",
+  image: "/product/purse-outdoor-led-lights.webp",
 
   images: [
-    "/product/footsensor1.webp",
-    "/product/footsensor2.webp",
-    "/product/footsensor3.webp",
-   
+    "/product/purse-outdoor-led-lights.webp",
+    "/product/purse-outdoor-led-lights-2.webp",
+    "/product/purse-outdoor-led-lights-3.webp",
+    "/product/purse-outdoor-led-lights-4.webp",
+    "/product/purse-outdoor-led-lights-5.webp",
   ],
 
   // Product variants
   wattages: [
     {
-      value: "6W",
-      image: "/product/sensor-foot-light-6w.webp",
+      value: "48W",
+      image: "/product/purse-outdoor-led-lights-48w.webp",
       price: 0,
     },
   ],
 
   // Product specifications
   specifications: {
-    Wattage: "6W",
-    "Operating Voltage": "85V–250V",
+    Wattage: "48W",
+    "Product Model": "Purse Light 2 × 2",
+    "Product Shape": "Square",
+    Dimensions: "595 × 595 × 30 mm",
+    "Operating Voltage": "85V–350V",
+    "High-Voltage Protection": "440V",
     "Power Factor": ">0.95 (HPF)",
-    "IP Rating": "IP54",
-    "Surge Protection": "4 kV",
-    "Colour Options": "CW, WW, NW, Red, Blue, Green, and Pink",
-    "Product Type": "LED Sensor Foot Light",
+    "Light Options": "CW (Cool White), WW (Warm White), and NW (Neutral White)",
+    "Product Type": "Large-Format Square LED Lighting",
     Application:
-      "Staircases / Corridors / Pathways / Entrances / Residential Spaces / Commercial Interiors / Indoor / Semi-Outdoor Areas",
+      "Offices / Commercial Spaces / Retail Environments / Educational Areas / Indoor Applications",
   },
 
   // Features
   features: [
     {
-      title: "Sensor-Based Convenience",
-      text: "The sensor foot light is designed to provide practical lighting assistance for areas where convenient illumination is required.",
+      title: "Uniform Area Lighting",
+      text: "The large square format is designed to provide broad and consistent illumination across indoor spaces.",
     },
     {
       title: "High Power Factor",
-      text: "A PF >0.95 (HPF) supports efficient electrical performance and optimized power utilization.",
+      text: "A power factor >0.95 supports efficient electrical performance and optimized power utilization.",
     },
     {
-      title: "IP54 Protection",
-      text: "The IP54 rating provides protection against dust ingress and water splashes, making it suitable for appropriate indoor and semi-outdoor applications.",
+      title: "Wide Voltage Range",
+      text: "Designed to operate from 85V–350V, with 440V high-voltage protection, supporting dependable operation under varying voltage conditions.",
     },
     {
-      title: "4 kV Surge Capacity",
-      text: "Designed with 4 kV surge protection to provide additional protection against suitable electrical surges.",
+      title: "Multiple White Light Options",
+      text: "Available in CW (Cool White), WW (Warm White), and NW (Neutral White) to suit different interior lighting requirements.",
     },
   ],
 
@@ -2847,40 +2962,40 @@ export const categories = [
   whyChoose: [
     {
       title: "Professional Lighting Manufacturer",
-      text: "ELSTRONG develops modern LED lighting solutions focused on practical functionality, energy efficiency, and dependable performance.",
+      text: "ELSTRONG develops LED lighting solutions focused on efficient performance, modern design, and dependable operation.",
     },
     {
-      title: "Convenient Lighting Solution",
-      text: "The sensor-based design makes the product suitable for spaces where automatic or convenient low-level illumination is required.",
+      title: "Wide Coverage Lighting",
+      text: "The 2 × 2 square format provides a practical solution for illuminating larger indoor areas with consistent light.",
     },
     {
-      title: "Efficient Performance",
-      text: "The 6W LED configuration combined with a >0.95 high power factor supports efficient everyday operation.",
+      title: "Energy-Efficient Performance",
+      text: "A high power factor of >0.95 supports efficient electrical operation.",
     },
     {
-      title: "Versatile Applications",
-      text: "Suitable for stairways, corridors, pathways, entrances, residential spaces, commercial interiors, and other suitable indoor or semi-outdoor areas.",
+      title: "Modern & Versatile",
+      text: "Its slim 30 mm profile and three white-light options make it suitable for offices, commercial spaces, retail areas, institutions, and other contemporary interiors.",
     },
   ],
 
   // Image used in description section
-  descriptionImage: "/product/footsensor3.webp",
+  descriptionImage: "/product/purse-outdoor-led-lights.webp",
 
   // Additional product information
-  sku: "ELS-SENSOR-FOOT-LIGHT",
+  sku: "ELS-PURSE-LIGHT-2X2",
 
   stock: true,
 
   stockText: "In Stock",
 
-  brochure: "/brochure/sensor-foot-light-brochure.pdf",
+  brochure: "/brochure/purse-outdoor-led-lights-brochure.pdf",
 
   // Related products
   relatedProducts: [
-    "foot-light",
-    "pearl-led-deep-light",
-    "junction-deep-light",
-    "lotus-deep-light",
+    "flood-light-gm-model",
+    "flood-light-lense-model",
+    "street-light",
+    "adjustable-light",
   ],
 },
     ],
@@ -3976,8 +4091,7 @@ export const categories = [
     ],
   },
 
-
-   {
+  {
     id: 11,
     name: "Deep Light",
     slug: "deep-light",
@@ -3992,488 +4106,482 @@ export const categories = [
       " ELSTRONG Deep Light is designed to provide bright, reliable, and uniform illumination for outdoor, industrial, commercial, architectural, and large-area lighting applications. ",
     products: [
       {
-  id: 1101,
-  name: "Pearl LED Deep Light",
-  slug: "pearl-led-deep-light",
-  metaTitle: "Pearl LED Deep Light | Pearl DL002 | Elstrong",
-  metaDesc:
-    "ELSTRONG Pearl DL002 is a compact 3W LED Deep Light delivering ≥300 lm, with 80 mm size, 45 mm cutout, 85–280 VAC operation, PF ≥0.90, and CRI ≥80 for practical indoor lighting.",
+        id: 1101,
+        name: "Pearl LED Deep Light",
+        slug: "pearl-led-deep-light",
+        metaTitle: "Pearl LED Deep Light | Pearl DL002 | Elstrong",
+        metaDesc:
+          "ELSTRONG Pearl DL002 is a compact 3W LED Deep Light delivering ≥300 lm, with 80 mm size, 45 mm cutout, 85–280 VAC operation, PF ≥0.90, and CRI ≥80 for practical indoor lighting.",
 
-  category: "Deep Light",
-  categorySlug: "deep-light",
+        category: "Deep Light",
+        categorySlug: "deep-light",
 
-  price: 0,
-  oldPrice: 0,
-  currency: "₹",
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
 
-  badge: "Featured",
+        badge: "Featured",
 
-  shortDescription:
-    "ELSTRONG Pearl DL002 is a compact 3W LED lighting solution designed to provide practical and uniform illumination for residential, commercial, office, and indoor spaces. With ≥300 lm output, compact dimensions, wide voltage operation, and CRI ≥80.",
+        shortDescription:
+          "ELSTRONG Pearl DL002 is a compact 3W LED lighting solution designed to provide practical and uniform illumination for residential, commercial, office, and indoor spaces. With ≥300 lm output, compact dimensions, wide voltage operation, and CRI ≥80.",
 
-  description:
-    "ELSTRONG Pearl DL002 is a compact 3W LED lighting solution designed to provide practical and uniform illumination for residential, commercial, office, and indoor spaces. With a 3W wattage and lumen output of ≥300 lm, Pearl DL002 provides suitable brightness for general indoor lighting applications. Measuring 80 mm in size, 45 mm cutout, and 45 mm height, the product is designed for neat and convenient ceiling installation. Designed to operate at 85–280 VAC, with a power factor ≥0.90, the product supports stable and efficient lighting operation. Pearl DL002 provides practical illumination with a compact power requirement, making it suitable for everyday indoor lighting. The 80 mm size and 45 mm cutout make Pearl DL002 suitable for installations requiring a smaller lighting footprint. A power factor ≥0.90 supports efficient electrical operation and power utilization. With CRI ≥80, the light is designed to provide natural and clear colour appearance in illuminated spaces.",
+        description:
+          "ELSTRONG Pearl DL002 is a compact 3W LED lighting solution designed to provide practical and uniform illumination for residential, commercial, office, and indoor spaces. With a 3W wattage and lumen output of ≥300 lm, Pearl DL002 provides suitable brightness for general indoor lighting applications. Measuring 80 mm in size, 45 mm cutout, and 45 mm height, the product is designed for neat and convenient ceiling installation. Designed to operate at 85–280 VAC, with a power factor ≥0.90, the product supports stable and efficient lighting operation. Pearl DL002 provides practical illumination with a compact power requirement, making it suitable for everyday indoor lighting. The 80 mm size and 45 mm cutout make Pearl DL002 suitable for installations requiring a smaller lighting footprint. A power factor ≥0.90 supports efficient electrical operation and power utilization. With CRI ≥80, the light is designed to provide natural and clear colour appearance in illuminated spaces.",
 
-  // Main product images
-  image: "/product/pearl-led-deep-light.webp",
+        // Main product images
+        image: "/product/pearl-led-deep-light.webp",
 
-  images: [
-    "/product/pearl-led-deep-light.webp",
-    "/product/pearl-led-deep-light-2.webp",
-    "/product/pearl-led-deep-light-3.webp",
-    "/product/pearl-led-deep-light-4.webp",
-    "/product/pearl-led-deep-light-5.webp",
-  ],
+        images: [
+          "/product/pearl-led-deep-light.webp",
+          "/product/pearl-led-deep-light-2.webp",
+          "/product/pearl-led-deep-light-3.webp",
+          "/product/pearl-led-deep-light-4.webp",
+          "/product/pearl-led-deep-light-5.webp",
+        ],
 
-  // Product variants
-  wattages: [
-    {
-      value: "3W",
-      image: "/product/pearl-led-deep-light-3w.webp",
-      price: 0,
-    },
-  ],
+        // Product variants
+        wattages: [
+          {
+            value: "3W",
+            image: "/product/pearl-led-deep-light-3w.webp",
+            price: 0,
+          },
+        ],
 
-  // Product specifications
-  specifications: {
-    Wattage: "3W",
-    "Lumen Output": "90 lm/watt",
-    Size: "80 mm",
-    Cutout: "45 mm",
-    Height: "45 mm",
-    "Operating Voltage": "85–280 VAC",
-    "Power Factor": "≥0.90",
-    CRI: "≥80",
-    "Product Type": "Compact LED Deep Light",
-    Application:
-      "Residential / Commercial / Office / Indoor Lighting",
+        // Product specifications
+        specifications: {
+          Wattage: "3W",
+          "Lumen Output": "90 lm/watt",
+          Size: "80 mm",
+          Cutout: "45 mm",
+          Height: "45 mm",
+          "Operating Voltage": "85–280 VAC",
+          "Power Factor": "≥0.90",
+          CRI: "≥80",
+          "Product Type": "Compact LED Deep Light",
+          Application: "Residential / Commercial / Office / Indoor Lighting",
+        },
+
+        // Features
+        features: [
+          {
+            title: "3W LED Technology",
+            text: "Provides practical illumination with a compact power requirement, making it suitable for everyday indoor lighting.",
+          },
+          {
+            title: "Compact Installation",
+            text: "The 80 mm size and 45 mm cutout make Pearl DL002 suitable for installations requiring a smaller lighting footprint.",
+          },
+          {
+            title: "Efficient Performance",
+            text: "A power factor ≥0.90 supports efficient electrical operation and power utilization.",
+          },
+          {
+            title: "Good Colour Rendering",
+            text: "With CRI ≥80, the light is designed to provide natural and clear colour appearance in illuminated spaces.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops LED lighting solutions focused on efficient performance, practical design, and dependable operation.",
+          },
+          {
+            title: "Compact Lighting Solution",
+            text: "Pearl DL002 is well suited for applications where a smaller and neatly integrated LED light is required.",
+          },
+          {
+            title: "Efficient Illumination",
+            text: "Its 3W LED configuration delivers ≥300 lm while maintaining a power factor of ≥0.90.",
+          },
+          {
+            title: "Reliable Indoor Lighting",
+            text: "With wide voltage operation and CRI ≥80, the Pearl provides a practical lighting solution for modern indoor environments.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/pearl-led-deep-light.webp",
+
+        // Additional product information
+        sku: "ELS-PEARL-DL002",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/pearl-led-deep-light-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "adjustable-light",
+          "cylinder-light",
+          "half-k-light",
+          "wall-light",
+        ],
+      },
+
+      {
+        id: 1102,
+        name: "Junction Deep Light",
+        slug: "junction-deep-light",
+        metaTitle:
+          "Junction Deep Light | Junction 3W LED Deep Light | Elstrong",
+        metaDesc:
+          "ELSTRONG Junction is a compact 3W LED Deep Light delivering ≥300 lm with 80 mm size, 45 mm cutout, 45 mm height, 85–280 VAC operation, PF ≥0.90, and CRI ≥80 for reliable indoor lighting.",
+
+        category: "Deep Light",
+        categorySlug: "deep-light",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG Junction is a compact 3W LED lighting solution designed to provide efficient and reliable illumination for residential, commercial, office, and indoor applications. With a compact 80 mm size, 45 mm cutout, ≥300 lm output, wide voltage operation, and CRI ≥80.",
+
+        description:
+          "ELSTRONG Junction is a 3W LED lighting solution designed to provide efficient and reliable illumination for residential, commercial, office, and indoor applications. With an 80 mm size, 45 mm cutout, and 45 mm height, the Junction is designed for neat installation where a compact lighting fixture is preferred. The 3W model provides a lumen output of ≥300 lm, delivering practical brightness for general lighting requirements. Operating at 85–280 VAC with a power factor ≥0.90, the product is designed for stable and efficient everyday operation. The 3W LED technology provides practical illumination with low power consumption, making it suitable for everyday indoor lighting applications. The 80 mm size and 45 mm cutout allow the Junction to fit neatly into suitable ceiling installations. With a lumen output of ≥300 lm and CRI ≥80, it provides clear and natural-looking illumination. The 85–280 VAC operating range supports reliable performance across varying compatible voltage conditions.",
+
+        // Main product images
+        image: "/product/junction-deep-light.webp",
+
+        images: [
+          "/product/junction-deep-light.webp",
+          "/product/junction-deep-light-2.webp",
+          "/product/junction-deep-light-3.webp",
+          "/product/junction-deep-light-4.webp",
+          "/product/junction-deep-light-5.webp",
+        ],
+
+        // Product variants
+        wattages: [
+          {
+            value: "3W",
+            image: "/product/junction-deep-light-3w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          Wattage: "3W",
+          "Lumen Output": "90 lm/watt",
+          Size: "80 mm",
+          Cutout: "45 mm",
+          Height: "45 mm",
+          "Operating Voltage": "85–280 VAC",
+          "Power Factor": "≥0.90",
+          CRI: "≥80",
+          "Product Type": "Compact LED Junction Deep Light",
+          Application: "Residential / Commercial / Office / Indoor Lighting",
+        },
+
+        // Features
+        features: [
+          {
+            title: "3W LED Technology",
+            text: "Provides practical illumination with low power consumption, making it suitable for everyday indoor lighting applications.",
+          },
+          {
+            title: "Compact Installation",
+            text: "The 80 mm size and 45 mm cutout allow the Junction to fit neatly into suitable ceiling installations.",
+          },
+          {
+            title: "High-Quality Illumination",
+            text: "With a lumen output of ≥300 lm and CRI ≥80, it provides clear and natural-looking illumination.",
+          },
+          {
+            title: "Wide Voltage Operation",
+            text: "The 85–280 VAC operating range supports reliable performance across varying compatible voltage conditions.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops LED lighting solutions focused on efficient performance, practical design, and dependable everyday operation.",
+          },
+          {
+            title: "Compact Lighting Design",
+            text: "Junction is suitable for installations where a smaller and neatly integrated lighting solution is required.",
+          },
+          {
+            title: "Efficient Performance",
+            text: "Its 3W LED configuration provides ≥300 lm illumination while maintaining a power factor of ≥0.90.",
+          },
+          {
+            title: "Reliable Indoor Lighting",
+            text: "Wide voltage operation and CRI ≥80 make the Junction a practical choice for residential and commercial lighting applications.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/junction-deep-light.webp",
+
+        // Additional product information
+        sku: "ELS-JUNCTION-DL",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/junction-deep-light-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "pearl-led-deep-light",
+          "adjustable-light",
+          "cylinder-light",
+          "half-k-light",
+        ],
+      },
+
+      {
+        id: 1103,
+        name: "Lotus Deep Light",
+        slug: "lotus-deep-light",
+        metaTitle: "Lotus Deep Light | Lotus 6W LED Downlight | Elstrong",
+        metaDesc:
+          "ELSTRONG Lotus is a compact 6W LED Deep Light delivering ≥300 lm with 80 mm size, 45 mm cutout, 45 mm height, 85–280 VAC operation, PF ≥0.90, and CRI ≥80 for reliable indoor lighting.",
+
+        category: "Deep Light",
+        categorySlug: "deep-light",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG Lotus is a 6W LED lighting solution designed to provide practical and consistent illumination for residential, commercial, office, and indoor spaces. With ≥300 lm output, compact dimensions, wide voltage operation, and CRI ≥80.",
+
+        description:
+          "ELSTRONG Lotus is a 6W LED lighting solution designed to provide practical and consistent illumination for residential, commercial, office, and indoor spaces. With a 6W wattage and lumen output of ≥300 lm, Lotus provides suitable brightness for general indoor lighting applications. Measuring 80 mm in size, 45 mm cutout, and 45 mm height, the product is designed for a neat and space-efficient installation. With an operating voltage of 85–280 VAC and a power factor of ≥0.90, Lotus is designed for stable and efficient everyday lighting performance. The 6W LED technology provides practical illumination while maintaining a compact power requirement, making it suitable for everyday indoor applications. The 80 mm size and 45 mm cutout provide a convenient configuration for suitable ceiling installations. With CRI ≥80, the product provides clear and natural colour representation for indoor spaces. The 85–280 VAC operating range supports reliable performance across varying compatible voltage conditions.",
+
+        // Main product images
+        image: "/product/lotus-deep-light.webp",
+
+        images: [
+          "/product/lotus-deep-light.webp",
+          "/product/lotus-deep-light-2.webp",
+          "/product/lotus-deep-light-3.webp",
+          "/product/lotus-deep-light-4.webp",
+          "/product/lotus-deep-light-5.webp",
+        ],
+
+        // Product variants
+        wattages: [
+          {
+            value: "6W",
+            image: "/product/lotus-deep-light-6w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          Wattage: "6W",
+          "Lumen Output": "90 lm/watt",
+          Size: "80 mm",
+          Cutout: "45 mm",
+          Height: "45 mm",
+          "Operating Voltage": "85–280 VAC",
+          "Power Factor": "≥0.90",
+          CRI: "≥80",
+          "Product Type": "Compact LED Deep Light",
+          Application: "Residential / Commercial / Office / Indoor Lighting",
+        },
+
+        // Features
+        features: [
+          {
+            title: "6W LED Technology",
+            text: "Provides practical illumination while maintaining a compact power requirement, making it suitable for everyday indoor applications.",
+          },
+          {
+            title: "Compact Installation",
+            text: "The 80 mm size and 45 mm cutout provide a convenient configuration for suitable ceiling installations.",
+          },
+          {
+            title: "Good Light Quality",
+            text: "With CRI ≥80, the product provides clear and natural colour representation for indoor spaces.",
+          },
+          {
+            title: "Wide Voltage Range",
+            text: "The 85–280 VAC operating range supports reliable performance across varying compatible voltage conditions.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops LED lighting solutions focused on efficient performance, practical design, and dependable operation.",
+          },
+          {
+            title: "Efficient 6W Lighting",
+            text: "Lotus delivers practical illumination in a compact 6W configuration, making it suitable for various indoor applications.",
+          },
+          {
+            title: "Space-Efficient Design",
+            text: "Its compact 80 mm size and 45 mm cutout make it suitable for installations where a neat lighting profile is preferred.",
+          },
+          {
+            title: "Reliable Performance",
+            text: "Wide voltage operation, ≥0.90 power factor, and CRI ≥80 make Lotus a practical choice for modern residential and commercial lighting.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/lotus-deep-light.webp",
+
+        // Additional product information
+        sku: "ELS-LOTUS-DEEP-LIGHT",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/lotus-deep-light-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "pearl-led-deep-light",
+          "junction-deep-light",
+          "adjustable-light",
+          "cylinder-light",
+        ],
+      },
+
+      {
+        id: 1104,
+        name: "Spot Deep LED Light",
+        slug: "spot-deep-led-light",
+        metaTitle: "Spot Deep LED Light | 2W LED Spot Light | Elstrong",
+        metaDesc:
+          "ELSTRONG Spot Light is a compact 2W LED Deep Light designed for focused illumination, featuring a 50mm output size, 45mm cutout, 45mm height, and 85–265 VAC operation for residential, commercial, retail, office, and decorative applications.",
+
+        category: "Deep Light",
+        categorySlug: "deep-light",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG Spot Light is a compact 2W lighting solution designed to provide focused and practical illumination for residential, commercial, retail, office, and decorative indoor applications. With a 50mm output size, 45mm cutout, 45mm height, and wide voltage operation.",
+
+        description:
+          "ELSTRONG Spot Light is a compact 2W lighting solution designed to provide focused and practical illumination for residential, commercial, retail, office, and decorative indoor applications. Its 50mm output size provides targeted lighting, making it suitable for highlighting selected areas, displays, architectural details, and interior features. With a 45mm cutout size and 45mm height, the Spot Light is designed for neat and space-efficient installation. Designed to operate between 85–265 VAC, it provides reliable performance across a broad compatible voltage range. The 2W configuration offers focused illumination while maintaining a compact and energy-efficient lighting format. The Spot Light is designed for applications where concentrated light is required to highlight specific objects, surfaces, or areas. The 45mm cutout and 45mm height allow the light to be installed neatly without taking up excessive space. It is suitable for homes, offices, shops, showrooms, display areas, corridors, hospitality spaces, and decorative interiors.",
+
+        // Main product images
+        image: "/product/spot-deep-led-light.webp",
+
+        images: [
+          "/product/spot-deep-led-light.webp",
+          "/product/spot-deep-led-light-2.webp",
+          "/product/spot-deep-led-light-3.webp",
+          "/product/spot-deep-led-light-4.webp",
+          "/product/spot-deep-led-light-5.webp",
+        ],
+
+        // Product variants
+        wattages: [
+          {
+            value: "2W",
+            image: "/product/spot-deep-led-light-2w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          Wattage: "2W",
+          "Output Size": "50mm",
+          Cutout: "45mm",
+          Height: "45mm",
+          "Operating Voltage": "85–265 VAC",
+          "Product Type": "Compact LED Spot Light",
+          "Light Type": "Focused / Directional Lighting",
+          Application:
+            "Residential / Commercial / Retail / Office / Decorative Indoor Lighting",
+          SuitableFor:
+            "Homes / Offices / Shops / Showrooms / Display Areas / Corridors / Hospitality Spaces / Decorative Interiors",
+        },
+
+        // Features
+        features: [
+          {
+            title: "2W LED Performance",
+            text: "The 2W configuration offers focused illumination while maintaining a compact and energy-efficient lighting format.",
+          },
+          {
+            title: "Directional Lighting",
+            text: "Designed for applications where concentrated light is required to highlight specific objects, surfaces, or areas.",
+          },
+          {
+            title: "Space-Saving Design",
+            text: "The 45mm cutout and 45mm height allow the light to be installed neatly without taking up excessive space.",
+          },
+          {
+            title: "Versatile Applications",
+            text: "Suitable for homes, offices, shops, showrooms, display areas, corridors, hospitality spaces, and decorative interiors.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops LED lighting solutions focused on practical design, efficient performance, and dependable operation.",
+          },
+          {
+            title: "Focused Lighting Solution",
+            text: "The Spot Light is designed to provide targeted illumination for accent and highlighting applications.",
+          },
+          {
+            title: "Compact Installation",
+            text: "Its compact dimensions make it suitable for installations where space efficiency and a clean appearance are important.",
+          },
+          {
+            title: "Versatile Indoor Use",
+            text: "Suitable for residential, commercial, retail, hospitality, and decorative lighting environments.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/spot-deep-led-light.webp",
+
+        // Additional product information
+        sku: "ELS-SPOT-DEEP-LED-LIGHT",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/spot-deep-led-light-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "pearl-led-deep-light",
+          "junction-deep-light",
+          "lotus-deep-light",
+          "adjustable-light",
+        ],
+      },
+    ],
   },
 
-  // Features
-  features: [
-    {
-      title: "3W LED Technology",
-      text: "Provides practical illumination with a compact power requirement, making it suitable for everyday indoor lighting.",
-    },
-    {
-      title: "Compact Installation",
-      text: "The 80 mm size and 45 mm cutout make Pearl DL002 suitable for installations requiring a smaller lighting footprint.",
-    },
-    {
-      title: "Efficient Performance",
-      text: "A power factor ≥0.90 supports efficient electrical operation and power utilization.",
-    },
-    {
-      title: "Good Colour Rendering",
-      text: "With CRI ≥80, the light is designed to provide natural and clear colour appearance in illuminated spaces.",
-    },
-  ],
-
-  // Why choose this product/company
-  whyChoose: [
-    {
-      title: "Professional Lighting Manufacturer",
-      text: "ELSTRONG develops LED lighting solutions focused on efficient performance, practical design, and dependable operation.",
-    },
-    {
-      title: "Compact Lighting Solution",
-      text: "Pearl DL002 is well suited for applications where a smaller and neatly integrated LED light is required.",
-    },
-    {
-      title: "Efficient Illumination",
-      text: "Its 3W LED configuration delivers ≥300 lm while maintaining a power factor of ≥0.90.",
-    },
-    {
-      title: "Reliable Indoor Lighting",
-      text: "With wide voltage operation and CRI ≥80, the Pearl provides a practical lighting solution for modern indoor environments.",
-    },
-  ],
-
-  // Image used in description section
-  descriptionImage: "/product/pearl-led-deep-light.webp",
-
-  // Additional product information
-  sku: "ELS-PEARL-DL002",
-
-  stock: true,
-
-  stockText: "In Stock",
-
-  brochure: "/brochure/pearl-led-deep-light-brochure.pdf",
-
-  // Related products
-  relatedProducts: [
-    "adjustable-light",
-    "cylinder-light",
-    "half-k-light",
-    "wall-light",
-  ],
-},
-
-
-{
-  id: 1102,
-  name: "Junction Deep Light",
-  slug: "junction-deep-light",
-  metaTitle: "Junction Deep Light | Junction 3W LED Deep Light | Elstrong",
-  metaDesc:
-    "ELSTRONG Junction is a compact 3W LED Deep Light delivering ≥300 lm with 80 mm size, 45 mm cutout, 45 mm height, 85–280 VAC operation, PF ≥0.90, and CRI ≥80 for reliable indoor lighting.",
-
-  category: "Deep Light",
-  categorySlug: "deep-light",
-
-  price: 0,
-  oldPrice: 0,
-  currency: "₹",
-
-  badge: "Featured",
-
-  shortDescription:
-    "ELSTRONG Junction is a compact 3W LED lighting solution designed to provide efficient and reliable illumination for residential, commercial, office, and indoor applications. With a compact 80 mm size, 45 mm cutout, ≥300 lm output, wide voltage operation, and CRI ≥80.",
-
-  description:
-    "ELSTRONG Junction is a 3W LED lighting solution designed to provide efficient and reliable illumination for residential, commercial, office, and indoor applications. With an 80 mm size, 45 mm cutout, and 45 mm height, the Junction is designed for neat installation where a compact lighting fixture is preferred. The 3W model provides a lumen output of ≥300 lm, delivering practical brightness for general lighting requirements. Operating at 85–280 VAC with a power factor ≥0.90, the product is designed for stable and efficient everyday operation. The 3W LED technology provides practical illumination with low power consumption, making it suitable for everyday indoor lighting applications. The 80 mm size and 45 mm cutout allow the Junction to fit neatly into suitable ceiling installations. With a lumen output of ≥300 lm and CRI ≥80, it provides clear and natural-looking illumination. The 85–280 VAC operating range supports reliable performance across varying compatible voltage conditions.",
-
-  // Main product images
-  image: "/product/junction-deep-light.webp",
-
-  images: [
-    "/product/junction-deep-light.webp",
-    "/product/junction-deep-light-2.webp",
-    "/product/junction-deep-light-3.webp",
-    "/product/junction-deep-light-4.webp",
-    "/product/junction-deep-light-5.webp",
-  ],
-
-  // Product variants
-  wattages: [
-    {
-      value: "3W",
-      image: "/product/junction-deep-light-3w.webp",
-      price: 0,
-    },
-  ],
-
-  // Product specifications
-  specifications: {
-    Wattage: "3W",
-    "Lumen Output": "90 lm/watt",
-    Size: "80 mm",
-    Cutout: "45 mm",
-    Height: "45 mm",
-    "Operating Voltage": "85–280 VAC",
-    "Power Factor": "≥0.90",
-    CRI: "≥80",
-    "Product Type": "Compact LED Junction Deep Light",
-    Application:
-      "Residential / Commercial / Office / Indoor Lighting",
-  },
-
-  // Features
-  features: [
-    {
-      title: "3W LED Technology",
-      text: "Provides practical illumination with low power consumption, making it suitable for everyday indoor lighting applications.",
-    },
-    {
-      title: "Compact Installation",
-      text: "The 80 mm size and 45 mm cutout allow the Junction to fit neatly into suitable ceiling installations.",
-    },
-    {
-      title: "High-Quality Illumination",
-      text: "With a lumen output of ≥300 lm and CRI ≥80, it provides clear and natural-looking illumination.",
-    },
-    {
-      title: "Wide Voltage Operation",
-      text: "The 85–280 VAC operating range supports reliable performance across varying compatible voltage conditions.",
-    },
-  ],
-
-  // Why choose this product/company
-  whyChoose: [
-    {
-      title: "Professional Lighting Manufacturer",
-      text: "ELSTRONG develops LED lighting solutions focused on efficient performance, practical design, and dependable everyday operation.",
-    },
-    {
-      title: "Compact Lighting Design",
-      text: "Junction is suitable for installations where a smaller and neatly integrated lighting solution is required.",
-    },
-    {
-      title: "Efficient Performance",
-      text: "Its 3W LED configuration provides ≥300 lm illumination while maintaining a power factor of ≥0.90.",
-    },
-    {
-      title: "Reliable Indoor Lighting",
-      text: "Wide voltage operation and CRI ≥80 make the Junction a practical choice for residential and commercial lighting applications.",
-    },
-  ],
-
-  // Image used in description section
-  descriptionImage: "/product/junction-deep-light.webp",
-
-  // Additional product information
-  sku: "ELS-JUNCTION-DL",
-
-  stock: true,
-
-  stockText: "In Stock",
-
-  brochure: "/brochure/junction-deep-light-brochure.pdf",
-
-  // Related products
-  relatedProducts: [
-    "pearl-led-deep-light",
-    "adjustable-light",
-    "cylinder-light",
-    "half-k-light",
-  ],
-},
-
-{
-  id: 1103,
-  name: "Lotus Deep Light",
-  slug: "lotus-deep-light",
-  metaTitle: "Lotus Deep Light | Lotus 6W LED Downlight | Elstrong",
-  metaDesc:
-    "ELSTRONG Lotus is a compact 6W LED Deep Light delivering ≥300 lm with 80 mm size, 45 mm cutout, 45 mm height, 85–280 VAC operation, PF ≥0.90, and CRI ≥80 for reliable indoor lighting.",
-
-  category: "Deep Light",
-  categorySlug: "deep-light",
-
-  price: 0,
-  oldPrice: 0,
-  currency: "₹",
-
-  badge: "Featured",
-
-  shortDescription:
-    "ELSTRONG Lotus is a 6W LED lighting solution designed to provide practical and consistent illumination for residential, commercial, office, and indoor spaces. With ≥300 lm output, compact dimensions, wide voltage operation, and CRI ≥80.",
-
-  description:
-    "ELSTRONG Lotus is a 6W LED lighting solution designed to provide practical and consistent illumination for residential, commercial, office, and indoor spaces. With a 6W wattage and lumen output of ≥300 lm, Lotus provides suitable brightness for general indoor lighting applications. Measuring 80 mm in size, 45 mm cutout, and 45 mm height, the product is designed for a neat and space-efficient installation. With an operating voltage of 85–280 VAC and a power factor of ≥0.90, Lotus is designed for stable and efficient everyday lighting performance. The 6W LED technology provides practical illumination while maintaining a compact power requirement, making it suitable for everyday indoor applications. The 80 mm size and 45 mm cutout provide a convenient configuration for suitable ceiling installations. With CRI ≥80, the product provides clear and natural colour representation for indoor spaces. The 85–280 VAC operating range supports reliable performance across varying compatible voltage conditions.",
-
-  // Main product images
-  image: "/product/lotus-deep-light.webp",
-
-  images: [
-    "/product/lotus-deep-light.webp",
-    "/product/lotus-deep-light-2.webp",
-    "/product/lotus-deep-light-3.webp",
-    "/product/lotus-deep-light-4.webp",
-    "/product/lotus-deep-light-5.webp",
-  ],
-
-  // Product variants
-  wattages: [
-    {
-      value: "6W",
-      image: "/product/lotus-deep-light-6w.webp",
-      price: 0,
-    },
-  ],
-
-  // Product specifications
-  specifications: {
-    Wattage: "6W",
-    "Lumen Output": "90 lm/watt",
-    Size: "80 mm",
-    Cutout: "45 mm",
-    Height: "45 mm",
-    "Operating Voltage": "85–280 VAC",
-    "Power Factor": "≥0.90",
-    CRI: "≥80",
-    "Product Type": "Compact LED Deep Light",
-    Application:
-      "Residential / Commercial / Office / Indoor Lighting",
-  },
-
-  // Features
-  features: [
-    {
-      title: "6W LED Technology",
-      text: "Provides practical illumination while maintaining a compact power requirement, making it suitable for everyday indoor applications.",
-    },
-    {
-      title: "Compact Installation",
-      text: "The 80 mm size and 45 mm cutout provide a convenient configuration for suitable ceiling installations.",
-    },
-    {
-      title: "Good Light Quality",
-      text: "With CRI ≥80, the product provides clear and natural colour representation for indoor spaces.",
-    },
-    {
-      title: "Wide Voltage Range",
-      text: "The 85–280 VAC operating range supports reliable performance across varying compatible voltage conditions.",
-    },
-  ],
-
-  // Why choose this product/company
-  whyChoose: [
-    {
-      title: "Professional Lighting Manufacturer",
-      text: "ELSTRONG develops LED lighting solutions focused on efficient performance, practical design, and dependable operation.",
-    },
-    {
-      title: "Efficient 6W Lighting",
-      text: "Lotus delivers practical illumination in a compact 6W configuration, making it suitable for various indoor applications.",
-    },
-    {
-      title: "Space-Efficient Design",
-      text: "Its compact 80 mm size and 45 mm cutout make it suitable for installations where a neat lighting profile is preferred.",
-    },
-    {
-      title: "Reliable Performance",
-      text: "Wide voltage operation, ≥0.90 power factor, and CRI ≥80 make Lotus a practical choice for modern residential and commercial lighting.",
-    },
-  ],
-
-  // Image used in description section
-  descriptionImage: "/product/lotus-deep-light.webp",
-
-  // Additional product information
-  sku: "ELS-LOTUS-DEEP-LIGHT",
-
-  stock: true,
-
-  stockText: "In Stock",
-
-  brochure: "/brochure/lotus-deep-light-brochure.pdf",
-
-  // Related products
-  relatedProducts: [
-    "pearl-led-deep-light",
-    "junction-deep-light",
-    "adjustable-light",
-    "cylinder-light",
-  ],
-},
-
-
-{
-  id: 1104,
-  name: "Spot Deep LED Light",
-  slug: "spot-deep-led-light",
-  metaTitle: "Spot Deep LED Light | 2W LED Spot Light | Elstrong",
-  metaDesc:
-    "ELSTRONG Spot Light is a compact 2W LED Deep Light designed for focused illumination, featuring a 50mm output size, 45mm cutout, 45mm height, and 85–265 VAC operation for residential, commercial, retail, office, and decorative applications.",
-
-  category: "Deep Light",
-  categorySlug: "deep-light",
-
-  price: 0,
-  oldPrice: 0,
-  currency: "₹",
-
-  badge: "Featured",
-
-  shortDescription:
-    "ELSTRONG Spot Light is a compact 2W lighting solution designed to provide focused and practical illumination for residential, commercial, retail, office, and decorative indoor applications. With a 50mm output size, 45mm cutout, 45mm height, and wide voltage operation.",
-
-  description:
-    "ELSTRONG Spot Light is a compact 2W lighting solution designed to provide focused and practical illumination for residential, commercial, retail, office, and decorative indoor applications. Its 50mm output size provides targeted lighting, making it suitable for highlighting selected areas, displays, architectural details, and interior features. With a 45mm cutout size and 45mm height, the Spot Light is designed for neat and space-efficient installation. Designed to operate between 85–265 VAC, it provides reliable performance across a broad compatible voltage range. The 2W configuration offers focused illumination while maintaining a compact and energy-efficient lighting format. The Spot Light is designed for applications where concentrated light is required to highlight specific objects, surfaces, or areas. The 45mm cutout and 45mm height allow the light to be installed neatly without taking up excessive space. It is suitable for homes, offices, shops, showrooms, display areas, corridors, hospitality spaces, and decorative interiors.",
-
-  // Main product images
-  image: "/product/spot-deep-led-light.webp",
-
-  images: [
-    "/product/spot-deep-led-light.webp",
-    "/product/spot-deep-led-light-2.webp",
-    "/product/spot-deep-led-light-3.webp",
-    "/product/spot-deep-led-light-4.webp",
-    "/product/spot-deep-led-light-5.webp",
-  ],
-
-  // Product variants
-  wattages: [
-    {
-      value: "2W",
-      image: "/product/spot-deep-led-light-2w.webp",
-      price: 0,
-    },
-  ],
-
-  // Product specifications
-  specifications: {
-    Wattage: "2W",
-    "Output Size": "50mm",
-    Cutout: "45mm",
-    Height: "45mm",
-    "Operating Voltage": "85–265 VAC",
-    "Product Type": "Compact LED Spot Light",
-    "Light Type": "Focused / Directional Lighting",
-    Application:
-      "Residential / Commercial / Retail / Office / Decorative Indoor Lighting",
-    SuitableFor:
-      "Homes / Offices / Shops / Showrooms / Display Areas / Corridors / Hospitality Spaces / Decorative Interiors",
-  },
-
-  // Features
-  features: [
-    {
-      title: "2W LED Performance",
-      text: "The 2W configuration offers focused illumination while maintaining a compact and energy-efficient lighting format.",
-    },
-    {
-      title: "Directional Lighting",
-      text: "Designed for applications where concentrated light is required to highlight specific objects, surfaces, or areas.",
-    },
-    {
-      title: "Space-Saving Design",
-      text: "The 45mm cutout and 45mm height allow the light to be installed neatly without taking up excessive space.",
-    },
-    {
-      title: "Versatile Applications",
-      text: "Suitable for homes, offices, shops, showrooms, display areas, corridors, hospitality spaces, and decorative interiors.",
-    },
-  ],
-
-  // Why choose this product/company
-  whyChoose: [
-    {
-      title: "Professional Lighting Manufacturer",
-      text: "ELSTRONG develops LED lighting solutions focused on practical design, efficient performance, and dependable operation.",
-    },
-    {
-      title: "Focused Lighting Solution",
-      text: "The Spot Light is designed to provide targeted illumination for accent and highlighting applications.",
-    },
-    {
-      title: "Compact Installation",
-      text: "Its compact dimensions make it suitable for installations where space efficiency and a clean appearance are important.",
-    },
-    {
-      title: "Versatile Indoor Use",
-      text: "Suitable for residential, commercial, retail, hospitality, and decorative lighting environments.",
-    },
-  ],
-
-  // Image used in description section
-  descriptionImage: "/product/spot-deep-led-light.webp",
-
-  // Additional product information
-  sku: "ELS-SPOT-DEEP-LED-LIGHT",
-
-  stock: true,
-
-  stockText: "In Stock",
-
-  brochure: "/brochure/spot-deep-led-light-brochure.pdf",
-
-  // Related products
-  relatedProducts: [
-    "pearl-led-deep-light",
-    "junction-deep-light",
-    "lotus-deep-light",
-    "adjustable-light",
-  ],
-},
-    ]
-  }
-
-,
-
-    {
+  {
     id: 12,
     name: "LED Surface Panel",
     slug: "led-surface-panel",
@@ -4487,18 +4595,425 @@ export const categories = [
     description:
       " ELSTRONG LED Surface Panel is designed to provide bright, reliable, and uniform illumination for outdoor, industrial, commercial, architectural, and large-area lighting applications. ",
     products: [
+      {
+        id: 1201,
+        name: "Aluminum Square LED Surface Panel",
+        slug: "aluminum-square-led-surface-panel",
+        metaTitle:
+          "Aluminum Square LED Surface Panel | Surface Mounted LED Panel | Elstrong",
+        metaDesc:
+          "ELSTRONG Aluminum Square LED Surface Panel features a modern square surface-mounted design, aluminium construction, multiple wattage options, >600 lm to >1800 lm output, PF >0.95, wide voltage operation, and surge protection.",
+
+        category: "LED Surface Panel",
+        categorySlug: "led-surface-panel",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG Aluminum Square LED Surface Panel is designed to provide clean and uniform illumination with a contemporary square profile for residential, commercial, office, retail, and other indoor spaces. Available in multiple wattage options with a durable aluminium body, it provides flexible and efficient indoor lighting performance.",
+
+        description:
+          "ELSTRONG Aluminum Square LED Surface Panel is designed to provide clean and uniform illumination with a contemporary square profile for residential, commercial, office, retail, and other indoor spaces. Available in 6W, 12W/18W, and 18W/22W, the panel offers flexibility to select the appropriate lighting output for different applications. The aluminium body provides a durable and practical housing while supporting effective heat management during regular LED operation. The available range delivers a lumen output from >600 lm to >1800 lm, providing suitable brightness for different indoor lighting requirements. The square format provides a clean architectural appearance and is suitable for surface-mounted ceiling applications. With a PF >0.95, the panel is designed for efficient electrical performance and optimized power utilization. Designed for 110V–280V operation at 50Hz, it supports reliable performance across a broad compatible voltage range. The panel features up to 2.5 kVA surge protection and THD <15%, supporting dependable electrical operation.",
+
+        // Main product images
+        image: "/product/surfaceSq1.webp",
+
+        images: [
+          "/product/surfaceSq1.webp",
+          "/product/surfaceSq2.webp",
+          "/product/surfaceSq3.webp",
+        ],
+
+        // Product variants
+        wattages: [
+          {
+            value: "6W",
+            image: "/product/aluminum-square-led-surface-panel-6w.webp",
+            price: 0,
+          },
+          {
+            value: "12W",
+            image: "/product/aluminum-square-led-surface-panel-6w.webp",
+            price: 0,
+          },
+          {
+            value: "18W",
+            image: "/product/aluminum-square-led-surface-panel-12w-18w.webp",
+            price: 0,
+          },
+          {
+            value: "18W",
+            image: "/product/aluminum-square-led-surface-panel-18w-22w.webp",
+            price: 0,
+          },
+          {
+            value: "22W",
+            image: "/product/aluminum-square-led-surface-panel-18w-22w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          "Wattage Options": "6W / 12W / 18W / 18W / 22W",
+          "Lumen Output": "90 lm/watt",
+          "Body Material": "Aluminium",
+          "Product Shape": "Square",
+          Installation: "Surface Mounted",
+          "Operating Voltage": "110V–280V",
+          Frequency: "50Hz",
+          "Power Factor": ">0.95",
+          "Surge Protection": "Up to 2.5 kVA",
+          THD: "<15%",
+          Application:
+            "Residential / Commercial / Office / Retail / Indoor Lighting",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Square Surface Design",
+            text: "The square format provides a clean architectural appearance and is suitable for surface-mounted ceiling applications.",
+          },
+          {
+            title: "High Power Factor",
+            text: "With a PF >0.95, the panel is designed for efficient electrical performance and optimized power utilization.",
+          },
+          {
+            title: "Wide Voltage Range",
+            text: "Designed for 110V–280V operation at 50Hz, supporting reliable performance across a broad compatible voltage range.",
+          },
+          {
+            title: "Surge & THD Performance",
+            text: "Features up to 2.5 kVA surge protection and THD <15%, supporting dependable electrical operation.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops LED lighting solutions focused on modern design, efficient performance, and reliable everyday operation.",
+          },
+          {
+            title: "Flexible Lighting Range",
+            text: "Multiple wattage options and dimensional variations make the panel suitable for different indoor lighting requirements.",
+          },
+          {
+            title: "Durable Aluminium Body",
+            text: "The aluminium construction provides a practical and robust housing for long-term lighting applications.",
+          },
+          {
+            title: "Modern Surface Installation",
+            text: "The square surface-mounted design provides a neat and contemporary appearance for a wide range of interiors.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/surfaceSq3.webp",
+
+        // Additional product information
+        sku: "ELS-ALUMINUM-SQUARE-LED-SURFACE-PANEL",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/aluminum-square-led-surface-panel-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "pearl-led-deep-light",
+          "junction-deep-light",
+          "lotus-deep-light",
+          "adjustable-light",
+        ],
+      },
 
       {
-  id: 1201,
-  name: "Aluminum Square LED Surface Panel",
-  slug: "aluminum-square-led-surface-panel",
-  metaTitle:
-    "Aluminum Square LED Surface Panel | Surface Mounted LED Panel | Elstrong",
-  metaDesc:
-    "ELSTRONG Aluminum Square LED Surface Panel features a modern square surface-mounted design, aluminium construction, multiple wattage options, >600 lm to >1800 lm output, PF >0.95, wide voltage operation, and surge protection.",
+        id: 912,
+        name: "Aluminum Round LED Surface Panel",
+        slug: "aluminum-round-led-surface-panel",
+        metaTitle:
+          "Aluminum Round LED Surface Panel | Round Surface Mounted LED Panel | Elstrong",
+        metaDesc:
+          "ELSTRONG Aluminum Round LED Surface Panel combines a contemporary round profile with efficient LED illumination, aluminium construction, multiple wattage options, >600 lm to >1800 lm output, PF >0.95, wide voltage operation, and reliable electrical protection.",
 
-  category: "LED Surface Panel",
-  categorySlug: "led-surface-panel",
+        category: "LED Surface Panel",
+        categorySlug: "led-surface-panel",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG Aluminum Round LED Surface Panel combines a smooth round profile with efficient LED illumination, making it suitable for modern residential, commercial, office, and retail interiors. Available in 6W , 12W ,18W , 22W",
+
+        description:
+          "ELSTRONG Aluminum Round LED Surface Panel combines a smooth round profile with efficient LED illumination, making it suitable for modern residential, commercial, office, and retail interiors. Available in 6W, 12W/18W, and 18W/22W, the panel provides different power options for varying illumination requirements. Constructed with an aluminium housing designed to provide a durable lighting structure and support effective heat management. The range provides lumen output from >600 lm to >1800 lm, offering practical illumination for different indoor applications. The round profile offers a clean and versatile appearance that integrates easily with contemporary ceiling designs. A PF >0.95 supports efficient electrical performance and helps optimize power utilization. The panel is designed to operate from 110V–280V at 50Hz, providing flexibility for compatible electrical installations. Equipped with up to 2.5 kVA surge protection and THD <15%, the panel provides dependable electrical performance.",
+
+        // Main product images
+        image: "/product/roundadjustablepanel1.webp",
+
+        images: [
+          "/product/roundadjustablepanel1.webp",
+          "/product/roundadjustablepanel2.webp",
+          "/product/roundadjustablepanel3.webp",
+        ],
+
+        // Product variants
+        wattages: [
+          {
+            value: "6W",
+            image: "/product/aluminum-round-led-surface-panel-6w.webp",
+            price: 0,
+          },
+          {
+            value: "12W",
+            image: "/product/aluminum-round-led-surface-panel-12w-18w.webp",
+            price: 0,
+          },
+          {
+            value: "18W",
+            image: "/product/aluminum-round-led-surface-panel-12w-18w.webp",
+            price: 0,
+          },
+          {
+            value: "22W",
+            image: "/product/aluminum-round-led-surface-panel-18w-22w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          "Wattage Options": "6W / 12W / 18W / 22W",
+          "Lumen Output": "90 lm/watt",
+          "Body Material": "Aluminium",
+          "Product Shape": "Round",
+          Installation: "Surface Mounted",
+          "Operating Voltage": "110V–280V",
+          Frequency: "50Hz",
+          "Power Factor": ">0.95",
+          "Surge Protection": "Up to 2.5 kVA",
+          THD: "<15%",
+          Application:
+            "Residential / Commercial / Office / Retail / Indoor Lighting",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Round Surface Design",
+            text: "The round profile offers a clean and versatile appearance that integrates easily with contemporary ceiling designs.",
+          },
+          {
+            title: "High Power Factor",
+            text: "A PF >0.95 supports efficient electrical performance and helps optimize power utilization.",
+          },
+          {
+            title: "Wide Operating Voltage",
+            text: "The panel is designed to operate from 110V–280V at 50Hz, providing flexibility for compatible electrical installations.",
+          },
+          {
+            title: "Reliable Electrical Protection",
+            text: "Equipped with up to 2.5 kVA surge protection and THD <15% for dependable electrical performance.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Reliable LED Light Manufacturer",
+            text: "ELSTRONG focuses on developing LED lighting products that combine practical performance with modern aesthetics.",
+          },
+          {
+            title: "Flexible Applications",
+            text: "The different wattage options make the Round Surface Panel suitable for various residential and commercial lighting requirements.",
+          },
+          {
+            title: "Efficient LED Performance",
+            text: "High power factor and strong lumen output provide an effective combination of illumination and electrical efficiency.",
+          },
+          {
+            title: "Durable & Modern",
+            text: "The aluminium construction and round surface design offer a practical lighting solution that complements contemporary interiors.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/roundadjustablepanel3.webp",
+
+        // Additional product information
+        sku: "ELS-ALUMINUM-ROUND-LED-SURFACE-PANEL",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/aluminum-round-led-surface-panel-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "aluminum-square-led-surface-panel",
+          "pearl-led-deep-light",
+          "junction-deep-light",
+          "lotus-deep-light",
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 13,
+    name: "PC Surface Panel",
+    slug: "pc-surface-panel",
+    metaTitle: "PC Surface Panel | Unique Decorative Lighting | Elstrong",
+    metaDesc:
+      "Explore Elstrong’s PC Surface Panel lighting range, designed to add character and visual appeal to modern interiors with distinctive decorative lighting solutions.",
+    image: "product/glory1.webp",
+    image2: "/product/glory2.webp",
+    hoverImage: "/product/glory3.webp",
+
+    description:
+      " ELSTRONG PC Surface Panel is designed to provide bright, reliable, and uniform illumination for outdoor, industrial, commercial, architectural, and large-area lighting applications. ",
+    products: [
+      {
+        id: 1301,
+        name: "PC Surface Glory Round Panel LED Lighting",
+        slug: "pc-surface-glory-round-panel-led-lighting",
+        metaTitle:
+          "PC Surface Glory Round Panel LED Lighting | 8W LED Surface Panel | Elstrong",
+        metaDesc:
+          "ELSTRONG PC Surface Glory Round Panel LED Lighting features an elegant round profile, 8W LED configuration, surface-mounted construction, PF >0.95 (HPF), 85V–350V operation, and multiple colour options for modern interiors.",
+
+        category: "PC Surface Panel",
+        categorySlug: "pc-surface-panel",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG PC Surface Glory Round Panel LED Lighting is designed with a clean round profile to provide a modern and refined lighting appearance for contemporary interiors. The 8W configuration offers an efficient lighting solution with surface-mounted construction.",
+
+        description:
+          "ELSTRONG PC Surface Glory Round Panel LED Lighting is designed with a clean round profile to provide a modern and refined lighting appearance for contemporary interiors. The 8W configuration offers an efficient lighting solution for residential, commercial, office, retail, and other indoor applications. The product is designed for surface installation, providing a neat and practical lighting option for ceilings and suitable interior spaces. Designed with a wide operating voltage range of 85V–350V, the product supports dependable operation across varying compatible voltage conditions. The round design provides a simple and versatile appearance that complements different interior styles. The 8W configuration provides practical illumination while maintaining an efficient power requirement. With a PF >0.95 (HPF), the product is designed for efficient electrical performance. Available in CW, WW, NW, Red, Blue, Green, Pink, and Tri-Colour options for different lighting preferences.",
+
+        // Main product images
+        image: "/product/glory1.webp",
+
+        images: [
+          "/product/glory1.webp",
+          "/product/glory2.webp",
+          "/product/glory3.webp",
+        ],
+
+        // Product variants
+        wattages: [
+          {
+            value: "8W",
+            image: "/product/pc-surface-glory-round-panel-led-lighting-8w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          Wattage: "8W",
+          "Product Shape": "Round",
+          "Body / Surface Material": "PC Surface Construction",
+          Installation: "Surface Mounted",
+          "Operating Voltage": "85V–350V",
+          "Power Factor": ">0.95 (HPF)",
+          "Colour Options":
+            "CW, WW, NW, Red, Blue, Green, Pink, and Tri-Colour",
+          "Product Type": "PC Surface Glory Round Panel LED Lighting",
+          Application:
+            "Residential / Commercial / Office / Retail / Indoor Lighting",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Modern Round Profile",
+            text: "The round design provides a simple and versatile appearance that complements different interior styles.",
+          },
+          {
+            title: "Energy-Efficient 8W Option",
+            text: "The 8W configuration provides practical illumination while maintaining an efficient power requirement.",
+          },
+          {
+            title: "High Power Factor",
+            text: "With a PF >0.95 (HPF), the product is designed for efficient electrical performance.",
+          },
+          {
+            title: "Multiple Colour Choices",
+            text: "Available in CW, WW, NW, Red, Blue, Green, Pink, and Tri-Colour options for different lighting preferences.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops LED lighting solutions focused on modern design, efficient performance, and dependable operation.",
+          },
+          {
+            title: "Compact Surface Lighting",
+            text: "The surface-mounted format provides a practical solution for modern ceiling applications.",
+          },
+          {
+            title: "Flexible Colour Options",
+            text: "Multiple colour choices allow the product to be used for both functional and decorative lighting.",
+          },
+          {
+            title: "Reliable Construction",
+            text: "High power factor, wide voltage operation, and surge capacity support dependable everyday lighting performance.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/glory3.webp",
+
+        // Additional product information
+        sku: "ELS-PC-SURFACE-GLORY-ROUND-PANEL",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure:
+          "/brochure/pc-surface-glory-round-panel-led-lighting-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "aluminum-round-led-surface-panel",
+          "aluminum-square-led-surface-panel",
+          "pearl-led-deep-light",
+          "lotus-deep-light",
+        ],
+      },
+
+      {
+  id: 1302,
+  name: "PC Surface Big Glory Round Panel LED Lighting",
+  slug: "pc-surface-big-glory-round-panel-led-lighting",
+  metaTitle:
+    "PC Surface Big Glory Round Panel LED Lighting | 15W LED Surface Panel | Elstrong",
+  metaDesc:
+    "ELSTRONG PC Surface Big Glory Round Panel LED Lighting features a larger round profile, 15W LED performance, surface-mounted design, PF >0.95 (HPF), 85V–350V operation, and multiple colour options for modern indoor applications.",
+
+  category: "PC Surface Panel",
+  categorySlug: "pc-surface-panel",
 
   price: 0,
   oldPrice: 0,
@@ -4507,61 +5022,41 @@ export const categories = [
   badge: "Featured",
 
   shortDescription:
-    "ELSTRONG Aluminum Square LED Surface Panel is designed to provide clean and uniform illumination with a contemporary square profile for residential, commercial, office, retail, and other indoor spaces. Available in multiple wattage options with a durable aluminium body, it provides flexible and efficient indoor lighting performance.",
+    "ELSTRONG PC Surface Big Glory Round Panel LED Lighting is designed to provide a modern surface-mounted lighting solution with a clean and attractive round appearance. The 15W configuration provides a higher-power lighting option with efficient electrical operation.",
 
   description:
-    "ELSTRONG Aluminum Square LED Surface Panel is designed to provide clean and uniform illumination with a contemporary square profile for residential, commercial, office, retail, and other indoor spaces. Available in 6W, 12W/18W, and 18W/22W, the panel offers flexibility to select the appropriate lighting output for different applications. The aluminium body provides a durable and practical housing while supporting effective heat management during regular LED operation. The available range delivers a lumen output from >600 lm to >1800 lm, providing suitable brightness for different indoor lighting requirements. The square format provides a clean architectural appearance and is suitable for surface-mounted ceiling applications. With a PF >0.95, the panel is designed for efficient electrical performance and optimized power utilization. Designed for 110V–280V operation at 50Hz, it supports reliable performance across a broad compatible voltage range. The panel features up to 2.5 kVA surge protection and THD <15%, supporting dependable electrical operation.",
+    "ELSTRONG PC Surface Big Glory Round Panel LED Lighting is designed to provide a modern surface-mounted lighting solution with a clean and attractive round appearance. The 15W configuration provides a higher-power lighting option for spaces requiring effective and consistent illumination. Designed for convenient surface installation, the product offers a practical lighting solution for residential, commercial, office, retail, and other indoor environments. With a PF >0.95 (HPF) and operating voltage range of 85V–350V, the product is designed for efficient and stable operation. The larger round profile provides a distinctive appearance while maintaining a clean surface-mounted installation. The 15W option provides practical illumination for applications requiring greater lighting output than lower-wattage surface panels. A power factor >0.95 supports efficient utilization of electrical power. Available in Cool White, Warm White, Natural White, Red, Blue, Green, Pink, and Tri-Colour.",
 
   // Main product images
-  image: "/product/surfaceSq1.webp",
-
+  image:
+    "/product/glory1.webp",
   images: [
-   "/product/surfaceSq1.webp",
-   "/product/surfaceSq2.webp",
-   "/product/surfaceSq3.webp",
+   "/product/glory1.webp",
+   "/product/glory2.webp",
+   "/product/glory3.webp",
   ],
 
   // Product variants
   wattages: [
     {
-      value: "6W",
-      image: "/product/aluminum-square-led-surface-panel-6w.webp",
-      price: 0,
-    },
-    {
-      value: "12W",
-      image: "/product/aluminum-square-led-surface-panel-6w.webp",
-      price: 0,
-    },
-    {
-      value: "18W",
-      image: "/product/aluminum-square-led-surface-panel-12w-18w.webp",
-      price: 0,
-    },
-    {
-      value: "18W",
-      image: "/product/aluminum-square-led-surface-panel-18w-22w.webp",
-      price: 0,
-    },
-    {
-      value: "22W",
-      image: "/product/aluminum-square-led-surface-panel-18w-22w.webp",
+      value: "15W",
+      image:
+        "/product/pc-surface-big-glory-round-panel-led-lighting-15w.webp",
       price: 0,
     },
   ],
 
   // Product specifications
   specifications: {
-    "Wattage Options": "6W / 12W / 18W / 18W / 22W",
-    "Lumen Output": "90 lm/watt",
-    "Body Material": "Aluminium",
-    "Product Shape": "Square",
-    "Installation": "Surface Mounted",
-    "Operating Voltage": "110V–280V",
-    Frequency: "50Hz",
-    "Power Factor": ">0.95",
-    "Surge Protection": "Up to 2.5 kVA",
-    THD: "<15%",
+    Wattage: "15W",
+    "Product Shape": "Round",
+    "Product Design": "Big Glory Round",
+    Installation: "Surface Mounted",
+    "Operating Voltage": "85V–350V",
+    "Power Factor": ">0.95 (HPF)",
+    "Colour Options":
+      "Cool White, Warm White, Natural White, Red, Blue, Green, Pink, and Tri-Colour",
+    "Product Type": "PC Surface Big Glory Round Panel LED Lighting",
     Application:
       "Residential / Commercial / Office / Retail / Indoor Lighting",
   },
@@ -4569,20 +5064,150 @@ export const categories = [
   // Features
   features: [
     {
-      title: "Square Surface Design",
-      text: "The square format provides a clean architectural appearance and is suitable for surface-mounted ceiling applications.",
+      title: "Big Glory Round Design",
+      text: "The larger round profile provides a distinctive appearance while maintaining a clean surface-mounted installation.",
+    },
+    {
+      title: "15W Configuration",
+      text: "The 15W option provides practical illumination for applications requiring greater lighting output than lower-wattage surface panels.",
     },
     {
       title: "High Power Factor",
-      text: "With a PF >0.95, the panel is designed for efficient electrical performance and optimized power utilization.",
+      text: "A power factor >0.95 supports efficient utilization of electrical power.",
     },
     {
-      title: "Wide Voltage Range",
-      text: "Designed for 110V–280V operation at 50Hz, supporting reliable performance across a broad compatible voltage range.",
+      title: "Wide Colour Selection",
+      text: "Available in Cool White, Warm White, Natural White, Red, Blue, Green, Pink, and Tri-Colour.",
+    },
+  ],
+
+  // Why choose this product/company
+  whyChoose: [
+    {
+      title: "Reliable LED Light Manufacturer",
+      text: "ELSTRONG provides modern LED lighting solutions designed for practical performance and contemporary applications.",
     },
     {
-      title: "Surge & THD Performance",
-      text: "Features up to 2.5 kVA surge protection and THD <15%, supporting dependable electrical operation.",
+      title: "Higher-Power Surface Lighting",
+      text: "The 15W configuration provides an effective option for areas requiring stronger general illumination.",
+    },
+    {
+      title: "Modern Round Appearance",
+      text: "The Big Glory design adds a clean and contemporary look to ceiling installations.",
+    },
+    {
+      title: "Flexible Applications",
+      text: "Suitable for homes, offices, retail spaces, commercial interiors, and other suitable indoor environments.",
+    },
+  ],
+
+  // Image used in description section
+  descriptionImage:
+    "/product/glory3.webp",
+
+  // Additional product information
+  sku: "ELS-PC-SURFACE-BIG-GLORY-ROUND-PANEL",
+
+  stock: true,
+
+  stockText: "In Stock",
+
+  brochure:
+    "/brochure/pc-surface-big-glory-round-panel-led-lighting-brochure.pdf",
+
+  // Related products
+  relatedProducts: [
+    "pc-surface-glory-round-panel-led-lighting",
+    "aluminum-round-led-surface-panel",
+    "aluminum-square-led-surface-panel",
+    "lotus-deep-light",
+  ],
+},
+
+
+{
+  id: 1303,
+  name: "PC Surface Rimless Round LED Lighting",
+  slug: "pc-surface-rimless-round-led-lighting",
+  metaTitle:
+    "PC Surface Rimless Round LED Lighting | 8W & 15W LED Surface Panel | Elstrong",
+  metaDesc:
+    "ELSTRONG PC Surface Rimless Round LED Lighting features a minimalist rimless round profile, 8W and 15W options, 85V–350V operation, 440V high-voltage protection, PF >0.95 (HPF), and multiple colour options.",
+
+  category: "PC Surface Panel",
+  categorySlug: "pc-surface-panel",
+
+  price: 0,
+  oldPrice: 0,
+  currency: "₹",
+
+  badge: "Featured",
+
+  shortDescription:
+    "ELSTRONG PC Surface Rimless Round LED Lighting features a clean, seamless round appearance designed to blend naturally with modern ceiling interiors. Available in 8W and 15W options, it provides flexible surface-mounted lighting with wide voltage compatibility.",
+
+  description:
+    "ELSTRONG PC Surface Rimless Round LED Lighting features a clean, seamless round appearance designed to blend naturally with modern ceiling interiors. Available in 8W and 15W, the product provides flexibility for different illumination requirements and room sizes. Designed for surface mounting, the product provides a practical lighting solution without requiring a recessed ceiling installation. Operating across 85V–350V with 440V high-voltage protection, the product is designed for dependable operation under varying compatible voltage conditions. The rimless appearance creates a clean and contemporary look suitable for modern residential and commercial interiors. The 8W and 15W options allow users to select the appropriate lighting level for different spaces. With PF >0.95 (HPF), the lighting solution is designed for efficient electrical operation. Available in CW, WW, NW, Red, Blue, Green, Pink, and Tri-Colour to suit different lighting concepts.",
+
+  // Main product images
+  image: "/product/pc-surface-rimless-round-led-lighting.webp",
+
+  images: [
+    "/product/pc-surface-rimless-round-led-lighting.webp",
+    "/product/pc-surface-rimless-round-led-lighting-2.webp",
+    "/product/pc-surface-rimless-round-led-lighting-3.webp",
+    "/product/pc-surface-rimless-round-led-lighting-4.webp",
+    "/product/pc-surface-rimless-round-led-lighting-5.webp",
+  ],
+
+  // Product variants
+  wattages: [
+    {
+      value: "8W",
+      image: "/product/pc-surface-rimless-round-led-lighting-8w.webp",
+      price: 0,
+    },
+    {
+      value: "15W",
+      image: "/product/pc-surface-rimless-round-led-lighting-15w.webp",
+      price: 0,
+    },
+  ],
+
+  // Product specifications
+  specifications: {
+    "Wattage Options": "8W / 15W",
+    "Product Shape": "Round",
+    "Product Design": "Rimless",
+    Installation: "Surface Mounted",
+    "Operating Voltage": "85V–350V",
+    "High-Voltage Protection": "440V",
+    "Power Factor": ">0.95 (HPF)",
+    "Surge Protection": "4 kV",
+    "Colour Options":
+      "CW, WW, NW, Red, Blue, Green, Pink, and Tri-Colour",
+    "Product Type": "PC Surface Rimless Round LED Lighting",
+    Application:
+      "Residential / Commercial / Office / Retail / Indoor Lighting",
+  },
+
+  // Features
+  features: [
+    {
+      title: "Minimalist Rimless Profile",
+      text: "The rimless appearance creates a clean and contemporary look suitable for modern residential and commercial interiors.",
+    },
+    {
+      title: "Flexible Wattage",
+      text: "The 8W and 15W options allow users to select the appropriate lighting level for different spaces.",
+    },
+    {
+      title: "High Power Factor",
+      text: "With PF >0.95 (HPF), the lighting solution is designed for efficient electrical operation.",
+    },
+    {
+      title: "Multiple Colour Options",
+      text: "Available in CW, WW, NW, Red, Blue, Green, Pink, and Tri-Colour to suit different lighting concepts.",
     },
   ],
 
@@ -4590,42 +5215,176 @@ export const categories = [
   whyChoose: [
     {
       title: "Professional Lighting Manufacturer",
-      text: "ELSTRONG develops LED lighting solutions focused on modern design, efficient performance, and reliable everyday operation.",
+      text: "ELSTRONG develops contemporary LED lighting products focused on efficient performance and practical installation.",
     },
     {
-      title: "Flexible Lighting Range",
-      text: "Multiple wattage options and dimensional variations make the panel suitable for different indoor lighting requirements.",
+      title: "Seamless Modern Design",
+      text: "The rimless round profile provides a minimalist appearance for contemporary ceiling applications.",
     },
     {
-      title: "Durable Aluminium Body",
-      text: "The aluminium construction provides a practical and robust housing for long-term lighting applications.",
+      title: "Flexible Lighting Selection",
+      text: "8W and 15W variants provide options for different lighting requirements.",
     },
     {
-      title: "Modern Surface Installation",
-      text: "The square surface-mounted design provides a neat and contemporary appearance for a wide range of interiors.",
+      title: "Dependable Performance",
+      text: "Wide voltage operation, 440V high-voltage protection, 4 kV surge capacity, and high-power factor support reliable operation.",
     },
   ],
 
   // Image used in description section
-  descriptionImage: "/product/surfaceSq3.webp",
+  descriptionImage:
+    "/product/pc-surface-rimless-round-led-lighting.webp",
 
   // Additional product information
-  sku: "ELS-ALUMINUM-SQUARE-LED-SURFACE-PANEL",
+  sku: "ELS-PC-SURFACE-RIMLESS-ROUND-LED",
 
   stock: true,
 
   stockText: "In Stock",
 
-  brochure: "/brochure/aluminum-square-led-surface-panel-brochure.pdf",
+  brochure:
+    "/brochure/pc-surface-rimless-round-led-lighting-brochure.pdf",
 
   // Related products
   relatedProducts: [
-    "pearl-led-deep-light",
-    "junction-deep-light",
-    "lotus-deep-light",
-    "adjustable-light",
+    "pc-surface-glory-round-panel-led-lighting",
+    "pc-surface-big-glory-round-panel-led-lighting",
+    "aluminum-round-led-surface-panel",
+    "aluminum-square-led-surface-panel",
   ],
 },
-    ]
-  }
+
+
+{
+  id: 1304,
+  name: "PC Surface Rimless Square LED Lighting",
+  slug: "pc-surface-rimless-square-led-lighting",
+  metaTitle:
+    "PC Surface Rimless Square LED Lighting | 8W & 15W LED Surface Panel | Elstrong",
+  metaDesc:
+    "ELSTRONG PC Surface Rimless Square LED Lighting features a clean rimless square profile with 8W and 15W options, 85V–350V operation, 440V high-voltage protection, PF >0.95, and multiple colour choices for modern interiors.",
+
+  category: "PC Surface Panel",
+  categorySlug: "pc-surface-panel",
+
+  price: 0,
+  oldPrice: 0,
+  currency: "₹",
+
+  badge: "Featured",
+
+  shortDescription:
+    "ELSTRONG PC Surface Rimless Square LED Lighting combines a clean square profile with a rimless appearance, providing a contemporary lighting solution for modern interiors. Available in 8W and 15W options, it offers practical surface installation, reliable electrical performance, high-voltage protection, and multiple colour choices.",
+
+  description:
+    "ELSTRONG PC Surface Rimless Square LED Lighting combines a clean square profile with a rimless appearance, providing a contemporary lighting solution for modern interiors. Available in 8W and 15W, the product allows the product to meet different lighting requirements across residential and commercial spaces. Designed for surface mounting, the product provides a neat and convenient installation option for suitable ceiling applications. With an operating voltage range of 85V–350V, 440V high-voltage protection, and PF >0.95, it is designed for dependable electrical performance. The clean square shape provides a contemporary appearance that works well with modern architectural and interior designs. The 8W and 15W variants provide flexibility for different room sizes and desired illumination levels. A PF >0.95 (HPF) supports efficient electrical power utilization during operation. Available in CW, WW, NW, Red, Blue, Green, Pink, and Tri-Colour for varied functional and decorative requirements.",
+
+  // Main product images
+  image: "/product/pc-surface-rimless-square-led-lighting.webp",
+
+  images: [
+    "/product/pc-surface-rimless-square-led-lighting.webp",
+    "/product/pc-surface-rimless-square-led-lighting-2.webp",
+    "/product/pc-surface-rimless-square-led-lighting-3.webp",
+    "/product/pc-surface-rimless-square-led-lighting-4.webp",
+    "/product/pc-surface-rimless-square-led-lighting-5.webp",
+  ],
+
+  // Product variants
+  wattages: [
+    {
+      value: "8W",
+      image: "/product/pc-surface-rimless-square-led-lighting-8w.webp",
+      price: 0,
+    },
+    {
+      value: "15W",
+      image: "/product/pc-surface-rimless-square-led-lighting-15w.webp",
+      price: 0,
+    },
+  ],
+
+  // Product specifications
+  specifications: {
+    "Wattage Options": "8W / 15W",
+    "Product Shape": "Square",
+    "Product Design": "Rimless",
+    Installation: "Surface Mounted",
+    "Operating Voltage": "85V–350V",
+    "High-Voltage Protection": "440V",
+    "Power Factor": ">0.95 (HPF)",
+    "Surge Protection": "4 kV",
+    "Colour Options":
+      "CW, WW, NW, Red, Blue, Green, Pink, and Tri-Colour",
+    "Product Type": "PC Surface Rimless Square LED Lighting",
+    Application:
+      "Residential / Commercial / Office / Retail / Indoor Lighting",
+  },
+
+  // Features
+  features: [
+    {
+      title: "Rimless Square Profile",
+      text: "The clean square shape provides a contemporary appearance that works well with modern architectural and interior designs.",
+    },
+    {
+      title: "Two Power Options",
+      text: "The 8W and 15W variants provide flexibility for different room sizes and desired illumination levels.",
+    },
+    {
+      title: "High Power Factor",
+      text: "A PF >0.95 (HPF) supports efficient electrical power utilization during operation.",
+    },
+    {
+      title: "Extensive Colour Selection",
+      text: "Available in CW, WW, NW, Red, Blue, Green, Pink, and Tri-Colour for varied functional and decorative requirements.",
+    },
+  ],
+
+  // Why choose this product/company
+  whyChoose: [
+    {
+      title: "Professional LED Light Manufacturer",
+      text: "ELSTRONG develops modern lighting solutions designed to combine contemporary aesthetics with efficient electrical performance.",
+    },
+    {
+      title: "Clean Square Appearance",
+      text: "The rimless square design offers a neat and minimalist look for modern ceiling applications.",
+    },
+    {
+      title: "Flexible Wattage & Colour",
+      text: "8W and 15W options, combined with multiple colour choices, provide versatility for different lighting requirements.",
+    },
+    {
+      title: "Reliable Protection",
+      text: "440V high-voltage protection and 4 kV surge capacity provide additional support for dependable lighting performance.",
+    },
+  ],
+
+  // Image used in description section
+  descriptionImage:
+    "/product/pc-surface-rimless-square-led-lighting.webp",
+
+  // Additional product information
+  sku: "ELS-PC-SURFACE-RIMLESS-SQUARE-LED",
+
+  stock: true,
+
+  stockText: "In Stock",
+
+  brochure:
+    "/brochure/pc-surface-rimless-square-led-lighting-brochure.pdf",
+
+  // Related products
+  relatedProducts: [
+    "pc-surface-rimless-round-led-lighting",
+    "pc-surface-glory-round-panel-led-lighting",
+    "pc-surface-big-glory-round-panel-led-lighting",
+    "aluminum-square-led-surface-panel",
+  ],
+},
+
+
+    ],
+  },
 ];
