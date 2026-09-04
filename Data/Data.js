@@ -222,7 +222,7 @@ export const categories = [
         // Product specifications
         specifications: {
           wattage: "9W",
-          "Lumen Output": "<600 lm",
+          "Lumen Output": "90 lm/watt",
           "Outer Dia": "110mm",
           "Cutout Size": "70mm",
           Height: "45mm",
@@ -338,7 +338,7 @@ export const categories = [
         // Product specifications
         specifications: {
           wattage: "7W",
-          "Lumen Output": "<600 lm",
+          "Lumen Output": "90 lm/watt",
           "Outer Dia": "110mm",
           "Cutout Size": "70mm",
           Height: "45mm",
@@ -454,7 +454,7 @@ export const categories = [
         // Product specifications
         specifications: {
           wattage: "5W",
-          "Lumen Output": "<600 lm",
+          "Lumen Output": "90 lm/watt",
           "Outer Dia": "110mm",
           "Cutout Size": "70mm",
           Height: "45mm",
@@ -584,7 +584,7 @@ export const categories = [
         // Product specifications
         specifications: {
           wattage: "5W",
-          "Lumen Output": "<600 lm",
+          "Lumen Output": "90 lm/watt",
           "Outer Dia": "70mm",
           "Cutout Size": "40mm",
           Height: "40mm",
@@ -696,7 +696,7 @@ export const categories = [
         // Product specifications
         specifications: {
           wattage: "7W",
-          "Lumen Output": "<600 lm",
+          "Lumen Output": "90 lm/watt",
           "Outer Dia": "106mm",
           "Cutout Size": "75mm",
           Height: "47mm",
@@ -808,7 +808,7 @@ export const categories = [
         // Product specifications
         specifications: {
           wattage: "9W",
-          "Lumen Output": "<600 lm",
+          "Lumen Output": "90 lm/watt",
           "Outer Dia": "128mm",
           "Cutout Size": "98mm",
           Height: "55mm",
@@ -956,7 +956,7 @@ export const categories = [
         // Product specifications
         specifications: {
           wattage: "3W",
-          "Lumen Output": "<300 lm",
+          "Lumen Output": "90 lm/watt",
           "Outer Dia": "85- 225 mm",
           "Cutout Size": "70-200 mm",
           Height: "22mm",
@@ -1201,7 +1201,7 @@ export const categories = [
         // Product specifications
         specifications: {
           wattage: "12W",
-          "Lumen Output": "<1200 lm",
+          "Lumen Output": "90 lm/watt",
           "Outer Dia": "85-225 mm",
           "Cutout Size": "70-200 mm",
           Height: "25mm",
@@ -1468,7 +1468,7 @@ export const categories = [
         // Product specifications
         specifications: {
           wattage: "6W",
-          "Lumen Output": "≥600 lm",
+          "Lumen Output":"90 lm/watt",
           Diameter: "100mm",
           Height: "26mm",
           "Input Voltage": "110–230V AC",
@@ -1606,7 +1606,7 @@ export const categories = [
         // Product specifications
         specifications: {
           wattage: "6W",
-          "Lumen Output": "≥600 lm",
+          "Lumen Output":"90 lm/watt",
           Diameter: "100mm",
           Height: "26mm",
           "Input Voltage": "110–230V AC",
