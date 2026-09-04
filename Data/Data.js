@@ -975,7 +975,7 @@ export const categories = [
 
         // Product specifications
         specifications: {
-          wattage: "3W",
+          wattage: "3W / 6W / 8W / 12W / 15W / 18W / 22W / 24W",
           "Lumen Output": "90 lm/watt",
           "Outer Dia": "85- 225 mm",
           "Cutout Size": "70-200 mm",
