@@ -2858,7 +2858,6 @@ export const categories = [
             image: "/products/tengo-panel.jpeg",
             price: 0,
           },
-         
         ],
 
         // Product specifications
