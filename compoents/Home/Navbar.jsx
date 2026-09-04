@@ -209,6 +209,7 @@ export default function Navbar() {
                       invisible
                       absolute
                       left-1/2
+                      
                       top-full
                       -translate-x-1/2
                       pt-7
@@ -222,6 +223,13 @@ export default function Navbar() {
                     <div
                       className="
                         w-64
+                        h-100  
+                        overflow-hidden
+  overflow-y-auto
+  overscroll-contain
+  scrollbar-thin
+  scrollbar-thumb-gray-300
+  scrollbar-track-transparent
                         rounded-xl
                         border
                         border-neutral-100

@@ -646,7 +646,7 @@ export default function ProductClient({ product }) {
                   {/* ================= RIGHT IMAGE ================= */}
 
                   <div className="relative lg:sticky lg:top-24 lg:self-start">
-                    <div className="aspect-[4/3] overflow-hidden bg-gray-50">
+                    <div className="aspect-[4/4] overflow-hidden bg-gray-50">
                       <img
                         src={product.descriptionImage}
                         alt={product.name}

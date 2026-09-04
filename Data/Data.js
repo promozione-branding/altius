@@ -1220,7 +1220,7 @@ export const categories = [
 
         // Product specifications
         specifications: {
-          wattage: "12W",
+          wattage: "3W / 6W / 12W / 18W",
           "Lumen Output": "90 lm/watt",
           "Outer Dia": "85-225 mm",
           "Cutout Size": "70-200 mm",
@@ -1481,7 +1481,7 @@ export const categories = [
 
         // Product specifications
         specifications: {
-          wattage: "6W",
+          wattage: "8W / 12W / 15W / 22W",
           "Lumen Output": "90 lm/watt",
           Diameter: "100mm",
           Height: "26mm",
@@ -2506,6 +2506,383 @@ export const categories = [
           "foot-light",
         ],
       },
+
+
+
+
+      //       {
+      //   id: 506,
+      //   name: "Adjustable Light",
+      //   slug: "adjustable-light",
+      //   metaTitle: "Adjustable Light | Round Adjustable LED Panel | Elstrong",
+      //   metaDesc:
+      //     "ELSTRONG Adjustable Panel is a round LED lighting solution available in 8W, 12W, and 18W, featuring adjustable directional lighting, wide voltage operation, 440V high-voltage protection, and 4 kV surge capacity.",
+
+      //   category: "Outdoor Lights",
+      //   categorySlug: "outdoor-lights",
+
+      //   price: 0,
+      //   oldPrice: 0,
+      //   currency: "₹",
+
+      //   badge: "Featured",
+
+      //   shortDescription:
+      //     "ELSTRONG Adjustable Panel is a round LED lighting solution designed to provide efficient and practical illumination for modern residential, commercial, office, retail, and interior spaces. Its adjustable construction allows the light direction to be positioned.",
+
+      //   description:
+      //     "ELSTRONG Adjustable Panel is a round LED lighting solution designed to provide efficient and practical illumination for modern residential, commercial, office, retail, and interior spaces. Its adjustable construction allows the light direction to be positioned according to the specific lighting requirement, making it suitable for applications where focused illumination is preferred. Available in 8W, 12W, and 18W, it offers flexibility for different space sizes and illumination needs. Designed to operate between 85V–350V, with high-voltage protection up to 440V, the Adjustable Panel provides reliable performance across varying voltage conditions. The round panel incorporates an adjustable mechanism that allows the light direction to be oriented according to the application. With a power factor >0.98, the product is designed for efficient electrical performance and optimized power utilization. A 4 kV surge capacity provides additional protection against suitable electrical surges. The 8W, 12W, and 18W options make the Adjustable Panel suitable for different lighting levels and interior applications.",
+
+      //   // Main product images
+      //   image: "/product/adjustable-light.webp",
+
+      //   images: [
+      //     "/product/adjustable-light.webp",
+      //     "/product/adjustable-light-2.webp",
+      //     "/product/adjustable-light-3.webp",
+      //     "/product/adjustable-light-4.webp",
+      //     "/product/adjustable-light-5.webp",
+      //   ],
+
+      //   // Product variants
+      //   wattages: [
+      //     {
+      //       value: "8W",
+      //       image: "/product/adjustable-light-8w.webp",
+      //       price: 0,
+      //     },
+      //     {
+      //       value: "12W",
+      //       image: "/product/adjustable-light-12w.webp",
+      //       price: 0,
+      //     },
+      //     {
+      //       value: "18W",
+      //       image: "/product/adjustable-light-18w.webp",
+      //       price: 0,
+      //     },
+      //   ],
+
+      //   // Product specifications
+      //   specifications: {
+      //     "Wattage Options": "8W, 12W, and 18W",
+      //     "Product Type": "Round Adjustable LED Panel",
+      //     "Operating Voltage": "85V–350V",
+      //     "High-Voltage Protection": "Up to 440V",
+      //     "Power Factor": ">0.98",
+      //     "Surge Protection": "4 kV",
+      //     "Light Direction": "Adjustable",
+      //     Application:
+      //       "Residential / Commercial / Office / Retail / Interior Lighting",
+      //   },
+
+      //   // Features
+      //   features: [
+      //     {
+      //       title: "Adjustable Round Design",
+      //       text: "The round panel incorporates an adjustable mechanism that allows the light direction to be oriented according to the application.",
+      //     },
+      //     {
+      //       title: "High Power Factor",
+      //       text: "With a power factor >0.98, the product is designed for efficient electrical performance and optimized power utilization.",
+      //     },
+      //     {
+      //       title: "Enhanced Surge Protection",
+      //       text: "A 4 kV surge capacity provides additional protection against suitable electrical surges.",
+      //     },
+      //     {
+      //       title: "Versatile Wattage Selection",
+      //       text: "The 8W, 12W, and 18W options make the Adjustable Panel suitable for different lighting levels and interior applications.",
+      //     },
+      //   ],
+
+      //   // Why choose this product/company
+      //   whyChoose: [
+      //     {
+      //       title: "Professional Lighting Manufacturer",
+      //       text: "ELSTRONG develops modern LED lighting solutions focused on efficient performance, practical functionality, and contemporary design.",
+      //     },
+      //     {
+      //       title: "Directional Lighting Flexibility",
+      //       text: "The adjustable design allows illumination to be directed according to the specific requirements of the space.",
+      //     },
+      //     {
+      //       title: "Efficient Electrical Performance",
+      //       text: "A power factor of >0.98 supports efficient power utilization and dependable operation.",
+      //     },
+      //     {
+      //       title: "Reliable Protection",
+      //       text: "Wide voltage operation, 440V high-voltage protection, and 4 kV surge capacity make the Adjustable Panel a practical choice for modern lighting applications.",
+      //     },
+      //   ],
+
+      //   // Image used in description section
+      //   descriptionImage: "/product/adjustable-light.webp",
+
+      //   // Additional product information
+      //   sku: "ELS-ADJUSTABLE-LIGHT",
+
+      //   stock: true,
+
+      //   stockText: "In Stock",
+
+      //   brochure: "/brochure/adjustable-light-brochure.pdf",
+
+      //   // Related products
+      //   relatedProducts: [
+      //     "flood-light-gm-model",
+      //     "flood-light-lense-model",
+      //     "wall-light",
+      //     "cylinder-light",
+      //   ],
+      // },
+
+      {
+        id: 507,
+        name: "Street Light",
+        slug: "street-light",
+        metaTitle: "Street Light | Outdoor LED Street Light | Elstrong",
+        metaDesc:
+          "ELSTRONG Street Light delivers reliable and consistent outdoor illumination with 24W, 30W, 50W, and 100W options, 440V high-voltage protection, IP65 protection, high power factor, and 6 kV surge capacity.",
+
+        category: "Outdoor Lights",
+        categorySlug: "outdoor-lights",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG Street Light is designed to deliver reliable and consistent illumination for roads, streets, pathways, parking areas, industrial premises, and other outdoor spaces. Available in 24W, 30W, 50W, and 100W options, it provides flexible outdoor lighting solutions for different area-coverage requirements.",
+
+        description:
+          "ELSTRONG Street Light is designed to deliver reliable and consistent illumination for roads, streets, pathways, parking areas, industrial premises, and other outdoor spaces. Available in 24W, 30W, 50W, and 100W options, the Street Light provides flexibility to meet different outdoor lighting and area-coverage requirements. Designed with protection of up to 440V and an operating voltage range of 85V–350V, it supports dependable performance under varying voltage conditions. With an IP65 rating, the Street Light is dust-tight and protected against water jets, making it suitable for demanding outdoor environments. The Street Light is designed to provide bright and consistent illumination while supporting energy-efficient outdoor lighting applications. With a power factor >0.95, the product is designed for efficient electrical performance and better utilization of input power. A 6 kV surge capacity provides added protection against suitable electrical surges, supporting reliable operation in outdoor installations. Available in CW (Cool White), WW (Warm White), and NW (Neutral White), the Street Light can suit different road, landscape, and area-lighting requirements.",
+
+        // Main product images
+        image: "/product/street1.webp",
+
+        images: [
+          "/product/street1.webp",
+          "/product/street2.webp",
+          "/product/street3.webp",
+        ],
+
+        // Product variants
+        wattages: [
+          {
+            value: "24W",
+            image: "/product/street-light-24w.webp",
+            price: 0,
+          },
+          {
+            value: "30W",
+            image: "/product/street-light-30w.webp",
+            price: 0,
+          },
+          {
+            value: "50W",
+            image: "/product/street-light-50w.webp",
+            price: 0,
+          },
+          {
+            value: "100W",
+            image: "/product/street-light-100w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          "Wattage Options": "24W, 30W, 50W, and 100W",
+          "Operating Voltage": "85V–350V",
+          "High-Voltage Protection": "Up to 440V",
+          "IP Rating": "IP65",
+          "Power Factor": ">0.95",
+          "Surge Protection": "6 kV",
+          "Light Colours":
+            "CW (Cool White), WW (Warm White), and NW (Neutral White)",
+          Application:
+            "Roads / Streets / Pathways / Parking Areas / Industrial Premises / Outdoor Spaces",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Efficient LED Lighting",
+            text: "The Street Light is designed to provide bright and consistent illumination while supporting energy-efficient outdoor lighting applications.",
+          },
+          {
+            title: "High Power Factor",
+            text: "With a power factor >0.95, the product is designed for efficient electrical performance and better utilization of input power.",
+          },
+          {
+            title: "Enhanced Surge Protection",
+            text: "A 6 kV surge capacity provides added protection against suitable electrical surges, supporting reliable operation in outdoor installations.",
+          },
+          {
+            title: "Multiple Light Colours",
+            text: "Available in CW (Cool White), WW (Warm White), and NW (Neutral White) to suit different road, landscape, and area-lighting requirements.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops LED lighting solutions focused on efficient performance, reliable construction, and practical applications for modern outdoor environments.",
+          },
+          {
+            title: "Designed for Outdoor Conditions",
+            text: "The IP65 rating provides protection against dust and water jets, making the Street Light suitable for outdoor installations.",
+          },
+          {
+            title: "Flexible Lighting Selection",
+            text: "Four wattage options and three colour choices provide flexibility for different roads, pathways, parking areas, and commercial outdoor spaces.",
+          },
+          {
+            title: "Reliable Electrical Performance",
+            text: "High power factor, 6 kV surge capacity, and high-voltage protection up to 440V make it a dependable choice for outdoor lighting applications.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/street3.webp",
+
+        // Additional product information
+        sku: "ELS-STREET-LIGHT",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/street-light-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "flood-light-gm-model",
+          "flood-light-lense-model",
+          "adjustable-light",
+          "spike-light",
+        ],
+      },
+
+      {
+  id: 508,
+  name: "Sensor Foot Light",
+  slug: "sensor-foot-light",
+  metaTitle: "Sensor Foot Light | 6W LED Sensor Foot Light | Elstrong",
+  metaDesc:
+    "ELSTRONG Sensor Foot Light is a 6W LED lighting solution with sensor-based convenience, 85V–250V operation, PF >0.95 (HPF), IP54 protection, 4 kV surge capacity, and multiple colour options for stairways, corridors, pathways, and entrances.",
+
+  category: "Outdoor Light",
+  categorySlug: "outdoor-light",
+
+  price: 0,
+  oldPrice: 0,
+  currency: "₹",
+
+  badge: "Featured",
+
+  shortDescription:
+    "ELSTRONG Sensor Foot Light is designed to provide convenient and practical illumination for staircases, corridors, pathways, entrances, and other low-level lighting applications. With an efficient 6W design, sensor-based convenience, IP54 protection.",
+
+  description:
+    "ELSTRONG Sensor Foot Light is designed to provide convenient and practical illumination for staircases, corridors, pathways, entrances, and other low-level lighting applications. The 6W configuration provides effective illumination while maintaining efficient power consumption for everyday use. With an operating voltage range of 85V–250V and a power factor >0.95 (HPF), the product is designed for stable and efficient operation. Available in CW, WW, NW, Red, Blue, Green, and Pink, the Sensor Foot Light provides flexibility for functional and decorative lighting requirements. The sensor foot light is designed to provide practical lighting assistance for areas where convenient illumination is required. A PF >0.95 (HPF) supports efficient electrical performance and optimized power utilization. The IP54 rating provides protection against dust ingress and water splashes, making it suitable for appropriate indoor and semi-outdoor applications. Designed with 4 kV surge protection, the product provides additional protection against suitable electrical surges.",
+
+  // Main product images
+  image: "/product/footsensor1.webp",
+
+  images: [
+    "/product/footsensor1.webp",
+    "/product/footsensor2.webp",
+    "/product/footsensor3.webp",
+   
+  ],
+
+  // Product variants
+  wattages: [
+    {
+      value: "6W",
+      image: "/product/sensor-foot-light-6w.webp",
+      price: 0,
+    },
+  ],
+
+  // Product specifications
+  specifications: {
+    Wattage: "6W",
+    "Operating Voltage": "85V–250V",
+    "Power Factor": ">0.95 (HPF)",
+    "IP Rating": "IP54",
+    "Surge Protection": "4 kV",
+    "Colour Options": "CW, WW, NW, Red, Blue, Green, and Pink",
+    "Product Type": "LED Sensor Foot Light",
+    Application:
+      "Staircases / Corridors / Pathways / Entrances / Residential Spaces / Commercial Interiors / Indoor / Semi-Outdoor Areas",
+  },
+
+  // Features
+  features: [
+    {
+      title: "Sensor-Based Convenience",
+      text: "The sensor foot light is designed to provide practical lighting assistance for areas where convenient illumination is required.",
+    },
+    {
+      title: "High Power Factor",
+      text: "A PF >0.95 (HPF) supports efficient electrical performance and optimized power utilization.",
+    },
+    {
+      title: "IP54 Protection",
+      text: "The IP54 rating provides protection against dust ingress and water splashes, making it suitable for appropriate indoor and semi-outdoor applications.",
+    },
+    {
+      title: "4 kV Surge Capacity",
+      text: "Designed with 4 kV surge protection to provide additional protection against suitable electrical surges.",
+    },
+  ],
+
+  // Why choose this product/company
+  whyChoose: [
+    {
+      title: "Professional Lighting Manufacturer",
+      text: "ELSTRONG develops modern LED lighting solutions focused on practical functionality, energy efficiency, and dependable performance.",
+    },
+    {
+      title: "Convenient Lighting Solution",
+      text: "The sensor-based design makes the product suitable for spaces where automatic or convenient low-level illumination is required.",
+    },
+    {
+      title: "Efficient Performance",
+      text: "The 6W LED configuration combined with a >0.95 high power factor supports efficient everyday operation.",
+    },
+    {
+      title: "Versatile Applications",
+      text: "Suitable for stairways, corridors, pathways, entrances, residential spaces, commercial interiors, and other suitable indoor or semi-outdoor areas.",
+    },
+  ],
+
+  // Image used in description section
+  descriptionImage: "/product/footsensor3.webp",
+
+  // Additional product information
+  sku: "ELS-SENSOR-FOOT-LIGHT",
+
+  stock: true,
+
+  stockText: "In Stock",
+
+  brochure: "/brochure/sensor-foot-light-brochure.pdf",
+
+  // Related products
+  relatedProducts: [
+    "foot-light",
+    "pearl-led-deep-light",
+    "junction-deep-light",
+    "lotus-deep-light",
+  ],
+},
     ],
   },
 
@@ -3316,4 +3693,939 @@ export const categories = [
       },
     ],
   },
+
+  {
+    id: 10,
+    name: "Flood Light",
+    slug: "flood-light",
+    metaTitle: " Hut Bul Bul Bell | Unique Decorative Lighting | Elstrong",
+    metaDesc:
+      "Explore Elstrong’s Hut Bul Bul Bell lighting range, designed to add character and visual appeal to modern interiors with distinctive decorative lighting solutions.",
+    image: "product/flood1.webp",
+    image2: "/product/flood3.webp",
+    hoverImage: "/product/flood3.webp",
+
+    description:
+      " ELSTRONG Flood Light GM Model is designed to provide bright, reliable, and uniform illumination for outdoor, industrial, commercial, architectural, and large-area lighting applications. ",
+    products: [
+      {
+        id: 1001,
+        name: "Flood Light GM Model",
+        slug: "flood-light-gm-model",
+        metaTitle:
+          "Flood Light GM Model | High Output LED Flood Light | Elstrong",
+        metaDesc:
+          "ELSTRONG Flood Light GM Model delivers powerful and uniform outdoor illumination with 50W, 100W, 150W, and 200W options, high lumen output, wide voltage operation, high power factor, and enhanced surge protection.",
+
+        category: "Flood Light",
+        categorySlug: "flood-light",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG Flood Light GM Model is designed to provide bright, reliable, and uniform illumination for outdoor, industrial, commercial, architectural, and large-area lighting applications. Available in 50W, 100W, 150W, and 200W variants, it delivers high lumen performance with wide voltage operation and enhanced surge protection.",
+
+        description:
+          "ELSTRONG Flood Light GM Model is designed to provide bright, reliable, and uniform illumination for outdoor, industrial, commercial, architectural, and large-area lighting applications. Available in 50W, 100W, 150W, and 200W, the model provides flexible lighting solutions for different brightness and coverage requirements. The range delivers strong illumination from ≥5500 lm to ≥22000 lm, making the Flood Light GM Model suitable for applications requiring high-output lighting. Designed to operate from 110V–240V at 50/60Hz, the product provides a power factor ≥0.95 for efficient and dependable electrical performance. The GM Model also provides surge protection ranging from up to 2.5 kV to 4 kV, depending on the selected wattage, supporting reliable operation in suitable outdoor environments.",
+
+        // Main product images
+        image: "/product/flood1.webp",
+
+        images: [
+          "/product/flood1.webp",
+          "/product/flood2.webp",
+          "/product/flood3.webp",
+        ],
+
+        // Product variants
+        wattages: [
+          {
+            value: "50W",
+            image: "/product/flood-light-gm-model-50w.webp",
+            price: 0,
+          },
+          {
+            value: "100W",
+            image: "/product/flood-light-gm-model-100w.webp",
+            price: 0,
+          },
+          {
+            value: "150W",
+            image: "/product/flood-light-gm-model-150w.webp",
+            price: 0,
+          },
+          {
+            value: "200W",
+            image: "/product/flood-light-gm-model-200w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          "Wattage Options": "50W, 100W, 150W, and 200W",
+          "Lumen Output": "≥5500 lm to ≥22000 lm",
+          "Operating Voltage": "110V–240V",
+          Frequency: "50/60Hz",
+          "Power Factor": "≥0.95",
+          "Surge Protection":
+            "Up to 2.5 kV to 4 kV, depending on selected wattage",
+          "Lighting Type": "High-Output LED",
+          Application:
+            "Outdoor / Industrial / Commercial / Architectural / Large-Area Lighting",
+        },
+
+        // Features
+        features: [
+          {
+            title: "High-Output LED Technology",
+            text: "The Flood Light GM Model is designed to deliver powerful illumination across a wide range of outdoor and industrial applications.",
+          },
+          {
+            title: "Multiple Wattage Options",
+            text: "50W, 100W, 150W, and 200W variants allow users to select the appropriate lighting capacity according to the size and requirements of the installation.",
+          },
+          {
+            title: "High Power Factor",
+            text: "With a PF ≥0.95, the product is designed for efficient electrical power utilization and stable operation.",
+          },
+          {
+            title: "Enhanced Surge Protection",
+            text: "The GM Model provides surge protection ranging from up to 2.5 kV to 4 kV, depending on the selected wattage, supporting reliable operation in suitable outdoor environments.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops LED lighting solutions focused on high performance, energy efficiency, and dependable operation for demanding applications.",
+          },
+          {
+            title: "Powerful Illumination",
+            text: "With lumen outputs ranging from ≥5500 lm to ≥22000 lm, the GM Model is designed for both medium and large-area lighting requirements.",
+          },
+          {
+            title: "Reliable Electrical Performance",
+            text: "A ≥0.95 power factor, controlled THD, and surge protection support dependable electrical operation.",
+          },
+          {
+            title: "Versatile Outdoor Application",
+            text: "Suitable for industrial areas, commercial premises, parking areas, building exteriors, warehouses, architectural spaces, and other large outdoor environments.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/flood3.webp",
+
+        // Additional product information
+        sku: "ELS-FLOOD-LIGHT-GM-MODEL",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/flood-light-gm-model-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "flood-light",
+          "led-street-light",
+          "high-bay-light",
+          "industrial-light",
+        ],
+      },
+
+      {
+        id: 1002,
+        name: "Flood Light Lense Model",
+        slug: "flood-light-lense-model",
+        metaTitle: "Flood Light Lense Model | LED Flood Light | Elstrong",
+        metaDesc:
+          "ELSTRONG Flood Light Lense Model delivers bright, uniform, and reliable illumination with 60W, 120W, 200W, 300W, and 400W options, featuring controlled lens-based light distribution for industrial, commercial, architectural, outdoor, and large-area applications.",
+
+        category: "Flood Light",
+        categorySlug: "flood-light",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG Flood Light Lense Model is designed to deliver bright, uniform, and reliable illumination for industrial, commercial, architectural, outdoor, and large-area lighting applications.",
+
+        description:
+          "ELSTRONG Flood Light Lense Model is designed to deliver bright, uniform, and reliable illumination for industrial, commercial, architectural, outdoor, and large-area lighting applications. Available in 60W, 120W, 200W, 300W, and 400W, the product provides flexible lighting options for different area sizes and illumination requirements. The lens model is designed to provide controlled and focused light distribution, helping deliver effective illumination across outdoor and large-area applications. Built for demanding lighting environments, the Flood Light Lense Model combines powerful LED performance with a practical design suitable for professional lighting installations. The 60W to 400W range allows users to select the appropriate power level according to the required brightness and coverage area. The integrated lens helps control the direction of light, supporting effective illumination for open spaces, industrial areas, building exteriors, and other outdoor applications. Higher-wattage options are suitable for large spaces requiring stronger and broader illumination, while lower-wattage models can be used for medium-area applications. The Flood Light Lense Model is suitable for industrial premises, warehouses, parking areas, commercial properties, sports areas, building façades, roadsides, and large outdoor spaces.",
+
+        // Main product images
+        image: "/product/flood1.webp",
+
+        images: [
+          "/product/flood1.webp",
+          "/product/flood2.webp",
+          "/product/flood3.webp",
+        ],
+
+        // Product variants
+        wattages: [
+          {
+            value: "60W",
+            image: "/product/flood-light-lense-model-60w.webp",
+            price: 0,
+          },
+          {
+            value: "120W",
+            image: "/product/flood-light-lense-model-120w.webp",
+            price: 0,
+          },
+          {
+            value: "200W",
+            image: "/product/flood-light-lense-model-200w.webp",
+            price: 0,
+          },
+          {
+            value: "300W",
+            image: "/product/flood-light-lense-model-300w.webp",
+            price: 0,
+          },
+          {
+            value: "400W",
+            image: "/product/flood-light-lense-model-400w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          "Wattage Options": "60W, 120W, 200W, 300W, and 400W",
+          "Optical Design": "Lens-Based Optical Design",
+          "Light Distribution": "Controlled and Focused Light Distribution",
+          "Lighting Type": "High-Output LED",
+          Application:
+            "Industrial / Commercial / Architectural / Outdoor / Large-Area Lighting",
+          SuitableFor:
+            "Industrial Premises / Warehouses / Parking Areas / Commercial Properties / Sports Areas / Building Façades / Roadsides / Large Outdoor Spaces",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Multiple Power Options",
+            text: "The 60W to 400W range allows users to select the appropriate power level according to the required brightness and coverage area.",
+          },
+          {
+            title: "Focused Light Distribution",
+            text: "The integrated lens helps control the direction of light, supporting effective illumination for open spaces, industrial areas, building exteriors, and other outdoor applications.",
+          },
+          {
+            title: "High-Output Lighting",
+            text: "Higher-wattage options are suitable for large spaces requiring stronger and broader illumination, while lower-wattage models can be used for medium-area applications.",
+          },
+          {
+            title: "Versatile Outdoor Application",
+            text: "Suitable for industrial premises, warehouses, parking areas, commercial properties, sports areas, building façades, roadsides, and large outdoor spaces.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops LED lighting solutions designed to meet the performance requirements of modern commercial, industrial, and outdoor applications.",
+          },
+          {
+            title: "Wide Power Selection",
+            text: "Five wattage options provide flexibility for different lighting projects, from medium-area illumination to high-power large-area lighting.",
+          },
+          {
+            title: "Effective Light Control",
+            text: "The lens-based design helps provide directed illumination for applications where controlled light distribution is important.",
+          },
+          {
+            title: "Reliable Outdoor Solution",
+            text: "The Flood Light Lense Model is designed as a practical high-performance lighting option for demanding outdoor and large-space installations.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/flood3.webp",
+
+        // Additional product information
+        sku: "ELS-FLOOD-LIGHT-LENSE-MODEL",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/flood-light-lense-model-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "flood-light-gm-model",
+          "flood-light",
+          "led-street-light",
+          "high-bay-light",
+        ],
+      },
+    ],
+  },
+
+
+   {
+    id: 11,
+    name: "Deep Light",
+    slug: "deep-light",
+    metaTitle: "Deep Light| Unique Decorative Lighting | Elstrong",
+    metaDesc:
+      "Explore Elstrong’s Deep Light lighting range, designed to add character and visual appeal to modern interiors with distinctive decorative lighting solutions.",
+    image: "product/flood1.webp",
+    image2: "/product/flood3.webp",
+    hoverImage: "/product/flood3.webp",
+
+    description:
+      " ELSTRONG Deep Light is designed to provide bright, reliable, and uniform illumination for outdoor, industrial, commercial, architectural, and large-area lighting applications. ",
+    products: [
+      {
+  id: 1101,
+  name: "Pearl LED Deep Light",
+  slug: "pearl-led-deep-light",
+  metaTitle: "Pearl LED Deep Light | Pearl DL002 | Elstrong",
+  metaDesc:
+    "ELSTRONG Pearl DL002 is a compact 3W LED Deep Light delivering ≥300 lm, with 80 mm size, 45 mm cutout, 85–280 VAC operation, PF ≥0.90, and CRI ≥80 for practical indoor lighting.",
+
+  category: "Deep Light",
+  categorySlug: "deep-light",
+
+  price: 0,
+  oldPrice: 0,
+  currency: "₹",
+
+  badge: "Featured",
+
+  shortDescription:
+    "ELSTRONG Pearl DL002 is a compact 3W LED lighting solution designed to provide practical and uniform illumination for residential, commercial, office, and indoor spaces. With ≥300 lm output, compact dimensions, wide voltage operation, and CRI ≥80.",
+
+  description:
+    "ELSTRONG Pearl DL002 is a compact 3W LED lighting solution designed to provide practical and uniform illumination for residential, commercial, office, and indoor spaces. With a 3W wattage and lumen output of ≥300 lm, Pearl DL002 provides suitable brightness for general indoor lighting applications. Measuring 80 mm in size, 45 mm cutout, and 45 mm height, the product is designed for neat and convenient ceiling installation. Designed to operate at 85–280 VAC, with a power factor ≥0.90, the product supports stable and efficient lighting operation. Pearl DL002 provides practical illumination with a compact power requirement, making it suitable for everyday indoor lighting. The 80 mm size and 45 mm cutout make Pearl DL002 suitable for installations requiring a smaller lighting footprint. A power factor ≥0.90 supports efficient electrical operation and power utilization. With CRI ≥80, the light is designed to provide natural and clear colour appearance in illuminated spaces.",
+
+  // Main product images
+  image: "/product/pearl-led-deep-light.webp",
+
+  images: [
+    "/product/pearl-led-deep-light.webp",
+    "/product/pearl-led-deep-light-2.webp",
+    "/product/pearl-led-deep-light-3.webp",
+    "/product/pearl-led-deep-light-4.webp",
+    "/product/pearl-led-deep-light-5.webp",
+  ],
+
+  // Product variants
+  wattages: [
+    {
+      value: "3W",
+      image: "/product/pearl-led-deep-light-3w.webp",
+      price: 0,
+    },
+  ],
+
+  // Product specifications
+  specifications: {
+    Wattage: "3W",
+    "Lumen Output": "90 lm/watt",
+    Size: "80 mm",
+    Cutout: "45 mm",
+    Height: "45 mm",
+    "Operating Voltage": "85–280 VAC",
+    "Power Factor": "≥0.90",
+    CRI: "≥80",
+    "Product Type": "Compact LED Deep Light",
+    Application:
+      "Residential / Commercial / Office / Indoor Lighting",
+  },
+
+  // Features
+  features: [
+    {
+      title: "3W LED Technology",
+      text: "Provides practical illumination with a compact power requirement, making it suitable for everyday indoor lighting.",
+    },
+    {
+      title: "Compact Installation",
+      text: "The 80 mm size and 45 mm cutout make Pearl DL002 suitable for installations requiring a smaller lighting footprint.",
+    },
+    {
+      title: "Efficient Performance",
+      text: "A power factor ≥0.90 supports efficient electrical operation and power utilization.",
+    },
+    {
+      title: "Good Colour Rendering",
+      text: "With CRI ≥80, the light is designed to provide natural and clear colour appearance in illuminated spaces.",
+    },
+  ],
+
+  // Why choose this product/company
+  whyChoose: [
+    {
+      title: "Professional Lighting Manufacturer",
+      text: "ELSTRONG develops LED lighting solutions focused on efficient performance, practical design, and dependable operation.",
+    },
+    {
+      title: "Compact Lighting Solution",
+      text: "Pearl DL002 is well suited for applications where a smaller and neatly integrated LED light is required.",
+    },
+    {
+      title: "Efficient Illumination",
+      text: "Its 3W LED configuration delivers ≥300 lm while maintaining a power factor of ≥0.90.",
+    },
+    {
+      title: "Reliable Indoor Lighting",
+      text: "With wide voltage operation and CRI ≥80, the Pearl provides a practical lighting solution for modern indoor environments.",
+    },
+  ],
+
+  // Image used in description section
+  descriptionImage: "/product/pearl-led-deep-light.webp",
+
+  // Additional product information
+  sku: "ELS-PEARL-DL002",
+
+  stock: true,
+
+  stockText: "In Stock",
+
+  brochure: "/brochure/pearl-led-deep-light-brochure.pdf",
+
+  // Related products
+  relatedProducts: [
+    "adjustable-light",
+    "cylinder-light",
+    "half-k-light",
+    "wall-light",
+  ],
+},
+
+
+{
+  id: 1102,
+  name: "Junction Deep Light",
+  slug: "junction-deep-light",
+  metaTitle: "Junction Deep Light | Junction 3W LED Deep Light | Elstrong",
+  metaDesc:
+    "ELSTRONG Junction is a compact 3W LED Deep Light delivering ≥300 lm with 80 mm size, 45 mm cutout, 45 mm height, 85–280 VAC operation, PF ≥0.90, and CRI ≥80 for reliable indoor lighting.",
+
+  category: "Deep Light",
+  categorySlug: "deep-light",
+
+  price: 0,
+  oldPrice: 0,
+  currency: "₹",
+
+  badge: "Featured",
+
+  shortDescription:
+    "ELSTRONG Junction is a compact 3W LED lighting solution designed to provide efficient and reliable illumination for residential, commercial, office, and indoor applications. With a compact 80 mm size, 45 mm cutout, ≥300 lm output, wide voltage operation, and CRI ≥80.",
+
+  description:
+    "ELSTRONG Junction is a 3W LED lighting solution designed to provide efficient and reliable illumination for residential, commercial, office, and indoor applications. With an 80 mm size, 45 mm cutout, and 45 mm height, the Junction is designed for neat installation where a compact lighting fixture is preferred. The 3W model provides a lumen output of ≥300 lm, delivering practical brightness for general lighting requirements. Operating at 85–280 VAC with a power factor ≥0.90, the product is designed for stable and efficient everyday operation. The 3W LED technology provides practical illumination with low power consumption, making it suitable for everyday indoor lighting applications. The 80 mm size and 45 mm cutout allow the Junction to fit neatly into suitable ceiling installations. With a lumen output of ≥300 lm and CRI ≥80, it provides clear and natural-looking illumination. The 85–280 VAC operating range supports reliable performance across varying compatible voltage conditions.",
+
+  // Main product images
+  image: "/product/junction-deep-light.webp",
+
+  images: [
+    "/product/junction-deep-light.webp",
+    "/product/junction-deep-light-2.webp",
+    "/product/junction-deep-light-3.webp",
+    "/product/junction-deep-light-4.webp",
+    "/product/junction-deep-light-5.webp",
+  ],
+
+  // Product variants
+  wattages: [
+    {
+      value: "3W",
+      image: "/product/junction-deep-light-3w.webp",
+      price: 0,
+    },
+  ],
+
+  // Product specifications
+  specifications: {
+    Wattage: "3W",
+    "Lumen Output": "90 lm/watt",
+    Size: "80 mm",
+    Cutout: "45 mm",
+    Height: "45 mm",
+    "Operating Voltage": "85–280 VAC",
+    "Power Factor": "≥0.90",
+    CRI: "≥80",
+    "Product Type": "Compact LED Junction Deep Light",
+    Application:
+      "Residential / Commercial / Office / Indoor Lighting",
+  },
+
+  // Features
+  features: [
+    {
+      title: "3W LED Technology",
+      text: "Provides practical illumination with low power consumption, making it suitable for everyday indoor lighting applications.",
+    },
+    {
+      title: "Compact Installation",
+      text: "The 80 mm size and 45 mm cutout allow the Junction to fit neatly into suitable ceiling installations.",
+    },
+    {
+      title: "High-Quality Illumination",
+      text: "With a lumen output of ≥300 lm and CRI ≥80, it provides clear and natural-looking illumination.",
+    },
+    {
+      title: "Wide Voltage Operation",
+      text: "The 85–280 VAC operating range supports reliable performance across varying compatible voltage conditions.",
+    },
+  ],
+
+  // Why choose this product/company
+  whyChoose: [
+    {
+      title: "Professional Lighting Manufacturer",
+      text: "ELSTRONG develops LED lighting solutions focused on efficient performance, practical design, and dependable everyday operation.",
+    },
+    {
+      title: "Compact Lighting Design",
+      text: "Junction is suitable for installations where a smaller and neatly integrated lighting solution is required.",
+    },
+    {
+      title: "Efficient Performance",
+      text: "Its 3W LED configuration provides ≥300 lm illumination while maintaining a power factor of ≥0.90.",
+    },
+    {
+      title: "Reliable Indoor Lighting",
+      text: "Wide voltage operation and CRI ≥80 make the Junction a practical choice for residential and commercial lighting applications.",
+    },
+  ],
+
+  // Image used in description section
+  descriptionImage: "/product/junction-deep-light.webp",
+
+  // Additional product information
+  sku: "ELS-JUNCTION-DL",
+
+  stock: true,
+
+  stockText: "In Stock",
+
+  brochure: "/brochure/junction-deep-light-brochure.pdf",
+
+  // Related products
+  relatedProducts: [
+    "pearl-led-deep-light",
+    "adjustable-light",
+    "cylinder-light",
+    "half-k-light",
+  ],
+},
+
+{
+  id: 1103,
+  name: "Lotus Deep Light",
+  slug: "lotus-deep-light",
+  metaTitle: "Lotus Deep Light | Lotus 6W LED Downlight | Elstrong",
+  metaDesc:
+    "ELSTRONG Lotus is a compact 6W LED Deep Light delivering ≥300 lm with 80 mm size, 45 mm cutout, 45 mm height, 85–280 VAC operation, PF ≥0.90, and CRI ≥80 for reliable indoor lighting.",
+
+  category: "Deep Light",
+  categorySlug: "deep-light",
+
+  price: 0,
+  oldPrice: 0,
+  currency: "₹",
+
+  badge: "Featured",
+
+  shortDescription:
+    "ELSTRONG Lotus is a 6W LED lighting solution designed to provide practical and consistent illumination for residential, commercial, office, and indoor spaces. With ≥300 lm output, compact dimensions, wide voltage operation, and CRI ≥80.",
+
+  description:
+    "ELSTRONG Lotus is a 6W LED lighting solution designed to provide practical and consistent illumination for residential, commercial, office, and indoor spaces. With a 6W wattage and lumen output of ≥300 lm, Lotus provides suitable brightness for general indoor lighting applications. Measuring 80 mm in size, 45 mm cutout, and 45 mm height, the product is designed for a neat and space-efficient installation. With an operating voltage of 85–280 VAC and a power factor of ≥0.90, Lotus is designed for stable and efficient everyday lighting performance. The 6W LED technology provides practical illumination while maintaining a compact power requirement, making it suitable for everyday indoor applications. The 80 mm size and 45 mm cutout provide a convenient configuration for suitable ceiling installations. With CRI ≥80, the product provides clear and natural colour representation for indoor spaces. The 85–280 VAC operating range supports reliable performance across varying compatible voltage conditions.",
+
+  // Main product images
+  image: "/product/lotus-deep-light.webp",
+
+  images: [
+    "/product/lotus-deep-light.webp",
+    "/product/lotus-deep-light-2.webp",
+    "/product/lotus-deep-light-3.webp",
+    "/product/lotus-deep-light-4.webp",
+    "/product/lotus-deep-light-5.webp",
+  ],
+
+  // Product variants
+  wattages: [
+    {
+      value: "6W",
+      image: "/product/lotus-deep-light-6w.webp",
+      price: 0,
+    },
+  ],
+
+  // Product specifications
+  specifications: {
+    Wattage: "6W",
+    "Lumen Output": "90 lm/watt",
+    Size: "80 mm",
+    Cutout: "45 mm",
+    Height: "45 mm",
+    "Operating Voltage": "85–280 VAC",
+    "Power Factor": "≥0.90",
+    CRI: "≥80",
+    "Product Type": "Compact LED Deep Light",
+    Application:
+      "Residential / Commercial / Office / Indoor Lighting",
+  },
+
+  // Features
+  features: [
+    {
+      title: "6W LED Technology",
+      text: "Provides practical illumination while maintaining a compact power requirement, making it suitable for everyday indoor applications.",
+    },
+    {
+      title: "Compact Installation",
+      text: "The 80 mm size and 45 mm cutout provide a convenient configuration for suitable ceiling installations.",
+    },
+    {
+      title: "Good Light Quality",
+      text: "With CRI ≥80, the product provides clear and natural colour representation for indoor spaces.",
+    },
+    {
+      title: "Wide Voltage Range",
+      text: "The 85–280 VAC operating range supports reliable performance across varying compatible voltage conditions.",
+    },
+  ],
+
+  // Why choose this product/company
+  whyChoose: [
+    {
+      title: "Professional Lighting Manufacturer",
+      text: "ELSTRONG develops LED lighting solutions focused on efficient performance, practical design, and dependable operation.",
+    },
+    {
+      title: "Efficient 6W Lighting",
+      text: "Lotus delivers practical illumination in a compact 6W configuration, making it suitable for various indoor applications.",
+    },
+    {
+      title: "Space-Efficient Design",
+      text: "Its compact 80 mm size and 45 mm cutout make it suitable for installations where a neat lighting profile is preferred.",
+    },
+    {
+      title: "Reliable Performance",
+      text: "Wide voltage operation, ≥0.90 power factor, and CRI ≥80 make Lotus a practical choice for modern residential and commercial lighting.",
+    },
+  ],
+
+  // Image used in description section
+  descriptionImage: "/product/lotus-deep-light.webp",
+
+  // Additional product information
+  sku: "ELS-LOTUS-DEEP-LIGHT",
+
+  stock: true,
+
+  stockText: "In Stock",
+
+  brochure: "/brochure/lotus-deep-light-brochure.pdf",
+
+  // Related products
+  relatedProducts: [
+    "pearl-led-deep-light",
+    "junction-deep-light",
+    "adjustable-light",
+    "cylinder-light",
+  ],
+},
+
+
+{
+  id: 1104,
+  name: "Spot Deep LED Light",
+  slug: "spot-deep-led-light",
+  metaTitle: "Spot Deep LED Light | 2W LED Spot Light | Elstrong",
+  metaDesc:
+    "ELSTRONG Spot Light is a compact 2W LED Deep Light designed for focused illumination, featuring a 50mm output size, 45mm cutout, 45mm height, and 85–265 VAC operation for residential, commercial, retail, office, and decorative applications.",
+
+  category: "Deep Light",
+  categorySlug: "deep-light",
+
+  price: 0,
+  oldPrice: 0,
+  currency: "₹",
+
+  badge: "Featured",
+
+  shortDescription:
+    "ELSTRONG Spot Light is a compact 2W lighting solution designed to provide focused and practical illumination for residential, commercial, retail, office, and decorative indoor applications. With a 50mm output size, 45mm cutout, 45mm height, and wide voltage operation.",
+
+  description:
+    "ELSTRONG Spot Light is a compact 2W lighting solution designed to provide focused and practical illumination for residential, commercial, retail, office, and decorative indoor applications. Its 50mm output size provides targeted lighting, making it suitable for highlighting selected areas, displays, architectural details, and interior features. With a 45mm cutout size and 45mm height, the Spot Light is designed for neat and space-efficient installation. Designed to operate between 85–265 VAC, it provides reliable performance across a broad compatible voltage range. The 2W configuration offers focused illumination while maintaining a compact and energy-efficient lighting format. The Spot Light is designed for applications where concentrated light is required to highlight specific objects, surfaces, or areas. The 45mm cutout and 45mm height allow the light to be installed neatly without taking up excessive space. It is suitable for homes, offices, shops, showrooms, display areas, corridors, hospitality spaces, and decorative interiors.",
+
+  // Main product images
+  image: "/product/spot-deep-led-light.webp",
+
+  images: [
+    "/product/spot-deep-led-light.webp",
+    "/product/spot-deep-led-light-2.webp",
+    "/product/spot-deep-led-light-3.webp",
+    "/product/spot-deep-led-light-4.webp",
+    "/product/spot-deep-led-light-5.webp",
+  ],
+
+  // Product variants
+  wattages: [
+    {
+      value: "2W",
+      image: "/product/spot-deep-led-light-2w.webp",
+      price: 0,
+    },
+  ],
+
+  // Product specifications
+  specifications: {
+    Wattage: "2W",
+    "Output Size": "50mm",
+    Cutout: "45mm",
+    Height: "45mm",
+    "Operating Voltage": "85–265 VAC",
+    "Product Type": "Compact LED Spot Light",
+    "Light Type": "Focused / Directional Lighting",
+    Application:
+      "Residential / Commercial / Retail / Office / Decorative Indoor Lighting",
+    SuitableFor:
+      "Homes / Offices / Shops / Showrooms / Display Areas / Corridors / Hospitality Spaces / Decorative Interiors",
+  },
+
+  // Features
+  features: [
+    {
+      title: "2W LED Performance",
+      text: "The 2W configuration offers focused illumination while maintaining a compact and energy-efficient lighting format.",
+    },
+    {
+      title: "Directional Lighting",
+      text: "Designed for applications where concentrated light is required to highlight specific objects, surfaces, or areas.",
+    },
+    {
+      title: "Space-Saving Design",
+      text: "The 45mm cutout and 45mm height allow the light to be installed neatly without taking up excessive space.",
+    },
+    {
+      title: "Versatile Applications",
+      text: "Suitable for homes, offices, shops, showrooms, display areas, corridors, hospitality spaces, and decorative interiors.",
+    },
+  ],
+
+  // Why choose this product/company
+  whyChoose: [
+    {
+      title: "Professional Lighting Manufacturer",
+      text: "ELSTRONG develops LED lighting solutions focused on practical design, efficient performance, and dependable operation.",
+    },
+    {
+      title: "Focused Lighting Solution",
+      text: "The Spot Light is designed to provide targeted illumination for accent and highlighting applications.",
+    },
+    {
+      title: "Compact Installation",
+      text: "Its compact dimensions make it suitable for installations where space efficiency and a clean appearance are important.",
+    },
+    {
+      title: "Versatile Indoor Use",
+      text: "Suitable for residential, commercial, retail, hospitality, and decorative lighting environments.",
+    },
+  ],
+
+  // Image used in description section
+  descriptionImage: "/product/spot-deep-led-light.webp",
+
+  // Additional product information
+  sku: "ELS-SPOT-DEEP-LED-LIGHT",
+
+  stock: true,
+
+  stockText: "In Stock",
+
+  brochure: "/brochure/spot-deep-led-light-brochure.pdf",
+
+  // Related products
+  relatedProducts: [
+    "pearl-led-deep-light",
+    "junction-deep-light",
+    "lotus-deep-light",
+    "adjustable-light",
+  ],
+},
+    ]
+  }
+
+,
+
+    {
+    id: 12,
+    name: "LED Surface Panel",
+    slug: "led-surface-panel",
+    metaTitle: "LED Surface Panel| Unique Decorative Lighting | Elstrong",
+    metaDesc:
+      "Explore Elstrong’s LED Surface Panel lighting range, designed to add character and visual appeal to modern interiors with distinctive decorative lighting solutions.",
+    image: "product/surfaceSq1.webp",
+    image2: "/product/surfaceSq1.webp",
+    hoverImage: "/product/surfaceSq3.webp",
+
+    description:
+      " ELSTRONG LED Surface Panel is designed to provide bright, reliable, and uniform illumination for outdoor, industrial, commercial, architectural, and large-area lighting applications. ",
+    products: [
+
+      {
+  id: 1201,
+  name: "Aluminum Square LED Surface Panel",
+  slug: "aluminum-square-led-surface-panel",
+  metaTitle:
+    "Aluminum Square LED Surface Panel | Surface Mounted LED Panel | Elstrong",
+  metaDesc:
+    "ELSTRONG Aluminum Square LED Surface Panel features a modern square surface-mounted design, aluminium construction, multiple wattage options, >600 lm to >1800 lm output, PF >0.95, wide voltage operation, and surge protection.",
+
+  category: "LED Surface Panel",
+  categorySlug: "led-surface-panel",
+
+  price: 0,
+  oldPrice: 0,
+  currency: "₹",
+
+  badge: "Featured",
+
+  shortDescription:
+    "ELSTRONG Aluminum Square LED Surface Panel is designed to provide clean and uniform illumination with a contemporary square profile for residential, commercial, office, retail, and other indoor spaces. Available in multiple wattage options with a durable aluminium body, it provides flexible and efficient indoor lighting performance.",
+
+  description:
+    "ELSTRONG Aluminum Square LED Surface Panel is designed to provide clean and uniform illumination with a contemporary square profile for residential, commercial, office, retail, and other indoor spaces. Available in 6W, 12W/18W, and 18W/22W, the panel offers flexibility to select the appropriate lighting output for different applications. The aluminium body provides a durable and practical housing while supporting effective heat management during regular LED operation. The available range delivers a lumen output from >600 lm to >1800 lm, providing suitable brightness for different indoor lighting requirements. The square format provides a clean architectural appearance and is suitable for surface-mounted ceiling applications. With a PF >0.95, the panel is designed for efficient electrical performance and optimized power utilization. Designed for 110V–280V operation at 50Hz, it supports reliable performance across a broad compatible voltage range. The panel features up to 2.5 kVA surge protection and THD <15%, supporting dependable electrical operation.",
+
+  // Main product images
+  image: "/product/surfaceSq1.webp",
+
+  images: [
+   "/product/surfaceSq1.webp",
+   "/product/surfaceSq2.webp",
+   "/product/surfaceSq3.webp",
+  ],
+
+  // Product variants
+  wattages: [
+    {
+      value: "6W",
+      image: "/product/aluminum-square-led-surface-panel-6w.webp",
+      price: 0,
+    },
+    {
+      value: "12W",
+      image: "/product/aluminum-square-led-surface-panel-6w.webp",
+      price: 0,
+    },
+    {
+      value: "18W",
+      image: "/product/aluminum-square-led-surface-panel-12w-18w.webp",
+      price: 0,
+    },
+    {
+      value: "18W",
+      image: "/product/aluminum-square-led-surface-panel-18w-22w.webp",
+      price: 0,
+    },
+    {
+      value: "22W",
+      image: "/product/aluminum-square-led-surface-panel-18w-22w.webp",
+      price: 0,
+    },
+  ],
+
+  // Product specifications
+  specifications: {
+    "Wattage Options": "6W / 12W / 18W / 18W / 22W",
+    "Lumen Output": "90 lm/watt",
+    "Body Material": "Aluminium",
+    "Product Shape": "Square",
+    "Installation": "Surface Mounted",
+    "Operating Voltage": "110V–280V",
+    Frequency: "50Hz",
+    "Power Factor": ">0.95",
+    "Surge Protection": "Up to 2.5 kVA",
+    THD: "<15%",
+    Application:
+      "Residential / Commercial / Office / Retail / Indoor Lighting",
+  },
+
+  // Features
+  features: [
+    {
+      title: "Square Surface Design",
+      text: "The square format provides a clean architectural appearance and is suitable for surface-mounted ceiling applications.",
+    },
+    {
+      title: "High Power Factor",
+      text: "With a PF >0.95, the panel is designed for efficient electrical performance and optimized power utilization.",
+    },
+    {
+      title: "Wide Voltage Range",
+      text: "Designed for 110V–280V operation at 50Hz, supporting reliable performance across a broad compatible voltage range.",
+    },
+    {
+      title: "Surge & THD Performance",
+      text: "Features up to 2.5 kVA surge protection and THD <15%, supporting dependable electrical operation.",
+    },
+  ],
+
+  // Why choose this product/company
+  whyChoose: [
+    {
+      title: "Professional Lighting Manufacturer",
+      text: "ELSTRONG develops LED lighting solutions focused on modern design, efficient performance, and reliable everyday operation.",
+    },
+    {
+      title: "Flexible Lighting Range",
+      text: "Multiple wattage options and dimensional variations make the panel suitable for different indoor lighting requirements.",
+    },
+    {
+      title: "Durable Aluminium Body",
+      text: "The aluminium construction provides a practical and robust housing for long-term lighting applications.",
+    },
+    {
+      title: "Modern Surface Installation",
+      text: "The square surface-mounted design provides a neat and contemporary appearance for a wide range of interiors.",
+    },
+  ],
+
+  // Image used in description section
+  descriptionImage: "/product/surfaceSq3.webp",
+
+  // Additional product information
+  sku: "ELS-ALUMINUM-SQUARE-LED-SURFACE-PANEL",
+
+  stock: true,
+
+  stockText: "In Stock",
+
+  brochure: "/brochure/aluminum-square-led-surface-panel-brochure.pdf",
+
+  // Related products
+  relatedProducts: [
+    "pearl-led-deep-light",
+    "junction-deep-light",
+    "lotus-deep-light",
+    "adjustable-light",
+  ],
+},
+    ]
+  }
 ];
