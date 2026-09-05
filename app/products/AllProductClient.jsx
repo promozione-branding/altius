@@ -483,6 +483,8 @@ function CategoryFilter({
           className="
             text-xs
             uppercase
+            overflow-y-auto
+    overscroll-contain
             tracking-[0.2em]
             font-medium
             mb-5

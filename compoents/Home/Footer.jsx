@@ -105,7 +105,7 @@ export default function Footer() {
             gap-12
             py-14
             sm:grid-cols-2
-            lg:grid-cols-[1.5fr_1fr_1fr_1fr]
+            lg:grid-cols-[1.5fr_1fr_1fr]
             lg:gap-10
             lg:py-16
           "
@@ -372,7 +372,7 @@ export default function Footer() {
                 text-[#85a30f]
               "
             >
-              Solutions
+              Featured
             </h3>
 
             <ul className="space-y-4">
@@ -420,60 +420,7 @@ export default function Footer() {
               SUPPORT
           ================================================= */}
 
-          <div>
-            <h3
-              className="
-                mb-6
-                text-[10px]
-                font-semibold
-                uppercase
-                tracking-[0.2em]
-                text-[#85a30f]
-              "
-            >
-              Information
-            </h3>
-
-            <ul className="space-y-4">
-              {[
-                ["FAQs", "/"],
-                ["Shipping & Delivery", "/"],
-                ["Privacy Policy", "/"],
-                ["Terms & Conditions", "/"],
-                ["Return Policy", "/"],
-              ].map(([label, href]) => (
-                <li key={label}>
-                  <Link
-                    href={href}
-                    className="
-                      group
-                      flex
-                      w-fit
-                      items-center
-                      gap-2
-                      text-sm
-                      text-white
-                      transition-colors
-                      hover:text-white/45
-                    "
-                  >
-                    {label}
-
-                    <FiArrowUpRight
-                      size={12}
-                      className="
-                        opacity-0
-                        transition-all
-                        group-hover:translate-x-0.5
-                        group-hover:-translate-y-0.5
-                        group-hover:opacity-100
-                      "
-                    />
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+        
         </div>
 
         {/* =================================================
