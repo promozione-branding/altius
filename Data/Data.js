@@ -4543,9 +4543,9 @@ export const categories = [
     metaTitle: "Deep Light| Unique Decorative Lighting | Elstrong",
     metaDesc:
       "Explore Elstrong’s Deep Light lighting range, designed to add character and visual appeal to modern interiors with distinctive decorative lighting solutions.",
-    image: "product/flood1.webp",
-    image2: "/product/flood3.webp",
-    hoverImage: "/product/flood3.webp",
+    image: "/product/lotus1.webp",
+    image2:"/product/lotus1.webp",
+    hoverImage: "/product/lotus1.webp",
 
     description:
       " ELSTRONG Deep Light is designed to provide bright, reliable, and uniform illumination for outdoor, industrial, commercial, architectural, and large-area lighting applications. ",
@@ -5809,8 +5809,8 @@ export const categories = [
     metaTitle: "COB Lights | Focused LED Lighting | Elstrong",
     metaDesc:
       "Discover Elstrong COB lights for focused, adjustable illumination. Ideal for homes, retail spaces, offices, showrooms, and modern architectural interiors.",
-    image: "/coblensmodel111.webp",
-    hoverImage: "/product/coblensmodel2222.webp",
+    image: "/product/cobblack1.webp",
+    hoverImage: "/product/cobblack1.webp",
 
     description:
       "ELSTRONG COB Model delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
@@ -6264,8 +6264,8 @@ export const categories = [
     metaTitle: "Rainbow Deep Junction | Focused LED Lighting | Elstrong",
     metaDesc:
       "Discover Elstrong Rainbow Deep Junction for focused, adjustable illumination. Ideal for homes, retail spaces, offices, showrooms, and modern architectural interiors.",
-    image: "/coblensmodel111.webp",
-    hoverImage: "/product/coblensmodel2222.webp",
+    image: "/product/rainbow1.webp",
+    hoverImage: "/product/rainbow1.webp",
 
     description:
       "ELSTRONG Rainbow Deep Junction delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
@@ -6422,8 +6422,8 @@ export const categories = [
     metaTitle: "5 head linear light | Focused LED Lighting | Elstrong",
     metaDesc:
       "Discover Elstrong 5 head linear light for focused, adjustable illumination. Ideal for homes, retail spaces, offices, showrooms, and modern architectural interiors.",
-    image: "/coblensmodel111.webp",
-    hoverImage: "/product/coblensmodel2222.webp",
+    image: "/product/headlinear1.webp",
+    hoverImage: "/product/headlinear1.webp",
 
     description:
       "ELSTRONG 5 head linear light delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
