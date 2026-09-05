@@ -14,9 +14,7 @@ export default function AllProductClient({ products = [] }) {
   const categories = useMemo(() => {
     return [
       ...new Set(
-        products
-          .map((product) => product.categoryName)
-          .filter(Boolean)
+        products.map((product) => product.categoryName).filter(Boolean),
       ),
     ];
   }, [products]);
@@ -27,9 +25,7 @@ export default function AllProductClient({ products = [] }) {
   // =====================================================
 
   const toggleCategory = (category) => {
-    setSelectedCategory((prev) =>
-      prev === category ? null : category
-    );
+    setSelectedCategory((prev) => (prev === category ? null : category));
   };
 
   // =====================================================
@@ -50,7 +46,7 @@ export default function AllProductClient({ products = [] }) {
     }
 
     return products.filter(
-      (product) => product.categoryName === selectedCategory
+      (product) => product.categoryName === selectedCategory,
     );
   }, [products, selectedCategory]);
 
@@ -80,52 +76,52 @@ export default function AllProductClient({ products = [] }) {
 
       <aside
         className="
-          hidden
-          md:flex
-          w-full
-          md:w-1/4
-          flex-col
-          gap-12
-          sticky
-          top-32
-          h-fit
-        "
+    hidden
+    md:flex
+    w-full
+    md:w-1/4
+    flex-col
+    gap-7
+    sticky
+    top-32
+
+    h-[calc(100vh-8rem)]
+    max-h-[calc(100vh-8rem)]
+    overflow-hidden
+  "
       >
         {/* Heading */}
-
-        <div className="mb-4">
+        <div className="mb-4 shrink-0">
           <h1
             className="
-              text-5xl
-              lg:text-6xl
-              font-light
-              leading-[0.95]
-              tracking-tight
-              mb-4
-            "
+        text-5xl
+        lg:text-6xl
+        font-light
+        leading-[0.95]
+        tracking-tight
+        mb-4
+      "
           >
             The
             <br />
-
-            <span className="text-[#85a30f] font-semibold">
-              Collection
-            </span>
+            <span className="text-[#85a30f] font-semibold">Collection</span>
           </h1>
 
-          <p className="text-base text-gray-800 max-w-xs leading-6">
-            Explore our complete range of architecturally
-            inspired lighting fixtures.
+          <p className="text-base text-gray-800 max-w-xs leading-5">
+            Explore our complete range of architecturally inspired lighting
+            fixtures.
           </p>
         </div>
 
         {/* Category Filter */}
-
-        <CategoryFilter
-          categories={categories}
-          selectedCategory={selectedCategory}
-          toggleCategory={toggleCategory}
-          clearFilters={clearFilters}
-        />
+        <div className="min-h-0 flex-1 mb-3 overflow-y-auto pr-2">
+          <CategoryFilter
+            categories={categories}
+            selectedCategory={selectedCategory}
+            toggleCategory={toggleCategory}
+            clearFilters={clearFilters}
+          />
+        </div>
       </aside>
 
       {/* =====================================================
@@ -138,9 +134,7 @@ export default function AllProductClient({ products = [] }) {
         ====================================================== */}
 
         <div className="md:hidden mt-5 mb-10 flex flex-col gap-6">
-          <h1 className="text-4xl font-light tracking-tight">
-            The Collection
-          </h1>
+          <h1 className="text-4xl font-light tracking-tight">The Collection</h1>
 
           <div className="flex justify-between items-center border-b border-gray-200 pb-4">
             {/* Filter Button */}
@@ -158,9 +152,7 @@ export default function AllProductClient({ products = [] }) {
               "
             >
               <FiSliders size={16} />
-
               Filters
-
               {selectedCategory && (
                 <span
                   className="
@@ -208,18 +200,15 @@ export default function AllProductClient({ products = [] }) {
             {selectedCategory ? (
               <>
                 Showing {filteredProducts.length}{" "}
-                {filteredProducts.length === 1
-                  ? "product"
-                  : "products"}{" "}
-                in{" "}
+                {filteredProducts.length === 1 ? "product" : "products"} in{" "}
                 <span className="text-black font-medium">
                   {selectedCategory}
                 </span>
               </>
             ) : (
               <>
-                Showing 1-{filteredProducts.length} of{" "}
-                {products.length} products
+                Showing 1-{filteredProducts.length} of {products.length}{" "}
+                products
               </>
             )}
           </span>
@@ -360,9 +349,7 @@ export default function AllProductClient({ products = [] }) {
           ====================================================== */
 
           <div className="py-24 text-center">
-            <p className="text-lg mb-4">
-              No products found.
-            </p>
+            <p className="text-lg mb-4">No products found.</p>
 
             <button
               type="button"
@@ -414,9 +401,7 @@ export default function AllProductClient({ products = [] }) {
 
             <div className="flex justify-between items-center mb-10">
               <div>
-                <h2 className="text-xl font-medium">
-                  Filters
-                </h2>
+                <h2 className="text-xl font-medium">Filters</h2>
 
                 <p className="text-xs text-gray-400 mt-1">
                   Select a product category
@@ -510,8 +495,7 @@ function CategoryFilter({
 
         <ul className="space-y-4 text-base text-gray-500">
           {categories.map((category) => {
-            const isSelected =
-              selectedCategory === category;
+            const isSelected = selectedCategory === category;
 
             return (
               <li key={category}>
@@ -519,14 +503,11 @@ function CategoryFilter({
                   className={`
                     flex
                     items-center
+                    
                     gap-3
                     cursor-pointer
                     transition-colors
-                    ${
-                      isSelected
-                        ? "text-black"
-                        : "hover:text-black"
-                    }
+                    ${isSelected ? "text-black" : "hover:text-black"}
                   `}
                 >
                   {/* RADIO BUTTON */}
@@ -536,9 +517,7 @@ function CategoryFilter({
                     name="product-category"
                     value={category}
                     checked={isSelected}
-                    onChange={() =>
-                      toggleCategory(category)
-                    }
+                    onChange={() => toggleCategory(category)}
                     className="
                       h-4
                       w-4

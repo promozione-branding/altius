@@ -385,7 +385,7 @@ export default function ProductClient({ product }) {
                 {/* ================= WHATSAPP ================= */}
 
                 <a
-                  href={`https://wa.me/919999999999?text=${encodeURIComponent(
+                  href={`https://wa.me/919650167709?text=${encodeURIComponent(
                     `Hello, I am interested in ${product.name}${
                       selectedWattage ? ` (${selectedWattage})` : ""
                     }${
