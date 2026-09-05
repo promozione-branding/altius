@@ -8,6 +8,7 @@ import { GrCatalog } from "react-icons/gr";
 import { usePathname } from "next/navigation";
 import { categories } from "@/Data/Data";
 import Link from "next/link";
+import PopupForm from "../PopupForm";
 
 const navItems = [
   {
@@ -47,6 +48,8 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileCategoryOpen, setMobileCategoryOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+       const [open, setOpen] = useState(false);
+
 
   const pathname = usePathname();
 
@@ -289,6 +292,7 @@ export default function Navbar() {
 
           <div className="hidden lg:flex">
             <button
+            onClick={() => setOpen(true)}
               className="
                 group
                 flex
@@ -306,7 +310,7 @@ export default function Navbar() {
                 hover:bg-[#85a30f]
               "
             >
-              Get Catalogue
+              Get a Quote
 
               <GrCatalog
                 size={17}
@@ -495,6 +499,7 @@ export default function Navbar() {
             {/* MOBILE CATALOGUE */}
 
             <button
+             onClick={() => setOpen(true)}
               className="
                 mt-5
                 flex
@@ -515,13 +520,19 @@ export default function Navbar() {
               "
             >
               <GrCatalog size={18} />
-              Get Catalogue
+              Get a Quote
             </button>
 
           </div>
         )}
 
       </nav>
+       {open && (
+              <PopupForm
+                isOpen={open}
+                onClose={() => setOpen(false)}
+              />
+            )}
     </header>
   );
 }

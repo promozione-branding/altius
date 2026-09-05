@@ -490,7 +490,7 @@ export default function ContactClient() {
                       </h4>
 
                       <p className="text-base leading-6 text-white/80">
-                        123 Lighting Avenue,
+                        F-185, Sector-3, DSIISC, Bawana Industrial Area,
                         <br />
                         New Delhi, India
                       </p>
@@ -509,10 +509,10 @@ export default function ContactClient() {
                       </h4>
 
                       <a
-                        href="tel:+919876543210"
+                        href="tel:+919650167709"
                         className="text-base text-white/80 transition-colors hover:text-[#85a30f]"
                       >
-                        +91 98765 43210
+                        +91 96501 67709
                       </a>
                     </div>
                   </div>
@@ -548,10 +548,10 @@ export default function ContactClient() {
                       </h4>
 
                       <a
-                        href="mailto:hello@elstrong.com"
+                        href="mailto:altiuslightings@gmail.com"
                         className="text-base text-white/80 transition-colors hover:text-[#85a30f]"
                       >
-                        hello@elstrong.com
+                        altiuslightings@gmail.com
                       </a>
                     </div>
                   </div>

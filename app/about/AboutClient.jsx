@@ -478,10 +478,10 @@ export default function AboutClient() {
                 {/* Button */}
                 <div className="pt-1">
                   <a
-                    href="#"
+                    href="/products"
                     className="group inline-flex items-center gap-3 border border-[#85a30f] bg-[#85a30f] px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-transparent hover:text-[#5f7a0a]"
                   >
-                    Read Our Story
+                    Explore Collections
                     <FiArrowRight className="text-base transition-transform duration-300 group-hover:translate-x-1" />
                   </a>
                 </div>

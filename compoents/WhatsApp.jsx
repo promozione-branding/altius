@@ -5,7 +5,7 @@ import React from "react";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 
 export default function WhatsApp() {
-  const phoneNumber = "919876543210"; // Replace with your WhatsApp/call number
+  const phoneNumber = "919650167709"; 
 
   const handleWhatsApp = () => {
     window.open(

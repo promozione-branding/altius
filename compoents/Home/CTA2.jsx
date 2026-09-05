@@ -16,16 +16,13 @@ export default function CTA2() {
   const buttonsRef = useRef(null);
   const contactRef = useRef(null);
 
-     const [open, setOpen] = useState(false);
-  
+  const [open, setOpen] = useState(false);
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      const headingLines =
-        headingRef.current.querySelectorAll(".heading-line");
+      const headingLines = headingRef.current.querySelectorAll(".heading-line");
 
-      const buttons =
-        buttonsRef.current.querySelectorAll(".cta-button");
+      const buttons = buttonsRef.current.querySelectorAll(".cta-button");
 
       // Initial states
       gsap.set(bgRef.current, {
@@ -82,7 +79,7 @@ export default function CTA2() {
             stagger: 0.15,
             ease: "power3.out",
           },
-          "-=1.3"
+          "-=1.3",
         )
 
         // Description
@@ -94,7 +91,7 @@ export default function CTA2() {
             duration: 0.7,
             ease: "power3.out",
           },
-          "-=0.45"
+          "-=0.45",
         )
 
         // Buttons
@@ -108,7 +105,7 @@ export default function CTA2() {
             stagger: 0.12,
             ease: "back.out(1.5)",
           },
-          "-=0.3"
+          "-=0.3",
         )
 
         // Contact
@@ -120,7 +117,7 @@ export default function CTA2() {
             duration: 0.6,
             ease: "power2.out",
           },
-          "-=0.25"
+          "-=0.25",
         );
 
       // =========================
@@ -172,10 +169,7 @@ export default function CTA2() {
   }, []);
 
   return (
-    <section
-      ref={sectionRef}
-      className="relative overflow-hidden"
-    >
+    <section ref={sectionRef} className="relative overflow-hidden">
       {/* ================= BACKGROUND ================= */}
 
       <div
@@ -194,7 +188,6 @@ export default function CTA2() {
 
       <div className="relative z-10 mx-auto flex min-h-[420px] max-w-7xl items-center justify-center px-5 py-14 sm:px-8 lg:px-12">
         <div className="w-full text-center text-white">
-
           {/* HEADING */}
 
           <h2
@@ -229,7 +222,7 @@ export default function CTA2() {
             {/* CALL */}
 
             <a
-              href="tel:+919876543210"
+              href="tel:+919650167709"
               className="
                 cta-button
                 flex
@@ -260,7 +253,7 @@ export default function CTA2() {
             {/* WHATSAPP */}
 
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919650167709"
               target="_blank"
               rel="noopener noreferrer"
               className="
@@ -287,17 +280,14 @@ export default function CTA2() {
                 sm:w-auto
               "
             >
-              <FiMessageCircle
-                className="cta-icon"
-                size={18}
-              />
+              <FiMessageCircle className="cta-icon" size={18} />
               WhatsApp Us
             </a>
 
             {/* GET QUOTE */}
 
             <button
-               onClick={() => setOpen(true)}
+              onClick={() => setOpen(true)}
               className="
                 cta-button
                 flex
@@ -321,10 +311,7 @@ export default function CTA2() {
                 sm:w-auto
               "
             >
-              <FiFileText
-                className="cta-icon"
-                size={17}
-              />
+              <FiFileText className="cta-icon" size={17} />
               Get a Quote
             </button>
           </div>
@@ -351,38 +338,27 @@ export default function CTA2() {
               sm:gap-5
             "
           >
-            <a
-              href="tel:+919876543210"
-              className="transition hover:text-white"
-            >
-              +91 98765 43210
+            <a href="tel:+919650167709" className="transition hover:text-white">
+              +91 96501 67709
             </a>
 
             <span className="hidden h-4 w-px bg-white/30 sm:block" />
 
             <a
-              href="mailto:sales@elstrong.com"
+              href="mailto:altiuslightings@gmail.com"
               className="transition hover:text-white"
             >
-              sales@elstrong.com
+              altiuslightings@gmail.com
             </a>
 
             <span className="hidden h-4 w-px bg-white/30 sm:block" />
 
-            <span>
-              Premium LED Lighting Solutions
-            </span>
+            <span>Premium LED Lighting Solutions</span>
           </div>
         </div>
       </div>
 
-
-       {open && (
-              <PopupForm
-                isOpen={open}
-                onClose={() => setOpen(false)}
-              />
-            )}
+      {open && <PopupForm isOpen={open} onClose={() => setOpen(false)} />}
     </section>
   );
 }

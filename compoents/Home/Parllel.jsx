@@ -223,7 +223,7 @@ export default function Parllel() {
                 {/* CTA */}
 
                 <Link
-                  href="/categories"
+                  href="tel:+919650167709"
                   className="
                     group/btn
                     mt-8
@@ -236,7 +236,7 @@ export default function Parllel() {
                     bg-white/10
                     px-6
                     py-3.5
-                    text-xs
+                    text-sm
                     font-semibold
                     uppercase
                     tracking-[0.16em]
@@ -248,7 +248,7 @@ export default function Parllel() {
                     hover:bg-[#85a30f]
                   "
                 >
-                  Explore Lighting
+                  +91 96501 67709
                   <span
                     className="
                       flex
