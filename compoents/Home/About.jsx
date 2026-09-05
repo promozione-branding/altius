@@ -5,6 +5,7 @@ import { FiArrowRight, FiCheck, FiZap, FiLayers } from "react-icons/fi";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CurvedLoop from "../ui/CurvedLoop";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -552,12 +553,12 @@ export default function About() {
                   text-[#171717]
                   sm:text-5xl
                   lg:text-6xl
-                  xl:text-[70px]
+                  
                 "
               >
-                Industrial lighting
+                LED Lighting Solutions
                 <br />
-                <span className="text-[#85a30f]">built to perform.</span>
+                <span className="text-[#85a30f]">for Every Space.</span>
               </h2>
 
               {/* Description */}
@@ -574,11 +575,40 @@ export default function About() {
                   sm:leading-8
                 "
               >
-                Transform commercial and industrial environments with advanced
-                LED lighting solutions engineered for efficiency, reliability
-                and exceptional illumination. From warehouses and offices to
-                retail spaces, we create lighting systems designed around the
-                way your space works.
+                ELSTRONG offers premium LED lighting solutions designed for
+                residential, commercial, industrial and architectural spaces.
+                From{" "}
+                <Link
+                  className="font-bold text-black"
+                  href="/categories/concealed-lights"
+                >
+                  {" "}
+                  Concealed Lights
+                </Link>{" "}
+                and{" "}
+                <Link
+                  className="font-bold text-black"
+                  href="/categories/led-slim-panel"
+                >
+                  {" "}
+                  LED Slim Panel{" "}
+                </Link>
+                to{" "}
+                <Link
+                  className="font-bold text-black"
+                  href="/categories/pc-panel"
+                >
+                  PC Panel{" "}
+                </Link>
+                ,{" "}
+                <Link
+                  className="font-bold text-black"
+                  href="/categories/track-light"
+                >
+                  track lights
+                </Link>{" "}
+                and <Link className="font-bold text-black" href="/categories/outdoor-lights">outdoor lighting </Link>, our solutions combine energy efficiency,
+                reliable performance and modern design.
               </p>
 
               {/* =================================================
