@@ -6569,8 +6569,8 @@ export const categories = [
     metaTitle: "Rope Light | Focused LED Lighting | Elstrong",
     metaDesc:
       "Discover Elstrong Rope Light for focused, adjustable illumination. Ideal for homes, retail spaces, offices, showrooms, and modern architectural interiors.",
-    image: "/rope1.webp",
-    hoverImage: "/product/rope2.webp",
+    image: "/product/rope1.webp",
+    hoverImage: "/product/rope1.webp",
 
     description:
       "ELSTRONG Rope Light delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
