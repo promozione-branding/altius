@@ -6417,30 +6417,30 @@ export const categories = [
 
   {
     id: 16,
-    name: "ALLN-12LZ",
-    slug: "alln-12lz",
-    metaTitle: "ALLN-12LZ | Focused LED Lighting | Elstrong",
+    name: "5 head linear light",
+    slug: "5-head-linear-light",
+    metaTitle: "5 head linear light | Focused LED Lighting | Elstrong",
     metaDesc:
-      "Discover Elstrong ALLN-12LZ for focused, adjustable illumination. Ideal for homes, retail spaces, offices, showrooms, and modern architectural interiors.",
+      "Discover Elstrong 5 head linear light for focused, adjustable illumination. Ideal for homes, retail spaces, offices, showrooms, and modern architectural interiors.",
     image: "/coblensmodel111.webp",
     hoverImage: "/product/coblensmodel2222.webp",
 
     description:
-      "ELSTRONG ALLN-12LZ delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
+      "ELSTRONG 5 head linear light delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
     products: [
       {
         id: 517,
-        name: "ALLN-12LZ",
-        slug: "alln-12lz",
+        name: "5 head linear light",
+        slug: "5-head-linear-light",
 
         metaTitle:
-          "ALLN-12LZ | 12W LED Module Light | Tunable Switch & Remote | ELSTRONG",
+          "5 head linear light | 12W LED Module Light | Tunable Switch & Remote | ELSTRONG",
 
         metaDesc:
           "ELSTRONG ALLN-12LZ is a 12W LED module with tunable switch and tunable remote function, 30° beam angle, and compact 146 × 44 mm dimensions for residential, commercial, retail, office, and interior applications.",
 
-        category: "ALLN-12LZ",
-        categorySlug: "alln-12lz",
+        category: "5 head linear light",
+        categorySlug: "5-head-linear-light",
 
         price: 0,
         oldPrice: 0,
@@ -6449,15 +6449,15 @@ export const categories = [
         badge: "Featured",
 
         shortDescription:
-          "ELSTRONG ALLN-12LZ is a 12W LED module designed to provide focused and adjustable illumination for residential, commercial, retail, office, and other interior applications. With tunable switch and tunable remote function, it provides convenient adjustment of the lighting according to the desired ambience.",
+          "ELSTRONG 5 head linear light is a 12W LED module designed to provide focused and adjustable illumination for residential, commercial, retail, office, and other interior applications. With tunable switch and tunable remote function, it provides convenient adjustment of the lighting according to the desired ambience.",
 
         description:
-          "ELSTRONG ALLN-12LZ is a 12W LED module designed to provide focused and adjustable illumination for residential, commercial, retail, office, and other interior applications. The product features a tunable switch and tunable remote function, allowing convenient adjustment of the lighting according to the desired ambience. With a 30° beam angle, the module provides directed illumination suitable for accent lighting and highlighting specific areas. Its 146 × 44 mm outer dimensions, 137 × 35 mm cutout, and 46 mm height provide a practical configuration for compatible installations. Designed to deliver efficient and focused illumination for a variety of indoor lighting requirements. Integrated tunable functionality provides convenient control over the light settings. Remote control capability offers additional convenience for adjusting the lighting without direct access to the fixture. The focused beam helps direct light toward specific areas, making it suitable for accent and decorative applications. ELSTRONG develops modern LED lighting solutions focused on practical design, flexibility, and dependable performance. The tunable switch and remote provide convenient control over the lighting experience. The 30° beam angle makes the module suitable for applications requiring directional and concentrated light. Its compact dimensions and defined cutout size make it suitable for compatible lighting installations.",
+          "ELSTRONG 5 head linear light is a 12W LED module designed to provide focused and adjustable illumination for residential, commercial, retail, office, and other interior applications. The product features a tunable switch and tunable remote function, allowing convenient adjustment of the lighting according to the desired ambience. With a 30° beam angle, the module provides directed illumination suitable for accent lighting and highlighting specific areas. Its 146 × 44 mm outer dimensions, 137 × 35 mm cutout, and 46 mm height provide a practical configuration for compatible installations. Designed to deliver efficient and focused illumination for a variety of indoor lighting requirements. Integrated tunable functionality provides convenient control over the light settings. Remote control capability offers additional convenience for adjusting the lighting without direct access to the fixture. The focused beam helps direct light toward specific areas, making it suitable for accent and decorative applications. ELSTRONG develops modern LED lighting solutions focused on practical design, flexibility, and dependable performance. The tunable switch and remote provide convenient control over the lighting experience. The 30° beam angle makes the module suitable for applications requiring directional and concentrated light. Its compact dimensions and defined cutout size make it suitable for compatible lighting installations.",
 
         // Main product images
-        image: "/product/alln-12lz.webp",
+        image: "/product/headlinear1.webp",
 
-        images: ["/product/alln-12lz.webp", "/product/alln-12lz-2.webp"],
+        images: ["/product/headlinear1.webp","/product/headlinear2.webp","/product/headlinear3.webp",],
 
         // Product variants
         wattages: [
@@ -6471,7 +6471,7 @@ export const categories = [
         // Product specifications
         specifications: {
           Wattage: "12W",
-          "Product Model": "ALLN-12LZ",
+          "Product Model": "5 head linear light",
           "Product Type": "LED Module",
           "Beam Angle": "30°",
           "Outer Dimensions": "146 × 44 mm",
@@ -6487,7 +6487,7 @@ export const categories = [
         features: [
           {
             title: "Modern Module Lighting",
-            text: "ELSTRONG ALLN-12LZ is a 12W LED module designed to provide focused and adjustable illumination for residential, commercial, retail, office, and other interior applications.",
+            text: "ELSTRONG 5 head linear light is a 12W LED module designed to provide focused and adjustable illumination for residential, commercial, retail, office, and other interior applications.",
           },
           {
             title: "Adjustable Colour Temperature",
@@ -6540,10 +6540,10 @@ export const categories = [
         ],
 
         // Image used in description section
-        descriptionImage: "/product/alln-12lz-2.webp",
+        descriptionImage: "/product/headlinear3.webp",
 
         // Additional product information
-        sku: "ELS-ALLN-12LZ",
+        sku: "ELS-5 head linear light",
 
         stock: true,
 
