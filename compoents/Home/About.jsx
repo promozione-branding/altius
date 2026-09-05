@@ -731,7 +731,7 @@ export default function About() {
                       sm:text-3xl
                     "
                   >
-                    Pro
+                    PRO
                   </p>
 
                   <p
