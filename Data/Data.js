@@ -4544,7 +4544,7 @@ export const categories = [
     metaDesc:
       "Explore Elstrong’s Deep Light lighting range, designed to add character and visual appeal to modern interiors with distinctive decorative lighting solutions.",
     image: "/product/lotus1.webp",
-    image2:"/product/lotus1.webp",
+    image2: "/product/lotus1.webp",
     hoverImage: "/product/lotus1.webp",
 
     description:
@@ -6417,7 +6417,7 @@ export const categories = [
 
   {
     id: 16,
-    name: "5 head linear light",
+    name: "5 Head Linear Light",
     slug: "5-head-linear-light",
     metaTitle: "5 head linear light | Focused LED Lighting | Elstrong",
     metaDesc:
@@ -6426,7 +6426,7 @@ export const categories = [
     hoverImage: "/product/headlinear1.webp",
 
     description:
-      "ELSTRONG 5 head linear light delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
+      "ELSTRONG 5 Head Linear Light delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
     products: [
       {
         id: 517,
@@ -6457,7 +6457,11 @@ export const categories = [
         // Main product images
         image: "/product/headlinear1.webp",
 
-        images: ["/product/headlinear1.webp","/product/headlinear2.webp","/product/headlinear3.webp",],
+        images: [
+          "/product/headlinear1.webp",
+          "/product/headlinear2.webp",
+          "/product/headlinear3.webp",
+        ],
 
         // Product variants
         wattages: [
@@ -6604,7 +6608,11 @@ export const categories = [
         // Main product images
         image: "/product/rope1.webp",
 
-        images: ["/product/rope1.webp","/product/rope2.webp","/product/rope3.webp",],
+        images: [
+          "/product/rope1.webp",
+          "/product/rope2.webp",
+          "/product/rope3.webp",
+        ],
 
         // Product variants
         wattages: [

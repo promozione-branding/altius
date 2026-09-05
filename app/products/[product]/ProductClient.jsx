@@ -14,6 +14,7 @@ import {
   LuLayers,
 } from "react-icons/lu";
 import PopupForm from "@/compoents/PopupForm";
+import ProductClientCTA from "@/compoents/ProductClientCTA";
 
 const relatedProducts = [
   {
@@ -746,7 +747,7 @@ export default function ProductClient({ product }) {
         </section>
       </main>
 
-      <CTA2 />
+      <ProductClientCTA />
 
       {open && <PopupForm isOpen={open} onClose={() => setOpen(false)} />}
     </>
