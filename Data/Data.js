@@ -6569,8 +6569,8 @@ export const categories = [
     metaTitle: "Rope Light | Focused LED Lighting | Elstrong",
     metaDesc:
       "Discover Elstrong Rope Light for focused, adjustable illumination. Ideal for homes, retail spaces, offices, showrooms, and modern architectural interiors.",
-    image: "/coblensmodel111.webp",
-    hoverImage: "/product/coblensmodel2222.webp",
+    image: "/rope1.webp",
+    hoverImage: "/product/rope2.webp",
 
     description:
       "ELSTRONG Rope Light delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
@@ -6602,9 +6602,9 @@ export const categories = [
           "ELSTRONG Rope Light is designed to provide continuous and versatile illumination for decorative, architectural, commercial, and indoor or outdoor lighting applications. Each roll contains 50 meters of rope light, providing extensive coverage for larger installation requirements with convenient roll-based packaging. The rope light consumes 10W per meter, with a total power consumption of 500W for a full 50-meter roll. With dimensions of 11 mm × 6 mm, the slim profile allows the rope light to be installed neatly around suitable edges, surfaces, outlines, and decorative areas. The rope format provides a consistent and uninterrupted lighting effect across the installed length. A 50-meter roll offers flexibility for creating extended decorative lines, outlines, borders, and architectural lighting effects. Designed to operate at 220V–240V AC, making it suitable for compatible electrical installations. Supplied in 3 rolls per package, providing a total of 150 meters for larger projects and bulk installations. ELSTRONG develops practical LED lighting solutions designed for decorative, architectural, commercial, and functional applications. The 50-meter roll length provides a convenient solution for long continuous lighting installations. Its compact 11 × 6 mm profile allows it to be used across a variety of suitable decorative and architectural applications. With 3 rolls and 150 meters per package, the Rope Light is well suited for larger lighting projects and professional installations.",
 
         // Main product images
-        image: "/product/rope-light.webp",
+        image: "/product/rope1.webp",
 
-        images: ["/product/rope-light.webp", "/product/rope-light-2.webp"],
+        images: ["/product/rope1.webp","/product/rope2.webp","/product/rope3.webp",],
 
         // Product variants
         wattages: [
@@ -6688,7 +6688,7 @@ export const categories = [
         ],
 
         // Image used in description section
-        descriptionImage: "/product/rope-light-2.webp",
+        descriptionImage: "/product/rope2.webp",
 
         // Additional product information
         sku: "ELS-ROPE-LIGHT",
