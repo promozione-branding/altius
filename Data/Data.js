@@ -3180,9 +3180,9 @@ export const categories = [
         image: "/product/squareadjustable1.webp",
 
         images: [
-         "/product/squareadjustable1.webp",
-         "/product/squareadjustable2.webp",
-         "/product/squareadjustable3.webp",
+          "/product/squareadjustable1.webp",
+          "/product/squareadjustable2.webp",
+          "/product/squareadjustable3.webp",
         ],
 
         // Product variants
@@ -3327,9 +3327,9 @@ export const categories = [
         image: "/product/adjustRound1.webp",
 
         images: [
-         "/product/adjustRound1.webp",
-         "/product/adjustRound2.webp",
-         "/product/adjustRound3.webp",
+          "/product/adjustRound1.webp",
+          "/product/adjustRound2.webp",
+          "/product/adjustRound3.webp",
         ],
 
         // Product variants
@@ -5845,12 +5845,12 @@ export const categories = [
         image: "/product/cobblack1.webp",
 
         images: [
-         "/product/cobblack1.webp",
-         "/product/cobblack2.webp",
-         "/product/cobblack3.webp",
-         "/product/cobwhite1.webp",
-         "/product/cobwhite2.webp",
-         "/product/cobwhite3.webp",
+          "/product/cobblack1.webp",
+          "/product/cobblack2.webp",
+          "/product/cobblack3.webp",
+          "/product/cobwhite1.webp",
+          "/product/cobwhite2.webp",
+          "/product/cobwhite3.webp",
         ],
 
         // Product variants
@@ -5993,10 +5993,10 @@ export const categories = [
         image: "/product/whiteRg1.webp",
 
         images: [
-         "/product/whiteRg1.webp",
-         "/product/whiteRg2.webp",
-         "/product/blackRg1.webp",
-         "/product/blackRg2.webp",
+          "/product/whiteRg1.webp",
+          "/product/whiteRg2.webp",
+          "/product/blackRg1.webp",
+          "/product/blackRg2.webp",
         ],
 
         // Product variants
@@ -6139,10 +6139,10 @@ export const categories = [
         image: "/product/blackGun1.webp",
 
         images: [
-         "/product/blackGun1.webp",
-         "/product/blackGun2.webp",
-         "/product/whiteGun1.webp",
-         "/product/whiteGun2.webp",
+          "/product/blackGun1.webp",
+          "/product/blackGun2.webp",
+          "/product/whiteGun1.webp",
+          "/product/whiteGun2.webp",
         ],
 
         // Product variants
@@ -6252,6 +6252,581 @@ export const categories = [
           "delta-cob-led-light-model-602",
           "adjustable-square-panel-led-light",
           "adjustable-round-panel-led-light",
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 16,
+    name: "Rainbow Deep Junction",
+    slug: "rainbow-deep-junction",
+    metaTitle: "Rainbow Deep Junction | Focused LED Lighting | Elstrong",
+    metaDesc:
+      "Discover Elstrong Rainbow Deep Junction for focused, adjustable illumination. Ideal for homes, retail spaces, offices, showrooms, and modern architectural interiors.",
+    image: "/coblensmodel111.webp",
+    hoverImage: "/product/coblensmodel2222.webp",
+
+    description:
+      "ELSTRONG Rainbow Deep Junction delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
+    products: [
+      {
+        id: 516,
+        name: "Rainbow Deep Junction",
+        slug: "rainbow-deep-junction",
+
+        metaTitle:
+          "Rainbow Deep Junction | 7+7W 12+12W Multi-Colour LED Light | ELSTRONG",
+
+        metaDesc:
+          "ELSTRONG Rainbow Deep Junction is a round LED lighting solution with 7+7W and 12+12W options, 85V–350V operation, 440V high-voltage protection, PF >0.95, 4 kV surge capacity, and multiple dual-colour and RGB combinations.",
+
+        category: "Junction Lights",
+        categorySlug: "junction-lights",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG Rainbow Deep Junction is a round LED lighting solution designed to provide decorative and functional illumination with dual-colour and multi-segment lighting configurations. Available in 7+7W and 12+12W, it provides flexible lighting output for different indoor applications.",
+
+        description:
+          "ELSTRONG Rainbow Deep Junction is a round LED lighting solution designed to provide decorative and functional illumination with dual-colour and multi-segment lighting configurations. Available in 7+7W and 12+12W, providing flexible lighting output for different indoor applications. Designed to operate from 85V–350V, with high-voltage protection up to 440V, supporting reliable performance across varying voltage conditions. With a power factor >0.95, the Rainbow Deep Junction is designed for efficient power utilization and dependable everyday operation. Available in multiple combinations including CW+WW, CW+BLUE, CW+GREEN, CW+PINK, CW+RED, CW+PBG, and CW+RGB for flexible decorative lighting effects. The round deep junction profile provides a distinctive appearance while allowing the product to integrate neatly into suitable ceiling installations. A PF >0.95 supports efficient electrical operation and optimized power utilization. Designed with 4 kV surge protection to provide additional protection against suitable electrical surges. ELSTRONG develops modern LED lighting solutions focused on efficient performance, reliable operation, and contemporary lighting design. Multiple dual-colour and RGB combinations provide creative options for decorative and accent lighting applications. Wide voltage operation, 440V high-voltage protection, and 4 kV surge capacity support dependable performance. A >0.95 high power factor helps provide efficient electrical operation while supporting consistent lighting performance.",
+
+        // Main product images
+        image: "/product/rainbow1.webp",
+
+        images: [
+          "/product/rainbow1.webp",
+          "/product/rainbow2.webp",
+          "/product/rainbow3.webp",
+        ],
+
+        // Product variants
+        wattages: [
+          {
+            value: "7+7W",
+            image: "/product/rainbow-deep-junction-7+7w.webp",
+            price: 0,
+          },
+          {
+            value: "12+12W",
+            image: "/product/rainbow-deep-junction-12+12w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          Wattage: "7+7W / 12+12W",
+          "Product Model": "Rainbow Deep Junction",
+          "Product Shape": "Round",
+          "Operating Voltage": "85V–350V",
+          "High-Voltage Protection": "440V",
+          "Power Factor": ">0.95",
+          "Surge Capacity": "4 kV",
+          "Colour Combinations":
+            "CW+WW / CW+BLUE / CW+GREEN / CW+PINK / CW+RED / CW+PBG / CW+RGB",
+          "Lighting Type": "Dual-Colour and Multi-Segment LED Lighting",
+          "Product Type": "Round Deep Junction LED Light",
+          Application:
+            "Decorative Lighting / Accent Lighting / Indoor Applications",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Multi-Colour LED Lighting",
+            text: "ELSTRONG Rainbow Deep Junction is a round LED lighting solution designed to provide decorative and functional illumination with dual-colour and multi-segment lighting configurations.",
+          },
+          {
+            title: "Dual-Power Options",
+            text: "Available in 7+7W and 12+12W, providing flexible lighting output for different indoor applications.",
+          },
+          {
+            title: "Wide Voltage Operation",
+            text: "Designed to operate from 85V–350V, with high-voltage protection up to 440V, supporting reliable performance across varying voltage conditions.",
+          },
+          {
+            title: "Efficient Electrical Performance",
+            text: "With a power factor >0.95, the Rainbow Deep Junction is designed for efficient power utilization and dependable everyday operation.",
+          },
+          {
+            title: "Rainbow Colour Combinations",
+            text: "Available in multiple combinations including CW+WW, CW+BLUE, CW+GREEN, CW+PINK, CW+RED, CW+PBG, and CW+RGB for flexible decorative lighting effects.",
+          },
+          {
+            title: "Round Deep Junction Design",
+            text: "The round deep junction profile provides a distinctive appearance while allowing the product to integrate neatly into suitable ceiling installations.",
+          },
+          {
+            title: "High Power Factor",
+            text: "A PF >0.95 supports efficient electrical operation and optimized power utilization.",
+          },
+          {
+            title: "4 kV Surge Capacity",
+            text: "Designed with 4 kV surge protection to provide additional protection against suitable electrical surges.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops modern LED lighting solutions focused on efficient performance, reliable operation, and contemporary lighting design.",
+          },
+          {
+            title: "Flexible Colour Options",
+            text: "Multiple dual-colour and RGB combinations provide creative options for decorative and accent lighting applications.",
+          },
+          {
+            title: "Reliable Electrical Design",
+            text: "Wide voltage operation, 440V high-voltage protection, and 4 kV surge capacity support dependable performance.",
+          },
+          {
+            title: "Efficient Performance",
+            text: "A >0.95 high power factor helps provide efficient electrical operation while supporting consistent lighting performance.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/rainbow3.webp",
+
+        // Additional product information
+        sku: "ELS-RAINBOW-DEEP-JUNCTION",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/rainbow-deep-junction-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "delta-cob-led-light-model-601",
+          "delta-cob-led-light-model-602",
+          "delta-cob-led-light-model-955",
+          "adjustable-round-panel-led-light",
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 16,
+    name: "ALLN-12LZ",
+    slug: "alln-12lz",
+    metaTitle: "ALLN-12LZ | Focused LED Lighting | Elstrong",
+    metaDesc:
+      "Discover Elstrong ALLN-12LZ for focused, adjustable illumination. Ideal for homes, retail spaces, offices, showrooms, and modern architectural interiors.",
+    image: "/coblensmodel111.webp",
+    hoverImage: "/product/coblensmodel2222.webp",
+
+    description:
+      "ELSTRONG ALLN-12LZ delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
+    products: [
+      {
+        id: 517,
+        name: "ALLN-12LZ",
+        slug: "alln-12lz",
+
+        metaTitle:
+          "ALLN-12LZ | 12W LED Module Light | Tunable Switch & Remote | ELSTRONG",
+
+        metaDesc:
+          "ELSTRONG ALLN-12LZ is a 12W LED module with tunable switch and tunable remote function, 30° beam angle, and compact 146 × 44 mm dimensions for residential, commercial, retail, office, and interior applications.",
+
+        category: "ALLN-12LZ",
+        categorySlug: "alln-12lz",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG ALLN-12LZ is a 12W LED module designed to provide focused and adjustable illumination for residential, commercial, retail, office, and other interior applications. With tunable switch and tunable remote function, it provides convenient adjustment of the lighting according to the desired ambience.",
+
+        description:
+          "ELSTRONG ALLN-12LZ is a 12W LED module designed to provide focused and adjustable illumination for residential, commercial, retail, office, and other interior applications. The product features a tunable switch and tunable remote function, allowing convenient adjustment of the lighting according to the desired ambience. With a 30° beam angle, the module provides directed illumination suitable for accent lighting and highlighting specific areas. Its 146 × 44 mm outer dimensions, 137 × 35 mm cutout, and 46 mm height provide a practical configuration for compatible installations. Designed to deliver efficient and focused illumination for a variety of indoor lighting requirements. Integrated tunable functionality provides convenient control over the light settings. Remote control capability offers additional convenience for adjusting the lighting without direct access to the fixture. The focused beam helps direct light toward specific areas, making it suitable for accent and decorative applications. ELSTRONG develops modern LED lighting solutions focused on practical design, flexibility, and dependable performance. The tunable switch and remote provide convenient control over the lighting experience. The 30° beam angle makes the module suitable for applications requiring directional and concentrated light. Its compact dimensions and defined cutout size make it suitable for compatible lighting installations.",
+
+        // Main product images
+        image: "/product/alln-12lz.webp",
+
+        images: ["/product/alln-12lz.webp", "/product/alln-12lz-2.webp"],
+
+        // Product variants
+        wattages: [
+          {
+            value: "12W",
+            image: "/product/alln-12lz-12w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          Wattage: "12W",
+          "Product Model": "ALLN-12LZ",
+          "Product Type": "LED Module",
+          "Beam Angle": "30°",
+          "Outer Dimensions": "146 × 44 mm",
+          "Cutout Dimensions": "137 × 35 mm",
+          Height: "46 mm",
+          "Lighting Control": "Tunable Switch / Tunable Remote",
+          "Lighting Type": "Focused and Adjustable Illumination",
+          Application:
+            "Residential / Commercial / Retail / Office / Other Interior Applications",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Modern Module Lighting",
+            text: "ELSTRONG ALLN-12LZ is a 12W LED module designed to provide focused and adjustable illumination for residential, commercial, retail, office, and other interior applications.",
+          },
+          {
+            title: "Adjustable Colour Temperature",
+            text: "The product features a tunable switch and tunable remote function, allowing convenient adjustment of the lighting according to the desired ambience.",
+          },
+          {
+            title: "Focused Beam",
+            text: "With a 30° beam angle, the module provides directed illumination suitable for accent lighting and highlighting specific areas.",
+          },
+          {
+            title: "Compact Installation",
+            text: "Its 146 × 44 mm outer dimensions, 137 × 35 mm cutout, and 46 mm height provide a practical configuration for compatible installations.",
+          },
+          {
+            title: "12W LED Module",
+            text: "Designed to deliver efficient and focused illumination for a variety of indoor lighting requirements.",
+          },
+          {
+            title: "Tunable Switch",
+            text: "Integrated tunable functionality provides convenient control over the light settings.",
+          },
+          {
+            title: "Tunable Remote",
+            text: "Remote control capability offers additional convenience for adjusting the lighting without direct access to the fixture.",
+          },
+          {
+            title: "30° Beam Angle",
+            text: "The focused beam helps direct light toward specific areas, making it suitable for accent and decorative applications.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops modern LED lighting solutions focused on practical design, flexibility, and dependable performance.",
+          },
+          {
+            title: "Flexible Lighting Control",
+            text: "The tunable switch and remote provide convenient control over the lighting experience.",
+          },
+          {
+            title: "Focused Illumination",
+            text: "The 30° beam angle makes the module suitable for applications requiring directional and concentrated light.",
+          },
+          {
+            title: "Easy Integration",
+            text: "Its compact dimensions and defined cutout size make it suitable for compatible lighting installations.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/alln-12lz-2.webp",
+
+        // Additional product information
+        sku: "ELS-ALLN-12LZ",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/alln-12lz-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "delta-cob-led-light-model-601",
+          "delta-cob-led-light-model-602",
+          "delta-cob-led-light-model-955",
+          "adjustable-round-panel-led-light",
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 16,
+    name: "Rope Lights",
+    slug: "rope-lights",
+    metaTitle: "Rope Light | Focused LED Lighting | Elstrong",
+    metaDesc:
+      "Discover Elstrong Rope Light for focused, adjustable illumination. Ideal for homes, retail spaces, offices, showrooms, and modern architectural interiors.",
+    image: "/coblensmodel111.webp",
+    hoverImage: "/product/coblensmodel2222.webp",
+
+    description:
+      "ELSTRONG Rope Light delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
+    products: [
+      {
+        id: 518,
+        name: "Rope Light",
+        slug: "rope-light",
+
+        metaTitle:
+          "Rope Light | 50 Meter LED Rope Light | 10W Per Meter | ELSTRONG",
+
+        metaDesc:
+          "ELSTRONG Rope Light provides continuous LED illumination with 10W per meter, supplied in 50-meter rolls, 11 mm × 6 mm compact construction, 220V–240V AC operation, and 3 rolls per package for decorative, architectural, commercial, indoor, and outdoor applications.",
+
+        category: "Rope Lights",
+        categorySlug: "rope-lights",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG Rope Light is designed to provide continuous and versatile illumination for decorative, architectural, commercial, and indoor or outdoor lighting applications. Each roll contains 50 meters of rope light, with 10W per meter and a compact 11 mm × 6 mm profile for neat installation around suitable edges, surfaces, outlines, and decorative areas.",
+
+        description:
+          "ELSTRONG Rope Light is designed to provide continuous and versatile illumination for decorative, architectural, commercial, and indoor or outdoor lighting applications. Each roll contains 50 meters of rope light, providing extensive coverage for larger installation requirements with convenient roll-based packaging. The rope light consumes 10W per meter, with a total power consumption of 500W for a full 50-meter roll. With dimensions of 11 mm × 6 mm, the slim profile allows the rope light to be installed neatly around suitable edges, surfaces, outlines, and decorative areas. The rope format provides a consistent and uninterrupted lighting effect across the installed length. A 50-meter roll offers flexibility for creating extended decorative lines, outlines, borders, and architectural lighting effects. Designed to operate at 220V–240V AC, making it suitable for compatible electrical installations. Supplied in 3 rolls per package, providing a total of 150 meters for larger projects and bulk installations. ELSTRONG develops practical LED lighting solutions designed for decorative, architectural, commercial, and functional applications. The 50-meter roll length provides a convenient solution for long continuous lighting installations. Its compact 11 × 6 mm profile allows it to be used across a variety of suitable decorative and architectural applications. With 3 rolls and 150 meters per package, the Rope Light is well suited for larger lighting projects and professional installations.",
+
+        // Main product images
+        image: "/product/rope-light.webp",
+
+        images: ["/product/rope-light.webp", "/product/rope-light-2.webp"],
+
+        // Product variants
+        wattages: [
+          {
+            value: "10W/m",
+            image: "/product/rope-light-10w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          Wattage: "10W per Meter",
+          "Total Power Consumption": "500W per 50-Meter Roll",
+          "Product Model": "Rope Light",
+          "Roll Length": "50 Meters",
+          Dimensions: "11 mm × 6 mm",
+          "Operating Voltage": "220V–240V AC",
+          "Package Quantity": "3 Rolls per Package",
+          "Total Package Length": "150 Meters",
+          "Lighting Type": "Continuous LED Lighting",
+          "Product Type": "LED Rope Light",
+          Application:
+            "Decorative / Architectural / Commercial / Indoor / Outdoor Lighting Applications",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Flexible LED Lighting",
+            text: "ELSTRONG Rope Light is designed to provide continuous and versatile illumination for decorative, architectural, commercial, and indoor or outdoor lighting applications.",
+          },
+          {
+            title: "50-Meter Roll",
+            text: "Each roll contains 50 meters of rope light, providing extensive coverage for larger installation requirements with convenient roll-based packaging.",
+          },
+          {
+            title: "Efficient 10W per Meter",
+            text: "The rope light consumes 10W per meter, with a total power consumption of 500W for a full 50-meter roll.",
+          },
+          {
+            title: "Compact Construction",
+            text: "With dimensions of 11 mm × 6 mm, the slim profile allows the rope light to be installed neatly around suitable edges, surfaces, outlines, and decorative areas.",
+          },
+          {
+            title: "Continuous Lighting",
+            text: "The rope format provides a consistent and uninterrupted lighting effect across the installed length.",
+          },
+          {
+            title: "Long Roll Length",
+            text: "A 50-meter roll offers flexibility for creating extended decorative lines, outlines, borders, and architectural lighting effects.",
+          },
+          {
+            title: "Wide AC Voltage",
+            text: "Designed to operate at 220V–240V AC, making it suitable for compatible electrical installations.",
+          },
+          {
+            title: "Practical Packaging",
+            text: "Supplied in 3 rolls per package, providing a total of 150 meters for larger projects and bulk installations.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops practical LED lighting solutions designed for decorative, architectural, commercial, and functional applications.",
+          },
+          {
+            title: "Extended Coverage",
+            text: "The 50-meter roll length provides a convenient solution for long continuous lighting installations.",
+          },
+          {
+            title: "Compact & Flexible",
+            text: "Its compact 11 × 6 mm profile allows it to be used across a variety of suitable decorative and architectural applications.",
+          },
+          {
+            title: "Bulk Project Solution",
+            text: "With 3 rolls and 150 meters per package, the Rope Light is well suited for larger lighting projects and professional installations.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/rope-light-2.webp",
+
+        // Additional product information
+        sku: "ELS-ROPE-LIGHT",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/rope-light-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "rainbow-deep-junction",
+          "delta-cob-led-light-model-601",
+          "delta-cob-led-light-model-602",
+          "adjustable-round-panel-led-light",
+        ],
+      },
+
+      {
+        id: 519,
+        name: "Rope Light Connector",
+        slug: "rope-light-connector",
+
+        metaTitle: "Rope Light Connector | LED Rope Light Connector | ELSTRONG",
+
+        metaDesc:
+          "ELSTRONG Rope Light Connector is designed to provide a secure and practical connection for compatible rope light installations, with easy integration for decorative, architectural, display, interior, and other compatible applications.",
+
+        category: "Rope Lights",
+        categorySlug: "rope-lights",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG Rope Light Connector is designed to provide a secure and practical connection for compatible rope light installations. The connector helps simplify installation by providing a convenient connection between compatible sections or components for decorative, architectural, display, interior, and other compatible rope light applications.",
+
+        description:
+          "ELSTRONG Rope Light Connector is designed to provide a secure and practical connection for compatible rope light installations. The connector helps simplify rope light installation by providing a convenient connection between compatible sections or components. Designed for use with rope lighting systems intended to deliver efficient illumination for decorative and functional applications. Suitable for decorative lighting, architectural outlines, display areas, interiors, and other compatible rope light installations. Provides a convenient connection solution for compatible rope light applications. Designed to work with energy-efficient rope lighting systems. Suitable for installations using white light rope lighting. The leaf-themed design makes it suitable for decorative lighting arrangements where aesthetic appearance is important. ELSTRONG develops practical LED lighting solutions and accessories designed for modern lighting installations. The connector provides a practical solution for connecting compatible rope light components. Designed for use with compatible energy-efficient rope lighting systems. Suitable for lighting installations where both functionality and decorative appearance are required.",
+
+        // Main product images
+        image: "/product/ropeCon2.webp",
+
+        images: ["/product/ropeCon2.webp", "/product/ropeCon1.webp"],
+
+        // Product variants
+        wattages: [],
+
+        // Product specifications
+        specifications: {
+          "Product Model": "Rope Light Connector",
+          "Product Type": "Rope Light Connector",
+          "Connection Type": "Compatible Rope Light Connection",
+          "Light Compatibility": "White Light Rope Lighting",
+          "Design Theme": "Leaf Theme",
+          "Lighting Compatibility": "Energy-Efficient Rope Lighting Systems",
+          Application:
+            "Decorative Lighting / Architectural Outlines / Display Areas / Interiors / Compatible Rope Light Installations",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Reliable Connection",
+            text: "The ELSTRONG Rope Light Connector is designed to provide a secure and practical connection for compatible rope light installations.",
+          },
+          {
+            title: "Easy Integration",
+            text: "The connector helps simplify rope light installation by providing a convenient connection between compatible sections or components.",
+          },
+          {
+            title: "Energy-Efficient Lighting Compatibility",
+            text: "Designed for use with rope lighting systems intended to deliver efficient illumination for decorative and functional applications.",
+          },
+          {
+            title: "Wide Application",
+            text: "Suitable for decorative lighting, architectural outlines, display areas, interiors, and other compatible rope light installations.",
+          },
+          {
+            title: "Practical Connector Design",
+            text: "Provides a convenient connection solution for compatible rope light applications.",
+          },
+          {
+            title: "Energy Efficient",
+            text: "Designed to work with energy-efficient rope lighting systems.",
+          },
+          {
+            title: "White Light Compatibility",
+            text: "Suitable for installations using white light rope lighting.",
+          },
+          {
+            title: "Leaf Theme",
+            text: "The leaf-themed design makes it suitable for decorative lighting arrangements where aesthetic appearance is important.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops practical LED lighting solutions and accessories designed for modern lighting installations.",
+          },
+          {
+            title: "Convenient Installation",
+            text: "The connector provides a practical solution for connecting compatible rope light components.",
+          },
+          {
+            title: "Efficient Lighting Compatibility",
+            text: "Designed for use with compatible energy-efficient rope lighting systems.",
+          },
+          {
+            title: "Decorative Applications",
+            text: "Suitable for lighting installations where both functionality and decorative appearance are required.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/ropeCon2.webp",
+
+        // Additional product information
+        sku: "ELS-ROPE-LIGHT-CONNECTOR",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/rope-light-connector-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "rope-light",
+          "rainbow-deep-junction",
+          "delta-cob-led-light-model-601",
+          "delta-cob-led-light-model-602",
         ],
       },
     ],

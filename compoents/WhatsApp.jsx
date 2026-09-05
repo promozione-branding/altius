@@ -36,7 +36,7 @@ export default function WhatsApp() {
           items-center
           justify-center
           rounded-full
-          bg-black
+          bg-blue-500
           border
           border-white
           text-white
@@ -60,7 +60,7 @@ export default function WhatsApp() {
           items-center
           justify-center
           rounded-full
-          bg-[#85a30f]
+          bg-green-500
           text-white
           shadow-lg
           transition-all
