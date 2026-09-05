@@ -2880,124 +2880,569 @@ export const categories = [
         ],
       },
       {
-  id: 509,
-  name: "Purse Outdoor LED Lights",
-  slug: "purse-outdoor-led-lights",
-  metaTitle:
-    "Purse Outdoor LED Lights | Purse Light 2 × 2 | 48W LED Light | Elstrong",
-  metaDesc:
-    "ELSTRONG Purse Light 2 × 2 is a 48W square LED lighting solution with a slim 595 × 595 × 30 mm profile, PF >0.95 (HPF), 85V–350V operation, 440V high-voltage protection, and CW, WW, and NW options.",
+        id: 509,
+        name: "Purse Outdoor LED Lights",
+        slug: "purse-outdoor-led-lights",
+        metaTitle:
+          "Purse Outdoor LED Lights | Purse Light 2 × 2 | 4/8W LED Light | Elstrong",
+        metaDesc:
+          "ELSTRONG Purse Light 2 × 2 is a 4/8W square LED lighting solution with a slim 595 × 595 × 30 mm profile, PF >0.95 (HPF), 85V–350V operation, 440V high-voltage protection, and CW, WW, and NW options.",
 
-  category: "Outdoor Lights",
-  categorySlug: "outdoor-lights",
+        category: "Outdoor Lights",
+        categorySlug: "outdoor-lights",
 
-  price: 0,
-  oldPrice: 0,
-  currency: "₹",
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
 
-  badge: "Featured",
+        badge: "Featured",
 
-  shortDescription:
-    "ELSTRONG Purse Light 2 × 2 is a square LED lighting solution designed to provide bright, uniform illumination for offices, commercial spaces, retail environments, educational areas, and other indoor applications. With a 48W configuration, slim 595 × 595 × 30 mm.",
+        shortDescription:
+          "ELSTRONG Purse Light 2 × 2 is a square LED lighting solution designed to provide bright, uniform illumination for offices, commercial spaces, retail environments, educational areas, and other indoor applications. With a 48W configuration, slim 595 × 595 × 30 mm.",
 
-  description:
-    "ELSTRONG Purse Light 2 × 2 is a square LED lighting solution designed to provide bright, uniform illumination for offices, commercial spaces, retail environments, educational areas, and other indoor applications. With a 48W configuration, the product is designed to deliver dependable illumination for spaces requiring broad and consistent lighting coverage. Measuring 595 × 595 × 30 mm, its slim profile provides a clean and modern appearance while allowing it to integrate neatly into suitable ceiling installations. With a PF >0.95 (HPF) and an operating voltage range of 85V–350V, the Purse Light 2 × 2 is designed for efficient and stable operation. The large square format is designed to provide broad and consistent illumination across indoor spaces. A power factor >0.95 supports efficient electrical performance and optimized power utilization. Designed to operate from 85V–350V, with 440V high-voltage protection, the product supports dependable operation under varying voltage conditions. Available in CW (Cool White), WW (Warm White), and NW (Neutral White) to suit different interior lighting requirements.",
+        description:
+          "ELSTRONG Purse Light 2 × 2 is a square LED lighting solution designed to provide bright, uniform illumination for offices, commercial spaces, retail environments, educational areas, and other indoor applications. With a 48W configuration, the product is designed to deliver dependable illumination for spaces requiring broad and consistent lighting coverage. Measuring 595 × 595 × 30 mm, its slim profile provides a clean and modern appearance while allowing it to integrate neatly into suitable ceiling installations. With a PF >0.95 (HPF) and an operating voltage range of 85V–350V, the Purse Light 2 × 2 is designed for efficient and stable operation. The large square format is designed to provide broad and consistent illumination across indoor spaces. A power factor >0.95 supports efficient electrical performance and optimized power utilization. Designed to operate from 85V–350V, with 440V high-voltage protection, the product supports dependable operation under varying voltage conditions. Available in CW (Cool White), WW (Warm White), and NW (Neutral White) to suit different interior lighting requirements.",
 
-  // Main product images
-  image: "/product/purse-outdoor-led-lights.webp",
+        // Main product images
+        image: "/product/purse1.webp",
 
-  images: [
-    "/product/purse-outdoor-led-lights.webp",
-    "/product/purse-outdoor-led-lights-2.webp",
-    "/product/purse-outdoor-led-lights-3.webp",
-    "/product/purse-outdoor-led-lights-4.webp",
-    "/product/purse-outdoor-led-lights-5.webp",
-  ],
+        images: ["/product/purse1.webp", "/product/purse2.webp"],
 
-  // Product variants
-  wattages: [
-    {
-      value: "48W",
-      image: "/product/purse-outdoor-led-lights-48w.webp",
-      price: 0,
-    },
-  ],
+        // Product variants
+        wattages: [
+          {
+            value: "4W",
+            image: "/product/purse-outdoor-led-lights-48w.webp",
+            price: 0,
+          },
+          {
+            value: "8W",
+            image: "/product/purse-outdoor-led-lights-48w.webp",
+            price: 0,
+          },
+        ],
 
-  // Product specifications
-  specifications: {
-    Wattage: "48W",
-    "Product Model": "Purse Light 2 × 2",
-    "Product Shape": "Square",
-    Dimensions: "595 × 595 × 30 mm",
-    "Operating Voltage": "85V–350V",
-    "High-Voltage Protection": "440V",
-    "Power Factor": ">0.95 (HPF)",
-    "Light Options": "CW (Cool White), WW (Warm White), and NW (Neutral White)",
-    "Product Type": "Large-Format Square LED Lighting",
-    Application:
-      "Offices / Commercial Spaces / Retail Environments / Educational Areas / Indoor Applications",
-  },
+        // Product specifications
+        specifications: {
+          Wattage: "4W / 8W",
+          "Product Model": "Purse Light 2 × 2",
+          "Product Shape": "Square",
+          Dimensions: "595 × 595 × 30 mm",
+          "Operating Voltage": "85V–350V",
+          "High-Voltage Protection": "440V",
+          "Power Factor": ">0.95 (HPF)",
+          "Light Options":
+            "CW (Cool White), WW (Warm White), and NW (Neutral White)",
+          "Product Type": "Large-Format Square LED Lighting",
+          Application:
+            "Offices / Commercial Spaces / Retail Environments / Educational Areas / Indoor Applications",
+        },
 
-  // Features
-  features: [
-    {
-      title: "Uniform Area Lighting",
-      text: "The large square format is designed to provide broad and consistent illumination across indoor spaces.",
-    },
-    {
-      title: "High Power Factor",
-      text: "A power factor >0.95 supports efficient electrical performance and optimized power utilization.",
-    },
-    {
-      title: "Wide Voltage Range",
-      text: "Designed to operate from 85V–350V, with 440V high-voltage protection, supporting dependable operation under varying voltage conditions.",
-    },
-    {
-      title: "Multiple White Light Options",
-      text: "Available in CW (Cool White), WW (Warm White), and NW (Neutral White) to suit different interior lighting requirements.",
-    },
-  ],
+        // Features
+        features: [
+          {
+            title: "Uniform Area Lighting",
+            text: "The large square format is designed to provide broad and consistent illumination across indoor spaces.",
+          },
+          {
+            title: "High Power Factor",
+            text: "A power factor >0.95 supports efficient electrical performance and optimized power utilization.",
+          },
+          {
+            title: "Wide Voltage Range",
+            text: "Designed to operate from 85V–350V, with 440V high-voltage protection, supporting dependable operation under varying voltage conditions.",
+          },
+          {
+            title: "Multiple White Light Options",
+            text: "Available in CW (Cool White), WW (Warm White), and NW (Neutral White) to suit different interior lighting requirements.",
+          },
+        ],
 
-  // Why choose this product/company
-  whyChoose: [
-    {
-      title: "Professional Lighting Manufacturer",
-      text: "ELSTRONG develops LED lighting solutions focused on efficient performance, modern design, and dependable operation.",
-    },
-    {
-      title: "Wide Coverage Lighting",
-      text: "The 2 × 2 square format provides a practical solution for illuminating larger indoor areas with consistent light.",
-    },
-    {
-      title: "Energy-Efficient Performance",
-      text: "A high power factor of >0.95 supports efficient electrical operation.",
-    },
-    {
-      title: "Modern & Versatile",
-      text: "Its slim 30 mm profile and three white-light options make it suitable for offices, commercial spaces, retail areas, institutions, and other contemporary interiors.",
-    },
-  ],
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops LED lighting solutions focused on efficient performance, modern design, and dependable operation.",
+          },
+          {
+            title: "Wide Coverage Lighting",
+            text: "The 2 × 2 square format provides a practical solution for illuminating larger indoor areas with consistent light.",
+          },
+          {
+            title: "Energy-Efficient Performance",
+            text: "A high power factor of >0.95 supports efficient electrical operation.",
+          },
+          {
+            title: "Modern & Versatile",
+            text: "Its slim 30 mm profile and three white-light options make it suitable for offices, commercial spaces, retail areas, institutions, and other contemporary interiors.",
+          },
+        ],
 
-  // Image used in description section
-  descriptionImage: "/product/purse-outdoor-led-lights.webp",
+        // Image used in description section
+        descriptionImage: "/product/purse2.webp",
+        // Additional product information
+        sku: "ELS-PURSE-LIGHT-2X2",
 
-  // Additional product information
-  sku: "ELS-PURSE-LIGHT-2X2",
+        stock: true,
 
-  stock: true,
+        stockText: "In Stock",
 
-  stockText: "In Stock",
+        brochure: "/brochure/purse-outdoor-led-lights-brochure.pdf",
 
-  brochure: "/brochure/purse-outdoor-led-lights-brochure.pdf",
+        // Related products
+        relatedProducts: [
+          "flood-light-gm-model",
+          "flood-light-lense-model",
+          "street-light",
+          "adjustable-light",
+        ],
+      },
 
-  // Related products
-  relatedProducts: [
-    "flood-light-gm-model",
-    "flood-light-lense-model",
-    "street-light",
-    "adjustable-light",
-  ],
-},
+      {
+        id: 510,
+        name: "UFO Highway Light",
+        slug: "ufo-highway-light",
+
+        metaTitle:
+          "UFO Highway Light | 100W 150W 200W Highway LED Light | ELSTRONG",
+
+        metaDesc:
+          "ELSTRONG UFO Highway Light is a high-performance outdoor lighting solution available in 100W, 150W, and 200W with SMD LED technology, ≥90% efficiency, IP66 protection, IK08 impact resistance, 60°, 90°, and 120° beam angles, and 6 kV / 10 kV surge protection.",
+
+        category: "Highway Lights",
+        categorySlug: "highway-lights",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG UFO Highway Light is designed to provide powerful and uniform illumination for highways, roads, high mast installations, parking areas, and industrial environments. Available in 100W, 150W, and 200W, it provides flexible lighting solutions for different road widths, mounting heights, and illumination requirements.",
+
+        description:
+          "ELSTRONG UFO Highway Light is designed to provide powerful and uniform illumination for highways, roads, high mast installations, parking areas, and industrial environments. Available in 100W, 150W, and 200W, providing flexible lighting solutions for different road widths, mounting heights, and illumination requirements. Equipped with SMD LEDs and efficiency of ≥90%, the light is designed to deliver strong illumination with efficient energy utilization. The die-cast aluminium body, IP66 protection, and IK08 impact resistance make the fixture suitable for demanding outdoor installations. The distinctive UFO-style construction is designed for high mast and highway lighting applications where broad and effective illumination is required. Available with 60°, 90°, and 120° beam angles, allowing light distribution to be selected according to the application and installation requirements. The driver incorporates OVP, OCP, OTP, and SCP protection for improved electrical safety and dependable operation. Available with 6 kV / 10 kV surge protection, providing additional protection against suitable electrical surges in outdoor environments. With ≥90% efficiency and a power factor ≥0.95, the UFO Highway Light is designed for effective energy utilization.",
+
+        // Main product images
+        image: "/product/highwayLight1.webp",
+
+        images: [
+          "/product/highwayLight1.webp",
+          "/product/highwayLight2.webp",
+          "/product/highwayLight3.webp",
+        ],
+
+        // Product variants
+        wattages: [
+          {
+            value: "100W",
+            image: "/product/ufo-highway-light-100w.webp",
+            price: 0,
+          },
+          {
+            value: "150W",
+            image: "/product/ufo-highway-light-150w.webp",
+            price: 0,
+          },
+          {
+            value: "200W",
+            image: "/product/ufo-highway-light-200w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          Wattage: "100W / 150W / 200W",
+          "Product Model": "UFO Highway Light",
+          "LED Technology": "SMD LEDs",
+          Efficiency: "≥90%",
+          "Product Body": "Die-Cast Aluminium",
+          "IP Protection": "IP66",
+          "Impact Resistance": "IK08",
+          "Beam Angle": "60° / 90° / 120°",
+          "Driver Protection": "OVP / OCP / OTP / SCP",
+          "Surge Protection": "6 kV / 10 kV",
+          "Power Factor": "≥0.95",
+          "Light Type": "High-Performance Outdoor Lighting",
+          Application:
+            "Highways / Roads / High Mast Installations / Parking Areas / Industrial Environments",
+          "CCT Options": "Available in Multiple CCT Options",
+          "Driver Configurations":
+            "Available in Multiple Driver Configurations",
+        },
+
+        // Features
+        features: [
+          {
+            title: "High-Performance Outdoor Lighting",
+            text: "ELSTRONG UFO Highway Light is designed to provide powerful and uniform illumination for highways, roads, high mast installations, parking areas, and industrial environments.",
+          },
+          {
+            title: "Multiple Power Options",
+            text: "Available in 100W, 150W, and 200W, providing flexible lighting solutions for different road widths, mounting heights, and illumination requirements.",
+          },
+          {
+            title: "Efficient SMD LED Technology",
+            text: "Equipped with SMD LEDs and efficiency of ≥90%, the light is designed to deliver strong illumination with efficient energy utilization.",
+          },
+          {
+            title: "Durable Outdoor Construction",
+            text: "The die-cast aluminium body, IP66 protection, and IK08 impact resistance make the fixture suitable for demanding outdoor installations.",
+          },
+          {
+            title: "UFO High Mast Design",
+            text: "The distinctive UFO-style construction is designed for high mast and highway lighting applications where broad and effective illumination is required.",
+          },
+          {
+            title: "Wide Beam Options",
+            text: "Available with 60°, 90°, and 120° beam angles, allowing light distribution to be selected according to the application and installation requirements.",
+          },
+          {
+            title: "Advanced Driver Protection",
+            text: "The driver incorporates OVP, OCP, OTP, and SCP protection for improved electrical safety and dependable operation.",
+          },
+          {
+            title: "High Surge Protection",
+            text: "Available with 6 kV / 10 kV surge protection, providing additional protection against suitable electrical surges in outdoor environments.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops high-performance LED lighting solutions for demanding outdoor, highway, industrial, and infrastructure applications.",
+          },
+          {
+            title: "Efficient High-Power Lighting",
+            text: "With ≥90% efficiency and a power factor ≥0.95, the UFO Highway Light is designed for effective energy utilization.",
+          },
+          {
+            title: "Built for Outdoor Conditions",
+            text: "IP66 protection, IK08 impact resistance, and a durable die-cast aluminium body support reliable operation in demanding environments.",
+          },
+          {
+            title: "Flexible Lighting Configuration",
+            text: "Multiple wattages, CCT options, beam angles, driver configurations, and surge protection levels allow the light to be selected according to specific project requirements.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/highwayLight3.webp",
+
+        // Additional product information
+        sku: "ELS-UFO-HIGHWAY-LIGHT",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/ufo-highway-light-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "flood-light-gm-model",
+          "flood-light-lense-model",
+          "street-light",
+          "adjustable-light",
+        ],
+      },
+
+      {
+        id: 511,
+        name: "Adjustable Square Panel LED Light",
+        slug: "adjustable-square-panel-led-light",
+
+        metaTitle:
+          "Adjustable Square Panel LED Light | 12W 15W 22W LED Panel Light | ELSTRONG",
+
+        metaDesc:
+          "ELSTRONG Adjustable Square Panel LED Light combines a clean square profile with an adjustable lighting mechanism and is available in 12W, 15W, and 22W, with 85V–350V operation, 440V high-voltage protection, PF >0.95 (HPF), and 4 kV surge capacity.",
+
+        category: "Panel Lights",
+        categorySlug: "panel-lights",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG Adjustable Square Panel LED Light combines a clean square profile with an adjustable lighting mechanism, allowing the light direction to be positioned according to the application. Available in 12W, 15W, and 22W, it provides suitable lighting choices for different room sizes and illumination requirements.",
+
+        description:
+          "ELSTRONG Adjustable Square Panel LED Light combines a clean square profile with an adjustable lighting mechanism, allowing the light direction to be positioned according to the application. Available in 12W, 15W, and 22W, providing suitable lighting choices for different room sizes and illumination requirements. Designed to operate from 85V–350V, with high-voltage protection up to 440V, supporting reliable performance under varying voltage conditions. With a power factor >0.95 (HPF) and 4 kV surge capacity, the panel is designed for efficient and dependable everyday operation. The adjustable design allows users to direct illumination toward specific areas, making it suitable for focused and general indoor lighting. 12W, 15W, and 22W options provide flexibility for different lighting requirements and installation spaces. A PF >0.95 supports efficient electrical power utilization and stable lighting performance. High-voltage protection up to 440V and 4 kV surge capacity provide additional protection against suitable voltage fluctuations and electrical surges.",
+
+        // Main product images
+        image: "/product/squareadjustable1.webp",
+
+        images: [
+         "/product/squareadjustable1.webp",
+         "/product/squareadjustable2.webp",
+         "/product/squareadjustable3.webp",
+        ],
+
+        // Product variants
+        wattages: [
+          {
+            value: "12W",
+            image: "/product/adjustable-square-panel-led-light-12w.webp",
+            price: 0,
+          },
+          {
+            value: "15W",
+            image: "/product/adjustable-square-panel-led-light-15w.webp",
+            price: 0,
+          },
+          {
+            value: "22W",
+            image: "/product/adjustable-square-panel-led-light-22w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          Wattage: "12W / 15W / 22W",
+          "Product Model": "Adjustable Square Panel LED Light",
+          "Product Shape": "Square",
+          "Design Type": "Adjustable",
+          "Operating Voltage": "85V–350V",
+          "High-Voltage Protection": "440V",
+          "Power Factor": ">0.95 (HPF)",
+          "Surge Capacity": "4 kV",
+          "Lighting Direction": "Adjustable",
+          "Product Type": "Adjustable Square Panel LED Light",
+          Application:
+            "Focused and General Indoor Lighting / Different Room Sizes / Indoor Applications",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Modern Adjustable Design",
+            text: "ELSTRONG Adjustable Square Panel LED Light combines a clean square profile with an adjustable lighting mechanism, allowing the light direction to be positioned according to the application.",
+          },
+          {
+            title: "Flexible Wattage Options",
+            text: "Available in 12W, 15W, and 22W, providing suitable lighting choices for different room sizes and illumination requirements.",
+          },
+          {
+            title: "Wide Voltage Operation",
+            text: "Designed to operate from 85V–350V, with high-voltage protection up to 440V, supporting reliable performance under varying voltage conditions.",
+          },
+          {
+            title: "Efficient Electrical Performance",
+            text: "With a power factor >0.95 (HPF) and 4 kV surge capacity, the panel is designed for efficient and dependable everyday operation.",
+          },
+          {
+            title: "Adjustable Square Profile",
+            text: "The adjustable design allows users to direct illumination toward specific areas, making it suitable for focused and general indoor lighting.",
+          },
+          {
+            title: "Multiple Wattages",
+            text: "12W, 15W, and 22W options provide flexibility for different lighting requirements and installation spaces.",
+          },
+          {
+            title: "High Power Factor",
+            text: "A PF >0.95 supports efficient electrical power utilization and stable lighting performance.",
+          },
+          {
+            title: "Enhanced Protection",
+            text: "High-voltage protection up to 440V and 4 kV surge capacity provide additional protection against suitable voltage fluctuations and electrical surges.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops modern LED lighting solutions that combine practical functionality, efficient performance, and contemporary design.",
+          },
+          {
+            title: "Directional Lighting Flexibility",
+            text: "The adjustable square design allows light to be directed according to specific illumination requirements.",
+          },
+          {
+            title: "Efficient Performance",
+            text: "Multiple wattage options and a >0.95 high power factor provide flexible and efficient lighting solutions.",
+          },
+          {
+            title: "Reliable Protection",
+            text: "Wide voltage operation, 440V high-voltage protection, and 4 kV surge capacity support dependable everyday performance.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/squareadjustable3.webp",
+
+        // Additional product information
+        sku: "ELS-ADJUSTABLE-SQUARE-PANEL",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/adjustable-square-panel-led-light-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "purse-outdoor-led-lights",
+          "flood-light-gm-model",
+          "flood-light-lense-model",
+          "street-light",
+        ],
+      },
+
+      {
+        id: 512,
+        name: "Adjustable Round Panel LED Light",
+        slug: "adjustable-round-panel-led-light",
+
+        metaTitle:
+          "Adjustable Round Panel LED Light | 12W 15W 22W LED Panel Light | ELSTRONG",
+
+        metaDesc:
+          "ELSTRONG Adjustable Round Panel LED Light features a sleek round design with an adjustable mechanism, available in 12W, 15W, and 22W, with 85V–350V operation, 440V high-voltage protection, PF >0.95 (HPF), and 4 kV surge capacity.",
+
+        category: "Panel Lights",
+        categorySlug: "panel-lights",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG Adjustable Round Panel LED Light features a sleek round design with an adjustable mechanism for directing illumination according to the requirements of the space. Available in 12W, 15W, and 22W, providing flexible lighting options for residential, commercial, office, retail, and other indoor applications.",
+
+        description:
+          "ELSTRONG Adjustable Round Panel LED Light features a sleek round design with an adjustable mechanism for directing illumination according to the requirements of the space. Available in 12W, 15W, and 22W, providing flexible lighting options for residential, commercial, office, retail, and other indoor applications. The panel operates across 85V–350V and offers high-voltage protection up to 440V, supporting reliable operation across varying voltage conditions. With a power factor >0.95 (HPF) and 4 kV surge capacity, the product is designed for efficient and dependable lighting performance. The adjustable round profile enables directional positioning of the light, making it suitable for highlighting selected areas and creating focused illumination. Available in 12W, 15W, and 22W variants to accommodate different lighting levels and application requirements. With PF >0.95, the panel supports efficient electrical operation and optimized power utilization. Up to 440V high-voltage protection and 4 kV surge capacity provide additional protection for suitable electrical installations. ELSTRONG focuses on developing modern LED lighting products designed for efficient performance and practical applications.",
+
+        // Main product images
+        image: "/product/adjustRound1.webp",
+
+        images: [
+         "/product/adjustRound1.webp",
+         "/product/adjustRound2.webp",
+         "/product/adjustRound3.webp",
+        ],
+
+        // Product variants
+        wattages: [
+          {
+            value: "12W",
+            image: "/product/adjustable-round-panel-led-light-12w.webp",
+            price: 0,
+          },
+          {
+            value: "15W",
+            image: "/product/adjustable-round-panel-led-light-15w.webp",
+            price: 0,
+          },
+          {
+            value: "22W",
+            image: "/product/adjustable-round-panel-led-light-22w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          Wattage: "12W / 15W / 22W",
+          "Product Model": "Adjustable Round Panel LED Light",
+          "Product Shape": "Round",
+          "Design Type": "Adjustable",
+          "Operating Voltage": "85V–350V",
+          "High-Voltage Protection": "440V",
+          "Power Factor": ">0.95 (HPF)",
+          "Surge Capacity": "4 kV",
+          "Lighting Direction": "Adjustable",
+          "Product Type": "Adjustable Round Panel LED Light",
+          Application:
+            "Residential / Commercial / Office / Retail / Other Indoor Applications",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Contemporary Adjustable Lighting",
+            text: "ELSTRONG Adjustable Round Panel LED Light features a sleek round design with an adjustable mechanism for directing illumination according to the requirements of the space.",
+          },
+          {
+            title: "Versatile Wattage Range",
+            text: "Available in 12W, 15W, and 22W, providing flexible lighting options for residential, commercial, office, retail, and other indoor applications.",
+          },
+          {
+            title: "Wide Voltage Compatibility",
+            text: "The panel operates across 85V–350V and offers high-voltage protection up to 440V, supporting reliable operation across varying voltage conditions.",
+          },
+          {
+            title: "High-Efficiency Electrical Design",
+            text: "With a power factor >0.95 (HPF) and 4 kV surge capacity, the product is designed for efficient and dependable lighting performance.",
+          },
+          {
+            title: "Adjustable Round Design",
+            text: "The adjustable round profile enables directional positioning of the light, making it suitable for highlighting selected areas and creating focused illumination.",
+          },
+          {
+            title: "Flexible Power Options",
+            text: "Available in 12W, 15W, and 22W variants to accommodate different lighting levels and application requirements.",
+          },
+          {
+            title: "High Power Factor",
+            text: "With PF >0.95, the panel supports efficient electrical operation and optimized power utilization.",
+          },
+          {
+            title: "Protection Against Electrical Variations",
+            text: "Up to 440V high-voltage protection and 4 kV surge capacity provide additional protection for suitable electrical installations.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Reliable LED Light Manufacturer",
+            text: "ELSTRONG focuses on developing modern LED lighting products designed for efficient performance and practical applications.",
+          },
+          {
+            title: "Flexible Directional Lighting",
+            text: "The adjustable round design provides greater control over the direction of illumination.",
+          },
+          {
+            title: "Multiple Lighting Options",
+            text: "12W, 15W, and 22W variants provide flexibility for different indoor lighting requirements.",
+          },
+          {
+            title: "Dependable Operation",
+            text: "High power factor, wide voltage compatibility, high-voltage protection, and surge capacity make the Adjustable Round Panel a practical lighting solution.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/adjustRound3.webp",
+
+        // Additional product information
+        sku: "ELS-ADJUSTABLE-ROUND-PANEL",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/adjustable-round-panel-led-light-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "purse-outdoor-led-lights",
+          "adjustable-square-panel-led-light",
+          "flood-light-gm-model",
+          "flood-light-lense-model",
+        ],
+      },
     ],
   },
 
@@ -4129,14 +4574,12 @@ export const categories = [
           "ELSTRONG Pearl DL002 is a compact 3W LED lighting solution designed to provide practical and uniform illumination for residential, commercial, office, and indoor spaces. With a 3W wattage and lumen output of ≥300 lm, Pearl DL002 provides suitable brightness for general indoor lighting applications. Measuring 80 mm in size, 45 mm cutout, and 45 mm height, the product is designed for neat and convenient ceiling installation. Designed to operate at 85–280 VAC, with a power factor ≥0.90, the product supports stable and efficient lighting operation. Pearl DL002 provides practical illumination with a compact power requirement, making it suitable for everyday indoor lighting. The 80 mm size and 45 mm cutout make Pearl DL002 suitable for installations requiring a smaller lighting footprint. A power factor ≥0.90 supports efficient electrical operation and power utilization. With CRI ≥80, the light is designed to provide natural and clear colour appearance in illuminated spaces.",
 
         // Main product images
-        image: "/product/pearl-led-deep-light.webp",
+        image: "/product/pearl1.webp",
 
         images: [
-          "/product/pearl-led-deep-light.webp",
-          "/product/pearl-led-deep-light-2.webp",
-          "/product/pearl-led-deep-light-3.webp",
-          "/product/pearl-led-deep-light-4.webp",
-          "/product/pearl-led-deep-light-5.webp",
+          "/product/pearl1.webp",
+          "/product/pearl2.webp",
+          "/product/pearl3.webp",
         ],
 
         // Product variants
@@ -4203,7 +4646,7 @@ export const categories = [
         ],
 
         // Image used in description section
-        descriptionImage: "/product/pearl-led-deep-light.webp",
+        descriptionImage: "/product/pearl3.webp",
 
         // Additional product information
         sku: "ELS-PEARL-DL002",
@@ -4248,14 +4691,12 @@ export const categories = [
           "ELSTRONG Junction is a 3W LED lighting solution designed to provide efficient and reliable illumination for residential, commercial, office, and indoor applications. With an 80 mm size, 45 mm cutout, and 45 mm height, the Junction is designed for neat installation where a compact lighting fixture is preferred. The 3W model provides a lumen output of ≥300 lm, delivering practical brightness for general lighting requirements. Operating at 85–280 VAC with a power factor ≥0.90, the product is designed for stable and efficient everyday operation. The 3W LED technology provides practical illumination with low power consumption, making it suitable for everyday indoor lighting applications. The 80 mm size and 45 mm cutout allow the Junction to fit neatly into suitable ceiling installations. With a lumen output of ≥300 lm and CRI ≥80, it provides clear and natural-looking illumination. The 85–280 VAC operating range supports reliable performance across varying compatible voltage conditions.",
 
         // Main product images
-        image: "/product/junction-deep-light.webp",
+        image: "/product/junction1.webp",
 
         images: [
-          "/product/junction-deep-light.webp",
-          "/product/junction-deep-light-2.webp",
-          "/product/junction-deep-light-3.webp",
-          "/product/junction-deep-light-4.webp",
-          "/product/junction-deep-light-5.webp",
+          "/product/junction1.webp",
+          "/product/junction2.webp",
+          "/product/junction3.webp",
         ],
 
         // Product variants
@@ -4322,7 +4763,7 @@ export const categories = [
         ],
 
         // Image used in description section
-        descriptionImage: "/product/junction-deep-light.webp",
+        descriptionImage: "/product/junction3.webp",
 
         // Additional product information
         sku: "ELS-JUNCTION-DL",
@@ -4366,15 +4807,9 @@ export const categories = [
           "ELSTRONG Lotus is a 6W LED lighting solution designed to provide practical and consistent illumination for residential, commercial, office, and indoor spaces. With a 6W wattage and lumen output of ≥300 lm, Lotus provides suitable brightness for general indoor lighting applications. Measuring 80 mm in size, 45 mm cutout, and 45 mm height, the product is designed for a neat and space-efficient installation. With an operating voltage of 85–280 VAC and a power factor of ≥0.90, Lotus is designed for stable and efficient everyday lighting performance. The 6W LED technology provides practical illumination while maintaining a compact power requirement, making it suitable for everyday indoor applications. The 80 mm size and 45 mm cutout provide a convenient configuration for suitable ceiling installations. With CRI ≥80, the product provides clear and natural colour representation for indoor spaces. The 85–280 VAC operating range supports reliable performance across varying compatible voltage conditions.",
 
         // Main product images
-        image: "/product/lotus-deep-light.webp",
+        image: "/product/lotus1.webp",
 
-        images: [
-          "/product/lotus-deep-light.webp",
-          "/product/lotus-deep-light-2.webp",
-          "/product/lotus-deep-light-3.webp",
-          "/product/lotus-deep-light-4.webp",
-          "/product/lotus-deep-light-5.webp",
-        ],
+        images: ["/product/lotus1.webp", "/product/lotus2.webp"],
 
         // Product variants
         wattages: [
@@ -4440,7 +4875,7 @@ export const categories = [
         ],
 
         // Image used in description section
-        descriptionImage: "/product/lotus-deep-light.webp",
+        descriptionImage: "/product/lotus2.webp",
 
         // Additional product information
         sku: "ELS-LOTUS-DEEP-LIGHT",
@@ -4484,15 +4919,9 @@ export const categories = [
           "ELSTRONG Spot Light is a compact 2W lighting solution designed to provide focused and practical illumination for residential, commercial, retail, office, and decorative indoor applications. Its 50mm output size provides targeted lighting, making it suitable for highlighting selected areas, displays, architectural details, and interior features. With a 45mm cutout size and 45mm height, the Spot Light is designed for neat and space-efficient installation. Designed to operate between 85–265 VAC, it provides reliable performance across a broad compatible voltage range. The 2W configuration offers focused illumination while maintaining a compact and energy-efficient lighting format. The Spot Light is designed for applications where concentrated light is required to highlight specific objects, surfaces, or areas. The 45mm cutout and 45mm height allow the light to be installed neatly without taking up excessive space. It is suitable for homes, offices, shops, showrooms, display areas, corridors, hospitality spaces, and decorative interiors.",
 
         // Main product images
-        image: "/product/spot-deep-led-light.webp",
+        image: "/product/spotdeep1.webp",
 
-        images: [
-          "/product/spot-deep-led-light.webp",
-          "/product/spot-deep-led-light-2.webp",
-          "/product/spot-deep-led-light-3.webp",
-          "/product/spot-deep-led-light-4.webp",
-          "/product/spot-deep-led-light-5.webp",
-        ],
+        images: ["/product/spotdeep1.webp", "/product/spotdeep2.webp"],
 
         // Product variants
         wattages: [
@@ -4559,7 +4988,7 @@ export const categories = [
         ],
 
         // Image used in description section
-        descriptionImage: "/product/spot-deep-led-light.webp",
+        descriptionImage: "/product/spotdeep2.webp",
 
         // Additional product information
         sku: "ELS-SPOT-DEEP-LED-LIGHT",
@@ -5004,387 +5433,827 @@ export const categories = [
       },
 
       {
-  id: 1302,
-  name: "PC Surface Big Glory Round Panel LED Lighting",
-  slug: "pc-surface-big-glory-round-panel-led-lighting",
-  metaTitle:
-    "PC Surface Big Glory Round Panel LED Lighting | 15W LED Surface Panel | Elstrong",
-  metaDesc:
-    "ELSTRONG PC Surface Big Glory Round Panel LED Lighting features a larger round profile, 15W LED performance, surface-mounted design, PF >0.95 (HPF), 85V–350V operation, and multiple colour options for modern indoor applications.",
+        id: 1302,
+        name: "PC Surface Big Glory Round Panel LED Lighting",
+        slug: "pc-surface-big-glory-round-panel-led-lighting",
+        metaTitle:
+          "PC Surface Big Glory Round Panel LED Lighting | 15W LED Surface Panel | Elstrong",
+        metaDesc:
+          "ELSTRONG PC Surface Big Glory Round Panel LED Lighting features a larger round profile, 15W LED performance, surface-mounted design, PF >0.95 (HPF), 85V–350V operation, and multiple colour options for modern indoor applications.",
 
-  category: "PC Surface Panel",
-  categorySlug: "pc-surface-panel",
+        category: "PC Surface Panel",
+        categorySlug: "pc-surface-panel",
 
-  price: 0,
-  oldPrice: 0,
-  currency: "₹",
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
 
-  badge: "Featured",
+        badge: "Featured",
 
-  shortDescription:
-    "ELSTRONG PC Surface Big Glory Round Panel LED Lighting is designed to provide a modern surface-mounted lighting solution with a clean and attractive round appearance. The 15W configuration provides a higher-power lighting option with efficient electrical operation.",
+        shortDescription:
+          "ELSTRONG PC Surface Big Glory Round Panel LED Lighting is designed to provide a modern surface-mounted lighting solution with a clean and attractive round appearance. The 15W configuration provides a higher-power lighting option with efficient electrical operation.",
 
-  description:
-    "ELSTRONG PC Surface Big Glory Round Panel LED Lighting is designed to provide a modern surface-mounted lighting solution with a clean and attractive round appearance. The 15W configuration provides a higher-power lighting option for spaces requiring effective and consistent illumination. Designed for convenient surface installation, the product offers a practical lighting solution for residential, commercial, office, retail, and other indoor environments. With a PF >0.95 (HPF) and operating voltage range of 85V–350V, the product is designed for efficient and stable operation. The larger round profile provides a distinctive appearance while maintaining a clean surface-mounted installation. The 15W option provides practical illumination for applications requiring greater lighting output than lower-wattage surface panels. A power factor >0.95 supports efficient utilization of electrical power. Available in Cool White, Warm White, Natural White, Red, Blue, Green, Pink, and Tri-Colour.",
+        description:
+          "ELSTRONG PC Surface Big Glory Round Panel LED Lighting is designed to provide a modern surface-mounted lighting solution with a clean and attractive round appearance. The 15W configuration provides a higher-power lighting option for spaces requiring effective and consistent illumination. Designed for convenient surface installation, the product offers a practical lighting solution for residential, commercial, office, retail, and other indoor environments. With a PF >0.95 (HPF) and operating voltage range of 85V–350V, the product is designed for efficient and stable operation. The larger round profile provides a distinctive appearance while maintaining a clean surface-mounted installation. The 15W option provides practical illumination for applications requiring greater lighting output than lower-wattage surface panels. A power factor >0.95 supports efficient utilization of electrical power. Available in Cool White, Warm White, Natural White, Red, Blue, Green, Pink, and Tri-Colour.",
 
-  // Main product images
-  image:
-    "/product/glory1.webp",
-  images: [
-   "/product/glory1.webp",
-   "/product/glory2.webp",
-   "/product/glory3.webp",
-  ],
+        // Main product images
+        image: "/product/glory1.webp",
+        images: [
+          "/product/glory1.webp",
+          "/product/glory2.webp",
+          "/product/glory3.webp",
+        ],
 
-  // Product variants
-  wattages: [
-    {
-      value: "15W",
-      image:
-        "/product/pc-surface-big-glory-round-panel-led-lighting-15w.webp",
-      price: 0,
-    },
-  ],
+        // Product variants
+        wattages: [
+          {
+            value: "15W",
+            image:
+              "/product/pc-surface-big-glory-round-panel-led-lighting-15w.webp",
+            price: 0,
+          },
+        ],
 
-  // Product specifications
-  specifications: {
-    Wattage: "15W",
-    "Product Shape": "Round",
-    "Product Design": "Big Glory Round",
-    Installation: "Surface Mounted",
-    "Operating Voltage": "85V–350V",
-    "Power Factor": ">0.95 (HPF)",
-    "Colour Options":
-      "Cool White, Warm White, Natural White, Red, Blue, Green, Pink, and Tri-Colour",
-    "Product Type": "PC Surface Big Glory Round Panel LED Lighting",
-    Application:
-      "Residential / Commercial / Office / Retail / Indoor Lighting",
+        // Product specifications
+        specifications: {
+          Wattage: "15W",
+          "Product Shape": "Round",
+          "Product Design": "Big Glory Round",
+          Installation: "Surface Mounted",
+          "Operating Voltage": "85V–350V",
+          "Power Factor": ">0.95 (HPF)",
+          "Colour Options":
+            "Cool White, Warm White, Natural White, Red, Blue, Green, Pink, and Tri-Colour",
+          "Product Type": "PC Surface Big Glory Round Panel LED Lighting",
+          Application:
+            "Residential / Commercial / Office / Retail / Indoor Lighting",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Big Glory Round Design",
+            text: "The larger round profile provides a distinctive appearance while maintaining a clean surface-mounted installation.",
+          },
+          {
+            title: "15W Configuration",
+            text: "The 15W option provides practical illumination for applications requiring greater lighting output than lower-wattage surface panels.",
+          },
+          {
+            title: "High Power Factor",
+            text: "A power factor >0.95 supports efficient utilization of electrical power.",
+          },
+          {
+            title: "Wide Colour Selection",
+            text: "Available in Cool White, Warm White, Natural White, Red, Blue, Green, Pink, and Tri-Colour.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Reliable LED Light Manufacturer",
+            text: "ELSTRONG provides modern LED lighting solutions designed for practical performance and contemporary applications.",
+          },
+          {
+            title: "Higher-Power Surface Lighting",
+            text: "The 15W configuration provides an effective option for areas requiring stronger general illumination.",
+          },
+          {
+            title: "Modern Round Appearance",
+            text: "The Big Glory design adds a clean and contemporary look to ceiling installations.",
+          },
+          {
+            title: "Flexible Applications",
+            text: "Suitable for homes, offices, retail spaces, commercial interiors, and other suitable indoor environments.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/glory3.webp",
+
+        // Additional product information
+        sku: "ELS-PC-SURFACE-BIG-GLORY-ROUND-PANEL",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure:
+          "/brochure/pc-surface-big-glory-round-panel-led-lighting-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "pc-surface-glory-round-panel-led-lighting",
+          "aluminum-round-led-surface-panel",
+          "aluminum-square-led-surface-panel",
+          "lotus-deep-light",
+        ],
+      },
+
+      {
+        id: 1303,
+        name: "PC Surface Rimless Round LED Lighting",
+        slug: "pc-surface-rimless-round-led-lighting",
+        metaTitle:
+          "PC Surface Rimless Round LED Lighting | 8W & 15W LED Surface Panel | Elstrong",
+        metaDesc:
+          "ELSTRONG PC Surface Rimless Round LED Lighting features a minimalist rimless round profile, 8W and 15W options, 85V–350V operation, 440V high-voltage protection, PF >0.95 (HPF), and multiple colour options.",
+
+        category: "PC Surface Panel",
+        categorySlug: "pc-surface-panel",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG PC Surface Rimless Round LED Lighting features a clean, seamless round appearance designed to blend naturally with modern ceiling interiors. Available in 8W and 15W options, it provides flexible surface-mounted lighting with wide voltage compatibility.",
+
+        description:
+          "ELSTRONG PC Surface Rimless Round LED Lighting features a clean, seamless round appearance designed to blend naturally with modern ceiling interiors. Available in 8W and 15W, the product provides flexibility for different illumination requirements and room sizes. Designed for surface mounting, the product provides a practical lighting solution without requiring a recessed ceiling installation. Operating across 85V–350V with 440V high-voltage protection, the product is designed for dependable operation under varying compatible voltage conditions. The rimless appearance creates a clean and contemporary look suitable for modern residential and commercial interiors. The 8W and 15W options allow users to select the appropriate lighting level for different spaces. With PF >0.95 (HPF), the lighting solution is designed for efficient electrical operation. Available in CW, WW, NW, Red, Blue, Green, Pink, and Tri-Colour to suit different lighting concepts.",
+
+        // Main product images
+        image: "/product/pcrimlessRound1.webp",
+
+        images: [
+          "/product/pcrimlessRound1.webp",
+          "/product/pcrimlessRound2.webp",
+          "/product/pcrimlessRound3.webp",
+        ],
+
+        // Product variants
+        wattages: [
+          {
+            value: "8W",
+            image: "/product/pc-surface-rimless-round-led-lighting-8w.webp",
+            price: 0,
+          },
+          {
+            value: "15W",
+            image: "/product/pc-surface-rimless-round-led-lighting-15w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          "Wattage Options": "8W / 15W",
+          "Product Shape": "Round",
+          "Product Design": "Rimless",
+          Installation: "Surface Mounted",
+          "Operating Voltage": "85V–350V",
+          "High-Voltage Protection": "440V",
+          "Power Factor": ">0.95 (HPF)",
+          "Surge Protection": "4 kV",
+          "Colour Options":
+            "CW, WW, NW, Red, Blue, Green, Pink, and Tri-Colour",
+          "Product Type": "PC Surface Rimless Round LED Lighting",
+          Application:
+            "Residential / Commercial / Office / Retail / Indoor Lighting",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Minimalist Rimless Profile",
+            text: "The rimless appearance creates a clean and contemporary look suitable for modern residential and commercial interiors.",
+          },
+          {
+            title: "Flexible Wattage",
+            text: "The 8W and 15W options allow users to select the appropriate lighting level for different spaces.",
+          },
+          {
+            title: "High Power Factor",
+            text: "With PF >0.95 (HPF), the lighting solution is designed for efficient electrical operation.",
+          },
+          {
+            title: "Multiple Colour Options",
+            text: "Available in CW, WW, NW, Red, Blue, Green, Pink, and Tri-Colour to suit different lighting concepts.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops contemporary LED lighting products focused on efficient performance and practical installation.",
+          },
+          {
+            title: "Seamless Modern Design",
+            text: "The rimless round profile provides a minimalist appearance for contemporary ceiling applications.",
+          },
+          {
+            title: "Flexible Lighting Selection",
+            text: "8W and 15W variants provide options for different lighting requirements.",
+          },
+          {
+            title: "Dependable Performance",
+            text: "Wide voltage operation, 440V high-voltage protection, 4 kV surge capacity, and high-power factor support reliable operation.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/pcrimlessRound3.webp",
+        // Additional product information
+        sku: "ELS-PC-SURFACE-RIMLESS-ROUND-LED",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure:
+          "/brochure/pc-surface-rimless-round-led-lighting-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "pc-surface-glory-round-panel-led-lighting",
+          "pc-surface-big-glory-round-panel-led-lighting",
+          "aluminum-round-led-surface-panel",
+          "aluminum-square-led-surface-panel",
+        ],
+      },
+
+      {
+        id: 1304,
+        name: "PC Surface Rimless Square LED Lighting",
+        slug: "pc-surface-rimless-square-led-lighting",
+        metaTitle:
+          "PC Surface Rimless Square LED Lighting | 8W & 15W LED Surface Panel | Elstrong",
+        metaDesc:
+          "ELSTRONG PC Surface Rimless Square LED Lighting features a clean rimless square profile with 8W and 15W options, 85V–350V operation, 440V high-voltage protection, PF >0.95, and multiple colour choices for modern interiors.",
+
+        category: "PC Surface Panel",
+        categorySlug: "pc-surface-panel",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG PC Surface Rimless Square LED Lighting combines a clean square profile with a rimless appearance, providing a contemporary lighting solution for modern interiors. Available in 8W and 15W options, it offers practical surface installation, reliable electrical performance, high-voltage protection, and multiple colour choices.",
+
+        description:
+          "ELSTRONG PC Surface Rimless Square LED Lighting combines a clean square profile with a rimless appearance, providing a contemporary lighting solution for modern interiors. Available in 8W and 15W, the product allows the product to meet different lighting requirements across residential and commercial spaces. Designed for surface mounting, the product provides a neat and convenient installation option for suitable ceiling applications. With an operating voltage range of 85V–350V, 440V high-voltage protection, and PF >0.95, it is designed for dependable electrical performance. The clean square shape provides a contemporary appearance that works well with modern architectural and interior designs. The 8W and 15W variants provide flexibility for different room sizes and desired illumination levels. A PF >0.95 (HPF) supports efficient electrical power utilization during operation. Available in CW, WW, NW, Red, Blue, Green, Pink, and Tri-Colour for varied functional and decorative requirements.",
+
+        // Main product images
+        image: "/product/pcrimlessSqaure1.webp",
+
+        images: [
+          "/product/pcrimlessSqaure1.webp",
+          "/product/pcrimlessSqaure2.webp",
+        ],
+
+        // Product variants
+        wattages: [
+          {
+            value: "8W",
+            image: "/product/pc-surface-rimless-square-led-lighting-8w.webp",
+            price: 0,
+          },
+          {
+            value: "15W",
+            image: "/product/pc-surface-rimless-square-led-lighting-15w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          "Wattage Options": "8W / 15W",
+          "Product Shape": "Square",
+          "Product Design": "Rimless",
+          Installation: "Surface Mounted",
+          "Operating Voltage": "85V–350V",
+          "High-Voltage Protection": "440V",
+          "Power Factor": ">0.95 (HPF)",
+          "Surge Protection": "4 kV",
+          "Colour Options":
+            "CW, WW, NW, Red, Blue, Green, Pink, and Tri-Colour",
+          "Product Type": "PC Surface Rimless Square LED Lighting",
+          Application:
+            "Residential / Commercial / Office / Retail / Indoor Lighting",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Rimless Square Profile",
+            text: "The clean square shape provides a contemporary appearance that works well with modern architectural and interior designs.",
+          },
+          {
+            title: "Two Power Options",
+            text: "The 8W and 15W variants provide flexibility for different room sizes and desired illumination levels.",
+          },
+          {
+            title: "High Power Factor",
+            text: "A PF >0.95 (HPF) supports efficient electrical power utilization during operation.",
+          },
+          {
+            title: "Extensive Colour Selection",
+            text: "Available in CW, WW, NW, Red, Blue, Green, Pink, and Tri-Colour for varied functional and decorative requirements.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional LED Light Manufacturer",
+            text: "ELSTRONG develops modern lighting solutions designed to combine contemporary aesthetics with efficient electrical performance.",
+          },
+          {
+            title: "Clean Square Appearance",
+            text: "The rimless square design offers a neat and minimalist look for modern ceiling applications.",
+          },
+          {
+            title: "Flexible Wattage & Colour",
+            text: "8W and 15W options, combined with multiple colour choices, provide versatility for different lighting requirements.",
+          },
+          {
+            title: "Reliable Protection",
+            text: "440V high-voltage protection and 4 kV surge capacity provide additional support for dependable lighting performance.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/pcrimlessSqaure2.webp",
+        // Additional product information
+        sku: "ELS-PC-SURFACE-RIMLESS-SQUARE-LED",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure:
+          "/brochure/pc-surface-rimless-square-led-lighting-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "pc-surface-rimless-round-led-lighting",
+          "pc-surface-glory-round-panel-led-lighting",
+          "pc-surface-big-glory-round-panel-led-lighting",
+          "aluminum-square-led-surface-panel",
+        ],
+      },
+    ],
   },
 
-  // Features
-  features: [
-    {
-      title: "Big Glory Round Design",
-      text: "The larger round profile provides a distinctive appearance while maintaining a clean surface-mounted installation.",
-    },
-    {
-      title: "15W Configuration",
-      text: "The 15W option provides practical illumination for applications requiring greater lighting output than lower-wattage surface panels.",
-    },
-    {
-      title: "High Power Factor",
-      text: "A power factor >0.95 supports efficient utilization of electrical power.",
-    },
-    {
-      title: "Wide Colour Selection",
-      text: "Available in Cool White, Warm White, Natural White, Red, Blue, Green, Pink, and Tri-Colour.",
-    },
-  ],
+  {
+    id: 2,
+    name: "COB Lights",
+    slug: "cob-lights",
+    metaTitle: "COB Lights | Focused LED Lighting | Elstrong",
+    metaDesc:
+      "Discover Elstrong COB lights for focused, adjustable illumination. Ideal for homes, retail spaces, offices, showrooms, and modern architectural interiors.",
+    image: "/coblensmodel111.webp",
+    hoverImage: "/product/coblensmodel2222.webp",
 
-  // Why choose this product/company
-  whyChoose: [
-    {
-      title: "Reliable LED Light Manufacturer",
-      text: "ELSTRONG provides modern LED lighting solutions designed for practical performance and contemporary applications.",
-    },
-    {
-      title: "Higher-Power Surface Lighting",
-      text: "The 15W configuration provides an effective option for areas requiring stronger general illumination.",
-    },
-    {
-      title: "Modern Round Appearance",
-      text: "The Big Glory design adds a clean and contemporary look to ceiling installations.",
-    },
-    {
-      title: "Flexible Applications",
-      text: "Suitable for homes, offices, retail spaces, commercial interiors, and other suitable indoor environments.",
-    },
-  ],
+    description:
+      "ELSTRONG COB Model delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
+    products: [
+      {
+        id: 513,
+        name: "Delta COB LED Light - Model 601",
+        slug: "delta-cob-led-light-model-601",
 
-  // Image used in description section
-  descriptionImage:
-    "/product/glory3.webp",
+        metaTitle:
+          "Delta COB LED Light Model 601 | 7W 12W 18W COB Light | ELSTRONG",
 
-  // Additional product information
-  sku: "ELS-PC-SURFACE-BIG-GLORY-ROUND-PANEL",
+        metaDesc:
+          "ELSTRONG Delta COB LED Light Model 601 is a modern focused lighting solution available in 7W, 12W, and 18W, with White and Black colour options for residential, commercial, retail, and indoor applications.",
 
-  stock: true,
+        category: "COB Lights",
+        categorySlug: "cob-lights",
 
-  stockText: "In Stock",
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
 
-  brochure:
-    "/brochure/pc-surface-big-glory-round-panel-led-lighting-brochure.pdf",
+        badge: "Featured",
 
-  // Related products
-  relatedProducts: [
-    "pc-surface-glory-round-panel-led-lighting",
-    "aluminum-round-led-surface-panel",
-    "aluminum-square-led-surface-panel",
-    "lotus-deep-light",
-  ],
-},
+        shortDescription:
+          "ELSTRONG Delta COB LED Light Model 601 is designed to provide focused and stylish illumination for modern residential, commercial, retail, and interior applications. Available in 7W, 12W, and 18W, with White and Black colour options, it offers flexible lighting choices for different requirements and installation spaces.",
 
+        description:
+          "ELSTRONG Delta COB LED Light Model 601 is designed to provide focused and stylish illumination for modern residential, commercial, retail, and interior applications. Available in 7W, 12W, and 18W, offering flexibility for different lighting requirements and installation spaces. Available in White and Black, making it easy to complement different ceiling and interior colour schemes. COB LED technology provides a concentrated lighting effect suitable for accent, decorative, and general indoor lighting applications. The Delta COB Model 601 features a clean and modern profile suitable for contemporary interiors. Choose from 7W, 12W, or 18W according to the required lighting level. The two body colour options provide flexibility for different interior design preferences. Suitable for homes, offices, shops, showrooms, hospitality spaces, corridors, and other indoor areas.",
 
-{
-  id: 1303,
-  name: "PC Surface Rimless Round LED Lighting",
-  slug: "pc-surface-rimless-round-led-lighting",
-  metaTitle:
-    "PC Surface Rimless Round LED Lighting | 8W & 15W LED Surface Panel | Elstrong",
-  metaDesc:
-    "ELSTRONG PC Surface Rimless Round LED Lighting features a minimalist rimless round profile, 8W and 15W options, 85V–350V operation, 440V high-voltage protection, PF >0.95 (HPF), and multiple colour options.",
+        // Main product images
+        image: "/product/cobblack1.webp",
 
-  category: "PC Surface Panel",
-  categorySlug: "pc-surface-panel",
+        images: [
+         "/product/cobblack1.webp",
+         "/product/cobblack2.webp",
+         "/product/cobblack3.webp",
+         "/product/cobwhite1.webp",
+         "/product/cobwhite2.webp",
+         "/product/cobwhite3.webp",
+        ],
 
-  price: 0,
-  oldPrice: 0,
-  currency: "₹",
+        // Product variants
+        wattages: [
+          {
+            value: "7W",
+            image: "/product/delta-cob-led-light-model-601-7w.webp",
+            price: 0,
+          },
+          {
+            value: "12W",
+            image: "/product/delta-cob-led-light-model-601-12w.webp",
+            price: 0,
+          },
+          {
+            value: "18W",
+            image: "/product/delta-cob-led-light-model-601-18w.webp",
+            price: 0,
+          },
+        ],
 
-  badge: "Featured",
+        // Product specifications
+        specifications: {
+          Wattage: "7W / 12W / 18W",
+          "Product Model": "Delta COB LED Light Model 601",
+          "LED Technology": "COB LED",
+          "Body Colour": "White / Black",
+          "Lighting Type": "Focused COB Illumination",
+          "Product Type": "COB LED Light",
+          Application:
+            "Homes / Offices / Shops / Showrooms / Hospitality Spaces / Corridors / Other Indoor Areas",
+          "Lighting Application":
+            "Accent / Decorative / General Indoor Lighting",
+        },
 
-  shortDescription:
-    "ELSTRONG PC Surface Rimless Round LED Lighting features a clean, seamless round appearance designed to blend naturally with modern ceiling interiors. Available in 8W and 15W options, it provides flexible surface-mounted lighting with wide voltage compatibility.",
+        // Features
+        features: [
+          {
+            title: "Modern COB LED Design",
+            text: "ELSTRONG Delta COB LED Light Model 601 is designed to provide focused and stylish illumination for modern residential, commercial, retail, and interior applications.",
+          },
+          {
+            title: "Multiple Wattage Options",
+            text: "Available in 7W, 12W, and 18W, offering flexibility for different lighting requirements and installation spaces.",
+          },
+          {
+            title: "Elegant Colour Options",
+            text: "Available in White and Black, making it easy to complement different ceiling and interior colour schemes.",
+          },
+          {
+            title: "Focused COB Illumination",
+            text: "COB LED technology provides a concentrated lighting effect suitable for accent, decorative, and general indoor lighting applications.",
+          },
+          {
+            title: "Contemporary Design",
+            text: "The Delta COB Model 601 features a clean and modern profile suitable for contemporary interiors.",
+          },
+          {
+            title: "Multiple Power Options",
+            text: "Choose from 7W, 12W, or 18W according to the required lighting level.",
+          },
+          {
+            title: "White & Black Finishes",
+            text: "The two body colour options provide flexibility for different interior design preferences.",
+          },
+          {
+            title: "Versatile Application",
+            text: "Suitable for homes, offices, shops, showrooms, hospitality spaces, corridors, and other indoor areas.",
+          },
+        ],
 
-  description:
-    "ELSTRONG PC Surface Rimless Round LED Lighting features a clean, seamless round appearance designed to blend naturally with modern ceiling interiors. Available in 8W and 15W, the product provides flexibility for different illumination requirements and room sizes. Designed for surface mounting, the product provides a practical lighting solution without requiring a recessed ceiling installation. Operating across 85V–350V with 440V high-voltage protection, the product is designed for dependable operation under varying compatible voltage conditions. The rimless appearance creates a clean and contemporary look suitable for modern residential and commercial interiors. The 8W and 15W options allow users to select the appropriate lighting level for different spaces. With PF >0.95 (HPF), the lighting solution is designed for efficient electrical operation. Available in CW, WW, NW, Red, Blue, Green, Pink, and Tri-Colour to suit different lighting concepts.",
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops modern LED lighting products with a focus on practical design and dependable performance.",
+          },
+          {
+            title: "Flexible Wattage Selection",
+            text: "7W, 12W, and 18W options provide suitable choices for different indoor lighting requirements.",
+          },
+          {
+            title: "Modern Finishes",
+            text: "White and black colour options complement a variety of contemporary interior styles.",
+          },
+          {
+            title: "COB LED Performance",
+            text: "COB technology provides focused illumination suitable for accent and general lighting applications.",
+          },
+        ],
 
-  // Main product images
-  image: "/product/pc-surface-rimless-round-led-lighting.webp",
+        // Image used in description section
+        descriptionImage: "/product/cobblack3.webp",
 
-  images: [
-    "/product/pc-surface-rimless-round-led-lighting.webp",
-    "/product/pc-surface-rimless-round-led-lighting-2.webp",
-    "/product/pc-surface-rimless-round-led-lighting-3.webp",
-    "/product/pc-surface-rimless-round-led-lighting-4.webp",
-    "/product/pc-surface-rimless-round-led-lighting-5.webp",
-  ],
+        // Additional product information
+        sku: "ELS-DELTA-COB-601",
 
-  // Product variants
-  wattages: [
-    {
-      value: "8W",
-      image: "/product/pc-surface-rimless-round-led-lighting-8w.webp",
-      price: 0,
-    },
-    {
-      value: "15W",
-      image: "/product/pc-surface-rimless-round-led-lighting-15w.webp",
-      price: 0,
-    },
-  ],
+        stock: true,
 
-  // Product specifications
-  specifications: {
-    "Wattage Options": "8W / 15W",
-    "Product Shape": "Round",
-    "Product Design": "Rimless",
-    Installation: "Surface Mounted",
-    "Operating Voltage": "85V–350V",
-    "High-Voltage Protection": "440V",
-    "Power Factor": ">0.95 (HPF)",
-    "Surge Protection": "4 kV",
-    "Colour Options":
-      "CW, WW, NW, Red, Blue, Green, Pink, and Tri-Colour",
-    "Product Type": "PC Surface Rimless Round LED Lighting",
-    Application:
-      "Residential / Commercial / Office / Retail / Indoor Lighting",
-  },
+        stockText: "In Stock",
 
-  // Features
-  features: [
-    {
-      title: "Minimalist Rimless Profile",
-      text: "The rimless appearance creates a clean and contemporary look suitable for modern residential and commercial interiors.",
-    },
-    {
-      title: "Flexible Wattage",
-      text: "The 8W and 15W options allow users to select the appropriate lighting level for different spaces.",
-    },
-    {
-      title: "High Power Factor",
-      text: "With PF >0.95 (HPF), the lighting solution is designed for efficient electrical operation.",
-    },
-    {
-      title: "Multiple Colour Options",
-      text: "Available in CW, WW, NW, Red, Blue, Green, Pink, and Tri-Colour to suit different lighting concepts.",
-    },
-  ],
+        brochure: "/brochure/delta-cob-led-light-model-601-brochure.pdf",
 
-  // Why choose this product/company
-  whyChoose: [
-    {
-      title: "Professional Lighting Manufacturer",
-      text: "ELSTRONG develops contemporary LED lighting products focused on efficient performance and practical installation.",
-    },
-    {
-      title: "Seamless Modern Design",
-      text: "The rimless round profile provides a minimalist appearance for contemporary ceiling applications.",
-    },
-    {
-      title: "Flexible Lighting Selection",
-      text: "8W and 15W variants provide options for different lighting requirements.",
-    },
-    {
-      title: "Dependable Performance",
-      text: "Wide voltage operation, 440V high-voltage protection, 4 kV surge capacity, and high-power factor support reliable operation.",
-    },
-  ],
+        // Related products
+        relatedProducts: [
+          "adjustable-square-panel-led-light",
+          "adjustable-round-panel-led-light",
+          "purse-outdoor-led-lights",
+          "flood-light-gm-model",
+        ],
+      },
 
-  // Image used in description section
-  descriptionImage:
-    "/product/pc-surface-rimless-round-led-lighting.webp",
+      {
+        id: 514,
+        name: "Delta COB LED Light - Model 602",
+        slug: "delta-cob-led-light-model-602",
 
-  // Additional product information
-  sku: "ELS-PC-SURFACE-RIMLESS-ROUND-LED",
+        metaTitle:
+          "Delta COB LED Light Model 602 | 7W 12W 18W COB Light | ELSTRONG",
 
-  stock: true,
+        metaDesc:
+          "ELSTRONG Delta COB LED Light Model 602 combines focused COB LED illumination with White Rose Gold and Black Rose Gold finishes, available in 7W, 12W, and 18W for modern residential, commercial, retail, and interior applications.",
 
-  stockText: "In Stock",
+        category: "COB Lights",
+        categorySlug: "cob-lights",
 
-  brochure:
-    "/brochure/pc-surface-rimless-round-led-lighting-brochure.pdf",
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
 
-  // Related products
-  relatedProducts: [
-    "pc-surface-glory-round-panel-led-lighting",
-    "pc-surface-big-glory-round-panel-led-lighting",
-    "aluminum-round-led-surface-panel",
-    "aluminum-square-led-surface-panel",
-  ],
-},
+        badge: "Featured",
 
+        shortDescription:
+          "ELSTRONG Delta COB LED Light Model 602 combines focused COB LED illumination with distinctive colour finishes for modern and premium-looking interiors. Available in 7W, 12W, and 18W, with White Rose Gold and Black Rose Gold options, it provides flexible lighting choices for different lighting levels and application requirements.",
 
-{
-  id: 1304,
-  name: "PC Surface Rimless Square LED Lighting",
-  slug: "pc-surface-rimless-square-led-lighting",
-  metaTitle:
-    "PC Surface Rimless Square LED Lighting | 8W & 15W LED Surface Panel | Elstrong",
-  metaDesc:
-    "ELSTRONG PC Surface Rimless Square LED Lighting features a clean rimless square profile with 8W and 15W options, 85V–350V operation, 440V high-voltage protection, PF >0.95, and multiple colour choices for modern interiors.",
+        description:
+          "ELSTRONG Delta COB LED Light Model 602 combines focused COB LED illumination with distinctive colour finishes for modern and premium-looking interiors. Available in 7W, 12W, and 18W, providing flexibility for different lighting levels and application requirements. Available in White Rose Gold and Black Rose Gold, offering a refined appearance for contemporary interior spaces. COB LED technology provides concentrated illumination, making the Model 602 suitable for accent, decorative, and general indoor lighting applications. The Model 602 is designed to add a stylish architectural element while delivering focused illumination. Available in 7W / 12W / 18W configurations to suit different lighting requirements. White Rose Gold and Black Rose Gold options provide a distinctive decorative appearance. Suitable for residences, offices, retail stores, showrooms, hotels, restaurants, and other contemporary interiors. ELSTRONG develops contemporary LED lighting solutions designed for modern architectural and interior applications. Rose gold finishes provide an elegant option for interiors requiring a more decorative lighting aesthetic. Three wattage choices make the Model 602 suitable for different illumination requirements. COB LED technology provides concentrated illumination for accent and decorative lighting applications.",
 
-  category: "PC Surface Panel",
-  categorySlug: "pc-surface-panel",
+        // Main product images
+        image: "/product/whiteRg1.webp",
 
-  price: 0,
-  oldPrice: 0,
-  currency: "₹",
+        images: [
+         "/product/whiteRg1.webp",
+         "/product/whiteRg2.webp",
+         "/product/blackRg1.webp",
+         "/product/blackRg2.webp",
+        ],
 
-  badge: "Featured",
+        // Product variants
+        wattages: [
+          {
+            value: "7W",
+            image: "/product/delta-cob-led-light-model-602-7w.webp",
+            price: 0,
+          },
+          {
+            value: "12W",
+            image: "/product/delta-cob-led-light-model-602-12w.webp",
+            price: 0,
+          },
+          {
+            value: "18W",
+            image: "/product/delta-cob-led-light-model-602-18w.webp",
+            price: 0,
+          },
+        ],
 
-  shortDescription:
-    "ELSTRONG PC Surface Rimless Square LED Lighting combines a clean square profile with a rimless appearance, providing a contemporary lighting solution for modern interiors. Available in 8W and 15W options, it offers practical surface installation, reliable electrical performance, high-voltage protection, and multiple colour choices.",
+        // Product specifications
+        specifications: {
+          Wattage: "7W / 12W / 18W",
+          "Product Model": "Delta COB LED Light Model 602",
+          "LED Technology": "COB LED",
+          "Colour Finish": "White Rose Gold / Black Rose Gold",
+          "Lighting Type": "Focused COB Illumination",
+          "Product Type": "COB LED Light",
+          "Lighting Application":
+            "Accent / Decorative / General Indoor Lighting",
+          Application:
+            "Residences / Offices / Retail Stores / Showrooms / Hotels / Restaurants / Other Contemporary Interiors",
+        },
 
-  description:
-    "ELSTRONG PC Surface Rimless Square LED Lighting combines a clean square profile with a rimless appearance, providing a contemporary lighting solution for modern interiors. Available in 8W and 15W, the product allows the product to meet different lighting requirements across residential and commercial spaces. Designed for surface mounting, the product provides a neat and convenient installation option for suitable ceiling applications. With an operating voltage range of 85V–350V, 440V high-voltage protection, and PF >0.95, it is designed for dependable electrical performance. The clean square shape provides a contemporary appearance that works well with modern architectural and interior designs. The 8W and 15W variants provide flexibility for different room sizes and desired illumination levels. A PF >0.95 (HPF) supports efficient electrical power utilization during operation. Available in CW, WW, NW, Red, Blue, Green, Pink, and Tri-Colour for varied functional and decorative requirements.",
+        // Features
+        features: [
+          {
+            title: "Premium Decorative Design",
+            text: "ELSTRONG Delta COB LED Light Model 602 combines focused COB LED illumination with distinctive colour finishes for modern and premium-looking interiors.",
+          },
+          {
+            title: "Multiple Wattage Options",
+            text: "Available in 7W, 12W, and 18W, providing flexibility for different lighting levels and application requirements.",
+          },
+          {
+            title: "Two-Tone Finish Options",
+            text: "Available in White Rose Gold and Black Rose Gold, offering a refined appearance for contemporary interior spaces.",
+          },
+          {
+            title: "Focused Lighting",
+            text: "COB LED technology provides concentrated illumination, making the Model 602 suitable for accent, decorative, and general indoor lighting applications.",
+          },
+          {
+            title: "Elegant Delta Design",
+            text: "The Model 602 is designed to add a stylish architectural element while delivering focused illumination.",
+          },
+          {
+            title: "Multiple Wattages",
+            text: "Available in 7W / 12W / 18W configurations to suit different lighting requirements.",
+          },
+          {
+            title: "Premium Colour Finishes",
+            text: "White Rose Gold and Black Rose Gold options provide a distinctive decorative appearance.",
+          },
+          {
+            title: "Versatile Indoor Use",
+            text: "Suitable for residences, offices, retail stores, showrooms, hotels, restaurants, and other contemporary interiors.",
+          },
+        ],
 
-  // Main product images
-  image: "/product/pc-surface-rimless-square-led-lighting.webp",
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Reliable LED Light Manufacturer",
+            text: "ELSTRONG develops contemporary LED lighting solutions designed for modern architectural and interior applications.",
+          },
+          {
+            title: "Premium Appearance",
+            text: "Rose gold finishes provide an elegant option for interiors requiring a more decorative lighting aesthetic.",
+          },
+          {
+            title: "Flexible Lighting",
+            text: "Three wattage choices make the Model 602 suitable for different illumination requirements.",
+          },
+          {
+            title: "Focused COB Lighting",
+            text: "COB LED technology provides concentrated illumination for accent and decorative lighting applications.",
+          },
+        ],
 
-  images: [
-    "/product/pc-surface-rimless-square-led-lighting.webp",
-    "/product/pc-surface-rimless-square-led-lighting-2.webp",
-    "/product/pc-surface-rimless-square-led-lighting-3.webp",
-    "/product/pc-surface-rimless-square-led-lighting-4.webp",
-    "/product/pc-surface-rimless-square-led-lighting-5.webp",
-  ],
+        // Image used in description section
+        descriptionImage: "/product/delta-cob-led-light-model-602-2.webp",
 
-  // Product variants
-  wattages: [
-    {
-      value: "8W",
-      image: "/product/pc-surface-rimless-square-led-lighting-8w.webp",
-      price: 0,
-    },
-    {
-      value: "15W",
-      image: "/product/pc-surface-rimless-square-led-lighting-15w.webp",
-      price: 0,
-    },
-  ],
+        // Additional product information
+        sku: "ELS-DELTA-COB-602",
 
-  // Product specifications
-  specifications: {
-    "Wattage Options": "8W / 15W",
-    "Product Shape": "Square",
-    "Product Design": "Rimless",
-    Installation: "Surface Mounted",
-    "Operating Voltage": "85V–350V",
-    "High-Voltage Protection": "440V",
-    "Power Factor": ">0.95 (HPF)",
-    "Surge Protection": "4 kV",
-    "Colour Options":
-      "CW, WW, NW, Red, Blue, Green, Pink, and Tri-Colour",
-    "Product Type": "PC Surface Rimless Square LED Lighting",
-    Application:
-      "Residential / Commercial / Office / Retail / Indoor Lighting",
-  },
+        stock: true,
 
-  // Features
-  features: [
-    {
-      title: "Rimless Square Profile",
-      text: "The clean square shape provides a contemporary appearance that works well with modern architectural and interior designs.",
-    },
-    {
-      title: "Two Power Options",
-      text: "The 8W and 15W variants provide flexibility for different room sizes and desired illumination levels.",
-    },
-    {
-      title: "High Power Factor",
-      text: "A PF >0.95 (HPF) supports efficient electrical power utilization during operation.",
-    },
-    {
-      title: "Extensive Colour Selection",
-      text: "Available in CW, WW, NW, Red, Blue, Green, Pink, and Tri-Colour for varied functional and decorative requirements.",
-    },
-  ],
+        stockText: "In Stock",
 
-  // Why choose this product/company
-  whyChoose: [
-    {
-      title: "Professional LED Light Manufacturer",
-      text: "ELSTRONG develops modern lighting solutions designed to combine contemporary aesthetics with efficient electrical performance.",
-    },
-    {
-      title: "Clean Square Appearance",
-      text: "The rimless square design offers a neat and minimalist look for modern ceiling applications.",
-    },
-    {
-      title: "Flexible Wattage & Colour",
-      text: "8W and 15W options, combined with multiple colour choices, provide versatility for different lighting requirements.",
-    },
-    {
-      title: "Reliable Protection",
-      text: "440V high-voltage protection and 4 kV surge capacity provide additional support for dependable lighting performance.",
-    },
-  ],
+        brochure: "/brochure/delta-cob-led-light-model-602-brochure.pdf",
 
-  // Image used in description section
-  descriptionImage:
-    "/product/pc-surface-rimless-square-led-lighting.webp",
+        // Related products
+        relatedProducts: [
+          "delta-cob-led-light-model-601",
+          "adjustable-square-panel-led-light",
+          "adjustable-round-panel-led-light",
+          "purse-outdoor-led-lights",
+        ],
+      },
 
-  // Additional product information
-  sku: "ELS-PC-SURFACE-RIMLESS-SQUARE-LED",
+      {
+        id: 515,
+        name: "Delta COB LED Light - Model 955",
+        slug: "delta-cob-led-light-model-955",
 
-  stock: true,
+        metaTitle:
+          "Delta COB LED Light Model 955 | 7W 12W 18W COB Light | ELSTRONG",
 
-  stockText: "In Stock",
+        metaDesc:
+          "ELSTRONG Delta COB LED Light Model 955 features a distinctive gun model design with focused directional COB illumination, available in 7W, 12W, and 18W with White and Black finishes for modern interiors.",
 
-  brochure:
-    "/brochure/pc-surface-rimless-square-led-lighting-brochure.pdf",
+        category: "COB Lights",
+        categorySlug: "cob-lights",
 
-  // Related products
-  relatedProducts: [
-    "pc-surface-rimless-round-led-lighting",
-    "pc-surface-glory-round-panel-led-lighting",
-    "pc-surface-big-glory-round-panel-led-lighting",
-    "aluminum-square-led-surface-panel",
-  ],
-},
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
 
+        badge: "Featured",
 
+        shortDescription:
+          "ELSTRONG Delta COB LED Light Model 955 features a distinctive gun model design created for focused and directional illumination in modern interiors. Available in 7W, 12W, and 18W, with White and Black finishes, it provides flexibility for different lighting requirements and interior designs.",
+
+        description:
+          "ELSTRONG Delta COB LED Light Model 955 features a distinctive gun model design created for focused and directional illumination in modern interiors. Available in 7W, 12W, and 18W, providing flexibility for different lighting requirements. Offered in White and Black, allowing the product to coordinate with different ceiling and interior designs. COB LED technology provides concentrated light output, making the Model 955 suitable for accent and directional lighting applications. The distinctive form provides a directional lighting appearance that adds character to contemporary interior spaces. Choose between 7W, 12W, and 18W according to the desired lighting level. White and black finishes provide versatile options for different interior colour schemes. Suitable for residential spaces, offices, retail stores, showrooms, hospitality areas, and decorative interiors. ELSTRONG provides modern LED lighting solutions designed for efficient, functional, and contemporary applications. The gun model design is suitable for applications requiring focused and directional illumination. 7W, 12W, and 18W variants allow selection according to different lighting needs. White and black finishes provide versatile options for contemporary residential and commercial interiors.",
+
+        // Main product images
+        image: "/product/blackGun1.webp",
+
+        images: [
+         "/product/blackGun1.webp",
+         "/product/blackGun2.webp",
+         "/product/whiteGun1.webp",
+         "/product/whiteGun2.webp",
+        ],
+
+        // Product variants
+        wattages: [
+          {
+            value: "7W",
+            image: "/product/delta-cob-led-light-model-955-7w.webp",
+            price: 0,
+          },
+          {
+            value: "12W",
+            image: "/product/delta-cob-led-light-model-955-12w.webp",
+            price: 0,
+          },
+          {
+            value: "18W",
+            image: "/product/delta-cob-led-light-model-955-18w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          Wattage: "7W / 12W / 18W",
+          "Product Model": "Delta COB LED Light Model 955",
+          "LED Technology": "COB LED",
+          "Design Type": "Gun Model",
+          "Body Colour": "White / Black",
+          "Lighting Type": "Focused and Directional Illumination",
+          "Product Type": "COB LED Light",
+          "Lighting Application": "Accent / Directional Lighting",
+          Application:
+            "Residential Spaces / Offices / Retail Stores / Showrooms / Hospitality Areas / Decorative Interiors",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Distinctive Gun-Style Design",
+            text: "ELSTRONG Delta COB LED Light Model 955 features a distinctive gun model design created for focused and directional illumination in modern interiors.",
+          },
+          {
+            title: "Three Wattage Options",
+            text: "Available in 7W, 12W, and 18W, providing flexibility for different lighting requirements.",
+          },
+          {
+            title: "White & Black Finishes",
+            text: "Offered in White and Black, allowing the product to coordinate with different ceiling and interior designs.",
+          },
+          {
+            title: "Focused COB Illumination",
+            text: "COB LED technology provides concentrated light output, making the Model 955 suitable for accent and directional lighting applications.",
+          },
+          {
+            title: "Gun Model Design",
+            text: "The distinctive form provides a directional lighting appearance that adds character to contemporary interior spaces.",
+          },
+          {
+            title: "Multiple Wattage Selection",
+            text: "Choose between 7W, 12W, and 18W according to the desired lighting level.",
+          },
+          {
+            title: "Two Colour Options",
+            text: "White and black finishes provide versatile options for different interior colour schemes.",
+          },
+          {
+            title: "Wide Indoor Application",
+            text: "Suitable for residential spaces, offices, retail stores, showrooms, hospitality areas, and decorative interiors.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG provides modern LED lighting solutions designed for efficient, functional, and contemporary applications.",
+          },
+          {
+            title: "Directional Lighting Design",
+            text: "The gun model design is suitable for applications requiring focused and directional illumination.",
+          },
+          {
+            title: "Flexible Wattage Options",
+            text: "7W, 12W, and 18W variants allow selection according to different lighting needs.",
+          },
+          {
+            title: "Modern Colour Choices",
+            text: "White and black finishes provide versatile options for contemporary residential and commercial interiors.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/blackGun2.webp",
+
+        // Additional product information
+        sku: "ELS-DELTA-COB-955",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/delta-cob-led-light-model-955-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "delta-cob-led-light-model-601",
+          "delta-cob-led-light-model-602",
+          "adjustable-square-panel-led-light",
+          "adjustable-round-panel-led-light",
+        ],
+      },
     ],
   },
 ];
