@@ -6853,11 +6853,11 @@ export const categories = [
 
   {
     id: 19,
-    name: "1x1 Panel LED Lights",
-    metaTitle: "1x1 Panel LED Lights | Modern LED Lighting | Elstrong",
+    name: "1X1 & 2X2 Panel Lights",
+    metaTitle: "1X1 & 2X2  Panel Lights | Modern LED Lighting | Elstrong",
     metaDesc:
       "Explore Elstrong concealed lights with sleek designs and efficient LED technology, perfect for modern homes, offices, commercial spaces, and contemporary interiors.",
-    slug: "1-x-1-pannel-led-lights",
+    slug: "1-x-1-2-x-2-pannel-lights",
     image: "/product/1x1Pannel1.webp",
     hoverImage: "/product/1x1Pannel3.webp",
     description:"ELSTRONG 1+1 LED Light Panel and 2+2 LED Panel are designed to provide efficient, uniform illumination with a clean, modern appearance for residential, commercial, office, retail, and institutional spaces.",    products: [
@@ -6872,8 +6872,8 @@ export const categories = [
         metaDesc:
           "ELSTRONG 1x1 Panel LED Lights provide attractive and practical outdoor illumination with a distinctive dual-light design for exterior walls, entrances, pathways, balconies, gardens, patios, and architectural spaces.",
 
-        category: "1x1 Panel LED Lights",
-        categorySlug: "1x1-pannel-led-lights",
+        category: "1X1 & 2X2 Panel Lights",
+        categorySlug: "1-x-1-2-x-2-pannel-lights",
 
         price: 0,
         oldPrice: 0,
@@ -6999,9 +6999,8 @@ export const categories = [
         metaDesc:
           "ELSTRONG 2 × 2 Panel LED Light is a 48W square lighting solution with a slim 595 × 595 × 30 mm profile, 85V–350V operation, 440V high-voltage protection, PF >0.95, 4 kV surge capacity, and CW, WW, and NW options.",
 
-        category: "Panel Lights",
-        categorySlug: "panel-lights",
-
+        category: "1X1 & 2X2 Panel Lights",
+        categorySlug: "1-x-1-2-x-2-pannel-lights",
         price: 0,
         oldPrice: 0,
         currency: "₹",
