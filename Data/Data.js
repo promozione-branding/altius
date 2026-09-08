@@ -6853,16 +6853,14 @@ export const categories = [
 
   {
     id: 19,
-    name: "1+1 Panel LED Lights",
-    metaTitle: "1+1 Panel LED Lights | Modern LED Lighting | Elstrong",
+    name: "1x1 Panel LED Lights",
+    metaTitle: "1x1 Panel LED Lights | Modern LED Lighting | Elstrong",
     metaDesc:
       "Explore Elstrong concealed lights with sleek designs and efficient LED technology, perfect for modern homes, offices, commercial spaces, and contemporary interiors.",
     slug: "1-x-1-pannel-led-lights",
     image: "/product/1x1Pannel1.webp",
     hoverImage: "/product/1x1Pannel3.webp",
-    description:
-      "ELSTRONG 1x1 LED Light Panel is designed to provide efficient, uniform, and comfortable illumination for modern indoor spaces.",
-    products: [
+    description:"ELSTRONG 1+1 LED Light Panel and 2+2 LED Panel are designed to provide efficient, uniform illumination with a clean, modern appearance for residential, commercial, office, retail, and institutional spaces.",    products: [
       {
         id: 520,
         name: "1x1 Panel LED Lights",
@@ -6874,8 +6872,8 @@ export const categories = [
         metaDesc:
           "ELSTRONG 1x1 Panel LED Lights provide attractive and practical outdoor illumination with a distinctive dual-light design for exterior walls, entrances, pathways, balconies, gardens, patios, and architectural spaces.",
 
-        category: "1+1 Panel LED Lights",
-        categorySlug: "1+1-pannel-led-lights",
+        category: "1x1 Panel LED Lights",
+        categorySlug: "1x1-pannel-led-lights",
 
         price: 0,
         oldPrice: 0,
@@ -6990,21 +6988,7 @@ export const categories = [
           "adjustable-round-panel-led-light",
         ],
       },
-    ],
-  },
-  {
-    id: 18,
-    name: "2x2 Panel LED Lights",
-    metaTitle: "2 x 2 Panel LED Lights | Modern LED Lighting | Elstrong",
-    metaDesc:
-      "Explore Elstrong concealed lights with sleek designs and efficient LED technology, perfect for modern homes, offices, commercial spaces, and contemporary interiors.",
-    slug: "2-x-2-pannel-led-lights",
-    image: "/product/1x1Pannel1.webp",
-    hoverImage: "/product/1x1Pannel3.webp",
-    description:
-      "ELSTRONG 2x2 LED Panel is a large-format lighting solution designed to deliver broad and uniform illumination across offices, commercial spaces, retail areas, institutions, and other indoor environments.",
-    products: [
-      {
+        {
         id: 521,
         name: "2x2 Panel LED Lights",
         slug: "2x2-pannel-led-lights",
@@ -7144,4 +7128,5 @@ export const categories = [
       },
     ],
   },
+  
 ];

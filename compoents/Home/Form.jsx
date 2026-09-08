@@ -46,6 +46,7 @@ export default function Form() {
       const payload = {
         platform: "Altius Elstrong form",
         platformEmail: "altus@email.com",
+        supplierToken: "6a9fb124d936bdc2bb1d6ca5",
 
         name: formData.name,
         phone: formData.phone,
