@@ -248,7 +248,7 @@ export default function Parllel() {
                     hover:bg-[#85a30f]
                   "
                 >
-                  +91 96501 67709
+                  Connect With Us
                   <span
                     className="
                       flex

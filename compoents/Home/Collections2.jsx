@@ -20,7 +20,7 @@ const collections = [
     title: "MOVEABLE LENS",
     subtitle: "COB LENS MODEL",
     image:  "/product/coblensmodel1.webp",
-    href:"/products/moveable-lens-cob-5w"
+    href:"/products/moveable-lens-cob"
   },
   {
     title: "ROUND PC PANEL",

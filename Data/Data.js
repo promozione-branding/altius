@@ -541,12 +541,13 @@ export const categories = [
     products: [
       {
         id: 201,
-        name: "Moveable Lens COB 5W",
-        slug: "moveable-lens-cob-5w",
+        name: "Moveable Lens COB",
+        slug: "moveable-lens-cob",
 
-        metaTitle: "Moveable Lens COB 5W | Adjustable LED Light | Elstrong",
+        metaTitle:
+          "Moveable Lens COB 5W / 7W / 9W | Adjustable LED Light | Elstrong",
         metaDesc:
-          "Discover Elstrong Moveable Lens COB 5W, designed for focused and adjustable illumination, making it ideal for accent, retail, architectural, and interior lighting.",
+          "Discover Elstrong Moveable Lens COB 5W / 7W / 9W, designed for focused and adjustable illumination, making it ideal for accent, retail, architectural, and interior lighting.",
 
         category: "COB Lens Model",
         categorySlug: "cob-lens-model",
@@ -558,10 +559,10 @@ export const categories = [
         badge: "Featured",
 
         shortDescription:
-          "The ELSTRONG MOVEABLE LENS 5W is a compact COB LED light with an adjustable lens, designed to provide focused and flexible illumination for modern residential, commercial, and architectural interiors.",
+          "The ELSTRONG MOVEABLE LENS 5W / 7W / 9W is a compact COB LED light with an adjustable lens, designed to provide focused and flexible illumination for modern residential, commercial, and architectural interiors.",
 
         description:
-          "The ELSTRONG MOVEABLE LENS 5W is a versatile COB LED lighting solution designed to provide focused and adjustable illumination for modern interior spaces. Its moveable lens allows the direction of light to be adjusted according to the application, making it suitable for highlighting displays, décor, architectural features, and selected areas. Featuring a 5W COB LED with a lumen output of less than 600 lm, the product provides efficient and practical illumination for accent and general lighting requirements. With a compact 70mm output size, 40mm cutout, and 40mm height, it is designed for neat and space-efficient ceiling installations.",
+          "The ELSTRONG MOVEABLE LENS 5W / 7W / 9W is a versatile COB LED lighting solution designed to provide focused and adjustable illumination for modern interior spaces. Its moveable lens allows the direction of light to be adjusted according to the application, making it suitable for highlighting displays, décor, architectural features, and selected areas. Featuring a 5W COB LED with a lumen output of less than 600 lm, the product provides efficient and practical illumination for accent and general lighting requirements. With a compact 70mm output size, 40mm cutout, and 40mm height, it is designed for neat and space-efficient ceiling installations.",
 
         // Main product images
         image: "/product/coblensmodel1.webp",
@@ -579,14 +580,24 @@ export const categories = [
             image: "/product/coblensmodel1.webp",
             price: 0,
           },
+          {
+            value: "7W",
+            image: "/product/coblensmodel1.webp",
+            price: 0,
+          },
+          {
+            value: "9W",
+            image: "/product/coblensmodel1.webp",
+            price: 0,
+          },
         ],
 
         // Product specifications
         specifications: {
-          wattage: "5W",
+          wattage: "5W / 7W / 9W",
           "Lumen Output": "90 lm/watt",
-          "Outer Dia": "70mm",
-          "Cutout Size": "40mm",
+          "Outer Dia": "70-128 mm",
+          "Cutout Size": "40-98 mm",
           Height: "40mm",
           "Operating Voltage": "85V–350V",
           "Light Source": "COB LED",
@@ -651,234 +662,234 @@ export const categories = [
         relatedProducts: ["suprimo", "flare", "glare", "nova-cob-lens-light"],
       },
 
-      {
-        id: 202,
-        name: "Moveable Lens COB 7W",
-        slug: "moveable-lens-cob-7w",
+      // {
+      //   id: 202,
+      //   name: "Moveable Lens COB 7W",
+      //   slug: "moveable-lens-cob-7w",
 
-        metaTitle: "Moveable LED Lens COB 7W | Adjustable LED Light | Elstrong",
-        metaDesc:
-          "Explore Elstrong Moveable Lens COB 7W for focused and adjustable LED illumination, ideal for retail displays, architectural details, accent lighting, and interiors.",
+      //   metaTitle: "Moveable LED Lens COB 7W | Adjustable LED Light | Elstrong",
+      //   metaDesc:
+      //     "Explore Elstrong Moveable Lens COB 7W for focused and adjustable LED illumination, ideal for retail displays, architectural details, accent lighting, and interiors.",
 
-        category: "COB Lens Model",
-        categorySlug: "cob-lens-model",
+      //   category: "COB Lens Model",
+      //   categorySlug: "cob-lens-model",
 
-        price: 0,
-        oldPrice: 0,
-        currency: "₹",
+      //   price: 0,
+      //   oldPrice: 0,
+      //   currency: "₹",
 
-        badge: "Featured",
+      //   badge: "Featured",
 
-        shortDescription:
-          "The Elstrong MOVEABLE LENS 7W is a versatile COB LED light designed to provide adjustable and focused illumination for modern residential, commercial, and architectural interiors.",
+      //   shortDescription:
+      //     "The Elstrong MOVEABLE LENS 7W is a versatile COB LED light designed to provide adjustable and focused illumination for modern residential, commercial, and architectural interiors.",
 
-        description:
-          "The Elstrong MOVEABLE LENS 7W is a modern COB LED lighting solution designed to provide adjustable and focused illumination for a wide range of indoor applications. Its moveable lens allows light to be directed toward specific areas, making it suitable for accent lighting, displays, architectural elements, and interior décor. Featuring a 7W COB LED configuration with a lumen output of less than 600 lm, the product provides practical illumination while maintaining an efficient and compact design. With a 106mm output size, 75mm cutout, and 47mm height, the 7W model offers a balanced form factor for ceiling-mounted applications.",
+      //   description:
+      //     "The Elstrong MOVEABLE LENS 7W is a modern COB LED lighting solution designed to provide adjustable and focused illumination for a wide range of indoor applications. Its moveable lens allows light to be directed toward specific areas, making it suitable for accent lighting, displays, architectural elements, and interior décor. Featuring a 7W COB LED configuration with a lumen output of less than 600 lm, the product provides practical illumination while maintaining an efficient and compact design. With a 106mm output size, 75mm cutout, and 47mm height, the 7W model offers a balanced form factor for ceiling-mounted applications.",
 
-        // Main product images
-        image: "/product/coblensmodel1.webp",
+      //   // Main product images
+      //   image: "/product/coblensmodel1.webp",
 
-        images: [
-          "/product/coblensmodel1.webp",
-          "/product/coblensmodel2.webp",
-          "/product/coblensmodelback.webp",
-        ],
+      //   images: [
+      //     "/product/coblensmodel1.webp",
+      //     "/product/coblensmodel2.webp",
+      //     "/product/coblensmodelback.webp",
+      //   ],
 
-        // Wattage options
-        wattages: [
-          {
-            value: "7W",
-            image: "/product/coblensmodel1.webp",
-            price: 0,
-          },
-        ],
+      //   // Wattage options
+      //   wattages: [
+      //     {
+      //       value: "7W",
+      //       image: "/product/coblensmodel1.webp",
+      //       price: 0,
+      //     },
+      //   ],
 
-        // Product specifications
-        specifications: {
-          wattage: "7W",
-          "Lumen Output": "90 lm/watt",
-          "Outer Dia": "106mm",
-          "Cutout Size": "75mm",
-          Height: "47mm",
-          "Operating Voltage": "85V–350V",
-          "Light Source": "COB LED",
-          "Colour Options": "CW / NW / WW / Red / Blue / Green / Pink",
-          Lens: "Moveable Lens",
-          Installation: "Ceiling Mounted",
-        },
+      //   // Product specifications
+      //   specifications: {
+      //     wattage: "7W",
+      //     "Lumen Output": "90 lm/watt",
+      //     "Outer Dia": "106mm",
+      //     "Cutout Size": "75mm",
+      //     Height: "47mm",
+      //     "Operating Voltage": "85V–350V",
+      //     "Light Source": "COB LED",
+      //     "Colour Options": "CW / NW / WW / Red / Blue / Green / Pink",
+      //     Lens: "Moveable Lens",
+      //     Installation: "Ceiling Mounted",
+      //   },
 
-        // Features
-        features: [
-          {
-            title: "Adjustable Direction",
-            text: "The moveable lens provides control over the direction of illumination, helping users focus light precisely where it is most required.",
-          },
-          {
-            title: "COB LED Technology",
-            text: "The compact COB LED light source provides practical illumination within a modern and space-efficient lighting design.",
-          },
-          {
-            title: "Wide Operating Voltage",
-            text: "The product operates from 85V–350V, providing flexibility across suitable electrical environments and indoor lighting installations.",
-          },
-          {
-            title: "Seven Colour Options",
-            text: "Available in CW, NW, WW, Red, Blue, Green, and Pink, allowing the light to be used for both functional and decorative lighting purposes.",
-          },
-        ],
+      //   // Features
+      //   features: [
+      //     {
+      //       title: "Adjustable Direction",
+      //       text: "The moveable lens provides control over the direction of illumination, helping users focus light precisely where it is most required.",
+      //     },
+      //     {
+      //       title: "COB LED Technology",
+      //       text: "The compact COB LED light source provides practical illumination within a modern and space-efficient lighting design.",
+      //     },
+      //     {
+      //       title: "Wide Operating Voltage",
+      //       text: "The product operates from 85V–350V, providing flexibility across suitable electrical environments and indoor lighting installations.",
+      //     },
+      //     {
+      //       title: "Seven Colour Options",
+      //       text: "Available in CW, NW, WW, Red, Blue, Green, and Pink, allowing the light to be used for both functional and decorative lighting purposes.",
+      //     },
+      //   ],
 
-        // Why choose this product/company
-        whyChoose: [
-          {
-            title: "Expert Lighting Manufacturer",
-            text: "Elstrong provides LED lighting solutions designed around modern aesthetics, practical functionality, and reliable performance for contemporary interiors.",
-          },
-          {
-            title: "Quality LED Solutions",
-            text: "As an LED light manufacturer, Elstrong focuses on developing COB LED products suitable for diverse indoor, architectural, and commercial lighting requirements.",
-          },
-          {
-            title: "Directional Lighting Flexibility",
-            text: "The moveable lens makes it easier to create focused lighting effects and highlight selected areas, architectural elements, displays, and interior features.",
-          },
-          {
-            title: "Suitable for Various Spaces",
-            text: "The product can be used in residential interiors, retail environments, offices, showrooms, hospitality areas, and other commercial spaces.",
-          },
-        ],
+      //   // Why choose this product/company
+      //   whyChoose: [
+      //     {
+      //       title: "Expert Lighting Manufacturer",
+      //       text: "Elstrong provides LED lighting solutions designed around modern aesthetics, practical functionality, and reliable performance for contemporary interiors.",
+      //     },
+      //     {
+      //       title: "Quality LED Solutions",
+      //       text: "As an LED light manufacturer, Elstrong focuses on developing COB LED products suitable for diverse indoor, architectural, and commercial lighting requirements.",
+      //     },
+      //     {
+      //       title: "Directional Lighting Flexibility",
+      //       text: "The moveable lens makes it easier to create focused lighting effects and highlight selected areas, architectural elements, displays, and interior features.",
+      //     },
+      //     {
+      //       title: "Suitable for Various Spaces",
+      //       text: "The product can be used in residential interiors, retail environments, offices, showrooms, hospitality areas, and other commercial spaces.",
+      //     },
+      //   ],
 
-        // Image used in description section
-        descriptionImage: "/product/coblensmodel2.webp",
+      //   // Image used in description section
+      //   descriptionImage: "/product/coblensmodel2.webp",
 
-        // Additional product information
-        sku: "ELS-ML-007",
+      //   // Additional product information
+      //   sku: "ELS-ML-007",
 
-        stock: true,
+      //   stock: true,
 
-        stockText: "In Stock",
+      //   stockText: "In Stock",
 
-        brochure: "/brochure/moveable-lens-cob-7w-brochure.pdf",
+      //   brochure: "/brochure/moveable-lens-cob-7w-brochure.pdf",
 
-        // Related products
-        relatedProducts: ["moveable-lens-cob-5w", "suprimo", "flare", "glare"],
-      },
+      //   // Related products
+      //   relatedProducts: ["moveable-lens-cob-5w", "suprimo", "flare", "glare"],
+      // },
 
-      {
-        id: 203,
-        name: "Moveable Lens COB 9W",
-        slug: "moveable-lens-cob-9w",
+      // {
+      //   id: 203,
+      //   name: "Moveable Lens COB 9W",
+      //   slug: "moveable-lens-cob-9w",
 
-        metaTitle: "Moveable Lens COB 9W | Adjustable LED Light | Elstrong",
-        metaDesc:
-          "Discover Elstrong Moveable Lens COB 9W for powerful, focused, and adjustable illumination, suitable for modern interiors, retail spaces, architectural accents, and more.",
+      //   metaTitle: "Moveable Lens COB 9W | Adjustable LED Light | Elstrong",
+      //   metaDesc:
+      //     "Discover Elstrong Moveable Lens COB 9W for powerful, focused, and adjustable illumination, suitable for modern interiors, retail spaces, architectural accents, and more.",
 
-        category: "COB Lens Model",
-        categorySlug: "cob-lens-model",
+      //   category: "COB Lens Model",
+      //   categorySlug: "cob-lens-model",
 
-        price: 0,
-        oldPrice: 0,
-        currency: "₹",
+      //   price: 0,
+      //   oldPrice: 0,
+      //   currency: "₹",
 
-        badge: "Featured",
+      //   badge: "Featured",
 
-        shortDescription:
-          "The Elstrong MOVEABLE LENS 9W is a versatile COB LED lighting solution designed to provide adjustable and focused illumination for contemporary residential, commercial, retail, hospitality, and architectural interiors.",
+      //   shortDescription:
+      //     "The Elstrong MOVEABLE LENS 9W is a versatile COB LED lighting solution designed to provide adjustable and focused illumination for contemporary residential, commercial, retail, hospitality, and architectural interiors.",
 
-        description:
-          "The Elstrong MOVEABLE LENS 9W is a modern COB LED lighting solution designed for applications requiring adjustable and focused illumination. Its moveable lens allows light to be directed toward specific areas, making it suitable for highlighting displays, décor, architectural features, and other focal points. Featuring a 9W COB LED configuration with a lumen output of less than 600 lm, the product delivers practical illumination for a variety of indoor applications. With a 128mm output size, 98mm cutout, and 55mm height, the 9W model provides a larger installation format within the Moveable Lens range while maintaining a contemporary and functional design.",
+      //   description:
+      //     "The Elstrong MOVEABLE LENS 9W is a modern COB LED lighting solution designed for applications requiring adjustable and focused illumination. Its moveable lens allows light to be directed toward specific areas, making it suitable for highlighting displays, décor, architectural features, and other focal points. Featuring a 9W COB LED configuration with a lumen output of less than 600 lm, the product delivers practical illumination for a variety of indoor applications. With a 128mm output size, 98mm cutout, and 55mm height, the 9W model provides a larger installation format within the Moveable Lens range while maintaining a contemporary and functional design.",
 
-        // Main product images
-        image: "/product/coblensmodel1.webp",
+      //   // Main product images
+      //   image: "/product/coblensmodel1.webp",
 
-        images: [
-          "/product/coblensmodel1.webp",
-          "/product/coblensmodel2.webp",
-          "/product/coblensmodelback.webp",
-        ],
+      //   images: [
+      //     "/product/coblensmodel1.webp",
+      //     "/product/coblensmodel2.webp",
+      //     "/product/coblensmodelback.webp",
+      //   ],
 
-        // Wattage options
-        wattages: [
-          {
-            value: "9W",
-            image: "/product/coblensmodel1.webp",
-            price: 0,
-          },
-        ],
+      //   // Wattage options
+      //   wattages: [
+      //     {
+      //       value: "9W",
+      //       image: "/product/coblensmodel1.webp",
+      //       price: 0,
+      //     },
+      //   ],
 
-        // Product specifications
-        specifications: {
-          wattage: "9W",
-          "Lumen Output": "90 lm/watt",
-          "Outer Dia": "128mm",
-          "Cutout Size": "98mm",
-          Height: "55mm",
-          "Operating Voltage": "85V–350V",
-          "Light Source": "COB LED",
-          "Colour Options": "CW / NW / WW / Red / Blue / Green / Pink",
-          Lens: "Moveable Lens",
-          Installation: "Ceiling Mounted",
-        },
+      //   // Product specifications
+      //   specifications: {
+      //     wattage: "9W",
+      //     "Lumen Output": "90 lm/watt",
+      //     "Outer Dia": "128mm",
+      //     "Cutout Size": "98mm",
+      //     Height: "55mm",
+      //     "Operating Voltage": "85V–350V",
+      //     "Light Source": "COB LED",
+      //     "Colour Options": "CW / NW / WW / Red / Blue / Green / Pink",
+      //     Lens: "Moveable Lens",
+      //     Installation: "Ceiling Mounted",
+      //   },
 
-        // Features
-        features: [
-          {
-            title: "Moveable Lens Design",
-            text: "The adjustable lens allows the direction of illumination to be changed, providing greater flexibility for accent, feature, and focused lighting applications.",
-          },
-          {
-            title: "Efficient COB LED Source",
-            text: "COB technology provides a compact and practical LED lighting solution suitable for modern indoor environments and contemporary lighting installations.",
-          },
-          {
-            title: "Broad Voltage Operation",
-            text: "The 85V–350V operating range offers flexibility for suitable electrical installations and different indoor lighting applications.",
-          },
-          {
-            title: "Wide Colour Selection",
-            text: "Available in CW, NW, WW, Red, Blue, Green, and Pink, supporting a variety of functional, decorative, accent, and creative lighting designs.",
-          },
-        ],
+      //   // Features
+      //   features: [
+      //     {
+      //       title: "Moveable Lens Design",
+      //       text: "The adjustable lens allows the direction of illumination to be changed, providing greater flexibility for accent, feature, and focused lighting applications.",
+      //     },
+      //     {
+      //       title: "Efficient COB LED Source",
+      //       text: "COB technology provides a compact and practical LED lighting solution suitable for modern indoor environments and contemporary lighting installations.",
+      //     },
+      //     {
+      //       title: "Broad Voltage Operation",
+      //       text: "The 85V–350V operating range offers flexibility for suitable electrical installations and different indoor lighting applications.",
+      //     },
+      //     {
+      //       title: "Wide Colour Selection",
+      //       text: "Available in CW, NW, WW, Red, Blue, Green, and Pink, supporting a variety of functional, decorative, accent, and creative lighting designs.",
+      //     },
+      //   ],
 
-        // Why choose this product/company
-        whyChoose: [
-          {
-            title: "Professional Lighting Manufacturer",
-            text: "Elstrong develops modern LED lighting products focused on efficiency, functionality, contemporary design, and dependable performance.",
-          },
-          {
-            title: "Specialized LED Light Manufacturer",
-            text: "Elstrong's LED lighting solutions are designed to meet the requirements of residential, commercial, retail, hospitality, and architectural applications.",
-          },
-          {
-            title: "Adjustable Lighting Solution",
-            text: "The moveable lens provides greater control over light direction, making the product suitable for creating focused and visually appealing lighting effects.",
-          },
-          {
-            title: "Versatile Product Range",
-            text: "The MOVEABLE LENS range offers different wattages and installation sizes, giving customers greater flexibility when selecting a suitable lighting solution for their project.",
-          },
-        ],
+      //   // Why choose this product/company
+      //   whyChoose: [
+      //     {
+      //       title: "Professional Lighting Manufacturer",
+      //       text: "Elstrong develops modern LED lighting products focused on efficiency, functionality, contemporary design, and dependable performance.",
+      //     },
+      //     {
+      //       title: "Specialized LED Light Manufacturer",
+      //       text: "Elstrong's LED lighting solutions are designed to meet the requirements of residential, commercial, retail, hospitality, and architectural applications.",
+      //     },
+      //     {
+      //       title: "Adjustable Lighting Solution",
+      //       text: "The moveable lens provides greater control over light direction, making the product suitable for creating focused and visually appealing lighting effects.",
+      //     },
+      //     {
+      //       title: "Versatile Product Range",
+      //       text: "The MOVEABLE LENS range offers different wattages and installation sizes, giving customers greater flexibility when selecting a suitable lighting solution for their project.",
+      //     },
+      //   ],
 
-        // Image used in description section
-        descriptionImage: "/product/coblensmodel2.webp",
+      //   // Image used in description section
+      //   descriptionImage: "/product/coblensmodel2.webp",
 
-        // Additional product information
-        sku: "ELS-ML-009",
+      //   // Additional product information
+      //   sku: "ELS-ML-009",
 
-        stock: true,
+      //   stock: true,
 
-        stockText: "In Stock",
+      //   stockText: "In Stock",
 
-        brochure: "/brochure/moveable-lens-cob-9w-brochure.pdf",
+      //   brochure: "/brochure/moveable-lens-cob-9w-brochure.pdf",
 
-        // Related products
-        relatedProducts: [
-          "moveable-lens-cob-5w",
-          "moveable-lens-cob-7w",
-          "suprimo",
-          "flare",
-        ],
-      },
+      //   // Related products
+      //   relatedProducts: [
+      //     "moveable-lens-cob-5w",
+      //     "moveable-lens-cob-7w",
+      //     "suprimo",
+      //     "flare",
+      //   ],
+      // },
     ],
   },
 
@@ -6835,6 +6846,300 @@ export const categories = [
           "rainbow-deep-junction",
           "delta-cob-led-light-model-601",
           "delta-cob-led-light-model-602",
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 19,
+    name: "1+1 Panel LED Lights",
+    metaTitle: "1+1 Panel LED Lights | Modern LED Lighting | Elstrong",
+    metaDesc:
+      "Explore Elstrong concealed lights with sleek designs and efficient LED technology, perfect for modern homes, offices, commercial spaces, and contemporary interiors.",
+    slug: "1-x-1-pannel-led-lights",
+    image: "/product/1x1Pannel1.webp",
+    hoverImage: "/product/1x1Pannel3.webp",
+    description:
+      "ELSTRONG 1x1 LED Light Panel is designed to provide efficient, uniform, and comfortable illumination for modern indoor spaces.",
+    products: [
+      {
+        id: 520,
+        name: "1x1 Panel LED Lights",
+        slug: "1-x-1-panel-led-lights",
+
+        metaTitle:
+          "1x1 Panel LED Lights | Modern Outdoor Wall LED Light | ELSTRONG",
+
+        metaDesc:
+          "ELSTRONG 1x1 Panel LED Lights provide attractive and practical outdoor illumination with a distinctive dual-light design for exterior walls, entrances, pathways, balconies, gardens, patios, and architectural spaces.",
+
+        category: "1+1 Panel LED Lights",
+        categorySlug: "1+1-pannel-led-lights",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG 1x1 Panel LED Lights is designed to provide attractive and practical illumination for exterior walls, entrances, pathways, balconies, and other outdoor areas. The 1x1 configuration creates a distinctive lighting effect, adding both functional illumination and decorative appeal to outdoor spaces.",
+
+        description:
+          "ELSTRONG 1x1 Panel LED Lights is designed to provide attractive and practical illumination for exterior walls, entrances, pathways, balconies, and other outdoor areas. The 1+1 configuration creates a distinctive lighting effect, adding both functional illumination and decorative appeal to outdoor spaces. Designed with a clean and modern profile, it complements residential, commercial, and architectural exteriors. Suitable for outdoor walls, building entrances, walkways, gardens, balconies, patios, and other suitable exterior installations. Provides a balanced dual-light arrangement for an enhanced outdoor lighting effect. Designed to add visual appeal while providing useful illumination around exterior spaces. Its contemporary appearance blends well with a variety of architectural styles. Suitable for homes, offices, hotels, restaurants, commercial buildings, gardens, pathways, and entrance areas. ELSTRONG develops modern LED lighting solutions designed for functional performance and attractive aesthetics. The 1x1 configuration creates an enhanced visual effect for exterior walls and architectural spaces. The clean profile complements contemporary outdoor environments. Suitable for a wide range of residential, commercial, hospitality, and architectural applications.",
+
+        // Main product images
+        image: "/product/1x1Pannel1.webp",
+
+        images: [
+          "/product/1x1Pannel1.webp",
+          "/product/1x1Pannel2.webp",
+          "/product/1x1Pannel3.webp",
+        ],
+
+        // Product variants
+        wattages: [],
+
+        // Product specifications
+        specifications: {
+          "Product Model": "1x1 Panel LED Lights",
+          "Product Type": "Outdoor Panel LED Light",
+          "Lighting Configuration": "1+1",
+          "Lighting Type": "Dual-Light Design",
+          "Design Style": "Modern / Contemporary",
+          "Mounting/Application":
+            "Exterior Wall / Entrance / Pathway / Balcony / Patio",
+          Application:
+            "Homes / Offices / Hotels / Restaurants / Commercial Buildings / Gardens / Pathways / Entrance Areas",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Modern Outdoor Lighting",
+            text: "ELSTRONG 1+1 Panel LED Lights is designed to provide attractive and practical illumination for exterior walls, entrances, pathways, balconies, and other outdoor areas.",
+          },
+          {
+            title: "Dual-Light Design",
+            text: "The 1x1 configuration creates a distinctive lighting effect, adding both functional illumination and decorative appeal to outdoor spaces.",
+          },
+          {
+            title: "Contemporary Appearance",
+            text: "Designed with a clean and modern profile, it complements residential, commercial, and architectural exteriors.",
+          },
+          {
+            title: "Versatile Application",
+            text: "Suitable for outdoor walls, building entrances, walkways, gardens, balconies, patios, and other suitable exterior installations.",
+          },
+          {
+            title: "1x1 Lighting Configuration",
+            text: "Provides a balanced dual-light arrangement for an enhanced outdoor lighting effect.",
+          },
+          {
+            title: "Decorative Illumination",
+            text: "Designed to add visual appeal while providing useful illumination around exterior spaces.",
+          },
+          {
+            title: "Modern Outdoor Design",
+            text: "Its contemporary appearance blends well with a variety of architectural styles.",
+          },
+          {
+            title: "Wide Application",
+            text: "Suitable for homes, offices, hotels, restaurants, commercial buildings, gardens, pathways, and entrance areas.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops modern LED lighting solutions designed for functional performance and attractive aesthetics.",
+          },
+          {
+            title: "Distinctive Lighting Effect",
+            text: "The 1+1 configuration creates an enhanced visual effect for exterior walls and architectural spaces.",
+          },
+          {
+            title: "Modern Design",
+            text: "The clean profile complements contemporary outdoor environments.",
+          },
+          {
+            title: "Versatile Outdoor Solution",
+            text: "Suitable for a wide range of residential, commercial, hospitality, and architectural applications.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/1x1Pannel3.webp",
+
+        // Additional product information
+        sku: "ELS-1PLUS1-PANEL-LED",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/1-plus-1-panel-led-lights-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "purse-outdoor-led-lights",
+          "rainbow-deep-junction",
+          "adjustable-square-panel-led-light",
+          "adjustable-round-panel-led-light",
+        ],
+      },
+    ],
+  },
+  {
+    id: 18,
+    name: "2x2 Panel LED Lights",
+    metaTitle: "2 x 2 Panel LED Lights | Modern LED Lighting | Elstrong",
+    metaDesc:
+      "Explore Elstrong concealed lights with sleek designs and efficient LED technology, perfect for modern homes, offices, commercial spaces, and contemporary interiors.",
+    slug: "2-x-2-pannel-led-lights",
+    image: "/product/1x1Pannel1.webp",
+    hoverImage: "/product/1x1Pannel3.webp",
+    description:
+      "ELSTRONG 2x2 LED Panel is a large-format lighting solution designed to deliver broad and uniform illumination across offices, commercial spaces, retail areas, institutions, and other indoor environments.",
+    products: [
+      {
+        id: 521,
+        name: "2x2 Panel LED Lights",
+        slug: "2x2-pannel-led-lights",
+
+        metaTitle:
+          "2 x 2 Panel LED Lights | 48W Square LED Panel Light | ELSTRONG",
+
+        metaDesc:
+          "ELSTRONG 2 × 2 Panel LED Light is a 48W square lighting solution with a slim 595 × 595 × 30 mm profile, 85V–350V operation, 440V high-voltage protection, PF >0.95, 4 kV surge capacity, and CW, WW, and NW options.",
+
+        category: "Panel Lights",
+        categorySlug: "panel-lights",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG 2 × 2 is a square LED lighting solution designed to provide broad and uniform illumination for offices, commercial spaces, retail areas, institutions, and other indoor environments. The 48W configuration provides strong illumination suitable for spaces requiring consistent and wide-area lighting.",
+
+        description:
+          "ELSTRONG 2 × 2 is a square LED lighting solution designed to provide broad and uniform illumination for offices, commercial spaces, retail areas, institutions, and other indoor environments. The 48W configuration provides strong illumination suitable for spaces requiring consistent and wide-area lighting. With dimensions of 595 × 595 × 30 mm, the slim profile offers a clean appearance for suitable ceiling installations. Designed to operate from 85V–350V, with 440V high-voltage protection for dependable performance under varying voltage conditions. The large square format provides a clean and professional appearance while supporting broad-area illumination. With a PF >0.95 (HPF), the product is designed for efficient electrical power utilization. The 4 kV surge capacity provides additional protection against suitable electrical surges for reliable lighting performance. Available in CW (Cool White), WW (Warm White), and NW (Neutral White) to suit different indoor lighting requirements. ELSTRONG develops LED lighting solutions focused on efficient performance, modern design, and dependable operation. The 2 × 2 format is designed to provide broad and uniform lighting for larger indoor spaces. The 48W configuration combined with a >0.95 high power factor supports efficient electrical operation. Wide voltage operation, 440V high-voltage protection, and 4 kV surge capacity make it a practical solution for compatible indoor installations.",
+
+        // Main product images
+        image: "/product/1x1Pannel1.webp",
+
+        images: [
+          "/product/1x1Pannel1.webp",
+          "/product/1x1Pannel2.webp",
+          "/product/1x1Pannel3.webp",
+        ],
+
+        // Product variants
+        wattages: [
+          {
+            value: "48W",
+            image: "/product/2-plus-2-panel-led-lights-48w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          Wattage: "48W",
+          "Product Model": "2 × 2 Panel LED Lights",
+          "Product Shape": "Square",
+          "Product Format": "2 × 2",
+          Dimensions: "595 × 595 × 30 mm",
+          "Operating Voltage": "85V–350V",
+          "High-Voltage Protection": "440V",
+          "Power Factor": ">0.95 (HPF)",
+          "Surge Capacity": "4 kV",
+          "Light Options":
+            "CW (Cool White), WW (Warm White), and NW (Neutral White)",
+          "Product Type": "Square Panel LED Light",
+          Application:
+            "Offices / Commercial Spaces / Retail Areas / Institutions / Other Indoor Environments",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Modern Square Panel",
+            text: "ELSTRONG 2 × 2 is a square LED lighting solution designed to provide broad and uniform illumination for offices, commercial spaces, retail areas, institutions, and other indoor environments.",
+          },
+          {
+            title: "48W Lighting",
+            text: "The 48W configuration provides strong illumination suitable for spaces requiring consistent and wide-area lighting.",
+          },
+          {
+            title: "Large Square Format",
+            text: "With dimensions of 595 × 595 × 30 mm, the slim profile offers a clean appearance for suitable ceiling installations.",
+          },
+          {
+            title: "Wide Voltage Operation",
+            text: "Designed to operate from 85V–350V, with 440V high-voltage protection for dependable performance under varying voltage conditions.",
+          },
+          {
+            title: "Square 2 × 2 Design",
+            text: "The large square format provides a clean and professional appearance while supporting broad-area illumination.",
+          },
+          {
+            title: "High Power Factor",
+            text: "With a PF >0.95 (HPF), the product is designed for efficient electrical power utilization.",
+          },
+          {
+            title: "4 kV Surge Capacity",
+            text: "Provides additional protection against suitable electrical surges for reliable lighting performance.",
+          },
+          {
+            title: "Multiple Colour Options",
+            text: "Available in CW (Cool White), WW (Warm White), and NW (Neutral White) to suit different indoor lighting requirements.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops LED lighting solutions focused on efficient performance, modern design, and dependable operation.",
+          },
+          {
+            title: "Wide-Area Illumination",
+            text: "The 2 × 2 format is designed to provide broad and uniform lighting for larger indoor spaces.",
+          },
+          {
+            title: "Efficient Performance",
+            text: "The 48W configuration combined with a >0.95 high power factor supports efficient electrical operation.",
+          },
+          {
+            title: "Reliable Design",
+            text: "Wide voltage operation, 440V high-voltage protection, and 4 kV surge capacity make it a practical solution for compatible indoor installations.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/1x1Pannel3.webp",
+
+        // Additional product information
+        sku: "ELS-2PLUS2-PANEL-LED",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/2-plus-2-panel-led-lights-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "1-plus-1-panel-led-lights",
+          "adjustable-square-panel-led-light",
+          "adjustable-round-panel-led-light",
+          "rainbow-deep-junction",
         ],
       },
     ],

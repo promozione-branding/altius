@@ -27,7 +27,7 @@ const products = [
     price: "$70.00",
     oldPrice: "$80.00",
     image: "/product/coblensmodel1.webp",
-    href:"/products/moveable-lens-cob-5w"
+    href:"/products/moveable-lens-cob"
   },
   {
     name: "Flare",

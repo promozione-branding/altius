@@ -9,22 +9,19 @@ const testimonials = [
     text: "The LED lights have completely transformed our interiors. The brightness is excellent, the design feels premium, and the energy savings are noticeable.",
     name: "Rajiv Mehta",
     role: "Homeowner",
-    image:
-      "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop",
+    image:"/testi.webp"
   },
   {
     text: "Excellent lighting quality with a clean, modern finish. The lights provide consistent illumination and have worked perfectly for our commercial space.",
     name: "Priya Sharma",
     role: "Interior Designer",
-    image:
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=687&auto=format&fit=crop",
-  },
+    image:"/testi.webp"
+    },
   {
     text: "We upgraded our showroom with these LED lights and the difference is impressive. The lighting makes every product stand out while keeping energy consumption low.",
     name: "Arjun Kapoor",
     role: "Business Owner",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=687&auto=format&fit=crop",
+        image:"/testi.webp"
   },
 ];
 
