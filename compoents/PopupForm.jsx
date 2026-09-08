@@ -69,7 +69,6 @@ export default function PopupForm({ isOpen, onClose }) {
       const payload = {
         platform: "Altius Elstrong Popup Form",
         platformEmail: "altus@email.com",
-        supplierToken: "6a9fe072d936bdc2bb1d990f",
 
         name: formData.name,
         phone: formData.phone,

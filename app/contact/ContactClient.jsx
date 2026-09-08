@@ -66,7 +66,6 @@ export default function ContactClient() {
       const payload = {
         platform: "Altius Elstrong Contact Form",
         platformEmail: "altus@email.com",
-        supplierToken: "6a9fe072d936bdc2bb1d990f",
 
         name: formData.name,
         phone: formData.phone,
