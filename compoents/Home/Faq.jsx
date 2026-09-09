@@ -71,7 +71,7 @@ export default function Faq() {
             <div className="group h-50 relative mt-10 aspect-[4/5] w-full max-w-md overflow-hidden ">
               <img
                 src="https://images.unsplash.com/photo-1524634126442-357e0eac3c14?auto=format&fit=crop&w=1200&q=80"
-                alt="Modern pendant lighting fixture"
+                alt="LED Light Manufacturer, LED Light, LED Light Supplier"
                 className="
                   h-full
                   w-full

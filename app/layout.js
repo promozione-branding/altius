@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import LayoutWrapper from "@/compoents/LayoutWrapper";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,11 +24,63 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <style>
+     
+
+
+       <head>
+         <style>
         @import
         url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
         
       </style>
+              <link rel="canonical"href="https://www.altiuslighting.com/" />
+        {/* JSON-LD Structured Data */}
+        <Script
+          id="altius-lighting-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "WebSite",
+                  "@id": "https://www.altiuslighting.com/#website",
+                  "url": "https://www.altiuslighting.com/",
+                  "name": "Altius Lighting",
+                  "description":
+                    "Altius Lighting is a trusted LED Light Manufacturer offering quality LED lighting products and reliable lighting solutions for residential, commercial, and industrial applications.",
+                  "publisher": {
+                    "@id":
+                      "https://www.altiuslighting.com/#organization",
+                  },
+                  "inLanguage": "en-IN",
+                },
+                {
+                  "@type": "Organization",
+                  "@id":
+                    "https://www.altiuslighting.com/#organization",
+                  "name": "Altius Lighting",
+                  "url": "https://www.altiuslighting.com/",
+                  "description":
+                    "Altius Lighting is an LED Light Manufacturer and supplier providing quality LED lighting products and energy-efficient lighting solutions for various applications.",
+                  "knowsAbout": [
+                    "LED Lighting",
+                    "LED Light Manufacturer",
+                    "LED Light Supplier",
+                    "LED Lights",
+                    "Energy Efficient Lighting",
+                    "Industrial LED Lighting",
+                    "Residential LED Lighting",
+                    "LED Light Manufacturer in India",
+                  ],
+                },
+              ],
+            }),
+          }}
+        />
+
+
+      </head>
 
       <body className="min-h-full  flex flex-col ">
         <LayoutWrapper>{children}</LayoutWrapper>

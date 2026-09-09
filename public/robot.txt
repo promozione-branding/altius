@@ -1,0 +1,40 @@
+# robots.txt for Elstrong
+# https://www.altiuslighting.com/
+
+# Allow major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YahooBot
+Allow: /
+
+# Block common SEO crawlers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Rules for all other bots
+User-agent: *
+Allow: /
+
+# Block feeds
+Disallow: /feed/
+Disallow: */feed/
+
+# Sitemap
+Sitemap: https://www.altiuslighting.com/sitemap.xml
+

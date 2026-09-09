@@ -502,7 +502,7 @@ export default function AboutClient() {
 
                   <img
                     src="https://images.unsplash.com/photo-1612523563676-709f47fab6ea?w=1200&auto=format&fit=crop&q=80&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGxlZCUyMGxhbXB8ZW58MHx8MHx8fDA%3D"
-                    alt="Modern LED pendant light illuminating a contemporary interior"
+                    alt="LED Light Manufacturer, LED Light, LED Light Supplier"
                     className="h-full w-full object-cover object-center transition-transform duration-1000 ease-out hover:scale-105"
                   />
                 </div>
@@ -579,7 +579,7 @@ export default function AboutClient() {
             <div className="relative h-[320px]   border-t-8 border-[#85a30f] w-full md:h-[520px] ">
               <img
                 src="/abouttt.png"
-                alt="LED Lighting Solutions"
+                alt="LED Light Manufacturer, LED Light, LED Light Supplier"
                 className="h-full w-full object-cover"
               />
             </div>

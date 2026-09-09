@@ -525,7 +525,7 @@ export default function ScrollExpand({
                 fontSize: "var(--se-title-size)",
               }}
             >
-              <h1
+              <h2
                 className="
                   m-0
                   max-w-5xl
@@ -537,7 +537,7 @@ export default function ScrollExpand({
                 "
               >
                 {title}
-              </h1>
+              </h2>
             </div>
           )}
 

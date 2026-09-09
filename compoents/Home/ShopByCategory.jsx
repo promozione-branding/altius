@@ -402,6 +402,7 @@ export default function ShopByCategory() {
                   will-change-transform
                   group-hover:scale-105
                 "
+                aria-label={category.name || "LED Light Manufacturer, LED Light, LED Light Supplier"}
                 style={{
                   backgroundImage: `url("${category.image}")`,
                 }}

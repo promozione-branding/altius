@@ -242,7 +242,7 @@ export default function Form() {
             <img
               ref={imageRef}
               src="https://images.unsplash.com/photo-1668255310325-20c3929913e2?q=80&w=880&auto=format&fit=crop"
-              alt="Luxury Table Lamp"
+              alt="LED Light Manufacturer, LED Light, LED Light Supplier"
               className="
                 h-full
                 w-full

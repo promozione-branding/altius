@@ -106,7 +106,7 @@ export default function Testimonials() {
             <div className="relative aspect-[1.34/1] w-full overflow-hidden rounded-[14px]">
               <Image
                 src="https://images.unsplash.com/photo-1541956197774-1c6c637c8776?q=80&w=687&auto=format&fit=crop"
-                alt="Refined interior space"
+                alt="LED Light Manufacturer, LED Light, LED Light Supplier"
                 fill
                 priority
                 className="object-cover"
