@@ -239,7 +239,7 @@ export default function LEDFeatures() {
               <img
                 ref={imageRef}
                 src="/led.webp"
-                alt="Premium LED Light"
+                alt="LED Light Manufacturer, LED Light, LED Light Supplier"
                 className="
                   h-[500px]
                   w-full

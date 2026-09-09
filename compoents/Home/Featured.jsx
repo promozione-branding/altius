@@ -519,7 +519,7 @@ export default function Featured() {
           >
             <img
               src="/featured.png"
-              alt="Modern interior lighting"
+              alt="LED Light Manufacturer, LED Light, LED Light Supplier"
               className="
                 absolute
                 inset-0
