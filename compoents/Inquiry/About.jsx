@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="w-full bg-[#181818] py-5 sm:pt-5">
+    <section id="about" className="w-full bg-[#181818] pt-5 sm:py-5">
       <div className="mx-auto w-full max-w-full ">
         
         <div className="overflow-hidden rounded-2xl bg-[#181818]">
@@ -31,7 +31,7 @@ export default function About() {
           </div>
 
           {/* Image */}
-          <div className="relative mx-auto mt-5 aspect-[16/7] w-full max-w-[1100px] overflow-hidden rounded-xl">
+          <div className="relative mx-auto mt-5 aspect-[12/7] w-full md:rounded-xl max-w-[1100px] overflow-hidden ">
             <Image
            src="/aboutnew.webp"
               alt="Premium LED Lighting Solutions"
