@@ -214,7 +214,7 @@ export default function Product() {
                 spaceBetween: 22,
               },
             }}
-            className="!overflow-visible"
+            className="overflow-hidden"
           >
             {lightingProducts.map((product, index) => (
               <SwiperSlide key={index} className="h-auto mt-3">
@@ -327,7 +327,7 @@ export default function Product() {
                 spaceBetween: 22,
               },
             }}
-            className="!overflow-visible"
+             className="overflow-hidden"
           >
             {lightingProducts3.map((product, index) => (
               <SwiperSlide key={index} className="h-auto mt-3">
@@ -440,7 +440,7 @@ export default function Product() {
                 spaceBetween: 22,
               },
             }}
-            className="!overflow-visible"
+             className="overflow-hidden"
           >
             {lightingProducts2.map((product, index) => (
               <SwiperSlide key={index} className="h-auto mt-3">

@@ -76,13 +76,13 @@ export default function Category() {
 
   return (
     <>
-      <section id="category" className="relative w-full overflow-hidden bg-[#f6f7f4] py-6 sm:py-12">
+      <section id="category" className="relative w-full  overflow-hidden bg-[#f6f7f4] py-6 sm:py-12">
         {/* Background Decoration */}
         <div className="pointer-events-none absolute -left-40 top-20 h-80 w-80 rounded-full bg-[#85a30f]/10 blur-3xl" />
 
         <div className="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-[#85a30f]/10 blur-3xl" />
 
-        <div className="relative mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="mb-8 flex items-end justify-between gap-6 sm:mb-10">
             <div>
@@ -156,16 +156,16 @@ export default function Category() {
               // Desktop
               1024: {
                 slidesPerView: 4,
-                spaceBetween: 20,
+                spaceBetween: 25,
               },
 
               // Large Desktop
               1280: {
                 slidesPerView: 4,
-                spaceBetween: 22,
+                spaceBetween: 25,
               },
             }}
-            className="!overflow-visible"
+            className="overflow-hidden max-w-7xl"
           >
             {lightingProducts.map((product, index) => (
               <SwiperSlide key={index} className="h-auto">

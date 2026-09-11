@@ -1,18 +1,21 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { Phone, MessageCircle, FileText } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import PopupForm from "../PopupForm";
 
 export default function Mobilefooter() {
+    const [open, setOpen] = useState(false);
+
   return (
     <div className="fixed inset-x-0 bottom-0 z-[9999] block px-3 pb-[max(10px,env(safe-area-inset-bottom))] sm:hidden">
       {/* Floating Footer */}
       <div className="mx-auto flex max-w-md items-center gap-2 rounded-2xl border border-white/10 bg-[#11150e]/95 p-2 shadow-[0_-8px_35px_rgba(0,0,0,0.18)] backdrop-blur-xl">
         {/* Call */}
         <a
-          href="tel:+919XXXXXXXXX"
+           href="tel:+919650167709"
           className="flex flex-1 flex-col items-center justify-center gap-1 rounded-xl border border-white/10 bg-white/[0.06] py-2.5 text-white transition-all active:scale-95"
         >
           <Phone size={18} strokeWidth={2.2} />
@@ -21,14 +24,16 @@ export default function Mobilefooter() {
         </a>
 
         {/* Get Quote */}
-        <Link
-          href="/enquiry"
+        <button
+          onClick={()=>{
+              setOpen(true)
+            }}
           className="flex flex-1 flex-col items-center justify-center gap-1 rounded-xl bg-[#85a30f] py-2.5 text-white shadow-lg shadow-[#85a30f]/20 transition-all active:scale-95"
         >
           <FileText size={18} strokeWidth={2.2} />
 
           <span className="text-[10px] font-bold">Get Quote</span>
-        </Link>
+        </button>
 
         {/* WhatsApp */}
         <a
@@ -42,6 +47,8 @@ export default function Mobilefooter() {
           <span className="text-[10px] font-semibold">WhatsApp</span>
         </a>
       </div>
+
+       {open && <PopupForm isOpen={open} onClose={() => setOpen(false)} />}
     </div>
   );
 }
