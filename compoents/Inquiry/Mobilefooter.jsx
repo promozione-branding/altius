@@ -35,7 +35,7 @@ export default function Mobilefooter() {
            href="https://wa.link/jav0i1"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-1 flex-col items-center justify-center gap-1 rounded-xl border border-[#25D366]/30 bg-[#25D366]/10 py-2.5 text-green-500 transition-all active:scale-95"
+          className="flex flex-1 flex-col items-center justify-center gap-1 rounded-xl border border-[#25D366]/30 bg-white py-2.5 text-green-500 transition-all active:scale-95"
         >
           <FaWhatsapp size={25} />
 
