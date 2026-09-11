@@ -10,7 +10,8 @@ export default function LayoutWrapper({ children }) {
     const pathname = usePathname();
 
     // Hide Navbar and Footer on all admin pages
-    const isAdminPage = pathname.startsWith("/admin");
+const isAdminPage =
+  pathname.startsWith("/admin") || pathname.startsWith("/inquiry");
 
     if (isAdminPage) {
         return <>{children}</>;

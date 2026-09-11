@@ -69,11 +69,11 @@ export default function PopupForm({ isOpen, onClose }) {
       const payload = {
         platform: "Altius Elstrong Popup Form",
         platformEmail: "altus@email.com",
-                supplierToken: "6a9fb124d936bdc2bb1d6ca5",
+        supplierToken: "6a9fb124d936bdc2bb1d6ca5",
 
         name: formData.name,
         phone: formData.phone,
-        email: formData.email,
+        email: formData.email || "N/A",
         product: formData.product,
         message: formData.message || "N/A",
         place: "N/A",
@@ -240,13 +240,13 @@ export default function PopupForm({ isOpen, onClose }) {
                     />
                   </div>
 
-                  {/* EMAIL */}
+                  {/* EMAIL - OPTIONAL */}
                   <div>
                     <label
                       htmlFor="popup-email"
                       className="mb-1 block text-[11px] font-semibold uppercase tracking-wide text-slate-700"
                     >
-                      Email *
+                      Email
                     </label>
 
                     <input
@@ -256,7 +256,6 @@ export default function PopupForm({ isOpen, onClose }) {
                       placeholder="Enter your email"
                       value={formData.email}
                       onChange={handleChange}
-                      required
                       disabled={loading}
                       className="h-10 w-full border border-slate-200 bg-white px-3 text-sm text-black outline-none transition placeholder:text-slate-400 focus:border-black disabled:bg-slate-50"
                     />
@@ -281,18 +280,23 @@ export default function PopupForm({ isOpen, onClose }) {
                       className="h-10 w-full border border-slate-200 bg-white px-3 text-sm text-black outline-none transition focus:border-black disabled:bg-slate-50"
                     >
                       <option value="">Select Product</option>
+
                       <option value="Concealed Light">
                         Concealed Light
                       </option>
+
                       <option value="COB Lens Model">
                         COB Lens Model
                       </option>
+
                       <option value="LED Slim Panel">
                         LED Slim Panel
                       </option>
+
                       <option value="Striker">
                         Striker
                       </option>
+
                       <option value="PC Panel">
                         PC Panel
                       </option>

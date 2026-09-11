@@ -28,6 +28,20 @@ export default function RootLayout({ children }) {
 
 
        <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18442142725"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-ads-gtag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-18442142725');
+          `}
+        </Script>
          <style>
         @import
         url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');

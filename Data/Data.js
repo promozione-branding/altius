@@ -901,7 +901,7 @@ export const categories = [
     metaDesc:
       "Discover Elstrong LED slim panel lights with sleek designs and efficient illumination, ideal for homes, offices, retail spaces, and modern commercial interiors.",
     image: "/slimsquarepanel.webp",
-    image2: "/LEDslimpanelcombine.webp",
+    image2: "/  LEDslimpanelcombine.webp",
     hoverImage: "/product/slimsquarepanel2.webp",
 
     description:

@@ -244,6 +244,15 @@ h3 {
   scrollbar-color: #85a30f transparent;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 90px;
+}
+
 @keyframes wattageImageChange {
   0% {
     opacity: 0;
