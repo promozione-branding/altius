@@ -438,20 +438,11 @@ export default function AboutClient() {
                 </div>
 
                 <p className="text-base leading-6 text-gray-900">
-                  Founded on the principles of architectural clarity and
-                  uncompromising quality, we emerged from a desire to redefine
-                  modern LED lighting. Our journey began with a simple vision:
-                  to create lighting solutions that are as beautiful when
-                  switched off as they are illuminating when switched on.
+                  ELSTRONG is a trusted <Link href="/" className="font-bold hover:underline"> LED manufacturer in India</Link> offering high quality lighting that mixes modern design, with advanced LED technology and reliable performance. ELSTRONG products are made for homes, offices, factories and building designs. We focus on energy saving, durability and new ideas. Gives LED lights that brighten rooms and keep working for a long time.
+
                 </p>
 
-                <p className="text-base leading-6 text-gray-900">
-                  We combine premium materials, advanced LED technology, and
-                  thoughtful engineering to create lighting products that
-                  deliver exceptional performance, efficiency, and timeless
-                  aesthetics. Every piece is designed to enhance spaces and
-                  inspire the way people experience them.
-                </p>
+               
 
                 {/* Mini stats row */}
                 <div className="flex gap-10 border-y border-gray-300/70 py-6">

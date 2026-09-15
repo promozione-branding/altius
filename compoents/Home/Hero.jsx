@@ -447,7 +447,7 @@ export default function Hero() {
 
           {/* HEADING */}
 
-          <h1
+          <h2
             ref={headingRef}
             className="
               mb-8
@@ -466,7 +466,7 @@ export default function Hero() {
             with lighting made
             <br />
             to inspire.
-          </h1>
+          </h2>
 
           {/* BUTTONS */}
 

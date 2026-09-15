@@ -542,24 +542,26 @@ export default function About() {
 
               {/* Main heading */}
 
-              <h2
+              <h1
                 className="
                   about-heading
                   max-w-[650px]
-                  text-4xl
+                  text-3xl
                   font-semibold
                   leading-[1.02]
-                  tracking-[-0.04em]
+                  md:tracking-[-0.04em]
                   text-[#171717]
                   sm:text-5xl
-                  lg:text-6xl
+               
                   
                 "
               >
-                LED Lighting Solutions
-                <br />
-                <span className="text-[#85a30f]">for Every Space.</span>
-              </h2>
+                LED Light Manufacturer in India
+                <span className="text-[#85a30f]">
+                  {" "}
+                  – Premium LED Lighting Solutions.
+                </span>
+              </h1>
 
               {/* Description */}
 
@@ -575,40 +577,21 @@ export default function About() {
                   sm:leading-8
                 "
               >
-                ELSTRONG offers premium LED lighting solutions designed for
-                residential, commercial, industrial and architectural spaces.
-                From{" "}
-                <Link
-                  className="font-bold text-black"
-                  href="/categories/concealed-lights"
-                >
-                  {" "}
-                  Concealed Lights
-                </Link>{" "}
-                and{" "}
-                <Link
-                  className="font-bold text-black"
-                  href="/categories/led-slim-panel"
-                >
-                  {" "}
-                  LED Slim Panel{" "}
+                ELSTRONG is a trusted{" "}
+                <Link href="/products" className="font-bold hover:underline">
+                  LED Light Manufacturer in India
                 </Link>
-                to{" "}
-                <Link
-                  className="font-bold text-black"
-                  href="/categories/pc-panel"
-                >
-                  PC Panel{" "}
-                </Link>
-                ,{" "}
-                <Link
-                  className="font-bold text-black"
-                  href="/categories/track-light"
-                >
-                  track lights
-                </Link>{" "}
-                and <Link className="font-bold text-black" href="/categories/outdoor-lights">outdoor lighting </Link>, our solutions combine energy efficiency,
-                reliable performance and modern design.
+                . They offer premium and energy-efficient LED lighting
+                solutions. These solutions are used in areas. They are also used
+                in places. Industrial settings and architectural projects use
+                their products too. The company focuses on delivering
+                performance. They create designs. They provide{" "}
+                <span className="font-bold">
+                  {" "}
+                  high-quality lighting solutions
+                </span>
+                . These solutions meet the requirements of businesses. They also
+                meet the needs of customers across India.
               </p>
 
               {/* =================================================
