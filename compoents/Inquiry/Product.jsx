@@ -227,10 +227,7 @@ export default function Product() {
                   <article className="relative flex h-full min-h-[350px] flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-[#85a30f]/40 hover:shadow-xl">
                     {/* Image */}
                     <div className="relative h-[210px] overflow-hidden bg-[#f1f2ef]">
-                      {/* Number */}
-                      <div className="absolute left-4 top-4 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-xs font-bold text-gray-500 shadow-sm backdrop-blur">
-                        {String(index + 1).padStart(2, "0")}
-                      </div>
+                    
 
                       <Image
                         src={product.image}
@@ -341,9 +338,7 @@ export default function Product() {
                     {/* Image */}
                     <div className="relative h-[210px] overflow-hidden bg-[#f1f2ef]">
                       {/* Number */}
-                      <div className="absolute left-4 top-4 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-xs font-bold text-gray-500 shadow-sm backdrop-blur">
-                        {String(index + 1).padStart(2, "0")}
-                      </div>
+                     
 
                       <Image
                         src={product.image}
@@ -453,10 +448,7 @@ export default function Product() {
                   <article className="relative flex h-full min-h-[350px] flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-[#85a30f]/40 hover:shadow-xl">
                     {/* Image */}
                     <div className="relative h-[210px] overflow-hidden bg-[#f1f2ef]">
-                      {/* Number */}
-                      <div className="absolute left-4 top-4 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-xs font-bold text-gray-500 shadow-sm backdrop-blur">
-                        {String(index + 1).padStart(2, "0")}
-                      </div>
+                     
 
                       <Image
                         src={product.image}

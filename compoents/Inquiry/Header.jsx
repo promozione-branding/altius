@@ -85,8 +85,8 @@ export default function Header() {
               />
             </button>
 
-             <Link className="flex border border-white p-2.5  gap-2" href="https://wa.link/jav0i1">
-            <span className="text-white hidden md:block">WhatsApp</span> <FaWhatsapp size={22} className="text-white " />
+             <Link className="flex border border-green-500 p-2.5  gap-2" href="https://wa.link/jav0i1">
+            <span className="text-green-500 hidden md:block">WhatsApp</span> <FaWhatsapp size={22} className="text-green-500 " />
 
             </Link>
           </div>

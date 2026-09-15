@@ -41,19 +41,20 @@ const lightingProducts = [
     image: "/category/ledconcel1.webp",
     href: "/categories/concealed-lights",
   },
-  {
-    name: "COB Lights",
-    description: "High performance lighting",
-    category: "COB Lighting",
-    image: "/coblensmodel.webp",
-    href: "/categories/cob-lights",
-  },
+  
   {
     name: "Outdoor Lights",
     description: "Built for outdoor applications",
     category: "Outdoor Lighting",
     image: "/product/Klight1.webp",
     href: "/categories/outdoor-light",
+  },
+  {
+    name: "COB Lights",
+    description: "High performance lighting",
+    category: "COB Lighting",
+    image: "/coblensmodel.webp",
+    href: "/categories/cob-lights",
   },
   {
     name: "Flood Lights",
@@ -69,6 +70,27 @@ const lightingProducts = [
     image: "/product/1x1Pannel1.webp",
     href: "/categories/square-lights",
   },
+  {
+    name: "Rope Lights",
+    description: "Udniform Illumination",
+    category: "Square Lighting",
+    image: "/product/rope1.webp",
+    href: "/categories/rope-lights",
+  },
+  {
+    name: "Rainbow Deep Lights",
+    description: "Clean ,modern design",
+    category: "Square Lighting",
+    image: "/product/rainbow1.webp",
+    href: "/categories/rainbow-deep-junction",
+  },
+  {
+    name: "Bulb",
+    description: "Clean ,modern design",
+    category: "Square Lighting",
+    image: "/product/bulb1.webp",
+    href: "/categories/bulb",
+  },
 ];
 
 export default function Category() {
@@ -76,7 +98,10 @@ export default function Category() {
 
   return (
     <>
-      <section id="category" className="relative w-full  overflow-hidden bg-[#f6f7f4] py-6 sm:py-12">
+      <section
+        id="category"
+        className="relative w-full  overflow-hidden bg-[#f6f7f4] py-6 sm:py-12"
+      >
         {/* Background Decoration */}
         <div className="pointer-events-none absolute -left-40 top-20 h-80 w-80 rounded-full bg-[#85a30f]/10 blur-3xl" />
 
@@ -176,11 +201,6 @@ export default function Category() {
                   <article className="relative flex h-full  flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-[#85a30f]/40 hover:shadow-xl sm:min-h-[330px]">
                     {/* Image */}
                     <div className="relative h-[145px] overflow-hidden bg-[#f1f2ef] sm:h-[190px] lg:h-[210px]">
-                      {/* Number */}
-                      <div className="absolute left-2 top-2 z-10 flex h-7 w-7 items-center justify-center rounded-full bg-white/90 text-[10px] font-bold text-gray-500 shadow-sm backdrop-blur sm:left-4 sm:top-4 sm:h-8 sm:w-8 sm:text-xs">
-                        {String(index + 1).padStart(2, "0")}
-                      </div>
-
                       <Image
                         src={product.image}
                         alt={product.name}

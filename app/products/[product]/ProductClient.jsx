@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
 import CTA2 from "@/compoents/Home/CTA2";
@@ -48,6 +48,8 @@ export default function ProductClient({ product }) {
     product?.wattages?.[0]?.value || "",
   );
 
+
+
   if (!product) {
     return (
       <main className="flex min-h-[60vh] items-center justify-center">
@@ -59,6 +61,15 @@ export default function ProductClient({ product }) {
   const selectedWattageData = product.wattages?.find(
     (item) => item.value === selectedWattage,
   );
+
+
+   useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }, []);
 
   return (
     <>

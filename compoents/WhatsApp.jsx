@@ -22,7 +22,7 @@ export default function WhatsApp() {
       >
         <FaPhoneAlt size={21} className="shrink-0" />
         <span className="whitespace-nowrap text-sm md:text-base font-medium tracking-tight">
-          Call us
+          Call
         </span>
       </a>
 
@@ -35,7 +35,7 @@ export default function WhatsApp() {
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
         className="
-          flex h-12 px-3 md:h-14 items-center  gap-2 md:gap-3  rounded-2xl
+          flex h-12 px-3 md:h-14 items-center  gap-2 md:gap-2  rounded-2xl
           bg-green-500 md:pl-4 md:pr-5 text-white
           shadow-[0_8px_24px_-6px_rgba(11,93,59,0.6)]
           transition-transform duration-300 ease-out
@@ -45,7 +45,7 @@ export default function WhatsApp() {
       >
         <FaWhatsapp size={25} className="shrink-0" />
         <span className="whitespace-nowrap text-sm md:text-base  font-medium tracking-tight">
-          Chat on WhatsApp
+         WhatsApp
         </span>
       </a>
     </div>

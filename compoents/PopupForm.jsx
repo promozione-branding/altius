@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useEffect, useState } from "react";
@@ -10,6 +9,7 @@ export default function PopupForm({ isOpen, onClose }) {
     name: "",
     phone: "",
     email: "",
+    place: "",
     product: "",
     message: "",
   };
@@ -74,9 +74,9 @@ export default function PopupForm({ isOpen, onClose }) {
         name: formData.name,
         phone: formData.phone,
         email: formData.email || "N/A",
+        place: formData.place || "N/A",
         product: formData.product,
         message: formData.message || "N/A",
-        place: "N/A",
       };
 
       const { data } = await axios.post(
@@ -94,9 +94,7 @@ export default function PopupForm({ isOpen, onClose }) {
           onClose();
         }, 2000);
       } else {
-        setError(
-          data?.message || "Submission failed. Please try again."
-        );
+        setError(data?.message || "Submission failed. Please try again.");
       }
     } catch (err) {
       console.error("Form submission error:", err);
@@ -131,7 +129,6 @@ export default function PopupForm({ isOpen, onClose }) {
       {/* POPUP */}
       <div className="relative max-h-[95vh] w-full max-w-[620px] overflow-hidden bg-white p-2 shadow-2xl">
         <div className="relative w-full bg-white px-4 py-3 sm:px-5 sm:py-4">
-
           {/* CLOSE BUTTON */}
           <button
             type="button"
@@ -193,7 +190,6 @@ export default function PopupForm({ isOpen, onClose }) {
               {/* FORM */}
               <form onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-
                   {/* NAME */}
                   <div>
                     <label
@@ -261,8 +257,30 @@ export default function PopupForm({ isOpen, onClose }) {
                     />
                   </div>
 
-                  {/* PRODUCT */}
+                  {/* PLACE */}
                   <div>
+                    <label
+                      htmlFor="popup-place"
+                      className="mb-1 block text-[11px] font-semibold uppercase tracking-wide text-slate-700"
+                    >
+                      Place 
+                    </label>
+
+                    <input
+                      id="popup-place"
+                      name="place"
+                      type="text"
+                      placeholder="Enter your city / place"
+                      value={formData.place}
+                      onChange={handleChange}
+                      
+                      disabled={loading}
+                      className="h-10 w-full border border-slate-200 bg-white px-3 text-sm text-black outline-none transition placeholder:text-slate-400 focus:border-black disabled:bg-slate-50"
+                    />
+                  </div>
+
+                  {/* PRODUCT */}
+                  <div className="sm:col-span-2">
                     <label
                       htmlFor="popup-product"
                       className="mb-1 block text-[11px] font-semibold uppercase tracking-wide text-slate-700"
@@ -281,25 +299,27 @@ export default function PopupForm({ isOpen, onClose }) {
                     >
                       <option value="">Select Product</option>
 
-                      <option value="Concealed Light">
-                        Concealed Light
+                      <option value="Concealed Lights">
+                        Concealed Lights
                       </option>
-
                       <option value="COB Lens Model">
                         COB Lens Model
                       </option>
-
                       <option value="LED Slim Panel">
                         LED Slim Panel
                       </option>
-
-                      <option value="Striker">
-                        Striker
+                      <option value="PC Panel">PC Panel</option>
+                      <option value="Outdoor Lights">
+                        Outdoor Lights
                       </option>
-
-                      <option value="PC Panel">
-                        PC Panel
+                      <option value="Striker">Striker</option>
+                      <option value="Bulbs">Bulbs</option>
+                      <option value="Track Light">Track Light</option>
+                      <option value="Rope Lights">Rope Lights</option>
+                      <option value="Rainbow Deep Junction">
+                        Rainbow Deep Junction
                       </option>
+                      <option value="Others">Others</option>
                     </select>
                   </div>
 

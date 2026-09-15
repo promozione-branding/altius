@@ -16,7 +16,7 @@ export default function Mobilefooter() {
         {/* Call */}
         <a
            href="tel:+919650167709"
-          className="flex flex-1 flex-col items-center justify-center gap-1 rounded-xl border border-white/10 bg-white/[0.06] py-2.5 text-white transition-all active:scale-95"
+          className="flex flex-1 flex-col items-center justify-center gap-1 rounded-xl border border-white/10 bg-white/[0.06] py-2.5 text-blue-500 transition-all active:scale-95"
         >
           <Phone size={18} strokeWidth={2.2} />
 
