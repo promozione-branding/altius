@@ -77,7 +77,7 @@ export default function Page() {
             <div className="flex-1 min-w-0">
 
                 {/* Mobile Header */}
-                <header className="sticky top-0 z-30 flex h-16 items-center justify-between border-b border-gray-200 bg-white px-4 md:justify-end">
+                {/* <header className="sticky top-0 z-30 flex h-16 items-center justify-between border-b border-gray-200 bg-white px-4 md:justify-end">
 
                     <button
                         type="button"
@@ -91,7 +91,7 @@ export default function Page() {
                         )}
                     </button>
 
-                </header>
+                </header> */}
 
                 {/* Content */}
                 <main className="p-4 sm:p-6 lg:p-8">
@@ -270,7 +270,7 @@ export default function Page() {
                                 </p>
                             </div>
 
-                            <div className="overflow-hidden rounded-xl border border-gray-300">
+                            <div className="rounded-xl border border-gray-300">
 
                                 <JoditEditor
                                     value={content}
