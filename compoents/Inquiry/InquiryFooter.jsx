@@ -162,8 +162,8 @@ export default function InquiryFooter() {
               >
                 <FiPhone size={16} className="shrink-0 text-[#85a30f]" />
                 <span>
-                  <span className="text-white">Customer Care:</span> +91
-                  96501 67709
+                  <span className="text-white">Customer Care:</span> +91 96501
+                  67709
                 </span>
               </a>
 
@@ -174,8 +174,7 @@ export default function InquiryFooter() {
               >
                 <FiPhoneCall size={16} className="shrink-0 text-[#85a30f]" />
                 <span>
-                  <span className="text-white">Landline:</span> +91 11 4570
-                  0658
+                  <span className="text-white">Landline:</span> +91 11 4570 0658
                 </span>
               </a>
 
@@ -186,8 +185,7 @@ export default function InquiryFooter() {
               >
                 <FiSmartphone size={16} className="shrink-0 text-[#85a30f]" />
                 <span>
-                  <span className="text-white">Alternate:</span> +91 99586
-                  59788
+                  <span className="text-white">Alternate:</span> +91 99586 59788
                 </span>
               </a>
 
@@ -196,16 +194,12 @@ export default function InquiryFooter() {
                 <FiMapPin size={16} className="mt-1 shrink-0 text-[#85a30f]" />
 
                 <span>
-                  F-185, Sector-3, DSIISC,
-               
-                  Bawana Industrial Area,
+                  F-185, Sector-3, DSIISC, Bawana Industrial Area,
                   <br />
                   New Delhi, India
                 </span>
               </div>
             </div>
-
-            
           </div>
 
           {/* =================================================
@@ -232,7 +226,6 @@ export default function InquiryFooter() {
                 ["Categories", "#category"],
                 ["Products", "#products"],
                 ["Contact", "#contact"],
-                
               ].map(([label, href]) => (
                 <li key={label}>
                   <Link
@@ -292,6 +285,12 @@ export default function InquiryFooter() {
                 ["LED Slim Panel", "#products"],
                 ["PC Panel", "#products"],
                 ["Outdoor Lights", "#products"],
+                ["Striker", "#products"],
+                ["Bulbs", "#products"],
+                ["Track Light", "#products"],
+                ["Rope Lights", "#products"],
+                ["Rainbow Deep Junction", "#products"],
+                ["Others", "#products"],
               ].map(([label, href]) => (
                 <li key={label}>
                   <Link
@@ -329,8 +328,6 @@ export default function InquiryFooter() {
           {/* =================================================
               SUPPORT
           ================================================= */}
-
-        
         </div>
 
         {/* =================================================

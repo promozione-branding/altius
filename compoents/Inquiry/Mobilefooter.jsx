@@ -7,48 +7,48 @@ import { FaWhatsapp } from "react-icons/fa";
 import PopupForm from "../PopupForm";
 
 export default function Mobilefooter() {
-    const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-[9999] block  sm:hidden">
       {/* Floating Footer */}
-      <div className="mx-auto flex max-w-md items-center gap-2  border border-white/10 bg-[#11150e]/95 p-2 shadow-[0_-8px_35px_rgba(0,0,0,0.18)] backdrop-blur-xl">
+      <div className="mx-auto flex max-w-md items-center gap-2  border border-white/10 bg-[#11150e]/95 p-1 shadow-[0_-8px_35px_rgba(0,0,0,0.18)] backdrop-blur-xl">
         {/* Call */}
         <a
-           href="tel:+919650167709"
-          className="flex flex-1 flex-col items-center justify-center gap-1 rounded-xl border border-white/10 bg-white py-2.5 text-blue-500 transition-all active:scale-95"
+          href="tel:+919650167709"
+          className="flex flex-1 flex-col items-center justify-center gap-1 rounded-xl border border-white/10 bg-white py-1.5 text-blue-500 transition-all active:scale-95"
         >
           <Phone size={23} strokeWidth={2.2} />
 
-          <span className="text-[10px] font-semibold">Call</span>
+          <span className="text-[13px] font-semibold">Call</span>
         </a>
 
         {/* Get Quote */}
         <button
-          onClick={()=>{
-              setOpen(true)
-            }}
-          className="flex flex-1 flex-col items-center justify-center gap-1 rounded-xl bg-[#85a30f] py-2.5 text-white shadow-lg shadow-[#85a30f]/20 transition-all active:scale-95"
+          onClick={() => {
+            setOpen(true);
+          }}
+          className="flex flex-1 flex-col items-center justify-center gap-1 rounded-xl bg-[#85a30f] py-1.5 text-white shadow-lg shadow-[#85a30f]/20 transition-all active:scale-95"
         >
           <FileText size={23} strokeWidth={2.2} />
 
-          <span className="text-[10px] font-bold">Get Quote</span>
+          <span className="text-[13px] font-bold">Get Quote</span>
         </button>
 
         {/* WhatsApp */}
         <a
-           href="https://wa.link/jav0i1"
+          href="https://wa.link/jav0i1"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-1 flex-col items-center justify-center gap-1 rounded-xl border border-[#25D366]/30 bg-white py-2.5 text-green-500 transition-all active:scale-95"
+          className="flex flex-1 flex-col items-center justify-center gap-1 rounded-xl border border-[#25D366]/30 bg-white py-1.5 text-green-500 transition-all active:scale-95"
         >
           <FaWhatsapp size={23} />
 
-          <span className="text-[10px] font-semibold">WhatsApp</span>
+          <span className="text-[13px] font-bold">WhatsApp</span>
         </a>
       </div>
 
-       {open && <PopupForm isOpen={open} onClose={() => setOpen(false)} />}
+      {open && <PopupForm isOpen={open} onClose={() => setOpen(false)} />}
     </div>
   );
 }

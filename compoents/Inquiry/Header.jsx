@@ -74,7 +74,7 @@ export default function Header() {
 
             <button
               onClick={() => setOpen(true)}
-              className="group flex items-center gap-2 border border-[#85a30f] px-4 py-3 text-[13px] font-semibold text-white transition-all duration-300 hover:bg-[#85a30f] hover:text-black sm:px-5 sm:py-3 lg:px-6 lg:text-[15px]"
+              className="group flex items-center gap-2 border border-[#85a30f] px-4 py-3 text-[13px] font-bold text-white transition-all duration-300 hover:bg-[#85a30f] hover:text-black sm:px-5 sm:py-3 lg:px-6 lg:text-[15px]"
             >
               <span>Get a Quote</span>
 
@@ -85,8 +85,8 @@ export default function Header() {
               />
             </button>
 
-             <Link className="flex border border-green-500 p-2.5  gap-2" href="https://wa.link/jav0i1">
-            <span className="text-green-500 hidden md:block">WhatsApp</span> <FaWhatsapp size={22} className="text-green-500 " />
+             <Link className="flex border bg-white border-green-500 p-2.5  gap-2" href="https://wa.link/jav0i1">
+            <span className="text-green-500 font-bold hidden md:block">WhatsApp</span> <FaWhatsapp size={22} className="text-green-500 " />
 
             </Link>
           </div>

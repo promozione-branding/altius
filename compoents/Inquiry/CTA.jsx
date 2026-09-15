@@ -31,6 +31,13 @@ export default function CTA() {
           <div className="grid w-full grid-cols-2 gap-2.5 sm:w-auto sm:flex sm:flex-row">
 
             {/* Get Quote */}
+            <a
+              href="tel:+919650167709"
+              className="inline-flex min-h-10 items-center justify-center gap-2 rounded-md border border-white/25 bg-blue-500 px-4 py-2 text-xs font-semibold text-white transition-all duration-200 hover:border-yellow-400/60 hover:bg-white/10 sm:px-5 sm:text-sm"
+            >
+              <Phone className="h-5 w-5" />
+              Call Now
+            </a>
             <button
               onClick={() => setOpen(true)}
               className="inline-flex min-h-10 items-center justify-center rounded-md bg-yellow-400 px-4 py-2 text-xs font-bold text-black shadow-sm transition-all duration-200 hover:bg-yellow-300 hover:shadow-yellow-400/20 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-[#07120d] sm:px-5 sm:text-sm"
@@ -38,21 +45,14 @@ export default function CTA() {
               Get a Quote
             </button>
 
-            {/* Call */}
-            <a
-              href="tel:+919650167709"
-              className="inline-flex min-h-10 items-center justify-center gap-2 rounded-md border border-white/25 bg-white/5 px-4 py-2 text-xs font-semibold text-white transition-all duration-200 hover:border-yellow-400/60 hover:bg-white/10 sm:px-5 sm:text-sm"
-            >
-              <Phone className="h-5 w-5" />
-              Call Now
-            </a>
+           
 
             {/* WhatsApp */}
             <a
               href="https://wa.link/jav0i1"
               target="_blank"
               rel="noopener noreferrer"
-              className="col-span-2 inline-flex min-h-10 w-full items-center justify-center gap-2 rounded-md border border-white/25 bg-white/5 px-5 py-2 text-xs font-semibold text-white transition-all duration-200 hover:border-yellow-400/60 hover:bg-white/10 sm:col-span-1 sm:w-auto sm:text-sm"
+              className="col-span-2 inline-flex min-h-10  w-full items-center justify-center gap-2 rounded-md border border-white/25 bg-green-500 px-5 py-2 text-xs font-semibold text-white transition-all duration-200 hover:border-yellow-400/60 hover:bg-white/10 sm:col-span-1 sm:w-auto sm:text-sm"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -21,7 +21,7 @@ export default function Hero() {
         />
 
         {/* DARK OVERLAY */}
-        <div className="md:hidden absolute inset-0 bg-black/60" />
+        <div className="md:hidden absolute inset-0 bg-black/35" />
 
         {/* CONTENT */}
         <div className="relative z-10 mx-auto flex min-h-[420px] w-full max-w-[1400px] items-center px-5 py-12 sm:min-h-[580px] sm:px-8  lg:px-12">
@@ -33,11 +33,11 @@ export default function Hero() {
 
             {/* MAIN HEADING */}
             <h1 className="max-w-[560px] text-3xl font-extrabold leading-[0.98] tracking-tight text-white sm:text-5xl md:text-5xl ">
-              LED Lighting Manufacturer & 
+              LED Lighting Manufacturer 
+             
+              & Supplier for Commercial 
               <br />
-              Supplier for Commercial
-              <br />
-              <span className="text-[#b6d52a]">Industrial Needs.</span>
+              <span className="text-[#b6d52a]">& Industrial Needs. </span>
             </h1>
 
             {/* DESCRIPTION */}
@@ -53,7 +53,7 @@ export default function Hero() {
               setOpen(true)
             }}
                
-                className="group inline-flex h-11 items-center justify-center gap-2 rounded-[3px] bg-[#85a30f] px-6 text-xs font-bold uppercase tracking-wide text-white transition-all duration-300 hover:bg-[#9dbb16] sm:h-12"
+                className="group inline-flex h-11 items-center justify-center gap-2 rounded-[3px] bg-[#85a30f] px-6 text-xs font-extrabold uppercase tracking-wide text-white transition-all duration-300 hover:bg-[#9dbb16] sm:h-12"
               >
                 Get a Quote
                 <ArrowRight
@@ -65,7 +65,7 @@ export default function Hero() {
               {/* CALL NOW */}
               <a
                 href="tel:+919650167709"
-                className="inline-flex h-11 items-center justify-center gap-2 rounded-[3px] border border-white/60 bg-black/30 px-6 text-xs font-bold uppercase tracking-wide text-white backdrop-blur-sm transition-all duration-300 hover:bg-white hover:text-black sm:h-12"
+                className="inline-flex h-11 items-center justify-center gap-2 rounded-[3px] border border-white/60 bg-black/30 px-6 text-xs font-extrabold uppercase tracking-wide text-white backdrop-blur-sm transition-all duration-300 hover:bg-white hover:text-black sm:h-12"
               >
                 <Phone size={15} />
                 Call Now
