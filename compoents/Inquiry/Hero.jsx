@@ -21,7 +21,7 @@ export default function Hero() {
         />
 
         {/* DARK OVERLAY */}
-        <div className="absolute inset-0 bg-black/10" />
+        <div className="md:hidden absolute inset-0 bg-black/60" />
 
         {/* CONTENT */}
         <div className="relative z-10 mx-auto flex min-h-[420px] w-full max-w-[1400px] items-center px-5 py-12 sm:min-h-[580px] sm:px-8  lg:px-12">
