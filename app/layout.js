@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "#1 LED Light Manufacturer in India | Elstrong",
+  title: "LED Light Manufacturer in India | Elstrong",
   description:
     "Elstrong is a trusted LED light manufacturer offering energy-efficient, reliable, and modern LED lighting solutions for homes, offices, commercial spaces, and more.",
 };
