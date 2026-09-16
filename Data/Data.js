@@ -901,7 +901,7 @@ export const categories = [
     metaDesc:
       "Discover Elstrong LED slim panel lights with sleek designs and efficient illumination, ideal for homes, offices, retail spaces, and modern commercial interiors.",
     image: "/slimsquarepanel.webp",
-    image2: "/  LEDslimpanelcombine.webp",
+    image2: "/LEDslimpanelcombine.webp",
     hoverImage: "/product/slimsquarepanel2.webp",
 
     description:
@@ -4272,7 +4272,7 @@ export const categories = [
     metaTitle: " Hut Bul Bul Bell | Unique Decorative Lighting | Elstrong",
     metaDesc:
       "Explore Elstrong’s Hut Bul Bul Bell lighting range, designed to add character and visual appeal to modern interiors with distinctive decorative lighting solutions.",
-    image: "product/flood1.webp",
+    image: "/product/flood1.webp",
     image2: "/product/flood3.webp",
     hoverImage: "/product/flood3.webp",
 
@@ -5028,7 +5028,7 @@ export const categories = [
     metaTitle: "LED Surface Panel| Unique Decorative Lighting | Elstrong",
     metaDesc:
       "Explore Elstrong’s LED Surface Panel lighting range, designed to add character and visual appeal to modern interiors with distinctive decorative lighting solutions.",
-    image: "product/surfaceSq1.webp",
+    image: "/product/surfaceSq1.webp",
     image2: "/product/surfaceSq1.webp",
     hoverImage: "/product/surfaceSq3.webp",
 
@@ -5317,7 +5317,7 @@ export const categories = [
     metaTitle: "PC Surface Panel | Unique Decorative Lighting | Elstrong",
     metaDesc:
       "Explore Elstrong’s PC Surface Panel lighting range, designed to add character and visual appeal to modern interiors with distinctive decorative lighting solutions.",
-    image: "product/glory1.webp",
+    image: "/product/glory1.webp",
     image2: "/product/glory2.webp",
     hoverImage: "/product/glory3.webp",
 
