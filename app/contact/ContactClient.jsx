@@ -332,7 +332,7 @@ export default function ContactClient() {
                       className="w-full border-0 border-b border-black bg-transparent px-0 py-3 text-sm text-black outline-none transition-colors duration-300 focus:border-[#85a30f] disabled:opacity-60"
                     >
                       <option value="" disabled>
-                        Select project type
+                        Select product type
                       </option>
 
                      <option value="Concealed Lights">
