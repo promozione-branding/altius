@@ -6,22 +6,32 @@ import { FaStar } from "react-icons/fa";
 
 const testimonials = [
   {
-    text: "The LED lights have completely transformed our interiors. The brightness is excellent, the design feels premium, and the energy savings are noticeable.",
+    heading: "Reliable Lighting Solutions",
+    text: "ELSTRONG provided us with a reliable LED lighting solution for our project. The product quality, professional communication, and overall service experience were satisfactory.",
     name: "Rajiv Mehta",
-    role: "Homeowner",
-    image:"/testi.webp"
+    role: "Project Manager",
+    image: "/testi.webp",
   },
   {
-    text: "Excellent lighting quality with a clean, modern finish. The lights provide consistent illumination and have worked perfectly for our commercial space.",
+    heading: "Quality LED Products",
+    text: "We were looking for dependable LED lighting products for our commercial requirements. The ELSTRONG team understood our needs and helped us select suitable lighting solutions.",
     name: "Priya Sharma",
     role: "Interior Designer",
-    image:"/testi.webp"
-    },
+    image: "/testi.webp",
+  },
   {
-    text: "We upgraded our showroom with these LED lights and the difference is impressive. The lighting makes every product stand out while keeping energy consumption low.",
+    heading: "Professional Service",
+    text: "Our experience with ELSTRONG was smooth and professional. The team was responsive to our requirements and provided useful guidance regarding the lighting products.",
     name: "Arjun Kapoor",
     role: "Business Owner",
-        image:"/testi.webp"
+    image: "/testi.webp",
+  },
+  {
+    heading: "Modern Lighting Solutions",
+    text: "ELSTRONG offers a good range of modern LED lighting solutions. The products were suitable for our application, and the team provided helpful support throughout the process.",
+    name: "Amit Verma",
+    role: "Architect",
+    image: "/testi.webp",
   },
 ];
 
@@ -31,7 +41,7 @@ export default function Testimonials() {
   const [isMobile, setIsMobile] = useState(false);
 
   /*
-   * Detect mobile
+   * Detect mobile/tablet
    */
   useEffect(() => {
     const checkMobile = () => {
@@ -97,7 +107,6 @@ export default function Testimonials() {
   return (
     <section className="w-full overflow-hidden bg-white py-6 md:py-16">
       <div className="mx-auto max-w-[1280px] px-5 sm:px-8 lg:px-10">
-
         {/* ================= MAIN AREA ================= */}
         <div className="relative grid grid-cols-1 lg:grid-cols-[48%_52%]">
 
@@ -112,6 +121,7 @@ export default function Testimonials() {
                 className="object-cover"
               />
 
+              {/* Bottom Shape */}
               <div className="absolute bottom-0 right-0 h-[38px] w-[38px] rounded-tl-[30px] bg-white" />
 
               <div className="absolute bottom-0 right-0 h-[17px] w-[17px] rounded-full bg-white" />
@@ -160,7 +170,7 @@ export default function Testimonials() {
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
           >
-            {/* TRACK */}
+            {/* ================= TRACK ================= */}
             <div
               className="
                 flex
@@ -188,6 +198,7 @@ export default function Testimonials() {
                     lg:px-2
                   "
                 >
+                  {/* ================= CARD ================= */}
                   <div
                     className="
                       relative
@@ -206,7 +217,7 @@ export default function Testimonials() {
                     "
                   >
 
-                    {/* Stars */}
+                    {/* ================= STARS ================= */}
                     <div className="mb-5 flex gap-1">
                       {[...Array(5)].map((_, i) => (
                         <FaStar
@@ -217,12 +228,17 @@ export default function Testimonials() {
                       ))}
                     </div>
 
-                    {/* Testimonial */}
-                    <p className="max-w-[280px] text-[14px] font-medium italic leading-[1.4] tracking-[-0.02em] text-black sm:text-[15px]">
-                      {testimonial.text}
+                    {/* ================= TESTIMONIAL HEADING ================= */}
+                    <h3 className="mb-3 text-[16px] font-semibold leading-tight tracking-[-0.02em] text-black sm:text-[17px]">
+                      {testimonial.heading}
+                    </h3>
+
+                    {/* ================= TESTIMONIAL TEXT ================= */}
+                    <p className="max-w-[280px] text-[13px] font-medium italic leading-[1.5] tracking-[-0.01em] text-gray-700 sm:text-[14px]">
+                      “{testimonial.text}”
                     </p>
 
-                    {/* User */}
+                    {/* ================= USER ================= */}
                     <div className="mt-auto flex items-center gap-3 pt-6">
                       <Image
                         src={testimonial.image}
@@ -243,7 +259,7 @@ export default function Testimonials() {
                       </div>
                     </div>
 
-                    {/* Quote */}
+                    {/* ================= QUOTE ================= */}
                     <span
                       className="
                         absolute
