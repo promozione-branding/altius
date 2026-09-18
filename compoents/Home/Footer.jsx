@@ -274,8 +274,9 @@ export default function Footer() {
                 <FiLinkedin size={16} />
               </a>
 
-              <a
-                href="#"
+               */}
+               <a
+                href="https://www.youtube.com/@AltiusLighting"
                 aria-label="YouTube"
                 className="
                   flex
@@ -294,7 +295,7 @@ export default function Footer() {
                 "
               >
                 <FiYoutube size={16} />
-              </a> */}
+              </a>
             </div>
           </div>
 

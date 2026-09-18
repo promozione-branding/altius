@@ -319,7 +319,7 @@ export default function ContactClient() {
                       htmlFor="contact-product"
                       className="mb-2 block text-xs font-semibold uppercase tracking-[0.15em] text-black"
                     >
-                      Project Type *
+                      Product Type *
                     </label>
 
                     <select
@@ -335,25 +335,27 @@ export default function ContactClient() {
                         Select project type
                       </option>
 
-                      <option value="Residential Lighting">
-                        Residential Lighting
+                     <option value="Concealed Lights">
+                        Concealed Lights
                       </option>
-
-                      <option value="Commercial Lighting">
-                        Commercial Lighting
+                      <option value="COB Lens Model">
+                        COB Lens Model
                       </option>
-
-                      <option value="Architectural Lighting">
-                        Architectural Lighting
+                      <option value="LED Slim Panel">
+                        LED Slim Panel
                       </option>
-
-                      <option value="Outdoor Lighting">
-                        Outdoor Lighting
+                      <option value="PC Panel">PC Panel</option>
+                      <option value="Outdoor Lights">
+                        Outdoor Lights
                       </option>
-
-                      <option value="Custom Lighting Solution">
-                        Custom Lighting Solution
+                      <option value="Striker">Striker</option>
+                      <option value="Bulbs">Bulbs</option>
+                      <option value="Track Light">Track Light</option>
+                      <option value="Rope Lights">Rope Lights</option>
+                      <option value="Rainbow Deep Junction">
+                        Rainbow Deep Junction
                       </option>
+                      <option value="Others">Others</option>
                     </select>
                   </div>
 
