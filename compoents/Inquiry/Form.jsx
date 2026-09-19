@@ -215,270 +215,437 @@ const Form = ({ onClose }) => {
 
             {/* RIGHT FORM */}
             <div className="relative p-2 sm:p-6 lg:p-8">
-              <div className="rounded-2xl border border-gray-200/80 bg-white p-5 shadow-xl shadow-gray-200/40 sm:p-7">
-                <div className="mb-6">
-                  <h3 className="text-lg md:text-xl font-bold text-gray-900">
-                    Tell Us What You Need
-                  </h3>
-                  <p className="mt-1 text-sm text-gray-500">
-                    Fill in the details and we'll get back to you.
-                  </p>
-                </div>
+  {/* FORM CARD */}
+  <div
+    className="
+      w-full
+      lg:max-w-xl
+      lg:ml-auto
+      rounded-2xl
+      border border-green-500/80
+      bg-white
+      p-5
+      shadow-xl shadow-gray-200/40
+      sm:p-7
+    "
+  >
+    <div className="mb-3 md:mb-6">
+      <h3 className="text-lg font-bold text-gray-900 md:text-xl">
+        Tell Us What You Need
+      </h3>
 
-                <form onSubmit={handleSubmit} noValidate>
-                  <div className="grid gap-4 sm:grid-cols-2">
-                    {/* NAME */}
-                    <div>
-                      <label
-                        htmlFor="name"
-                        className="mb-1.5 block text-sm font-semibold text-gray-700"
-                      >
-                        Full Name <span className="text-red-500">*</span>
-                      </label>
+      <p className="mt-1 hidden text-sm text-gray-500 md:block">
+        Fill in the details and we'll get back to you.
+      </p>
+    </div>
 
-                      <input
-                        id="name"
-                        name="name"
-                        type="text"
-                        value={formData.name}
-                        onChange={handleChange}
-                        placeholder="Enter your name"
-                        autoComplete="name"
-                        disabled={loading}
-                        className="h-11 w-full rounded-xl border border-gray-200 bg-gray-50 px-4 text-sm text-gray-900 outline-none transition placeholder:text-gray-400 hover:border-gray-300 focus:border-lime-500 focus:bg-white focus:ring-4 focus:ring-lime-500/10 disabled:cursor-not-allowed disabled:opacity-60"
-                      />
-                    </div>
+    <form onSubmit={handleSubmit} noValidate>
+      <div className="grid gap-4 sm:grid-cols-2">
 
-                    {/* EMAIL */}
-                    <div>
-                      <label
-                        htmlFor="email"
-                        className="mb-1.5 block text-sm font-semibold text-gray-700"
-                      >
-                        Email{" "}
-                        <span className="font-normal text-gray-400">
-                          (Optional)
-                        </span>
-                      </label>
+        {/* NAME */}
+        <div>
+          <label
+            htmlFor="name"
+            className="mb-1 block text-sm font-semibold text-gray-700"
+          >
+            Full Name <span className="text-red-500">*</span>
+          </label>
 
-                      <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        placeholder="Enter your email"
-                        autoComplete="email"
-                        disabled={loading}
-                        className="h-11 w-full rounded-xl border border-gray-200 bg-gray-50 px-4 text-sm text-gray-900 outline-none transition placeholder:text-gray-400 hover:border-gray-300 focus:border-lime-500 focus:bg-white focus:ring-4 focus:ring-lime-500/10 disabled:cursor-not-allowed disabled:opacity-60"
-                      />
-                    </div>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            value={formData.name}
+            onChange={handleChange}
+            placeholder="Enter your name"
+            autoComplete="name"
+            disabled={loading}
+            className="
+              h-11
+              w-full
+              rounded-xl
+              border border-gray-200
+              bg-gray-50
+              px-4
+              text-sm
+              text-gray-900
+              outline-none
+              transition
+              placeholder:text-gray-400
+              hover:border-gray-300
+              focus:border-lime-500
+              focus:bg-white
+              focus:ring-4
+              focus:ring-lime-500/10
+              disabled:cursor-not-allowed
+              disabled:opacity-60
+            "
+          />
+        </div>
 
-                    {/* PHONE */}
-                    <div>
-                      <label
-                        htmlFor="phone"
-                        className="mb-1.5 block text-sm font-semibold text-gray-700"
-                      >
-                        Mobile Number <span className="text-red-500">*</span>
-                      </label>
+        {/* EMAIL - OPTIONAL */}
+        {/* 
+        <div>
+          <label
+            htmlFor="email"
+            className="mb-1.5 block text-sm font-semibold text-gray-700"
+          >
+            Email{" "}
+            <span className="font-normal text-gray-400">
+              (Optional)
+            </span>
+          </label>
 
-                      <input
-                        id="phone"
-                        name="phone"
-                        type="tel"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        placeholder="Enter 10 digit number"
-                        inputMode="numeric"
-                        autoComplete="tel"
-                        maxLength={10}
-                        disabled={loading}
-                        className="h-11 w-full rounded-xl border border-gray-200 bg-gray-50 px-4 text-sm text-gray-900 outline-none transition placeholder:text-gray-400 hover:border-gray-300 focus:border-lime-500 focus:bg-white focus:ring-4 focus:ring-lime-500/10 disabled:cursor-not-allowed disabled:opacity-60"
-                      />
+          <input
+            id="email"
+            name="email"
+            type="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="Enter your email"
+            autoComplete="email"
+            disabled={loading}
+            className="
+              h-11
+              w-full
+              rounded-xl
+              border border-gray-200
+              bg-gray-50
+              px-4
+              text-sm
+              text-gray-900
+              outline-none
+              transition
+              placeholder:text-gray-400
+              hover:border-gray-300
+              focus:border-lime-500
+              focus:bg-white
+              focus:ring-4
+              focus:ring-lime-500/10
+              disabled:cursor-not-allowed
+              disabled:opacity-60
+            "
+          />
+        </div>
+        */}
 
-                      <p className="mt-1 text-[11px] text-gray-400">
-                        Enter any 10-digit mobile number
-                      </p>
-                    </div>
+        {/* PHONE */}
+        <div>
+          <label
+            htmlFor="phone"
+            className="mb-1 block text-sm font-semibold text-gray-700"
+          >
+            Mobile Number <span className="text-red-500">*</span>
+          </label>
 
-                    {/* PRODUCT */}
-                    <div>
-                      <label
-                        htmlFor="product"
-                        className="mb-1.5 block text-sm font-semibold text-gray-700"
-                      >
-                        Select Product <span className="text-red-500">*</span>
-                      </label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            value={formData.phone}
+            onChange={handleChange}
+            placeholder="Enter 10 digit number"
+            inputMode="numeric"
+            autoComplete="tel"
+            maxLength={10}
+            disabled={loading}
+            className="
+              h-11
+              w-full
+              rounded-xl
+              border border-gray-200
+              bg-gray-50
+              px-4
+              text-sm
+              text-gray-900
+              outline-none
+              transition
+              placeholder:text-gray-400
+              hover:border-gray-300
+              focus:border-lime-500
+              focus:bg-white
+              focus:ring-4
+              focus:ring-lime-500/10
+              disabled:cursor-not-allowed
+              disabled:opacity-60
+            "
+          />
 
-                      <div className="relative">
-                        <select
-                          id="product"
-                          name="product"
-                          value={formData.product}
-                          onChange={handleChange}
-                          disabled={loading}
-                          className="h-11 w-full appearance-none rounded-xl border border-gray-200 bg-gray-50 px-4 pr-10 text-sm text-gray-900 outline-none transition hover:border-gray-300 focus:border-lime-500 focus:bg-white focus:ring-4 focus:ring-lime-500/10 disabled:cursor-not-allowed disabled:opacity-60"
-                        >
-                          <option value="">Select a product</option>
+          <p className="mt-1 text-[11px] text-gray-400">
+            Enter any 10-digit mobile number
+          </p>
+        </div>
 
-                          {products.map((product) => (
-                            <option key={product} value={product}>
-                              {product}
-                            </option>
-                          ))}
-                        </select>
+        {/* PRODUCT */}
+        <div className="sm:col-span-2">
+          <label
+            htmlFor="product"
+            className="mb-1 block text-sm font-semibold text-gray-700"
+          >
+            Select Product <span className="text-red-500">*</span>
+          </label>
 
-                        <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-gray-400">
-                          <svg
-                            width="16"
-                            height="16"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                          >
-                            <path d="m6 9 6 6 6-6" />
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
+          <div className="relative">
+            <select
+              id="product"
+              name="product"
+              value={formData.product}
+              onChange={handleChange}
+              disabled={loading}
+              className="
+                h-11
+                w-full
+                appearance-none
+                rounded-xl
+                border border-gray-200
+                bg-gray-50
+                px-4
+                pr-10
+                text-sm
+                text-gray-900
+                outline-none
+                transition
+                hover:border-gray-300
+                focus:border-lime-500
+                focus:bg-white
+                focus:ring-4
+                focus:ring-lime-500/10
+                disabled:cursor-not-allowed
+                disabled:opacity-60
+              "
+            >
+              <option value="">Select a product</option>
 
-                    {/* PLACE */}
-                    <div className="sm:col-span-2">
-                      <label
-                        htmlFor="place"
-                        className="mb-1.5 block text-sm font-semibold text-gray-700"
-                      >
-                        Place <span className="text-red-500">*</span>
-                      </label>
+              {products.map((product) => (
+                <option key={product} value={product}>
+                  {product}
+                </option>
+              ))}
+            </select>
 
-                      <input
-                        id="place"
-                        name="place"
-                        type="text"
-                        value={formData.place}
-                        onChange={handleChange}
-                        placeholder="Enter your city / location"
-                        autoComplete="address-level2"
-                        disabled={loading}
-                        className="h-11 w-full rounded-xl border border-gray-200 bg-gray-50 px-4 text-sm text-gray-900 outline-none transition placeholder:text-gray-400 hover:border-gray-300 focus:border-lime-500 focus:bg-white focus:ring-4 focus:ring-lime-500/10 disabled:cursor-not-allowed disabled:opacity-60"
-                      />
-                    </div>
-
-                    {/* MESSAGE */}
-                    <div className="sm:col-span-2">
-                      <label
-                        htmlFor="message"
-                        className="mb-1.5 block text-sm font-semibold text-gray-700"
-                      >
-                        Message / Requirement{" "}
-                        <span className="text-red-500">*</span>
-                      </label>
-
-                      <textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        placeholder="Tell us about your lighting requirement..."
-                        rows={4}
-                        disabled={loading}
-                        className="w-full resize-none rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-900 outline-none transition placeholder:text-gray-400 hover:border-gray-300 focus:border-lime-500 focus:bg-white focus:ring-4 focus:ring-lime-500/10 disabled:cursor-not-allowed disabled:opacity-60"
-                      />
-                    </div>
-                  </div>
-
-                  {/* SUBMIT */}
-                  <button
-                    type="submit"
-                    disabled={loading}
-                    className="mt-5 flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-lime-600 px-5 text-sm font-bold text-white shadow-lg shadow-lime-600/20 transition-all hover:-translate-y-0.5 hover:bg-lime-700 hover:shadow-xl hover:shadow-lime-600/25 active:translate-y-0 disabled:cursor-not-allowed disabled:opacity-70"
-                  >
-                    {loading ? (
-                      <>
-                        <svg
-                          className="h-5 w-5 animate-spin"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                        >
-                          <circle
-                            cx="12"
-                            cy="12"
-                            r="9"
-                            stroke="currentColor"
-                            strokeWidth="3"
-                            className="opacity-30"
-                          />
-                          <path
-                            d="M21 12a9 9 0 0 0-9-9"
-                            stroke="currentColor"
-                            strokeWidth="3"
-                            strokeLinecap="round"
-                          />
-                        </svg>
-                        Sending Enquiry...
-                      </>
-                    ) : (
-                      <>
-                        Get Free Quote
-                        <svg
-                          width="18"
-                          height="18"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                        >
-                          <path d="M5 12h14" />
-                          <path d="m13 6 6 6-6 6" />
-                        </svg>
-                      </>
-                    )}
-                  </button>
-
-                  {/* SUCCESS / ERROR MESSAGE */}
-                  <div aria-live="polite" className="mt-3 min-h-[44px]">
-                    {success && (
-                      <div className="flex items-start gap-3 rounded-xl border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-700">
-                        <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green-500 text-xs font-bold text-white">
-                          ✓
-                        </div>
-
-                        <div>
-                          <p className="font-semibold">
-                            Request submitted successfully!
-                          </p>
-                          <p className="mt-0.5 text-xs text-green-600">
-                            Thank you. Our team will contact you shortly.
-                          </p>
-                        </div>
-                      </div>
-                    )}
-
-                    {error && (
-                      <div className="flex items-start gap-3 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
-                        <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-red-500 text-xs font-bold text-white">
-                          !
-                        </div>
-
-                        <div>
-                          <p className="font-semibold">
-                            Unable to submit your request
-                          </p>
-                          <p className="mt-0.5 text-xs text-red-600">{error}</p>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-
-                  <p className="mt-2 text-center text-[11px] text-gray-400">
-                    Your information is safe with us and will only be used to
-                    respond to your enquiry.
-                  </p>
-                </form>
-              </div>
+            <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-gray-400">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path d="m6 9 6 6 6-6" />
+              </svg>
             </div>
+          </div>
+        </div>
+
+        {/* PLACE */}
+        <div className="sm:col-span-2">
+          <label
+            htmlFor="place"
+            className="mb-1 block text-sm font-semibold text-gray-700"
+          >
+            Place <span className="text-red-500">*</span>
+          </label>
+
+          <input
+            id="place"
+            name="place"
+            type="text"
+            value={formData.place}
+            onChange={handleChange}
+            placeholder="Enter your city / location"
+            autoComplete="address-level2"
+            disabled={loading}
+            className="
+              h-11
+              w-full
+              rounded-xl
+              border border-gray-200
+              bg-gray-50
+              px-4
+              text-sm
+              text-gray-900
+              outline-none
+              transition
+              placeholder:text-gray-400
+              hover:border-gray-300
+              focus:border-lime-500
+              focus:bg-white
+              focus:ring-4
+              focus:ring-lime-500/10
+              disabled:cursor-not-allowed
+              disabled:opacity-60
+            "
+          />
+        </div>
+
+        {/* MESSAGE */}
+        <div className="sm:col-span-2">
+          <label
+            htmlFor="message"
+            className="mb-1 block text-sm font-semibold text-gray-700"
+          >
+            Message / Requirement{" "}
+            <span className="text-red-500">*</span>
+          </label>
+
+          <textarea
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            placeholder="Tell us about your lighting requirement..."
+            rows={1}
+            disabled={loading}
+            className="
+              
+              w-full
+              resize-none
+              rounded-xl
+              border border-gray-200
+              bg-gray-50
+              px-4
+              py-3
+              text-sm
+              text-gray-900
+              outline-none
+              transition
+              placeholder:text-gray-400
+              hover:border-gray-300
+              focus:border-lime-500
+              focus:bg-white
+              focus:ring-4
+              focus:ring-lime-500/10
+              disabled:cursor-not-allowed
+              disabled:opacity-60
+              md:h-[110px]
+            "
+          />
+        </div>
+      </div>
+
+      {/* SUBMIT BUTTON */}
+      <button
+        type="submit"
+        disabled={loading}
+        className="
+          mt-5
+          flex
+          h-12
+          w-full
+          items-center
+          justify-center
+          gap-2
+          rounded-xl
+          bg-lime-600
+          px-5
+          text-sm
+          font-bold
+          text-white
+          shadow-lg
+          shadow-lime-600/20
+          transition-all
+          hover:-translate-y-0.5
+          hover:bg-lime-700
+          hover:shadow-xl
+          hover:shadow-lime-600/25
+          active:translate-y-0
+          disabled:cursor-not-allowed
+          disabled:opacity-70
+        "
+      >
+        {loading ? (
+          <>
+            <svg
+              className="h-5 w-5 animate-spin"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="9"
+                stroke="currentColor"
+                strokeWidth="3"
+                className="opacity-30"
+              />
+
+              <path
+                d="M21 12a9 9 0 0 0-9-9"
+                stroke="currentColor"
+                strokeWidth="3"
+                strokeLinecap="round"
+              />
+            </svg>
+
+            Sending Enquiry...
+          </>
+        ) : (
+          <>
+            Get Free Quote
+
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
+              <path d="M5 12h14" />
+              <path d="m13 6 6 6-6 6" />
+            </svg>
+          </>
+        )}
+      </button>
+
+      {/* SUCCESS / ERROR MESSAGE */}
+      <div aria-live="polite" className="mt-3">
+        {success && (
+          <div className="flex items-start gap-3 rounded-xl border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-700">
+            <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green-500 text-xs font-bold text-white">
+              ✓
+            </div>
+
+            <div>
+              <p className="font-semibold">
+                Request submitted successfully!
+              </p>
+
+              <p className="mt-0.5 text-xs text-green-600">
+                Thank you. Our team will contact you shortly.
+              </p>
+            </div>
+          </div>
+        )}
+
+        {error && (
+          <div className="flex items-start gap-3 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+            <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-red-500 text-xs font-bold text-white">
+              !
+            </div>
+
+            <div>
+              <p className="font-semibold">
+                Unable to submit your request
+              </p>
+
+              <p className="mt-0.5 text-xs text-red-600">
+                {error}
+              </p>
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* PRIVACY TEXT */}
+      <p className="mt-2 text-center text-[11px] text-gray-400">
+        Your information is safe with us and will only be used to
+        respond to your enquiry.
+      </p>
+    </form>
+  </div>
+</div>
           </div>
         </div>
       </div>

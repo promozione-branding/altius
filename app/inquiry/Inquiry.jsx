@@ -20,9 +20,9 @@ export default function Inquiry() {
       <Stats />
       <Category />
       <About/>
+      <Form />
       <Product />
       <Whychoose />
-      <Form />
       <CTA />
       <InquiryFooter />
     </>
