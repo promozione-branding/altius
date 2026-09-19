@@ -1,27 +1,31 @@
+
 "use client";
 
 import React from "react";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 
+import "swiper/css";
 
 const reasons = [
   {
     icon: (
-       <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={218}
-    height={218}
-    fill="currentColor"
-    viewBox="0 0 24 24"
-  
-  >
-    <g fill="currentColor">
-      <path d="m17.578 4.432-2-1.05C13.822 2.461 12.944 2 12 2s-1.822.46-3.578 1.382l-2 1.05c-1.773.93-2.816 1.478-3.462 2.21l9.04 4.52 9.04-4.52c-.646-.732-1.688-1.28-3.462-2.21ZM21.748 7.964l-8.998 4.5v9.44c.718-.179 1.535-.607 2.828-1.286l2-1.05c2.151-1.129 3.227-1.693 3.825-2.708C22 15.846 22 14.583 22 12.06v-.117c0-1.893 0-3.076-.252-3.978ZM11.25 21.904v-9.44l-8.998-4.5C2 8.866 2 10.05 2 11.941v.117c0 2.525 0 3.788.597 4.802.598 1.015 1.674 1.58 3.825 2.709l2 1.049c1.293.679 2.11 1.107 2.828 1.286Z" />
-    </g>
-  </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={218}
+        height={218}
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <g fill="currentColor">
+          <path d="m17.578 4.432-2-1.05C13.822 2.461 12.944 2 12 2s-1.822.46-3.578 1.382l-2 1.05c-1.773.93-2.816 1.478-3.462 2.21l9.04 4.52 9.04-4.52c-.646-.732-1.688-1.28-3.462-2.21ZM21.748 7.964l-8.998 4.5v9.44c.718-.179 1.535-.607 2.828-1.286l2-1.05c2.151-1.129 3.227-1.693 3.825-2.708C22 15.846 22 14.583 22 12.06v-.117c0-1.893 0-3.076-.252-3.978ZM11.25 21.904v-9.44l-8.998-4.5C2 8.866 2 10.05 2 11.941v.117c0 2.525 0 3.788.597 4.802.598 1.015 1.674 1.58 3.825 2.709l2 1.049c1.293.679 2.11 1.107 2.828 1.286Z" />
+        </g>
+      </svg>
     ),
-title: "Factory Price",
-description: "Best prices on bulk orders.",  },
+    title: "Factory Price",
+    description: "Best prices on bulk orders.",
+  },
 
   {
     icon: (
@@ -35,8 +39,9 @@ description: "Best prices on bulk orders.",  },
         <path d="M255.984 0c-4.75 0-8.625 3.875-8.625 8.625l2.391 53c0 3.453 2.813 6.25 6.234 6.25 3.453 0 6.234-2.797 6.234-6.25l2.406-53c.001-4.75-3.874-8.625-8.64-8.625zM151.719 34.25c-2.391-4.125-7.656-5.547-11.781-3.156s-5.547 7.656-3.172 11.781l28.578 44.703a6.224 6.224 0 0 0 8.516 2.297c2.984-1.734 4.016-5.547 2.281-8.531L151.719 34.25zM111.453 141.484 66.765 112.89c-4.141-2.375-9.422-.953-11.797 3.172-2.391 4.125-.969 9.406 3.156 11.781l47.109 24.422c2.969 1.719 6.797.703 8.516-2.281a6.231 6.231 0 0 0-2.296-8.5zM453.859 336.406l-47.109-24.438a6.218 6.218 0 0 0-8.5 2.281c-1.719 2.969-.703 6.781 2.281 8.516l44.703 28.578c4.125 2.375 9.406.969 11.781-3.156 2.376-4.14.985-9.406-3.156-11.781zM91.734 232.125a6.23 6.23 0 0 0-6.234-6.234l-53-2.406c-4.766 0-8.625 3.875-8.625 8.641s3.859 8.625 8.625 8.625l53-2.391a6.232 6.232 0 0 0 6.234-6.235zM479.484 223.484l-53 2.406c-3.438 0-6.234 2.797-6.234 6.234s2.797 6.234 6.234 6.234l53 2.391c4.766 0 8.641-3.875 8.641-8.625 0-4.765-3.875-8.624-8.641-8.64zM105.234 311.969l-47.109 24.438c-4.125 2.375-5.547 7.656-3.156 11.781 2.375 4.125 7.656 5.531 11.797 3.156l44.688-28.578c2.984-1.734 4-5.547 2.297-8.516a6.238 6.238 0 0 0-8.517-2.281zM406.75 152.266l47.109-24.422c4.141-2.375 5.531-7.656 3.156-11.781s-7.656-5.547-11.781-3.172l-44.703 28.594c-2.984 1.719-4 5.516-2.281 8.5s5.531 3.999 8.5 2.281zM372.063 31.094a8.61 8.61 0 0 0-11.781 3.156l-24.438 47.094a6.227 6.227 0 0 0 2.281 8.531 6.224 6.224 0 0 0 8.516-2.297l28.578-44.703c2.39-4.125.969-9.391-3.156-11.781zM337.859 217.578l-177.5 58.719c-.531.172-1 .453-1.5.672-.781.328-1.547.609-2.266 1.016-.641.344-1.203.766-1.797 1.172-.609.422-1.219.797-1.781 1.281-.578.484-1.094 1.031-1.609 1.563-.484.5-.984.969-1.422 1.516-.453.578-.844 1.203-1.25 1.797-.406.609-.813 1.188-1.141 1.813-.344.625-.578 1.297-.859 1.938-.281.688-.578 1.359-.797 2.078-.219.688-.344 1.422-.484 2.156-.125.688-.297 1.375-.375 2.094-.078.813-.047 1.641-.047 2.484.016.547-.063 1.078-.016 1.656 0 .109.047.219.063.344.078.719.25 1.438.391 2.156.172.781.297 1.594.531 2.359.047.094.047.203.078.313a21.49 21.49 0 0 0 1.25 2.953c.125.25.25.531.406.781a21.195 21.195 0 0 0 1.938 2.984c.281.344.578.641.844.969a22.242 22.242 0 0 0 1.906 1.938c.359.313.719.609 1.094.906a22.51 22.51 0 0 0 2.172 1.516c.391.234.766.469 1.156.688 1.016.531 2.063 1 3.141 1.391.172.047.328.141.484.203 1.281.406 2.609.672 3.953.859.328.047.672.063 1.016.078.641.078 1.297.156 1.969.156.422 0 .828-.063 1.25-.078.203-.031.406.016.625 0 9.313-.766 17.391 2.125 24.719 8.859 4.828 4.453 8.828 10.125 11.938 16.031h-8.875c-9.938 0-17.984 8.063-17.984 18v55.375c0 9.938 8.047 18 17.984 18H213v6.828c-3.594 0-6.516 2.922-6.516 6.531a6.522 6.522 0 0 0 6.516 6.516v6.531c-3.594 0-6.516 2.922-6.516 6.531a6.522 6.522 0 0 0 6.516 6.516v14.047c0 13.047 7.844 14.344 20.891 14.344 0 0 2.594 7.844 27.406 7.844 24.797 0 27.406-7.844 27.406-7.844 13.047 0 20.891-1.297 20.891-14.344v-14.188c2.969-.594 5.219-3.234 5.219-6.375 0-3.156-2.25-5.797-5.219-6.406v-6.781c2.969-.594 5.219-3.25 5.219-6.391a6.51 6.51 0 0 0-5.219-6.391v-6.969h17.234c9.938 0 17.984-8.063 17.984-18v-55.375c0-9.938-8.047-18-17.984-18h-7.875c4.719-10.453 11.641-19.547 20.969-24.625 10.906-5.969 14.938-19.609 8.984-30.516-5.953-10.891-19.609-14.906-30.5-8.969-25.578 13.938-40.141 39.063-47.078 64.109h-16.969c-4.75-15.297-13.125-31.391-24.953-44.125l122.578-40.547c11.766-3.906 18.172-16.625 14.266-28.406-3.906-11.796-16.625-18.187-28.391-14.281zM167.406 247.906c2.344 0 4.734-.375 7.078-1.156l177.5-58.719c11.766-3.906 18.172-16.625 14.266-28.406-3.906-11.797-16.625-18.188-28.391-14.281l-177.5 58.719c-11.781 3.906-18.188 16.609-14.281 28.406 3.125 9.437 11.906 15.437 21.328 15.437zM182.281 171.672c2.344 0 4.734-.391 7.078-1.141l124.25-41.125C325.39 125.5 331.781 112.797 327.89 101c-3.906-11.781-16.609-18.188-28.406-14.281l-124.25 41.125c-11.781 3.891-18.172 16.609-14.281 28.391 3.125 9.453 11.906 15.437 21.328 15.437z" />
       </svg>
     ),
-title: "Reliable Performance",
-description: "Consistent performance, built to last.",  },
+    title: "Reliable Performance",
+    description: "Consistent performance, built to last.",
+  },
 
   {
     icon: (
@@ -50,8 +55,9 @@ description: "Consistent performance, built to last.",  },
         <path d="M26 2c3 0 5.43 3.29 8.09 4.42s6.82.51 8.84 2.65 1.51 6.07 2.65 8.84S50 23 50 26s-3.29 5.43-4.42 8.09-.51 6.82-2.65 8.84-6.07 1.53-8.84 2.65S29 50 26 50s-5.43-3.29-8.09-4.42-6.82-.51-8.84-2.65-1.53-6.07-2.65-8.84S2 29 2 26s3.29-5.43 4.42-8.09.51-6.82 2.65-8.84 6.07-1.53 8.84-2.65S23 2 26 2Zm0 7.58A16.42 16.42 0 1 0 42.42 26 16.47 16.47 0 0 0 26 9.58Zm7.62 9.15 1.61 1.52a1.25 1.25 0 0 1 0 1.51L25.08 33.07a2.07 2.07 0 0 1-1.61.7 2.23 2.23 0 0 1-1.61-.7l-5.49-5.47a1 1 0 0 1-.1-1.42l.1-.11L18 24.56a1.1 1.1 0 0 1 1.54-.07l.07.07 3.89 4 8.59-9.8a1.1 1.1 0 0 1 1.53-.03Z" />
       </svg>
     ),
-title: "Superior Quality",
-description: "Premium quality you can trust.",  },
+    title: "Superior Quality",
+    description: "Premium quality you can trust.",
+  },
 
   {
     icon: (
@@ -72,49 +78,108 @@ description: "Premium quality you can trust.",  },
         />
       </svg>
     ),
-title: "PAN India",
-description: "Nationwide service and support.",  },
+    title: "PAN India",
+    description: "Nationwide service and support.",
+  },
 ];
 
-export default function Whychoose() {
- 
+const FeatureContent = ({ item }) => (
+  <div
+    className="
+      why-card
+      group
+      flex
+      flex-col
+      items-center
+      px-5
+      py-5
+      text-center
+      will-change-transform
+    "
+  >
+    {/* ICON */}
+    <div
+      className="
+        why-icon
+        mb-6
+        flex
+        h-16
+        w-16
+        items-center
+        justify-center
+        rounded-full
+        text-gray-800
+        transition-colors
+        duration-300
+        group-hover:border-[#85a30f]
+        group-hover:text-[#85a30f]
+        will-change-transform
+      "
+    >
+      {item.icon}
+    </div>
 
+    {/* TITLE */}
+    <h3
+      className="
+        why-title
+        mb-3
+        text-xl
+        font-semibold
+        text-gray-900
+      "
+    >
+      {item.title}
+    </h3>
+
+    {/* DESCRIPTION */}
+    <p
+      className="
+        why-description
+        max-w-xs
+        text-sm
+        text-gray-600
+      "
+    >
+      {item.description}
+    </p>
+  </div>
+);
+
+export default function Whychoose() {
   return (
     <section
-     
       className="relative overflow-hidden bg-gray-50 py-6 md:py-12"
       data-purpose="why-choose-us"
     >
       {/* LEFT TRACK LIGHT */}
-
-      <div  className="hidden md:block absolute -top-9 left-15 z-10">
+      <div className="absolute -top-9 left-15 z-10 hidden md:block">
         <Image
           height={100}
           width={100}
           alt="LED Track Light"
-         className="h-50 w-40 object-contain"
+          className="h-50 w-40 object-contain"
           src="/LEDTrackLight3.webp"
+          loading="lazy"
         />
       </div>
 
       {/* RIGHT TRACK LIGHT */}
-
-      <div  className="hidden md:block absolute -top-9 right-15 z-10">
+      <div className="absolute -top-9 right-15 z-10 hidden md:block">
         <Image
           height={100}
           width={100}
           alt="LED Track Light"
           className="h-50 w-40 object-contain"
           src="/LEDTrackLight4.webp"
+          loading="lazy"
         />
       </div>
 
       <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12 xl:px-16">
         {/* HEADING */}
-
         <div className="mb-10 text-center sm:mb-16">
           <p
-      
             className="
               mb-3
               font-serif
@@ -129,7 +194,6 @@ export default function Whychoose() {
           </p>
 
           <h2
-           
             className="
               font-serif
               text-3xl
@@ -143,87 +207,59 @@ export default function Whychoose() {
             Why Choose Elstrong
           </h2>
 
-          <div  className="mx-auto mt-5 h-px w-16 bg-gray-900" />
+          <div className="mx-auto mt-5 h-px w-16 bg-gray-900" />
         </div>
 
-        {/* FEATURES */}
+        {/* ========================================= */}
+        {/* MOBILE / TABLET SWIPER */}
+        {/* 2 SLIDES VISIBLE */}
+        {/* ========================================= */}
+
+        <div className="block lg:hidden">
+          <Swiper
+            modules={[Autoplay]}
+            slidesPerView={2}
+            spaceBetween={0}
+            loop={true}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: false,
+            }}
+            speed={700}
+            watchSlidesProgress={true}
+            preloadImages={false}
+            lazy={{
+              loadPrevNext: true,
+            }}
+            className="why-swiper"
+          >
+            {reasons.map((item, index) => (
+              <SwiperSlide key={index}>
+                <FeatureContent item={item} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
+        {/* ========================================= */}
+        {/* DESKTOP */}
+        {/* ORIGINAL DESKTOP GRID */}
+        {/* ========================================= */}
 
         <div
           className="
-            grid
+            hidden
             grid-cols-2
             gap-0
             font-serif
-            sm:grid-cols-2
+            lg:grid
             lg:grid-cols-4
             lg:gap-6
           "
         >
           {reasons.map((item, index) => (
-            <div
-              key={index}
-              className="
-                why-card
-                group
-                flex
-                flex-col
-                items-center
-                px-5
-                py-5
-                text-center
-                will-change-transform
-              "
-            >
-              {/* ICON — SVG AND COLOR UNCHANGED */}
-
-              <div
-                className="
-                  why-icon
-                  mb-6
-                  flex
-                  h-16
-                  w-16
-                  items-center
-                  justify-center
-                  rounded-full
-                  text-gray-800
-                  transition-colors
-                  duration-300
-                  group-hover:border-[#85a30f]
-                  group-hover:text-[#85a30f]
-                  will-change-transform
-                "
-              >
-                {item.icon}
-              </div>
-
-              {/* TITLE */}
-
-              <h3
-                className="
-                  why-title
-                  mb-3
-                  text-xl
-                  font-semibold
-                  text-gray-900
-                "
-              >
-                {item.title}
-              </h3>
-
-              {/* DESCRIPTION */}
-
-              <p
-                className="
-                  why-description
-                  max-w-xs
-                  text-sm
-                  text-gray-600
-                "
-              >
-                {item.description}
-              </p>
-            </div>
+            <FeatureContent key={index} item={item} />
           ))}
         </div>
       </div>
