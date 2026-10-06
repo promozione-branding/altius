@@ -83,53 +83,8 @@ h3 {
 
 
 
-.jodit-wysiwyg ul {
-  list-style: disc;
-  padding-left: 20px;
-}
-
-.jodit-wysiwyg ol {
-  list-style: decimal;
-  padding-left: 20px;
-}
-
-.jodit-wysiwyg ul ul {
-  list-style: circle;
-}
-
-.jodit-wysiwyg ul ul ul {
-  list-style: square;
-}
-
-/* Global styling for Jodit content */
-.jodit-content {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-}
-
-.jodit-content ul {
-  list-style-type: disc;
-  /* or circle, square */
-  margin-left: 20px;
-  padding-left: 20px;
-}
-
-.jodit-content ol {
-  list-style-type: decimal;
-  margin-left: 20px;
-  padding-left: 20px;
-}
-
-.jodit-content li {
-  margin: 5px 0;
-}
-
-
-
 /* =====================================================
-   JODIT / BLOG CONTENT
+   BLOG CONTENT SPACING
 ===================================================== */
 
 .blog-content {
@@ -142,210 +97,145 @@ h3 {
 }
 
 /* Paragraphs */
-.blog-content p {
+.blog-content p,
+.jodit-content p {
   display: block;
-  margin: 0 0 10px;
+  margin: 0 0 12px;
   color: #374151;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.7;
 }
 
-/* H1 */
-.jodit-content h1 {
+/* =====================================================
+   HEADINGS
+===================================================== */
+
+.jodit-content h1,
+.blog-content h1 {
   display: block;
-  margin: 100px 0 10px;
+  margin: 28px 0 12px;
   color: #111827;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.2;
 }
 
-/* H2 */
-.jodit-content h2 {
+.jodit-content h2,
+.blog-content h2 {
   display: block;
-  margin: 10px 0 160px;
+  margin: 24px 0 10px;
   color: #111827;
   font-size: 30px;
   font-weight: 700;
   line-height: 1.25;
 }
 
-/* H3 */
-.jodit-content h3 {
+.jodit-content h3,
+.blog-content h3 {
   display: block;
-  margin: 10px 0 10px;
+  margin: 20px 0 8px;
   color: #111827;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.3;
 }
 
-/* H4 */
-.jodit-content h4 {
+.jodit-content h4,
+.blog-content h4 {
   display: block;
-  margin: 10px 0 10px;
+  margin: 18px 0 8px;
   color: #111827;
   font-size: 20px;
   font-weight: 700;
+  line-height: 1.3;
 }
 
-/* H5 */
-.jodit-content h5 {
+.jodit-content h5,
+.blog-content h5 {
   display: block;
-  margin: 10px 0 10px;
+  margin: 16px 0 6px;
   color: #111827;
   font-size: 18px;
   font-weight: 700;
+  line-height: 1.3;
 }
 
-/* H6 */
-.jodit-content h6 {
+.jodit-content h6,
+.blog-content h6 {
   display: block;
-  margin: 10px 0 10px;
+  margin: 14px 0 6px;
   color: #111827;
   font-size: 16px;
   font-weight: 700;
+  line-height: 1.3;
 }
 
-/* Bold */
-.jodit-content strong,
-.jodit-content b {
-  font-weight: 700;
-  color: #111827;
-}
+/* =====================================================
+   LISTS
+===================================================== */
 
-/* Italic */
-.jodit-content em,
-.jodit-content i {
-  font-style: italic;
-}
-
-/* Links */
-.jodit-content a {
-  color: #85a30f;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.jodit-content a:hover {
-  color: #657c08;
-}
-
-/* Unordered List */
-.jodit-content ul {
+.jodit-content ul,
+.blog-content ul {
   display: block;
-  margin: 10px 0;
-  padding-left: 30px;
+  margin: 6px 0 12px;
+  padding-left: 28px;
   list-style-type: disc;
 }
 
-.jodit-content ul li {
-  display: list-item;
-  margin-bottom: 8px;
-  padding-left: 4px;
-}
-
-/* Ordered List */
-.jodit-content ol {
+.jodit-content ol,
+.blog-content ol {
   display: block;
-  margin: 10px 0;
-  padding-left: 30px;
+  margin: 6px 0 12px;
+  padding-left: 28px;
   list-style-type: decimal;
 }
 
-.jodit-content ol li {
+.jodit-content li,
+.blog-content li {
   display: list-item;
-  margin-bottom: 8px;
-  padding-left: 4px;
+  margin: 0 0 5px;
+  padding-left: 3px;
+  line-height: 1.6;
 }
 
-/* Nested Lists */
+/* Nested lists */
 .jodit-content ul ul,
 .jodit-content ol ul,
 .jodit-content ul ol,
-.jodit-content ol ol {
-  margin-top: 8px;
-  margin-bottom: 8px;
+.jodit-content ol ol,
+.blog-content ul ul,
+.blog-content ol ul,
+.blog-content ul ol,
+.blog-content ol ol {
+  margin-top: 3px;
+  margin-bottom: 4px;
 }
 
-/* Blockquote */
-.jodit-content blockquote {
+/* Nested bullet styles */
+.jodit-content ul ul,
+.blog-content ul ul {
+  list-style-type: circle;
+}
+
+.jodit-content ul ul ul,
+.blog-content ul ul ul {
+  list-style-type: square;
+}
+
+/* =====================================================
+   BLOCKQUOTE
+===================================================== */
+
+.jodit-content blockquote,
+.blog-content blockquote {
   display: block;
-  margin: 10px 0;
-  padding: 16px 20px;
+  margin: 18px 0;
+  padding: 12px 18px;
   border-left: 4px solid #85a30f;
   background: #f1f2ed;
   color: #4b5563;
   font-size: 17px;
   font-style: italic;
-}
-
-/* Images */
-.blog-content img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 28px auto;
-  object-fit: contain;
-}
-
-/* Tables */
-.jodit-content table {
-  width: 100%;
-  margin: 10px 0;
-  border-collapse: collapse;
-  font-size: 14px;
-}
-
-.jodit-content th,
-.jodit-content td {
-  padding: 12px 14px;
-  border: 1px solid #d1d5db;
-  text-align: left;
-}
-
-.jodit-content th {
-  background: #f3f4f6;
-  color: #111827;
-  font-weight: 700;
-}
-
-/* Horizontal line */
-.jodit-content hr {
-  margin: 10px 0;
-  border: 0;
-  border-top: 1px solid #e5e7eb;
-}
-
-/* Code */
-.jodit-content code {
-  padding: 2px 6px;
-  border-radius: 4px;
-  background: #f3f4f6;
-  color: #111827;
-  font-family: monospace;
-  font-size: 14px;
-}
-
-.jodit-content pre {
-  margin: 10px 0;
-  padding: 18px;
-  overflow-x: auto;
-  border-radius: 8px;
-  background: #111827;
-  color: #fff;
-  line-height: 1.6;
-}
-
-.jodit-content pre code {
-  padding: 0;
-  background: transparent;
-  color: inherit;
-}
-
-/* Jodit-generated div */
-.jodit-content div {
-  max-width: 100%;
 }
 
 /* =====================================================
@@ -355,70 +245,76 @@ h3 {
 @media (max-width: 767px) {
   .blog-content {
     font-size: 15px;
-    line-height: 1.75;
+    line-height: 1.7;
   }
 
-  .blog-content p {
+  .blog-content p,
+  .jodit-content p {
     font-size: 15px;
-    line-height: 1.75;
-    margin-bottom: 5px;
+    line-height: 1.7;
+    margin-bottom: 8px;
   }
 
-  .blog-content h1 {
+  .blog-content h1,
+  .jodit-content h1 {
     font-size: 30px;
     line-height: 1.25;
-    margin-top: 3px;
+    margin: 22px 0 10px;
   }
 
-  .blog-content h2 {
+  .blog-content h2,
+  .jodit-content h2 {
     font-size: 26px;
     line-height: 1.3;
-    margin-top: 3px;
+    margin: 20px 0 8px;
   }
 
-  .blog-content h3 {
+  .blog-content h3,
+  .jodit-content h3 {
     font-size: 22px;
-    margin-top: 2px;
+    line-height: 1.3;
+    margin: 18px 0 7px;
   }
 
-  .blog-content h4 {
+  .blog-content h4,
+  .jodit-content h4 {
     font-size: 19px;
+    margin: 16px 0 6px;
   }
 
-  .blog-content h5 {
+  .blog-content h5,
+  .jodit-content h5 {
     font-size: 17px;
+    margin: 14px 0 5px;
   }
 
-  .blog-content h6 {
+  .blog-content h6,
+  .jodit-content h6 {
     font-size: 15px;
+    margin: 12px 0 5px;
   }
 
   .blog-content ul,
-  .blog-content ol {
+  .blog-content ol,
+  .jodit-content ul,
+  .jodit-content ol {
+    margin: 5px 0 10px;
     padding-left: 24px;
   }
 
-  .blog-content blockquote {
-    margin: 24px 0;
-    padding: 14px 16px;
+  .blog-content li,
+  .jodit-content li {
+    margin-bottom: 4px;
+    line-height: 1.55;
+  }
+
+  .blog-content blockquote,
+  .jodit-content blockquote {
+    margin: 16px 0;
+    padding: 12px 14px;
     font-size: 15px;
   }
-
-  .blog-content img {
-    width: 100%;
-    max-width: 100%;
-    margin: 22px auto;
-  }
-
-  .blog-content table {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
 }
-
-
 /* globals.css */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
