@@ -22,7 +22,7 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${categoryData.metaTitle} | Premium LED Lighting`,
+    title: `${categoryData.metaTitle}`,
     description: categoryData.metaDesc,
   };
 }

@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${productData.metaTitle} | Elstrong`,
+    title: `${productData.metaTitle}`,
     description: productData.metaDesc,
   };
 }
