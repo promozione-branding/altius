@@ -39,7 +39,7 @@ const lightingProducts = [
     description: "Clean & modern interiors",
     category: "Concealed Lighting",
     image: "/category/ledconcel1.webp",
-    href: "/categories/concealed-lights",
+    href: "/categories/concealed-lights-manufacturer",
   },
   
   {
@@ -54,14 +54,14 @@ const lightingProducts = [
     description: "High performance lighting",
     category: "COB Lighting",
     image: "/coblensmodel.webp",
-    href: "/categories/cob-lights",
+    href: "/categories/cob-lights-manufacturer",
   },
   {
     name: "Flood Lights",
     description: "Powerful illumination",
     category: "Flood Lighting",
     image: "/product/flood1.webp",
-    href: "/categories/flood-light",
+    href: "/categories/flood-light-manufacturer",
   },
   {
     name: "Square Lights",
@@ -75,7 +75,7 @@ const lightingProducts = [
     description: "Udniform Illumination",
     category: "Square Lighting",
     image: "/product/rope1.webp",
-    href: "/categories/rope-lights",
+    href: "/categories/rope-lights-manufacturer",
   },
   {
     name: "Rainbow Deep Lights",
@@ -85,11 +85,11 @@ const lightingProducts = [
     href: "/categories/rainbow-deep-junction",
   },
   {
-    name: "Bulb",
+    name: "Led Bulb",
     description: "Clean ,modern design",
     category: "Square Lighting",
     image: "/product/bulb1.webp",
-    href: "/categories/bulb",
+    href: "/categories/led-bulb-manufacturer",
   },
 ];
 

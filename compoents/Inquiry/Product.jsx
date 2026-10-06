@@ -38,14 +38,14 @@ const lightingProducts = [
     description: "Clean & modern interiors",
     category: "Concealed Lighting",
     image: "/category/ledconcel1.webp",
-    href: "/categories/concealed-lights",
+    href: "/categories/concealed-lights-manufacturer",
   },
   {
     name: "COB Lights",
     description: "High performance lighting",
     category: "COB Lighting",
     image: "/coblensmodel.webp",
-    href: "/categories/cob-lights",
+    href: "/categories/cob-lights-manufacturer",
   },
   
 ];
@@ -63,7 +63,7 @@ const lightingProducts2 = [
     description: "Powerful illumination",
     category: "Flood Lighting",
     image: "/product/flood1.webp",
-    href: "/categories/flood-light",
+    href: "/categories/flood-light-manufacturer",
   },
   {
     name: "Square Lights",
@@ -77,14 +77,14 @@ const lightingProducts2 = [
     description: "Clean & modern interiors",
     category: "Concealed Lighting",
     image: "/category/ledconcel1.webp",
-    href: "/categories/concealed-lights",
+    href: "/categories/concealed-lights-manufacturer",
   },
   {
     name: "COB Lights",
     description: "High performance lighting",
     category: "COB Lighting",
     image: "/coblensmodel.webp",
-    href: "/categories/cob-lights",
+    href: "/categories/cob-lights-manufacturer",
   },
   
 ];
@@ -102,7 +102,7 @@ const lightingProducts3 = [
     description: "Powerful illumination",
     category: "Flood Lighting",
     image: "/product/GLare1.webp",
-    href: "/categories/flood-light",
+    href: "/categories/flood-light-manufacturer",
   },
   {
     name: "Square Lights",
@@ -116,14 +116,14 @@ const lightingProducts3 = [
     description: "Clean & modern interiors",
     category: "Outdoor Lights",
     image: "/product/CylinderLight1.webp",
-    href: "/categories/concealed-lights",
+    href: "/categories/concealed-lights-manufacturer",
   },
   {
     name: "Spike Light",
     description: "High performance lighting",
     category: "Outdoor Lights",
     image: "/product/SpikeLight1.webp",
-    href: "/categories/cob-lights",
+    href: "/categories/cob-lights-manufacturer",
   },
   
 ];

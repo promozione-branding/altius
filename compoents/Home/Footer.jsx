@@ -379,11 +379,11 @@ export default function Footer() {
 
             <ul className="space-y-4">
               {[
-                ["Concealed Lights", "/categories/concealed-lights"],
-                ["COB Lens Model", "/categories/cob-lens-model"],
+                ["Concealed Lights", "/categories/concealed-lights-manufacturer"],
+                ["COB Lights", "/categories/cob-lights-manufacturer"],
                 ["LED Slim Panel", "/categories/led-slim-panel"],
                 ["PC Panel", "/categories/pc-panel"],
-                ["Outdoor Lights", "/categories/outdoor-lights"],
+                ["Outdoor Lights", "/categories/outdoor-lights-manufacturer"],
               ].map(([label, href]) => (
                 <li key={label}>
                   <Link

@@ -2,10 +2,10 @@ export const categories = [
   {
     id: 1,
     name: "Concealed Lights",
-    metaTitle: "Concealed Lights | Modern LED Lighting | Elstrong",
+    metaTitle: "Concealed Lights Manufacturer | Premium LED Lighting",
     metaDesc:
-      "Explore Elstrong concealed lights with sleek designs and efficient LED technology, perfect for modern homes, offices, commercial spaces, and contemporary interiors.",
-    slug: "concealed-lights",
+      "Explore premium concealed lights by Elstrong for modern interiors. Discover sleek, efficient LED lighting solutions designed for seamless and elegant illumination.",
+    slug: "concealed-lights-manufacturer",
     image: "/category/ledconcel1.webp",
     hoverImage: "/product/concealedglow.webp",
     description:
@@ -1927,11 +1927,11 @@ export const categories = [
   {
     id: 5,
     name: "Outdoor Lights",
-    slug: "outdoor-lights",
+    slug: "outdoor-lights-manufacturer",
     metaTitle:
-      "Outdoor LED Light Manufacturer| Architectural Lighting | Elstrong",
+      "Outdoor Lights Manufacturer | Premium LED Outdoor Lighting",
     metaDesc:
-      "Explore Elstrong outdoor LED lights for walls, landscapes, pathways, façades, and accent applications, combining modern design with reliable lighting performance.",
+      "Explore premium outdoor lights from Altius Lighting, designed for efficient and stylish outdoor illumination. Discover reliable LED lighting solutions for various applications.",
     image: "/product/Klight1.webp",
     hoverImage: "/product/Klight2.webp",
 
@@ -3589,11 +3589,11 @@ export const categories = [
 
   {
     id: 4,
-    name: "Bulb",
-    slug: "bulb",
-    metaTitle: "Buy LED Light Bulbs Online at Best Prices In India",
+    name: "Led Bulb",
+    slug: "led-bulb-manufacturer",
+    metaTitle: "LED Bulb Manufacturer | Premium LED Bulbs | Altius Lighting",
     metaDesc:
-      "Discover Elstrong LED bulbs in multiple wattages and colour options, designed to deliver efficient, reliable, and consistent illumination for everyday lighting needs.",
+      "Altius Lighting is a trusted LED bulb manufacturer offering energy-efficient, durable and high-quality LED bulbs for residential, commercial and industrial applications.",
     image: "/product/bulb1.webp",
     hoverImage: "/product/bulb2.webp",
 
@@ -3602,8 +3602,8 @@ export const categories = [
     products: [
       {
         id: 112,
-        name: "Bulb",
-        slug: "bulb",
+        name: "Led Bulb",
+        slug: "led-bulb",
 
         metaTitle: "LED Bulb | 20W–50W High-Efficiency Bulb | Elstrong",
         metaDesc:
@@ -3619,10 +3619,10 @@ export const categories = [
         badge: "Featured",
 
         shortDescription:
-          "The ELSTRONG BULB is an efficient and reliable LED lighting solution available in multiple wattages and colour temperatures for residential, commercial, office, retail, and indoor applications.",
+          "The ELSTRONG LED BULB is an efficient and reliable LED lighting solution available in multiple wattages and colour temperatures for residential, commercial, office, retail, and indoor applications.",
 
         description:
-          "The ELSTRONG BULB is a reliable and efficient LED lighting solution designed to provide consistent illumination across residential, commercial, office, retail, and other indoor environments. Available in 20W, 30W, 40W, and 50W options, the BULB provides flexible choices for different lighting requirements and space sizes. Designed with an efficiency of ≥85% and a power factor of ≥0.90, with a target power factor of >0.95, it provides efficient electrical performance. Its Aluminium Metal Core PCB (MC-PCB) construction supports effective heat management and dependable LED performance. The bulb operates from 176–264 VAC with a rated input voltage of 220–240 VAC and is available in 6500K, with alternative 4000K and 3000K colour temperature options.",
+          "The ELSTRONG LED BULB is a reliable and efficient LED lighting solution designed to provide consistent illumination across residential, commercial, office, retail, and other indoor environments. Available in 20W, 30W, 40W, and 50W options, the LED BULB provides flexible choices for different lighting requirements and space sizes. Designed with an efficiency of ≥85% and a power factor of ≥0.90, with a target power factor of >0.95, it provides efficient electrical performance. Its Aluminium Metal Core PCB (MC-PCB) construction supports effective heat management and dependable LED performance. The Led bulb operates from 176–264 VAC with a rated input voltage of 220–240 VAC and is available in 6500K, with alternative 4000K and 3000K colour temperature options.",
 
         // Main product images
         image: "/product/bulb1.webp",
@@ -3682,7 +3682,7 @@ export const categories = [
           },
           {
             title: "Wide Voltage Range",
-            text: "The bulb operates from 176–264 VAC with a rated input voltage of 220–240 VAC, providing flexibility for compatible electrical systems.",
+            text: "The led bulb operates from 176–264 VAC with a rated input voltage of 220–240 VAC, providing flexibility for compatible electrical systems.",
           },
           {
             title: "Multiple Colour Temperatures",
@@ -4264,10 +4264,10 @@ export const categories = [
   {
     id: 10,
     name: "Flood Light",
-    slug: "flood-light",
-    metaTitle: " Hut Bul Bul Bell | Unique Decorative Lighting | Elstrong",
+    slug: "flood-light-manufacturer",
+    metaTitle: "Flood Light Manufacturer | LED Flood Lights | Altius Lighting",
     metaDesc:
-      "Explore Elstrong’s Hut Bul Bul Bell lighting range, designed to add character and visual appeal to modern interiors with distinctive decorative lighting solutions.",
+      "Altius Lighting offers high-quality LED flood lights designed for powerful, energy-efficient and reliable outdoor illumination across commercial and industrial applications.",
     image: "/product/flood1.webp",
     image2: "/product/flood3.webp",
     hoverImage: "/product/flood3.webp",
@@ -5812,10 +5812,10 @@ export const categories = [
   {
     id: 2,
     name: "COB Lights",
-    slug: "cob-lights",
-    metaTitle: "COB Lights | Focused LED Lighting | Elstrong",
+    slug: "cob-lights-manufacturer",
+    metaTitle: "COB Lights Manufacturer | Premium LED COB Lights | Altius Lighting",
     metaDesc:
-      "Discover Elstrong COB lights for focused, adjustable illumination. Ideal for homes, retail spaces, offices, showrooms, and modern architectural interiors.",
+      "Altius Lighting is a trusted COB light manufacturer offering energy-efficient, durable and high-performance LED COB lighting solutions for residential, commercial and industrial applications.",
     image: "/product/cobblack1.webp",
     hoverImage: "/product/cobblack1.webp",
 
@@ -6576,10 +6576,10 @@ export const categories = [
   {
     id: 16,
     name: "Rope Lights",
-    slug: "rope-lights",
-    metaTitle: "Rope Light | Focused LED Lighting | Elstrong",
+    slug: "rope-lights-manufacturer",
+    metaTitle: "Rope Lights Manufacturer | LED Rope Lights | Altius Lighting",
     metaDesc:
-      "Discover Elstrong Rope Light for focused, adjustable illumination. Ideal for homes, retail spaces, offices, showrooms, and modern architectural interiors.",
+      "Altius Lighting offers premium LED rope lights designed for decorative, architectural and outdoor applications. Explore durable, energy-efficient rope lighting solutions.",
     image: "/product/rope1.webp",
     hoverImage: "/product/rope1.webp",
 
