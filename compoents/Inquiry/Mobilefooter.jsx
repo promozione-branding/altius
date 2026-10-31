@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Phone, MessageCircle, FileText } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import PopupForm from "../PopupForm";
+import { handleCallClick, handleWhatsappClick } from "@/track";
 
 export default function Mobilefooter() {
   const [open, setOpen] = useState(false);
@@ -15,6 +16,7 @@ export default function Mobilefooter() {
       <div className="mx-auto flex max-w-md items-center gap-2  border border-white/10 bg-[#11150e]/95 p-1 shadow-[0_-8px_35px_rgba(0,0,0,0.18)] backdrop-blur-xl">
         {/* Call */}
         <a
+        onClick={() => handleCallClick({ source: "Website Sticky Footer", })}
           href="tel:+919650167709"
           className="flex flex-1 flex-col items-center justify-center gap-1 rounded-xl border border-white/10 bg-white py-1.5 text-blue-500 transition-all active:scale-95"
         >
@@ -37,7 +39,8 @@ export default function Mobilefooter() {
 
         {/* WhatsApp */}
         <a
-          href="https://wa.link/jav0i1"
+        onClick={() => handleWhatsappClick({ source: "Website Sticky Footer", })}
+          href="https://wa.me/919650167709"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-1 flex-col items-center justify-center gap-1 rounded-xl border border-[#25D366]/30 bg-white py-1.5 text-green-500 transition-all active:scale-95"

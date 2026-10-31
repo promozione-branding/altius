@@ -1,3 +1,5 @@
+"use client"
+import { handleCallClick } from '@/track'
 import Link from 'next/link'
 import React from 'react'
 import { FiArrowRight } from 'react-icons/fi'
@@ -223,6 +225,7 @@ export default function Parllel() {
                 {/* CTA */}
 
                 <Link
+                onClick={() => handleCallClick({ source: "Website Home Pg", })}
                   href="tel:+919650167709"
                   className="
                     group/btn

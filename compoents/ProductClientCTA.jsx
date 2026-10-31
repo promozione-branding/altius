@@ -5,6 +5,7 @@ import { FiPhone, FiMessageCircle, FiFileText } from "react-icons/fi";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import PopupForm from "./PopupForm";
+import { handleCallClick, handleWhatsappClick } from "@/track";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -219,6 +220,7 @@ export default function ProductClientCTA() {
             {/* CALL */}
 
             <a
+            onClick={() => handleCallClick({ source: "Website CTA", })}
               href="tel:+919650167709"
               className="
                 cta-button
@@ -250,6 +252,7 @@ export default function ProductClientCTA() {
             {/* WHATSAPP */}
 
             <a
+            onClick={() => handleWhatsappClick({ source: "Website CTA", })}
               href="https://wa.me/919650167709"
               target="_blank"
               rel="noopener noreferrer"

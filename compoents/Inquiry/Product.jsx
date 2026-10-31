@@ -10,6 +10,7 @@ import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import "swiper/css";
 import "swiper/css/navigation";
 import PopupForm from "../PopupForm";
+import { handleWhatsappClick } from "@/track";
 
 const lightingProducts = [
   {
@@ -262,8 +263,9 @@ export default function Product() {
                           <a
                             onClick={(e) => {
                               e.stopPropagation();
+                               handleWhatsappClick({ source: "Website Inquiry Pg", obj:product.name })
                             }}
-                            href="https://wa.link/jav0i1"
+                            href="https://wa.me/919650167709"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex  items-center justify-center gap-1 rounded-full border border-[#25D366] bg-[#25D366]/5 px-4 py-2.5 text-sm font-semibold text-[#1f9d4d] transition-all mt-2 duration-300 hover:bg-[#25D366] hover:text-white hover:shadow-lg hover:shadow-[#25D366]/20"

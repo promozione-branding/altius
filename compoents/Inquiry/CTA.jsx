@@ -4,6 +4,7 @@
 import { Phone } from "lucide-react";
 import PopupForm from "../PopupForm";
 import { useState } from "react";
+import { handleCallClick, handleWhatsappClick } from "@/track";
 
 export default function CTA() {
   const [open, setOpen] = useState(false);
@@ -32,6 +33,7 @@ export default function CTA() {
 
             {/* Get Quote */}
             <a
+            onClick={() => handleCallClick({ source: "Website Inquiry Pg CTA", })}
               href="tel:+919650167709"
               className="inline-flex min-h-10 items-center justify-center gap-2 rounded-md border border-white/25 bg-blue-500 px-4 py-2 text-xs font-semibold text-white transition-all duration-200 hover:border-yellow-400/60 hover:bg-white/10 sm:px-5 sm:text-sm"
             >
@@ -49,7 +51,8 @@ export default function CTA() {
 
             {/* WhatsApp */}
             <a
-              href="https://wa.link/jav0i1"
+            onClick={() => handleWhatsappClick({ source: "Website Inquiry Pg CTA", })}
+              href="https://wa.me/919650167709"
               target="_blank"
               rel="noopener noreferrer"
               className="col-span-2 inline-flex min-h-10  w-full items-center justify-center gap-2 rounded-md border border-white/25 bg-green-500 px-5 py-2 text-xs font-semibold text-white transition-all duration-200 hover:border-yellow-400/60 hover:bg-white/10 sm:col-span-1 sm:w-auto sm:text-sm"

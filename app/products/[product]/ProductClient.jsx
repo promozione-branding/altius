@@ -15,6 +15,7 @@ import {
 } from "react-icons/lu";
 import PopupForm from "@/compoents/PopupForm";
 import ProductClientCTA from "@/compoents/ProductClientCTA";
+import { handleWhatsappClick } from "@/track";
 
 const relatedProducts = [
   {
@@ -397,6 +398,7 @@ export default function ProductClient({ product }) {
                 {/* ================= WHATSAPP ================= */}
 
                 <a
+                onClick={() => handleWhatsappClick({ source: "Website Products Pg", obj:product.name })}
                   href={`https://wa.me/919650167709?text=${encodeURIComponent(
                     `Hello, I am interested in ${product.name}${
                       selectedWattage ? ` (${selectedWattage})` : ""

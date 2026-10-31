@@ -1,4 +1,5 @@
 "use client";
+import { handleCallClick, handleWhatsappClick } from "@/track";
 import React from "react";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 
@@ -9,6 +10,7 @@ export default function WhatsApp() {
     <div className="fixed bottom-5 right-5 z-[9999] flex flex-col items-end gap-3">
       {/* Call Button */}
       <a
+        onClick={() => handleCallClick({ source: "Website Sticky Button", })}
         href={`tel:+${phoneNumber}`}
         aria-label="Call us"
         className="
@@ -28,6 +30,7 @@ export default function WhatsApp() {
 
       {/* WhatsApp Button */}
       <a
+      onClick={() => handleWhatsappClick({ source: "Website Sticky Button", })}
         href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(
           "Hello, I would like to know more about your products."
         )}`}

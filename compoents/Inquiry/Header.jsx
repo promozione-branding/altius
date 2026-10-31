@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FileText } from "lucide-react";
 import PopupForm from "../PopupForm";
 import { FaWhatsapp } from "react-icons/fa";
+import { handleWhatsappClick } from "@/track";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -85,7 +86,7 @@ export default function Header() {
               />
             </button>
 
-             <Link className="flex border bg-white border-green-500 p-2.5  gap-2" href="https://wa.link/jav0i1">
+             <Link onClick={() => handleWhatsappClick({ source: "Website Inquiry Pg", })} className="flex border bg-white border-green-500 p-2.5  gap-2" href="https://wa.me/919650167709">
             <span className="text-green-500 font-bold hidden md:block">WhatsApp</span> <FaWhatsapp size={22} className="text-green-500 " />
 
             </Link>

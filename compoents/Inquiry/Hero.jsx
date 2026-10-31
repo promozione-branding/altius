@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Phone, ArrowRight, Zap, Award, ShieldCheck } from "lucide-react";
 import PopupForm from "../PopupForm";
+import { handleCallClick } from "@/track";
 
 export default function Hero() {
   const [open, setOpen] = useState(false);
@@ -64,6 +65,7 @@ export default function Hero() {
 
               {/* CALL NOW */}
               <a
+              onClick={() => handleCallClick({ source: "Website Inquiry Pg", })}
                 href="tel:+919650167709"
                 className="inline-flex h-11 items-center justify-center gap-2 rounded-[3px] border border-white/60 bg-black/30 px-6 text-xs font-extrabold uppercase tracking-wide text-white backdrop-blur-sm transition-all duration-300 hover:bg-white hover:text-black sm:h-12"
               >
