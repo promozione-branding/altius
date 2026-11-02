@@ -46,9 +46,10 @@ export default function AllProductClient({ products = [] }) {
     }
 
     return products.filter(
-      (product) => product.categoryName === selectedCategory,
+      (product) => product.category === selectedCategory,
     );
   }, [products, selectedCategory]);
+  console.log(filteredProducts)
 
   return (
     <main

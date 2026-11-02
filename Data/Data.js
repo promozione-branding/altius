@@ -527,7 +527,7 @@ export const categories = [
   },
 
   {
-    id: 2,
+    id: 3,
     name: "Moveable Lens Model",
     slug: "moveable-lens-model",
     metaTitle: "Moveable Lens Lights | Focused LED Lighting | Elstrong",
@@ -894,7 +894,7 @@ export const categories = [
   },
 
   {
-    id: 3,
+    id: 31,
     name: "LED Slim Panel",
     slug: "led-slim-panel",
     metaTitle: "LED Slim Panel Lights | Sleek & Efficient | Elstrong",
@@ -3588,7 +3588,7 @@ export const categories = [
   },
 
   {
-    id: 4,
+    id: 44,
     name: "Led Bulb",
     slug: "led-bulb-manufacturer",
     metaTitle: "LED Bulb Manufacturer | Premium LED Bulbs | Altius Lighting",
@@ -3738,7 +3738,7 @@ export const categories = [
   },
 
   {
-    id: 7,
+    id: 37,
     name: "Tengo Panel",
     slug: "tengo-panel",
     image: "/tengo.webp",
@@ -4003,7 +4003,7 @@ export const categories = [
   },
 
   {
-    id: 8,
+    id: 38,
     name: "Track Light",
     slug: "track-light",
     metaTitle: "LED Wall Lights | Modern Architectural Lighting | Elstrong",
@@ -5809,460 +5809,7 @@ export const categories = [
     ],
   },
 
-  {
-    id: 2,
-    name: "COB Lights",
-    slug: "cob-lights-manufacturer",
-    metaTitle: "COB Lights Manufacturer | Premium LED COB Lights | Altius Lighting",
-    metaDesc:
-      "Altius Lighting is a trusted COB light manufacturer offering energy-efficient, durable and high-performance LED COB lighting solutions for residential, commercial and industrial applications.",
-    image: "/product/cobblack1.webp",
-    hoverImage: "/product/cobblack1.webp",
-
-    description:
-      "ELSTRONG COB Model delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
-    products: [
-      {
-        id: 513,
-        name: "Delta COB LED Light",
-        slug: "delta-cob-led-light",
-
-        metaTitle:
-          "Delta COB LED Light | 7W 12W 18W COB Light | ELSTRONG",
-
-        metaDesc:
-          "ELSTRONG Delta COB LED Light is a modern focused lighting solution available in 7W, 12W, and 18W, with White and Black colour options for residential, commercial, retail, and indoor applications.",
-
-        category: "COB Lights",
-        categorySlug: "cob-lights",
-
-        price: 0,
-        oldPrice: 0,
-        currency: "₹",
-
-        badge: "Featured",
-
-        shortDescription:
-          "ELSTRONG Delta COB LED Light is designed to provide focused and stylish illumination for modern residential, commercial, retail, and interior applications. Available in 7W, 12W, and 18W, with White and Black colour options, it offers flexible lighting choices for different requirements and installation spaces.",
-
-        description:
-          "ELSTRONG Delta COB LED Light is designed to provide focused and stylish illumination for modern residential, commercial, retail, and interior applications. Available in 7W, 12W, and 18W, offering flexibility for different lighting requirements and installation spaces. Available in White and Black, making it easy to complement different ceiling and interior colour schemes. COB LED technology provides a concentrated lighting effect suitable for accent, decorative, and general indoor lighting applications. The Delta COB features a clean and modern profile suitable for contemporary interiors. Choose from 7W, 12W, or 18W according to the required lighting level. The two body colour options provide flexibility for different interior design preferences. Suitable for homes, offices, shops, showrooms, hospitality spaces, corridors, and other indoor areas.",
-
-        // Main product images
-        image: "/product/cobblack1.webp",
-
-        images: [
-          "/product/cobblack1.webp",
-          "/product/cobblack2.webp",
-          "/product/cobblack3.webp",
-          "/product/cobwhite1.webp",
-          "/product/cobwhite2.webp",
-          "/product/cobwhite3.webp",
-        ],
-
-        // Product variants
-        wattages: [
-          {
-            value: "7W",
-            image: "/product/delta-cob-led-light-model-601-7w.webp",
-            price: 0,
-          },
-          {
-            value: "12W",
-            image: "/product/delta-cob-led-light-model-601-12w.webp",
-            price: 0,
-          },
-          {
-            value: "18W",
-            image: "/product/delta-cob-led-light-model-601-18w.webp",
-            price: 0,
-          },
-        ],
-
-        // Product specifications
-        specifications: {
-          Wattage: "7W / 12W / 18W",
-          "Product Model": "Delta COB LED Light",
-          "LED Technology": "COB LED",
-          "Body Colour": "White / Black",
-          "Lighting Type": "Focused COB Illumination",
-          "Product Type": "COB LED Light",
-          Application:
-            "Homes / Offices / Shops / Showrooms / Hospitality Spaces / Corridors / Other Indoor Areas",
-          "Lighting Application":
-            "Accent / Decorative / General Indoor Lighting",
-        },
-
-        // Features
-        features: [
-          {
-            title: "Modern COB LED Design",
-            text: "ELSTRONG Delta COB LED Light is designed to provide focused and stylish illumination for modern residential, commercial, retail, and interior applications.",
-          },
-          {
-            title: "Multiple Wattage Options",
-            text: "Available in 7W, 12W, and 18W, offering flexibility for different lighting requirements and installation spaces.",
-          },
-          {
-            title: "Elegant Colour Options",
-            text: "Available in White and Black, making it easy to complement different ceiling and interior colour schemes.",
-          },
-          {
-            title: "Focused COB Illumination",
-            text: "COB LED technology provides a concentrated lighting effect suitable for accent, decorative, and general indoor lighting applications.",
-          },
-          {
-            title: "Contemporary Design",
-            text: "The Delta COB features a clean and modern profile suitable for contemporary interiors.",
-          },
-          {
-            title: "Multiple Power Options",
-            text: "Choose from 7W, 12W, or 18W according to the required lighting level.",
-          },
-          {
-            title: "White & Black Finishes",
-            text: "The two body colour options provide flexibility for different interior design preferences.",
-          },
-          {
-            title: "Versatile Application",
-            text: "Suitable for homes, offices, shops, showrooms, hospitality spaces, corridors, and other indoor areas.",
-          },
-        ],
-
-        // Why choose this product/company
-        whyChoose: [
-          {
-            title: "Professional Lighting Manufacturer",
-            text: "ELSTRONG develops modern LED lighting products with a focus on practical design and dependable performance.",
-          },
-          {
-            title: "Flexible Wattage Selection",
-            text: "7W, 12W, and 18W options provide suitable choices for different indoor lighting requirements.",
-          },
-          {
-            title: "Modern Finishes",
-            text: "White and black colour options complement a variety of contemporary interior styles.",
-          },
-          {
-            title: "COB LED Performance",
-            text: "COB technology provides focused illumination suitable for accent and general lighting applications.",
-          },
-        ],
-
-        // Image used in description section
-        descriptionImage: "/product/cobblack3.webp",
-
-        // Additional product information
-        sku: "ELS-DELTA-COB-601",
-
-        stock: true,
-
-        stockText: "In Stock",
-
-        brochure: "/brochure/delta-cob-led-light-model-601-brochure.pdf",
-
-        // Related products
-        relatedProducts: [
-          "adjustable-square-panel-led-light",
-          "adjustable-round-panel-led-light",
-          "purse-outdoor-led-lights",
-          "flood-light-gm-model",
-        ],
-      },
-
-      {
-        id: 514,
-        name: "Delta COB LED Light",
-        slug: "delta-cob-led-light",
-
-        metaTitle:
-          "Delta COB LED Light | 7W 12W 18W COB Light | ELSTRONG",
-
-        metaDesc:
-          "ELSTRONG Delta COB LED Light combines focused COB LED illumination with White Rose Gold and Black Rose Gold finishes, available in 7W, 12W, and 18W for modern residential, commercial, retail, and interior applications.",
-
-        category: "COB Lights",
-        categorySlug: "cob-lights",
-
-        price: 0,
-        oldPrice: 0,
-        currency: "₹",
-
-        badge: "Featured",
-
-        shortDescription:
-          "ELSTRONG Delta COB LED Light combines focused COB LED illumination with distinctive colour finishes for modern and premium-looking interiors. Available in 7W, 12W, and 18W, with White Rose Gold and Black Rose Gold options, it provides flexible lighting choices for different lighting levels and application requirements.",
-
-        description:
-          "ELSTRONG Delta COB LED Light combines focused COB LED illumination with distinctive colour finishes for modern and premium-looking interiors. Available in 7W, 12W, and 18W, providing flexibility for different lighting levels and application requirements. Available in White Rose Gold and Black Rose Gold, offering a refined appearance for contemporary interior spaces. COB LED technology provides concentrated illumination, making the suitable for accent, decorative, and general indoor lighting applications. This designed to add a stylish architectural element while delivering focused illumination. Available in 7W / 12W / 18W configurations to suit different lighting requirements. White Rose Gold and Black Rose Gold options provide a distinctive decorative appearance. Suitable for residences, offices, retail stores, showrooms, hotels, restaurants, and other contemporary interiors. ELSTRONG develops contemporary LED lighting solutions designed for modern architectural and interior applications. Rose gold finishes provide an elegant option for interiors requiring a more decorative lighting aesthetic. Three wattage choices make the suitable for different illumination requirements. COB LED technology provides concentrated illumination for accent and decorative lighting applications.",
-
-        // Main product images
-        image: "/product/whiteRg1.webp",
-
-        images: [
-          "/product/whiteRg1.webp",
-          "/product/whiteRg2.webp",
-          "/product/blackRg1.webp",
-          "/product/blackRg2.webp",
-        ],
-
-        // Product variants
-        wattages: [
-          {
-            value: "7W",
-            image: "/product/delta-cob-led-light-model-602-7w.webp",
-            price: 0,
-          },
-          {
-            value: "12W",
-            image: "/product/delta-cob-led-light-model-602-12w.webp",
-            price: 0,
-          },
-          {
-            value: "18W",
-            image: "/product/delta-cob-led-light-model-602-18w.webp",
-            price: 0,
-          },
-        ],
-
-        // Product specifications
-        specifications: {
-          Wattage: "7W / 12W / 18W",
-          "Product Model": "Delta COB LED Light",
-          "LED Technology": "COB LED",
-          "Colour Finish": "White Rose Gold / Black Rose Gold",
-          "Lighting Type": "Focused COB Illumination",
-          "Product Type": "COB LED Light",
-          "Lighting Application":
-            "Accent / Decorative / General Indoor Lighting",
-          Application:
-            "Residences / Offices / Retail Stores / Showrooms / Hotels / Restaurants / Other Contemporary Interiors",
-        },
-
-        // Features
-        features: [
-          {
-            title: "Premium Decorative Design",
-            text: "ELSTRONG Delta COB LED Light combines focused COB LED illumination with distinctive colour finishes for modern and premium-looking interiors.",
-          },
-          {
-            title: "Multiple Wattage Options",
-            text: "Available in 7W, 12W, and 18W, providing flexibility for different lighting levels and application requirements.",
-          },
-          {
-            title: "Two-Tone Finish Options",
-            text: "Available in White Rose Gold and Black Rose Gold, offering a refined appearance for contemporary interior spaces.",
-          },
-          {
-            title: "Focused Lighting",
-            text: "COB LED technology provides concentrated illumination, making the suitable for accent, decorative, and general indoor lighting applications.",
-          },
-          {
-            title: "Elegant Delta Design",
-            text: "This designed to add a stylish architectural element while delivering focused illumination.",
-          },
-          {
-            title: "Multiple Wattages",
-            text: "Available in 7W / 12W / 18W configurations to suit different lighting requirements.",
-          },
-          {
-            title: "Premium Colour Finishes",
-            text: "White Rose Gold and Black Rose Gold options provide a distinctive decorative appearance.",
-          },
-          {
-            title: "Versatile Indoor Use",
-            text: "Suitable for residences, offices, retail stores, showrooms, hotels, restaurants, and other contemporary interiors.",
-          },
-        ],
-
-        // Why choose this product/company
-        whyChoose: [
-          {
-            title: "Reliable LED Light Manufacturer",
-            text: "ELSTRONG develops contemporary LED lighting solutions designed for modern architectural and interior applications.",
-          },
-          {
-            title: "Premium Appearance",
-            text: "Rose gold finishes provide an elegant option for interiors requiring a more decorative lighting aesthetic.",
-          },
-          {
-            title: "Flexible Lighting",
-            text: "Three wattage choices make suitable for different illumination requirements.",
-          },
-          {
-            title: "Focused COB Lighting",
-            text: "COB LED technology provides concentrated illumination for accent and decorative lighting applications.",
-          },
-        ],
-
-        // Image used in description section
-        descriptionImage: "/product/delta-cob-led-light-model-602-2.webp",
-
-        // Additional product information
-        sku: "ELS-DELTA-COB-602",
-
-        stock: true,
-
-        stockText: "In Stock",
-
-        brochure: "/brochure/delta-cob-led-light-model-602-brochure.pdf",
-
-        // Related products
-        relatedProducts: [
-          "delta-cob-led-light-model-601",
-          "adjustable-square-panel-led-light",
-          "adjustable-round-panel-led-light",
-          "purse-outdoor-led-lights",
-        ],
-      },
-
-      {
-        id: 515,
-        name: "Delta COB LED Light",
-        slug: "delta-cob-led-light",
-
-        metaTitle:
-          "Delta COB LED Light | 7W 12W 18W COB Light | ELSTRONG",
-
-        metaDesc:
-          "ELSTRONG Delta COB LED Light features a distinctive gun model design with focused directional COB illumination, available in 7W, 12W, and 18W with White and Black finishes for modern interiors.",
-
-        category: "COB Lights",
-        categorySlug: "cob-lights",
-
-        price: 0,
-        oldPrice: 0,
-        currency: "₹",
-
-        badge: "Featured",
-
-        shortDescription:
-          "ELSTRONG Delta COB LED Light features a distinctive gun model design created for focused and directional illumination in modern interiors. Available in 7W, 12W, and 18W, with White and Black finishes, it provides flexibility for different lighting requirements and interior designs.",
-
-        description:
-          "ELSTRONG Delta COB LED Light features a distinctive gun model design created for focused and directional illumination in modern interiors. Available in 7W, 12W, and 18W, providing flexibility for different lighting requirements. Offered in White and Black, allowing the product to coordinate with different ceiling and interior designs. COB LED technology provides concentrated light output, making the suitable for accent and directional lighting applications. The distinctive form provides a directional lighting appearance that adds character to contemporary interior spaces. Choose between 7W, 12W, and 18W according to the desired lighting level. White and black finishes provide versatile options for different interior colour schemes. Suitable for residential spaces, offices, retail stores, showrooms, hospitality areas, and decorative interiors. ELSTRONG provides modern LED lighting solutions designed for efficient, functional, and contemporary applications. The gun model design is suitable for applications requiring focused and directional illumination. 7W, 12W, and 18W variants allow selection according to different lighting needs. White and black finishes provide versatile options for contemporary residential and commercial interiors.",
-
-        // Main product images
-        image: "/product/blackGun1.webp",
-
-        images: [
-          "/product/blackGun1.webp",
-          "/product/blackGun2.webp",
-          "/product/whiteGun1.webp",
-          "/product/whiteGun2.webp",
-        ],
-
-        // Product variants
-        wattages: [
-          {
-            value: "7W",
-            image: "/product/delta-cob-led-light-model-955-7w.webp",
-            price: 0,
-          },
-          {
-            value: "12W",
-            image: "/product/delta-cob-led-light-model-955-12w.webp",
-            price: 0,
-          },
-          {
-            value: "18W",
-            image: "/product/delta-cob-led-light-model-955-18w.webp",
-            price: 0,
-          },
-        ],
-
-        // Product specifications
-        specifications: {
-          Wattage: "7W / 12W / 18W",
-          "Product Model": "Delta COB LED Light",
-          "LED Technology": "COB LED",
-          "Design Type": "Gun Model",
-          "Body Colour": "White / Black",
-          "Lighting Type": "Focused and Directional Illumination",
-          "Product Type": "COB LED Light",
-          "Lighting Application": "Accent / Directional Lighting",
-          Application:
-            "Residential Spaces / Offices / Retail Stores / Showrooms / Hospitality Areas / Decorative Interiors",
-        },
-
-        // Features
-        features: [
-          {
-            title: "Distinctive Gun-Style Design",
-            text: "ELSTRONG Delta COB LED Light features a distinctive gun model design created for focused and directional illumination in modern interiors.",
-          },
-          {
-            title: "Three Wattage Options",
-            text: "Available in 7W, 12W, and 18W, providing flexibility for different lighting requirements.",
-          },
-          {
-            title: "White & Black Finishes",
-            text: "Offered in White and Black, allowing the product to coordinate with different ceiling and interior designs.",
-          },
-          {
-            title: "Focused COB Illumination",
-            text: "COB LED technology provides concentrated light output, making suitable for accent and directional lighting applications.",
-          },
-          {
-            title: "Gun Model Design",
-            text: "The distinctive form provides a directional lighting appearance that adds character to contemporary interior spaces.",
-          },
-          {
-            title: "Multiple Wattage Selection",
-            text: "Choose between 7W, 12W, and 18W according to the desired lighting level.",
-          },
-          {
-            title: "Two Colour Options",
-            text: "White and black finishes provide versatile options for different interior colour schemes.",
-          },
-          {
-            title: "Wide Indoor Application",
-            text: "Suitable for residential spaces, offices, retail stores, showrooms, hospitality areas, and decorative interiors.",
-          },
-        ],
-
-        // Why choose this product/company
-        whyChoose: [
-          {
-            title: "Professional Lighting Manufacturer",
-            text: "ELSTRONG provides modern LED lighting solutions designed for efficient, functional, and contemporary applications.",
-          },
-          {
-            title: "Directional Lighting Design",
-            text: "The gun model design is suitable for applications requiring focused and directional illumination.",
-          },
-          {
-            title: "Flexible Wattage Options",
-            text: "7W, 12W, and 18W variants allow selection according to different lighting needs.",
-          },
-          {
-            title: "Modern Colour Choices",
-            text: "White and black finishes provide versatile options for contemporary residential and commercial interiors.",
-          },
-        ],
-
-        // Image used in description section
-        descriptionImage: "/product/blackGun2.webp",
-
-        // Additional product information
-        sku: "ELS-DELTA-COB-955",
-
-        stock: true,
-
-        stockText: "In Stock",
-
-        brochure: "/brochure/delta-cob-led-light-model-955-brochure.pdf",
-
-        // Related products
-        relatedProducts: [
-          "delta-cob-led-light-model-601",
-          "delta-cob-led-light-model-602",
-          "adjustable-square-panel-led-light",
-          "adjustable-round-panel-led-light",
-        ],
-      },
-    ],
-  },
+ 
 
   {
     id: 16,
@@ -6288,8 +5835,8 @@ export const categories = [
         metaDesc:
           "ELSTRONG Rainbow Deep Junction is a round LED lighting solution with 7+7W and 12+12W options, 85V–350V operation, 440V high-voltage protection, PF >0.95, 4 kV surge capacity, and multiple dual-colour and RGB combinations.",
 
-        category: "Junction Lights",
-        categorySlug: "junction-lights",
+        category: "Rainbow Deep Junction",
+        categorySlug: "rainbow-deep-junction",
 
         price: 0,
         oldPrice: 0,
@@ -6423,7 +5970,7 @@ export const categories = [
   },
 
   {
-    id: 16,
+    id: 46,
     name: "5 Head Linear Light",
     slug: "5-head-linear-light",
     metaTitle: "5 head linear light | Focused LED Lighting | Elstrong",
@@ -6574,7 +6121,7 @@ export const categories = [
   },
 
   {
-    id: 16,
+    id: 56,
     name: "Rope Lights",
     slug: "rope-lights-manufacturer",
     metaTitle: "Rope Lights Manufacturer | LED Rope Lights | Altius Lighting",
@@ -7119,6 +6666,461 @@ export const categories = [
           "adjustable-square-panel-led-light",
           "adjustable-round-panel-led-light",
           "rainbow-deep-junction",
+        ],
+      },
+    ],
+  },
+
+   {
+    id: 2,
+    name: "COB Lights",
+    slug: "cob-lights-manufacturer",
+    metaTitle: "COB Lights Manufacturer | Premium LED COB Lights | Altius Lighting",
+    metaDesc:
+      "Altius Lighting is a trusted COB light manufacturer offering energy-efficient, durable and high-performance LED COB lighting solutions for residential, commercial and industrial applications.",
+    image: "/product/cobblack1.webp",
+    hoverImage: "/product/cobblack1.webp",
+
+    description:
+      "ELSTRONG COB Model delivers focused, uniform illumination with a clean and modern design, making it ideal for residential, commercial, and architectural spaces.",
+    products: [
+      {
+        id: 513,
+        name: "Delta COB LED Light Black",
+        slug: "delta-cob-led-light-black",
+
+        metaTitle:
+          "Delta COB LED Light | 7W 12W 18W COB Light | ELSTRONG",
+
+        metaDesc:
+          "ELSTRONG Delta COB LED Light is a modern focused lighting solution available in 7W, 12W, and 18W, with White and Black colour options for residential, commercial, retail, and indoor applications.",
+
+        category: "COB Lights",
+        categorySlug: "cob-lights-manufacturer",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG Delta COB LED Light is designed to provide focused and stylish illumination for modern residential, commercial, retail, and interior applications. Available in 7W, 12W, and 18W, with White and Black colour options, it offers flexible lighting choices for different requirements and installation spaces.",
+
+        description:
+          "ELSTRONG Delta COB LED Light is designed to provide focused and stylish illumination for modern residential, commercial, retail, and interior applications. Available in 7W, 12W, and 18W, offering flexibility for different lighting requirements and installation spaces. Available in White and Black, making it easy to complement different ceiling and interior colour schemes. COB LED technology provides a concentrated lighting effect suitable for accent, decorative, and general indoor lighting applications. The Delta COB features a clean and modern profile suitable for contemporary interiors. Choose from 7W, 12W, or 18W according to the required lighting level. The two body colour options provide flexibility for different interior design preferences. Suitable for homes, offices, shops, showrooms, hospitality spaces, corridors, and other indoor areas.",
+
+        // Main product images
+        image: "/product/cobblack1.webp",
+
+        images: [
+          "/product/cobblack1.webp",
+          "/product/cobblack2.webp",
+          "/product/cobblack3.webp",
+          "/product/cobwhite1.webp",
+          "/product/cobwhite2.webp",
+          "/product/cobwhite3.webp",
+        ],
+
+        // Product variants
+        wattages: [
+          {
+            value: "7W",
+            image: "/product/delta-cob-led-light-model-601-7w.webp",
+            price: 0,
+          },
+          {
+            value: "12W",
+            image: "/product/delta-cob-led-light-model-601-12w.webp",
+            price: 0,
+          },
+          {
+            value: "18W",
+            image: "/product/delta-cob-led-light-model-601-18w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          Wattage: "7W / 12W / 18W",
+          "Product Model": "Delta COB LED Light",
+          "LED Technology": "COB LED",
+          "Body Colour": "White / Black",
+          "Lighting Type": "Focused COB Illumination",
+          "Product Type": "COB LED Light",
+          Application:
+            "Homes / Offices / Shops / Showrooms / Hospitality Spaces / Corridors / Other Indoor Areas",
+          "Lighting Application":
+            "Accent / Decorative / General Indoor Lighting",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Modern COB LED Design",
+            text: "ELSTRONG Delta COB LED Light is designed to provide focused and stylish illumination for modern residential, commercial, retail, and interior applications.",
+          },
+          {
+            title: "Multiple Wattage Options",
+            text: "Available in 7W, 12W, and 18W, offering flexibility for different lighting requirements and installation spaces.",
+          },
+          {
+            title: "Elegant Colour Options",
+            text: "Available in White and Black, making it easy to complement different ceiling and interior colour schemes.",
+          },
+          {
+            title: "Focused COB Illumination",
+            text: "COB LED technology provides a concentrated lighting effect suitable for accent, decorative, and general indoor lighting applications.",
+          },
+          {
+            title: "Contemporary Design",
+            text: "The Delta COB features a clean and modern profile suitable for contemporary interiors.",
+          },
+          {
+            title: "Multiple Power Options",
+            text: "Choose from 7W, 12W, or 18W according to the required lighting level.",
+          },
+          {
+            title: "White & Black Finishes",
+            text: "The two body colour options provide flexibility for different interior design preferences.",
+          },
+          {
+            title: "Versatile Application",
+            text: "Suitable for homes, offices, shops, showrooms, hospitality spaces, corridors, and other indoor areas.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG develops modern LED lighting products with a focus on practical design and dependable performance.",
+          },
+          {
+            title: "Flexible Wattage Selection",
+            text: "7W, 12W, and 18W options provide suitable choices for different indoor lighting requirements.",
+          },
+          {
+            title: "Modern Finishes",
+            text: "White and black colour options complement a variety of contemporary interior styles.",
+          },
+          {
+            title: "COB LED Performance",
+            text: "COB technology provides focused illumination suitable for accent and general lighting applications.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/cobblack3.webp",
+
+        // Additional product information
+        sku: "ELS-DELTA-COB-601",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/delta-cob-led-light-model-601-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "adjustable-square-panel-led-light",
+          "adjustable-round-panel-led-light",
+          "purse-outdoor-led-lights",
+          "flood-light-gm-model",
+        ],
+      },
+
+      {
+        id: 514,
+        name: "Delta COB LED Light Rose Gold",
+        slug: "delta-cob-led-light-rose-gold",
+
+        metaTitle:
+          "Delta COB LED Light | 7W 12W 18W COB Light | ELSTRONG",
+
+        metaDesc:
+          "ELSTRONG Delta COB LED Light combines focused COB LED illumination with White Rose Gold and Black Rose Gold finishes, available in 7W, 12W, and 18W for modern residential, commercial, retail, and interior applications.",
+
+        category: "COB Lights",
+        categorySlug: "cob-lights",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG Delta COB LED Light combines focused COB LED illumination with distinctive colour finishes for modern and premium-looking interiors. Available in 7W, 12W, and 18W, with White Rose Gold and Black Rose Gold options, it provides flexible lighting choices for different lighting levels and application requirements.",
+
+        description:
+          "ELSTRONG Delta COB LED Light combines focused COB LED illumination with distinctive colour finishes for modern and premium-looking interiors. Available in 7W, 12W, and 18W, providing flexibility for different lighting levels and application requirements. Available in White Rose Gold and Black Rose Gold, offering a refined appearance for contemporary interior spaces. COB LED technology provides concentrated illumination, making the suitable for accent, decorative, and general indoor lighting applications. This designed to add a stylish architectural element while delivering focused illumination. Available in 7W / 12W / 18W configurations to suit different lighting requirements. White Rose Gold and Black Rose Gold options provide a distinctive decorative appearance. Suitable for residences, offices, retail stores, showrooms, hotels, restaurants, and other contemporary interiors. ELSTRONG develops contemporary LED lighting solutions designed for modern architectural and interior applications. Rose gold finishes provide an elegant option for interiors requiring a more decorative lighting aesthetic. Three wattage choices make the suitable for different illumination requirements. COB LED technology provides concentrated illumination for accent and decorative lighting applications.",
+
+        // Main product images
+        image: "/product/whiteRg1.webp",
+
+        images: [
+          "/product/whiteRg1.webp",
+          "/product/whiteRg2.webp",
+          "/product/blackRg1.webp",
+          "/product/blackRg2.webp",
+        ],
+
+        // Product variants
+        wattages: [
+          {
+            value: "7W",
+            image: "/product/delta-cob-led-light-model-602-7w.webp",
+            price: 0,
+          },
+          {
+            value: "12W",
+            image: "/product/delta-cob-led-light-model-602-12w.webp",
+            price: 0,
+          },
+          {
+            value: "18W",
+            image: "/product/delta-cob-led-light-model-602-18w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          Wattage: "7W / 12W / 18W",
+          "Product Model": "Delta COB LED Light",
+          "LED Technology": "COB LED",
+          "Colour Finish": "White Rose Gold / Black Rose Gold",
+          "Lighting Type": "Focused COB Illumination",
+          "Product Type": "COB LED Light",
+          "Lighting Application":
+            "Accent / Decorative / General Indoor Lighting",
+          Application:
+            "Residences / Offices / Retail Stores / Showrooms / Hotels / Restaurants / Other Contemporary Interiors",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Premium Decorative Design",
+            text: "ELSTRONG Delta COB LED Light combines focused COB LED illumination with distinctive colour finishes for modern and premium-looking interiors.",
+          },
+          {
+            title: "Multiple Wattage Options",
+            text: "Available in 7W, 12W, and 18W, providing flexibility for different lighting levels and application requirements.",
+          },
+          {
+            title: "Two-Tone Finish Options",
+            text: "Available in White Rose Gold and Black Rose Gold, offering a refined appearance for contemporary interior spaces.",
+          },
+          {
+            title: "Focused Lighting",
+            text: "COB LED technology provides concentrated illumination, making the suitable for accent, decorative, and general indoor lighting applications.",
+          },
+          {
+            title: "Elegant Delta Design",
+            text: "This designed to add a stylish architectural element while delivering focused illumination.",
+          },
+          {
+            title: "Multiple Wattages",
+            text: "Available in 7W / 12W / 18W configurations to suit different lighting requirements.",
+          },
+          {
+            title: "Premium Colour Finishes",
+            text: "White Rose Gold and Black Rose Gold options provide a distinctive decorative appearance.",
+          },
+          {
+            title: "Versatile Indoor Use",
+            text: "Suitable for residences, offices, retail stores, showrooms, hotels, restaurants, and other contemporary interiors.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Reliable LED Light Manufacturer",
+            text: "ELSTRONG develops contemporary LED lighting solutions designed for modern architectural and interior applications.",
+          },
+          {
+            title: "Premium Appearance",
+            text: "Rose gold finishes provide an elegant option for interiors requiring a more decorative lighting aesthetic.",
+          },
+          {
+            title: "Flexible Lighting",
+            text: "Three wattage choices make suitable for different illumination requirements.",
+          },
+          {
+            title: "Focused COB Lighting",
+            text: "COB LED technology provides concentrated illumination for accent and decorative lighting applications.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/delta-cob-led-light-model-602-2.webp",
+
+        // Additional product information
+        sku: "ELS-DELTA-COB-602",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/delta-cob-led-light-model-602-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "delta-cob-led-light-model-601",
+          "adjustable-square-panel-led-light",
+          "adjustable-round-panel-led-light",
+          "purse-outdoor-led-lights",
+        ],
+      },
+
+      {
+        id: 515,
+        name: "Black Delta COB LED Light",
+        slug: "black-delta-cob-led-light",
+
+        metaTitle:
+          "Delta COB LED Light | 7W 12W 18W COB Light | ELSTRONG",
+
+        metaDesc:
+          "ELSTRONG Delta COB LED Light features a distinctive gun model design with focused directional COB illumination, available in 7W, 12W, and 18W with White and Black finishes for modern interiors.",
+
+        category: "COB Lights",
+        categorySlug: "cob-lights-manufacturer",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG Delta COB LED Light features a distinctive gun model design created for focused and directional illumination in modern interiors. Available in 7W, 12W, and 18W, with White and Black finishes, it provides flexibility for different lighting requirements and interior designs.",
+
+        description:
+          "ELSTRONG Delta COB LED Light features a distinctive gun model design created for focused and directional illumination in modern interiors. Available in 7W, 12W, and 18W, providing flexibility for different lighting requirements. Offered in White and Black, allowing the product to coordinate with different ceiling and interior designs. COB LED technology provides concentrated light output, making the suitable for accent and directional lighting applications. The distinctive form provides a directional lighting appearance that adds character to contemporary interior spaces. Choose between 7W, 12W, and 18W according to the desired lighting level. White and black finishes provide versatile options for different interior colour schemes. Suitable for residential spaces, offices, retail stores, showrooms, hospitality areas, and decorative interiors. ELSTRONG provides modern LED lighting solutions designed for efficient, functional, and contemporary applications. The gun model design is suitable for applications requiring focused and directional illumination. 7W, 12W, and 18W variants allow selection according to different lighting needs. White and black finishes provide versatile options for contemporary residential and commercial interiors.",
+
+        // Main product images
+        image: "/product/blackGun1.webp",
+
+        images: [
+          "/product/blackGun1.webp",
+          "/product/blackGun2.webp",
+          "/product/whiteGun1.webp",
+          "/product/whiteGun2.webp",
+        ],
+
+        // Product variants
+        wattages: [
+          {
+            value: "7W",
+            image: "/product/delta-cob-led-light-model-955-7w.webp",
+            price: 0,
+          },
+          {
+            value: "12W",
+            image: "/product/delta-cob-led-light-model-955-12w.webp",
+            price: 0,
+          },
+          {
+            value: "18W",
+            image: "/product/delta-cob-led-light-model-955-18w.webp",
+            price: 0,
+          },
+        ],
+
+        // Product specifications
+        specifications: {
+          Wattage: "7W / 12W / 18W",
+          "Product Model": "Delta COB LED Light",
+          "LED Technology": "COB LED",
+          "Design Type": "Gun Model",
+          "Body Colour": "White / Black",
+          "Lighting Type": "Focused and Directional Illumination",
+          "Product Type": "COB LED Light",
+          "Lighting Application": "Accent / Directional Lighting",
+          Application:
+            "Residential Spaces / Offices / Retail Stores / Showrooms / Hospitality Areas / Decorative Interiors",
+        },
+
+        // Features
+        features: [
+          {
+            title: "Distinctive Gun-Style Design",
+            text: "ELSTRONG Delta COB LED Light features a distinctive gun model design created for focused and directional illumination in modern interiors.",
+          },
+          {
+            title: "Three Wattage Options",
+            text: "Available in 7W, 12W, and 18W, providing flexibility for different lighting requirements.",
+          },
+          {
+            title: "White & Black Finishes",
+            text: "Offered in White and Black, allowing the product to coordinate with different ceiling and interior designs.",
+          },
+          {
+            title: "Focused COB Illumination",
+            text: "COB LED technology provides concentrated light output, making suitable for accent and directional lighting applications.",
+          },
+          {
+            title: "Gun Model Design",
+            text: "The distinctive form provides a directional lighting appearance that adds character to contemporary interior spaces.",
+          },
+          {
+            title: "Multiple Wattage Selection",
+            text: "Choose between 7W, 12W, and 18W according to the desired lighting level.",
+          },
+          {
+            title: "Two Colour Options",
+            text: "White and black finishes provide versatile options for different interior colour schemes.",
+          },
+          {
+            title: "Wide Indoor Application",
+            text: "Suitable for residential spaces, offices, retail stores, showrooms, hospitality areas, and decorative interiors.",
+          },
+        ],
+
+        // Why choose this product/company
+        whyChoose: [
+          {
+            title: "Professional Lighting Manufacturer",
+            text: "ELSTRONG provides modern LED lighting solutions designed for efficient, functional, and contemporary applications.",
+          },
+          {
+            title: "Directional Lighting Design",
+            text: "The gun model design is suitable for applications requiring focused and directional illumination.",
+          },
+          {
+            title: "Flexible Wattage Options",
+            text: "7W, 12W, and 18W variants allow selection according to different lighting needs.",
+          },
+          {
+            title: "Modern Colour Choices",
+            text: "White and black finishes provide versatile options for contemporary residential and commercial interiors.",
+          },
+        ],
+
+        // Image used in description section
+        descriptionImage: "/product/blackGun2.webp",
+
+        // Additional product information
+        sku: "ELS-DELTA-COB-955",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/delta-cob-led-light-model-955-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "delta-cob-led-light-model-601",
+          "delta-cob-led-light-model-602",
+          "adjustable-square-panel-led-light",
+          "adjustable-round-panel-led-light",
         ],
       },
     ],
