@@ -549,8 +549,8 @@ export const categories = [
         metaDesc:
           "Discover Elstrong Moveable Lens COB 5W / 7W / 9W, designed for focused and adjustable illumination, making it ideal for accent, retail, architectural, and interior lighting.",
 
-        category: "COB Lens Model",
-        categorySlug: "cob-lens-model",
+        category: "Moveable Lens Model",
+        categorySlug: "moveable-lens-model",
 
         price: 0,
         oldPrice: 0,
@@ -3609,8 +3609,8 @@ export const categories = [
         metaDesc:
           "Discover Elstrong LED Bulb available in 20W, 30W, 40W and 50W options with multiple colour temperatures and high power factor for efficient lighting.",
 
-        category: "Bulb",
-        categorySlug: "bulb",
+        category:"Led Bulb",
+        categorySlug: "led-bulb-manufacturer",
 
         price: 0,
         oldPrice: 0,
@@ -5993,8 +5993,8 @@ export const categories = [
         metaDesc:
           "ELSTRONG ALLN-12LZ is a 12W LED module with tunable switch and tunable remote function, 30° beam angle, and compact 146 × 44 mm dimensions for residential, commercial, retail, office, and interior applications.",
 
-        category: "5 head linear light",
-        categorySlug: "5-head-linear-light",
+        category:"5 Head Linear Light",
+        categorySlug:"5-head-linear-light",
 
         price: 0,
         oldPrice: 0,
