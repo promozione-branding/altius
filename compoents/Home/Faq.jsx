@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 
@@ -69,8 +70,10 @@ export default function Faq() {
 
             {/* Image */}
             <div className="group h-50 relative mt-10 aspect-[4/5] w-full max-w-md overflow-hidden ">
-              <img
-                src="https://images.unsplash.com/photo-1524634126442-357e0eac3c14?auto=format&fit=crop&w=1200&q=80"
+              <Image
+                    height={1000}
+                    width={1000}
+                src="/faq.avif"
                 alt="LED Light Manufacturer, LED Light, LED Light Supplier"
                 className="
                   h-full

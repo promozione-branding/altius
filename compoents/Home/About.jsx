@@ -6,6 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CurvedLoop from "../ui/CurvedLoop";
 import Link from "next/link";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -368,8 +369,10 @@ export default function About() {
                 "
               >
                 <div className="about-image-inner h-full w-full">
-                  <img
+                  <Image
                     src="/aboutnew.webp"
+                    height={1000}
+                    width={1000}
                     alt="LED Light Manufacturer, LED Light, LED Light Supplier"
                     className="
                       about-image

@@ -4,6 +4,7 @@ import { useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import axios from "axios";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -239,10 +240,12 @@ export default function Form() {
               md:h-[520px]
             "
           >
-            <img
+            <Image
               ref={imageRef}
-              src="https://images.unsplash.com/photo-1668255310325-20c3929913e2?q=80&w=880&auto=format&fit=crop"
+              src="/form.avif"
               alt="LED Light Manufacturer, LED Light, LED Light Supplier"
+              width={1000}
+              height={1000}
               className="
                 h-full
                 w-full

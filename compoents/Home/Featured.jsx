@@ -5,6 +5,7 @@ import { FiArrowRight, FiStar } from "react-icons/fi";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -299,7 +300,7 @@ export default function Featured() {
 
               {/* CTA */}
 
-              <a
+              <Link
                 id="featured-cta"
                 href="/products"
                 className="
@@ -335,7 +336,7 @@ export default function Featured() {
                     group-hover:translate-x-1
                   "
                 />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -387,7 +388,7 @@ export default function Featured() {
 
               {/* Desktop View All */}
 
-              <a
+              <Link
                 href="/products"
                 className="
                   hidden
@@ -406,7 +407,7 @@ export default function Featured() {
                 View All
 
                 <FiArrowRight size={15} />
-              </a>
+              </Link>
             </div>
 
             {/* =================================================
@@ -449,7 +450,9 @@ export default function Featured() {
                       bg-[#f5f4f1]
                     "
                   >
-                    <img
+                    <Image
+                    height={1000}
+                    width={1000}
                       src={product.image}
                       alt={product.name}
                       className="
@@ -517,7 +520,9 @@ export default function Featured() {
               rounded-2xl
             "
           >
-            <img
+            <Image
+                    height={1000}
+                    width={1000}
               src="/featured.png"
               alt="LED Light Manufacturer, LED Light, LED Light Supplier"
               className="
@@ -661,7 +666,7 @@ export default function Featured() {
         ================================================= */}
 
         <div className="mt-8 flex justify-center sm:hidden">
-          <a
+          <Link
             href="/products"
             className="
               flex
@@ -677,7 +682,7 @@ export default function Featured() {
             View All Products
 
             <FiArrowRight size={15} />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

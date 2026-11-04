@@ -178,7 +178,7 @@ export default function CTA2() {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1718221621618-e477ce33485a?q=80&w=1189&auto=format&fit=crop')",
+            "url('/cta.avif')",
         }}
       />
 

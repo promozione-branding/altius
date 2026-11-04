@@ -8,6 +8,7 @@ import {
   FiArrowUpRight,
 } from "react-icons/fi";
 import Link from "next/link";
+import Image from "next/image";
 
 const collections = [
   {
@@ -577,7 +578,9 @@ export default function Collections2() {
         md:h-full
       "
     >
-      <img
+      <Image
+                          height={1000}
+                          width={1000}
         src={item.image}
         alt={item.title}
         draggable={false}
