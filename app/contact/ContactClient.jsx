@@ -61,12 +61,12 @@ export default function ContactClient() {
     setLoading(true);
     setStatus("");
     setStatusType("");
-
+    const webisteUrl = window.location.hostname + window.location.pathname;
     try {
       const payload = {
-        platform: "Altius Elstrong Contact Form",
+        platform: webisteUrl || "Altius Elstrong Contact Form",
         platformEmail: "altus@email.com",
-                supplierToken: "6a9fb124d936bdc2bb1d6ca5",
+        supplierToken: "6a9fb124d936bdc2bb1d6ca5",
 
         name: formData.name,
         phone: formData.phone,
@@ -107,7 +107,7 @@ export default function ContactClient() {
 
       setStatus(
         error?.response?.data?.message ||
-          "Something went wrong. Please try again."
+        "Something went wrong. Please try again."
       );
 
       setStatusType("error");
@@ -335,7 +335,7 @@ export default function ContactClient() {
                         Select product type
                       </option>
 
-                     <option value="Concealed Lights">
+                      <option value="Concealed Lights">
                         Concealed Lights
                       </option>
                       <option value="COB Lens Model">
@@ -400,11 +400,10 @@ export default function ContactClient() {
                   {/* SUCCESS / ERROR */}
                   {status && (
                     <div
-                      className={`rounded-lg px-4 py-3 text-sm font-medium ${
-                        statusType === "success"
+                      className={`rounded-lg px-4 py-3 text-sm font-medium ${statusType === "success"
                           ? "bg-green-50 text-green-700"
                           : "bg-red-50 text-red-600"
-                      }`}
+                        }`}
                     >
                       {status}
                     </div>

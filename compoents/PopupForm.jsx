@@ -66,8 +66,9 @@ export default function PopupForm({ isOpen, onClose }) {
     setSuccess(false);
 
     try {
+      const webisteUrl = window.location.hostname + window.location.pathname;
       const payload = {
-        platform: "Altius Elstrong Popup Form",
+        platform: webisteUrl || "Altius Elstrong Popup Form",
         platformEmail: "altus@email.com",
         supplierToken: "6a9fb124d936bdc2bb1d6ca5",
 
@@ -101,7 +102,7 @@ export default function PopupForm({ isOpen, onClose }) {
 
       setError(
         err?.response?.data?.message ||
-          "Something went wrong. Please try again."
+        "Something went wrong. Please try again."
       );
     } finally {
       setLoading(false);
@@ -263,7 +264,7 @@ export default function PopupForm({ isOpen, onClose }) {
                       htmlFor="popup-place"
                       className="mb-1 block text-[11px] font-semibold uppercase tracking-wide text-slate-700"
                     >
-                      Place 
+                      Place
                     </label>
 
                     <input
@@ -273,7 +274,7 @@ export default function PopupForm({ isOpen, onClose }) {
                       placeholder="Enter your city / place"
                       value={formData.place}
                       onChange={handleChange}
-                      
+
                       disabled={loading}
                       className="h-10 w-full border border-slate-200 bg-white px-3 text-sm text-black outline-none transition placeholder:text-slate-400 focus:border-black disabled:bg-slate-50"
                     />

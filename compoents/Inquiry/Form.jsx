@@ -95,8 +95,9 @@ const Form = ({ onClose }) => {
     setLoading(true);
 
     try {
+      const webisteUrl = window.location.hostname + window.location.pathname;
       const payload = {
-        platform: "Altius Elstrong Popup Form",
+        platform: webisteUrl || "Altius Elstrong Popup Form",
         platformEmail: "altus@email.com",
         supplierToken: "6a9fb124d936bdc2bb1d6ca5",
 
@@ -133,7 +134,7 @@ const Form = ({ onClose }) => {
 
       setError(
         err?.response?.data?.message ||
-          "Something went wrong. Please try again.",
+        "Something went wrong. Please try again.",
       );
     } finally {
       setLoading(false);
@@ -215,9 +216,9 @@ const Form = ({ onClose }) => {
 
             {/* RIGHT FORM */}
             <div className="relative p-2 sm:p-6 lg:p-8">
-  {/* FORM CARD */}
-  <div
-    className="
+              {/* FORM CARD */}
+              <div
+                className="
       w-full
       lg:max-w-xl
       lg:ml-auto
@@ -228,39 +229,39 @@ const Form = ({ onClose }) => {
       shadow-xl shadow-gray-200/40
       sm:p-7
     "
-  >
-    <div className="mb-3 md:mb-6">
-      <h3 className="text-lg font-bold text-gray-900 md:text-xl">
-        Tell Us What You Need
-      </h3>
+              >
+                <div className="mb-3 md:mb-6">
+                  <h3 className="text-lg font-bold text-gray-900 md:text-xl">
+                    Tell Us What You Need
+                  </h3>
 
-      <p className="mt-1 hidden text-sm text-gray-500 md:block">
-        Fill in the details and we'll get back to you.
-      </p>
-    </div>
+                  <p className="mt-1 hidden text-sm text-gray-500 md:block">
+                    Fill in the details and we'll get back to you.
+                  </p>
+                </div>
 
-    <form onSubmit={handleSubmit} noValidate>
-      <div className="grid gap-4 sm:grid-cols-2">
+                <form onSubmit={handleSubmit} noValidate>
+                  <div className="grid gap-4 sm:grid-cols-2">
 
-        {/* NAME */}
-        <div>
-          <label
-            htmlFor="name"
-            className="mb-1 block text-sm font-semibold text-gray-700"
-          >
-            Full Name <span className="text-red-500">*</span>
-          </label>
+                    {/* NAME */}
+                    <div>
+                      <label
+                        htmlFor="name"
+                        className="mb-1 block text-sm font-semibold text-gray-700"
+                      >
+                        Full Name <span className="text-red-500">*</span>
+                      </label>
 
-          <input
-            id="name"
-            name="name"
-            type="text"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Enter your name"
-            autoComplete="name"
-            disabled={loading}
-            className="
+                      <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        value={formData.name}
+                        onChange={handleChange}
+                        placeholder="Enter your name"
+                        autoComplete="name"
+                        disabled={loading}
+                        className="
               h-11
               w-full
               rounded-xl
@@ -280,11 +281,11 @@ const Form = ({ onClose }) => {
               disabled:cursor-not-allowed
               disabled:opacity-60
             "
-          />
-        </div>
+                      />
+                    </div>
 
-        {/* EMAIL - OPTIONAL */}
-        {/* 
+                    {/* EMAIL - OPTIONAL */}
+                    {/* 
         <div>
           <label
             htmlFor="email"
@@ -329,27 +330,27 @@ const Form = ({ onClose }) => {
         </div>
         */}
 
-        {/* PHONE */}
-        <div>
-          <label
-            htmlFor="phone"
-            className="mb-1 block text-sm font-semibold text-gray-700"
-          >
-            Mobile Number <span className="text-red-500">*</span>
-          </label>
+                    {/* PHONE */}
+                    <div>
+                      <label
+                        htmlFor="phone"
+                        className="mb-1 block text-sm font-semibold text-gray-700"
+                      >
+                        Mobile Number <span className="text-red-500">*</span>
+                      </label>
 
-          <input
-            id="phone"
-            name="phone"
-            type="tel"
-            value={formData.phone}
-            onChange={handleChange}
-            placeholder="Enter 10 digit number"
-            inputMode="numeric"
-            autoComplete="tel"
-            maxLength={10}
-            disabled={loading}
-            className="
+                      <input
+                        id="phone"
+                        name="phone"
+                        type="tel"
+                        value={formData.phone}
+                        onChange={handleChange}
+                        placeholder="Enter 10 digit number"
+                        inputMode="numeric"
+                        autoComplete="tel"
+                        maxLength={10}
+                        disabled={loading}
+                        className="
               h-11
               w-full
               rounded-xl
@@ -369,30 +370,30 @@ const Form = ({ onClose }) => {
               disabled:cursor-not-allowed
               disabled:opacity-60
             "
-          />
+                      />
 
-          <p className="mt-1 text-[11px] text-gray-400">
-            Enter any 10-digit mobile number
-          </p>
-        </div>
+                      <p className="mt-1 text-[11px] text-gray-400">
+                        Enter any 10-digit mobile number
+                      </p>
+                    </div>
 
-        {/* PRODUCT */}
-        <div className="sm:col-span-2">
-          <label
-            htmlFor="product"
-            className="mb-1 block text-sm font-semibold text-gray-700"
-          >
-            Select Product <span className="text-red-500">*</span>
-          </label>
+                    {/* PRODUCT */}
+                    <div className="sm:col-span-2">
+                      <label
+                        htmlFor="product"
+                        className="mb-1 block text-sm font-semibold text-gray-700"
+                      >
+                        Select Product <span className="text-red-500">*</span>
+                      </label>
 
-          <div className="relative">
-            <select
-              id="product"
-              name="product"
-              value={formData.product}
-              onChange={handleChange}
-              disabled={loading}
-              className="
+                      <div className="relative">
+                        <select
+                          id="product"
+                          name="product"
+                          value={formData.product}
+                          onChange={handleChange}
+                          disabled={loading}
+                          className="
                 h-11
                 w-full
                 appearance-none
@@ -413,50 +414,50 @@ const Form = ({ onClose }) => {
                 disabled:cursor-not-allowed
                 disabled:opacity-60
               "
-            >
-              <option value="">Select a product</option>
+                        >
+                          <option value="">Select a product</option>
 
-              {products.map((product) => (
-                <option key={product} value={product}>
-                  {product}
-                </option>
-              ))}
-            </select>
+                          {products.map((product) => (
+                            <option key={product} value={product}>
+                              {product}
+                            </option>
+                          ))}
+                        </select>
 
-            <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-gray-400">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path d="m6 9 6 6 6-6" />
-              </svg>
-            </div>
-          </div>
-        </div>
+                        <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-gray-400">
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                          >
+                            <path d="m6 9 6 6 6-6" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
 
-        {/* PLACE */}
-        <div className="sm:col-span-2">
-          <label
-            htmlFor="place"
-            className="mb-1 block text-sm font-semibold text-gray-700"
-          >
-            Place <span className="text-red-500">*</span>
-          </label>
+                    {/* PLACE */}
+                    <div className="sm:col-span-2">
+                      <label
+                        htmlFor="place"
+                        className="mb-1 block text-sm font-semibold text-gray-700"
+                      >
+                        Place <span className="text-red-500">*</span>
+                      </label>
 
-          <input
-            id="place"
-            name="place"
-            type="text"
-            value={formData.place}
-            onChange={handleChange}
-            placeholder="Enter your city / location"
-            autoComplete="address-level2"
-            disabled={loading}
-            className="
+                      <input
+                        id="place"
+                        name="place"
+                        type="text"
+                        value={formData.place}
+                        onChange={handleChange}
+                        placeholder="Enter your city / location"
+                        autoComplete="address-level2"
+                        disabled={loading}
+                        className="
               h-11
               w-full
               rounded-xl
@@ -476,28 +477,28 @@ const Form = ({ onClose }) => {
               disabled:cursor-not-allowed
               disabled:opacity-60
             "
-          />
-        </div>
+                      />
+                    </div>
 
-        {/* MESSAGE */}
-        <div className="sm:col-span-2">
-          <label
-            htmlFor="message"
-            className="mb-1 block text-sm font-semibold text-gray-700"
-          >
-            Message / Requirement{" "}
-            <span className="text-red-500">*</span>
-          </label>
+                    {/* MESSAGE */}
+                    <div className="sm:col-span-2">
+                      <label
+                        htmlFor="message"
+                        className="mb-1 block text-sm font-semibold text-gray-700"
+                      >
+                        Message / Requirement{" "}
+                        <span className="text-red-500">*</span>
+                      </label>
 
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            placeholder="Tell us about your lighting requirement..."
-            rows={1}
-            disabled={loading}
-            className="
+                      <textarea
+                        id="message"
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                        placeholder="Tell us about your lighting requirement..."
+                        rows={1}
+                        disabled={loading}
+                        className="
               
               w-full
               resize-none
@@ -520,15 +521,15 @@ const Form = ({ onClose }) => {
               disabled:opacity-60
               md:h-[110px]
             "
-          />
-        </div>
-      </div>
+                      />
+                    </div>
+                  </div>
 
-      {/* SUBMIT BUTTON */}
-      <button
-        type="submit"
-        disabled={loading}
-        className="
+                  {/* SUBMIT BUTTON */}
+                  <button
+                    type="submit"
+                    disabled={loading}
+                    className="
           mt-5
           flex
           h-12
@@ -553,99 +554,99 @@ const Form = ({ onClose }) => {
           disabled:cursor-not-allowed
           disabled:opacity-70
         "
-      >
-        {loading ? (
-          <>
-            <svg
-              className="h-5 w-5 animate-spin"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <circle
-                cx="12"
-                cy="12"
-                r="9"
-                stroke="currentColor"
-                strokeWidth="3"
-                className="opacity-30"
-              />
+                  >
+                    {loading ? (
+                      <>
+                        <svg
+                          className="h-5 w-5 animate-spin"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <circle
+                            cx="12"
+                            cy="12"
+                            r="9"
+                            stroke="currentColor"
+                            strokeWidth="3"
+                            className="opacity-30"
+                          />
 
-              <path
-                d="M21 12a9 9 0 0 0-9-9"
-                stroke="currentColor"
-                strokeWidth="3"
-                strokeLinecap="round"
-              />
-            </svg>
+                          <path
+                            d="M21 12a9 9 0 0 0-9-9"
+                            stroke="currentColor"
+                            strokeWidth="3"
+                            strokeLinecap="round"
+                          />
+                        </svg>
 
-            Sending Enquiry...
-          </>
-        ) : (
-          <>
-            Get Free Quote
+                        Sending Enquiry...
+                      </>
+                    ) : (
+                      <>
+                        Get Free Quote
 
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path d="M5 12h14" />
-              <path d="m13 6 6 6-6 6" />
-            </svg>
-          </>
-        )}
-      </button>
+                        <svg
+                          width="18"
+                          height="18"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                        >
+                          <path d="M5 12h14" />
+                          <path d="m13 6 6 6-6 6" />
+                        </svg>
+                      </>
+                    )}
+                  </button>
 
-      {/* SUCCESS / ERROR MESSAGE */}
-      <div aria-live="polite" className="mt-3">
-        {success && (
-          <div className="flex items-start gap-3 rounded-xl border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-700">
-            <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green-500 text-xs font-bold text-white">
-              ✓
+                  {/* SUCCESS / ERROR MESSAGE */}
+                  <div aria-live="polite" className="mt-3">
+                    {success && (
+                      <div className="flex items-start gap-3 rounded-xl border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-700">
+                        <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green-500 text-xs font-bold text-white">
+                          ✓
+                        </div>
+
+                        <div>
+                          <p className="font-semibold">
+                            Request submitted successfully!
+                          </p>
+
+                          <p className="mt-0.5 text-xs text-green-600">
+                            Thank you. Our team will contact you shortly.
+                          </p>
+                        </div>
+                      </div>
+                    )}
+
+                    {error && (
+                      <div className="flex items-start gap-3 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+                        <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-red-500 text-xs font-bold text-white">
+                          !
+                        </div>
+
+                        <div>
+                          <p className="font-semibold">
+                            Unable to submit your request
+                          </p>
+
+                          <p className="mt-0.5 text-xs text-red-600">
+                            {error}
+                          </p>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* PRIVACY TEXT */}
+                  <p className="mt-2 text-center text-[11px] text-gray-400">
+                    Your information is safe with us and will only be used to
+                    respond to your enquiry.
+                  </p>
+                </form>
+              </div>
             </div>
-
-            <div>
-              <p className="font-semibold">
-                Request submitted successfully!
-              </p>
-
-              <p className="mt-0.5 text-xs text-green-600">
-                Thank you. Our team will contact you shortly.
-              </p>
-            </div>
-          </div>
-        )}
-
-        {error && (
-          <div className="flex items-start gap-3 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
-            <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-red-500 text-xs font-bold text-white">
-              !
-            </div>
-
-            <div>
-              <p className="font-semibold">
-                Unable to submit your request
-              </p>
-
-              <p className="mt-0.5 text-xs text-red-600">
-                {error}
-              </p>
-            </div>
-          </div>
-        )}
-      </div>
-
-      {/* PRIVACY TEXT */}
-      <p className="mt-2 text-center text-[11px] text-gray-400">
-        Your information is safe with us and will only be used to
-        respond to your enquiry.
-      </p>
-    </form>
-  </div>
-</div>
           </div>
         </div>
       </div>

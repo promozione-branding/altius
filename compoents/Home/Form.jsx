@@ -44,8 +44,9 @@ export default function Form() {
     setStatusType("");
 
     try {
+      const webisteUrl = window.location.hostname + window.location.pathname;
       const payload = {
-        platform: "Altius Elstrong form",
+        platform: webisteUrl || "Altius Elstrong form",
         platformEmail: "altus@email.com",
         supplierToken: "6a9fb124d936bdc2bb1d6ca5",
 
@@ -76,7 +77,7 @@ export default function Form() {
 
       setStatus(
         error?.response?.data?.message ||
-          "Something went wrong. Please try again."
+        "Something went wrong. Please try again."
       );
       setStatusType("error");
     } finally {
@@ -282,18 +283,18 @@ export default function Form() {
             "
           >
             {/* DECORATIVE ICON */}
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={150}
-    height={150}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width={150}
+              height={150}
               className=" icon text-[#85a30f] absolute -right-3 top-0  "
-    viewBox="0 0 1024 1024"
-  >
-    <path
-      fill="#85a30f"
-      d="M434.452 904.856c0 30.647 24.843 55.49 55.489 55.49h36.993c30.647 0 55.49-24.843 55.49-55.49V886.36H434.452v18.496zm73.986-832.342c-173.66 0-314.44 140.78-314.44 314.44 0 95.368 42.457 180.82 109.499 238.486 41.118 35.365 130.955 223.926 130.955 223.926h147.972s89.893-188.849 130.128-223.219c67.521-57.672 110.326-143.433 110.326-239.193.001-173.659-140.78-314.44-314.44-314.44zm180.101 524.718C653.037 627.509 573.72 812.374 573.72 812.374h-46.785V579.401l87.181-87.181c7.173-7.175 7.173-18.805 0-25.978-7.173-7.173-18.804-7.173-25.978 0l-79.61 79.61-107.895-107.895c-7.225-7.225-18.935-7.225-26.158 0-7.225 7.223-7.225 18.933 0 26.158l112.292 112.292c.981.981 2.05 1.817 3.174 2.531v233.436h-46.785s-79.269-184.61-115.548-215.765c-59.157-50.801-96.618-126.079-96.618-210.094 0-152.986 124.217-277.007 277.447-277.007s277.447 124.021 277.447 277.007c.002 84.358-37.768 159.911-97.345 210.717z"
-    />
-  </svg>
+              viewBox="0 0 1024 1024"
+            >
+              <path
+                fill="#85a30f"
+                d="M434.452 904.856c0 30.647 24.843 55.49 55.489 55.49h36.993c30.647 0 55.49-24.843 55.49-55.49V886.36H434.452v18.496zm73.986-832.342c-173.66 0-314.44 140.78-314.44 314.44 0 95.368 42.457 180.82 109.499 238.486 41.118 35.365 130.955 223.926 130.955 223.926h147.972s89.893-188.849 130.128-223.219c67.521-57.672 110.326-143.433 110.326-239.193.001-173.659-140.78-314.44-314.44-314.44zm180.101 524.718C653.037 627.509 573.72 812.374 573.72 812.374h-46.785V579.401l87.181-87.181c7.173-7.175 7.173-18.805 0-25.978-7.173-7.173-18.804-7.173-25.978 0l-79.61 79.61-107.895-107.895c-7.225-7.225-18.935-7.225-26.158 0-7.225 7.223-7.225 18.933 0 26.158l112.292 112.292c.981.981 2.05 1.817 3.174 2.531v233.436h-46.785s-79.269-184.61-115.548-215.765c-59.157-50.801-96.618-126.079-96.618-210.094 0-152.986 124.217-277.007 277.447-277.007s277.447 124.021 277.447 277.007c.002 84.358-37.768 159.911-97.345 210.717z"
+              />
+            </svg>
 
             {/* HEADING */}
             <div className="relative z-10 mb-8">
@@ -409,27 +410,27 @@ export default function Form() {
                     "
                   >
                     <option value="">Select Product</option>
-                   <option value="Concealed Lights">
-                        Concealed Lights
-                      </option>
-                      <option value="COB Lens Model">
-                        COB Lens Model
-                      </option>
-                      <option value="LED Slim Panel">
-                        LED Slim Panel
-                      </option>
-                      <option value="PC Panel">PC Panel</option>
-                      <option value="Outdoor Lights">
-                        Outdoor Lights
-                      </option>
-                      <option value="Striker">Striker</option>
-                      <option value="Bulbs">Bulbs</option>
-                      <option value="Track Light">Track Light</option>
-                      <option value="Rope Lights">Rope Lights</option>
-                      <option value="Rainbow Deep Junction">
-                        Rainbow Deep Junction
-                      </option>
-                      <option value="Others">Others</option>
+                    <option value="Concealed Lights">
+                      Concealed Lights
+                    </option>
+                    <option value="COB Lens Model">
+                      COB Lens Model
+                    </option>
+                    <option value="LED Slim Panel">
+                      LED Slim Panel
+                    </option>
+                    <option value="PC Panel">PC Panel</option>
+                    <option value="Outdoor Lights">
+                      Outdoor Lights
+                    </option>
+                    <option value="Striker">Striker</option>
+                    <option value="Bulbs">Bulbs</option>
+                    <option value="Track Light">Track Light</option>
+                    <option value="Rope Lights">Rope Lights</option>
+                    <option value="Rainbow Deep Junction">
+                      Rainbow Deep Junction
+                    </option>
+                    <option value="Others">Others</option>
                   </select>
                 </div>
               </div>
@@ -582,11 +583,10 @@ export default function Form() {
                 {/* STATUS MESSAGE */}
                 {status && (
                   <p
-                    className={`mt-4 text-sm font-medium ${
-                      statusType === "success"
+                    className={`mt-4 text-sm font-medium ${statusType === "success"
                         ? "text-green-600"
                         : "text-red-600"
-                    }`}
+                      }`}
                   >
                     {status}
                   </p>
