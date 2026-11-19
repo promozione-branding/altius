@@ -7123,6 +7123,143 @@ export const categories = [
           "adjustable-round-panel-led-light",
         ],
       },
+      {
+        id: 517,
+        name: "Surface Cylinder COB Light",
+        slug: "surface-cylinder-cob-light",
+
+        metaTitle:
+          "Surface Cylinder COB Light Manufacturer | ELSTRONG",
+
+        metaDesc:
+          "Explore premium Surface Cylinder COB Lights by ELSTRONG, featuring high efficiency, powerful illumination, modern design and reliable LED lighting performance.",
+
+        category: "COB Lights",
+        categorySlug: "cob-lights-manufacturer",
+
+        price: 0,
+        oldPrice: 0,
+        currency: "₹",
+
+        badge: "Featured",
+
+        shortDescription:
+          "ELSTRONG Surface Cylinder COB Light is a modern and energy-efficient lighting solution designed to deliver focused illumination with a stylish appearance. Featuring a premium black body and an elegant rose gold reflector, this LED light enhances the aesthetics of residential, commercial, and architectural spaces.",
+
+        description:
+          "Designed to operate across a wide voltage range of 85V–350V, the Surface Cylinder COB Light offers reliable performance and excellent power efficiency. With a high power factor of greater than 0.95 (HPF), 4KV surge protection capacity, and high-voltage protection up to 440V, it is a suitable choice for modern indoor lighting applications.Available in Cool White (CW), Warm White (WW), and Natural White (NW), this surface-mounted COB light provides flexible lighting options for different environments.",
+
+        // Main product images
+        image: "/product/surface-cylinder-cob-light-1.webp",
+
+        images: [
+          "/product/surface-cylinder-cob-light-1.webp",
+          "/product/surface-cylinder-cob-light-2.webp",
+          
+        ],
+
+        // Product variants
+        wattages: [
+        
+          {
+            value: "12W",
+            image: "/product/delta-cob-led-light-model-955-12w.webp",
+            price: 0,
+          },
+         
+        ],
+
+        // Product specifications
+specifications: {
+  "Product Name": "Surface Cylinder COB Light",
+  Brand: "ELSTRONG",
+  "Lighting Technology": "COB LED",
+  "Input Voltage Range": "85V–350V",
+  "High Voltage Protection": "Up to 440V",
+  "Surge Capacity": "4KV",
+  "Power Factor": "Greater than 0.95 (HPF)",
+  "Available Light Colours": "CW, WW, NW",
+  "Body Colour": "Black",
+  "Reflector Colour": "Rose Gold",
+  "Installation Type": "Surface Mounted",
+},
+
+        // Features
+       features: [
+  {
+    title: "High Voltage Protection",
+    text: "Designed to withstand high voltage up to 440V, providing enhanced protection during voltage fluctuations.",
+  },
+  {
+    title: "4KV Surge Protection",
+    text: "Features 4KV surge capacity for improved electrical protection and reliable lighting performance.",
+  },
+  {
+    title: "Wide Operating Voltage",
+    text: "Operates within a wide input voltage range of 85V–350V, making it suitable for different electrical conditions.",
+  },
+  {
+    title: "High Power Factor",
+    text: "Offers a power factor greater than 0.95 (HPF) for efficient electrical performance.",
+  },
+  {
+    title: "Premium Black Body",
+    text: "Features a stylish black body that complements modern residential and commercial interiors.",
+  },
+  {
+    title: "Rose Gold Reflector",
+    text: "Equipped with an elegant rose gold reflector that enhances the overall appearance of the light.",
+  },
+  {
+    title: "Multiple Light Colours",
+    text: "Available in Cool White (CW), Warm White (WW), and Natural White (NW) to suit different lighting preferences.",
+  },
+  {
+    title: "Surface-Mounted Installation",
+    text: "Designed for convenient surface-mounted installation, making it suitable for contemporary indoor spaces.",
+  },
+],
+
+        // Why choose this product/company
+    whyChoose: [
+  {
+    title: "Modern & Premium Design",
+    text: "ELSTRONG Surface Cylinder COB Light combines modern design with a premium black body and rose gold reflector, making it an attractive lighting option for contemporary interiors.",
+  },
+  {
+    title: "Reliable Electrical Performance",
+    text: "The wide operating voltage range of 85V–350V and high voltage protection up to 440V ensure dependable performance in various indoor environments.",
+  },
+  {
+    title: "Efficient LED Technology",
+    text: "COB LED technology combined with a high power factor greater than 0.95 (HPF) delivers efficient electrical performance.",
+  },
+  {
+    title: "Enhanced Surge Protection",
+    text: "With 4KV surge capacity, ELSTRONG Surface Cylinder COB Light offers enhanced electrical protection for residential and commercial lighting applications.",
+  },
+],
+
+        // Image used in description section
+        descriptionImage:"/product/surface-cylinder-cob-light-2.webp",
+
+        // Additional product information
+        sku: "ELS-DELTA-COB-955",
+
+        stock: true,
+
+        stockText: "In Stock",
+
+        brochure: "/brochure/delta-cob-led-light-model-955-brochure.pdf",
+
+        // Related products
+        relatedProducts: [
+          "delta-cob-led-light-model-601",
+          "delta-cob-led-light-model-602",
+          "adjustable-square-panel-led-light",
+          "adjustable-round-panel-led-light",
+        ],
+      },
     ],
   },
   
