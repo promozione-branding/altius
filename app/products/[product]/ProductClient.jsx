@@ -408,7 +408,7 @@ export default function ProductClient({ product }) {
                 >
                  
                   {currentPrice > 0 && (
-                    <span className="flex items-center gap-2 border-l border-current/30 pl-3 normal-case tracking-normal">
+                    <span className="flex items-center gap-2 border-r border-current/30 pl-3 normal-case tracking-normal">
                       <span className="text-sm font-bold">
                         ₹{currentPrice.toLocaleString("en-IN")}
                       </span>
