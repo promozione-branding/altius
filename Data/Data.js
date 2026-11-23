@@ -189,8 +189,8 @@ export const categories = [
         category: "Concealed Lights",
         categorySlug: "concealed-lights",
 
-        price: 0,
-        oldPrice: 0,
+        price: 100,
+        oldPrice: 150,
         currency: "₹",
 
         badge: "Featured",
@@ -305,8 +305,8 @@ export const categories = [
         category: "Concealed Lights",
         categorySlug: "concealed-lights",
 
-        price: 0,
-        oldPrice: 0,
+        price: 65,
+        oldPrice: 95,
         currency: "₹",
 
         badge: "Featured",
@@ -421,8 +421,8 @@ export const categories = [
         category: "Concealed Lights",
         categorySlug: "concealed-lights",
 
-        price: 0,
-        oldPrice: 0,
+        price: 70,
+        oldPrice: 90,
         currency: "₹",
 
         badge: "Featured",
@@ -552,8 +552,8 @@ export const categories = [
         category: "Moveable Lens Model",
         categorySlug: "moveable-lens-model",
 
-        price: 0,
-        oldPrice: 0,
+        price: 80,
+        oldPrice: 120,
         currency: "₹",
 
         badge: "Featured",
@@ -919,8 +919,8 @@ export const categories = [
         category: "Slim Panel Lights",
         categorySlug: "slim-panel-lights",
 
-        price: 0,
-        oldPrice: 0,
+        price: 145,
+        oldPrice: 180,
         currency: "₹",
 
         badge: "Featured",
@@ -1184,8 +1184,8 @@ export const categories = [
         category: "LED Slim Panel",
         categorySlug: "led-slim-panel",
 
-        price: 0,
-        oldPrice: 0,
+        price: 140,
+        oldPrice: 200,
         currency: "₹",
 
         badge: "Featured",
@@ -1951,8 +1951,8 @@ export const categories = [
         category: "Outdoor Lights",
         categorySlug: "outdoor-lights",
 
-        price: 0,
-        oldPrice: 0,
+        price: 190,
+        oldPrice: 220,
         currency: "₹",
 
         badge: "Featured",
@@ -2065,8 +2065,8 @@ export const categories = [
         category: "Outdoor Lights",
         categorySlug: "outdoor-lights",
 
-        price: 0,
-        oldPrice: 0,
+        price: 310,
+        oldPrice: 450,
         currency: "₹",
 
         badge: "Featured",
@@ -2183,8 +2183,8 @@ export const categories = [
         category: "Outdoor Lights",
         categorySlug: "outdoor-lights",
 
-        price: 0,
-        oldPrice: 0,
+        price: 550,
+        oldPrice: 680,
         currency: "₹",
 
         badge: "Featured",
@@ -2297,8 +2297,8 @@ export const categories = [
         category: "Outdoor Lights",
         categorySlug: "outdoor-lights",
 
-        price: 0,
-        oldPrice: 0,
+        price: 160,
+        oldPrice: 220,
         currency: "₹",
 
         badge: "Featured",
@@ -2407,8 +2407,8 @@ export const categories = [
         category: "Outdoor Lights",
         categorySlug: "outdoor-lights",
 
-        price: 0,
-        oldPrice: 0,
+        price: 250,
+        oldPrice: 320,
         currency: "₹",
 
         badge: "Featured",
@@ -2656,8 +2656,8 @@ export const categories = [
         category: "Outdoor Lights",
         categorySlug: "outdoor-lights",
 
-        price: 0,
-        oldPrice: 0,
+        price: 592,
+        oldPrice: 680,
         currency: "₹",
 
         badge: "Featured",
@@ -2783,8 +2783,8 @@ export const categories = [
         category: "Outdoor Light",
         categorySlug: "outdoor-light",
 
-        price: 0,
-        oldPrice: 0,
+        price: 170,
+        oldPrice: 260,
         currency: "₹",
 
         badge: "Featured",
@@ -2898,8 +2898,8 @@ export const categories = [
         category: "Outdoor Lights",
         categorySlug: "outdoor-lights",
 
-        price: 0,
-        oldPrice: 0,
+        price: 244,
+        oldPrice: 390,
         currency: "₹",
 
         badge: "Featured",
@@ -3171,8 +3171,8 @@ export const categories = [
         category: "Panel Lights",
         categorySlug: "panel-lights",
 
-        price: 0,
-        oldPrice: 0,
+        price: 145,
+        oldPrice: 215,
         currency: "₹",
 
         badge: "Featured",
@@ -3318,8 +3318,8 @@ export const categories = [
         category: "Panel Lights",
         categorySlug: "panel-lights",
 
-        price: 0,
-        oldPrice: 0,
+        price: 140,
+        oldPrice: 220,
         currency: "₹",
 
         badge: "Featured",
@@ -4021,8 +4021,8 @@ export const categories = [
         category: "Track Light",
         categorySlug: "track-light",
 
-        price: 0,
-        oldPrice: 0,
+        price: 360,
+        oldPrice: 460,
         currency: "₹",
 
         badge: "Featured",
@@ -4287,8 +4287,8 @@ export const categories = [
         category: "Flood Light",
         categorySlug: "flood-light",
 
-        price: 0,
-        oldPrice: 0,
+        price: 1050,
+        oldPrice: 1350,
         currency: "₹",
 
         badge: "Featured",
@@ -4418,8 +4418,8 @@ export const categories = [
         category: "Flood Light",
         categorySlug: "flood-light",
 
-        price: 0,
-        oldPrice: 0,
+        price: 1550,
+        oldPrice: 1850,
         currency: "₹",
 
         badge: "Featured",
@@ -4568,8 +4568,8 @@ export const categories = [
         category: "Deep Light",
         categorySlug: "deep-light",
 
-        price: 0,
-        oldPrice: 0,
+        price: 70,
+        oldPrice: 110,
         currency: "₹",
 
         badge: "Featured",
@@ -4685,8 +4685,8 @@ export const categories = [
         category: "Deep Light",
         categorySlug: "deep-light",
 
-        price: 0,
-        oldPrice: 0,
+        price: 270,
+        oldPrice: 390,
         currency: "₹",
 
         badge: "Featured",
@@ -4801,8 +4801,8 @@ export const categories = [
         category: "Deep Light",
         categorySlug: "deep-light",
 
-        price: 0,
-        oldPrice: 0,
+        price: 160,
+        oldPrice: 250,
         currency: "₹",
 
         badge: "Featured",
@@ -4913,8 +4913,8 @@ export const categories = [
         category: "Deep Light",
         categorySlug: "deep-light",
 
-        price: 0,
-        oldPrice: 0,
+        price: 80,
+        oldPrice: 130,
         currency: "₹",
 
         badge: "Featured",
@@ -5043,8 +5043,8 @@ export const categories = [
         category: "LED Surface Panel",
         categorySlug: "led-surface-panel",
 
-        price: 0,
-        oldPrice: 0,
+        price: 230,
+        oldPrice: 380,
         currency: "₹",
 
         badge: "Featured",
@@ -5182,8 +5182,8 @@ export const categories = [
         category: "LED Surface Panel",
         categorySlug: "led-surface-panel",
 
-        price: 0,
-        oldPrice: 0,
+        price: 280,
+        oldPrice: 370,
         currency: "₹",
 
         badge: "Featured",
@@ -6698,8 +6698,8 @@ export const categories = [
         category: "COB Lights",
         categorySlug: "cob-lights-manufacturer",
 
-        price: 0,
-        oldPrice: 0,
+        price: 190,
+        oldPrice: 250,
         currency: "₹",
 
         badge: "Featured",
@@ -6846,8 +6846,8 @@ export const categories = [
         category: "COB Lights",
         categorySlug: "cob-lights",
 
-        price: 0,
-        oldPrice: 0,
+        price: 330,
+        oldPrice: 410,
         currency: "₹",
 
         badge: "Featured",
@@ -6992,8 +6992,8 @@ export const categories = [
         category: "COB Lights",
         categorySlug: "cob-lights-manufacturer",
 
-        price: 0,
-        oldPrice: 0,
+        price: 170,
+        oldPrice: 210,
         currency: "₹",
 
         badge: "Featured",
@@ -7137,8 +7137,8 @@ export const categories = [
         category: "COB Lights",
         categorySlug: "cob-lights-manufacturer",
 
-        price: 0,
-        oldPrice: 0,
+        price: 330,
+        oldPrice: 450,
         currency: "₹",
 
         badge: "Featured",

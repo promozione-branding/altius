@@ -63,6 +63,19 @@ export default function ProductClient({ product }) {
     (item) => item.value === selectedWattage,
   );
 
+  const currentPrice =
+    Number(selectedWattageData?.price) > 0
+      ? Number(selectedWattageData.price)
+      : Number(product.price) > 0
+        ? Number(product.price)
+        : 0;
+  const oldPrice =
+    Number(selectedWattageData?.oldPrice) > 0
+      ? Number(selectedWattageData.oldPrice)
+      : Number(product.oldPrice) > 0
+        ? Number(product.oldPrice)
+        : 0;
+
 
    useEffect(() => {
     window.scrollTo({
@@ -367,7 +380,7 @@ export default function ProductClient({ product }) {
 
             <div className="mb-8 mt-auto flex flex-col gap-3">
               <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-                {/* ================= GET QUOTE ================= */}
+                {/* ================= BUY NOW ================= */}
 
                 <button
                   type="button"
@@ -377,6 +390,7 @@ export default function ProductClient({ product }) {
             h-12
             items-center
             justify-center
+            gap-3
             border
             border-black
             px-4
@@ -392,7 +406,19 @@ export default function ProductClient({ product }) {
             hover:text-white
           "
                 >
-                  Get Quote
+                  <span className="font-semibold">Buy Now</span>
+                  {currentPrice > 0 && (
+                    <span className="flex items-center gap-2 border-l border-current/30 pl-3 normal-case tracking-normal">
+                      <span className="text-sm font-bold">
+                        ₹{currentPrice.toLocaleString("en-IN")}
+                      </span>
+                      {oldPrice > currentPrice && (
+                        <span className="text-xs font-medium opacity-70 line-through">
+                          ₹{oldPrice.toLocaleString("en-IN")}
+                        </span>
+                      )}
+                    </span>
+                  )}
                 </button>
 
                 {/* ================= WHATSAPP ================= */}
