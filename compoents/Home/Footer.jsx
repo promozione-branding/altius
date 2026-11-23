@@ -447,6 +447,7 @@ export default function Footer() {
           <p
             className="
               text-[11px]
+              md:text-base
               text-white/30
             "
           >
@@ -460,10 +461,39 @@ export default function Footer() {
               items-center
               gap-2
               text-[10px]
+              md:text-sm
               tracking-wider
               text-white/30
             "
           >
+            <Link
+              href="/privacy-policy"
+              className="transition-colors hover:text-[#85a30f]"
+            >
+              Privacy Policy
+            </Link>
+            <span className="text-white/20">|</span>
+            <Link
+              href="/shipping-policy"
+              className="transition-colors hover:text-[#85a30f]"
+            >
+              Shipping Policy
+            </Link>
+            <span className="text-white/20">|</span>
+            <Link
+              href="/return-refund"
+              className="transition-colors hover:text-[#85a30f]"
+            >
+              Return & Refund
+            </Link>
+            <span className="text-white/20">|</span>
+            <Link
+              href="/terms-conditions"
+              className="transition-colors hover:text-[#85a30f]"
+            >
+              Terms & Conditions
+            </Link>
+            <span className="text-white/20">|</span>
             <span>Website Designed By</span>
 
             <a
