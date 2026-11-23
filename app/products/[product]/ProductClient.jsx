@@ -408,7 +408,7 @@ export default function ProductClient({ product }) {
                 >
                  
                   {currentPrice > 0 && (
-                    <span className="flex items-center gap-2 border-r border-current/30 pl-3 normal-case tracking-normal">
+                    <span className="flex items-center gap-2  border-current/30 pl-3 normal-case tracking-normal">
                       <span className="text-sm font-bold">
                         ₹{currentPrice.toLocaleString("en-IN")}
                       </span>
@@ -420,7 +420,7 @@ export default function ProductClient({ product }) {
                     </span>
                   )}
 
-                   <span className="font-semibold">Buy Now</span>
+                   <span className="font-semibold pl-2">Buy Now</span>
                 </button>
 
                 {/* ================= WHATSAPP ================= */}
