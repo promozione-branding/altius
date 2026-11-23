@@ -406,7 +406,7 @@ export default function ProductClient({ product }) {
             hover:text-white
           "
                 >
-                  <span className="font-semibold">Buy Now</span>
+                 
                   {currentPrice > 0 && (
                     <span className="flex items-center gap-2 border-l border-current/30 pl-3 normal-case tracking-normal">
                       <span className="text-sm font-bold">
@@ -419,6 +419,8 @@ export default function ProductClient({ product }) {
                       )}
                     </span>
                   )}
+
+                   <span className="font-semibold">Buy Now</span>
                 </button>
 
                 {/* ================= WHATSAPP ================= */}
